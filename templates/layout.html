@@ -1,29 +1,83 @@
-<!doctype html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
-<title>{% block title %}Welcome{% endblock %} — toolbox-webseite</title>
-<body>
-  <header>
-    <h1>toolbox-webseite</h1>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
-        {% for href, title in [
-          ['/blog', 'Blog'],
-          ['/projects', 'Projects'],
-          ['/about', 'About']
-        ] %}
-          <li{% if this.is_child_of(href) %} class="active"{% endif
-            %}><a href="{{ href|url }}">{{ title }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
-  </header>
-  <div class="page">
-    {% block body %}{% endblock %}
-  </div>
-  <footer>
-    &copy; Copyright 2018 by Toolbox.
-  </footer>
-</body>
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Startseite{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="{{ '/js/ie/html5shiv.js'|url }}"></script><![endif]-->
+    <link rel="stylesheet" href="{{ '/css/main.css'|url }}" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="{{ 'assets/css/ie9.css'|url }}" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="{{ 'assets/css/ie8.css'|url }}" /><![endif]-->
+    <meta name="description" content="VarG-Gaming ist eine neue eSport Comunity, die die online-Welt aufmischt!" />
+    <link rel="icon" href="{{ '/images/favicon.png'|url }}" type="image/png">
+  </head>
+  <body{% if this._path == '/' %} class="landing"{% endif %}>
+    <div id="page-wrapper">
+
+       <!-- Header -->
+        <header id="header">
+          <h1 id="logo"><a href="index.html">Toolbox Bodensee e.V.</a></h1>
+            <nav id="nav">
+              <ul>
+                <li{% if this._path == '/' %} class="active"{% endif
+                  %}><a href="{{ '/'|url }}">Home</a></li>
+                {% for href, title, print in [
+                  ['/blog', 'Blog', 1],
+                  ['/kontakt', 'Kontakt', 1],
+                  ['/impressum', 'Impressum', 1]
+                ] %}{% if print %}
+                  <li{% if this.is_child_of(href) %} class="active"{% endif
+                %}{% if title == 'Kontakt' %} class="button special" {% endif 
+                %}><a href="{{ href|url }}">{{ title }}</a>{%
+                  if title == 'Impressum' %}
+                    <ul><li><a href="{{ '/impressum'|url }}">Impressum</a></li>
+                        <li><a href="{{ '/datenschutz'|url }}">Datenschmutz</a></li></ul>
+                {% elif title == 'Blog' %}
+					<ul><li><a href="{{ '/feed.xml'|url }}">RSS Feed</a></li></ul>
+				{% endif %}</li>
+				{% endif %}
+               {% endfor %}
+              </ul>
+            </nav>
+          </header>
+
+<!-- Main -->
+{% block body %}{% endblock %}
+
+       <!-- Footer -->
+       <footer id="footer">
+         <ul class="icons">
+           {% for label, icon, href in [
+           ['Twitter', 'fa-twitter', "https://twitter.com/toolboxbodensee"],
+           ['Facebook', 'fa-facebook', "https://www.facebook.com/toolboxbodensee/"],
+           ['Instagram', 'fa-instagram', "https://www.instagram.com/toolbox_bodensee/"],
+           ['GitHub', 'fa-github', "https://github.com/ToolboxBodensee"],
+           ['YouTube', 'fa-youtube', "https://www.youtube.com/channel/UCoTB8frSN0OT2mZl2IXSsDA/videos"],
+           ['Mail', 'fa-envelope', "mailto:kontakt@toolbox-bodensee.de"],
+           ['Telefon', 'fa-phone', "tel:+4975449667222"],
+           ['News', 'fa-rss', "https://toolbox-bodensee.de/feed.xml"]
+         ] %}
+           <li><a href="{{ href }}" title="{{ label }}" target="_blank" class="icon {{ icon }}"><span class="label">{{ label }}</span></a></li>
+         {% endfor %}
+        </ul>
+        <ul class="copyright">
+          <li>&copy;Copyright by Toolbox Bodensee e.V.</li>
+          <li><a href="/impressum/">Impressum</a></li>
+          <li><a href="/datenschutz/">Datenschutzerklärung</a></li>
+          <li>Design inspired by <a href="http://html5up.net">HTML5 UP</a> </li>
+          <!-- CMS Lektor | Webfoo: L3D -->
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="{{ '/js/jquery.min.js'|url }}"></script>
+    <script src="{{ '/js/jquery.scrolly.min.js'|url }}"></script>
+    <script src="{{ '/js/jquery.dropotron.min.js'|url }}"></script>
+    <script src="{{ '/js/jquery.scrollex.min.js'|url }}"></script>
+    <script src="{{ '/js/skel.min.js'|url }}"></script>
+    <script src="{{ '/js/util.js'|url }}"></script>
+    <!--[if lte IE 8]><script src="{{ '/js/ie/respond.min.js'|url }}"></script><![endif]-->
+    <script src="{{ '/js/main.js'|url }}"></script>
+  </body>
+</html>

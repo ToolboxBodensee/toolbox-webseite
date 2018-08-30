@@ -1,6 +1,137 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-  <h2>{{ this.title }}</h2>
-  {{ this.body }}
+
+<!-- Banner -->
+<section id="banner">
+  <div class="content">
+    <header>
+      <h2>{{ this.title }}</h2>
+      <p>{{ this.slogan }}</p>
+    </header>
+    <span class="image"> 
+      <img src="{{ '/images/logo.svg'|url }}" alt="" />
+    </span>
+  </div>
+  <a href="#one" class="goto-next scrolly">Next</a>
+</section>
+
+<!-- One -->
+<section id="one" class="spotlight style1 bottom">
+  <span class="image fit main"><img src="{{ '/images/home/abschnitt1.jpeg'|url }}" alt="" /></span>
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="4u 12u$(medium)">
+          <header>
+            <h2>{{ this.about_header }}</h2>
+            {{ this.about_text }}
+          </header>
+        </div>
+        <div class="4u 12u$(medium)">
+            {{ this.about_text2 }}
+        </div>
+        <div class="4u$ 12u$(medium)">
+            {{ this.about_text3 }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#two" class="goto-next scrolly">Next</a>
+</section>
+
+<!-- Two -->
+<section id="two" class="spotlight style2 right">
+  <span class="image fit main"><img src="{{ 'images/home/abschnitt2.jpeg'|url }}" alt="" /></span>
+  <div class="content">
+    <header>
+      <h2>{{ this.relax_header }}</h2>
+      {{ this.relax_text}}
+    </header>
+    {{ this.relax_text2 }}
+    <ul class="actions">
+      <li><a href="{{ this.relax_url2 }}" class="button">{{ this.relax_url }}</a></li>
+    </ul>
+  </div>
+  <a href="#three" class="goto-next scrolly">Next</a>
+</section>
+
+<!-- Three -->
+<section id="three" class="spotlight style3 left">
+  <span class="image fit main bottom"><img src="{{ 'images/home/abschnitt3.jpeg'|url }}" alt="" /></span>
+  <div class="content">
+    <header>
+      <h2> {{ this.we__are_header }}</h2>
+      {{ this.we_are_text }}
+    </header>
+    {{ this.we_are_text2 }}
+    <ul class="actions">
+      <li><a href="{{ this.we_are_url2 }}" class="button">{{ this.we_are_url }}</a></li>
+    </ul>
+  </div>
+  <a href="#four" class="goto-next scrolly">Next</a>
+</section>
+
+<!-- Four -->
+<section id="four" class="wrapper style1 special fade-up">
+  <div class="container">
+    <header class="major">
+      <h2>{{ this.icons_header }}</h2>
+      {{ this.icons_text }}
+    </header>
+    <div class="box alt">
+      <div class="row uniform">
+        <section class="4u 6u(medium) 12u$(xsmall)">
+          <span class="icon alt major {{ this.icons_1_1 }}"></span>
+          <a href="{{ this.icons_1_url }}"><h3>{{ this.icons_1_2 }}</h3></a>
+          {{ this.icons_1_3 }}
+        </section>
+        <section class="4u 6u$(medium) 12u$(xsmall)">
+          <span class="icon alt major {{ this.icons_2_1 }}"></span>
+          <a href="{{ this.icons_2_url }}"><h3>{{ this.icons_2_2 }}</h3></a>
+          {{ this.icons_2_3 }}
+        </section>
+        <section class="4u$ 6u(medium) 12u$(xsmall)">
+          <span class="icon alt major {{ this.icons_3_1 }}"></span>
+          <a href="{{ this.icons_3_url }}"><h3>{{ this.icons_3_2 }}</h3></a>
+         {{ this.icons_3_3 }}
+        </section>
+        <section class="4u 6u$(medium) 12u$(xsmall)">
+          <span href="{{ this.icons_4_url }}" class="icon alt major {{ this.icons_4_1 }}"></span>
+          <a href="{{ this.icons_4_url }}"><h3>{{ this.icons_4_2 }}</h3></a>
+          {{ this.icons_4_3 }}
+        </section>
+        <section class="4u 6u(medium) 12u$(xsmall)">
+          <span class="icon alt major {{ this.icons_5_1 }}"></span>
+          <a href="{{ this.icons_5_url }}#"><h3>{{ this.icons_5_2 }}</h3></a>
+          {{ this.icons_5_3 }}
+        </section>
+        <section class="4u$ 6u$(medium) 12u$(xsmall)">
+          <span class="icon alt major {{ this.icons_6_1 }}"></span>
+          <a href="{{ this.icons_6_url }}"><h3>{{ this.icons_6_2 }}</h3></a>
+          {{ this.icons_6_3 }}
+        </section>
+      </div>
+    </div>
+    <footer class="major">
+      <ul class="actions">
+        <li><a href="{{ this.icons_url }}" class="button">{{ this.icons_txt }}</a></li>
+      </ul>
+    </footer>
+  </div>
+</section>
+
+<!-- Five -->
+<section id="five" class="wrapper style2 special fade">
+  <div class="container">
+    <header>
+      <h2>{{ this.red_1 }}</h2>
+      {{ this.red_2 }}
+    </header>
+    {{ this.red_3 }}
+    <h2>{{ this.red_4 }}</h2>
+  </div>
+</section>
+
+
 {% endblock %}
