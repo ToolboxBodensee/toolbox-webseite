@@ -27,3 +27,9 @@ bearbeiten, bevor diese Veröffentlicht werden!
  9. Pull-Request Stellen (übers GitHub Interface)
 
 
+ Design:
+---------
+Das Design basiert auf [HTML5UP](https://html5up.net), genauer gesagt auf dem Design [Landed](https://html5up.net/landed).
+Und wurde natürlich für die Toolbox Webseite angepasst!
+
+
