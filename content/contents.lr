@@ -5,7 +5,7 @@ body:
 This is a basic demo website that shows how to use Lektor for a basic
 website with some pages and a blog.
 ---
-slogan: Gemeinnütziger Verein für IT-Interessierte und Hackerspace aus Markdorf am Bodensee.
+slogan: Gemeinnütziger Verein und Hackerspace am Bodensee.
 ---
 about_header: Vereinsheim
 ---
@@ -13,6 +13,15 @@ about_text: Unser Vereinsheim befindet sich in der Bergheimer Straße 6 in Markd
 ---
 about_text2:
 
- Auf über 420 m² können wir den Bereichen Elektrotechnik, Holzwerkstatt, 3D-Druck, Amateurfunk, 
+ Auf über 420 m² können wir den Bereichen Elektrotechnik, Holzwerkstatt, 3D-Druck, Amateurfunk, Siebdruck sowie ein Fotolabor einen eigenen Raum bieten.
+Als Mitglied kannst du unsere Räumlichkeiten und Gerätschaften so oft und lange benutzen, wie du möchtest. 
 ---
-about_text3: Siebdruck sowie ein Fotolabor einen eigenen Raum bieten.
+about_text3: Außerdem darfst du selbstverständlich bei Vorträgen zuhören oder selber welche halten.
+---
+about_url: Über uns
+---
+about_url2: https://toolbox-bodensee.de/verein/
+---
+relax_header: 3D Druck
+---
+relax_text: Einen Makerbot Replicator 2, einen Multec M200 und einen Prusa 3D-Drucker stehen in unserer Elektrowerkstatt für unsere Mitglieder zur freien Verfügung.
