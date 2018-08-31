@@ -10,6 +10,7 @@
     <!--[if lte IE 8]><link rel="stylesheet" href="{{ 'assets/css/ie8.css'|url }}" /><![endif]-->
     <meta name="description" content="Die Toolbox Bodensee e.V. ist ein gemeinnütziger Maker- und hackerspace in Markdorf am Bodensee!" />
     <link rel="icon" href="{{ '/images/logo.svg'|url }}" type="image/svg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   </head>
   <body{% if this._path == '/' %} class="landing"{% endif %}>
     <div id="page-wrapper">
@@ -48,17 +49,17 @@
        <footer id="footer">
          <ul class="icons">
            {% for label, icon, href in [
-           ['Twitter', 'fa-twitter', "https://twitter.com/toolboxbodensee"],
-           ['Mastodon', 'fa-rocket', "https://chaos.social/@toolbox"],
-           ['Facebook', 'fa-facebook', "https://www.facebook.com/toolboxbodensee/"],
-           ['Instagram', 'fa-instagram', "https://www.instagram.com/toolbox_bodensee/"],
-           ['GitHub', 'fa-github', "https://github.com/ToolboxBodensee"],
-           ['YouTube', 'fa-youtube', "https://www.youtube.com/channel/UCoTB8frSN0OT2mZl2IXSsDA/videos"],
-           ['Mail', 'fa-envelope', "mailto:kontakt@toolbox-bodensee.de"],
-           ['Telefon', 'fa-phone', "tel:+4975449667222"],
-           ['News', 'fa-rss', "https://toolbox-bodensee.de/feed.xml"]
+           ['Twitter', 'fab fa-twitter', "https://twitter.com/toolboxbodensee"],
+           ['Mastodon', 'fas fa-rocket', "https://chaos.social/@toolbox"],
+           ['Facebook', 'fab fa-facebook', "https://www.facebook.com/toolboxbodensee/"],
+           ['Instagram', 'fab fa-instagram', "https://www.instagram.com/toolbox_bodensee/"],
+           ['GitHub', 'fab fa-github', "https://github.com/ToolboxBodensee"],
+           ['YouTube', 'fab fa-youtube', "https://www.youtube.com/channel/UCoTB8frSN0OT2mZl2IXSsDA/videos"],
+           ['Mail', 'fas fa-envelope', "mailto:kontakt@toolbox-bodensee.de"],
+           ['Telefon', 'fas fa-phone', "tel:+4975449667222"],
+           ['News', 'fas fa-rss', "https://toolbox-bodensee.de/feed.xml"]
          ] %}
-           <li><a href="{{ href }}" title="{{ label }}" target="_blank" class="icon {{ icon }}"><span class="label">{{ label }}</span></a></li>
+           <li><a href="{{ href }}" title="{{ label }}" target="_blank" class="{{ icon }}"></a></li>
          {% endfor %}
         </ul>
         <ul class="copyright">
