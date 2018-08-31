@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="{{ '/css/main.css'|url }}" />
     <!--[if lte IE 9]><link rel="stylesheet" href="{{ 'assets/css/ie9.css'|url }}" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="{{ 'assets/css/ie8.css'|url }}" /><![endif]-->
-    <meta name="description" content="VarG-Gaming ist eine neue eSport Comunity, die die online-Welt aufmischt!" />
-    <link rel="icon" href="{{ '/images/favicon.png'|url }}" type="image/png">
+    <meta name="description" content="Die Toolbox Bodensee e.V. ist ein gemeinnütziger Maker- und hackerspace in Markdorf am Bodensee!" />
+    <link rel="icon" href="{{ '/images/logo.svg'|url }}" type="image/svg">
   </head>
   <body{% if this._path == '/' %} class="landing"{% endif %}>
     <div id="page-wrapper">
@@ -49,6 +49,7 @@
          <ul class="icons">
            {% for label, icon, href in [
            ['Twitter', 'fa-twitter', "https://twitter.com/toolboxbodensee"],
+           ['Mastodon', 'fa-rocket', "https://chaos.social/@toolbox"],
            ['Facebook', 'fa-facebook', "https://www.facebook.com/toolboxbodensee/"],
            ['Instagram', 'fa-instagram', "https://www.instagram.com/toolbox_bodensee/"],
            ['GitHub', 'fa-github', "https://github.com/ToolboxBodensee"],
