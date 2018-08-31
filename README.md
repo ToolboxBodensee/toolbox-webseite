@@ -3,6 +3,11 @@
 
 ![Toolbox](https://avatars0.githubusercontent.com/u/9744766?s=200&v=4 "Toolbox Logo")
 
+ Preview:
+------------
+Die neue Webseite ist noch nicht fertig. Eine vorabversion gibt es jedoch hier:
+[toolbox.cyber.yt](https://toolbox.cyber.yt/)
+
  Lektor CMS:
 ------------
 Das CMS für diese Webseite ist [Lektor](https://www.getlektor.com/).
