@@ -22,6 +22,44 @@ about_url: Über uns
 ---
 about_url2: https://toolbox-bodensee.de/verein/
 ---
-relax_header: 3D Druck
+relax_header: Elektrowerkstatt
 ---
-relax_text: Einen Makerbot Replicator 2, einen Multec M200 und einen Prusa 3D-Drucker stehen in unserer Elektrowerkstatt für unsere Mitglieder zur freien Verfügung.
+relax_text: Hier stehen dir Oszilloskope, Lötkolben, Netzgeräte, Messgeräte, Dioden und 3D-Drucker zur verfügung. In unserer großen Elektrowerkstatt werden selbst Elektrotechniker neidisch.
+---
+relax_text2: In der Toolbox gibt es einige Mitglieder, die sich in den Bereichen 3D-Druck und Elektronik bestens auskennen. Wir versuchen, unser Wissen mit anderen Mitgliedern und Gästen zu Teilen und uns gegenseitig bei unseren Projekten zu unterstützen.
+---
+relax_url: Projekte
+---
+relax_url2: https://toolbox-bodensee.de/projekte/
+---
+we_are_header: Workshops & Verträge
+---
+we_are_text: In der Toolbox finden regelmäßig Workshops und Vorträge zu vielen interessanten Themen statt.
+---
+we_are_text2: Wir würden uns auch sehr freuen, wenn du etwas an ein interessiertes Publikum Beritragen möchtest oder dein Wissen und deine Erfahrungen mit uns teilen möchtest. Die Teilnahme an den Vorträgen und Workshops ist sowohl für Mitglieder und Gäste natürlich kostenfrei.
+---
+we_are_url: Termine
+---
+we_are_url2: https://toolbox-bodensee.de/termine
+---
+icons_header: Schau doch mal bei uns vorbei
+---
+icons_text: Die Toolbox Bodensee e.V. ist ein gemeinnütziger Maker- und Hackerspace in Markdorf am Bodensee, der versucht sowohl für Mitgliedern als auch Gästen eine gemütliche Atmosphäre zu schaffen, in der sich Lebewesen mit hnlichen Interessen Treffen und Austauschen können. Wir haben ein großes Vereinsheim, in dem jeder Willkommen ist, sich in der Lounge oder im Bällebad zu entspannen, an Vorträgen oder Workshops teilzunehmen, mit den Werkzeugen in der Werkstatt zu arbeiten oder sich mit den anderen Lebewesen hier auszutauschen.
+---
+icons_1_1: fa-code
+---
+icons_1_2: Programmieren
+---
+icons_1_3: Wir entwickeln verschiedenste Software von der Fernsteuerung von Multicoptern über die Steuerung von blinkenden LED Ketten bis hin zu Übungsprojekten und Internetdiensten.
+---
+icons_2_1: fa-keyboard-o
+---
+icons_2_2: Hacken
+---
+icons_2_3: Wir verstehen uns als Hacker nach den Prinzipien des Chaos Computer Clubs und handeln dem entsprechend nach der [Hackerethik](https://www.ccc.de/de/hackerethics).
+---
+icons_3_1: fa-cogs
+---
+icons_3_2: Basteln
+---
+icons_3_3: Wir arbeiten an verschiedenen Hardwareprojekten, welche von mechanischen Spielereien, über selbstgelötete Elektronik, bis hin zu komplexeren Steuerungen gehen.
