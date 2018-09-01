@@ -3846,7 +3846,6 @@
 					#titleBar .toggle:before {
 						background: #d23128ff;
 						color: rgba(255, 255, 255, 0.5);
-						content: '\f0c9';
 						display: block;
 						font-size: 18px;
 						height: 44px;
