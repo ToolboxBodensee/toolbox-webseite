@@ -1,4 +1,7 @@
 {% macro render_blog_post(post, from_index=false) %}
+  {% if from_index %}
+  <br/><hr/><br/>
+  {% endif %}
   <div class="blog-post">
     <header class="major">
     {% if from_index %}
@@ -19,7 +22,16 @@
 	</header>
 <!-- Content -->
     <section id="content">
-      {{ post.body }}
+      {% if from_index %}
+        {{ post.body }}
+      {% else %}
+        {{ post.body }}
+        {{ post.beitrag }}
+      {% endif %}
     </section>
+    {% if from_index %}
+    <a class="button fit small" href="{{ post|url }}">Weiterlesen</a>
+    <br/>
+    {% endif %}
   </div>
 {% endmacro %}

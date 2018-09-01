@@ -10,6 +10,12 @@
       <h2>{{ this.title }}</h2>
       {{ this.description }}
     </header>
+   <center>  
+     <span class="icon alt major">
+         <a href="{{ this.link|url }}"><i class="fas fa-rss fa-3x" style="line-height: 2;"></i></a>
+     </span>
+     <p>Bleibe über aktuelle Nachrichten auf dem laufenden!</p>
+    </center>
     <section id="content">     
   {% for child in this.pagination.items %}
     {{ render_blog_post(child, from_index=true) }}
