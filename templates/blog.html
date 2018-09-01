@@ -11,10 +11,8 @@
       {{ this.description }}
     </header>
    <center>  
-     <span class="icon alt major">
-         <a href="{{ this.link|url }}"><i class="fas fa-rss fa-3x" style="line-height: 2;"></i></a>
-     </span>
-     <p>Bleibe über aktuelle Nachrichten auf dem laufenden!</p>
+     <a style="font-size: 15pt; text-decoration: none;">Bleibe über aktuelle Nachrichten auf dem laufenden!</a>
+     <a href="{{ this.link|url }}" class="fas fa-rss"></a>
     </center>
     <section id="content">     
   {% for child in this.pagination.items %}
