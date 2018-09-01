@@ -21,7 +21,7 @@ bearbeiten, bevor diese Veröffentlicht werden!
 
  Zur neuen Webseite Beitragen:
 ------------------------
- 1. Dieses Repository Forken (übers GitHub Interface)
+ 1. Dieses Repository Forken oder einen neuen Branch machen (übers GitHub Interface)
  2. Geforktes Repository Clonen (``git clone https://github.com/<Your_Name>/toolbox-webseite.git``)
  3. Öffne deine Komandozeile im geklonten Repository-Fork (``cd toolbox-webseite``)
  4. Lektor starten (``lektor server``)

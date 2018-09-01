@@ -1,9 +1,21 @@
-title: Hello Website
+title: Neue Webseite
 ---
-pub_date: 2018-08-30
+pub_date: 2018-09-01
 ---
-author: Toolbox
+author: L3D
 ---
 body:
 
-This is an example blog post.  Not much here but that's not the point :)
+Die alte Webseite der Toolbox Bodensee e.V. war ein Wordpress, das leider aus großen Teilen des Internets (überall, wo IPv6 gesprochen wird) nicht erreichbar ist.  
+Leider hat sich in der Toolbox niemand gefunden, der Bereit ist Wordpress zu betreuen und die Webseite nicht nur auf den aktuellsten Stand der Sicherheitspatches für Wordpress zu halten, sondern auch unstimmigkeiten am Design der Webseite zu beheben, Fehler zu debuggen und Menschen zu Motivieren, neue Inhalte zu verfassen.
+So steht nach einem halben Jahr an einigen Stellen und besonders bei den Projekten noch kein oder nur unfertiger Text, für den sich niemand Verantwortlich fühlt.
+
+Jetzt probieren wir einen neuen Ansatz aus. Die neue Webseite der Toolbox ist fertig gerendertes HTML und CSS, das keine PHP Sicherheitslücken haben kann, da es kein PHP ist. Die Versionskontrolle und Transparent der Webseite ist nun auch gegeben, da die Webseite über [Git](https://github.com/ToolboxBodensee/toolbox-webseite) Versoniert wird.
+
+Als Content Management System kommt hier [Lektror](https://getlektor.com) zum einsatz. Bei Lektor handelt es sich um ein in Python geschriebenes CMS, das ähnlich wie Hugo aus Dateien mit Markdown Syntax statisches HTML generiert und dieses auch bei bedarf auf den Webserver hochladen kann.
+
+Bei dem Webserver handelt es sich nun nicht um irgendeine virtuelle Shared-Hosting Instanz bei kasserver.com, die aus großen Teilen des Internets nicht erreichbar ist, sondern um einen kuscheligen Platz auf einem dedizierten Server bei Hetzner, der auch schon Seiten für andere Hackerspaces wie die [see-base](https://see-base.de), für [Freifunk Bodensee](https://ffbsee.net) und für das [C3WOC](https://c3woc.de) ausliefert.
+
+Selbstverständlich wird die neue Webseite über ein TLS Zertifikat, das von Let's Encrypt validiert wird, ausgeliefert. Hier allerdings nicht wie bei den meisten mit dem RSA Algorythmus, sondern mit der eliptischen Kurven Kryptografie ECDSA.
+---
+twitter_handle: L3D
