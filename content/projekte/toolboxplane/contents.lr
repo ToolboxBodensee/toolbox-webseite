@@ -1,0 +1,33 @@
+title: ToolboxPlane
+---
+author: andre.thum
+---
+body:
+
+Unser Ziel ist es, ein Modellflugzeug so umzubauen, dass es autonom fliegen kann.
+Dafür entwickeln wir einen eigenen Flightcontroller, Software und Hardware, sodass das Flugzeug eigenständig Starten, Landen und Wegpunkte ansteuern kann.
+Außerdem entwickeln wir eine eigene Fernsteuerung um das Flugzeug über LoRa zu steuern.
+
+Komponenten:
+Flightcontroller: Eigenes Breakout Board für das “Nucleo L432KC” Microcontrollerboard, mit BNO055 Lagesensor und barometrischem Höhenmessgerät. Dieser übernimmt Regelung und Ansteuerung der Servos.
+Raspberry Pi: Übernimmt Kommunikation mit der Basisstation über LoRa, Routenplanung / GPS mittels Dragino LoRa/GPS Hat.
+Flugzeug: Modell “Mini Talon”
+PowerDeliveryBoard: Befindet sich momentan in Entwicklung, soll dem Flightcontroller Daten zur Stromversorgung bereitstellen.
+
+Mehr Informationen, Quellcode und Platinenlayouts sind auf GitHub zu finden: [github.com/ToolboxPlane](https://github.com/ToolboxPlane)
+
+<span class="image fit"><img src="/projekte/toolboxplane/tbplane_1.jpg"></span><br/>
+<span class="image fit"><img src="/projekte/toolboxplane/tbplane_2.jpg"></span><br/>
+<span class="image fit"><img src="/projekte/toolboxplane/tbplane_3.jpg"></span><br/>
+<span class="image fit"><img src="/projekte/toolboxplane/tbplane_4.jpg"></span><br/>
+<span class="image fit"><img src="/projekte/toolboxplane/tbplane_5.jpg"></span><br/>
+---
+icon: fas fa-fighter-jet
+---
+pub_date: 2018-03-11
+---
+teaser:
+
+Unser Ziel ist es, ein Modellflugzeug so umzubauen, dass es autonom fliegen kann.
+Dafür entwickeln wir einen eigenen Flightcontroller, Software und Hardware, sodass das Flugzeug eigenständig Starten, Landen und Wegpunkte ansteuern kann.
+
