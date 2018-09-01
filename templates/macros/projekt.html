@@ -1,12 +1,15 @@
 {% macro render_blog_post(post, from_index=false) %}
   {% if from_index %}
-        <section class="4u 6u(medium) 12u$(xsmall)">
-          <span class="icon alt major">
+        <section class="4u 6u(medium) 12u(xsmall)">
+                <span class="icon alt major">
               <a href="{{ post|url }}" style="border-bottom: none;" title="Von {{ post.author }} am {{ post.pub_date }} gestartet"><i class="{{ post.icon }} fa-3x" style="line-height: 2; "></i></a>
           </span>
           <a href="{{ post|url }}"><h3>{{ post.title }}</h3></a>
-          {{ post.teaser }}
+          <article style="height: 320px;">
+              {{ post.teaser }}
+            </article>
         </section>
+      <br/>
   {% else %}
         <div id="main" class="wrapper style1">
           <div class="container">
