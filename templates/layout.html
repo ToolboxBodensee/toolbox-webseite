@@ -11,7 +11,7 @@
     <meta name="description" content="Die Toolbox Bodensee e.V. ist ein gemeinnütziger Maker- und hackerspace in Markdorf am Bodensee!" />
     <link rel="icon" href="{{ '/images/logo.svg'|url }}" type="image/svg">
   </head>
-  <body{% if this._path == '/' %} class="landing"{% endif %}>
+  <body class="{% if this._path == '/' %}landing {% endif %} is-preload">
     <div id="page-wrapper">
 
        <!-- Header -->
@@ -23,6 +23,7 @@
                   %}><a href="{{ '/'|url }}">Home</a></li>
                 {% for href, title, print in [
                   ['/blog', 'Blog', 1],
+                  ['/projekte', 'Projekte', 1],
                   ['/kontakt', 'Kontakt', 1],
                   ['/impressum', 'Impressum', 1]
                 ] %}{% if print %}
@@ -32,8 +33,10 @@
                   if title == 'Impressum' %}
                     <ul><li><a href="{{ '/impressum'|url }}">Impressum</a></li>
                         <li><a href="{{ '/datenschutz'|url }}">Datenschmutz</a></li></ul>
-                {% elif title == 'Blog' %}
+                 {% elif title == 'Blog' %}
 					<ul><li><a href="{{ '/feed.xml'|url }}">RSS Feed</a></li></ul>
+                 {% elif title == 'Projekte' %}
+					<ul><li><a href="{{ '/projekte.xml'|url }}">als RSS Abonieren</a></li></ul>
 				{% endif %}</li>
 				{% endif %}
                {% endfor %}
