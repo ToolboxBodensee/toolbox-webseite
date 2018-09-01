@@ -24,6 +24,7 @@
                 {% for href, title, print in [
                   ['/blog', 'Blog', 1],
                   ['/projekte', 'Projekte', 1],
+                  ['/verein', 'Verein', 1],
                   ['/kontakt', 'Kontakt', 1],
                   ['/impressum', 'Impressum', 1]
                 ] %}{% if print %}
@@ -34,7 +35,17 @@
                     <ul><li><a href="{{ '/impressum'|url }}">Impressum</a></li>
                         <li><a href="{{ '/datenschutz'|url }}">Datenschmutz</a></li></ul>
                  {% elif title == 'Blog' %}
-					<ul><li><a href="{{ '/feed.xml'|url }}">RSS Feed</a></li></ul>
+                    <ul><li><a href="{{ '/feed.xml'|url }}">RSS Feed</a></li></ul>
+                 {% elif title == 'Verein' %}
+                    <ul><li><a href="{{ '/vereinsheim'|url }}">Vereinsheim</a></li>
+                    <li><a href="{{ '/vereinsheim/elektrowerkstatt'|url }}">Elektrowerkstatt</a></li>
+                    <li><a href="{{ '/vereinsheim/holzwerkstatt'|url }}">Holzwerkstatt</a></li>
+                    <li><a href="{{ '/vereinsheim/lounge'|url }}">Lounge</a></li>
+                    <li><a href="{{ '/verein'|url }}">Satzung & Ordung</a></li></ul>
+                 {% elif title == 'Kontakt' %}
+                 <ul><li><a href="{{ '/kontakt'|url }}">Anfahrt</a></li>
+					<li><a href="{{ '/mitglied-werden'|url }}" class="button special">Mitglied werden</a></li>
+					<li><a href="{{ '/antworten'|url }}">Häufige Fragen</a></li></ul>
                  {% elif title == 'Projekte' %}
 					<ul><li><a href="{{ '/projekte.xml'|url }}">als RSS Abonieren</a></li></ul>
 				{% endif %}</li>
