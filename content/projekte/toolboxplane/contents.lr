@@ -1,6 +1,6 @@
 title: ToolboxPlane
 ---
-author: andre.thum
+author: Paul Nykiel, Jonas Otto
 ---
 body:
 
@@ -16,15 +16,17 @@ PowerDeliveryBoard: Befindet sich momentan in Entwicklung, soll dem Flightcontro
 
 Mehr Informationen, Quellcode und Platinenlayouts sind auf GitHub zu finden: [github.com/ToolboxPlane](https://github.com/ToolboxPlane)
 
-<span class="image fit"><img src="/projekte/toolboxplane/tbplane_1.jpg"></span><br/>
-<span class="image fit"><img src="/projekte/toolboxplane/tbplane_2.jpg"></span><br/>
-<span class="image fit"><img src="/projekte/toolboxplane/tbplane_3.jpg"></span><br/>
-<span class="image fit"><img src="/projekte/toolboxplane/tbplane_4.jpg"></span><br/>
-<span class="image fit"><img src="/projekte/toolboxplane/tbplane_5.jpg"></span><br/>
+<span class="image fit"><img src="/projekte/toolboxplane/plane_night.jpg"></span><br/>
+<span class="image fit"><img src="/projekte/toolboxplane/plane_wing.jpg"></span><br/>
+<span class="image fit"><img src="/projekte/toolboxplane/fc_debugging.jpg"></span><br/>
+<span class="image fit"><img src="/projekte/toolboxplane/remote.jpg"></span><br/>
+<span class="image fit"><img src="/projekte/toolboxplane/fc3.jpg"></span><br/>
+<span class="image fit"><img src="/projekte/toolboxplane/pdb.jpg"></span><br/>
+
 ---
 icon: fas fa-fighter-jet
 ---
-pub_date: 2018-03-11
+pub_date: 2017-03-17
 ---
 teaser:
 
