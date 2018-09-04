@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<div id="main" class="wrapper style1">
+  <div class="container">
+    <header class="major">
+      <h2>{{ this.title }}</h2>
+      <p>{{ this.slogan }}</p>
+    </header>
+   <!-- Content -->
+    <section id="content">
+      <div class="col-3 col-6-medium col-12-xsmall" style="width: 50%; float: left; padding: 20px;">
+        <a href="{{ this.ics_url }}" class="button primary fit" style="float: left">{{ this.ics }}</a>
+      </div><div class="col-3 col-6-medium col-12-xsmall" style="width: 50%; float: right; padding: 20px;">
+        <a href="{{ this.web_url }}" class="button primary fit" style="float: right">{{ this.web }}</a>
+      </div>
+      <br/><br/>
+
+<!--kalenderstart-->
+<!-- <iframe width="400" height="215" src="https://wirtschaftseingang.de/index.php/apps/calendar/embed/{{ this.kalender_id }}"></iframe> 
+-->
+<!--kalenderstop-->
+      <br/>      
+      {{ this.content }}
+    </section>
+  </div>
+</div>
+{% endblock %}
