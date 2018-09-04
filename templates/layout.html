@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="{{ '/js/ie/html5shiv.js'|url }}"></script><![endif]-->
     <link rel="stylesheet" href="{{ '/css/main.css'|url }}" />
+    <link rel="stylesheet" href="{{ '/css/spacestatus.css'|url }}" />
     <!--[if lte IE 9]><link rel="stylesheet" href="{{ 'assets/css/ie9.css'|url }}" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="{{ 'assets/css/ie8.css'|url }}" /><![endif]-->
     <meta name="description" content="Die Toolbox Bodensee e.V. ist ein gemeinnütziger Maker- und hackerspace in Markdorf am Bodensee!" />
     <link rel="icon" href="{{ '/images/logo.svg'|url }}" type="image/svg">
+    {% block expand_header %}{% endblock %}
   </head>
   <body class="{% if this._path == '/' %}landing {% endif %} is-preload">
     <div id="page-wrapper">
 
        <!-- Header -->
         <header id="header">
-          <h1 id="logo"><a href="index.html">Toolbox Bodensee e.V.</a></h1>
+          <h1 id="logo"><a id="tb-opened" class="button special" style="margin-left: -15px; background-color: LimeGreen  !important;" href="/vereinsheim/">Vereinsheim offen</a><a id="tb-closed" style="color: #d23128ff;" href="/vereinsheim/">Vereinsheim geschlossen</a></h1>
             <nav id="nav">
               <ul>
                 <li{% if this._path == '/' %} class="active"{% endif
@@ -40,7 +42,7 @@
                  {% elif title == 'Verein' %}
                     <ul><li><a href="{{ '/vereinsheim'|url }}">Vereinsheim</a></li>
                     <li><a href="{{ '/vereinsheim/elektrowerkstatt'|url }}">Elektrowerkstatt</a></li>
-                    <li><a href="{{ '/vereinsheim/holzwerkstatt'|url }}">Holzwerkstatt</a></li>
+                    <li><a href="{{ '/vereinsheim/grobewerkstatt'|url }}">Grobewerkstatt</a></li>
                     <li><a href="{{ '/vereinsheim/lounge'|url }}">Lounge</a></li>
 					<li><a href="{{ '/mitglied-werden'|url }}" class="button special">Mitglied werden</a></li>
                     <li><a href="{{ '/verein'|url }}">Satzung & Ordung</a></li></ul>
