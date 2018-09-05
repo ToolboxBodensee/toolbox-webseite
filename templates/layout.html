@@ -22,8 +22,8 @@
             <nav id="nav">
               <ul>
                 <li{% if this._path == '/' %} class="active"{% endif
-                  %}><a href="{{ '/'|url }}">Home</a></li>
-                {% for href, title, print in [
+                %}><a href="{{ '/'|url }}">Home</a></li>{%
+                for href, title, print in [
                   ['/blog', 'Blog', 1],
                   ['/projekte', 'Projekte', 1],
                   ['/verein', 'Verein', 1],
@@ -36,24 +36,32 @@
                 %}><a href="{{ href|url }}">{{ title }}</a>{%
                   if title == 'Impressum' %}
                     <ul><li><a href="{{ '/impressum'|url }}">Impressum</a></li>
-                        <li><a href="{{ '/datenschutz'|url }}">Datenschmutz</a></li></ul>
-                 {% elif title == 'Blog' %}
-                    <ul><li><a href="{{ '/feed.xml'|url }}">RSS Feed</a></li></ul>
-                 {% elif title == 'Verein' %}
+                    <li><a href="{{ '/datenschutz'|url }}">Datenschmutz</a></li>
+                  </ul>{%
+                  elif title == 'Projekte' %}
+                    <ul>{% set root = site.get('/projekte/') %}{%
+                      for child in root.children recursive %}
+                      <li{%
+                      if this._path == child._path %} class="active"{% endif
+                        %}><a href="{{ child|url }}">{{ child.title }}</a></li>{%
+                    endfor %}
+                      <li><a href="{{ '/projekte.xml'|url }}">Projekte als RSS Feed</a></li>
+                    </ul>{%
+                  elif title == 'Verein' %}
                     <ul><li><a href="{{ '/vereinsheim'|url }}">Vereinsheim</a></li>
                     <li><a href="{{ '/vereinsheim/elektrowerkstatt'|url }}">Elektrowerkstatt</a></li>
                     <li><a href="{{ '/vereinsheim/grobewerkstatt'|url }}">Grobewerkstatt</a></li>
                     <li><a href="{{ '/vereinsheim/lounge'|url }}">Lounge</a></li>
-					<li><a href="{{ '/mitglied-werden'|url }}" class="button special">Mitglied werden</a></li>
-                    <li><a href="{{ '/verein'|url }}">Satzung & Ordung</a></li></ul>
-                 {% elif title == 'Kontakt' %}
-                 <ul><li><a href="{{ '/kontakt'|url }}">Anfahrt</a></li>
-					<li><a href="{{ '/antworten'|url }}">Häufige Fragen</a></li></ul>
-                 {% elif title == 'Projekte' %}
-					<ul><li><a href="{{ '/projekte.xml'|url }}">als RSS Abonieren</a></li></ul>
-				{% endif %}</li>
-				{% endif %}
-               {% endfor %}
+                    <li><a href="{{ '/mitglied-werden'|url }}" class="button special">Mitglied werden</a></li>
+                    <li><a href="{{ '/verein'|url }}">Satzung & Ordung</a></li></ul>{%
+                  elif title == 'Kontakt' %}
+                    <ul><li><a href="{{ '/kontakt'|url }}">Anfahrt</a></li>
+                    <li><a href="{{ '/antworten'|url }}">Häufige Fragen</a></li></ul>{%
+                   elif title == 'Blog' %}
+                    <ul><li><a href="{{ '/feed.xml'|url }}">RSS Feed</a></li></ul>{%
+                  endif %}</li>{%
+                 endif %}{%
+               endfor %}
               </ul>
             </nav>
           </header>
