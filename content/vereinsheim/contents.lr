@@ -18,9 +18,9 @@ Auf über 420 m² können wir den Bereichen Elektrotechnik, Holzwerkstatt, 3D-Dr
  Einige Bereiche der Toolbox
 ---------------------------------------
 
-<a class="button">Elektro Werkstatt</a>
-<a class="button">Grobe Werkstatt</a>
-<a class="button">Lounge</a>
+<a href="/vereinsheim/elektrowerkstatt/" class="button">Elektro Werkstatt</a>
+<a href="/vereinsheim/grobewerkstatt/" class="button">Grobe Werkstatt</a>
+<a href="/vereinsheim/lounge/" class="button">Lounge</a>
 
  Außenansichten
 ---------
@@ -32,5 +32,24 @@ Auf über 420 m² können wir den Bereichen Elektrotechnik, Holzwerkstatt, 3D-Dr
 <span class="image fit"><img src="/vereinsheim/parking.jpg"></span><br/>
 <span class="image fit"><img src="/vereinsheim/blue_diamond.jpg"></span><br/>
 <span class="image fit"><img src="/vereinsheim/street-view_night.jpg"></span><br/>
+
+ Weitere Bilder aus der Toolbox:
+---------
+<span class="image fit"><img src="/vereinsheim/sonstige_01.jpg"></span><br/>
+<span class="image fit"><img src="/vereinsheim/switch.jpg"></span><br/>
+<span class="image fit"><img src="/vereinsheim/cnc_1.jpg"></span><br/>
+<span class="image fit"><img src="/vereinsheim/cnc_3.jpg"></span><br/>
+<span class="image fit"><img src="/vereinsheim/cnc_2.jpg"></span><br/>
+<span class="image fit"><img src="/projekte/baellebad/baellebad_0.jpg"></span><br/>
+<span class="image fit"><img src="/vereinsheim/sonstige_02.jpg"></span><br/>
+<span class="image fit"><img src="/vereinsheim/sonstige_03.jpg"></span><br/>
+<span class="image fit"><img src="/vereinsheim/switch.jpg"></span><br/>
+<span class="image fit"><img src="/projekte/amateurfunk/funk.jpg"></span><br/>
+<span class="image fit"><img src="/projekte/baellebad/baellebad_1.jpg"></span><br/>
+<span class="image fit"><img src="/vereinsheim/siebdruck.jpg"></span><br/>
+<span class="image fit"><img src="/vereinsheim/presse.jpg"></span><br/>
+<span class="image fit"><img src="/vereinsheim/see-base_siebdruck.jpg"></span><br/>
+
+
 ---
 slogan: auf über 420 m² basteln, coden, hacken und löten
