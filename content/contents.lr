@@ -20,9 +20,9 @@ Als Mitglied kannst du unsere Räumlichkeiten und Gerätschaften so oft und lang
 ---
 about_text3: Außerdem darfst du selbstverständlich bei Vorträgen zuhören oder selber welche halten.
 ---
-about_url: Über uns
+about_url: Vereinsheim
 ---
-about_url2: https://toolbox-bodensee.de/verein/
+about_url2: /vereinsheim/
 ---
 relax_header: Elektrowerkstatt
 ---
@@ -32,7 +32,7 @@ relax_text2: In der Toolbox gibt es einige Mitglieder, die sich in den Bereichen
 ---
 relax_url: Projekte
 ---
-relax_url2: https://toolbox-bodensee.de/projekte/
+relax_url2: /projekte/
 ---
 we_are_header: Workshops & Vorträge
 ---
@@ -42,7 +42,7 @@ we_are_text2: Wir würden uns auch sehr freuen, wenn du etwas an ein interessier
 ---
 we_are_url: Termine
 ---
-we_are_url2: https://toolbox-bodensee.de/termine
+we_are_url2: /termine/
 ---
 icons_header: Schau doch mal bei uns vorbei
 ---
@@ -72,7 +72,7 @@ icons_4_2: Workshops
 ---
 icons_4_3: Wir bieten Workshops und Vorträge an, um den Menschen ein Technikverständnis zu vermitteln, damit sie die Technik kontrollieren und nicht anders herum.
 ---
-icons_4_url: https://toolbox-bodensee.de/termine/
+icons_4_url: /termine/
 ---
 icons_5_1: fa-heart
 ---
@@ -80,7 +80,7 @@ icons_5_2: Waffeln
 ---
 icons_5_3: Eine der strategischen Standorte des C3 Waffel Operation Center ist der Bodensee. So geben wir Unterstützung bei der Waffelproduktion und helfen bei taktischen Waffeleinsätzen aus.
 ---
-icons_5_url: https://c3woc.de/
+icons_5_url: /projekte/c3woc/
 ---
 icons_6_1: fa-calendar-check
 ---
@@ -88,7 +88,7 @@ icons_6_2: Veranstaltungen
 ---
 icons_6_3: Wir veranstalten immer wieder Veranstaltungen oder nehmen an diesen Teil, um uns besser mit Lebewesen von anderen Regionen zu vernetzen.
 ---
-icons_6_url: https://toolbox-bodensee.de/blog/
+icons_6_url: /blog/
 ---
 icons_txt: Mitglied werden
 ---
@@ -104,3 +104,7 @@ Um 19:00 Uhr findet das "Wochenmeeting" statt. Hier treffen wir uns alle für me
 red_3: Öfters findet anschließend an das Wochenmeeting auch ein kleiner Vortrag statt, bei dem man gerne zuhören darf und so seinen Wissenshorizont erweitern kann. Den restlichen Abend verteilen sich die Lebewesen über alle Räume der Toolbox Bodensee e.V.. Einige Leute basteln weiter an ihren Projekten, andere haben sich in der Lounge oder im Bällebad zurück gezogen und unterhalten sich, wieder andere sind vor der Toolbox am Grillen oder fliegen mit der Drohne durch die Toolbox. Der ein oder andere hat vielleicht auch die Bibliothek gefunden und ist dort in seine Lektüre vertieft. Und andere sitzen an ihren Computern und programmieren fleißig.
 ---
 red_4: Wir würden uns freuen, wenn Du auch mal vorbei schaust!
+---
+icons_1_url: /projekte/
+---
+icons_3_url: /vereinsheim/elektrowerkstatt/
