@@ -22,7 +22,7 @@ kalender_id: dByspJs9xi5j4f4A
 ---
 content:
 
-<iframe id='cv_if5' src='http://cdn.instantcal.com/cvir.html?id=cv_nav5&file=https%3A%2F%2Fbodensee.space%2Fcalendarfeeds%2Ftoolboxpublic.ics&theme=RE&ccolor=%23ffffc0&dims=1&gtype=cv_daygrid&gcloseable=0&gnavigable=1&gperiod=day7&itype=cv_simpleevent' allowTransparency=true scrolling='no' frameborder=0 height=900 width=800></iframe>
+<center><iframe id='cv_if5' src='http://cdn.instantcal.com/cvir.html?id=cv_nav5&file=https%3A%2F%2Fbodensee.space%2Fcalendarfeeds%2Ftoolboxpublic.ics&theme=RE&ccolor=%23ffffc0&dims=1&gtype=cv_daygrid&gcloseable=0&gnavigable=1&gperiod=day7&itype=cv_simpleevent' allowTransparency=true scrolling='no' frameborder=0 height=900 width=800></iframe></center>
 
 
 Alle Termine stehen in den hier verlinkten Kalender.
