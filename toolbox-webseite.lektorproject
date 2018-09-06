@@ -10,5 +10,8 @@ enabled = yes
 default = yes
 target = rsync://web16@c3woc.de:/var/www/clients/client15/web16/web
 
+[servers.ghpages-https]
+target = ghpages+https://ottojo/toolbox-webseite.git
+
 [packages]
 lektor-atom = 0.2
