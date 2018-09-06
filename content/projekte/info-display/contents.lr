@@ -1,0 +1,23 @@
+title: Info Display
+---
+author: Toolbox
+---
+body:
+
+In der Toolbox gibt es ein großes Display am ende des Gang vor dem Besprechungsraum. Das Display wird genutzt, um dort die Software info-beamer laufen zu lassen und sinvolle oder amüsante Informationen anzuzeigen.
+
+Außerdem ist direkt neben dem Display der Space-API Schalter, mit dem man den Status der Toolbox auf offen oder geschlossen ändern kann.
+
+ So sieht das aus:
+-------------------------
+
+<span class="image fit"><img src="/projekte/info-display/uhr.jpg"></span><br/>
+<span class="image fit"><img src="/projekte/info-display/cyber.jpg"></span><br/>
+<span class="image fit"><img src="/projekte/info-display/cat.jpg"></span><br/>
+
+---
+icon: fas fa-tv
+---
+pub_date: 2017-04-13
+---
+teaser: In der Toolbox gibt es ein großes Display am ende des Gang vor dem Besprechungsraum. Das Display wird genutzt, um dort die Software info-beamer laufen zu lassen und sinvolle oder amüsante Informationen anzuzeigen.
