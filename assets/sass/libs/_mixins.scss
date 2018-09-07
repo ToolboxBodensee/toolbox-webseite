@@ -10,12 +10,11 @@
 		@if $content {
 			content: $content;
 		}
-
-		-moz-osx-font-smoothing: grayscale;
-		-webkit-font-smoothing: antialiased;
-		font-family: "Font Awesome 5 Free";
+		display: inline-block;
 		font-style: normal;
-		font-weight: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
 		text-transform: none !important;
 
 	}
