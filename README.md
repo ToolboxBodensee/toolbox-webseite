@@ -37,4 +37,12 @@ bearbeiten, bevor diese Veröffentlicht werden!
 Das Design basiert auf [HTML5UP](https://html5up.net), genauer gesagt auf dem Design [Landed](https://html5up.net/landed).
 Und wurde natürlich für die Toolbox Webseite angepasst!
 
-
+ CSS:
+------
+Das CSS Design wird mit [sass](https://sass-lang.com/) generiert.
+Das vereinfacht die Verständlichkeit der einzelnen Design Elemente
+und ermöglicht auch das anpassen des Designs durch das simple verändern weniger variablen.
+Example use:
+```bash
+sassc assets/sass/main.scss > assets/css/main.css
+```

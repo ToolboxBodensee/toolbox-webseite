@@ -1,7 +1,7 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
-@import url('font-awesome.min.css');
+@import url("font-awesome.min.css");
 @import url("../fonts/roboto.css");
 
 /*
@@ -1828,7 +1828,6 @@
 					&:before {
 						background: _palette(accent1);
 						color: _palette(fg-light);
-						content: '\f0c9';
 						display: block;
 						font-size: 18px;
 						height: 44px;
