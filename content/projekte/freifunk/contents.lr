@@ -12,13 +12,13 @@ Freifunk ist eine dezentrales, unabhängiges Bürgernetz mit Zugang zum Internet
 ---
 body:
 
-Freifunk ist eine dezentrales, unabhängiges Bürgernetz mit Zugang zum Internet. Freifunk bedeutet offene, uneingeschränkte und freie digitale Kommunikation. Jeder kann sich kostenlos über WLAN verbinden, ohne Passwort, ohne Registrierung. Jeder darf Freifunk nutzen, mitmachen und Freifunk erweitern. Freifunk ist eine nicht-kommerzielle Initiative für freie Funknetzwerke. 
+[Freifunk](https://freifunk-bodensee.net/start.html) ist eine dezentrales, unabhängiges Bürgernetz mit Zugang zum Internet. Freifunk bedeutet offene, uneingeschränkte und freie digitale Kommunikation. Jeder kann sich kostenlos über WLAN verbinden, ohne Passwort, ohne Registrierung. Jeder darf Freifunk nutzen, mitmachen und Freifunk erweitern. Freifunk ist eine nicht-kommerzielle Initiative für freie Funknetzwerke. 
 
 <span class="image fit" style="background: white;"><img src="https://freifunk-bodensee.net/lib/tpl/dokuwiki-template/images/logo.svg"></span><br/>
 
-Seit Anfang 2016 gibt es die Freifunk Initiative Freifunk Bodensee. Diese hat das bestreben, jeden zu ermöglichen ohne großen Aufwand oder rechtsunsicherheiten einen offenes und Freieen Zugang zum Freifunk Netz und damit auch zum Internet zu ermöglichen.
+Seit Anfang 2016 gibt es die Freifunk Initiative Freifunk Bodensee. Diese hat das bestreben, jeden zu ermöglichen ohne großen Aufwand oder Rechtsunsicherheiten einen offenen und freien Zugang zum Freifunk Netz und damit auch zum Internet zu ermöglichen.
 
-Die Freifunk Community Freifunk Bodensee trifft sich regelmäßig in den Räumen der Toolbox Bodensee um dort ihre Freifunk Treffen abzuhalten und interessierten Menschen Freifunk zu erklären und beim einrichten zu helfen.
+Die Freifunk Community Freifunk Bodensee trifft sich regelmäßig in den Räumen der Toolbox Bodensee um dort ihre Freifunktreffen abzuhalten und interessierten Menschen Freifunk zu erklären und beim Einrichten zu helfen.
 
 Natürlich gibt es in der Toolbox auch ein ordentliches Freifunk WLAN. Hier baut ein Offloader, eine Simens Futro eine FastD VPN Verbindung zu einen der Freifunk Gateways auf. Und das Freifunk Netz wird über die WLAN Access Points in der Toolbox an die Clients gebracht, die sich dann mit dem Freifunk WLAN Verbinden können.
 
