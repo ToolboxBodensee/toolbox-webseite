@@ -990,8 +990,7 @@ a {
   -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  border-bottom: dotted 1px;
-  color: #d23128;
+  color: rgba(200, 200, 255, 0.75);
   text-decoration: none; }
   a:hover {
     color: #d23128 !important;

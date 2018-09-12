@@ -77,8 +77,7 @@
 
 	a {
 		@include vendor('transition', ('border-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out'));
-		border-bottom: dotted 1px;
-		color: _palette(accent1);
+		color: _palette(link);
 		text-decoration: none;
 
 		&:hover {
