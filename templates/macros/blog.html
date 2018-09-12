@@ -17,7 +17,7 @@
         {% else %}
           {{ post.author }}
         {% endif %}
-        am {{ post.pub_date }}
+        am {{ post.pub_date.strftime('%d. %m. %Y') }}
       </p>
 	</header>
 <!-- Content -->
