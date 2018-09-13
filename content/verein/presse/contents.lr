@@ -1,28 +1,154 @@
-_model: page
+_model: presse
 ---
 title: Presse
 ---
-content:
+p1: Südkurier
+---
+press_1:
 
-### Südkurier
-
-* [8.8.2018: Viel mehr als nur Computer und Nerds: Ein Rundgang durch die Toolbox Bodensee in Markdorf](https://www.suedkurier.de/region/bodenseekreis/markdorf/Viel-mehr-als-nur-Computer-und-Nerds-Ein-Rundgang-durch-die-Toolbox-Bodensee-in-Markdorf;art372484,9849087)
-* [10.11.2017: Toolbox lädt ein zu Tag der offenen Tür](https://www.suedkurier.de/region/bodenseekreis/markdorf/Toolbox-laedt-ein-zu-Tag-der-offenen-Tuer;art372484,9490634)
-* [2.3.2018: Kreativschmiede Toolbox richtet sich in neuen Räumen ein](https://www.suedkurier.de/region/bodenseekreis/markdorf/Kreativschmiede-Toolbox-richtet-sich-in-neuen-Raeumen-ein;art372484,9640440)
-* [28.9.2017: Verein Toolbox schafft Treffpunkt für neugierige Nerds](https://www.suedkurier.de/region/bodenseekreis/markdorf/Verein-Toolbox-schafft-Treffpunkt-fuer-neugierige-Nerds;art372484,9431602)
-* [20.11.2016: "Toolbox Bodensee" lädt ein: Ein Tüftelparadies für Elektronik-Freaks](https://www.suedkurier.de/region/bodenseekreis/markdorf/Toolbox-Bodensee-laedt-ein-Ein-Tueftelparadies-fuer-Elektronik-Freaks;art372484,9008683)
-* [9.2.2016: SAP Markdorf jetzt Firmenmitglied bei der Toolbox](https://www.suedkurier.de/region/bodenseekreis/markdorf/SAP-Markdorf-jetzt-Firmenmitglied-bei-der-Toolbox;art372484,8507105)
-* [28.7.2017: Schüler lernen auch Gefahren des Internets kennen](https://www.suedkurier.de/region/bodenseekreis/ueberlingen/Schueler-lernen-auch-Gefahren-des-Internets-kennen;art372495,9351626)
-
-### Schwäbische Zeitung
-
-* [19.11.2017: In Markdorf hat die Kreativität viel Platz](https://www.schwaebische.de/landkreis/bodenseekreis/markdorf_artikel,-in-markdorf-hat-die-kreativit%C3%A4t-viel-platz-_arid,10772484.html)
-* [15.4.2017: Die „Toolbox“ tüftelt in neuen Räumen](https://www.schwaebische.de/landkreis/bodenseekreis/markdorf_artikel,-die-toolbox-t%C3%BCftelt-in-neuen-r%C3%A4umen-_arid,10650488.html)
-* [7.5.2017: Die Toolbox begrüßt das 100. Mitglied](https://www.schwaebische.de/landkreis/bodenseekreis/markdorf_artikel,-die-toolbox-begr%C3%BC%C3%9Ft-das-100-mitglied-_arid,10662727.html)
-* [23.1.2017: WLAN an der Bushaltestelle, beim Arzt oder im Restaurant](https://www.schwaebische.de/landkreis/bodenseekreis/markdorf_artikel,-wlan-an-der-bushaltestelle-beim-arzt-oder-im-restaurant-_arid,10601441.html)
-* [30.6.2017: Tüftler stellen sich der „Maker Challenge“](https://www.schwaebische.de/landkreis/bodenseekreis/markdorf_artikel,-t%C3%BCftler-stellen-sich-der-maker-challenge-_arid,10693765.html)
-* [7.1.2015: Tüftler verbünden sich](https://www.schwaebische.de/landkreis/bodenseekreis/markdorf_artikel,-t%C3%BCftler-verb%C3%BCnden-sich-_arid,10152214.html)
-* [30.10.2014: Technik, die Kids begeistert](https://www.schwaebische.de/landkreis/bodenseekreis/markdorf_artikel,-technik-die-kids-begeistert-_arid,10112900.html)
-* [16.8.2016: „DO.labor„ zeigt Umgang mit Raspberry Pi](https://www.schwaebische.de/landkreis/bodenseekreis/friedrichshafen_artikel,-do-labor-zeigt-umgang-mit-raspberry-pi-_arid,10510123.html)
+#### press_table ####
+pub_date: 2018-08-22
+----
+text: Initiative Freifunk will freie Internetzugänge am Bodensee verbreiten
+----
+link: https://www.suedkurier.de/region/bodenseekreis/ueberlingen/Initiative-Freifunk-will-freie-Internetzugaenge-am-Bodensee-verbreiten;art372495,9865256
+#### press_table ####
+pub_date: 2018-08-08
+----
+text: Viel mehr als nur Computer und Nerds: Ein Rundgang durch die Toolbox Bodensee in Markdorf
+----
+link: https://www.suedkurier.de/region/bodenseekreis/markdorf/Viel-mehr-als-nur-Computer-und-Nerds-Ein-Rundgang-durch-die-Toolbox-Bodensee-in-Markdorf;art372484,9849087
+#### press_table ####
+pub_date: 2018-03-02
+----
+text: Kreativschmiede Toolbox richtet sich in neuen Räumen ein
+----
+link: https://www.suedkurier.de/region/bodenseekreis/markdorf/Kreativschmiede-Toolbox-richtet-sich-in-neuen-Raeumen-ein;art372484,9640440
+#### press_table ####
+pub_date: 2017-11-10
+----
+text: Toolbox lädt ein zu Tag der offenen Tür
+----
+link: https://www.suedkurier.de/region/bodenseekreis/markdorf/Toolbox-laedt-ein-zu-Tag-der-offenen-Tuer;art372484,9490634
+#### press_table ####
+pub_date: 2017-09-28
+----
+text: Verein Toolbox schafft Treffpunkt für neugierige Nerds
+----
+link: https://www.suedkurier.de/region/bodenseekreis/markdorf/Verein-Toolbox-schafft-Treffpunkt-fuer-neugierige-Nerds;art372484,9431602
+#### press_table ####
+pub_date: 2017-09-21
+----
+text: Nachrichtenbild für ""toolbox bodensee"" von SÜDKURIER Online SPD-Kandidat Hahn pocht auf schnelles Internet
+----
+link: https://www.suedkurier.de/region/bodenseekreis/markdorf/SPD-Kandidat-Hahn-pocht-auf-schnelles-Internet;art372484,9423766
+#### press_table ####
+pub_date: 2017-07-28
+----
+text: Schüler lernen auch Gefahren des Internets kennen
+----
+link: https://www.suedkurier.de/region/bodenseekreis/ueberlingen/Schueler-lernen-auch-Gefahren-des-Internets-kennen;art372495,9351626
+#### press_table ####
+pub_date: 2016-11-28
+----
+text: Mehr Kunstwerk und Handarbeiten beim Markdorfer Weihnachtsmarkt
+----
+link: https://www.suedkurier.de/region/bodenseekreis/markdorf/Mehr-Kunstwerk-und-Handarbeiten-beim-Markdorfer-Weihnachtsmarkt;art372484,9021697
+#### press_table ####
+pub_date: 2016-11-20
+----
+text: "Toolbox Bodensee" lädt ein: Ein Tüftelparadies für Elektronik-Freaks
+----
+link: https://www.suedkurier.de/region/bodenseekreis/markdorf/Toolbox-Bodensee-laedt-ein-Ein-Tueftelparadies-fuer-Elektronik-Freaks;art372484,9008683
+#### press_table ####
+pub_date: 2016-02-09
+----
+text: SAP Markdorf jetzt Firmenmitglied bei der Toolbox
+----
+link: https://www.suedkurier.de/region/bodenseekreis/markdorf/SAP-Markdorf-jetzt-Firmenmitglied-bei-der-Toolbox;art372484,8507105
 ---
 slogan: Die Toolbox in der Presse
+---
+p2: Schwäbische Zeitung
+---
+p3: Heise
+---
+press_2:
+
+#### press_table ####
+pub_date: 2017-11-19
+----
+text: In Markdorf hat die Kreativität viel Platz
+----
+link: https://www.schwaebische.de/landkreis/bodenseekreis/markdorf_artikel,-in-markdorf-hat-die-kreativit%C3%A4t-viel-platz-_arid,10772484.html
+#### press_table ####
+pub_date: 2017-06-30
+----
+text: Tüftler stellen sich der „Maker Challenge“
+----
+link: https://www.schwaebische.de/landkreis/bodenseekreis/markdorf_artikel,-t%C3%BCftler-stellen-sich-der-maker-challenge-_arid,10693765.html
+#### press_table ####
+pub_date: 2017-05-07
+----
+text: Die Toolbox begrüßt das 100. Mitglied
+----
+link: https://www.schwaebische.de/landkreis/bodenseekreis/markdorf_artikel,-die-toolbox-begr%C3%BC%C3%9Ft-das-100-mitglied-_arid,10662727.html
+#### press_table ####
+pub_date: 2017-04-15
+----
+text: Die „Toolbox“ tüftelt in neuen Räumen
+----
+link: https://www.schwaebische.de/landkreis/bodenseekreis/markdorf_artikel,-die-toolbox-t%C3%BCftelt-in-neuen-r%C3%A4umen-_arid,10650488.html
+#### press_table ####
+pub_date: 2017-01-23
+----
+text: WLAN an der Bushaltestelle, beim Arzt oder im Restaurant
+----
+link: https://www.schwaebische.de/landkreis/bodenseekreis/markdorf_artikel,-wlan-an-der-bushaltestelle-beim-arzt-oder-im-restaurant-_arid,10601441.html
+#### press_table ####
+pub_date: 2016-08-16
+----
+text: „DO.labor„ zeigt Umgang mit Raspberry Pi
+----
+link: https://www.schwaebische.de/landkreis/bodenseekreis/friedrichshafen_artikel,-do-labor-zeigt-umgang-mit-raspberry-pi-_arid,10510123.html
+#### press_table ####
+pub_date: 2015-01-07
+----
+text: Tüftler verbünden sich
+----
+link: https://www.schwaebische.de/landkreis/bodenseekreis/markdorf_artikel,-t%C3%BCftler-verb%C3%BCnden-sich-_arid,10152214.html
+#### press_table ####
+pub_date: 2014-10-30
+----
+text: Technik, die Kids begeistert
+----
+link: https://www.schwaebische.de/landkreis/bodenseekreis/markdorf_artikel,-technik-die-kids-begeistert-_arid,10112900.html
+---
+press_3:
+
+#### press_table ####
+pub_date: 2018-05-31
+----
+text: Ab an den See: Samstag startet die dritte Maker Faire Bodensee
+----
+link: https://www.heise.de/make/meldung/Ab-an-den-See-Samstag-startet-die-dritte-Maker-Faire-Bodensee-4062168.html
+#### press_table ####
+pub_date: 2017-12-06
+----
+text:
+
+ Floppy-Laufwerke erzeugen Soundtrack für Action-Film 
+----
+link: https://www.heise.de/make/meldung/Floppy-Laufwerke-erzeugen-Soundtrack-fuer-Action-Film-3911129.html
+#### press_table ####
+pub_date: 2017-07-10
+----
+text: Maker Faire Bodensee: Am kommenden Wochenende in Friedrichshafen
+----
+link: https://www.heise.de/make/meldung/Maker-Faire-Bodensee-Am-kommenden-Wochenende-in-Friedrichshafen-3766962.html
+#### press_table ####
+pub_date: 2015-06-24
+----
+text: DIY am Bodensee: Maker World wieder in Friedrichshafen
+----
+link: https://www.heise.de/make/meldung/DIY-am-Bodensee-Maker-World-wieder-in-Friedrichshafen-2725319.html
