@@ -1,0 +1,13 @@
+title: Freie Wetter- und Klimadaten
+---
+author: Matt
+---
+body:
+
+ ESA, NASA und die NOAA-Satelliten der USA senden ihre Daten per Satellitenverbindung für jeden frei verfügbar zur Erde. Die Organisationen stellen so zahlreiche Daten öffentlich für Jedermann zur Verfügung. Über passende Hard- und Software empfangen und speichern wir 10-Mbit-Streams per SAT-Anlage und Server-Backend im Keller der Toolbox. Dort speichern wir so viele Daten zwischen, wie unsere Festplatten hergeben, um uns einen ganz eigenen Blick auf die aktuellen Klimadaten zu verschafffen. Durch die Arbeit am Projekt lernen wir den sicheren und technisch tiefergehenden Umgang mit der sicheren Speicherung und kontinuierlichen Auswertung von Daten-Streams.
+---
+pub_date: 2017-07-01
+---
+teaser: Wir empfangen und speichern Klima- und Erdbeobachtungsdaten aus dem All direkt in der Toolbox.
+---
+icon: fas fa-user-astronaut

@@ -7,18 +7,18 @@ body:
 This is a basic demo website that shows how to use Lektor for a basic
 website with some pages and a blog.
 ---
-slogan: Gemeinnütziger Verein und Hackerspace am Bodensee.
+slogan: Gemeinnütziger Maker- und Hackerspace am Bodensee.
 ---
 about_header: Vereinsheim
 ---
-about_text: Unser Vereinsheim befindet sich in der Bergheimer Straße 6 in Markdorf am Bodensee im Gebäude von intimus.
+about_text: Unser Vereinsheim befindet sich in der Bergheimer Straße 6 in Markdorf am Bodensee im Gebäude der intimus International GmbH.
 ---
 about_text2:
 
- Auf über 420 m² können wir den Bereichen Elektrotechnik, Holzwerkstatt, 3D-Druck, Amateurfunk, Siebdruck sowie einem Fotolabor einen eigenen Raum bieten.
-Als Mitglied kannst du unsere Räumlichkeiten und Gerätschaften so oft und lange benutzen, wie du möchtest.
+Auf über 420 m² können wir u.a. den Bereichen Elektrotechnik, Holz- und Metallwerkstatt, 3D-Druck, Amateurfunk, Siebdruck sowie einem Fotolabor einen eigenen Raum bieten.
+Als Mitglied kannst du unsere Räumlichkeiten und Gerätschaften so oft und lange benutzen, wie du möchtest, außerdem darfst du selbstverständlich bei Vorträgen zuhören oder selber welche halten.
 ---
-about_text3: Außerdem darfst du selbstverständlich bei Vorträgen zuhören oder selber welche halten.
+about_text3: Unser Vereinsheim ist außerdem ein Ort von Veranstaltungen anderer Organisation wie dem [Chaostreff Markdorf](https://bodensee.space/chaostreff-markdorf), den [Amateurfunkern Friedrichshafen](https://www.darc.de/der-club/distrikte/p/ortsverbaende/03/), [Freifunk Bodensee](https://freifunk-bodensee.net/start.html), der [Spieleentwicklung Bodensee](http://www.spieleentwicklung-bodensee.de/) oder dem [IoT Meetup Bodensee](https://www.meetup.com/de-DE/IoTBodensee/?_cookie-check=8FCj7YDEE6xcpKYA).
 ---
 about_url: Vereinsheim
 ---
@@ -38,7 +38,7 @@ we_are_header: Workshops & Vorträge
 ---
 we_are_text: In der Toolbox finden regelmäßig Workshops und Vorträge zu vielen interessanten Themen statt.
 ---
-we_are_text2: Wir würden uns auch sehr freuen, wenn du etwas an ein interessiertes Publikum Beitragen möchtest oder dein Wissen und deine Erfahrungen mit uns teilen möchtest. Die Teilnahme an den Vorträgen und Workshops ist sowohl für Mitglieder und Gäste natürlich kostenfrei.
+we_are_text2: Wir würden uns auch sehr freuen, wenn du etwas an ein interessiertes Publikum beitragen möchtest oder dein Wissen und deine Erfahrungen mit uns teilen möchtest. Die Teilnahme an den Vorträgen und Workshops ist sowohl für Mitglieder als auch Gäste natürlich kostenfrei.
 ---
 we_are_url: Termine
 ---
@@ -46,13 +46,13 @@ we_are_url2: /termine/
 ---
 icons_header: Schau doch mal bei uns vorbei
 ---
-icons_text: Die Toolbox Bodensee e.V. ist ein gemeinnütziger Maker- und Hackerspace in Markdorf am Bodensee, der versucht sowohl für Mitglieder als auch Gäste eine gemütliche Atmosphäre zu schaffen, in der sich Lebewesen mit ähnlichen Interessen Treffen und Austauschen können. Wir haben ein großes Vereinsheim, in dem jeder willkommen ist, sich in der Lounge oder im Bällebad zu entspannen, an Vorträgen oder Workshops teilzunehmen, mit den Werkzeugen in der Werkstatt zu arbeiten oder sich mit den anderen Lebewesen hier auszutauschen.
+icons_text: Die Toolbox Bodensee e.V. ist ein gemeinnütziger Maker- und Hackerspace in Markdorf am Bodensee, der versucht sowohl für Mitglieder als auch Gäste eine gemütliche Atmosphäre zu schaffen, in der sich Lebewesen mit ähnlichen Interessen treffen und austauschen können. Wir haben ein großes Vereinsheim in dem jeder willkommen ist sich in der Lounge oder im Bällebad zu entspannen, an Vorträgen oder Workshops teilzunehmen, mit den Werkzeugen in der Werkstatt zu arbeiten oder sich mit den anderen Lebewesen hier auszutauschen.
 ---
 icons_1_1: fa-code
 ---
 icons_1_2: Programmieren
 ---
-icons_1_3: Wir entwickeln verschiedenste Software von der Fernsteuerung von Multicoptern über die Steuerung von blinkenden LED Ketten bis hin zu Übungsprojekten und Internetdiensten.
+icons_1_3: Wir entwickeln verschiedenste Software von der Fernsteuerung von Multicoptern über die Steuerung von blinkenden LED-Ketten bis hin zu Übungsprojekten und Internetdiensten.
 ---
 icons_2_1: fa-keyboard
 ---
@@ -70,7 +70,7 @@ icons_4_1: fa-puzzle-piece
 ---
 icons_4_2: Workshops
 ---
-icons_4_3: Wir bieten Workshops und Vorträge an, um den Menschen ein Technikverständnis zu vermitteln, damit sie die Technik kontrollieren und nicht anders herum.
+icons_4_3: Wir bieten Workshops und Vorträge an, um den Menschen ein Technikverständnis zu vermitteln,; damit Menschen die Technik kontrollieren und nicht anders herum.
 ---
 icons_4_url: /termine/
 ---
@@ -86,7 +86,7 @@ icons_6_1: fa-calendar-check
 ---
 icons_6_2: Veranstaltungen
 ---
-icons_6_3: Wir veranstalten immer wieder Veranstaltungen oder nehmen an diesen Teil, um uns besser mit Lebewesen von anderen Regionen zu vernetzen.
+icons_6_3: Wir veranstalten immer wieder Veranstaltungen oder nehmen an diesen Teil, um uns besser mit Lebewesen anderer Regionen zu vernetzen.
 ---
 icons_6_url: /blog/
 ---
@@ -94,12 +94,12 @@ icons_txt: Mitglied werden
 ---
 icons_url: https://toolbox-bodensee.de/mitglied-werden/
 ---
-red_1: Wir freuen uns über neue Gesichter
+red_1: Wir freuen uns über neue Gesichter.
 ---
 red_2:
 
 Jeden Donnerstag Abend ist bei uns die Türe geöffnet und jeder ist willkommen, bei der Toolbox Bodensee e.V. vorbei zu kommen.<br/>
-Um 19:00 Uhr findet das "Wochenmeeting" statt. Hier treffen wir uns alle für meistens 15 Minuten im großen Besprechungsraum und es werden aktuelle Themen, Projekte und Fragen angesprochen. Außerdem haben neue Gesichter und Gäste die Möglichkeit, sich vorzustellen oder Fragen in die große Runde zu stellen, wenn sie zum Beispiel Hilfe bei einem konkreten Problem benötigen und nicht wissen, an wen genau sie sich wenden müssen.
+Um 19:00 Uhr findet das "Wochenmeeting" statt. Hier treffen wir uns alle für meistens 15 Minuten im großen Besprechungsraum und es werden aktuelle Themen, Projekte und Fragen angesprochen. Außerdem haben neue Gesichter und Gäste die Möglichkeit sich vorzustellen oder Fragen in die große Runde zu stellen, wenn sie zum Beispiel Hilfe bei einem konkreten Problem benötigen und nicht wissen, an wen genau sie sich wenden müssen.
 ---
 red_3: Öfters findet anschließend an das Wochenmeeting auch ein kleiner Vortrag statt, bei dem man gerne zuhören darf und so seinen Wissenshorizont erweitern kann. Den restlichen Abend verteilen sich die Lebewesen über alle Räume der Toolbox Bodensee e.V.. Einige Leute basteln weiter an ihren Projekten, andere haben sich in der Lounge oder im Bällebad zurück gezogen und unterhalten sich, wieder andere sind vor der Toolbox am Grillen oder fliegen mit der Drohne durch die Toolbox. Der ein oder andere hat vielleicht auch die Bibliothek gefunden und ist dort in seine Lektüre vertieft. Und andere sitzen an ihren Computern und programmieren fleißig.
 ---

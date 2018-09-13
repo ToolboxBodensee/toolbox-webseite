@@ -1,7 +1,7 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
-@import url('font-awesome.min.css');
+@import url("font-awesome.min.css");
 @import url("../fonts/roboto.css");
 
 /*
@@ -77,8 +77,7 @@
 
 	a {
 		@include vendor('transition', ('border-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out'));
-		border-bottom: dotted 1px;
-		color: _palette(accent1);
+		color: _palette(link);
 		text-decoration: none;
 
 		&:hover {
@@ -1828,7 +1827,6 @@
 					&:before {
 						background: _palette(accent1);
 						color: _palette(fg-light);
-						content: '\f0c9';
 						display: block;
 						font-size: 18px;
 						height: 44px;

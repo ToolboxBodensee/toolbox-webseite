@@ -2,7 +2,7 @@
   {% if from_index %}
         <section class="4u 6u(medium) 12u(xsmall)">
                 <span class="icon alt major">
-              <a href="{{ post|url }}" style="border-bottom: none;" title="Von {{ post.author }} am {{ post.pub_date }} gestartet"><i class="{{ post.icon }} fa-3x" style="line-height: 2; "></i></a>
+              <a href="{{ post|url }}" style="border-bottom: none;" title="Von {{ post.author }} am {{ post.pub_date.strftime('%d.%m.%Y')}} gestartet"><i class="{{ post.icon }} fa-3x" style="line-height: 2; "></i></a>
           </span>
           <a href="{{ post|url }}"><h3>{{ post.title }}</h3></a>
           <article style="height: 320px;">
@@ -15,7 +15,7 @@
           <div class="container">
             <header class="major">
                 <h2>{{ post.title }}</h2>
-                <p>Das Projekt wurde von {{ post.author }} am {{ post.pub_date }} ins Leben gerufen.</p>
+                <p>Das Projekt wurde von {{ post.author }} am {{ post.pub_date.strftime('%d.%m.%Y') }} ins Leben gerufen.</p>
             </header>
           <section id="content">
               {{ post.body }}
