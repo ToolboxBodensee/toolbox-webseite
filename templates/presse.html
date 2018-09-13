@@ -42,6 +42,28 @@
         </table>
       </div>{%
       endif %}
+      <h2>{{ this.p4 }}</h2>{%
+      if this.press_4 %}
+      <div class="table-wrapper">
+        <table><tbody>
+        {% for blk in this.press_4.blocks %}
+          {{ blk }}
+        {% endfor %}
+        </tfoot>
+        </table>
+      </div>{%
+      endif %}
+      <h2>{{ this.p5 }}</h2>{%
+      if this.press_5 %}
+      <div class="table-wrapper">
+        <table><tbody>
+        {% for blk in this.press_5.blocks %}
+          {{ blk }}
+        {% endfor %}
+        </tfoot>
+        </table>
+      </div>{%
+      endif %}
         
         {{ this.content }}
     </section>
