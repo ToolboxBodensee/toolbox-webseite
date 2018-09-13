@@ -1,0 +1,63 @@
+title: 3D Druck
+---
+author: 3D-Druck-Team Toolbox
+---
+icon: fas fa-print
+---
+pub_date: 2017-01-01
+---
+teaser: In der Toolbox stehen die verschiedensten 3D Drucker zur freien Verwendung zur Verfügung und werden regelmäßig von einem kompetenten Team aus Fachleuten gewartet und verbessert.
+---
+body:
+
+Die aktuellsten Fortschritte unserer 3D-Druck-Arbeiten finden sich in unserem [3D Printing GItHub Repository](https://github.com/ToolboxBodensee/3d_printing). Die vorkonfigurierten Marlin-Firmwares für die entsprechenden Drucker stehen in unserem [Marlin Fork](https://github.com/ToolboxBodensee/Marlin) zur Verfügung.
+
+Selbstverständlich laufen alle unsere 3D-Drucker mit angeschlossenem [OctoPrint](https://octoprint.org) auf je einem Raspberry Pi. Mit dem [OctoPrint Slicer Plugin](https://plugins.octoprint.org/plugins/slicer/) können unsere User so drucken ohne eigene Slicer Software oder Konfigurationsdateien auf ihren PC übertragen zu müssen.
+
+## Mülltec
+
+Schon seit vielen Jahren besitzt die Toolbox einen 3D-Drucker-Prototypen der Firma ["Multec"](https://www.multec.de). Schon nach kurzer Zeit wurden verschiedene Probleme offensichtlich, insbesondere der Extruder bzw. das Hotend haben uns große Probleme bereitet.
+
+Der proprietäre Mülltec-Extruder besaß keinen Kühlkörper am Heatbreak. Dadurch kam es, insbesondere bei Anfängern die lange am aufgeheizten Drucker spielen, oft zu Heat-Creep Problemen, das eigentlich feste und kühle Filament oberhalb des Hotends erhitzt sich mit der Zeit immer mehr, bis kein Feeding durch den Extrudermotor mehr möglich ist und das Filament oben aus der Düse quillt. Außerdem war der Mülltec der einzige unserer Drucker mit 3mm Filament und verwendete deswegen einen Getriebe-Schrittmotor im Extruder.
+
+Um diese Probleme zu beseitigen haben wir das gesamte Extruder und Hotend-Assembly durch einen üblichen NEMA17 Motor und ein E3Dv6 ersetzt. Den Extruder sowie die Hotend-Halterung stammen vom ["Customizable direct drive extruder" von gtcdma](https://www.thingiverse.com/thing:1383913) zusammen mit einer einfachen selbst gezeichneten Adapterhalterung für den Mülltec-Extruder-Mount. [Die Daten befinden sich hier in unserem Repository](https://github.com/ToolboxBodensee/3d_printing/tree/master/direct-drive-extruder).
+
+Im Zuge dieser Veränderungen wurden ausserdem die bisher verwendeten Timing-Belts durch GT2-Belts ersetzt und dafür [neue Pulleys](https://github.com/ToolboxBodensee/3d_printing/tree/master/gt2-pulley-multec-mod) gedruckt.
+
+Selbstverständlich wurde auch ein Raspberry Pi 3 mit OctoPrint in das Gehäuse des Druckers verbaut.
+
+Als nächster Schritt soll das Heatbed ersetzt werden, da die Silikon-Heizmatte (220V) kaum 55°C erreicht.
+
+<a href="multec_ex_1.jpg">
+  <img src="multec_ex_1_tn.jpg">
+</a>
+<a href="multec_ex_2.jpg">
+  <img src="multec_ex_2_tn.jpg">
+</a>
+
+## Replicator 2
+
+Der MakerBot Replicator 2 ist schon die längste Zeit im Besitz der Toolbox und hat, insbesondere zu Beginn der Vereinsgeschichte, viele neue Mitglieder angelockt.
+
+Als erste Modifikation wurde die quelloffene Sailfish-Firmware geflasht. Außerdem befindet sich mittlerweile ein Raspberry Pi 2 mit OctoPrint am Replicator, mithilfe dem [GPX Plugin](https://plugins.octoprint.org/plugins/gpx/) wird der G-Code live in die Sailfish kompatiblen Befehle umgewandelt.
+
+Trotzdem hatten wir nach einiger Zeit viele Probleme mit dem Hotend und dem Extruder. Deshalb wurde kurzerhand ein E3Dv6 Hotend mit einem günstigen Bowdenextruder angebaut.
+
+<a href="replicator_hot_1.jpg">
+  <img src="replicator_hot_1_tn.jpg">
+</a>
+<a href="replicator_hot_2.jpg">
+  <img src="replicator_hot_2_tn.jpg">
+</a>
+
+## 2PrintBeta Prusa i2
+
+Work in progress...
+
+## CTC Replicator
+
+Work in progress...
+
+## Freesculpt 3D
+
+Work in progress...
