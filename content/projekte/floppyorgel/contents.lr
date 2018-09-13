@@ -2,7 +2,11 @@ title: Floppyorgel
 ---
 body:
 
-Unsere Floppyorgel kann nicht nur in unserem Vereinsheim bestaunt und ausprobiert werden, wir nehmen Sie auch regelmäßig zu Messen oder anderen Ausstellungen mit. Die Toolbox Floopyorgel hat mittlerweile auch international Schlagzeilen gemacht. 
+Unsere Floppyorgel kann nicht nur in unserem Vereinsheim bestaunt und ausprobiert werden, wir nehmen Sie auch regelmäßig zu Messen oder anderen Ausstellungen mit. Die Toolbox Floopyorgel hat mittlerweile auch international Schlagzeilen gemacht.
+
+Die Ansteuerung der Floppys funktioniert mit der Open Source Software [Moppy](https://github.com/SammyIAm/MoppyClassic).
+Ein Arduino Mega empfängt dabei Steuersignale von einem Desktop Programm und steuert mehrere Floppy Laufwerke parallel je MIDI Kanal an.
+Am PC kann entweder ein MIDI file abgespielt oder ein MIDI Keyboard angeschlossen werden.
 
 <iframe  width="800" height="450" src="https://www.youtube-nocookie.com/embed/K46krINg8WA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br/>
 
