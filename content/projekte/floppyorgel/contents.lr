@@ -6,13 +6,23 @@ Unsere Floppyorgel kann nicht nur in unserem Vereinsheim bestaunt und ausprobier
 
 <iframe  width="800" height="450" src="https://www.youtube-nocookie.com/embed/K46krINg8WA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br/>
 
+#### Erste Versuche und Software Tests
+![](floppy1.webp)
+
+#### Assembly
+<span class="image fit"><img src="floppy2.jpg"></span><br/>
+
+#### Debugging
+<video autoplay="true" muted="true" loop="true" controls="true"><source src="floppy3.webm" type="video/webm">Your browser does not support the video tag.</video>
+
+
 
 <span class="image fit"><img src="/projekte/floppyorgel/floppyorgel.jpg"></span><br/>
 <span class="image fit"><img src="/vereinsheim/switch.jpg"></span><br/>
 ---
 icon: fas fa-save
 ---
-pub_date: 2014-03-10
+pub_date: 2015-03-06
 ---
 teaser:
 
