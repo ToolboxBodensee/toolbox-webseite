@@ -14,6 +14,8 @@ Die aktuellsten Fortschritte unserer 3D-Druck-Arbeiten finden sich in unserem [3
 
 Selbstverständlich laufen alle unsere 3D-Drucker mit angeschlossenem [OctoPrint](https://octoprint.org) auf je einem Raspberry Pi. Mit dem [OctoPrint Slicer Plugin](https://plugins.octoprint.org/plugins/slicer/) können unsere User so drucken ohne eigene Slicer Software oder Konfigurationsdateien auf ihren PC übertragen zu müssen.
 
+In der Toolbox entstandene Designs sind auf unserem [Thingiverse Account](https://www.thingiverse.com/ToolboxBodensee/about) verfügbar.
+
 ## Mülltec
 
 Schon seit vielen Jahren besitzt die Toolbox einen 3D-Drucker-Prototypen der Firma ["Multec"](https://www.multec.de). Schon nach kurzer Zeit wurden verschiedene Probleme offensichtlich, insbesondere der Extruder bzw. das Hotend haben uns große Probleme bereitet.
