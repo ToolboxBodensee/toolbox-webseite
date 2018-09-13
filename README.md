@@ -3,10 +3,10 @@
 
 ![Toolbox](https://avatars0.githubusercontent.com/u/9744766?s=200&v=4 "Toolbox Logo")
 
- Preview:
+Status
 ------------
-Die neue Webseite ist noch nicht fertig. Eine vorabversion gibt es jedoch hier:
-[toolbox.cyber.yt](https://toolbox.cyber.yt/)
+Dies ist der Quellcode der aktuellen Webseite des Maker- und Hackerspace Toolbox Bodensee e.V.
+Diese findet man unter [toolbox-bodensee.de](https://toolbox-bodensee.de/)
 
  Lektor CMS:
 ------------
