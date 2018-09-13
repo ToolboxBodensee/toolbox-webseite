@@ -1,0 +1,37 @@
+title: Teleskopsteuerung
+---
+author: Bjoern
+---
+icon: fas fa-moon
+---
+pub_date: 2017-12-01
+---
+teaser: Arduinobasierte Teleskopnachführung für die Sternwarte Überlingen
+---
+body:
+
+Um mit einem Teleskop einen Stern mit einer höheren Vergrößerung über längere Zeit beobachten/fotografieren  zu können, benötigt man eine Nachführung. Ansonsten läuft das zu beobachtende Objekte durch die Erdrotation einfach aus dem Sichtfeld.
+
+Zur Zeit basteln wir an einer neuen Steuerung für die Nachführung für den Josef-Mosbach-Refraktor der [Sternwarte Überlingen](http://sternwarte-ueberlingen.de). Es existiert noch eine historisches vollmechanisches Uhrwerk für diese Montierung, welches aber nicht mehr im Einsatz ist. Nach einer aufwendigen Restauration ist der Antrieb aber vor Ort noch zu besichtigen. 
+
+Die neue Ansteuerung sollte die parallaktische Montierung mit Geschwindigkeiten für Stern-, Sonnen- und Mondbetrachtung betreiben können. Hierfür kommen Schrittmotoren zum Einsatz, die über die vorhandene Übersetzung die Achsen antreiben. Dabei sollten die beiden Achsen unabhängig voneinander gesteuert werden können und auch bei aktivierter Nachführung Korrekturen mit regelbarer Geschwindigkeit durchgeführt werden können.
+
+Dazu gibt es noch eine dimmbare Skalenbeleuchtung, Sicherheitsabschaltung der Nachführung nach 3 Stunden, Handbedienung mit dimmbarer LED-Beleuchtung und alternative Stromversorgung über 12V-Bleiakku.
+
+Zunächst haben wir mit einfachen Schrittmotortreibern gearbeitet und Halbschritte durch selbstgeschriebenen Code erzeugt, aber auch damit haben die Schrittmotoren noch deutlich geknarzt. Der Umstieg auf noch weiter entwickelte Bausteine mit Interpolation von 256 Zwischenschritten hat den Geräuschpegel aber dann sehr deutlich verbessert.
+
+Nach einem Installation des Prototypen am 18.8.2018 waren die ersten Rückmeldungen durchweg positiv, für den Antrieb der Deklinationsachse brauchen wir aber noch eine passende Übersetzung.
+
+Durch die hohen gesteckten Ziele sind in das Projekt und insbesondere die Konstruktion der Steuerungskiste schon mehr als zwei Jahre geflossen, wir erwarten aber in absehbarer Zeit die offizielle Einweihung...
+
+Unter anderem wurden folgende Komponenten verbaut:
+- Arduino MEGA 2560
+- 16x2 LCD-Display mit Rotfilter
+- TMC2208-Schrittmotortreiber
+- 11HS20-PG100 Schrittmotoren für Deklinations- und Rektaszensionsachse
+- DC/DC-Wandler für die verschiedenen Betriebsspannungen 5/6/9V
+
+<span class="image fit"><img src="/projekte/teleskopsteuerung/dsc02636.jpg"></span><br/>
+<span class="image fit"><img src="/projekte/teleskopsteuerung/dsc02641.jpg"></span><br/>
+<span class="image fit"><img src="/projekte/teleskopsteuerung/dsc02645.jpg"></span><br/>
+
