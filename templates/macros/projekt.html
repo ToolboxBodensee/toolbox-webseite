@@ -17,7 +17,13 @@
                 <p>Das Projekt wurde von {{ post.author }} am {{ post.pub_date.strftime('%d.%m.%Y') }} ins Leben gerufen.</p>
             </header>
           <section id="content">
-              {{ post.body }}
+            {{ post.body }}
+            {% if post.project %} 
+            <div id="lightgallery" class="row">{%
+              for blk in post.project.blocks %}
+                {{ blk }}
+              {% endfor %}</div>{%
+            endif %}
           </section>
         </div>
       </div>
