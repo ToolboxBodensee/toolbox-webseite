@@ -22,6 +22,7 @@ Die Freifunk Community Freifunk Bodensee trifft sich regelmäßig in den Räumen
 
 Natürlich gibt es in der Toolbox auch ein ordentliches Freifunk WLAN. Hier baut ein Offloader, eine Simens Futro eine FastD VPN Verbindung zu einen der Freifunk Gateways auf. Und das Freifunk Netz wird über die WLAN Access Points in der Toolbox an die Clients gebracht, die sich dann mit dem Freifunk WLAN Verbinden können.
 
+Code ist auf GitHub in der [ffbsee](https://github.com/ffbsee) organization verfügbar.
 
 <iframe src="https://player.vimeo.com/video/64814620" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 
