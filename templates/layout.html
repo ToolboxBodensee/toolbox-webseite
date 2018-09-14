@@ -20,6 +20,7 @@
     <meta name="msapplication-config" content="{{ '/images/icons/browserconfig.xml'|url }}">
     <meta name="theme-color" content="#e64f2d">
     {% block expand_header %}{% endblock %}
+    <script src="{{ '/js/jquery.min.js'|url }}"></script>
   </head>
   <body class="{% if this._path == '/' %}landing {% endif %} is-preload">
     <div id="page-wrapper">
@@ -106,7 +107,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ '/js/jquery.min.js'|url }}"></script>
     <script src="{{ '/js/jquery.scrolly.min.js'|url }}"></script>
     <script src="{{ '/js/jquery.dropotron.min.js'|url }}"></script>
     <script src="{{ '/js/jquery.scrollex.min.js'|url }}"></script>
