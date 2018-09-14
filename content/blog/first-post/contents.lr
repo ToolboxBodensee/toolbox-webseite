@@ -16,9 +16,9 @@ beitrag:
 
 So steht nach einem halben Jahr an einigen Stellen und besonders bei den Projekten noch kein oder nur unfertiger Text, für den sich niemand verantwortlich fühlt.
 
-Jetzt probieren wir einen neuen Ansatz aus. Die neue Webseite der Toolbox ist fertig gerendertes HTML und CSS, das keine PHP Sicherheitslücken haben kann, da es kein PHP ist. Die Versionskontrolle und Transparenz der Webseite ist nun auch gegeben, da die Webseite über [Git](https://github.com/ToolboxBodensee/toolbox-webseite) versoniert wird.
+Jetzt probieren wir einen neuen Ansatz aus. Die neue Webseite der Toolbox ist fertig gerendertes HTML und CSS, das keine PHP Sicherheitslücken haben kann, da es kein PHP ist. Die Versionskontrolle und Transparenz der Webseite ist nun auch gegeben, da die Webseite über [Git](https://github.com/ToolboxBodensee/toolbox-webseite) versioniert wird.
 
-Als Content Management System kommt hier [Lektror](https://getlektor.com) zum Einsatz. Bei Lektor handelt es sich um ein in Python geschriebenes CMS, das ähnlich wie Hugo aus Dateien mit Markdown Syntax statisches HTML generiert und dieses auch bei Bedarf auf den Webserver hochladen kann.
+Als Content Management System kommt hier [Lektor](https://getlektor.com) zum Einsatz. Bei Lektor handelt es sich um ein in Python geschriebenes CMS, das ähnlich wie Hugo aus Dateien mit Markdown Syntax statisches HTML generiert und dieses auch bei Bedarf auf den Webserver hochladen kann.
 
 Bei dem Webserver handelt es sich nun nicht um irgendeine virtuelle Shared-Hosting Instanz bei kasserver.com, die aus großen Teilen des Internets nicht erreichbar ist, sondern um einen kuscheligen Platz auf einem dedizierten Server bei Hetzner, der auch schon Seiten für andere Hackerspaces wie die [see-base](https://see-base.de), für [Freifunk Bodensee](https://ffbsee.net) und für das [C3WOC](https://c3woc.de) ausliefert.
 
