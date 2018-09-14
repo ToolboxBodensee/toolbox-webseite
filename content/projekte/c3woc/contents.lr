@@ -6,19 +6,36 @@ beitrag: Für alle
 ---
 body:
 
-<span class="image right"><img src="https://c3woc.de/images/logo/c3woc.svg" alt="C3WOC Logo"></span>
+<span class="image right" style="background: black;"><img src="https://c3woc.de/images/logo/c3woc.svg" alt="C3WOC Logo"></span>
 
+ Bestimmung
+==========
 Das C3WOC hat es sich zur Aufgabe gemacht, Hacker und Nerds mit Waffeln zu versorgen.
-Das C3 Waffel Operation Center hat an den strategisch wichtigsten Orten im Chaos Waffeleisen plaziert. 
-So ist eine der wichtigsten Waffelbasen der Bodensee und damit natürlich auch der Hackerspace Toolbox Bodensee e.V.
+Das C3 Waffel Operation Center hat daher an den strategisch wichtigen Orten im Chaos Waffeleisen plaziert. 
+So ist eine der wichtigsten Waffelbasen natürlich der Bodensee und damit auch der Hackerspace Toolbox Bodensee e.V.
 
-So wird in dem Gebäude der Toolbox gelegendlich das Waffeleisen eingesetz und es werden Waffeln produziert.
+So wird in dem Gebäude der Toolbox gelegentlich das Waffeleisen eingesetzt und es werden Waffeln produziert.
 
-Auf der Seite des [C3WOC](https://c3woc.de/#tourdaten) gibt es sowohl aktuelle [Tourdaten](https://c3woc.de/#tourdaten) und einen Blog, der von vielen Veranstaltungen berichtet, bei denen das C3WOC war.
-Den Sourcecode der Seite gibt es [hier](https://gitea.see-base.de/C3WOC/c3woc).
 
-Wenn du auch ein Nerdiges Event veranstaltest, frag doch mal beim C3WOC nach, ob es dort nicht auch Waffeln geben könnte.
+ Waffeln! Wann und Wo?
+==========
+Auf der Seite des [C3WOC](https://c3woc.de/) gibt es sowohl aktuelle [Tourdaten](https://c3woc.de/#tourdaten) und einen [Blog](https://c3woc.de/blog), der von vielen Veranstaltungen berichtet, bei denen das C3WOC vor Ort waffeln macht.
 
+Wenn du auch ein nerdiges Event veranstaltest, frag doch mal beim C3WOC nach, ob es dort nicht auch Waffeln geben könnte.
+
+ Mitmachen
+===========
+Da aber alleine Waffeln machen wenig Spaß macht, suchen wir noch mehr Nerds, die Lust haben sich beim C3WOC zu beteiligen und Waffeln zu machen.
+Die Waffeln des C3WOCs unterliegen hohen Qualitätsanforderungen und werden beispielweise nur mit hochwertigeren Zutaten hergestellt und es wird sehr auf Hygiene geachtet. Gerade bei größeren Veranstaltungen ist zum Beispiel beim Arbeiten mit rohen Eiern eine Salmonelleninfektion eine nicht zu vernachlässigende Gefahr. Hier empfehlen wir dringend auf bereits geschälte Eier (Eiklar) zu setzen oder eine der Ei-freien Rezepte des C3WOC einzusetzen.
+
+Die Grafiken des C3WOC wie Aufkleber und Logos, sowie die Webseite finden sich in einem vom hackerspace see-base gehosteten Gitea unter [gitea.see-base.de/C3WOC](https://gitea.see-base.de/c3woc).
+
+Wir wären hoch erfreut, wenn du Lust hast Teil des C3WOC zu werden. Schau dafür einfach mal auf [c3woc.de/mitmachen](https://c3woc.de/mitmachen) vorbei und schreibe eine E-Mail an das C3WOC.
+
+<a class="button" href="mailto:waffel@c3woc.de">waffel@c3woc.de</a>
+
+ Bilder
+=======
 Hier noch einige Bilder von Waffeln und anderen Produkten des C3WOC.
 
 
@@ -34,6 +51,6 @@ pub_date: 2017-11-01
 ---
 twitter_handle: c3woc
 ---
-teaser: Waffeln sind ein wichter Bestandteil der Ernährung von Nerds und Chaoten. So wurde das C3 Waffel Operation Center gegründet und seitdem finden in der Toolbox regelmäßig Waffelexperimente statt.
+teaser: Waffeln sind ein wichtiger Bestandteil der Ernährung von Nerds und Chaoten. So wurde das C3 Waffel Operation Center gegründet und seitdem finden in der Toolbox regelmäßig Waffelexperimente statt.
 ---
 icon: fas fa-heart
