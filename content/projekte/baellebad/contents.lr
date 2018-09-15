@@ -8,13 +8,18 @@ Das Bällebad ist eine Leihgabe der see-base (es gibt hier eine Mitgliederübers
 
 Das Bällebad wurde während der komma.klar 2017 in Owingen während des Events aus Holz eines Sägewerkes selber geleimt, gesägt, geschliffen und behandelt. Finanziert wurde es zum Teil aus der Kasse der see-base Überlingen und durch Spenden der komma.klar Teilnehmerinnen.
 
-
-<span class="image fit"><img src="/projekte/baellebad/baellebad_1.jpg"></span><br/>
-<span class="image fit"><img src="/projekte/baellebad/baellebad_0.jpg"></span><br/>
-<span class="image fit"><img src="/projekte/baellebad/baellebad_2.jpg"></span><br/>
 ---
 icon: far fa-dot-circle
 ---
 pub_date: 2017-06-23
 ---
 teaser: Das Bällebad ist eine Leihgabe der [see-base](https://see-base.de/) aus Überlingen, steht aber permanent im Vereinsheim des Toolbox Bodensee e.V. und wird auch gerne zu Events wie z.B. der Maker Faire Bodensee mitgebracht.
+---
+project:
+
+#### pro_img ####
+image: baellebad_0.jpg
+#### pro_img ####
+image: baellebad_1.jpg
+#### pro_img ####
+image: baellebad_2.jpg
