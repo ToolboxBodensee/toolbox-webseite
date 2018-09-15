@@ -8,13 +8,13 @@ pub_date: 2017-05-06
 ---
 body:
 
-Es gibt nicht wenige Hackerspace in dieser Welt. Um möglichst standardisiert einige Informationen über Hackerspace auszutauschen, wurde die SpaceAPI Entwickelt. In dieser API stehen einige Daten über den hackerspace, wie zum Beispiel ob die Türe gerade für Besucher und Gäste geöffnet ist oder nicht.
+Es gibt nicht wenige Hackerspaces in dieser Welt. Um möglichst standardisiert einige Informationen über Hackerspaces auszutauschen, wurde die SpaceAPI entwickelt. In dieser API stehen einige Daten über den Hackerspace, wie zum Beispiel ob die Türe gerade für Besucher und Gäste geöffnet ist oder nicht.
 
-Als moderner Maker- und Hackerspace ist die Toolbox natürlich dabei und zigt nicht nur auf der Webseite an ob der Hackerspace geöffnet ist, sondern auch per SpaceAPI.
+Als moderner Maker- und Hackerspace ist die Toolbox natürlich dabei und zeigt nicht nur auf der Webseite an ob der Hackerspace geöffnet ist, sondern auch per SpaceAPI.
 
 <a href="https://spaceapi.ccc.de" class="button">SpaceAPI</a>
 
-Auf [GitHub](https://github.com/fixme-lausanne/OpenSpaceDirectory/blob/master/directory.json) findet man eine Liste mit JSON Dateien, die die Hackerspace bereit stellen.
+Auf [GitHub](https://github.com/fixme-lausanne/OpenSpaceDirectory/blob/master/directory.json) findet man eine Liste mit JSON Dateien, die die Hackerspaces bereit stellen.
 Die Informationen zur Toolbox sind [hier](https://bodensee.space/spaceapi/toolboxbodenseeev.json) zu finden:
 ```
 https://bodensee.space/spaceapi/toolboxbodenseeev.json
