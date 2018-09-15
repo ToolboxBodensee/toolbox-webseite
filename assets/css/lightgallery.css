@@ -47,13 +47,13 @@
   right: 20px;
 }
 .lg-actions .lg-next:before {
-  content: ">";
+  content: "\e095";
 }
 .lg-actions .lg-prev {
   left: 20px;
 }
 .lg-actions .lg-prev:after {
-  content: "<";
+  content: "\e094";
 }
 
 @-webkit-keyframes lg-right-end {
@@ -185,10 +185,10 @@
   color: #FFF;
 }
 .lg-toolbar .lg-close:after {
-  content: "X";
+  content: "\e070";
 }
 .lg-toolbar .lg-download:after {
-  content: "⭳";
+  content: "\e0f2";
 }
 
 .lg-sub-html {
@@ -362,7 +362,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   width: 50px;
 }
 .lg-outer .lg-toogle-thumb:after {
-  content: "▼";
+  content: "\e1ff";
 }
 .lg-outer .lg-toogle-thumb:hover {
   color: #FFF;
@@ -473,10 +473,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-autoplay-button:after {
-  content: "▶";
+  content: "\e01d";
 }
 .lg-show-autoplay .lg-autoplay-button:after {
-  content: "▶";
+  content: "\e01a";
 }
 
 .lg-outer.lg-css3.lg-zoom-dragging .lg-item.lg-complete.lg-zoomable .lg-img-wrap, .lg-outer.lg-css3.lg-zoom-dragging .lg-item.lg-complete.lg-zoomable .lg-image {
@@ -519,14 +519,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 #lg-zoom-in:after {
-  content: "+";
+  content: "\e311";
 }
 
 #lg-actual-size {
   font-size: 20px;
 }
 #lg-actual-size:after {
-  content: "=";
+  content: "\e033";
 }
 
 #lg-zoom-out {
@@ -534,7 +534,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   pointer-events: none;
 }
 #lg-zoom-out:after {
-  content: "-";
+  content: "\e312";
 }
 .lg-zoomed #lg-zoom-out {
   opacity: 1;
@@ -622,7 +622,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-fullscreen:after {
-  content: "⇗";
+  content: "\e20c";
 }
 .lg-fullscreen-on .lg-fullscreen:after {
   content: "\e20d";
@@ -657,7 +657,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-outer.lg-dropdown-active {
   color: #FFF;
 }
+
 #lg-share { display: none; }
+
 .lg-outer .lg-dropdown {
   background-color: #fff;
   border-radius: 2px;
