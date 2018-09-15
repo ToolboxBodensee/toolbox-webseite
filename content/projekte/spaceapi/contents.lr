@@ -1,0 +1,30 @@
+title: Hackerspace API
+---
+author: see-base
+---
+icon: fas fa-search-location
+---
+pub_date: 2017-05-06
+---
+body:
+
+Es gibt nicht wenige Hackerspaces in dieser Welt. Um möglichst standardisiert einige Informationen über Hackerspaces auszutauschen, wurde die SpaceAPI entwickelt. In dieser API stehen einige Daten über den Hackerspace, wie zum Beispiel ob die Türe gerade für Besucher und Gäste geöffnet ist oder nicht.
+
+Als moderner Maker- und Hackerspace ist die Toolbox natürlich dabei und zeigt nicht nur auf der Webseite an ob der Hackerspace geöffnet ist, sondern auch per SpaceAPI.
+
+<a href="https://spaceapi.ccc.de" class="button">SpaceAPI</a>
+
+Auf [GitHub](https://github.com/fixme-lausanne/OpenSpaceDirectory/blob/master/directory.json) findet man eine Liste mit JSON Dateien, die die Hackerspaces bereit stellen.
+Die Informationen zur Toolbox sind [hier](https://bodensee.space/spaceapi/toolboxbodenseeev.json) zu finden:
+```
+https://bodensee.space/spaceapi/toolboxbodenseeev.json
+```
+
+In der Toolbox selber gibt es einen Schalter, mit dem sich der Status des Hackerspace auf ``open`` und ``closed`` ändern lässt. Das Git zum selber gebauten Server-Backend dazu gibt es hier: [github.com/see-base/spaceapi-server](https://github.com/see-base/spaceapi-server).
+
+Und natürlich konnten wir es nicht lassen dazu auch einen IRC Bot zu schreiben, mit dem sich der Space Status abrufen oder ändern lässt. Diesen gibt es im Channel [#see-base](https://webirc.hackint.org/#irc://irc.hackint.org/#see-base) auf Hackint und als Quellcode natürlich im [git](https://github.com/see-base/spaceapi-bot).
+---
+teaser:
+
+Mit der SpaceAPI wird versucht, spannende Informationen über diverse Hackerspaces zu sammeln, so das man diese über eine API abrufen kann.
+Eine dieser Informationen ist, ob der Hackerspace offen oder zu ist.

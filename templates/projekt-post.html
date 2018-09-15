@@ -1,6 +1,17 @@
 {% extends "layout.html" %}
 {% from "macros/projekt.html" import render_blog_post %}
+{% block expand_header %}
+<link href="{{ '/css/lightgallery.css'|url }}" rel="stylesheet">
+{% endblock %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}          
   {{ render_blog_post(this) }}
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#lightgallery').lightGallery();
+    });
+  </script>
+  <script src="{{ '/js/picturefill.min.js'|url }}"></script>
+  <script src="{{ '/js/lightgallery-all.min.js'|url }}"></script>
+  <script src="{{ '/js/jquery.mousewheel.min.js'|url }}"></script>
 {% endblock %}
