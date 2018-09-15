@@ -16,13 +16,6 @@ PowerDeliveryBoard: Befindet sich momentan in Entwicklung, soll dem Flightcontro
 
 Mehr Informationen, Quellcode und Platinenlayouts sind auf GitHub zu finden: [github.com/ToolboxPlane](https://github.com/ToolboxPlane)
 
-<span class="image fit"><img src="/projekte/toolboxplane/plane_night.jpg"></span><br/>
-<span class="image fit"><img src="/projekte/toolboxplane/plane_wing.jpg"></span><br/>
-<span class="image fit"><img src="/projekte/toolboxplane/fc_debugging.jpg"></span><br/>
-<span class="image fit"><img src="/projekte/toolboxplane/remote.jpg"></span><br/>
-<span class="image fit"><img src="/projekte/toolboxplane/fc3.jpg"></span><br/>
-<span class="image fit"><img src="/projekte/toolboxplane/pdb.jpg"></span><br/>
-
 ---
 icon: fas fa-fighter-jet
 ---
@@ -33,3 +26,18 @@ teaser:
 Unser Ziel ist es, ein Modellflugzeug so umzubauen, dass es autonom fliegen kann.
 Dafür entwickeln wir einen eigenen Flightcontroller, Software und Hardware, sodass das Flugzeug eigenständig Starten, Landen und Wegpunkte ansteuern kann.
 
+---
+project:
+
+#### pro_img ####
+image: plane_night.jpg
+#### pro_img ####
+image: plane_wing.jpg
+#### pro_img ####
+image: fc_debugging.jpg
+#### pro_img ####
+image: remote.jpg
+#### pro_img ####
+image: fc3.jpg
+#### pro_img ####
+image: pdb.jpg
