@@ -47,7 +47,14 @@ Unter anderem wurden folgende Komponenten verbaut:
 - 11HS20-PG100 Schrittmotoren für Deklinations- und Rektaszensionsachse
 - DC/DC-Wandler für die verschiedenen Betriebsspannungen 5/6/9V
 
-<span class="image fit"><img src="/projekte/teleskopsteuerung/dsc02636.jpg"></span><br/>
-<span class="image fit"><img src="/projekte/teleskopsteuerung/dsc02641.jpg"></span><br/>
-<span class="image fit"><img src="/projekte/teleskopsteuerung/dsc02645.jpg"></span><br/>
 
+
+---
+project:
+
+#### pro_img ####
+image: dsc02645.jpg
+#### pro_img ####
+image: dsc02641.jpg
+#### pro_img ####
+image: dsc02636.jpg
