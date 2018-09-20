@@ -12,7 +12,13 @@ Diese findet man unter [toolbox-bodensee.de](https://toolbox-bodensee.de/)
 ------------
 Das CMS für diese Webseite ist [Lektor](https://www.getlektor.com/).
 Die Installationsanleitung gibt es [hier](https://www.getlektor.com/downloads/).
-Lektor ist auch als Python2 Modul verfügbar und kann mit ``python2 -m lektor`` verwendet werden.
+Lektor ist auch als Python Modul verfügbar und kann mit ``python2 -m lektor`` verwendet werden.
+Auch die Installation über pip ist möglich:
+```bash
+virtualenv venv
+. venv/bin/activate
+pip install lektor
+```
 
 Zum Starten von Lektor muss man mit der Komandozeile in das root Verzeichnis der Webseite gehen
 und dort mit dem Befehl ``lektor server`` startet man Lektor und öffnen auf 127.0.0.1 den Port 5000 über den die Webseite
