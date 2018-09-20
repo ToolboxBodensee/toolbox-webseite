@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ToolboxBodensee/toolbox-webseite.svg?branch=master)](https://travis-ci.org/ToolboxBodensee/toolbox-webseite)
+
  Webseite der Toolbox Bodensee e.V.
 ====================================
 
