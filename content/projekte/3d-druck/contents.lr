@@ -16,6 +16,23 @@ Selbstverständlich laufen alle unsere 3D-Drucker mit angeschlossenem [OctoPrint
 
 In der Toolbox entstandene Designs sind auf unserem [Thingiverse Account](https://www.thingiverse.com/ToolboxBodensee/about) verfügbar.
 
+## Replicator 2
+
+Der MakerBot Replicator 2 ist schon die längste Zeit im Besitz der Toolbox und hat, insbesondere zu Beginn der Vereinsgeschichte, viele neue Mitglieder angelockt.
+
+Als erste Modifikation wurde die quelloffene Sailfish-Firmware geflasht. Außerdem befindet sich mittlerweile ein Raspberry Pi 2 mit OctoPrint am Replicator, mithilfe dem [GPX Plugin](https://plugins.octoprint.org/plugins/gpx/) wird der G-Code live in die Sailfish kompatiblen Befehle umgewandelt.
+
+Trotzdem hatten wir nach einiger Zeit viele Probleme mit dem Hotend und dem Extruder. Deshalb wurde kurzerhand ein E3Dv6 Hotend mit einem günstigen Bowdenextruder angebaut.
+
+<div id="lightgallery">
+  <a href="replicator_hot_1.jpg">
+    <img src="replicator_hot_1@360x360.jpg">
+  </a>
+  <a href="replicator_hot_2.jpg">
+    <img src="replicator_hot_2@360x360.jpg">
+  </a>
+</div>
+
 ## Multec
 
 Schon seit vielen Jahren besitzt die Toolbox einen 3D-Drucker-Prototypen der Firma ["Multec"](https://www.multec.de). Schon nach kurzer Zeit wurden verschiedene Probleme offensichtlich, insbesondere der Extruder bzw. das Hotend haben uns große Probleme bereitet.
@@ -30,27 +47,14 @@ Selbstverständlich wurde auch ein Raspberry Pi 3 mit OctoPrint in das Gehäuse 
 
 Als nächster Schritt soll das Heatbed ersetzt werden, da die Silikon-Heizmatte (220V) kaum 55°C erreicht.
 
-<a href="multec_ex_1.jpg">
-  <img src="multec_ex_1_tn.jpg">
-</a>
-<a href="multec_ex_2.jpg">
-  <img src="multec_ex_2_tn.jpg">
-</a>
-
-## Replicator 2
-
-Der MakerBot Replicator 2 ist schon die längste Zeit im Besitz der Toolbox und hat, insbesondere zu Beginn der Vereinsgeschichte, viele neue Mitglieder angelockt.
-
-Als erste Modifikation wurde die quelloffene Sailfish-Firmware geflasht. Außerdem befindet sich mittlerweile ein Raspberry Pi 2 mit OctoPrint am Replicator, mithilfe dem [GPX Plugin](https://plugins.octoprint.org/plugins/gpx/) wird der G-Code live in die Sailfish kompatiblen Befehle umgewandelt.
-
-Trotzdem hatten wir nach einiger Zeit viele Probleme mit dem Hotend und dem Extruder. Deshalb wurde kurzerhand ein E3Dv6 Hotend mit einem günstigen Bowdenextruder angebaut.
-
-<a href="replicator_hot_1.jpg">
-  <img src="replicator_hot_1_tn.jpg">
-</a>
-<a href="replicator_hot_2.jpg">
-  <img src="replicator_hot_2_tn.jpg">
-</a>
+<div id="lightgallery">
+  <a href="multec_ex_1.jpg">
+    <img src="multec_ex_1@360x360.jpg">
+  </a>
+  <a href="multec_ex_2.jpg">
+    <img src="multec_ex_2@360x360.jpg">
+  </a>
+</div>
 
 ## 2PrintBeta Prusa i2
 
@@ -63,3 +67,16 @@ Work in progress...
 ## Freesculpt 3D
 
 Work in progress...
+
+## Galerie
+---
+project:
+
+#### pro_img ####
+image: replicator_hot_1.jpg
+#### pro_img ####
+image: replicator_hot_2.jpg
+#### pro_img ####
+image: multec_ex_1.jpg
+#### pro_img ####
+image: multec_ex_2.jpg
