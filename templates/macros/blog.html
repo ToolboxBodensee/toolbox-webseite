@@ -13,12 +13,11 @@
         Geschrieben von
         {% if post.twitter_handle %}
           <a href="https://chaos.social/@{{ post.twitter_handle
-            }}">{{ post.author or post.twitter_handle }}</a>
-        {% else %}
-          {{ post.author }}
-        {% endif %}
-        am {{ post.pub_date.strftime('%d.%m.%Y') }}
-      </p>
+          }}">{{ post.author or post.twitter_handle }}</a>{%
+          else %}{{ post.author }}{%
+          endif %}{% if post.pub_date
+          %} am {{ post.pub_date.strftime('%d.%m.%Y') }}{%
+          endif %}</p>
 	</header>
 <!-- Content -->
     <section id="content">
