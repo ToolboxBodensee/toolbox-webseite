@@ -2556,7 +2556,7 @@ body.is-touch #banner {
         -webkit-font-smoothing: antialiased;
         text-transform: none !important; }
       #titleBar .toggle:before {
-        background: #d23128;
+        background: #5480f1;
         color: rgba(255, 255, 255, 0.5);
         display: block;
         font-size: 18px;
