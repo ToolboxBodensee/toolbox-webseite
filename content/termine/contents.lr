@@ -18,20 +18,14 @@ web: Kalender in der Cloud
 ---
 web_url: https://wirtschaftseingang.de/index.php/apps/calendar/embed/1QH1331IBAKMGS4Q
 ---
-kalender_id: dByspJs9xi5j4f4A
+kalender_id: https://bodensee.space/calendarfeeds/toolboxpublic.ics
 ---
 content:
 
-<!-- TODO: Create Script or Javascript, that can parse ICS files -->
-<center><iframe id='cv_if5' src='http://cdn.instantcal.com/cvir.html?id=cv_nav5&file=https%3A%2F%2Fbodensee.space%2Fcalendarfeeds%2Ftoolboxpublic.ics&theme=RE&ccolor=%23ffffc0&dims=1&gtype=cv_daygrid&gcloseable=0&gnavigable=1&gperiod=day7&itype=cv_simpleevent' allowTransparency=true scrolling='no' frameborder=0 height=900 width=800></iframe></center>
-<br/>
+<div id="calendar"><noscript>Bitte aktiviere JavaScript um den interaktiven Terminkalender zu nuzten.</noscript></div>
 
-**Alle Termine der Toolbox stehen in den oben verlinkten Kalendern.**
+## Offener Abend
 
-**Die wichtigsten kommenden Termine im Überblick:**
-
- offener Abend
-----------
 Jeden Donnerstag findet normalerweise regelmäßig unser offener Abend statt.
 Um 19 Uhr gibt es in der Toolbox eine kleine Besprechung in der aktuelle Themen und wichtige anstehende Ereignisse besprochen werden. 
 Außerdem hat jeder der Anwesenden die Möglichkeit, Fragen und Ideen, die ihn beschäftigen, mit den anderen zu teilen. Oder jemanden zu finden, der sich mit einem der Werkzeuge oder Projekte in der Toolbox auskennt. 
@@ -39,8 +33,8 @@ Das Vereinsheim ist meistens ab 17:30 Uhr offen. Es schadet aber nichts, vorher 
 
 Den restlichen Abend verbringen Menschen meistens damit, sich miteinander auszutauschen, an Ihren Projekten weiter zu basteln, in der Küche oder am Grill essen für alle zuzubereiten oder aufzuessen oder sich einfach irgendwo in der Toolbox gemütlich zu entspannen.
 
-Tag der offenen Türe
----------
-Am Samstag, den 17. November 2018 ist der Tag der offenen Toolbox Türe. 
-Hier gibt es den ganzen Tag etwas zu erleben, die Toolbox kennen zu lernen und sich auf ein Getränk oder ein Stück Kuchen zusammen zu setzen.
-Es wird ein umfangreiches Vortrags- und Workshopprogramm geben, das kurz vorher noch bekannt gegeben wird.
+## Tag der offenen Türe
+
+Am Samstag den 17. November 2018 ist der Tag der offenen Toolbox Türe. 
+Hier gibt es den ganzen Tag etwas zu erleben sowie Gelegenheit die Toolbox kennen zu lernen und sich auf ein Getränk oder ein Stück Kuchen zusammen zu setzen.
+Es wird ein umfangreiches Vortrags- und Workshopprogramm geben, welches kurz vorher noch bekannt gegeben wird.
