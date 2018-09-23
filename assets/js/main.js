@@ -59,7 +59,7 @@
 			// Title Bar.
 				$(
 					'<div id="titleBar">' +
-						'<a href="#navPanel" class="fas fa-adjust toggle"></a>' +
+						'<a href="#navPanel" class="fas fa-bars toggle"></a>' +
 						'<span class="title">' + $('#logo').html() + '</span>' +
 					'</div>'
 				)
