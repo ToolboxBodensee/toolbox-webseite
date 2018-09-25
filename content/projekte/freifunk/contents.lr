@@ -8,21 +8,21 @@ pub_date: 2016-01-28
 ---
 teaser:
 
-Freifunk ist eine dezentrales, unabhängiges Bürgernetz mit Zugang zum Internet. Freifunk bedeutet offene, uneingeschränkte und freie digitale Kommunikation. Jeder kann sich kostenlos über WLAN verbinden, ohne Passwort, ohne Registrierung. Jeder darf Freifunk nutzen, mitmachen und Freifunk erweitern. 
+Freifunk ist ein dezentrales, unabhängiges Bürgernetz mit Zugang zum Internet. Freifunk bedeutet offene, uneingeschränkte und freie digitale Kommunikation. Jeder kann sich kostenlos über WLAN verbinden, ohne Passwort, ohne Registrierung. Jeder darf Freifunk nutzen, mitmachen und Freifunk erweitern. 
 ---
 body:
 
-[Freifunk](https://freifunk-bodensee.net/start.html) ist eine dezentrales, unabhängiges Bürgernetz mit Zugang zum Internet. Freifunk bedeutet offene, uneingeschränkte und freie digitale Kommunikation. Jeder kann sich kostenlos über WLAN verbinden, ohne Passwort, ohne Registrierung. Jeder darf Freifunk nutzen, mitmachen und Freifunk erweitern. Freifunk ist eine nicht-kommerzielle Initiative für freie Funknetzwerke. 
+[Freifunk](https://freifunk-bodensee.net/start.html) ist ein dezentrales, unabhängiges Bürgernetz mit Zugang zum Internet. Freifunk bedeutet offene, uneingeschränkte und freie digitale Kommunikation. Jeder kann sich kostenlos über WLAN verbinden, ohne Passwort, ohne Registrierung. Jeder darf Freifunk nutzen, mitmachen und Freifunk erweitern. Freifunk ist eine nicht-kommerzielle Initiative für freie Funknetzwerke. 
 
 <span class="image fit" style="background: white;"><img src="https://freifunk-bodensee.net/lib/tpl/dokuwiki-template/images/logo.svg"></span><br/>
 
-Seit Anfang 2016 gibt es die Freifunk Initiative Freifunk Bodensee. Diese hat das bestreben, jeden zu ermöglichen ohne großen Aufwand oder Rechtsunsicherheiten einen offenen und freien Zugang zum Freifunk Netz und damit auch zum Internet zu ermöglichen.
+Seit Anfang 2016 gibt es die Freifunk-Initiative "Freifunk Bodensee". Diese hat das Bestreben, Jedem die Bereitstellung eines offenen und freien Zugangs zum Freifunk-Netz und damit auch zum Internet zu ermöglichen. Ziel ist es, die Teilnahme am Netz mit geringem Aufwand und möglichst ohne Rechtsunsicherheit zu gestalten.
 
-Die Freifunk Community Freifunk Bodensee trifft sich regelmäßig in den Räumen der Toolbox Bodensee um dort ihre Freifunktreffen abzuhalten und interessierten Menschen Freifunk zu erklären und beim Einrichten zu helfen.
+Die Freifunk-Community Freifunk Bodensee trifft sich regelmäßig in den Räumen der Toolbox Bodensee, um dort ihre Freifunktreffen abzuhalten und interessierten Menschen Freifunk zu erklären und beim Einrichten der Access Points zu helfen.
 
-Natürlich gibt es in der Toolbox auch ein ordentliches Freifunk WLAN. Hier baut ein Offloader, eine Simens Futro eine FastD VPN Verbindung zu einen der Freifunk Gateways auf. Und das Freifunk Netz wird über die WLAN Access Points in der Toolbox an die Clients gebracht, die sich dann mit dem Freifunk WLAN Verbinden können.
+Natürlich gibt es in der Toolbox auch ein ordentliches Freifunk-WLAN. Hier baut ein Offloader - eine Siemens Futro - eine fastd-VPN Verbindung zu einen der Freifunk-Gateways auf. Das Freifunk-Netz wird über mehrere Ubiquiti WLAN-Access Points in der Toolbox verteilt.
 
-Code ist auf GitHub in der [ffbsee](https://github.com/ffbsee) organization verfügbar.
+Code ist auf GitHub im Projekt [ffbsee](https://github.com/ffbsee) verfügbar.
 
 <iframe src="https://player.vimeo.com/video/64814620" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 
