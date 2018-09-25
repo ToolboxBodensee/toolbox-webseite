@@ -45,7 +45,7 @@
                 %}><a href="{{ href|url }}">{{ title }}</a>{%
                   if title == 'Impressum' %}
                     <ul><li><a href="{{ '/impressum'|url }}">Impressum</a></li>
-                    <li><a href="{{ '/datenschutz'|url }}">Datenschmutz</a></li>
+                    <li><a href="{{ '/datenschutz'|url }}">Datenschutz</a></li>
                   </ul>{%
                   elif title == 'Projekte' %}
                     <ul>{% set root = site.get('/projekte/') %}{%
