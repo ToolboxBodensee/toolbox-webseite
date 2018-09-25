@@ -6,7 +6,8 @@ cache:
     - $HOME/.cache/lektor/builds
 install: "pip install Lektor"
 script: "lektor build"
-before_deploy: "echo 'c3woc.de ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBC5NslYj+wtriBuKIxJfDRm9E2hnlstWR8durQ6pKvVvP7wjcoXIyAxe41GvJ9SoEhSjF7oVlzlw+zAkzl5WOZ4=' > ~/.ssh/known_hosts"
+before_deploy: "echo 'c3woc.de ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBC5NslYj+wtriBuKIxJfDRm9E2hnlstWR8durQ6pKvVvP7wjcoXIyAxe41GvJ9SoEhSjF7oVlzlw+zAkzl5WOZ4=' > ~/.ssh/known_hosts; echo $LEKTOR_DEPLOY_KEY | base64 -d > ~/.ssh/toolbox"
 deploy:
   provider: script
-  script: "lektor deploy --key $LEKTOR_DEPLOY_KEY toolbox"
+  script: "lektor deploy --key-file ~/.ssh/toolbox toolbox"
+after_deploy: "rm -rf ~/.ssh/toolbox"
