@@ -33,29 +33,6 @@ Trotzdem hatten wir nach einiger Zeit viele Probleme mit dem Hotend und dem Extr
   </a>
 </div>
 
-## Multec
-
-Schon seit vielen Jahren besitzt die Toolbox einen 3D-Drucker-Prototypen der Firma ["Multec"](https://www.multec.de). Schon nach kurzer Zeit wurden verschiedene Probleme offensichtlich, insbesondere der Extruder bzw. das Hotend haben uns große Probleme bereitet.
-
-Der proprietäre Multec-Extruder besaß keinen Kühlkörper am Heatbreak. Dadurch kam es, insbesondere bei Anfängern die lange am aufgeheizten Drucker spielen, oft zu Heat-Creep Problemen, das eigentlich feste und kühle Filament oberhalb des Hotends erhitzt sich mit der Zeit immer mehr, bis kein Feeding durch den Extrudermotor mehr möglich ist und das Filament oben aus der Düse quillt. Außerdem war der Multec der einzige unserer Drucker mit 3mm Filament und verwendete deswegen einen Getriebe-Schrittmotor im Extruder.
-
-Um diese Probleme zu beseitigen haben wir das gesamte Extruder und Hotend-Assembly durch einen üblichen NEMA17 Motor und ein E3Dv6 ersetzt. Den Extruder sowie die Hotend-Halterung stammen vom ["Customizable direct drive extruder" von gtcdma](https://www.thingiverse.com/thing:1383913) zusammen mit einer einfachen selbst gezeichneten Adapterhalterung für den Multec-Extruder-Mount. [Die Daten befinden sich hier in unserem Repository](https://github.com/ToolboxBodensee/3d_printing/tree/master/direct-drive-extruder).
-
-Im Zuge dieser Veränderungen wurden ausserdem die bisher verwendeten Timing-Belts durch GT2-Belts ersetzt und dafür [neue Pulleys](https://github.com/ToolboxBodensee/3d_printing/tree/master/gt2-pulley-multec-mod) gedruckt.
-
-Selbstverständlich wurde auch ein Raspberry Pi 3 mit OctoPrint in das Gehäuse des Druckers verbaut.
-
-Als nächster Schritt soll das Heatbed ersetzt werden, da die Silikon-Heizmatte (220V) kaum 55°C erreicht.
-
-<div id="lightgallery">
-  <a href="multec_ex_1.jpg">
-    <img src="multec_ex_1@360x360.jpg">
-  </a>
-  <a href="multec_ex_2.jpg">
-    <img src="multec_ex_2@360x360.jpg">
-  </a>
-</div>
-
 ## 2PrintBeta Prusa i2
 
 Work in progress...
@@ -76,7 +53,3 @@ project:
 image: replicator_hot_1.jpg
 #### pro_img ####
 image: replicator_hot_2.jpg
-#### pro_img ####
-image: multec_ex_1.jpg
-#### pro_img ####
-image: multec_ex_2.jpg
