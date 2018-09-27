@@ -24,7 +24,7 @@ Als erste Modifikation wurde die quelloffene Sailfish-Firmware geflasht. Außerd
 
 Trotzdem hatten wir nach einiger Zeit viele Probleme mit dem Hotend und dem Extruder. Deshalb wurde kurzerhand ein E3Dv6 Hotend mit einem günstigen Bowdenextruder angebaut.
 
-<div id="lightgallery">
+<div class="lightgallery">
   <a href="replicator_hot_1.jpg">
     <img src="replicator_hot_1@360x360.jpg">
   </a>
@@ -47,7 +47,7 @@ Selbstverständlich wurde auch ein Raspberry Pi 3 mit OctoPrint in das Gehäuse 
 
 Als nächster Schritt soll das Heatbed ersetzt werden, da die Silikon-Heizmatte (220V) kaum 55°C erreicht.
 
-<div id="lightgallery">
+<div class="lightgallery">
   <a href="multec_ex_1.jpg">
     <img src="multec_ex_1@360x360.jpg">
   </a>
