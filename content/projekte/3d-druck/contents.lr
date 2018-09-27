@@ -38,8 +38,8 @@ Trotzdem hatten wir nach einiger Zeit viele Probleme mit dem Hotend und dem Extr
 Solidarity for freedom fighters everywhere!
 
 <div id="lightgallery">
-  <a href="ypg.png">
-    <img src="ypg@360x360.png">
+  <a href="ypg.svg">
+    <img src="ypg.svg">
   </a>
 </div>
 
@@ -64,4 +64,4 @@ image: replicator_hot_1.jpg
 #### pro_img ####
 image: replicator_hot_2.jpg
 #### pro_img ####
-image: ypg.png
+image: ypg.svg
