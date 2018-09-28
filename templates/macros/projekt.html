@@ -19,7 +19,7 @@
           <section id="content">
             {{ post.body }}
             {% if post.project %} 
-            <div id="lightgallery" class="row alt">{%
+            <div class="lightgallery" class="row alt">{%
               for blk in post.project.blocks %}
                 {{ blk }}
               {% endfor %}</div>{%
