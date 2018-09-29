@@ -993,7 +993,7 @@ a {
   color: rgba(200, 200, 255, 0.75);
   text-decoration: none; }
   a:hover {
-    color: #9B160F !important;
+    color: #E64F2D !important;
     border-bottom-color: transparent; }
 
 strong, b {
@@ -1405,7 +1405,7 @@ header.major {
   position: relative;
   text-align: center; }
   header.major:after {
-    background: #9B160F;
+    background: #E64F2D;
     content: '';
     display: inline-block;
     height: 0.2em;
@@ -1459,7 +1459,7 @@ textarea {
   input[type="email"]:focus,
   select:focus,
   textarea:focus {
-    border-color: #9B160F; }
+    border-color: #E64F2D; }
 
 .select-wrapper {
   text-decoration: none;
@@ -1554,7 +1554,7 @@ input[type="radio"] {
     content: '\f00c'; }
   input[type="checkbox"]:focus + label:before,
   input[type="radio"]:focus + label:before {
-    border-color: #9B160F; }
+    border-color: #E64F2D; }
 
 input[type="checkbox"] + label:before {
   border-radius: 4px; }
@@ -1840,13 +1840,13 @@ input[type="button"],
   input[type="button"]:active,
   .button:hover,
   .button:active {
-    box-shadow: inset 0 0 0 1px #9B160F;
-    color: #9B160F !important; }
+    box-shadow: inset 0 0 0 1px #E64F2D;
+    color: #E64F2D !important; }
   input[type="submit"]:active,
   input[type="reset"]:active,
   input[type="button"]:active,
   .button:active {
-    background-color: rgba(155, 22, 15, 0.15); }
+    background-color: rgba(230, 79, 45, 0.15); }
   input[type="submit"].icon:before,
   input[type="reset"].icon:before,
   input[type="button"].icon:before,
@@ -1873,19 +1873,19 @@ input[type="button"],
   input[type="reset"].special,
   input[type="button"].special,
   .button.special {
-    background-color: #9B160F;
+    background-color: #E64F2D;
     box-shadow: none;
     color: #ffffff !important; }
     input[type="submit"].special:hover,
     input[type="reset"].special:hover,
     input[type="button"].special:hover,
     .button.special:hover {
-      background-color: #b21911; }
+      background-color: #e96244; }
     input[type="submit"].special:active,
     input[type="reset"].special:active,
     input[type="button"].special:active,
     .button.special:active {
-      background-color: #84130d; }
+      background-color: #df3f1b; }
   input[type="submit"].disabled, input[type="submit"]:disabled,
   input[type="reset"].disabled,
   input[type="reset"]:disabled,
@@ -2037,9 +2037,9 @@ input[type="button"],
     border-left-width: 0.35em;
     right: 0; }
   .spotlight.style1 .content {
-    border-color: #9B160F; }
-  .spotlight.style2 .content {
     border-color: #E64F2D; }
+  .spotlight.style2 .content {
+    border-color: #9B160F; }
   .spotlight.style3 .content {
     border-color: #D74126; }
   .spotlight.inactive .content {
@@ -2078,7 +2078,7 @@ body.is-touch .spotlight {
 .wrapper {
   padding: 6em 0 4em 0; }
   .wrapper.style2 {
-    background: #9B160F; }
+    background: #E64F2D; }
     .wrapper.style2 input[type="text"]:focus,
     .wrapper.style2 input[type="password"]:focus,
     .wrapper.style2 input[type="email"]:focus,
@@ -2105,7 +2105,7 @@ body.is-touch .spotlight {
     .wrapper.style2 input[type="button"].special,
     .wrapper.style2 .button.special {
       background-color: #ffffff;
-      color: #9B160F !important; }
+      color: #E64F2D !important; }
       .wrapper.style2 input[type="submit"].special:hover, .wrapper.style2 input[type="submit"].special:active,
       .wrapper.style2 input[type="reset"].special:hover,
       .wrapper.style2 input[type="reset"].special:active,
@@ -2183,7 +2183,7 @@ body.is-touch .spotlight {
     .dropotron > li:first-child {
       border-top: 0; }
     .dropotron > li.active > a, .dropotron > li.active > span {
-      color: #9B160F; }
+      color: #E64F2D; }
   .dropotron.level-0 {
     font-size: 0.8em;
     margin-top: 1em; }
@@ -2249,7 +2249,7 @@ body.landing .dropotron.level-0 {
           #header nav ul li a:not(.button):before, #header nav ul li span:not(.button):before {
             margin-right: 0.5em; }
         #header nav ul li.active > a, #header nav ul li.active > span {
-          color: #9B160F; }
+          color: #E64F2D; }
         #header nav ul li > ul {
           display: none; }
 
@@ -2556,7 +2556,7 @@ body.is-touch #banner {
         -webkit-font-smoothing: antialiased;
         text-transform: none !important; }
       #titleBar .toggle:before {
-        background: #E64F2D;
+        background: #9B160F;
         color: rgba(255, 255, 255, 0.5);
         display: block;
         font-size: 18px;

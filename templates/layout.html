@@ -45,7 +45,7 @@
                 %}><a href="{{ href|url }}">{{ title }}</a>{%
                   if title == 'Impressum' %}
                     <ul><li><a href="{{ '/impressum'|url }}">Impressum</a></li>
-                    <li><a href="{{ '/datenschutz'|url }}">Datenschmutz</a></li>
+                    <li><a href="{{ '/datenschutz'|url }}">Datenschutz</a></li>
                   </ul>{%
                   elif title == 'Projekte' %}
                     <ul>{% set root = site.get('/projekte/') %}{%
@@ -62,6 +62,7 @@
                     <li><a href="{{ '/vereinsheim/grobwerkstatt'|url }}">Grobwerkstatt</a></li>
                     <li><a href="{{ '/vereinsheim/lounge'|url }}">Lounge</a></li>
                     <li><a href="{{ '/verein/presse'|url }}">Presse</a></li>
+                    <li><a href="https://wiki.toolbox-bodensee.de">Wiki</a></li>
                     <li><a href="{{ '/mitglied-werden'|url }}" class="button special">Mitglied werden</a></li>
                     <li><a href="{{ '/verein'|url }}">Satzung & Ordung</a></li></ul>{%
                   elif title == 'Kontakt' %}
