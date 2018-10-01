@@ -27,3 +27,12 @@ Wir sind immer auf der Suche nach alten Computersystemen, die noch in unserer Sa
 pub_date: 2018-01-01
 ---
 teaser: Wir sammeln alte Hardware (und Software) und versuchen diese in einen betriebsfähigen Zustand zu versetzen und allen Interessierten zugänglich zu machen.
+---
+project:
+
+#### pro_img ####
+image: amiga2000.jpg
+#### pro_img ####
+image: joystick.jpg
+#### pro_img ####
+image: c64.jpg
