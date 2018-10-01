@@ -16,41 +16,68 @@ Die Toolbox ist das erste Gebäude auf der linken Seite direkt am Eingangstor.
 
 Auf über 420 m² können wir den Bereichen Elektrotechnik, Holz- und Metallverarbeitung, 3D-Druck, Amateurfunk, Siebdruck sowie einem Fotolabor einen eigenen Raum bieten. Als Mitglied kannst du unsere Räumlichkeiten und Gerätschaften so oft und lange benutzen, wie du möchtest.
 
- Einige Bereiche der Toolbox
----------------------------------------
 
-<a href="/vereinsheim/elektrowerkstatt/" class="button">Elektrowerkstatt</a>
-<a href="/vereinsheim/grobwerkstatt/" class="button">Grobwerkstatt</a>
-<a href="/vereinsheim/lounge/" class="button">Lounge</a>
-
- Außenansichten
+Einige Bilder aus der Toolbox
 ---------
-
-<span class="image fit"><img src="/vereinsheim/nightview.jpg"></span><br/>
-<span class="image fit"><img src="/vereinsheim/front.jpg"></span><br/>
-<span class="image fit"><img src="/vereinsheim/outside_night.jpg"></span><br/>
-<span class="image fit"><img src="/images/home/abschnitt1.jpeg"></span><br/>
-<span class="image fit"><img src="/vereinsheim/parking.jpg"></span><br/>
-<span class="image fit"><img src="/vereinsheim/blue_diamond.jpg"></span><br/>
-<span class="image fit"><img src="/vereinsheim/street-view_night.jpg"></span><br/>
-
- Weitere Bilder aus der Toolbox
----------
-<span class="image fit"><img src="/vereinsheim/sonstige_01.jpg"></span><br/>
-<span class="image fit"><img src="/vereinsheim/switch.jpg"></span><br/>
-<span class="image fit"><img src="/vereinsheim/cnc_1.jpg"></span><br/>
-<span class="image fit"><img src="/vereinsheim/cnc_3.jpg"></span><br/>
-<span class="image fit"><img src="/vereinsheim/cnc_2.jpg"></span><br/>
-<span class="image fit"><img src="/projekte/baellebad/baellebad_0.jpg"></span><br/>
-<span class="image fit"><img src="/vereinsheim/sonstige_02.jpg"></span><br/>
-<span class="image fit"><img src="/vereinsheim/sonstige_03.jpg"></span><br/>
-<span class="image fit"><img src="/vereinsheim/switch.jpg"></span><br/>
-<span class="image fit"><img src="/projekte/amateurfunk/funk.jpg"></span><br/>
-<span class="image fit"><img src="/projekte/baellebad/baellebad_1.jpg"></span><br/>
-<span class="image fit"><img src="/vereinsheim/siebdruck.jpg"></span><br/>
-<span class="image fit"><img src="/vereinsheim/presse.jpg"></span><br/>
-<span class="image fit"><img src="/vereinsheim/see-base_siebdruck.jpg"></span><br/>
-
 
 ---
 slogan: auf über 420 m² basteln, coden, hacken und löten
+---
+precontent:
+
+ Einige Bereiche der Toolbox
+---------------------------------------
+<a href="/vereinsheim/elektrowerkstatt/" class="button">Elektrowerkstatt</a>
+<a href="/vereinsheim/grobwerkstatt/" class="button">Grobwerkstatt</a>
+<a href="/vereinsheim/lounge/" class="button">Lounge</a>
+<a href="https://tbbs.me/" class="button">Wiki</a>
+
+ Verein Toolbox Bodensee e.V.
+-------------------------------------------------------
+<a href="/verein/" class="button">Satzung & Ordnung</a>
+<a href="/verein/presse/" class="button">Presse Informationen</a>
+<a href="/mitglied-werden/" class="button special">Mitglied werden</a>
+
+---
+project:
+
+#### pro_img ####
+image: nightview.jpg
+#### pro_img ####
+image: front.jpg
+#### pro_img ####
+image: outside_night.jpg
+#### pro_img ####
+image: tb.jpg
+#### pro_img ####
+image: parking.jpg
+#### pro_img ####
+image: blue_diamond.jpg
+#### pro_img ####
+image: street-view_night.jpg
+#### pro_img ####
+image: sonstige_01.jpg
+#### pro_img ####
+image: switch.jpg
+#### pro_img ####
+image: cnc_1.jpg
+#### pro_img ####
+image: cnc_2.jpg
+#### pro_img ####
+image: cnc_3.jpg
+#### pro_img ####
+image: baellebad_0.jpg
+#### pro_img ####
+image: sonstige_02.jpg
+#### pro_img ####
+image: sonstige_03.jpg
+#### pro_img ####
+image: funk.jpg
+#### pro_img ####
+image: baellebad_1.jpg
+#### pro_img ####
+image: siebdruck.jpg
+#### pro_img ####
+image: presse.jpg
+#### pro_img ####
+image: see-base_siebdruck.jpg
