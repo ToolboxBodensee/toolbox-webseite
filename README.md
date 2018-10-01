@@ -7,7 +7,7 @@
 
 Status
 ------------
-Dies ist der Quellcode der aktuellen Webseite des Maker- und Hackerspace Toolbox Bodensee e.V.
+Dies ist der Quellcode der aktuellen Webseite des Maker- und Hackspace Toolbox Bodensee e.V.
 Diese findet man unter [toolbox-bodensee.de](https://toolbox-bodensee.de/)
 
  Lektor CMS:
