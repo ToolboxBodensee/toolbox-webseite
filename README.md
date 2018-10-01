@@ -56,3 +56,16 @@ Example use:
 ```bash
 sassc assets/sass/main.scss > assets/css/main.css
 ```
+
+ Fork aktuell halten ohne neu zu forken:
+==========================================
+```bash
+# Das Original Repository der Toolbox einbinden:
+cd toolbox-webseite
+git remote add upstream https://github.com/ToolboxBodensee/toolbox-webseite.git
+git fetch upstream
+
+# Deinen Fort lokal aktualisieren:
+git pull upstream master
+```
+
