@@ -40,6 +40,17 @@ bearbeiten, bevor diese Veröffentlicht werden!
  8. Änderungen hochladen (``git push``)
  9. Pull-Request Stellen (übers GitHub Interface)
 
+ Fork aktuell halten ohne neu zu forken:
+==========================================
+```bash
+# Das Original Repository der Toolbox einbinden:
+cd toolbox-webseite
+git remote add upstream https://github.com/ToolboxBodensee/toolbox-webseite.git
+git fetch upstream
+
+# Deinen Fork lokal aktualisieren:
+git pull upstream master
+```
 
  Design:
 ---------
@@ -57,15 +68,5 @@ Example use:
 sassc assets/sass/main.scss > assets/css/main.css
 ```
 
- Fork aktuell halten ohne neu zu forken:
-==========================================
-```bash
-# Das Original Repository der Toolbox einbinden:
-cd toolbox-webseite
-git remote add upstream https://github.com/ToolboxBodensee/toolbox-webseite.git
-git fetch upstream
 
-# Deinen Fort lokal aktualisieren:
-git pull upstream master
-```
 
