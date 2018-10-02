@@ -7,7 +7,7 @@
 
 Status
 ------------
-Dies ist der Quellcode der aktuellen Webseite des Maker- und Hackerspace Toolbox Bodensee e.V.
+Dies ist der Quellcode der aktuellen Webseite des Maker- und Hackspace Toolbox Bodensee e.V.
 Diese findet man unter [toolbox-bodensee.de](https://toolbox-bodensee.de/)
 
  Lektor CMS:
@@ -40,6 +40,18 @@ bearbeiten, bevor diese Veröffentlicht werden!
  8. Änderungen hochladen (``git push``)
  9. Pull-Request Stellen (übers GitHub Interface)
 
+ Fork aktuell halten ohne neu zu forken:
+------------------------
+```bash
+cd toolbox-webseite
+
+# Das Original Repository der Toolbox einbinden:
+git remote add upstream https://github.com/ToolboxBodensee/toolbox-webseite.git
+git fetch upstream
+
+# Deinen Fork lokal aktualisieren:
+git pull upstream master
+```
 
  Design:
 ---------
@@ -56,3 +68,6 @@ Example use:
 ```bash
 sassc assets/sass/main.scss > assets/css/main.css
 ```
+
+
+

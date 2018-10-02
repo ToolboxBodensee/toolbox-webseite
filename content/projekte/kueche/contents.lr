@@ -10,7 +10,7 @@ teaser: In der Sugarcube Corner aka dem "Mate-Syndikat" gibt es eine Vielzahl an
 ---
 body:
 
-Ein chaotischer Hackerspace ohne Club-Mate wäre undenkbar. Und so wurde die Sugarcube Corner <a href="http://mlp.wikia.com/wiki/Sugarcube_Corner" title="Namensherkunft">*</a>, die Küche in der Toolbox ins Leben gerufen.
+Ein chaotischer Hackspace ohne Club-Mate wäre undenkbar. Und so wurde die Sugarcube Corner <a href="http://mlp.wikia.com/wiki/Sugarcube_Corner" title="Namensherkunft">*</a>, die Küche in der Toolbox ins Leben gerufen.
 
 <center><a class="button" href="https://xn--kche-0ra.toolbox-bodensee.de/"> Sugarcube Corner Webseite </a> <a class="button" href="https://github.com/ToolboxBodensee/kueche.toolbox-bodensee.de">GitHub</a></center><br/>
 
@@ -74,7 +74,7 @@ Aktuell wird die  Sugarcube Corner - auch "Mate-Syndikat" von L3D gestemmt und v
 Bitte beachte: Die Sugarcube Corner funktioniert mit einer Vertrauenskasse. Das heißt, jeder hat freien Zugang zu den Kühlschränken und kann sogar die Kasse öffnen um sich passendes Wechselgeld raus zu nehmen. Das funktioniert aber nur, solange niemand die Kasse betrügt und seinen Konsum nicht bezahlt. Bitte mach das nicht sondern sei ehrlich!
 
 
-<div id="lightgallery" class="row alt">
+<div class="lightgallery" class="row alt">
 <a href="https://küche.toolbox-bodensee.de/mate.jpg">
 <img class="image fit" src="https://küche.toolbox-bodensee.de/mate.jpg" /></a>
 <a href="https://küche.toolbox-bodensee.de/bufett.jpg">
