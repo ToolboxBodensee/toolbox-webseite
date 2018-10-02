@@ -31,6 +31,11 @@
     {% if from_index %}
     <a class="button fit small" href="{{ post|url }}">Weiterlesen</a>
     <br/>
-    {% endif %}
+    {% else %}{% if post.project %}
+      <div class="lightgallery" class="row alt">{%
+        for blk in post.project.blocks %}
+      {{ blk }}
+      {% endfor %}</div>{% endif %}{%
+    endif %}
   </div>
 {% endmacro %}

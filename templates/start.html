@@ -62,7 +62,7 @@
 
 <!-- Three -->
 <section id="three" class="spotlight style3 left">
-  <span class="image fit main bottom"><img src="{{ 'images/home/abschnitt3.jpeg'|url }}" alt="" /></span>
+    <span class="image fit main bottom"><img src="{% if this.img3 %}{{ this.img3 }}{% else %}{{ 'images/home/abschnitt3.jpeg'|url }}{% endif %}" alt="" /></span>
   <div class="content">
     <header>
       <h2> {{ this.we__are_header }}</h2>

@@ -24,7 +24,7 @@ about_url: Vereinsheim
 ---
 about_url2: /vereinsheim/
 ---
-relax_header: Elektrowerkstatt
+relax_header: 3D Druck
 ---
 relax_text: Hier stehen dir Oszilloskope, Lötkolben, Netzgeräte, Messgeräte, verschiedene Bauteile und 3D-Drucker zur Verfügung. In unserer großen Elektrowerkstatt werden selbst Elektrotechniker neidisch.
 ---
@@ -34,15 +34,20 @@ relax_url: Projekte
 ---
 relax_url2: /projekte/
 ---
-we_are_header: Workshops & Vorträge
+we_are_header: Tag der offenen Türe 2018
 ---
-we_are_text: In der Toolbox finden regelmäßig Workshops und Vorträge zu vielen interessanten Themen statt.
+we_are_text: Tag der offenen Türe
 ---
-we_are_text2: Wir würden uns auch sehr freuen, wenn du etwas an ein interessiertes Publikum beitragen möchtest oder dein Wissen und deine Erfahrungen mit uns teilen möchtest. Die Teilnahme an den Vorträgen und Workshops ist sowohl für Mitglieder als auch Gäste natürlich kostenfrei.
+we_are_text2:
+
+ Am 17. November 2018 lädt die Toolbox Bodensee zum 4. Tag der offenen Tür ein!
+
+Der Tag der offenen Tür ist für alle Interessierten eine ideale Gelegenheit, sich die Toolbox einmal näher anzuschauen. Zwischen 11:00 Uhr und 19:00 Uhr heißen wir unsere Gäste herzlich willkommen!
+Es wird auch dieses Jahr wieder ein vielfältiges Programm mit vielen interessanten Vorträgen und Workshops zu verschiedenen Themen geben. 
 ---
-we_are_url: Termine
+we_are_url: Tag der offenen Türe
 ---
-we_are_url2: /termine/
+we_are_url2: /blog/tag-der-offenen-tuere-2018/
 ---
 icons_header: Schau doch mal bei uns vorbei
 ---
@@ -114,3 +119,7 @@ hinweis: Wir treffen uns jeden Donnerstagabend. Komm doch mal
 hinweis_txt: bei uns vorbei!
 ---
 hinweis_url: /kontakt/
+---
+img3: /blog/tag-der-offenen-tuere-2018/tag_der_offenen_tuere_2017_7.JPG
+---
+icons_2_url: https://www.ccc.de/de/hackerethics
