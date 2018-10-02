@@ -27,4 +27,4 @@ Und natürlich konnten wir es nicht lassen dazu auch einen IRC Bot zu schreiben,
 teaser:
 
 Mit der SpaceAPI wird versucht, spannende Informationen über diverse Hackspaces zu sammeln, so das man diese über eine API abrufen kann.
-Eine dieser Informationen ist, ob der Haerspace offen oder zu ist.
+Eine dieser Informationen ist, ob der Space offen oder geschlossen ist.
