@@ -41,10 +41,11 @@ bearbeiten, bevor diese Veröffentlicht werden!
  9. Pull-Request Stellen (übers GitHub Interface)
 
  Fork aktuell halten ohne neu zu forken:
-==========================================
+------------------------
 ```bash
-# Das Original Repository der Toolbox einbinden:
 cd toolbox-webseite
+
+# Das Original Repository der Toolbox einbinden:
 git remote add upstream https://github.com/ToolboxBodensee/toolbox-webseite.git
 git fetch upstream
 
