@@ -4,16 +4,16 @@ icon: fas fa-server
 ---
 pub_date: 2017-10-20
 ---
-teaser: Das C3 Cluster Computing Council ist eine Gruppe von Cluster und High Performance Computing Interessierten. Wir möchte ungenutzte Rechenleistung für jeden interessierten Hacker so einfach, wie moeglich zur Verfügung stellen.
+teaser: Das C3 Cluster Computing Council ist eine Gruppe von Cluster und High Performance Computing Interessierten. Wir möchte ungenutzte Rechenleistung für jedes interessierte Lebewesen so einfach, wie moeglich zur Verfügung stellen.
 ---
 title: C6
 ---
 body:
 
-Mit viel Rechenpower in einem Cluster coole Projekte realisieren zu können, findet jeder Nerd toll. Doch meistens gibt es in dem einen Teil der Hackerspace viel ungenutzte Rechenleistung während woanders Chaoten tolle Idee haben, aber nur einen Backofen mit der Rechenleistung eines Raspberry Pi, der nicht genügend Leistung hat.
-Deswegen gibt es das C6. Das C6 moechte diese Rechenleistung für jeden interessierten Hacker so einfach, wie moeglich zur Verfügung stellen.
+Mit viel Rechenpower in einem Cluster coole Projekte realisieren zu können, findet jeder Nerd toll. Doch meistens gibt es in dem einen Teil der Hackspace viel ungenutzte Rechenleistung während woanders Chaoten tolle Idee haben, aber nur einen Backofen mit der Rechenleistung eines Raspberry Pi, der nicht genügend Leistung hat.
+Deswegen gibt es das C6. Das C6 moechte diese Rechenleistung für jedes interessierte Lebewesen so einfach, wie moeglich zur Verfügung stellen.
 
-Reicht es fuer einen oder zwei Hacker, einfach bei einem Space nachzufragen, ob man "mal" einen SSH-Zugang auf einer tollen Kiste bekommt, wird es spaetestens nach dem zehnten fuer die Besitzer der Kiste aufwendig. Braucht der interessierte Hacker jedoch mehr als eine Kiste, muss er sich mit der Verteilung und Verwaltung beschaeftigen. Wir moechten dies vereinfachen und ein Framework / eine Infrastruktur zur Verfuegung stellen, die fuer Rechenleistungsanbietende Spaces so einfach und sicher zu operieren ist und  auf die fuer rechenleistungsbeduerftige Nerds so einfach zugreifbar ist, wie moeglich.
+Reicht es fuer einen oder zwei interessierte Menschen, einfach bei einem Space nachzufragen, ob man "mal" einen SSH-Zugang auf einer tollen Kiste bekommt, wird es spaetestens nach dem zehnten fuer die Besitzer der Kiste aufwendig. Braucht der interessierte Mensch jedoch mehr als eine Kiste, muss er sich mit der Verteilung und Verwaltung beschaeftigen. Wir moechten dies vereinfachen und ein Framework / eine Infrastruktur zur Verfuegung stellen, die fuer Rechenleistungsanbietende Spaces so einfach und sicher zu operieren ist und  auf die fuer rechenleistungsbeduerftige Nerds so einfach zugreifbar ist, wie moeglich.
 
 Das C3 Cluster Computing Council ist eine Gruppe von Cluster und High Performance Computing Interessierten.
 Auch in der Toolbox gibt es Lleistungsstarke Hardware, die nur darauf wartet sinvoll genutzt zu werden. 
