@@ -1,5 +1,8 @@
 {% extends "layout.html" %}
 {% from "macros/blog.html" import render_blog_post %}
+{% if this.project %}{% block expand_header %}
+<link href="{{ '/css/lightgallery.css'|url }}" rel="stylesheet">
+{% endblock %}{% endif %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
 <!-- Main -->
@@ -8,4 +11,15 @@
     {{ render_blog_post(this) }}
   </div>
 </div>
+{% if this.project %}
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#lightgallery').lightGallery();
+      $('.lightgallery').lightGallery();
+    });
+  </script>
+  <script src="{{ '/js/picturefill.min.js'|url }}"></script>
+  <script src="{{ '/js/lightgallery-all.min.js'|url }}"></script>
+  <script src="{{ '/js/jquery.mousewheel.min.js'|url }}"></script>
+{% endif %}
 {% endblock %}

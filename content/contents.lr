@@ -24,26 +24,6 @@ about_url: Vereinsheim
 ---
 about_url2: /vereinsheim/
 ---
-relax_header: Elektrowerkstatt
----
-relax_text: Hier stehen dir Oszilloskope, Lötkolben, Netzgeräte, Messgeräte, verschiedene Bauteile und 3D-Drucker zur Verfügung. In unserer großen Elektrowerkstatt werden selbst Elektrotechniker neidisch.
----
-relax_text2: In der Toolbox gibt es einige Mitglieder, die sich in den Bereichen 3D-Druck und Elektronik bestens auskennen. Wir versuchen, unser Wissen mit anderen Mitgliedern und Gästen zu Teilen und uns gegenseitig bei unseren Projekten zu unterstützen.
----
-relax_url: Projekte
----
-relax_url2: /projekte/
----
-we_are_header: Workshops & Vorträge
----
-we_are_text: In der Toolbox finden regelmäßig Workshops und Vorträge zu vielen interessanten Themen statt.
----
-we_are_text2: Wir würden uns auch sehr freuen, wenn du etwas an ein interessiertes Publikum beitragen möchtest oder dein Wissen und deine Erfahrungen mit uns teilen möchtest. Die Teilnahme an den Vorträgen und Workshops ist sowohl für Mitglieder als auch Gäste natürlich kostenfrei.
----
-we_are_url: Termine
----
-we_are_url2: /termine/
----
 icons_header: Schau doch mal bei uns vorbei
 ---
 icons_text: Die Toolbox Bodensee e.V. ist ein gemeinnütziger Maker- und Hackspace in Markdorf am Bodensee, der versucht sowohl für Mitglieder als auch Gäste eine gemütliche Atmosphäre zu schaffen, in der sich Lebewesen mit ähnlichen Interessen treffen und austauschen können. Wir haben ein großes Vereinsheim in dem jeder willkommen ist sich in der Lounge oder im Bällebad zu entspannen, an Vorträgen oder Workshops teilzunehmen, mit den Werkzeugen in der Werkstatt zu arbeiten oder sich mit den anderen Lebewesen hier auszutauschen.
@@ -114,3 +94,51 @@ hinweis: Wir treffen uns jeden Donnerstagabend. Komm doch mal
 hinweis_txt: bei uns vorbei!
 ---
 hinweis_url: /kontakt/
+---
+sections:
+
+#### startpage_section ####
+type: right
+----
+header: Tag der offenen Türe
+----
+text: Am 17. November 2018 lädt die Toolbox Bodensee zum 4. Tag der offenen Tür ein!
+----
+text2:
+
+Der Tag der offenen Tür ist für alle Interessierten eine ideale Gelegenheit, sich die Toolbox einmal näher anzuschauen. Zwischen 11:00 Uhr und 19:00 Uhr heißen wir unsere Gäste herzlich willkommen!
+Es wird auch dieses Jahr wieder ein vielfältiges Programm mit vielen interessanten Vorträgen und Workshops zu verschiedenen Themen geben. 
+----
+url_text: Tag der offenen Türe
+----
+url: /blog/tag-der-offenen-tuere-2018/
+----
+background: /blog/tag-der-offenen-tuere-2018/tag_der_offenen_tuere_2017_7.JPG
+#### startpage_section ####
+type: left
+----
+header: Elektrowerkstatt
+----
+text: Hier stehen dir Oszilloskope, Lötkolben, Netzgeräte, Messgeräte, verschiedene Bauteile und 3D-Drucker zur Verfügung. In unserer großen Elektrowerkstatt werden selbst Elektrotechniker neidisch.
+----
+text2: In der Toolbox gibt es einige Mitglieder, die sich in den Bereichen 3D-Druck und Elektronik bestens auskennen. Wir versuchen, unser Wissen mit anderen Mitgliedern und Gästen zu Teilen und uns gegenseitig bei unseren Projekten zu unterstützen.
+----
+url_text: Projekte
+----
+url: /projekte/
+----
+background: /images/home/abschnitt2.jpeg
+#### startpage_section ####
+type: right
+----
+header: Workshops & Vorträge
+----
+text: In der Toolbox finden regelmäßig Workshops und Vorträge zu vielen interessanten Themen statt.
+----
+text2: Wir würden uns auch sehr freuen, wenn du etwas an ein interessiertes Publikum beitragen möchtest oder dein Wissen und deine Erfahrungen mit uns teilen möchtest. Die Teilnahme an den Vorträgen und Workshops ist sowohl für Mitglieder als auch Gäste natürlich kostenfrei.
+----
+url_text: Termine
+----
+url: /termine/
+----
+background: /images/home/abschnitt3.jpeg
