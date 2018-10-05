@@ -2258,11 +2258,6 @@ body.landing .dropotron.level-0 {
 body.landing #page-wrapper {
   padding-top: 0; }
 
-body.landing #header {
-  background: transparent;
-  box-shadow: none;
-  position: absolute; }
-
 /* Banner */
 #banner {
   background-attachment: fixed;
