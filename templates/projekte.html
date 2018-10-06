@@ -1,6 +1,5 @@
 {% extends "layout.html" %}
 {% from "macros/projekt.html" import render_blog_post %}
-{% from "macros/pagination.html" import render_pagination %}
       {% block title %}{{ this.title }}{% endblock %}
 {% block body %} 
 <section id="four" class="wrapper style1 special fade-up">
@@ -22,7 +21,6 @@
             <li><a href="{{ '/projekte.xml'|url }}" class="button">Projekte als RSS Abonieren</a></li>
         </ul>
       </footer>
-     {{ render_pagination(this.pagination) }}
    </div>
  </div>
 </section>
