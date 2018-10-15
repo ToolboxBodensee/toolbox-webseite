@@ -1330,6 +1330,9 @@ body.landing {
     transform-origin: 50% 50%;
     color: rgba(255, 255, 255, 0.15);
     content: '\f1ce';
+    font-family: "Font Awesome 5 Free";
+    font-size: 2em;
+    font-weight: 900;
     cursor: default;
     display: block;
     font-size: 2em;
