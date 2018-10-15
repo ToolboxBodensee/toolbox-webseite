@@ -1,7 +1,7 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
-@import url("font-awesome.min.css");
+@import url("../css/font-awesome.min.css");
 @import url("../fonts/roboto.css");
 @import url("https://toolbox-bodensee.de/css/spacestatus.css");
 /*
@@ -244,7 +244,9 @@
 				content: '\f1ce';
 				cursor: default;
 				display: block;
-				font-size: 2em;
+				font-family: "Font Awesome 5 Free";
+  				font-size: 2em;
+                font-weight: 900;
 				height: 2em;
 				left: 50%;
 				line-height: 2em;
