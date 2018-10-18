@@ -1,0 +1,48 @@
+title: Mutteruhrsteuerung
+---
+author: Björn
+---
+body:
+
+Eine Nebenuhr ist eine Uhr, die nicht von selbst laufen kann, sondern von einer sogenannten Mutteruhr oder auch [Hauptuhr](https://de.wikipedia.org/wiki/Hauptuhr) gesteuert wird. Solche Uhren wurden früher häufig in öffentlichen Gebäuden, Schulen oder an Bahnhöfen verbaut und sind zum Teil auch noch dort zu finden. Sie sind extrem einfach aufgebaut, haben nur eine Spule und eine sehr einfache Mechanik, und durch die zentrale Steuerung gehen sie auch alle synchron.
+
+Allerdings brauchen sie eben auch eine Mutteruhr. Diese generiert minütlich ein Signal, so dass alle angeschlossenen Uhren weitergeschaltet werden (es gibt aber auch andere Taktintervalle). Die vorhandene Verkabelung ist häufig in die Jahre gekommen und wenn eine Uhr ein Signal verpasst oder mal stecken bleibt muss sie umständlich manuell wieder auf die richtige Zeit eingestellt werden. Einen Rückkanal, welche Uhr welche Zeit gerade anzeigt gibt es nicht.
+
+Aus diesem Grund wurden viele der alten Uhren durch moderne und wartungsarme Funkuhren ersetzt.
+
+Die vorhandene Uhr stammt aus dem Hallenbad Kressbronn, dort ist aber keine funktionierende Mutteruhr für den Betrieb verfügbar. Sie hat ein zeitloses schlichtes Design (aber keinen Sekundenzeiger) und ist groß genug, so dass sie auch aus einigen Metern Entfernung noch gut abzulesen ist. Sie kann einzig jeweils um eine Minute vorgestellt  werden. Dazu wird die vorhandene Versorgungsspannung (wahlweise 12V, 24V oder 48V Gleichstrom) einfach umgepolt.
+
+Die entworfene Steuerung besteht aus einem Arduino Nano, einem Display,  einem [DCF77](https://de.wikipedia.org/wiki/DCF77)-Modul zum Empfang des Zeitsignals aus  Mainflingen, einer H-Brücke zur Umpolung der Versorgungsspannung, zwei Schaltern und einem Knopf für die Bedienung. Das ganze wurde in ein selbstgedrucktes Gehäuse gepackt.
+
+Konnte der Arduino das Zeitsignal korrekt empfangen, wird diese am Display angezeigt und die interne Uhr des Mikrokontrollers neu gesetzt. Damit wird das minütliche Steuersignal erzeugt.
+
+Über die beiden zweipoligen Schalter kann die von den Zeigern der Uhr angezeigte Zeit eingestellt werden (jeweils +/- eine Minute/Stunde). Stimmt die eingestellte Zeit nicht mit der aktuellen Systemzeit überein, wird kein Minutensignal mehr erzeugt. Erst wenn die Uhr wieder die richtige Zeit anzeigt, fängt sie wieder an zu laufen. Wenn man länger auf den vorhandenen Knopf drückt, wird die Uhr aber auf die aktuelle Uhrzeit vorgestellt. Dafür wird dann im Sekundentakt ein Signal an die Uhr geschickt, diese schaltet eine Minute weiter. Über einen erneuten langen Druck auf den Knopf kann das aber auch wieder gestopt werden.
+
+Wenn ein korrektes Zeitsignal empfangen wurde und die Uhr die aktuelle Uhrzeit anzeigt, wird die Hintergrundbeleuchtung des Displays ausgeschaltet. Wird der Knopf kurz gedrückt, die Uhrzeit über die Schalter angepasst oder mehr als 10 Minuten kein Zeitsignal mehr empfangen, geht die Displaybeleuchtung wieder an.
+
+Über die aufgelötete LED des Arduino wird der Takt des DCF77-Signals angezeigt. Das Signal ändert zweimal pro Sekunde seine Frequenz, entweder nach 100/900ms oder nach 200/800ms, dabei wird ein Bit an Informationen übertragen. Daher stehen pro Minute 60 Bit Information zur Verfügung, an denen aktuelle Zeit, Datum und noch ein paar weitere Informationen codiert sind.
+
+Man kann also mit bloßen Auge gut erkennen ob das Signal korrekt empfangen wird, die LED ist zwar nicht direkt zu sehen, aber sie scheint im Dunkeln durch das leicht transparente Gehäuse. Mit etwas Konzentration lassen sich auch die 100ms/200ms Zyklen unterscheiden. In der näheren Umgebung von anderen elektrischen Geräten treten aber Empfangsstörungen auf, die LED zeigt das durch unregelmäßiges Flackern an, dann kann der Mikrokontroller das Zeitsignal auch nicht mehr sauber decodieren. Die Uhr läuft aber dann trotzdem im Minutentakt der internen Uhr des Mikrokontrollers weiter.
+
+Am 28.9.2018 wurde die Schaltung dem Bademeister vom [Kressbronner Hallenbad](https://www.kressbronn.de/de/gaeste/freizeit-kultur/freizeit-spass/baeder.html) übergeben.
+
+Kontakt: mutteruhr at paranda punkt de
+---
+pub_date: 2018-07-01
+---
+teaser: Um eine vorhandenen Nebenuhr aus dem Schwimmbad Kressbronn zur Funkuhr aufzurüsten, musste eine kleine Schaltung her...
+---
+icon: fas fa-clock
+---
+project:
+
+#### pro_img ####
+image: dsc02706.jpg
+#### pro_img ####
+image: dsc02707.jpg
+#### pro_img ####
+image: dsc02714.jpg
+#### pro_img ####
+image: dsc02721.jpg
+#### pro_img ####
+image: dsc02756.jpg
