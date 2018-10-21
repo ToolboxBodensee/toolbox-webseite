@@ -23,3 +23,10 @@ Als Content Management System kommt hier [Lektor](https://getlektor.com) zum Ein
 Bei dem Webserver handelt es sich nun nicht um irgendeine virtuelle Shared-Hosting Instanz bei kasserver.com, die aus großen Teilen des Internets nicht erreichbar ist, sondern um einen kuscheligen Platz auf einem dedizierten Server bei Hetzner, der auch schon Seiten für andere Hackspaces wie die [see-base](https://see-base.de), für [Freifunk Bodensee](https://ffbsee.net) und für das [C3WOC](https://c3woc.de) ausliefert.
 
 Selbstverständlich wird die neue Webseite über ein TLS Zertifikat, das von Let's Encrypt validiert wird, ausgeliefert. Hier allerdings nicht wie bei den meisten mit dem RSA Algorythmus, sondern mit der eliptischen Kurven Kryptografie ECDSA.
+---
+xml:
+
+Die Toolbox Webseite ist nun kein ungeliebtes Wordpress mehr sondern eine moderneWebseite. Sie wird nun auf einem ordentlichen Server (mit IPv6 und HTTPS) gehostet.
+
+Der Inhalt der Webseite wird über GitHub verwaltet und darf dort gerne verändert werden:
+https://github.com/ToolboxBodensee/toolbox-webseite
