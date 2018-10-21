@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="{{ '/css/main.css'|url }}" />
     <!--[if lte IE 9]><link rel="stylesheet" href="{{ 'assets/css/ie9.css'|url }}" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="{{ 'assets/css/ie8.css'|url }}" /><![endif]-->
-    <meta name="description" content="Die Toolbox Bodensee e.V. ist ein gemeinnütziger Maker- und Hackspace in Markdorf am Bodensee!" />
+    <meta name="description" content={% if this.alt == 'en' %}"The Toolbox Bodensee e.V. is a non-profit hackspace in Markdorf on lake constance!"{%
+      else %}"Die Toolbox Bodensee e.V. ist ein gemeinnütziger Maker- und Hackspace in Markdorf am Bodensee!"{% endif %} />
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/icons/apple-touch-icon.png'|url }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/icons/favicon-32x32.png'|url }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/icons/favicon-16x16.png'|url }}">
@@ -26,8 +27,55 @@
 
        <!-- Header -->
         <header id="header">
-          <h1 id="logo"><a id="tb-opened" class="button special" style="margin-left: -15px; background-color: LimeGreen  !important;" href="/vereinsheim/">Vereinsheim offen</a><a id="tb-closed" style="color: #d23128ff;" href="/vereinsheim/">Vereinsheim geschlossen</a></h1>
-            <nav id="nav">
+          <h1 id="logo"><a id="tb-opened" class="button special" style="margin-left: -15px; background-color: LimeGreen  !important;" href="/vereinsheim/">{%
+              if this.alt == 'en' %}clubhouse open{% else %}Vereinsheim offen{% endif %}</a><a id="tb-closed" style="color: #d23128ff;" href="/vereinsheim/">{%
+              if this.alt == 'en' %}clubhouse closed{% else %}Vereinsheim geschlossen{% endif %}</a></h1>
+            <nav id="nav">{% if this.alt == 'en' %}
+              <ul>
+                <li{% if this._path == '/' %} class="active"{% endif
+                %}><a href="{{ '/'|url }}">home</a></li>{%
+                for href, title, print in [
+                  ['/blog', 'blog', 1],
+                  ['/projekte', 'projects', 1],
+                  ['/vereinsheim', 'society', 1],
+                  ['/termine', 'calendar', 1],
+                  ['/kontakt', 'contact', 1],
+                  ['/impressum', 'imprint', 1]
+                ] %}{% if print %}
+                  <li{% if this.is_child_of(href) %} class="active"{% endif
+                %}{% if title == 'Kontakt' %} class="button special" {% endif 
+                %}><a href="{{ href|url }}">{{ title }}</a>{%
+                  if title == 'imprint' %}
+                    <ul><li><a href="{{ '/impressum'|url }}">imprint</a></li>
+                    <li><a href="{{ '/datenschutz'|url }}">data protection</a></li>
+                  </ul>{%
+                  elif title == 'projects' %}
+                    <ul>{% set root = site.get('/projekte/') %}{%
+                      for child in root.children recursive %}
+                      <li{%
+                      if this._path == child._path %} class="active"{% endif
+                        %}><a href="{{ child|url }}">{{ child.title }}</a></li>{%
+                    endfor %}
+                      <li><a href="{{ '/projekte.xml'|url }}">Projekte als RSS Feed</a></li>
+                    </ul>{%
+                  elif title == 'Verein' %}
+                    <ul><li><a href="{{ '/vereinsheim'|url }}">Vereinsheim</a></li>
+                    <li><a href="{{ '/vereinsheim/elektrowerkstatt'|url }}">Elektrowerkstatt</a></li>
+                    <li><a href="{{ '/vereinsheim/grobwerkstatt'|url }}">Grobwerkstatt</a></li>
+                    <li><a href="{{ '/vereinsheim/lounge'|url }}">Lounge</a></li>
+                    <li><a href="{{ '/verein/presse'|url }}">Presse</a></li>
+                    <li><a href="https://tbbs.me">Wiki</a></li>
+                    <li><a href="{{ '/mitglied-werden'|url }}" class="button special">Mitglied werden</a></li>
+                    <li><a href="{{ '/verein'|url }}">Mitgliedschaft</a></li></ul>{%
+                  elif title == 'Kontakt' %}
+                    <ul><li><a href="{{ '/kontakt'|url }}">Anfahrt</a></li>
+                    <li><a href="{{ '/antworten'|url }}">Häufige Fragen</a></li></ul>{%
+                   elif title == 'Blog' %}
+                    <ul><li><a href="{{ '/feed.xml'|url }}">RSS Feed</a></li></ul>{%
+                  endif %}</li>{%
+                 endif %}{%
+               endfor %}
+              </ul>{% else %}
               <ul>
                 <li{% if this._path == '/' %} class="active"{% endif
                 %}><a href="{{ '/'|url }}">Home</a></li>{%
@@ -72,7 +120,7 @@
                   endif %}</li>{%
                  endif %}{%
                endfor %}
-              </ul>
+              </ul>{% endif %}
             </nav>
           </header>
 
