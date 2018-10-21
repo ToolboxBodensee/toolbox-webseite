@@ -10,3 +10,14 @@ url_style = absolute
 enabled = yes
 default = yes
 target = rsync://web16@c3woc.de:/var/www/clients/client15/web16/web
+
+[alternatives.de]
+name = Deutsch
+primary = yes
+locale = de_DE
+
+[alternatives.en]
+name = Englisch
+locale = en_US
+url_prefix = /en/
+
