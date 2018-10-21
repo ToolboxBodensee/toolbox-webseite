@@ -19,3 +19,10 @@ Das C3 Cluster Computing Council ist eine Gruppe von Cluster und High Performanc
 Auch in der Toolbox gibt es leistungsstarke Hardware, die nur darauf wartet endlich sinnvoll genutzt zu werden. 
 
 Weitere Informationen zum C6 und zum Mitmachen gibt es auf der Webseite [c3c3.de](https://c3c3.de/) oder im dazu passenden [Wiki des C6](https://git.platinengarten.de/goto/C6/wikis/home).
+---
+project:
+
+#### pro_img ####
+image: logo.png
+---
+xml_img: logo.png
