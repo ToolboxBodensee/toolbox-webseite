@@ -27,8 +27,8 @@
 
        <!-- Header -->
         <header id="header">
-          <h1 id="logo"><a id="tb-opened" class="button special" style="margin-left: -15px; background-color: LimeGreen  !important;" href="/vereinsheim/">{%
-              if this.alt == 'en' %}clubhouse open{% else %}Vereinsheim offen{% endif %}</a><a id="tb-closed" style="color: #d23128ff;" href="/vereinsheim/">{%
+            <h1 id="logo"><a id="tb-opened" class="button special" style="margin-left: -15px; background-color: LimeGreen  !important;" href="{% if this.alt == 'en' %}/en{% endif %}/vereinsheim/">{%
+                    if this.alt == 'en' %}clubhouse open{% else %}Vereinsheim offen{% endif %}</a><a id="tb-closed" style="color: #d23128ff;" href="{% if this.alt == 'en' %}/en{% endif %}/vereinsheim/">{%
               if this.alt == 'en' %}clubhouse closed{% else %}Vereinsheim geschlossen{% endif %}</a></h1>
             <nav id="nav">{% if this.alt == 'en' %}
               <ul>
@@ -81,6 +81,12 @@
                   endif %}</li>{%
                  endif %}{%
                endfor %}
+                 <li><a href="/..{{ this._path }}">Sprache</a>
+                   <ul>
+                     <li><a href="/..{{ this._path }}">Deutsch</a></li>
+                     <li><a href="/en{{ this._path }}">Englisch</a><li>
+                   </ul>
+                 </li>
               </ul>{% else %}
               <ul>
                 <li{% if this._path == '/' %} class="active"{% endif
@@ -132,6 +138,12 @@
                   endif %}</li>{%
                  endif %}{%
                endfor %}
+                 <li><a href="/en{{ this._path }}">Language</a>
+                   <ul>
+                     <li><a href="/..{{ this._path }}">German</a></li>
+                     <li><a href="/en{{ this._path }}">English <i>(if available)</i></a><li>
+                   </ul>
+                 </li>
               </ul>{% endif %}
             </nav>
           </header>
