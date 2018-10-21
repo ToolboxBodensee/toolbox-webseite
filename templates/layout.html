@@ -58,20 +58,26 @@
                     endfor %}
                       <li><a href="{{ '/projekte.xml'|url }}">Projekte als RSS Feed</a></li>
                     </ul>{%
-                  elif title == 'Verein' %}
-                    <ul><li><a href="{{ '/vereinsheim'|url }}">Vereinsheim</a></li>
-                    <li><a href="{{ '/vereinsheim/elektrowerkstatt'|url }}">Elektrowerkstatt</a></li>
-                    <li><a href="{{ '/vereinsheim/grobwerkstatt'|url }}">Grobwerkstatt</a></li>
-                    <li><a href="{{ '/vereinsheim/lounge'|url }}">Lounge</a></li>
-                    <li><a href="{{ '/verein/presse'|url }}">Presse</a></li>
-                    <li><a href="https://tbbs.me">Wiki</a></li>
-                    <li><a href="{{ '/mitglied-werden'|url }}" class="button special">Mitglied werden</a></li>
-                    <li><a href="{{ '/verein'|url }}">Mitgliedschaft</a></li></ul>{%
-                  elif title == 'Kontakt' %}
-                    <ul><li><a href="{{ '/kontakt'|url }}">Anfahrt</a></li>
-                    <li><a href="{{ '/antworten'|url }}">Häufige Fragen</a></li></ul>{%
-                   elif title == 'Blog' %}
-                    <ul><li><a href="{{ '/feed.xml'|url }}">RSS Feed</a></li></ul>{%
+                  elif title == 'society' %}
+                    <ul><li><a href="{{ '/vereinsheim'|url }}">clubhouse</a></li>
+                    <li><a href="{{ '/vereinsheim/elektrowerkstatt'|url }}">electrical workshop</a></li>
+                    <li><a href="{{ '/vereinsheim/grobwerkstatt'|url }}">rough workshop</a></li>
+                    <li><a href="{{ '/vereinsheim/lounge'|url }}">lounge</a></li>
+                    <li><a href="{{ '/verein/presse'|url }}">press</a></li>
+                    <li><a href="https://tbbs.me">wiki</a></li>
+                    <li><a href="{{ '/mitglied-werden'|url }}" class="button special">become a member</a></li>
+                    <li><a href="{{ '/verein'|url }}">membership</a></li></ul>{%
+                  elif title == 'contact' %}
+                    <ul><li><a href="{{ '/kontakt'|url }}">arrive</a></li>
+                    <li><a href="{{ '/antworten'|url }}">frequently asked questions</a></li></ul>{%
+                   elif title == 'blog' %}
+                    <ul>{% set root = site.get('/blog/') %}{%
+                      for child in root.children recursive %}
+                      <li{%
+                      if this._path == child._path %} class="active"{% endif
+                        %}><a href="{{ child|url }}">{{ child.title }}</a></li>{%
+                    endfor %}
+                    <li><a href="{{ '/feed.xml'|url }}">RSS Feed</a></li></ul>{%
                   endif %}</li>{%
                  endif %}{%
                endfor %}
@@ -116,7 +122,13 @@
                     <ul><li><a href="{{ '/kontakt'|url }}">Anfahrt</a></li>
                     <li><a href="{{ '/antworten'|url }}">Häufige Fragen</a></li></ul>{%
                    elif title == 'Blog' %}
-                    <ul><li><a href="{{ '/feed.xml'|url }}">RSS Feed</a></li></ul>{%
+                    <ul>{% set root = site.get('/projekte/') %}{%
+                      for child in root.children recursive %}
+                      <li{%
+                      if this._path == child._path %} class="active"{% endif
+                        %}><a href="{{ child|url }}">{{ child.title }}</a></li>{%
+                    endfor %}
+                    <li><a href="{{ '/feed.xml'|url }}">RSS Feed</a></li></ul>{%
                   endif %}</li>{%
                  endif %}{%
                endfor %}
@@ -146,10 +158,11 @@
         </ul>
         <ul class="copyright">
           <li>&copy;Copyright by Toolbox Bodensee e.V.</li>
-          <li><a href="/impressum/">Impressum</a></li>
-          <li><a href="/datenschutz/">Datenschutzerklärung</a></li>
+          <li><a href="/impressum/">{% if this.alt == 'en' %}imprit{% else %}Impressum{% endif %}</a></li>
+          <li><a href="/datenschutz/">{%
+            if this.alt == 'en' %}cyber data protection{% else %}Datenschutzerklärung{% endif %}</a></li>
           <li>Design inspired by <a href="http://html5up.net">HTML5 UP</a> </li>
-          <!-- CMS Lektor | Webfoo: L3D -->
+          <!-- CMS: Lektor | Angepasst durch L3D -->
         </ul>
       </footer>
     </div>
