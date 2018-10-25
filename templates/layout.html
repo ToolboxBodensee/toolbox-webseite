@@ -128,7 +128,7 @@
                     <ul><li><a href="{{ '/kontakt'|url }}">Anfahrt</a></li>
                     <li><a href="{{ '/antworten'|url }}">Häufige Fragen</a></li></ul>{%
                    elif title == 'Blog' %}
-                    <ul>{% set root = site.get('/projekte/') %}{%
+                    <ul>{% set root = site.get('/blog/') %}{%
                       for child in root.children recursive %}
                       <li{%
                       if this._path == child._path %} class="active"{% endif
