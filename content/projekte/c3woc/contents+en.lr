@@ -1,0 +1,58 @@
+author: C3WOC
+---
+body:
+
+<span class="image right" style="background: black;"><img src="https://c3woc.de/images/logo/c3woc.svg" alt="C3WOC Logo"></span>
+
+ destiny
+==========
+The C3WOC's mission is to provide hackers and nerds with fresh waffles.
+The C3 Waffle Operation Center has therefore placed waffle iron at strategically important locations in chaos.
+So one of the most important waffle bases of course is the Lake Constance and thus also the Hackspace Toolbox Bodensee e.V.
+
+Occasionally the waffle iron is used in the building of the toolbox and waffles are created.
+
+ Waffles. When and where?
+==========
+At the homepage of the [C3WOC](https://c3woc.de/) are [tourdates](https://c3woc.de/en/#tourdaten) and a [Blog](https://c3woc.de/en/blog), there you can find some information about events where the c3woc may be found.
+
+If you also have a great event, just ask the C3WOC if it could craft some waffles there.
+
+ Participate
+===========
+Because making waffles alone is not much fun, we are looking for even more nerds who would like to participate in the C3WOC and craft some waffles.
+The waffles of the C3WOC are subject to high quality standards and are made, for example, only with higher quality ingredients and it is very respected for hygiene. Especially with larger events, for example, when working with raw eggs a salmonella infection is a not negligible danger. Here we strongly recommend to put already peeled eggs (egg white) or to use one of the egg-free recipes of the C3WOC.
+
+The graphics of the C3WOC such as stickers and logos, as well as the website can be found in a gitea hosted by the Hackspace see-base on [gitea.see-base.de/C3WOC](https://gitea.see-base.de/c3woc).
+
+We would be delighted if you would like to become part of the C3WOC. Just have alook at [c3woc.de/mitmachen](https://c3woc.de/en/mitmachen) and write an e-mail to the C3WOC.
+
+<a class="button" href="mailto:waffel@c3woc.de">waffle@c3woc.de</a>
+
+ Images
+=======
+Here are some pictures of waffles and other products of the C3WOC.
+
+
+<div class="lightgallery" class="row alt">
+<a href="https://c3woc.de/blog/camp-18/waffel-standort.jpg">
+<img class="image fit" src="https://c3woc.de/blog/camp-18/waffel-standort.jpg" /></a>
+<a href="https://c3woc.de/images/winkekatze02.jpg">
+<img class="image fit" src="https://c3woc.de/images/winkekatze02.jpg" /></a>
+<a href="https://c3woc.de/blog/cosin-2018/pizza_klein.jpg">
+<img class="image fit" src="https://c3woc.de/blog/cosin-2018/pizza_klein.jpg" /></a>
+<a href="https://c3woc.de/blog/makerfaire18/action02.jpg">
+<img class="image fit" src="https://c3woc.de/blog/makerfaire18/action02.jpg" /></a>
+<a href="https://c3woc.de/blog/froscon18/team.jpg">
+<img class="image fit" src="https://c3woc.de/blog/froscon18/team.jpg" /></a>
+</div>
+---
+icon: fas fa-heart
+---
+pub_date: 2017-11-01
+---
+teaser: Waffles are an important part of the diet of nerds and chaotic living beings. Thats the reason why the C3 Waffle Operation Center was developed. Now it will make some waffle experiements in the Toolbox.
+---
+title: C3WOC
+---
+xml_img: c3woc.svg.png
