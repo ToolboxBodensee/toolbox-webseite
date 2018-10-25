@@ -53,6 +53,12 @@ git fetch upstream
 git pull upstream master
 ```
 
+ Pull Request Reviewen
+-----------------------
+ 1. Die im Pull-Request eingereite Version clonen ``git clone --depth 23 <REPO> -b <BRANCH> <ORDNERNAME>``
+ 2. Den geklonten Pull-Request anschauen ``lektor server``
+ 3. Änderungen requesten oder Pull-Request approven
+
  Design:
 ---------
 Das Design basiert auf [HTML5UP](https://html5up.net), genauer gesagt auf dem Design [Landed](https://html5up.net/landed). Und wurde natürlich für die Toolbox Webseite angepasst!
