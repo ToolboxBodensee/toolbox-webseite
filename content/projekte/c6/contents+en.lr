@@ -1,0 +1,32 @@
+author: L3D
+---
+body:
+
+Being able to realise cool projects on a powerful Cluster enthralls every nerd. Alas, some Hackspaces possess a lot of seldomly used computing power, while elsewhere Hackers work on awesome projects, but can only call an baking oven with the computing power of an Raspberry Pi their own.
+
+Therefore the C6 exists. The C3 Cluster Computing Council wants to provide this computing power to any interested Hacker as easy as possible.
+
+The easiest way for one or two Hackers may be to ask some Hackspace directly to get SSH access. This might work, but with the tenth one asking the box owners effort to organise the accesses will go up. On the other hand the interested Hacker will be forced to organise the distribution and scheduling of the data and the programs.
+We strive to simplify this and like to offer a framework that allows the most simple and secure way to offer spare ressources and to access them as easy as possible.
+
+The C3 Cluster Computing Council is a group of Cluster and High Performance Computing enthusiasts.
+Even in the toolbox is great hardware who is waiting to compute some awesome projects.
+
+More information about the c6 is available on the website [c3c3.de](https://c3c3.de/) and in the [Wiki of the C6](https://git.platinengarten.de/goto/C6/wikis/home).
+---
+icon: fas fa-server
+---
+pub_date: 2017-10-20
+---
+teaser:
+
+The C3 Cluster Computing Council is a group of Cluster and High Performance Computing enthusiasts. We collect computing power, set up our own Cluster and HPC systems and program our own Cluster/Batch Framework. 
+---
+title: C6
+---
+project:
+
+#### pro_img ####
+image: logo.png
+---
+xml_img: logo.png
