@@ -2,7 +2,17 @@
   {% if from_index %}
         <section class="4u 6u(medium) 12u(xsmall)">
                 <span class="icon alt major">
-                    <a href="{{ post|url }}" style="border-bottom: none;" title="{% if post.alt == 'en' %}Launched from{% else %}Von{% endif %} {{ post.author }} {% if post.pub_date %} {% if post.alt == 'en' %}on {{ post.pub_date }}{% else %}am {{ post.pub_date.strftime('%d.%m.%Y')}}{% endif %} {% endif %}{% if post.alt == 'en' %}.{% else %}gestartet.{% endif %}"><i class="{{ post.icon }} fa-3x" style="line-height: 2; "></i></a>
+                    <a href="{{ post|url }}" style="border-bottom: none;" title="{%
+                    if bag('translate', post.alt, 'projekt_von')
+          %}{{ bag('translate', post.alt, 'projekt_von') }}{% else
+          %}Von{% endif 
+          %} {{ post.author }} {% if post.pub_date %} {%
+          if bag('translate', post.alt, 'projekt_am')
+          %}{{ bag('translate', post.alt, 'projekt_am') }}{% else
+          %}am{% endif %} {{ post.pub_date.strftime('%d.%m.%Y') }} {%
+          endif %} {% if bag('translate', post.alt, 'projekt_start')
+          %}{{ bag('translate', post.alt, 'projekt_start') }}{% else
+          %}gestarted{% endif %}"><i class="{{ post.icon }} fa-3x" style="line-height: 2; "></i></a>
           </span>
           <a href="{{ post|url }}"><h3>{{ post.title }}</h3></a>
           <article style="height: 320px;">
@@ -13,10 +23,15 @@
         <div id="main" class="wrapper style1">
           <div class="container">
             <header class="major">
-                <h2>{{ post.title }}</h2>{%
-                  if post.alt == 'en' %}
-                  <p>The project was launched from {{ post.author }} {% if post.pub_date %}on {{ post.pub_date }} {% endif %}.</p>{% else %}
-                  <p>Das Projekt wurde von {{ post.author }} {% if post.pub_date %}am {{ post.pub_date.strftime('%d.%m.%Y') }} {% endif %}ins Leben gerufen.</p>{% endif %}
+                <h2>{{ post.title }}</h2>{% if bag('translate', post.alt, 'projekt_launch')
+          %}{{ bag('translate', post.alt, 'projekt_launch') }}{% else
+          %}Das Projekt wurde vom{% endif %} {{ post.author }} {% if post.pub_date %}{%
+          if bag('translate', post.alt, 'projekt_am')
+          %}{{ bag('translate', post.alt, 'projekt_am') }}{% else
+          %}am{% endif %} {{ post.pub_date.strftime('%d.%m.%Y') }} {% endif %}{%
+          if bag('translate', post.alt, 'projekt_start')
+          %}{{ bag('translate', post.alt, 'projekt_start') }}{% else
+          %}gestarted{% endif %}
             </header>
           <section id="content">
             {{ post.body }}
