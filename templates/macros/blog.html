@@ -10,14 +10,16 @@
       <h2>{{ post.title }}</h2>
     {% endif %}
       <p class="meta">
-      {% if post.alt == 'en' %}By {% else %}Geschrieben von {% endif
-        %}{% if post.twitter_handle 
+      {% if bag('translate', post.alt, 'blog_von') 
+          %}{{ bag('translate', post.alt, 'blog_von') }}{% else 
+          %}Geschrieben von{% endif %} {% if post.twitter_handle 
           %}<a href="https://chaos.social/@{{ post.twitter_handle
           }}">{{ post.author or post.twitter_handle }}</a>{%
           else %}{{ post.author }}{%
           endif %}{% if post.pub_date
-          %} {% if post.alt == 'en' %}on {{ post.pub_date }}{% else 
-          %}am {{ post.pub_date.strftime('%d.%m.%Y') }}{% endif %}{%
+          %} {% if bag('translate', post.alt, 'blog_am') 
+          %}{{ bag('translate', post.alt, 'blog_am') }}{% else 
+          %}am{% endif %} {{ post.pub_date.strftime('%d.%m.%Y') }}{%
           endif %}</p>
 	</header>
 <!-- Content -->
@@ -30,7 +32,9 @@
       {% endif %}
     </section>
     {% if from_index %}
-    <a class="button fit" href="{{ post|url }}">{% if post.alt == 'en' %}continue{% else %}Weiterlesen{% endif %}</a>
+    <a class="button fit" href="{{ post|url }}">{% if bag('translate', post.alt, 'blog_weiter')
+        %}{{ bag('translate', post.alt, 'blog_weiter') }}{% else        
+        %}weiterlesen{% endif %}</a>
     <br/>
     {% else %}{% if post.project %}
       <div class="lightgallery" class="row alt">{%
