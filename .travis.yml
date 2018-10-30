@@ -1,4 +1,4 @@
-﻿language: python
+language: python
 python: 3.6
 cache:
   directories:
@@ -10,3 +10,5 @@ before_deploy: "echo 'c3woc.de ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyN
 deploy:
   provider: script
   script: "lektor deploy --key $LEKTOR_DEPLOY_KEY toolbox"
+after_success:
+    - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then deployment/deploy_pullrequest.sh; fi'
