@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>{%
+set baseurl = "https://toolbox-bodensee.de/" %}{%
+set search = "projekte" %}
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Projekte in der Toolbox</title>
+  <id>42{{ none|datetimeformat('YYYYMMDDhhmmss') }}</id>
+  <updated>{{ none|datetimeformat('YYYY-MM-DDThh:mm:ss') }}Z</updated>
+  <link href="{{ baseurl }}{{ search }}/" />
+  <link href="{{ baseurl }}feed.xml" rel="self" />
+  <author>
+    <name>{% if this.author %}{{ this.author }}{% else %}Toolbox{% endif %}</name>
+  </author>{%
+  set pages = site.query('/projekte').include_undiscoverable(true).all() %}{%
+ for page in pages %}
+  <entry xml:base="{{ baseurl }}{{ search }}/{{ page._id }}/">
+    <title type="text">{{ page.title }}</title>
+    <id>23{{ page.pub_date|datetimeformat('YYYYMMDDhhmmss') }}</id>
+    <updated>{{ page.pub_date|datetimeformat('YYYY-MM-DDThh:mm:ss') }}Z</updated>
+    <link href="{{ baseurl }}{{ search }}/{{ page._id }}/" />
+    <author>
+      <name>{% if page.author %}{{ page.author }}{% else %}Toolbox{% endif %}</name>
+    </author>
+    <content type="{% if page.xml_img %}html{% else %}text{% endif %}">
+        {{ page.teaser }} 
+      {% if page.xml_img 
+      %}&lt;br/&gt;
+      &lt;img width=&quot;23%&quot; src=&quot;{{ page.xml_img }}&quot; /&gt;
+      {% endif %}
+    </content>
+  </entry>{%
+endfor %}
+</feed>
