@@ -1,24 +1,46 @@
-title: Tag der offenen Türe 2018
+title: Tag der offenen Tür 2018
 ---
 author: L3D
 ---
 beitrag:
 
+Vorträge:
+* Die Toolbox stellt sich vor: Eigene Projekte, Vereinsheimführungen
+* Eröffnung Tag der offenen Tür, kurze Rückschau 2017
+* Wie baue ich ein leistungsfähiges Netz mit WLAN für Vereine und fortgeschrittene Privatanwender?
+* Infrastruktur und VMs in der Toolbox - Eine Einführung in Ansible und OpenStack
+* Coole DataSets: Was haben Ufosichtungen und Meteoreneinschläge gemeinsam?
+
+Kurzvorträge:
+* Quadrocopter-Grundkurs
+* Smarter Schwitzen: Deckenventilator 2.0
+* Alexa unplugged
+* Zwei Jahre nach der Socialbit-Insolvenz: Was mache ich jetzt (anders)?
+* Kurzvorstellung Freifunk
+* Game Reverse Engineering 101 oder: Wie modifiziere ich ein Spiel?
+
+Workshops:
+* Löten für Kinder
+* T-Shirts selber machen
+* Arduino-Grundkurs
+
+Außerdem:
+* Quadrocopter-Flugshow
+* Retrogames
+
 Einen Rückblick auf den Tag der offenen Tür 2017 findet man auf dem [Blog von Thomas Kekeisen](https://thomaskekeisen.de/de/blog/tooblox-tag-der-offenen-tuere-2017/) und [bei der see-base](https://see-base.de/blog/der-tag-der-offenen-tuer-in-der-toolbox-bodensee/). Außerdem gibt es unten einige personenfreie Bilder aus den vorherigen Jahren.
 
 [Abonniere](https://bodensee.space/calendarfeeds/toolboxpublic.ics) doch den Toolbox-Kalender, um über aktuelle Veranstaltungen informiert zu bleiben.
-
-
 ---
 body:
 
-Am 17. November 2018 lädt die Toolbox Bodensee zum 4. Tag der offenen Tür ein!
+Am Samstag, den 17. November 2018 lädt die Toolbox Bodensee zum 4. Tag der offenen Tür ein.
 
-Der Tag der offenen Tür ist für alle Interessierten eine ideale Gelegenheit, sich die Toolbox einmal näher anzuschauen. 
-Zwischen 11:00 Uhr und 19:00 Uhr heißen wir unsere Gäste herzlich willkommen!
-Es wird auch dieses Jahr wieder ein vielfältiges Programm mit vielen interessanten Vorträgen und Workshops zu verschiedenen Themen geben. Besonders beliebt bei Besuchern waren im letzten Jahr unser Workshop "Löten für Kinder" und die Quadcopter-Vorführungen. Beides werden wir auch in diesem Jahr wieder anbieten!
+Der Tag der offenen Tür ist für alle Interessierten eine ideale Gelegenheit, sich die Toolbox in der Bergheimer Straße 6 in Markdorf einmal näher anzuschauen. 
+Zwischen 11:00 Uhr und 19:00 Uhr heißen wir unsere Gäste herzlich willkommen.
+Es wird auch dieses Jahr wieder ein vielfältiges Programm mit vielen interessanten Vorträgen und Workshops zu verschiedenen Themen geben. Besonders beliebt bei Besuchern waren im letzten Jahr unser Workshop Löten für Kinder und die Quadrocopter-Vorführungen. Beides werden wir auch in diesem Jahr wieder anbieten!
 Auch [Freifunk Bodensee](https://ffbsee.net/) wird sich wieder präsentieren und vor Ort Anleitung zum Flashen eines eigenen Freifunk-Routers geben.
-Für das leibliche Wohl wird ebenso gesorgt. Unter anderem wird uns das [C3WOC](https://c3woc.de) wie immer Waffeln frisch zubereiten.
+Für das leibliche Wohl wird ebenso gesorgt. Unter anderem wird uns das [C3WOC](https://c3woc.de), wie immer, Waffeln frisch zubereiten.
 
 ---
 pub_date: 2018-10-02
