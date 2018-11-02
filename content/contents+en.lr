@@ -1,0 +1,141 @@
+_model: start
+---
+title: Toolbox Bodensee e.V.
+---
+slogan: Non-profit hackspace at Lake Constance.
+---
+about_header: clubhouse
+---
+about_text: Our clubhouse is located at Bergheimer Straße 6 in Markdorf at Lake Constance in the building of intimus International GmbH.
+---
+about_text2:
+
+On more than 420 m² we are able to offer you an own room for electrical engineering, wood and metal workshops, 3D printing, amateur radio, screen printing as well as a photo laboratory.
+As a member, you can use our premises and equipment as often and as long as you like, and of course you can listen to lectures or hold your own.
+---
+about_text3: Our clubhouse is also a venue for events of other organisations such as the [Chaostreff Markdorf](https://bodensee.space/chaostreff-markdorf), den [Ham radio station Friedrichshafen](https://www.darc.de/der-club/distrikte/p/ortsverbaende/03/), [Freifunk Bodensee](https://freifunk-bodensee.net/), der [game development lake constance](http://www.spieleentwicklung-bodensee.de/) or the [IoT Meetup Bodensee](https://www.meetup.com/de-DE/IoTBodensee/?_cookie-check=8FCj7YDEE6xcpKYA).
+---
+about_url: clubhouse
+---
+about_url2: /en/vereinsheim/
+---
+icons_header: Just stop by and see us.
+---
+icons_text: The Toolbox Bodensee e.V. is a non-profit maker and hacker space in Markdorf on Lake Constance, which tries to create a cosy atmosphere for members as well as guests in which creatures with similar interests can meet and exchange information. We have a large clubhouse where everyone is welcome to relax in the lounge or in the ball pool, to participate in lectures or workshops, to work with the tools in the workshop or to exchange ideas with the other creatures here.
+---
+icons_1_1: fa-code
+---
+icons_1_2: Programming
+---
+icons_1_3: We develop various software from the remote control of multicopters to the control of flashing LED chains to exercise projects and Internet services.
+---
+icons_2_1: fa-keyboard
+---
+icons_2_2: Hacking
+---
+icons_2_3: We see ourselves as hackers according to the principles of the Chaos Computer Club and act accordingly according to the [Hacker Ethics](https://www.ccc.de/de/hackerethics).
+---
+icons_3_1: fa-cogs
+---
+icons_3_2: Handicrafts
+---
+icons_3_3: We are working on various hardware projects, ranging from mechanical gadgets to self soldered electronics to more complex control systems.
+---
+icons_4_1: fa-puzzle-piece
+---
+icons_4_2: Workshops
+---
+icons_4_3: We offer workshops and lectures to give people an understanding of technology, so that people control technology and not the other way around.
+---
+icons_4_url: /en/termine/
+---
+icons_5_1: fa-heart
+---
+icons_5_2: Waffels
+---
+icons_5_3: One of the strategic locations of the C3 Waffel Operation Center is Lake Constance. We provide support for wafer production and help with tactical wafer operations.
+---
+icons_5_url: /en/projekte/c3woc/
+---
+icons_6_1: fa-calendar-check
+---
+icons_6_2: Events
+---
+icons_6_3: We organize events again and again or take part in them in order to better network with living beings of other regions.
+---
+icons_6_url: /en/blog/
+---
+icons_txt: Become a member
+---
+icons_url: https://toolbox-bodensee.de/en/mitglied-werden/
+---
+red_1: We are happy about new faces.
+---
+red_2:
+
+Every Thursday evening the door is open and everyone is welcome to come by the Toolbox Bodensee e.V..<br/>
+At 19:00 the "weekly meeting" takes place. Here we all meet for mostly 15 minutes in the large meeting room and current topics, projects and questions are addressed. In addition, new faces and guests have the opportunity to introduce themselves or ask questions to the large group, for example if they need help with a specific problem and do not know exactly who to turn to.
+---
+red_3: After the weekly meeting, there is often a small lecture where you are welcome to listen and thus broaden your knowledge horizon. For the rest of the evening, the living creatures are spread over all rooms of the Toolbox Bodensee e.V.. Some people continue to tinker with their projects, others have retreated into the lounge or the ball pool and talk, others are barbecuing in front of the toolbox or flying with the drone through the toolbox. Some of you may also have found the library and are immersed in its reading. And others sit at their computers and program diligently.
+---
+red_4: We would be happy if you drop by!
+---
+icons_1_url: /en/projekte/
+---
+icons_3_url: /en/vereinsheim/elektrowerkstatt/
+---
+hinweis:
+
+We meet every Thursday night. 
+---
+hinweis_txt: Come and see us!
+---
+hinweis_url: /en/kontakt/
+---
+sections:
+
+#### startpage_section ####
+type: right
+----
+header: Open Day
+----
+text: On 17 November 2018 the Toolbox Bodensee invites you to the 4th Open Day!
+----
+text2:
+
+The open day is an ideal opportunity for all those interested to take a closer look at the Toolbox. Between 11:00 am and 7:00 pm we welcome our guests warmly!
+This year again there will be a varied program with many interesting lectures and workshops on different topics. 
+----
+url_text: Open Day
+----
+url: /en/blog/tag-der-offenen-tuere-2018/
+----
+background: /blog/tag-der-offenen-tuere-2018/tag_der_offenen_tuere_2017_7.JPG
+#### startpage_section ####
+type: left
+----
+header: electrical workshop
+----
+text: Here you will find oscilloscopes, soldering irons, power supplies, measuring instruments, various components and 3D printers. In our large electrical workshop even electrical engineers get jealous.
+----
+text2: In the Toolbox there are some members who are well versed in 3D printing and electronics. We try to share our knowledge with other members and guests and support each other in our projects.
+----
+url_text: projects
+----
+url: /en/projekte/
+----
+background: /images/home/abschnitt2.jpeg
+#### startpage_section ####
+type: right
+----
+header: Workshops & Lectures
+----
+text: The Toolbox regularly hosts workshops and lectures on many interesting topics.
+----
+text2: We would also be delighted if you would like to contribute something to an interested audience or share your knowledge and experience with us. The participation in the lectures and workshops is of course free of charge for members as well as guests.
+----
+url_text: Dates & Events
+----
+url: /en/termine/
+----
+background: /images/home/abschnitt3.jpeg

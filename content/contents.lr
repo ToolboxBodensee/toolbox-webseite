@@ -2,11 +2,6 @@ _model: start
 ---
 title: Toolbox Bodensee e.V.
 ---
-body:
-
-This is a basic demo website that shows how to use Lektor for a basic
-website with some pages and a blog.
----
 slogan: Gemeinnütziger Maker- und Hackspace am Bodensee.
 ---
 about_header: Vereinsheim
