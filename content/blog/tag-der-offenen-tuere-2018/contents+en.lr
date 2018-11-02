@@ -1,0 +1,85 @@
+author: L3D
+---
+beitrag:
+
+lectures (german):
+ + 11:00 a.m. - The Toolbox introduces itself: Own projects, clubhouse tours
+ + 12:00 a.m. - Open day of the open door, short review 2017
+ + 12:30 p.m. - How do I build a powerful network with WLAN for clubs and advanced private users?
+ + 13:30 - Infrastructure and VMs in the Toolbox - An Introduction to Ansible and OpenStack
+ + 14:30 - Cool DataSets: What do Ufo sightings and meteor impacts have in common?
+
+Short lectures:
+ + 12:30 and 16:00 - Quadrocopter basic course
+ + 14:00 - Smarter sweating: Ceiling fan 2.0
+ + 14:30 o'clock - Alexa unplugged (with blockchain and cyber)
+ + 15:00 - Two years after the Socialbit insolvency: What do I do now (differently)?
+ + 15:30 o'clock - Short presentation Freifunk
+ + 16:30 - Game Reverse Engineering 101 or: How do I modify a game?
+
+Workshops:
+ + 13:00 - Soldering for children
+ + 14:00 o'clock - make your own t-shirts
+ + 15:00 - Arduino basic course
+
+Besides. 13:30 and 16:30
+* 13:30 and 16:30 - Quadrocopter flight show
+* all day - Retrogames
+
+A review of the Open Day 2017 can be found on the [Blog by Thomas Kekeisen](https://thomaskekeisen.de/de/blog/tooblox-tag-der-offenen-tuere-2017/) and [at see-base](https://see-base.de/blog/der-tag-der-offenen-tuer-in-der-toolbox-bodensee/). In addition there are some pictures from the previous years below.
+
+[Subscribe](https://bodensee.space/calendarfeeds/toolboxpublic.ics) to the Toolbox calendar to stay informed about current events.
+---
+body:
+
+On 17 November 2018 the Toolbox Bodensee invites you to the 4th Open Day.
+
+The open day is an ideal opportunity for all those interested to take a closer look at the Toolbox at Bergheimer Straße 6 in Markdorf. 
+Between 11:00 am and 7:00 pm we welcome our guests warmly.
+Also this year there will be a varied program with many interesting lectures and workshops on different topics. Especially popular with visitors last year were our workshop on soldering for children and the Quadrocopter demonstrations. We will offer both again this year!
+Also [Freifunk Bodensee](https://ffbsee.net/) will present itself again and give instructions for flashing your own freifunk router.
+
+We also take care of your physical well-being. Among other things, the [C3WOC](https://c3woc.de) will, as always, prepare fresh waffles for us.
+
+---
+project:
+
+#### pro_img ####
+image: tag_der_offenen_tuere_2017_2.JPG
+#### pro_img ####
+image: tag_der_offenen_tuere_2017_3.JPG
+#### pro_img ####
+image: tag_der_offenen_tuere_2017_4.JPG
+#### pro_img ####
+image: tag_der_offenen_tuere_2017_5.JPG
+#### pro_img ####
+image: tag_der_offenen_tuere_2017_6.JPG
+#### pro_img ####
+image: tag_der_offenen_tuere_2017_7.JPG
+#### pro_img ####
+image: tag_der_offenen_tuere_2017_8.JPG
+#### pro_img ####
+image: tag_der_offenen_tuere_2017_9.JPG
+#### pro_img ####
+image: tag_der_offenen_tuere_2017_1.JPG
+---
+pub_date: 2018-10-02
+---
+shorttitle: open Space
+---
+title: Open Day 2018
+---
+twitter_handle: L3D
+---
+xml:
+
+On 17 November 2018 the Toolbox Bodensee invites you to the 4th Open Day.
+
+The open day is an ideal opportunity for all those interested to take a closer look at the Toolbox. 
+
+Between 11:00 and 19:00 we welcome our guests warmly!
+This year there will again be a varied programme with many interesting lectures and workshops on various topics. Especially popular with visitors last year were our workshop "Soldering for children" and the Quadcopter demonstrations. We will offer both again this year!
+
+There will be waffles from C3WOC!
+---
+xml_img: tag_der_offenen_tuere_2017_9.JPG
