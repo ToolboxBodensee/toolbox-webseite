@@ -2,7 +2,7 @@ author: see-base
 ---
 body:
 
-There are not few hackspaces in this world. The SpaceAPI was developed to exchange some information about hackspaces in a standardized way. This API contains some data about the hackspace, such as whether the door is currently open for visitors and guests or not.
+There are some hackspaces in this world. The SpaceAPI was developed to exchange some information about hackspaces in a standardized way. This API contains some data about the hackspace, such as whether the door is currently open for visitors and guests or not.
 
 As a modern maker and hackspace the toolbox is of course included and shows not only on the website if the hackspace is open, but also via SpaceAPI.
 
@@ -17,7 +17,7 @@ https://bodensee.space/spaceapi/toolboxbodenseeev.json
 In the toolbox itself there is a switch to change the status of the hackspace to ``open`` and ``closed``. The git to the self-made server backend can be found on [github.com/see-base/spaceapi-server](https://github.com/see-base/spaceapi-server).
 The source code of the switch itself is on [github.com/ToolboxBodensee/spacebutton](https://github.com/ToolboxBodensee/spacebutton).
 
-And of course we couldn't let it be to write an IRC bot to retrieve or change the space status. This can be found in the channel [#see-base](https://webirc.hackint.org/#irc://irc.hackint.org/#see-base) on Hackint and as source code in the [git](https://github.com/see-base/spaceapi-bot) of course!
+And of course there is an IRC bot to retrieve or change the space status. This can be found in the channel [#see-base](https://webirc.hackint.org/#irc://irc.hackint.org/#see-base) on Hackint and as source code in the [git](https://github.com/see-base/spaceapi-bot) of course!
 
 ---
 icon: fas fa-search-location
