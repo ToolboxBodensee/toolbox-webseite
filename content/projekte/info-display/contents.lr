@@ -7,7 +7,10 @@ body:
 In der Toolbox gibt es ein großes Display im Gang, das genutzt wird, um sinnvolle und amüsante Informationen anzuzeigen. Neben der aktuellen Uhrzeit, nerdigen [Memes](https://de.wikipedia.org/wiki/Internetph%C3%A4nomen) und Videos geben wir darüber auch die Abfahrtzeiten für den öffentlichen Nahverkehr aus.
 Am Display hängt ein Raspberry Pi, der mit der Software [info-beamer](https://info-beamer.com/product/info-beamer-pi) versehen ist. Info-beamer - als sehr mächtige "digital signage"-Lösung - wird beispielsweise auch auf dem [Chaos Communication Congress](https://info-beamer.com/blog/running-the-33c3-info-screens) des CCC genutzt, um Infos zu Talks und Vorträgen anzuzeigen.
 
+<a href="https://github.com/ToolboxBodensee/info-display-ruum-42" class="button">Quellcode info-beamer vor dem ruum42</a>
+
 Direkt unter dem Display findet man außerdem unseren Space-API Schalter, mit dem man den Status der Toolbox (bzw. des Vereinsheims) ändern kann. Durch Betätigen wird die Information, ob das Vereinsheim derzeit geöffnet oder geschlossen ist, direkt auf unserer Webseite (oben links) aktualisiert.
+
 <a href="/projekte/spaceapi" class="button">Projekt SpaceAPI</a>
 
 ...und so sieht das Ganze aus:
@@ -27,3 +30,5 @@ image: cyber.jpg
 image: uhr.jpg
 #### pro_img ####
 image: cat.jpg
+---
+xml_img: cyber.jpg
