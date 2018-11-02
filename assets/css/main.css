@@ -109,7 +109,7 @@ body {
   .container {
     width: 100% !important; } }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 933px) {
   .container.\31 25\25		{
     width: 100%;
     max-width: 125%;
@@ -716,7 +716,7 @@ body {
   .\-1u\28medium\29 {
     margin-left: 8.3333333333%; } }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 933px) {
   .row > * {
     padding: 0 0 0 2.5em; }
   .row {
@@ -2441,7 +2441,7 @@ body.is-touch #banner {
 #navPanel, #titleBar {
   display: none; }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 933px) {
   /* Basic */
   html, body {
     overflow-x: hidden; }
