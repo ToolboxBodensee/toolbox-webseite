@@ -2441,7 +2441,7 @@ body.is-touch #banner {
 #navPanel, #titleBar {
   display: none; }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 900px) {
   /* Basic */
   html, body {
     overflow-x: hidden; }
