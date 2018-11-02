@@ -44,7 +44,7 @@ bearbeiten, bevor diese Veröffentlicht werden!
 ------------------------
 Lektor bietet in der Admin-Oberfläche die Möglichkeit die Toolbox Webseite auf englisch zu übersetzen.
 Diese Funktion befindet sich unter dem Punkt ``Alternative``. 
-Als Übersetzer mit guten Ergebnissen kann man beispielsweise [deepl](https://www.deepl.com) verwenden.
+Als Übersetzer mit guten Ergebnissen kann man beispielsweise [deepl](https://www.deepl.com) verwenden.<br/>
 Links auf Seiten haben in der Englischen Version ein ``/en/`` vor der Adresse. 
 So wird ``https://toolbox-bodensee.de/projekte/c3woc/`` zu ``https://toolbox-bodensee.de/en/projekte/c3woc/``.
 
