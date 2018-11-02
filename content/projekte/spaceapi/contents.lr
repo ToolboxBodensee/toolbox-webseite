@@ -8,23 +8,26 @@ pub_date: 2017-05-06
 ---
 body:
 
-Es gibt nicht wenige Hackspaces in dieser Welt. Um möglichst standardisiert einige Informationen über Hackspaces auszutauschen, wurde die SpaceAPI entwickelt. In dieser API stehen einige Daten über den Hackspace, wie zum Beispiel ob die Türe gerade für Besucher und Gäste geöffnet ist oder nicht.
+Es gibt nicht wenige Hackspaces auf dieser Welt. Um möglichst standardisiert einige Informationen über Hackspaces austauschen zu können, wurde die SpaceAPI entwickelt. In dieser API stehen einige Daten über den Hackspace, wie zum Beispiel ob die Türe gerade für Besucher und Gäste geöffnet ist oder nicht.
 
 Als moderner Maker- und Hackspace ist die Toolbox natürlich dabei und zeigt nicht nur auf der Webseite an ob der Hackspace geöffnet ist, sondern auch per SpaceAPI.
 
 <a href="https://spaceapi.ccc.de" class="button">SpaceAPI</a>
 
-Auf [GitHub](https://github.com/fixme-lausanne/OpenSpaceDirectory/blob/master/directory.json) findet man eine Liste mit JSON Dateien, die die Hackspaces bereit stellen.
+Auf [GitHub](https://github.com/fixme-lausanne/OpenSpaceDirectory/blob/master/directory.json) findet man eine Liste mit JSON Dateien, die die Hackspaces bereitstellen.
 Die Informationen zur Toolbox sind [hier](https://bodensee.space/spaceapi/toolboxbodenseeev.json) zu finden:
 ```
 https://bodensee.space/spaceapi/toolboxbodenseeev.json
 ```
 
-In der Toolbox selber gibt es einen Schalter, mit dem sich der Status des Hackspace auf ``open`` und ``closed`` ändern lässt. Das Git zum selber gebauten Server-Backend dazu gibt es hier: [github.com/see-base/spaceapi-server](https://github.com/see-base/spaceapi-server).
+In der Toolbox selber gibt es einen Schalter, mit dem sich der Status des Hackspace auf ``open`` oder ``closed`` ändern lässt. Das Git zum selbstgebauten Server-Backend gibt es hier: [github.com/see-base/spaceapi-server](https://github.com/see-base/spaceapi-server).
+Den Quellcode zum Schalter selbst findet man auf [github.com/ToolboxBodensee/spacebutton](https://github.com/ToolboxBodensee/spacebutton).
 
-Und natürlich konnten wir es nicht lassen dazu auch einen IRC Bot zu schreiben, mit dem sich der Space Status abrufen oder ändern lässt. Diesen gibt es im Channel [#see-base](https://webirc.hackint.org/#irc://irc.hackint.org/#see-base) auf Hackint und als Quellcode natürlich im [git](https://github.com/see-base/spaceapi-bot).
+Und natürlich konnten wir es nicht lassen dazu auch einen IRC Bot zu schreiben, mit dem sich der Space Status abrufen oder ändern lässt. Diesen gibt es im Channel [#see-base](https://webirc.hackint.org/#irc://irc.hackint.org/#see-base) auf Hackint und als Quellcode natürlich ebenfalls im [git](https://github.com/see-base/spaceapi-bot).
 ---
 teaser:
 
-Mit der SpaceAPI wird versucht, spannende Informationen über diverse Hackspaces zu sammeln, so das man diese über eine API abrufen kann.
+Mit der SpaceAPI wird versucht, spannende Informationen über diverse Hackspaces zu sammeln, so dass man diese über eine API abrufen kann.
 Eine dieser Informationen ist, ob der Space offen oder geschlossen ist.
+---
+xml_img: spaceapi.png
