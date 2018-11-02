@@ -15,7 +15,7 @@ Diese findet man unter [toolbox-bodensee.de](https://toolbox-bodensee.de/)
 Das CMS für diese Webseite ist [Lektor](https://www.getlektor.com/).
 Die Installationsanleitung gibt es [hier](https://www.getlektor.com/downloads/).
 Lektor ist auch als Python Modul verfügbar und kann mit ``python2 -m lektor`` verwendet werden.
-Auch die Installation über pip ist möglich:
+Auch die Installation über pip *(in einem [virtuellen Enviroment](https://docs.python.org/3/tutorial/venv.html)* ist möglich:
 ```bash
 virtualenv venv
 . venv/bin/activate
@@ -42,7 +42,11 @@ bearbeiten, bevor diese Veröffentlicht werden!
 
  Webseite übersetzen:
 ------------------------
-Lektor bietet in der Admin-Oberfläche die Möglichkeit die Toolbox Webseite auf englisch zu übersetzen. Die Funktion befindet sich unter dem Punkt Alternative. Als Übersetzer mit guten Ergebnissen kann man beispielsweise [deepl](https://www.deepl.com) nutzen.
+Lektor bietet in der Admin-Oberfläche die Möglichkeit die Toolbox Webseite auf englisch zu übersetzen.
+Diese Funktion befindet sich unter dem Punkt ``Alternative``. 
+Als Übersetzer mit guten Ergebnissen kann man beispielsweise [deepl](https://www.deepl.com) verwenden.
+Links auf Seiten haben in der Englischen Version ein ``/en/`` vor der Adresse. 
+So wird ``https://toolbox-bodensee.de/projekte/c3woc/`` zu ``https://toolbox-bodensee.de/en/projekte/c3woc/``.
 
  Fork aktuell halten ohne neu zu forken:
 ------------------------
