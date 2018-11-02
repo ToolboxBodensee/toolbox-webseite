@@ -40,6 +40,10 @@ bearbeiten, bevor diese Veröffentlicht werden!
  8. Änderungen hochladen (``git push``)
  9. Pull-Request Stellen (übers GitHub Interface)
 
+ Webseite übersetzen:
+------------------------
+Lektor bietet in der Admin-Oberfläche die Möglichkeit die Toolbox Webseite auf englisch zu übersetzen. Die Funktion befindet sich unter dem Punkt Alternative. Als Übersetzer mit guten Ergebnissen kann man beispielsweise [deepl](https://www.deepl.com) nutzen.
+
  Fork aktuell halten ohne neu zu forken:
 ------------------------
 ```bash
