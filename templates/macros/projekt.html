@@ -1,11 +1,14 @@
 {% macro render_blog_post(post, from_index=false) %}
   {% if from_index %}
-        <section class="4u 6u(medium) 12u(xsmall)">
+        <section class="4u 6u(medium) 12u(xsmall)" style="height: 600px">
                 <span class="icon alt major">
-                    <a href="{{ post|url }}" style="border-bottom: none;" title="Von {{ post.author }} {% if post.pub_date %}am {{ post.pub_date.strftime('%d.%m.%Y')}} {% endif %}gestartet"><i class="{{ post.icon }} fa-3x" style="line-height: 2; "></i></a>
+                    <a href="{{ post|url }}" style="border-bottom: none;" title="Von {{ post.author }} {% if post.pub_date %}am {{ post.pub_date.strftime('%d.%m.%Y')}} {% endif %}gestartet">
+                      <i class="{{post.icon}} fa-3x" style="line-height: 2 ;  "></i></a>
+                    
+
           </span>
           <a href="{{ post|url }}"><h3>{{ post.title }}</h3></a>
-          <article style="height: 320px;">
+          <article style="height: 300px;">
               {{ post.teaser }}
             </article>
         </section>
