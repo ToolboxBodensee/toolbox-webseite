@@ -11,7 +11,7 @@ set search = "projekte" %}
     <name>{% if this.author %}{{ this.author }}{% else %}Toolbox{% endif %}</name>
   </author>{%
   set pages = site.query('/projekte').include_undiscoverable(true).all() %}{%
- for page in pages %}
+  for page in pages %}{% if not page._hidden %}
   <entry xml:base="{{ baseurl }}{{ search }}/{{ page._id }}/">
     <title type="text">{{ page.title }}</title>
     <id>23{{ page.pub_date|datetimeformat('YYYYMMDDhhmmss') }}</id>
@@ -27,6 +27,6 @@ set search = "projekte" %}
       &lt;img width=&quot;23%&quot; src=&quot;{{ page.xml_img }}&quot; /&gt;
       {% endif %}
     </content>
-  </entry>{%
+</entry>{% endif %}{%
 endfor %}
 </feed>
