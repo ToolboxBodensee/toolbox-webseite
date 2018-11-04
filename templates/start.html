@@ -18,7 +18,7 @@
 </section>
 
 <!-- One -->
-<section id="scroll-1" class="spotlight style1 bottom">
+<section id="scroll-1" class="spotlight style1 bottom" style="background-image:url({{ this.about_background }})">
   <span class="image fit main"><img src="{{ '/images/home/abschnitt1.jpeg'|url }}" alt="" /></span>
   <div class="content">
     <div class="container">
@@ -45,7 +45,7 @@
 </section>
 
 {% for blk in this.sections.blocks %}
-    <section id="scroll-{{ loop.index0 + 2 }}" class="spotlight style2 {{ blk.type }}">
+    <section id="scroll-{{ loop.index0 + 2 }}" class="spotlight style2 {{ blk.type }}" style="background-image:url({{ blk.background }})">
     {{ blk }}
     <a href="#scroll-{{ loop.index0 + 3 }}" class="goto-next scrolly">Next</a>
     </section>

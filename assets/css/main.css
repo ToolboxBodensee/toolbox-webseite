@@ -1938,7 +1938,8 @@ input[type="button"],
   background-position: center center;
   background-size: cover;
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-  height: 120vh;
+  background-image: none;
+  height: 42em;
   overflow: hidden;
   position: relative; }
   .spotlight:nth-last-of-type(1) {
@@ -1989,7 +1990,7 @@ input[type="button"],
     top: 0;
     width: 100%; }
   .spotlight .image.main {
-    display: none; }
+    display: block; }
     .spotlight .image.main img {
       position: relative; }
   .spotlight .content {
@@ -2001,7 +2002,7 @@ input[type="button"],
     -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
     -ms-transition: -ms-transform 1s ease, opacity 1s ease;
     transition: transform 1s ease, opacity 1s ease;
-    background: rgba(23, 24, 32, 0.95);
+    background: rgba(23, 24, 32, 0.9);
     border-style: solid;
     opacity: 1;
     position: absolute; }
@@ -2043,7 +2044,7 @@ input[type="button"],
   .spotlight.style1 .content {
     border-color: #E64F2D; }
   .spotlight.style2 .content {
-    border-color: #9B160F; }
+    border-color: #E64F2D; }
   .spotlight.style3 .content {
     border-color: #D74126; }
   .spotlight.inactive .content {
@@ -2403,7 +2404,7 @@ body.is-touch #banner {
       max-height: 40vh;
       overflow: hidden; }
     .spotlight .content {
-      background-color: #1c1d26;
+      background-color: rgba(23, 24, 32, 0.9);
       border-width: 0 !important;
       border-top-width: 0.35em !important;
       bottom: auto !important;
