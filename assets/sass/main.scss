@@ -979,7 +979,8 @@
 		background-position:	center center;
 		background-size:		cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.25);
-		height: 120vh;
+		background-image: none;
+		height: 42em;
 		overflow: hidden;
 		position: relative;
 
@@ -1001,7 +1002,7 @@
 		}
 
 		.image.main {
-			display: none;
+			display: block;
 
 			img {
 				position: relative;
@@ -1011,7 +1012,7 @@
 		.content {
 			@include vendor('transform', 'translate(0,0)');
 			@include vendor('transition', 'transform 1s ease, opacity 1s ease');
-			background: _palette(bg-transparent);
+			background: _palette(bg-very-transparent);
 			border-style: solid;
 			opacity: 1;
 			position: absolute;
@@ -1077,7 +1078,7 @@
 
 		&.style2 {
 			.content {
-				border-color: _palette(accent3);
+				border-color: _palette(accent1);
 			}
 		}
 
@@ -1593,7 +1594,7 @@
 				}
 
 				.content {
-					background-color: _palette(bg);
+					background-color: _palette(bg-very-transparent);
 					border-width: 0 !important;
 					border-top-width: 0.35em !important;
 					bottom: auto !important;
