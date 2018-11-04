@@ -1938,7 +1938,7 @@ input[type="button"],
   background-position: center center;
   background-size: cover;
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-  height: 100vh;
+  height: 120vh;
   overflow: hidden;
   position: relative; }
   .spotlight:nth-last-of-type(1) {
