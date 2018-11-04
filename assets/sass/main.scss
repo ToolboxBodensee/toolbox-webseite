@@ -980,7 +980,8 @@
 		background-size:		cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.25);
 		background-image: none;
-		height: 42em;
+		min-height: 42em;
+		height: 100vh;
 		overflow: hidden;
 		position: relative;
 
@@ -1072,7 +1073,7 @@
 
 		&.style1 {
 			.content {
-				border-color: _palette(accent1);
+				border-color: _palette(accent1-transparent);
 			}
 		}
 
