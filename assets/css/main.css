@@ -1939,7 +1939,8 @@ input[type="button"],
   background-size: cover;
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
   background-image: none;
-  height: 42em;
+  min-height: 42em;
+  height: 100vh;
   overflow: hidden;
   position: relative; }
   .spotlight:nth-last-of-type(1) {
@@ -2041,8 +2042,6 @@ input[type="button"],
   .spotlight.right .content {
     border-left-width: 0.35em;
     right: 0; }
-  .spotlight.style1 .content {
-    border-color: #E64F2D; }
   .spotlight.style2 .content {
     border-color: #E64F2D; }
   .spotlight.style3 .content {
