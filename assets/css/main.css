@@ -1480,14 +1480,14 @@ textarea {
     color: rgba(255, 255, 255, 0.3);
     content: '\f078';
     display: block;
-    height: 3em;
-    line-height: 3em;
+    height: 2.4em;
+    line-height: 2.4em;
     pointer-events: none;
     position: absolute;
     right: 0;
     text-align: center;
     top: 0;
-    width: 3em; }
+    width: 2.4em; }
   .select-wrapper select::-ms-expand {
     display: none; }
 
@@ -1495,7 +1495,7 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 select {
-  height: 3em; }
+  height: 2.4em; }
 
 textarea {
   padding: 0.75em 1em; }
@@ -1527,7 +1527,7 @@ input[type="radio"] {
     display: inline-block;
     font-size: 1em;
     font-weight: 300;
-    padding-left: 2.55em;
+    padding-left: 2.19em;
     padding-right: 0.75em;
     position: relative; }
     input[type="checkbox"] + label:before,
@@ -1544,13 +1544,13 @@ input[type="radio"] {
       border: solid 1px rgba(255, 255, 255, 0.3);
       content: '';
       display: inline-block;
-      height: 1.8em;
+      height: 1.44em;
       left: 0;
-      line-height: 1.725em;
+      line-height: 1.38em;
       position: absolute;
       text-align: center;
       top: 0;
-      width: 1.8em; }
+      width: 1.44em; }
   input[type="checkbox"]:checked + label:before,
   input[type="radio"]:checked + label:before {
     background: rgba(255, 255, 255, 0.25);
@@ -1831,8 +1831,8 @@ input[type="button"],
   cursor: pointer;
   display: inline-block;
   font-weight: 400;
-  height: 3em;
-  line-height: 3em;
+  height: 2.4em;
+  line-height: 2.4em;
   padding: 0 2.25em;
   text-align: center;
   text-decoration: none;
