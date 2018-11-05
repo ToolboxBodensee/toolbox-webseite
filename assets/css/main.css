@@ -2035,7 +2035,8 @@ input[type="button"],
     height: 101%;
     padding: 6em 3em;
     top: 0;
-    width: 28em; }
+    width: 28em;
+    min-width: 25%; }
   .spotlight.left .content {
     border-right-width: 0.35em;
     left: 0; }
@@ -2396,7 +2397,8 @@ body.is-touch #banner {
   /* Spotlight */
   .spotlight {
     background-attachment: scroll;
-    height: auto; }
+    height: auto;
+    min-height: auto; }
     .spotlight .image.main {
       display: block;
       margin: 0;
