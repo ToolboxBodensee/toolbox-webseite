@@ -6,30 +6,47 @@ slogan: 42! Die ultimative Antwort auf die Frage nach dem Leben, dem Universum u
 ---
 content:
 
-<span class="image right"><img src="/antworten/answer_to_life.png" alt="Makerfaire"></span>
+<span class="image right"><img src="/antworten/answer_to_life.png" alt="42"></span>
 
-Hier ein paar häufe Fragen, die uns oft gestellt werden und die dazugehörige Antwort:
+Hier ein paar der am häufigsten gestellten Fragen, die uns regelmäßig erreichen, mit den dazugehörigen Antworten:
 <br/><br/>
-<div class="table-wrapper">
-<table><tbody><tr>
-<td>Darf ich eure Werkstatt für mein Projekt verwenden?.</td>
-</tr></tr></table></div>
-<p>Klar! Du bist herzlich eingeladen, unsere Werkstatt zu verwenden. Einzig deine Verbrauchsmaterialien musst du selbst mitbringen, das Werkzeug stellen wir! Komm doch einfach an einem unserer offenen Donnerstage vorbei und verschaff dir selbst ein Bild.</p>
 
-<div class="table-wrapper"><table><tbody><tr>
-<td>Könnt ihr mir etwas mit eurem 3D-Drucker ausdrucken?</td>
-</tr><tr>
-<td>Wir helfen dir gerne dabei, zu verstehen, wie 3D-Drucker funktionieren und wie du die entsprechenden Programme zum Erstellen von passenden Vorlagen und Druckdateien erstellen kannst. Leider verstehen wir uns nicht als 3D-Druck-Dienstleister sodass wir keine Dinge im Auftrag für dich herstellen können oder wollen.</td>
-</tr><tr>
-<td>Ich bin kein Mitglied. Darf ich trotzdem vorbei kommen?</td>
-</tr><tr>
-<td>Aber natürlich. Genau hierfür sind die offenen Donnerstage da. Am Donnerstag findet sich bestimmt auch jemand, der dir bischen erklären kann, wie die Toolbox funktioniert und dir eine Tour durch das Gebäude geben kann. Sprech uns einfach an.</td>
-</tr><tr>
-<td>Könnt ihr mir mein Motiv auf mein T-Shirt Siebdrucken?</td>
-</tr><tr>
-<td>Wir helfen dir gerne zu verstehen, wie Siebdruck funktioniert und zeigen dir, was du machen musst, um selber ein Motiv auf den von dir mitgebrachten Stoff zu siebdrucken. Aber wir verstehen uns nicht als Dienstleister  sodass wir keine Dinge im Auftrag für dich herstellen können oder wollen.</td>
-</tr><tr>
-<td>Mir gefällt etwas auf dieser Webseite nicht. Darf ich das ändern?</td>
-</tr><tr>
-<td>Sehr gerne. Wir haben den Quellcode dieser Webseite auf <a href="https://github.com/ToolboxBodensee/toolbox-webseite">GitHub</a> gestellt. Dort steht auch, wie du vorgehen musst um eine Änderung auf der Seite zu bewirken.</td>
-</tr></table></div>
+<div class="table-wrapper">
+<table>
+	<tbody>
+	<tr>
+		<td>Darf ich eure Werkstatt für mein Projekt verwenden?</td>
+	</tr>
+	<tr>
+		<td>Klar! Du bist herzlich eingeladen, unsere Werkstatt zu verwenden. Einzig deine Verbrauchsmaterialien musst du selbst mitbringen, das Werkzeug stellen wir! Komm doch einfach an einem unserer offenen Donnerstage vorbei und verschaff dir selbst ein Bild.</td>
+	</tr>
+
+	<tr>
+		<td>Könnt ihr mir etwas mit eurem 3D-Drucker ausdrucken?</td>
+	</tr>
+	<tr>
+		<td>Wir helfen dir gerne dabei, zu verstehen, wie 3D-Drucker funktionieren und wie du die entsprechenden Programme zum Erstellen von passenden Vorlagen und Druckdateien erstellen kannst. Leider verstehen wir uns nicht als 3D-Druck-Dienstleister, so dass wir keine Dinge im Auftrag für dich herstellen können oder wollen.</td>
+	</tr>
+
+	<tr>
+		<td>Könnt ihr mir mein Motiv auf mein T-Shirt Siebdrucken?</td>
+	</tr>
+	<tr>
+		<td>Wir helfen dir gerne zu verstehen, wie Siebdruck funktioniert und zeigen dir, was du machen musst, um selber ein Motiv auf den von dir mitgebrachten Stoff zu siebdrucken. Aber wir verstehen uns nicht als Dienstleister, so dass wir keine Dinge im Auftrag für dich herstellen können oder wollen.</td>
+	</tr>
+
+	<tr>
+		<td>Ich bin kein Mitglied. Darf ich trotzdem vorbeikommen?</td>
+	</tr>
+	<tr>
+		<td>Aber natürlich. Genau hierfür sind die offenen Donnerstage da. Am Donnerstag findet sich bestimmt auch jemand, der dir erklären kann, wie die Toolbox funktioniert und sicher auch eine "Tour" durch das Gebäude geben kann. Sprich uns einfach an!</td>
+	</tr>
+
+	<tr>
+		<td>Mir gefällt etwas auf dieser Webseite nicht. Darf ich das ändern?</td>
+	</tr>
+	<tr>
+		<td>Sehr gerne! Der Quellcode dieser Webseite ist auf <a href="https://github.com/ToolboxBodensee/toolbox-webseite">GitHub</a> öffentlich zugänglich. Du findest dort auch eine Anleitung, die beschreibt was zu tun ist, um Änderungen auf der Seite zu bewirken.</td>
+	</tr>
+</table>
+</div>
