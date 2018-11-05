@@ -1054,6 +1054,7 @@
 				padding: $size-wrapper-pad-tb $size-wrapper-pad-lr;
 				top: 0;
 				width: 28em;
+				min-width: 25%;
 			}
 		}
 
@@ -1586,6 +1587,7 @@
 			.spotlight {
 				background-attachment: scroll;
 				height: auto;
+				min-height: auto;
 
 				.image.main {
 					display: block;
