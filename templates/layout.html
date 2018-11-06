@@ -84,7 +84,7 @@
                   endif %}</li>{%
                  endif %}{%
                endfor %}
-                 <li><a href="/en{{ this._path }}">{% if bag('navigation', this.alt, 'sprache') %}{{ bag('navigation', this.alt, 'sprache') }}{% else %}Sprache{% endif %}</a>
+               <li><a href="/{% if bag('navigation', this.alt, 'default_path') %}{{ bag('navigation', this.alt, 'default_path') }}{% else %}..{% endif %}{{ this._path }}">{% if bag('navigation', this.alt, 'sprache') %}{{ bag('navigation', this.alt, 'sprache') }}{% else %}Sprache{% endif %}</a>
                    <ul>
                      <li><a href="/..{{ this._path }}">{% if bag('navigation', this.alt, 'German') %}{{ bag('navigation', this.alt, 'German') }}{% else %}German{% endif %}</a></li>
                      <li><a href="/en{{ this._path }}">{% if bag('navigation', this.alt, 'Englisch') %}{{ bag('navigation', this.alt, 'Englisch') }}{% else %}english{% endif %} <i>({% if bag('navigation', this.alt, 'falls') %}{{ bag('navigation', this.alt, 'falls') }}{% else %}if available{% endif %})</i></a><li>
