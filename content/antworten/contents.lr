@@ -6,9 +6,13 @@ slogan: 42! Die ultimative Antwort auf die Frage nach dem Leben, dem Universum u
 ---
 content:
 
-<span class="image right"><img src="/antworten/answer_to_life.png" alt="42"></span>
+<span class="image right"><img src="/antworten/42.svg" alt="42">
+<i> Quelle:<br/> <a href="https://commons.wikimedia.org/wiki/File:Answer_to_Life.png">commons.wikimedia.org/wiki/File:Answer_to_Life.svg</a></i>
+<i>(Graphic has exact 42 colours.)</i>
+</span>
 
 Hier ein paar der am häufigsten gestellten Fragen, die uns regelmäßig erreichen, mit den dazugehörigen Antworten:
+
 <br/><br/>
 
 <div class="table-wrapper">
