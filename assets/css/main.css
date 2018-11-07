@@ -1,6 +1,21 @@
 @import url("../css/font-awesome.min.css");
 @import url("../fonts/roboto.css");
 @import url("https://toolbox-bodensee.de/css/spacestatus.css");
+#scroll-1 {
+  background-image: url(../images/home/abschnitt1.jpeg); }
+
+#scroll-2 {
+  background-image: url(../blog/tag-der-offenen-tuere-2018/tag_der_offenen_tuere_2017_7.JPG); }
+
+#scroll-3 {
+  background-image: url(../images/home/abschnitt2.jpeg); }
+
+#scroll-4 {
+  background-image: url(../images/home/abschnitt3.jpeg); }
+
+.iconstartpage {
+  line-height: 2; }
+
 /*
 	Landed by HTML5 UP
 	html5up.net | @ajlkn
@@ -1932,6 +1947,12 @@ input[type="button"],
     width: 2em;
     z-index: 1; }
 
+#scroll-1 {
+  background-image: url(../images/home/abschnitt1.jpeg); }
+
+/*#scroll-2{
+		background-image: url({{ this.background }})
+	}*/
 /* Spotlight */
 .spotlight {
   background-attachment: fixed;

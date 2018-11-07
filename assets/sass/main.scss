@@ -1,6 +1,7 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
+@import 'startpage.scss';
 @import url("../css/font-awesome.min.css");
 @import url("../fonts/roboto.css");
 @import url("https://toolbox-bodensee.de/css/spacestatus.css");
@@ -971,6 +972,19 @@
 			z-index: 1;
 		}
 	}
+
+
+	//startpage
+	#scroll-1{
+		background-image: _picture-startpage(scroll-1)
+	}
+
+	/*#scroll-2{
+		background-image: url({{ this.background }})
+	}*/
+
+	
+		
 
 /* Spotlight */
 

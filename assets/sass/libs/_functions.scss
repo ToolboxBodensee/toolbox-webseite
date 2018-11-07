@@ -32,3 +32,10 @@
 @function _size($keys...) {
 	@return val($size, $keys...);
 }
+
+/// Gets a picture for the startpage
+/// @param {string} $keys Key(s).
+/// @return {string} Value.
+@function _picture-startpage($keys...) {
+	@return val($picture-startpage, $keys...);
+}

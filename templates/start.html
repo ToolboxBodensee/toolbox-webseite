@@ -18,8 +18,7 @@
 </section>
 
 <!-- One -->
-<section id="scroll-1" class="spotlight style1 bottom" style="background-image:url({{ this.about_background }})">
-  <span class="image fit main"><img src="{{ '/images/home/abschnitt1.jpeg'|url }}" alt="" /></span>
+<section id="scroll-1" class="spotlight style1 bottom">
   <div class="content">
     <div class="container">
       <div class="row">
@@ -45,14 +44,14 @@
 </section>
 
 {% for blk in this.sections.blocks %}
-    <section id="scroll-{{ loop.index0 + 2 }}" class="spotlight style2 {{ blk.type }}" style="background-image:url({{ blk.background }})">
+    <section id="scroll-{{ loop.index0 + 2 }}" class="spotlight style2 {{ blk.type }}">
     {{ blk }}
     <a href="#scroll-{{ loop.index0 + 3 }}" class="goto-next scrolly">Next</a>
     </section>
 {% endfor %}
 
 <!-- Four -->
-<section id="scroll-4" class="wrapper style1 special fade-up">
+<section id="scroll-icons" class="wrapper style1 special fade-up">
   <div class="container">
     <header class="major">
       <h2>{{ this.icons_header }}</h2>
@@ -62,42 +61,42 @@
       <div class="row uniform">
         <section class="4u 6u(medium) 12u$(xsmall)">
            <span class="icon alt major">
-            <i class="fas {{ this.icons_1_1 }} fa-3x" style="line-height: 2;"></i>
+            <i class="fas {{ this.icons_1_1 }} fa-3x iconstartpage"></i>
           </span>
           <a href="{{ this.icons_1_url }}"><h3>{{ this.icons_1_2 }}</h3></a>
           {{ this.icons_1_3 }}
         </section>
         <section class="4u 6u$(medium) 12u$(xsmall)">
            <span class="icon alt major">
-            <i class="fas {{ this.icons_2_1 }} fa-3x" style="line-height: 2;"></i>
+            <i class="fas {{ this.icons_2_1 }} fa-3x iconstartpage"></i>
           </span>
           <a href="{{ this.icons_2_url }}"><h3>{{ this.icons_2_2 }}</h3></a>
           {{ this.icons_2_3 }}
         </section>
         <section class="4u$ 6u(medium) 12u$(xsmall)">
            <span class="icon alt major">
-            <i class="fas {{ this.icons_3_1 }} fa-3x" style="line-height: 2;"></i>
+            <i class="fas {{ this.icons_3_1 }} fa-3x iconstartpage"></i>
           </span>
           <a href="{{ this.icons_3_url }}"><h3>{{ this.icons_3_2 }}</h3></a>
          {{ this.icons_3_3 }}
         </section>
         <section class="4u 6u$(medium) 12u$(xsmall)">
            <span href="{{ this.icons_4_url }}" class="icon alt major">
-            <i class="fas {{ this.icons_4_1 }} fa-3x" style="line-height: 2;"></i>
+            <i class="fas {{ this.icons_4_1 }} fa-3x iconstartpage"></i>
           </span>
           <a href="{{ this.icons_4_url }}"><h3>{{ this.icons_4_2 }}</h3></a>
           {{ this.icons_4_3 }}
         </section>
         <section class="4u 6u(medium) 12u$(xsmall)">
            <span class="icon alt major">
-            <i class="fas {{ this.icons_5_1 }} fa-3x" style="line-height: 2;"></i>
+            <i class="fas {{ this.icons_5_1 }} fa-3x iconstartpage"></i>
           </span>
           <a href="{{ this.icons_5_url }}#"><h3>{{ this.icons_5_2 }}</h3></a>
           {{ this.icons_5_3 }}
         </section>
         <section class="4u$ 6u$(medium) 12u$(xsmall)">
           <span class="icon alt major">
-            <i class="fas {{ this.icons_6_1 }} fa-3x" style="line-height: 2;"></i>
+            <i class="fas {{ this.icons_6_1 }} fa-3x iconstartpage"></i>
           </span>
           <a href="{{ this.icons_6_url }}"><h3>{{ this.icons_6_2 }}</h3></a>
           {{ this.icons_6_3 }}
