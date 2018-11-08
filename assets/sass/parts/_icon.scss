@@ -34,6 +34,13 @@
     }
 }
 
-.iconshift{
+.iconshiftdown {
     line-height: 2
+}
+
+
+@for $i from 5 through 10{
+    .iconshift-right-#{$i} {
+        margin-left:$i * 1px;
+    }
 }

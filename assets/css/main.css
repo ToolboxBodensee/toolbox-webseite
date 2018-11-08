@@ -1664,8 +1664,26 @@ input[type="radio"] + label:before {
         color: #272833 !important;
         text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff; }
 
-.iconshift {
+.iconshiftdown {
   line-height: 2; }
+
+.iconshift-right-5 {
+  margin-left: 5px; }
+
+.iconshift-right-6 {
+  margin-left: 6px; }
+
+.iconshift-right-7 {
+  margin-left: 7px; }
+
+.iconshift-right-8 {
+  margin-left: 8px; }
+
+.iconshift-right-9 {
+  margin-left: 9px; }
+
+.iconshift-right-10 {
+  margin-left: 10px; }
 
 /* Image */
 .image {
@@ -2397,6 +2415,27 @@ body.is-touch #banner {
 
 .project-creator {
   border-bottom: none; }
+
+/* Columns */
+.col-2 {
+  width: 50%;
+  padding: 20px;
+  float: left; }
+
+.col-3 {
+  width: 33.33333%;
+  padding: 20px;
+  float: left; }
+
+.col-4 {
+  width: 25%;
+  padding: 20px;
+  float: left; }
+
+.col-5 {
+  width: 20%;
+  padding: 20px;
+  float: left; }
 
 /* XLarge */
 @media screen and (max-width: 1680px) {
