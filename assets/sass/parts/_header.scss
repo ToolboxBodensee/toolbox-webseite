@@ -1,0 +1,79 @@
+/* Header */
+
+#page-wrapper {
+    padding-top: 3.5em;
+}
+
+#header {
+    background: _palette(accent2-transparent);
+    box-shadow: 0 0 0.25em 0 rgba(0,0,0,0.25);
+    cursor: default;
+    height: 3.5em;
+    left: 0;
+    line-height: 3.5em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+    h1 {
+        height: inherit;
+        left: 1.25em;
+        line-height: inherit;
+        margin: 0;
+        position: absolute;
+        top: 0;
+    }
+
+    nav {
+        position: absolute;
+        right: 1em;
+        top: 0;
+
+        ul {
+            margin: 0;
+
+            li {
+                display: inline-block;
+                margin-left: 1em;
+
+                a, span {
+                    border: 0;
+                    color: inherit;
+                    display: inline-block;
+                    height: inherit;
+                    line-height: inherit;
+                    outline: 0;
+
+                    &.button {
+                        height: 2em;
+                        line-height: 2em;
+                        padding: 0 1.25em;
+                    }
+
+                    &:not(.button):before {
+                        margin-right: 0.5em;
+                    }
+                }
+
+                &.active {
+                    > a, > span {
+                        color: _palette(accent1);
+                    }
+                }
+
+                > ul {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+body.landing {
+
+    #page-wrapper {
+        padding-top: 0;
+    }
+    
+}
