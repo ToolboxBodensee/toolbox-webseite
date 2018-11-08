@@ -21,3 +21,8 @@ name = Englisch
 locale = en_US
 url_prefix = /en/
 
+[alternatives.cn]
+name = Chinese
+locale = zh_CN
+url_prefix = /cn/
+
