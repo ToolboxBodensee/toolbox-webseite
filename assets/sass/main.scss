@@ -23,6 +23,7 @@
 		xsmall: '(max-width: 480px)'
 	));
 
+	
 	@include skel-layout((
 		reset: 'full',
 		boxModel: 'border',
@@ -105,6 +106,9 @@
 
 
 @import 'parts/footer';
+
+
+@import 'parts/project';
 
 
 @import 'pagebreak/xlarge';

@@ -1,8 +1,8 @@
 {% macro render_blog_post(post, from_index=false) %}
   {% if from_index %}
-        <section class="4u 6u(medium) 12u(xsmall)" style="height: 600px">
+        <section class="4u 6u(medium) 12u(xsmall) project">
                 <span class="icon alt major">
-                    <a href="{{ post|url }}" style="border-bottom: none;" title="{%
+                    <a href="{{ post|url }}" class="project-creator" title="{%
                     if bag('translate', post.alt, 'projekt_von')
           %}{{ bag('translate', post.alt, 'projekt_von') }}{% else
           %}Von{% endif 
@@ -12,10 +12,10 @@
           %}am{% endif %} {{ post.pub_date.strftime('%d.%m.%Y') }} {%
           endif %} {% if bag('translate', post.alt, 'projekt_start')
           %}{{ bag('translate', post.alt, 'projekt_start') }}{% else
-          %}gestarted{% endif %}"><i class="{{ post.icon }} fa-3x" style="line-height: 2; "></i></a>
+          %}gestarted{% endif %}"><i class="{{ post.icon }} fa-3x iconshift"></i></a>
           </span>
           <a href="{{ post|url }}"><h3>{{ post.title }}</h3></a>
-          <article style="height: 300px;">
+          <article class="teaser">
               {{ post.teaser }}
             </article>
         </section>

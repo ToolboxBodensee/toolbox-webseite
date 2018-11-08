@@ -13,9 +13,6 @@
 #scroll-4 {
   background-image: url(../images/home/abschnitt3.jpeg); }
 
-.iconstartpage {
-  line-height: 2; }
-
 /*
 	Landed by HTML5 UP
 	html5up.net | @ajlkn
@@ -1667,6 +1664,9 @@ input[type="radio"] + label:before {
         color: #272833 !important;
         text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff; }
 
+.iconshift {
+  line-height: 2; }
+
 /* Image */
 .image {
   border-radius: 4px;
@@ -1704,6 +1704,10 @@ input[type="radio"] + label:before {
     width: 100%; }
     .image.fit img {
       width: 100%; }
+  .image.mapid {
+    width: auto;
+    height: 70vh;
+    z-index: 1; }
 
 /* List */
 ol {
@@ -1917,6 +1921,19 @@ input[type="button"],
     color: #ffffff !important;
     cursor: default;
     opacity: 0.25; }
+  input[type="submit"].tb-opened,
+  input[type="reset"].tb-opened,
+  input[type="button"].tb-opened,
+  .button.tb-opened {
+    background-color: LimeGreen  !important; }
+    input[type="submit"].tb-opened.navbar,
+    input[type="reset"].tb-opened.navbar,
+    input[type="button"].tb-opened.navbar,
+    .button.tb-opened.navbar {
+      margin-left: -15px; }
+
+.tb-closed {
+  color: #d23128ff; }
 
 /* Goto Next */
 .goto-next {
@@ -2371,6 +2388,15 @@ body.is-touch #banner {
         padding-left: 0; }
       #footer .copyright li a {
         color: inherit; }
+
+.project {
+  height: 600px; }
+
+.teaser {
+  height: 300px; }
+
+.project-creator {
+  border-bottom: none; }
 
 /* XLarge */
 @media screen and (max-width: 1680px) {

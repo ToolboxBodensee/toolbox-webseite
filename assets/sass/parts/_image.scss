@@ -53,4 +53,10 @@
             width: 100%;
         }
     }
+
+    &.mapid {
+        width: auto;
+        height: 70vh;
+        z-index: 1;
+    }
 }

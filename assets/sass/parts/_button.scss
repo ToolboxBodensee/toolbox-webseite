@@ -72,4 +72,16 @@ input[type="button"],
 		cursor: default;
 		opacity: 0.25;
 	}
+
+	&.tb-opened{
+		background-color: LimeGreen  !important;
+		&.navbar{
+            margin-left: -15px;
+		}
+	}
+
+}
+
+.tb-closed{
+    color: #d23128ff;
 }

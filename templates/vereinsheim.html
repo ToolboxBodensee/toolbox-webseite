@@ -15,7 +15,7 @@
 <!-- Content -->
     <section id="content">
         {{ this.precontent }}
-<div id="mapid" class="image fit" style="width: auto; height: 70vh; z-index: 1;"></div>
+<div id="mapid" class="image fit mapid"></div>
 <script>
     var mymap = L.map('mapid').setView([47.7123, 9.3995], 19);
 
@@ -27,7 +27,7 @@
 	}).addTo(mymap);
 
 	L.marker([47.71240915, 9.3995668]).addTo(mymap)
-    .bindPopup("<aside>Toolbox Bodensee e.V.<br /><a id='tb-closed' class='special button'>Vereinsheim geschlossen!</a><a id='tb-opened' class='special button' style='background-color: LimeGreen !important;'>Vereinsheim offen!</a></aside>").openPopup();
+    .bindPopup("<aside>Toolbox Bodensee e.V.<br /><a id='tb-closed' class='special button'>Vereinsheim geschlossen!</a><a id='tb-opened' class='special button tb-opened'>Vereinsheim offen!</a></aside>").openPopup();
     L.polygon([
 		[47.71242900, 9.39956546],
 		[47.71231350, 9.39980686],
