@@ -6,11 +6,13 @@ author: Byt3, ZeHa
 ---
 body:
 
-## Retrocomputing - wozu das Ganze?
+ Retrocomputing - wozu das Ganze?
+-----------------------------------------------
 Wer kennt es nicht: Beim Anblick alter Spielekonsolen oder Heimcomputer-Klassiker schwelgt man schnell in Erinnerungen an den ersten eigenen Rechner.
 In der Toolbox Bodensee wollen wir allen Interessierten die Möglichkeit geben, den Charm der alten Heimrechner aus den 80er- und 90er-Jahren, nicht nur zu erleben sondern auch selbst zu erforschen. Wir sammeln hierzu alte Hardware und Software und beschäftigen uns auch (teilweise sehr intensiv) mit den verschiedenen Systemen und deren Funktionsweise. Es gibt Mitglieder die Hardwareumbauten und -reparaturen durchführen, damit die Rechner, die teilweise über 30 Jahre alt sind, auch heute noch in einem funktionsfähigen Zustand gehalten werden können. Im Rahmen des Projekts "Spieleentwicklung Bodensee" entsteht zudem auch neue Software für alte Systeme (z.B. [drwuro.com](http://www.drwuro.com/)).
 
-## Unsere Hardware
+ Unsere Hardware
+---------------------------
 ### Heimcomputer
 Aktuell haben wir einen Commodore C64 sowie einen Commodore Amiga 2000 - beide voll funktionsfähig - in unserem Vereinsheim stehen. Für beide Heimcomputer steht zudem eine umfangreiche Softwaresammlung zur Verfügung. Wir besitzen zudem verschiedene Speicherlaufwerke (Diskette, Datasette, SD-Card), was für Backups von Daten auf moderne Speichermedien sehr hilfreich sein kann.
 Weiterhin befindet sich momentan ein Amiga 500 im Aufbau.
@@ -21,7 +23,8 @@ Vor allem Konsolen aus den 90er und 2000er Jahren lassen sich in der Toolbox fin
 ### sonstige Hardware
 Neben Computern und Spielekonsolen haben wir zudem eine kleine Sammlung von (teilweise sehr) alten Mobiltelefonen.
 
-## Spenden!?
+ Spenden!?
+--------------
 Wir sind immer auf der Suche nach alten Computersystemen, die noch in unserer Sammlung fehlen. Wenn du einen Heimcomputer oder Zubehör auf dem Speicher liegen hast und dafür keine Verwendung siehst, dann würden wir uns über eine "Spende" sehr freuen. Auch Software - am liebsten auf alten Datenträgern - oder originale Handbücher sowie Literatur nehmen wir gerne entgegen.
 
 ---
@@ -39,3 +42,5 @@ image: joystick.jpg
 image: c64.jpg
 #### pro_img ####
 image: C64_at_night.jpg
+---
+xml_img: c64.jpg

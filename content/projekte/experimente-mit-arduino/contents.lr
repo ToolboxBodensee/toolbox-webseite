@@ -21,10 +21,16 @@ Veranstalter: Toolbox Bodensee e. V.
 Leitung: Daniel Hirscher
 ```
 
-<span class="image fit"><img src="/projekte/experimente-mit-arduino/experimentieren-mit-arduino.jpg"></span><br/>
 ---
 icon: fas fa-robot
 ---
 pub_date: 2018-03-09
 ---
 teaser: Ein Arduino ist ein kleines Computerboard mit dem man spannende Dinge machen kann. Egal ob Lichter blinken oder der Piepser piepst: Mit dem Arduino kann man leicht eine Alarmanlage bauen oder einen kleinen Roboter steuern. Die Toolbox macht regelmäßig Workshops mit Kindern, um dieses kleine Wundergerät näher kennen zu lernen.
+---
+project:
+
+#### pro_img ####
+image: experimentieren-mit-arduino.jpg
+---
+xml_img: experimentieren-mit-arduino.jpg

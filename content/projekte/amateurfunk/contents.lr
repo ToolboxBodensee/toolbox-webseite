@@ -13,13 +13,19 @@ Wir helfen auch beim Lernen für die Amateurfunklizenz und geben Ratschläge, wi
 
 Gelegentlich sind auch Funker vom [Ortsverband P03](https://www.darc.de/der-club/distrikte/p/ortsverbaende/03/) anwesend, die ein Ausbildungsrufzeichen besitzen und so auch interessierten Neueinsteigern die Möglichkeit bieten, die Funkgeräte benutzen zu dürfen.
 
-**Das senden mit den Funkgeräten ohne gültige Amateufunklizenz und Rufzeichen ist nicht gestattet.** 
+**Das senden mit den Funkgeräten ohne gültige Amateurfunklizenz und Rufzeichen ist nicht gestattet.** 
 Aber das rein passive Zuhören bei Funkgesprächen ist für jeden erlaubt.
 
-<span class="image fit"><img src="/projekte/amateurfunk/funk.jpg"></span><br/>
 ---
 icon: fas fa-broadcast-tower
 ---
 pub_date: 2017-09-01
 ---
 teaser: Die Toolbox ist ein Ort, der Bastler, Tüftler und technikbegeisterte Menschen aus allen Bereichen anzieht. So gibt es auch Menschen mit Amateurfunk-Lizenz bei der Toolbox und eine kleine Amateurfunkstation.
+---
+project:
+
+#### pro_img ####
+image: funk.jpg
+---
+xml_img: funk.jpg
