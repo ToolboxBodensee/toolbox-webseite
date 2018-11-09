@@ -1,0 +1,104 @@
+/* XSmall */
+
+@include breakpoint(xsmall) {
+
+    $size-wrapper-pad-tb: 3em;
+    $size-wrapper-pad-lr: 1.25em;
+
+    /* Basic */
+
+        html, body {
+            min-width: 320px;
+        }
+
+        body, input, select, textarea {
+            font-size: 12pt;
+        }
+
+    /* List */
+
+        ul {
+            &.actions {
+                margin: 0 0 _size(element-margin) 0;
+
+                li {
+                    display: block;
+                    padding: (_size(element-margin) * 0.5) 0 0 0;
+                    text-align: center;
+                    width: 100%;
+
+                    &:first-child {
+                        padding-top: 0;
+                    }
+
+                    > * {
+                        margin: 0 !important;
+                        width: 100%;
+                    }
+                }
+
+                &.small {
+                    li {
+                        padding: (_size(element-margin) * 0.25) 0 0 0;
+
+                        &:first-child {
+                            padding-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+    /* Button */
+
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"],
+        .button {
+            padding: 0;
+        }
+
+    /* Spotlight */
+
+        .spotlight {
+            .image.main {
+                max-height: 50vh;
+            }
+
+            .content {
+                padding: $size-wrapper-pad-tb $size-wrapper-pad-lr ($size-wrapper-pad-tb - _size(element-margin)) $size-wrapper-pad-lr !important;
+            }
+        }
+
+    /* Wrapper */
+
+        .wrapper {
+            padding: $size-wrapper-pad-tb $size-wrapper-pad-lr ($size-wrapper-pad-tb - _size(element-margin)) $size-wrapper-pad-lr;
+        }
+
+    /* Banner */
+
+        #banner {
+            .content {
+                padding: $size-wrapper-pad-tb ($size-wrapper-pad-lr * 1.25) ($size-wrapper-pad-tb * 1.75) ($size-wrapper-pad-lr * 1.25);
+            }
+        }
+
+    /* Footer */
+
+        #footer {
+            padding: $size-wrapper-pad-tb $size-wrapper-pad-lr;
+
+            .copyright {
+                line-height: inherit;
+
+                li {
+                    border-left: 0;
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+
+}
