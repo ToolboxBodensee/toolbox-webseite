@@ -5,12 +5,12 @@ beitrag:
 lectures (german):
  + 11:00 - The Toolbox introduces itself: Own projects, clubhouse tours
  + 12:00 - opening of the open day, short review 2017
- + 12:30 - How do I build a powerful network with WLAN for clubs and advanced private users?
  + 13:30 - Infrastructure and VMs in the Toolbox - An Introduction to Ansible and OpenStack
  + 14:30 - Cool DataSets: What do Ufo sightings and meteor impacts have in common?
 
 Short lectures:
  + 12:30 and 16:00 - Quadrocopter basic course
+ + 13:30 - MQTT
  + 14:00 - Smarter sweating: Ceiling fan 2.0
  + 14:30 - Alexa unplugged: AI and Privacy
  + 15:00 - Two years after the Socialbit insolvency: What do I do now (differently)?

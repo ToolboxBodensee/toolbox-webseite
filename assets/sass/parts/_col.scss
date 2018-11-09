@@ -1,0 +1,9 @@
+/* Columns */
+
+@for $i from 2 through 5{
+    .col-#{$i}{
+        width: 100%/$i;
+        padding: 20px;
+        float: left;
+    }
+}
