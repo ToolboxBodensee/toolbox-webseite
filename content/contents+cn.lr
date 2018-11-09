@@ -1,0 +1,137 @@
+about_header: 俱乐部
+---
+about_text: 我们的俱乐部会所位于康斯坦茨湖马克多夫的BergheimerStraße6，地处intimus International GmbH。
+---
+about_text2:
+
+超过420平方米，我们能够为您提供自己的电气工程，木材和金属车间，3D打印，火腿收音机，丝网印刷以及照相实验室。
+作为会员，您可以经常使用我们的场所和设备，只要您愿意，当然您可以听讲座或分享您的知识。
+---
+about_text3: 我们的俱乐部会所也是其他组织活动的场所，[Chaostreff Markdorf](https://bodensee.space/chaostreff-markdorf)。[和火腿电台friedrichshafen。](https://www.darc.de/der-club/distrikte/p/ortsverbaende/03/), [以及Freifunk Lake Constance社区。](https://freifunk-bodensee.net/),  [游戏开发博登湖](http://www.spieleentwicklung-bodensee.de/)  [和IoT Meetup Bodensee](https://www.meetup.com/de-DE/IoTBodensee/?_cookie-check=8FCj7YDEE6xcpKYA).
+---
+about_url: 俱乐部
+---
+about_url2: /cn/vereinsheim/
+---
+hinweis: 我们每个星期四晚上见面。
+---
+hinweis_txt: 来加入我们吧！
+---
+hinweis_url: /cn/kontakt/
+---
+icons_1_1: fa-code
+---
+icons_1_2: 程序设计
+---
+icons_1_3: 我们开发各种软件，从多模式遥控器到闪存LED链的控制，以锻炼项目和互联网服务。
+---
+icons_1_url: /cn/projekte/
+---
+icons_2_1: fa-keyboard
+---
+icons_2_2: 黑客
+---
+icons_2_3: 我们根据混沌计算机俱乐部的原则将自己视为黑客，并根据[黑客道德](https://www.ccc.de/en/hackerethics) 采取相应行动。
+---
+icons_3_1: fa-cogs
+---
+icons_3_2: 工艺品
+---
+icons_3_3: 我们正在从事各种硬件项目，从机械设备到自焊电子设备，再到更复杂的控制系统。
+---
+icons_3_url: /cn/vereinsheim/elektrowerkstatt/
+---
+icons_4_1: fa-puzzle-piece
+---
+icons_4_2: 研讨会
+---
+icons_4_3: 我们提供研讨会和讲座，让人们了解技术，让人们控制技术，而不是相反。
+---
+icons_4_url: /cn/termine/
+---
+icons_5_1: fa-heart
+---
+icons_5_2: 威化饼
+---
+icons_5_3: 混乱计算机俱乐部华夫饼操作中心的战略位置之一是康斯坦茨湖。 我们为华夫饼干生产提供支持，并为战术华夫饼干业务提供帮助。
+---
+icons_5_url: /cn/projekte/c3woc/
+---
+icons_6_1: fa-calendar-check
+---
+icons_6_2: 活动
+---
+icons_6_3: 我们喜欢组织活动并参与其他活动以改善与其他令人敬畏的生物的网络。
+---
+icons_6_url: /cn/blog/
+---
+icons_header: 只是停下来参与。
+---
+icons_text: 工具箱Bodensee e.V. 是康斯坦茨湖马克多夫的一个非营利性制造商和黑客空间，它试图为会员以及具有相似兴趣的生物可以见面和交换信息的客人营造舒适的氛围。 我们有一个大型俱乐部会所，欢迎每个人在休息室或球池放松，参加讲座或研讨会，使用研讨会中的工具或与其他生物交换意见。
+---
+icons_txt: 成为会员
+---
+icons_url: https://toolbox-bodensee.de/cn/mitglied-werden/
+---
+red_1: 我们很高兴看到新面孔。
+---
+red_2:
+
+每个星期四晚上门都开着，欢迎大家过来参观Toolbox Bodensee e.V ..<br/>
+在19:00举行“每周会议”。 在这里，我们在大型会议室大约会面20分钟，目前的主题，项目和问题都得到了解决。 此外，新面孔和客人有机会向大群人介绍自己或提问。 例如，如果他们需要特定问题的帮助，并且不确切地知道该向谁求助。
+---
+red_3: 在每周一次的会议之后，通常会有一个小型的讲座，欢迎您聆听，从而拓宽您的知识面。 在晚上的剩余时间里，生物被分布在Toolbox Bodensee eV的所有房间。有些人继续修补他们的项目，其他人退回到休息室或球坑和谈话，其他人在前面烧烤 工具箱或通过工具箱与无人机飞行。 你们中的一些人可能也找到了图书馆，并沉浸在阅读中。 其他人勤奋地坐在他们的计算机和程序上。
+---
+red_4: 如果你到处走，我们会很高兴的！
+---
+sections:
+
+#### startpage_section ####
+type: right
+----
+header: 开放日
+----
+text: 2018年11月17日，Toolbox Bodensee邀请您参加第4个开放日！
+----
+text2:
+
+对于有兴趣仔细查看工具箱的所有人来说，开放日是一个理想的机会。 上午11:00至晚上7:00，我们热烈欢迎客人！
+今年将再次举办各种有关不同主题的有趣讲座和研讨会。
+----
+url_text: 开放日
+----
+url: /cn/blog/tag-der-offenen-tuere-2018/
+----
+background: /blog/tag-der-offenen-tuere-2018/tag_der_offenen_tuere_2017_7.JPG
+#### startpage_section ####
+type: left
+----
+header: 电气车间
+----
+text: 在这里您可以找到示波器，烙铁，电源，测量仪器，各种组件和3D打印机。 在我们的大型电气车间，即使是电气工程师也会嫉妒。
+----
+text2: 在工具箱中，有一些成员精通3D打印和电子产品。 我们尝试与其他成员和客人分享我们的知识，并在我们的项目中相互支持。
+----
+url_text: 项目
+----
+url: /cn/projekte/
+----
+background: /images/home/abschnitt2.jpeg
+#### startpage_section ####
+type: right
+----
+header: 研讨会和讲座
+----
+text: 工具箱定期举办许多有趣主题的研讨会和讲座。
+----
+text2: 如果您想向感兴趣的观众贡献一些内容或与我们分享您的知识和经验，我们也将非常高兴。 参加讲座和研讨会当然对会员和客人免费。
+----
+url_text: 日期和活动
+----
+url: /cn/termine/
+----
+background: /images/home/abschnitt3.jpeg
+---
+slogan: 康斯坦茨湖的非营利黑客空间。
+---
+title: Toolbox Bodensee e.V.
