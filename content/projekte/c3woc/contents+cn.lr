@@ -1,0 +1,59 @@
+author: L3D
+---
+body:
+
+<span class="image right" style="background: black;"><img src="https://c3woc.de/images/logo/c3woc.svg" alt="C3WOC Logo"></span>
+
+ 命运
+==========
+C3WOC的使命是为黑客和书呆子提供新鲜的华夫饼。
+因此，C3 Waffle操作中心将华夫铁放置在混乱的战略重要位置。
+因此，最重要的华夫饼基地之一当然是康斯坦茨湖，因此也是Hackspace Toolbox Bodensee e.V.
+
+偶尔在工具箱的建筑物中使用华夫饼干，并且产生华夫饼干。
+
+
+威化饼。 何时何地？
+==========
+在[C3WOC](https://c3woc.de/)的主页上有游览日期和博客，在那里你可以找到一些关于可以找到c3woc的事件的信息。
+
+如果您还有一个很棒的活动，请询问C3WOC是否可以在那里制作一些华夫饼。
+
+参加
+===========
+因为单独制作华夫饼并不是很有趣，我们正在寻找更多想要参加C3WOC并制作一些华夫饼的书呆子。
+C3WOC的华夫饼符合高质量标准，例如，仅使用更高质量的成分制成，并且非常受到卫生的尊重。 特别是对于较大的事件，例如，当使用生鸡蛋时，沙门氏菌感染是一种不可忽视的危险。 在这里，我们强烈建议将已经去皮的鸡蛋（蛋清）或使用C3WOC的一种无蛋配方。
+
+C3WOC的图形，如贴纸和徽标，可以在Hackspace see-base托管的gitea中找到 [gitea.see-base.de/c3woc-logo](https://gitea.see-base.de/c3woc-logo). c3woc.de的网站可以在[github](https://github.com/ToolboxBodensee/c3woc-website)找到。
+
+如果您想成为C3WOC的一员，我们将非常高兴。 看看吧[c3woc.de/mitmachen](https://c3woc.de/mitmachen) 并写信给C3WOC。
+
+<a class="button" href="mailto:waffel@c3woc.de">waffel@c3woc.de</a>
+
+ 图片
+=======
+以下是华夫饼和C3WOC其他产品的一些照片。
+
+
+<div class="lightgallery" class="row alt">
+<a href="https://c3woc.de/blog/camp-18/waffel-standort.jpg">
+<img class="image fit" src="https://c3woc.de/blog/camp-18/waffel-standort.jpg" /></a>
+<a href="https://c3woc.de/images/winkekatze02.jpg">
+<img class="image fit" src="https://c3woc.de/images/winkekatze02.jpg" /></a>
+<a href="https://c3woc.de/blog/cosin-2018/pizza_klein.jpg">
+<img class="image fit" src="https://c3woc.de/blog/cosin-2018/pizza_klein.jpg" /></a>
+<a href="https://c3woc.de/blog/makerfaire18/action02.jpg">
+<img class="image fit" src="https://c3woc.de/blog/makerfaire18/action02.jpg" /></a>
+<a href="https://c3woc.de/blog/froscon18/team.jpg">
+<img class="image fit" src="https://c3woc.de/blog/froscon18/team.jpg" /></a>
+</div>
+---
+icon: fas fa-heart
+---
+pub_date: 2017-11-01
+---
+teaser: 华夫饼是书呆子和混乱生物饮食的重要组成部分。 这就是C3华夫饼操作中心开发的原因。 现在它将在工具箱中进行一些华夫饼干体验。
+---
+title: C3WOC
+---
+xml_img: c3woc.svg.png
