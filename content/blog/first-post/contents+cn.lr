@@ -1,0 +1,33 @@
+author: L3D
+---
+beitrag:
+
+因此，在一些地方半年后，特别是在项目中，仍然没有或只有未完成的文本，没有人感到负责任。
+
+现在让我们尝试一种新的方法。新的Toolbox网站是随时可用的HTML和CSS，它不具备任何PHP漏洞，因为它不是PHP。版本控制和网站的知名度，现在给出关于[混帐](https://github.com/ToolboxBodensee/toolbox-webseite)的版本的网站。
+
+内容管理系统是[Lektor](https://getlektor.com)。 Lektor是一个用Python编写的CMS，与Hugo一样，从Markdown语法文件生成静态HTML文件，并根据需要将它们上传到Web服务器。
+
+当Web服务器现在是不是在kasserver.com一些虚拟共享主机实例无法从互联网上的大部分地区达到了，但HETZNER在专用服务器上一个舒适的地方，谁也页其他黑客空间为的[见基](https://see-base.de)，对于[Freifunk湖](https://ffbsee.net)和用于[C3WOC](https://c3woc.de)开。
+
+当然，新网站将通过Let's Encrypt验证的TLS证书发送。然而，这里并不像大多数使用RSA算法，而是使用椭圆曲线加密ECDSA。
+---
+body:
+
+Toolbox Bodensee e.V.的旧网站是一个Wordpress，遗憾的是，无法从互联网的大部分地方（任何使用IPv6的地方）访问。
+不幸的是，没有人在工具箱中找到准备好照顾Wordpress的人，不仅让网站保持最新的Wordpress最新安全补丁，还解决网站设计中的不一致，调试错误并激励人们创建新的 写内容。
+---
+pub_date: 2018-09-01
+---
+shorttitle: 新网站
+---
+title: 新网站
+---
+twitter_handle: L3D
+---
+xml:
+
+Toolbox网站不再是一个不受欢迎的Wordpress，而是一个现代化的网站。 它现在托管在一个体面的服务器上（使用IPv6和HTTPS）。
+
+该网站的内容由GitHub管理，可能会在那里更改：
+[https://github.com/ToolboxBodensee/toolbox-webseite]
