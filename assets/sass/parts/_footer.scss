@@ -4,6 +4,18 @@
     background: _palette(accent2);
     padding: $size-wrapper-pad-tb 0;
     text-align: center;
+    @include breakpoint(laptop) {
+        padding: $size-wrapper-pad-tb 0;
+    }
+    @include breakpoint(tablet) {
+        padding: $size-wrapper-pad-tb 0;
+    }
+    @include breakpoint(phablet) {
+        padding: $size-wrapper-pad-tb $size-wrapper-pad-lr;
+    }
+    @include breakpoint(mobileonly) {
+        padding: $size-wrapper-pad-tb $size-wrapper-pad-lr;
+    }
 
     .icons {
         .icon {
@@ -20,6 +32,9 @@
         margin: 2em 0 0 0;
         padding: 0;
         text-align: center;
+        @include breakpoint(mobileonly) {
+            line-height: inherit;
+        }
 
         li {
             border-left: solid 1px _palette(border);
@@ -27,6 +42,12 @@
             list-style: none;
             margin-left: 1.5em;
             padding-left: 1.5em;
+            @include breakpoint(mobileonly) {
+                border-left: 0;
+				display: block;
+				margin: 0;
+				padding: 0;
+            }
 
             &:first-child {
                 border-left: 0;

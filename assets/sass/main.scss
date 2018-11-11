@@ -14,7 +14,6 @@
     Modified by Toolbox Bodensee e.V.
 	*/
 
-
 	@include skel-breakpoints((
 		xlarge: '(max-width: 1680px)',
 		large: '(max-width: 1280px)',
@@ -22,6 +21,25 @@
 		small: '(max-width: 933px)',
 		xsmall: '(max-width: 480px)'
 	));
+
+	@mixin breakpoint($point) {
+		@if $point == desktop {
+		  @media (max-width: 1680px) { @content ; }
+	   }
+		@else if $point == laptop {
+		  @media (max-width: 1280px) { @content ; }
+	   }
+		 @else if $point == tablet {
+		  @media (max-width: 980px) { @content ; }
+	   }
+		@else if $point == phablet {
+		  @media (max-width: 933px)  { @content ; }
+	   }
+	   @else if $point == mobileonly {
+		  @media (max-width: 480px)  { @content ; }
+	 
+	   }
+	}
 
 	
 	@include skel-layout((
@@ -53,8 +71,31 @@
 		}
 	}
 
+	
+
 	$size-wrapper-pad-tb: 6em;
 	$size-wrapper-pad-lr: 3em;
+
+	@include breakpoint(laptop) {
+		$size-wrapper-pad-tb: 4.5em;
+		$size-wrapper-pad-lr: 2.5em;
+	}
+	
+	@include breakpoint(tablet) {
+		$size-wrapper-pad-tb: 4.5em;
+		$size-wrapper-pad-lr: 2.5em;
+	}
+	
+	
+	@include breakpoint(phablet) {
+		$size-wrapper-pad-tb: 3.25em;
+		$size-wrapper-pad-lr: 1.5em;
+	}
+	
+	@include breakpoint(mobileonly) {
+		$size-wrapper-pad-tb: 3em;
+		$size-wrapper-pad-lr: 1.25em;
+	}
 
 
 @import 'parts/basic';
@@ -114,16 +155,4 @@
 @import 'parts/col';
 
 
-@import 'pagebreak/xlarge';
 
-
-@import 'pagebreak/large';
-
-
-@import 'pagebreak/medium';
-
-
-@import 'pagebreak/small';
-
-
-@import 'pagebreak/xsmall';

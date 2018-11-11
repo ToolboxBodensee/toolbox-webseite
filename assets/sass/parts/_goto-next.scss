@@ -28,5 +28,10 @@
         top: 50%;
         width: 2em;
         z-index: 1;
+        @include breakpoint(phablet) {
+            height: 0.8em;
+			margin: -0.4em 0 0 -0.6em;
+			width: 1.2em;
+        }
     }
 }
