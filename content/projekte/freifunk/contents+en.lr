@@ -10,7 +10,7 @@ The "Freifunk Bodensee" initiative was launched at the beginning of 2016. The ai
 
 The free radio community Freifunk Bodensee meets regularly in the rooms of the Toolbox Bodensee to hold their free radio meetings and to explain free radio to interested people and to help set up the access points.
 
-Of course there is also a proper free wireless WLAN in the toolbox. Here an Offloader - a Siemens Futro - establishes a fastd-VPN connection to one of the free radio gateways. The free radio network is distributed over several Ubiquiti WLAN access points in the toolbox.
+Of course there is also a proper free WLAN in the toolbox. Here an Offloader - a Siemens Futro - establishes a fastd-VPN connection to one of the free radio gateways. The free radio network is distributed over several Ubiquiti WLAN access points in the toolbox.
 
 Sourcecode is available on GitHub in the project [ffbsee](https://github.com/ffbsee).
 
