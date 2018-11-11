@@ -4,5 +4,8 @@
     .col-#{$i}{
         column-count: $i;
         column-gap: 1vw;
+        > .button{
+            padding:0;
+        }
     }
 }
