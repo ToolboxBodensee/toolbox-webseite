@@ -8,7 +8,7 @@ set search = "projekte" %}
   <id>42{{ none|datetimeformat('YYYYMMDDhhmmss') }}</id>
   <updated>{{ none|datetimeformat('YYYY-MM-DDThh:mm:ss') }}Z</updated>
   <link href="{{ baseurl }}{{ search }}/" />
-  <link href="{{ baseurl }}projekte.xml" rel="self" />
+  <link href="{{ baseurl }}f33d.xml" rel="self" />
   <author>
     <name>{% if this.author %}{{ this.author }}{% else %}Toolbox{% endif %}</name>
   </author>{%
