@@ -14,6 +14,14 @@
     Modified by Toolbox Bodensee e.V.
 	*/
 
+	@include skel-breakpoints((
+		xlarge: '(max-width: 1680px)',
+		large: '(max-width: 1280px)',
+		medium: '(max-width: 980px)',
+		small: '(max-width: 933px)',
+		xsmall: '(max-width: 480px)'
+	));
+
 	@mixin breakpoint($point) {
 		@if $point == desktop {
 		  @media (max-width: 1680px) { @content ; }

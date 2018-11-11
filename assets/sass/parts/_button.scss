@@ -20,6 +20,9 @@ input[type="button"],
 	text-align: center;
 	text-decoration: none;
 	white-space: nowrap;
+	@include breakpoint(phablet) {
+		padding: 0;
+	}
 	@include breakpoint(mobileonly) {
 		padding: 0;
 	}

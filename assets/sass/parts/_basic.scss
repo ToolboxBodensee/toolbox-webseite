@@ -44,7 +44,7 @@ body, input, select, textarea {
         font-size: 13pt;
     }
     @include breakpoint(laptop) {
-        font-size: 11.5pt;
+        font-size: 12pt;
     }
     @include breakpoint(tablet) {
         font-size: 12pt;
