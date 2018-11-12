@@ -48,12 +48,6 @@
 				speed: 2000
 			});
 
-		// Dropdowns.
-			$('#nav > ul').dropotron({
-				alignment: 'right',
-				hideDelay: 350
-			});
-
 		// Off-Canvas Navigation.
 
 			// Title Bar.

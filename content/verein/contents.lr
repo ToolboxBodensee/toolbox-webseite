@@ -2,74 +2,27 @@ _model: page
 ---
 title: Verein
 ---
+slogan: auf über 420 m² basteln, coden, hacken und löten
+---
 content:
 
-Als Mitglied kannst du unsere Räumlichkeiten und Gerätschaften während der Öffnungszeiten so oft und lange benutzen, wie du möchtest. Außerdem darfst du kostenlos an Vorträgen teilnehmen. Ausgefüllte Anträge kannst du uns gerne per E-Mail oder Post zukommen lassen. Unsere Adressdaten findest du im Bereich [Kontakt](/kontakt) oder natürlich im [Impressum](/impressum). Weitere Dokumente findest du auch am Ende dieser Seite.
+ Einige Bereiche der Toolbox
+---------------------------------------
 
-<h2>Satzung & Ordnungen</h2>
+<div class="col-2"> 
+<a href="/vereinsheim/elektrowerkstatt/" class="button fit">Elektrowerkstatt</a> 
+<a href="/vereinsheim/grobwerkstatt/" class="button fit">Grobwerkstatt</a>
+<a href="/vereinsheim/lounge/" class="button fit">Lounge</a>
+<a href="https://tbbs.me/" class="button fit">Wiki</a>
+</div>
 
-[Satzung](/verein/satzung.pdf)
+<br/><br/>
 
-[Beitragsordnung](/verein/beitragsordnung.pdf)
+ Verein Toolbox Bodensee e.V.
+-------------------------------------------------------
+<div class="col-2"> 
+<a href="/verein/" class="button fit">Satzung & Ordnung</a> 
+<a href="/verein/presse/" class="button fit">Presse Informationen</a>
+</div>
+<a href="/mitglied-werden/" class="button special fit">Mitglied werden</a>
 
-[Geschäftsordnung](/verein/geschaeftsordnung.pdf)
-
-[Kostenordnung](/verein/kostenordnung.pdf)
-
-[Datenschutzerklärung](/verein/datenschutzerklaerung/)
-
-<h2>Mitgliedsanträge</h2>
-
-[Mitgliedsantrag für Privatpersonen](/verein/mitgliedsantrag_web_privat.pdf)
-
-[Mitgliedsantrag für Unternehmen](/verein/mitgliedsantrag_web_unternehmen.pdf)
-
-[Mitgliedsantrag für Fördermitglieder / Sponsoren](/verein/mitgliedsantrag_web_foerdermitglied.pdf)
-
-[Mitgliedsantrag für private Fördermitglieder / passive Mitglieder](/verein/mitgliedsantrag_foerdermitglied_privat.pdf)
-
-<h2>Logo</h2>
-Im folgenden Abschnitt stellen wir die Logo-Datei der Toolbox Bodensee e.V. als Download zur Verfügung. Beim Herunterladen der Datei stimmst Du den nachfolgenden rechtlichen Hinweisen zu.
-
-
-<h3>Rechtliche Hinweise</h3>
-
-
-Das Herunterladen, Abspeichern, jegliche Verwendung und Nutzung sowie das Veröffentlichen der nachstehenden Logos und Namen ist nur unter Beachtung der folgenden Maßgaben zulässig:
-
-```
-Der Verwender nutzt das Logo/den Namen originalgetreu und ohne es 
-zu verfremden
-
-
-Die Nutzung des Logos/Namens für eigene, nicht mit der Toolbox Bodensee e.V. 
-in Zusammenhang stehenden Zwecke – insbesondere
-zur Kennzeichnung von Waren und Dienstleistungen Dritter – ist untersagt.
-
-
-Die Nichtbeachtung vorstehender Maßgaben kann zivilrechtlich
-und – im Fall der Verletzung von Urheberrechten – auch
-strafrechtlich verfolgt werden.
-
-Wer diese Logos verwendet hat mit seinen Mitmenschen
-einen freundlichen und respektvollen Umgang zu pflegen
-und sollte wüste Beschimpfungen und das Verbreiten von Hass
-stets unterlassen.
-```
-
-<h3>PNG - 300dpi</h3>
-<span class="image fit" style="background: white;"><img src="/verein/toolbox_300dpi.png" style="margin: 5%; width: 90%;"></span>
-<a href="/verein/toolbox_300dpi.png" download>PNG Speichern</a>
-
-<h3>JPG - 300dpi</h3>
-<span class="image fit" style="background: white;"><img src="/verein/toolbox_300dpi.jpg" style="margin: 5%; width: 90%;"></span>
-<a href="/verein/toolbox_300dpi.jpg" download>JPG Speichern</a>
-
-<h3>SVG - Vektorgrafik</h3>
-<span class="image fit" style="background: white;"><img src="/verein/toolbox.svg"></span>
-<a href="/verein/toolbox.svg" download>SVG Speichern</a>
-
-Sollten Sie die Datei als EPS-, Vektor- oder Photoshopdatei benötigen, schauen Sie mal auf unserer [GitHub](https://github.com/toolboxbodensee)-Seite vorbei.
-Dort finden Sie in dem Repository [presskit](https://github.com/ToolboxBodensee/presskit) zusätzliche Informationen und weitere Dateiformate unseres Logos.
----
-slogan: Wir freuen uns, dass du dich für die Toolbox interessierst

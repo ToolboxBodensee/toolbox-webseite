@@ -39,19 +39,13 @@
                 for href, title, print in [
                   ['/blog', 'Blog', 1],
                   ['/projekte', 'Projekte', 1],
-                  ['/vereinsheim', 'Verein', 1],
+                  ['/verein', 'Verein', 1],
                   ['/termine', 'Kalender', 1],
-                  ['/kontakt', 'Kontakt', 1],
-                  ['/impressum', 'Impressum', 1]
+                  ['/kontakt', 'Kontakt', 1]
                 ] %}{% if print %}
-                  <li{% if this.is_child_of(href) %} class="active"{% endif
-                %}{% if title == 'Kontakt' %} class="button special" {% endif 
+                  <li{% if this.is_child_of(href) %} class="active"{% endif 
                   %}><a href="{{ href|url }}">{% if bag('navigation', this.alt, title) %}{{ bag('navigation', this.alt, title) }}{% else %}{{ title }}{% endif %}</a>{%
-                  if title == 'Impressum' %}
-                  <ul><li><a href="{{ '/impressum'|url }}">{% if bag('navigation', this.alt, 'Impressum') %}{{ bag('navigation', this.alt, 'Impressum') }}{% else %}Impressum{% endif %}</a></li>
-                    <li><a href="{{ '/datenschutz/'|url }}">{% if bag('navigation', this.alt, 'Datenschutz') %}{{ bag('navigation', this.alt, 'Datenschutz') }}{% else %}Datenschutz{% endif %}</a></li>
-                  </ul>{%
-                  elif title == 'Projekte' %}
+                  if title == 'Projekte' %}
                     <ul>{% set root = site.get('/projekte/', alt=this.alt) %}{%
                   for child in root.children recursive %}{% if loop.index <= 7 %} 
                     <li{%
@@ -59,7 +53,7 @@
                       %}><a href="{% if this.alt == 'de' %}{% else %}/{{ this.alt }}/{{ this.alt }}/{% endif %}{{ child|url }}">{{ child.title }}</a></li>{%
                   endif %}{% endfor %}
                       <li><a href="{{ '/projekte/'|url }}">{% if bag('navigation', this.alt, 'show_projekt') %}{{ bag('navigation', this.alt, 'show_projekt') }}{% else %}alle Projekte{% endif %}</a></li>
-                      <li><a href="{{ '/projekte.xml'|url }}">{% if bag('navigation', this.alt, title) %}{{ bag('navigation', this.alt, title) }}{% else %}{{ title }}{% endif %} {% if bag('navigation', this.alt, 'xml') %}{{ bag('navigation', this.alt, 'xml') }}{% else %}als XML Feed{% endif %}</a></li>
+                      <li><a href="{{ '/f33d.xml'|url }}">{% if bag('navigation', this.alt, title) %}{{ bag('navigation', this.alt, title) }}{% else %}{{ title }}{% endif %} {% if bag('navigation', this.alt, 'xml') %}{{ bag('navigation', this.alt, 'xml') }}{% else %}als XML Feed{% endif %}</a></li>
                     </ul>{%
                   elif title == 'Verein' %}
                     <ul><li><a href="{{ '/vereinsheim'|url }}">{% if bag('navigation', this.alt, 'Vereinsheim') %}{{ bag('navigation', this.alt, 'Vereinsheim') }}{% else %}Vereinsheim{% endif %}</a></li>
@@ -69,11 +63,13 @@
                     <li><a href="{{ '/verein/presse'|url }}">{% if bag('navigation', this.alt, 'Presse') %}{{ bag('navigation', this.alt, 'Presse') }}{% else %}Presse{% endif %}</a></li>
                     <li><a href="https://tbbs.me">{% if bag('navigation', this.alt, 'Wiki') %}{{ bag('navigation', this.alt, 'Wiki') }}{% else %}Wiki{% endif %}</a></li>
                     <li><a href="{{ '/mitglied-werden'|url }}" class="button special">{% if bag('navigation', this.alt, 'mitglied') %}{{ bag('navigation', this.alt, 'mitglied') }}{% else %}Mitglied werden{% endif %}</a></li>
-                    <li><a href="{{ '/verein'|url }}">{% if bag('navigation', this.alt, 'Mitgliedschaft') %}{{ bag('navigation', this.alt, 'Mitgliedschaft') }}{% else %}Mitgliedschaft{% endif %}</a></li></ul>{%
-                  elif title == 'Kontakt' %}
-                    <ul><li><a href="{{ '/kontakt'|url }}">{% if bag('navigation', this.alt, 'Anfahrt') %}{{ bag('navigation', this.alt, 'Anfahrt') }}{% else %}Anfahrt{% endif %}</a></li>
                     <li><a href="{{ '/antworten'|url }}">{% if bag('navigation', this.alt, 'fragen') %}{{ bag('navigation', this.alt, 'fragen') }}{% else %}Häufige Fragen{% endif %}</a></li></ul>{%
-                   elif title == 'Blog' %}
+                  elif title == 'Kontakt' %}
+                    <ul><li><a href="{{ '/kontakt'|url }}">{% if bag('navigation', this.alt, 'Kontakt') %}{{ bag('navigation', this.alt, 'Kontakt') }}{% else %}Kontakt{% endif %}</a></li>
+                      <li><a href="{{ '/impressum'|url }}">{% if bag('navigation', this.alt, 'Impressum') %}{{ bag('navigation', this.alt, 'Impressum') }}{% else %}Impressum{% endif %}</a></li>
+                      <li><a href="{{ '/datenschutz/'|url }}">{% if bag('navigation', this.alt, 'Datenschutz') %}{{ bag('navigation', this.alt, 'Datenschutz') }}{% else %}Datenschutz{% endif %}</a></li>  
+                  </ul>{%
+                  elif title == 'Blog' %}
                     <ul>{% set root = site.get('/blog/', alt=this.alt) %}{%
                       for child in root.children recursive %}
                       <li{%
@@ -84,8 +80,8 @@
                   endif %}</li>{%
                  endif %}{%
                endfor %}
-               <li><a href="/{% if bag('navigation', this.alt, 'default_path') %}{{ bag('navigation', this.alt, 'default_path') }}{% else %}..{% endif %}{{ this._path }}">{% if bag('navigation', this.alt, 'sprache') %}{{ bag('navigation', this.alt, 'sprache') }}{% else %}Sprache{% endif %}</a>
-                   <ul>
+               <li class="last"><a href="/{% if bag('navigation', this.alt, 'default_path') %}{{ bag('navigation', this.alt, 'default_path') }}{% else %}..{% endif %}{{ this._path }}">{% if bag('navigation', this.alt, 'sprache') %}{{ bag('navigation', this.alt, 'sprache') }}{% else %}Sprache{% endif %}</a>
+                   <ul class="last">
                      <li><a href="/..{{ this._path }}">{% if bag('navigation', this.alt, 'German') %}{{ bag('navigation', this.alt, 'German') }}{% else %}German{% endif %}</a></li>
                      <li><a href="/en{{ this._path }}">{% if bag('navigation', this.alt, 'Englisch') %}{{ bag('navigation', this.alt, 'Englisch') }}{% else %}english{% endif %} <i>({% if bag('navigation', this.alt, 'falls') %}{{ bag('navigation', this.alt, 'falls') }}{% else %}if available{% endif %})</i></a><li>
                      <li><a href="/cn{{ this._path }}">{% if bag('navigation', this.alt, 'Chinesisch') %}{{ bag('navigation', this.alt, 'Chinesisch') }}{% else %}chinese{% endif %} <i>({% if bag('navigation', this.alt, 'falls') %}{{ bag('navigation', this.alt, 'falls') }}{% else %}if available{% endif %})</i></a><li>
@@ -128,7 +124,6 @@
 
     <!-- Scripts -->
     <script src="{{ '/js/jquery.scrolly.min.js'|url }}"></script>
-    <script src="{{ '/js/jquery.dropotron.min.js'|url }}"></script>
     <script src="{{ '/js/jquery.scrollex.min.js'|url }}"></script>
     <script src="{{ '/js/skel.min.js'|url }}"></script>
     <script src="{{ '/js/util.js'|url }}"></script>
