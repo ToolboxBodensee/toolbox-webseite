@@ -2561,7 +2561,7 @@ body.landing .dropotron.level-0 {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100; }
+  z-index: 5000; }
   @media (max-width: 933px) {
     #header {
       display: none; } }
@@ -2597,7 +2597,6 @@ body.landing .dropotron.level-0 {
       #header nav ul li.last {
         padding-right: 1.8em; }
     #header nav ul ul {
-      float: right;
       display: none;
       position: absolute;
       top: 100%;
