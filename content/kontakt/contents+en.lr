@@ -6,10 +6,12 @@ Address:
 Bergheimer Straße 6,
 88677 Markdorf
 ```
-<a href="https://www.openstreetmap.org/way/475282871" class="button">OpenStreetMap</a>
-<a href="https://www.google.de/maps/place/Toolbox+Bodensee+e.V./@47.7123392,9.3993265,153m" class="button">Google Maps</a>
-<a href="https://www.bing.com/maps?osid=2576bb08-7172-4f9c-93e7-1e9fbf421717&cp=47.712416~9.399339&lvl=20&v=2&sV=2&form=S00027" class="button">Bing Maps</a>
-<a href="https://wego.here.com/directions/drive/Bergheimer-Straße-6,-88677-Markdorf,-Germany:47.71239,9.39957/?map=47.71266,9.40209,18" class="button">HERE Maps</a>
+<div class="col-4"> 
+<a href="https://www.openstreetmap.org/way/475282871" class="button fit">OpenStreetMap</a>
+<a href="https://www.google.de/maps/place/Toolbox+Bodensee+e.V./@47.7123392,9.3993265,153m" class="button fit">Google Maps</a>
+<a href="https://www.bing.com/maps?osid=2576bb08-7172-4f9c-93e7-1e9fbf421717&cp=47.712416~9.399339&lvl=20&v=2&sV=2&form=S00027" class="button fit">Bing Maps</a>
+<a href="https://wego.here.com/directions/drive/Bergheimer-Straße-6,-88677-Markdorf,-Germany:47.71239,9.39957/?map=47.71266,9.40209,18" class="button fit">HERE Maps</a>
+</div>
 
 In order to enter the Toolbox clubhouse, you have to enter the intimus company premises. There the Toolbox is the first building on the left side, directly next to the big gate.
 In front of the Toolbox there are parking spaces for bicycles and cars.
@@ -19,22 +21,33 @@ The entrance door can be found at the small red circle on the map above.
 
  E-mail:
 ---------------
-You can reach our board of directors under:
-```
-vorstand <at> toolbox-bodensee.de
-```
 
-You can also reach us at the following address:
-```
-kontakt <at> toolbox-bodensee.de
-```
+<div class="table-wrapper">
+<table><tbody>
+<tr>
+<td>directors</td>
+<td><a href="mailto:vorstand@toolbox-bodensee.de">vorstand@toolbox-bodensee.de</a></td>
+</tr><tr>
+<td>alternative email adress</td>
+<td><a href="mailto:kontakt@toolbox-bodensee.de">kontakt@toolbox-bodensee.de</a></td>
+</tr>
+</tfoot>
+</table>
+</div>
 
- Phone
+
+ Phone:
 ------------
 Yes, you can call us:
-```
-+49 7544 9667222
-```
+<div class="table-wrapper">
+<table><tbody>
+<tr>
+<td>phonenumber</td>
+<td><a href="tel:+4975449667222">+49 7544 9667222</a></td>
+</tr>
+</tfoot>
+</table>
+</div>
 
  In the cyberspace:
 -----------------------
@@ -43,11 +56,11 @@ Of course you can also find us on different pages in the internet. For example h
 <div class="table-wrapper">
 <table><tbody>
 <tr>
-<td>Twitter:</td>
+<td>Twitter</td>
 <td><a href="https://twitter.com/toolboxbodensee">@ToolboxBodensee</a></td>
 </tr><tr>
 <td>Facebook</td>
-<td><a href="htttps://www.facebook.com/toolboxbodensee">toolboxbodensee</a></td>
+<td><a href="https://www.facebook.com/toolboxbodensee">toolboxbodensee</a></td>
 </tr><tr>
 <td>Mastodon</td>
 <td><a href="https://chaos.social/@toolbox">toolbox@chaos.social</a></td>

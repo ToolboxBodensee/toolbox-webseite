@@ -12,10 +12,12 @@ content:
 Bergheimer Straße 6,
 88677 Markdorf
 ```
-<a href="https://www.openstreetmap.org/way/475282871" class="button">OpenStreetMap</a>
-<a href="https://www.google.de/maps/place/Toolbox+Bodensee+e.V./@47.7123392,9.3993265,153m" class="button">Google Maps</a>
-<a href="https://www.bing.com/maps?osid=2576bb08-7172-4f9c-93e7-1e9fbf421717&cp=47.712416~9.399339&lvl=20&v=2&sV=2&form=S00027" class="button">Bing Maps</a>
-<a href="https://wego.here.com/directions/drive/Bergheimer-Straße-6,-88677-Markdorf,-Germany:47.71239,9.39957/?map=47.71266,9.40209,18" class="button">HERE Maps</a>
+<div class="col-4"> 
+<a href="https://www.openstreetmap.org/way/475282871" class="button fit">OpenStreetMap</a>
+<a href="https://www.google.de/maps/place/Toolbox+Bodensee+e.V./@47.7123392,9.3993265,153m" class="button fit">Google Maps</a>
+<a href="https://www.bing.com/maps?osid=2576bb08-7172-4f9c-93e7-1e9fbf421717&cp=47.712416~9.399339&lvl=20&v=2&sV=2&form=S00027" class="button fit">Bing Maps</a>
+<a href="https://wego.here.com/directions/drive/Bergheimer-Straße-6,-88677-Markdorf,-Germany:47.71239,9.39957/?map=47.71266,9.40209,18" class="button fit">HERE Maps</a>
+</div>
 
 Um das Vereinsheim der Toolbox betreten zu können, muss das Firmengelände von intimus betreten werden. Dort ist die Toolbox das erste Gebäude auf der linken Seite, direkt bei dem großen Tor.
 Vor der Toolbox befinden sich Parkplätze für Fahrräder und Autos.
@@ -25,22 +27,32 @@ Die Eingangstüre ist bei dem kleinen roten Kreis auf der oben eingeblendeten Ka
 
  E-Mail:
 ---------------
-Unsere Vorstände erreichst du unter:
-```
-vorstand <at> toolbox-bodensee.de
-```
+<div class="table-wrapper">
+<table><tbody>
+<tr>
+<td>Vorstände</td>
+<td><a href="mailto:vorstand@toolbox-bodensee.de">vorstand@toolbox-bodensee.de</a></td>
+</tr><tr>
+<td>alternative E-mail-Adresse</td>
+<td><a href="mailto:kontakt@toolbox-bodensee.de">kontakt@toolbox-bodensee.de</a></td>
+</tr>
+</tfoot>
+</table>
+</div>
 
-Wir sind aber auch unter folgender Adresse erreichbar:
-```
-kontakt <at> toolbox-bodensee.de
-```
 
- Telefon
+ Telefon:
 ------------
 Wir haben auch eine Telefonnummer:
-```
-+49 7544 9667222
-```
+<div class="table-wrapper">
+<table><tbody>
+<tr>
+<td>Telefonnummer</td>
+<td><a href="tel:+4975449667222">+49 7544 9667222</a></td>
+</tr>
+</tfoot>
+</table>
+</div>
 
  Im Internet
 -----------------------
@@ -49,11 +61,11 @@ Du findest uns natürlich auch auf verschiedenen Seiten im Internet. Zum Beispie
 <div class="table-wrapper">
 <table><tbody>
 <tr>
-<td>Twitter:</td>
+<td>Twitter</td>
 <td><a href="https://twitter.com/toolboxbodensee">@ToolboxBodensee</a></td>
 </tr><tr>
 <td>Facebook</td>
-<td><a href="htttps://www.facebook.com/toolboxbodensee">toolboxbodensee</a></td>
+<td><a href="https://www.facebook.com/toolboxbodensee">toolboxbodensee</a></td>
 </tr><tr>
 <td>Mastodon</td>
 <td><a href="https://chaos.social/@toolbox">toolbox@chaos.social</a></td>
