@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteRule ^projekte.xml https://toolbox-bodensee.de/f33d.xml
+</IfModule>

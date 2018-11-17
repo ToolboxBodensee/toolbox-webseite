@@ -2,7 +2,9 @@
 set baseurl = "https://toolbox-bodensee.de/" %}{%
 set search = "blog" %}
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title type="text">Neues aus der Toolbox</title>
+    <title type="text">{%
+        if bag('translate', this.alt, 'xmlfeed') %}{{ bag('translate', this.alt, 'xmlfeed') }}{%
+        else %}Neues aus der Toolbox{% endif %}</title>
   <id>42{{ none|datetimeformat('YYYYMMDDhhmmss') }}</id>
   <updated>{{ none|datetimeformat('YYYY-MM-DDThh:mm:ss') }}Z</updated>
   <link href="{{ baseurl }}{{ search }}/" />
