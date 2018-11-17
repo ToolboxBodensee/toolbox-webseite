@@ -1,15 +1,13 @@
-
-language: python
-python: 3.6
+service:
+  - docker
 cache:
   directories:
-    - $HOME/.cache/pip
     - $HOME/.cache/lektor/builds
-install: "make install"
-script: "make build"
+install: "make docker-pull"
+script: "make docker-build"
 before_deploy: "echo 'c3woc.de ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBC5NslYj+wtriBuKIxJfDRm9E2hnlstWR8durQ6pKvVvP7wjcoXIyAxe41GvJ9SoEhSjF7oVlzlw+zAkzl5WOZ4=' > ~/.ssh/known_hosts"
 deploy:
   provider: script
-  script: "make deploy"
+  script: "make docker-deploy"
 after_success:
     - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then deployment/deploy_pullrequest.sh; fi'

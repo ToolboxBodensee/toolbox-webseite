@@ -2,10 +2,7 @@ LEKTOR_SERVER_FLAGS=-h 127.0.0.1
 
 all: build
 
-install:
-	pip install lektor
-
-build: install
+build:
 	lektor build
 
 deploy:
