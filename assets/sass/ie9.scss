@@ -4,53 +4,49 @@
 @import 'libs/skel';
 
 /*
-	Landed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Landed by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 /* Loader */
-
-	body.landing {
-		&::before, &::after {
-			display: none !important;
-		}
-	}
+body.landing {
+  &::before, &::after {
+    display: none !important;
+  }
+}
 
 /* Icon */
+.icon {
+  &.alt {
+    color: inherit !important;
+  }
 
-	.icon {
-		&.alt {
-			color: inherit !important;
-		}
-
-		&.major {
-			&.alt {
-				&::before {
-					color: _palette(fg-bold) !important;
-				}
-			}
-		}
-	}
+  &.major {
+    &.alt {
+      &::before {
+        color: _palette(fg-bold) !important;
+      }
+    }
+  }
+}
 
 /* Banner */
-
-	#banner {
-		&::after {
-			background-color: _palette(bg-transparent);
-		}
-	}
+#banner {
+  &::after {
+    background-color: _palette(bg-transparent);
+  }
+}
 
 /* Footer */
-
-	#footer {
-		.icons {
-			.icon {
-				&.alt {
-					&::before {
-						color: _palette(fg-bold) !important;
-					}
-				}
-			}
-		}
-	}
+#footer {
+  .icons {
+    .icon {
+      &.alt {
+        &::before {
+          color: _palette(fg-bold) !important;
+        }
+      }
+    }
+  }
+}
