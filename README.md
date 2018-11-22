@@ -47,9 +47,9 @@ Webseite übersetzen
 ------------------------
 
 Lektor bietet in der Admin-Oberfläche die Möglichkeit die Toolbox Webseite auf englisch zu übersetzen.
-Diese Funktion befindet sich unter dem Punkt ``Alternative``. 
+Diese Funktion befindet sich unter dem Punkt ``Alternative``.
 Als Übersetzer mit guten Ergebnissen kann man beispielsweise [deepl](https://www.deepl.com) verwenden.<br/>
-Links auf Seiten haben in der Englischen Version ein ``/en/`` vor der Adresse. 
+Links auf Seiten haben in der Englischen Version ein ``/en/`` vor der Adresse.
 So wird ``https://toolbox-bodensee.de/projekte/c3woc/`` zu ``https://toolbox-bodensee.de/en/projekte/c3woc/``.
 
 Fork aktuell halten ohne neu zu forken
@@ -77,7 +77,7 @@ Es gibt zwei Möglichkeiten Pull-Requests zu reviewen:
 
 ```bash
 # ID des Pull Request eintragen
-PULLREQUEST=42 
+PULLREQUEST=42
 # Git Repository clonen
 git clone --depth=30 https://github.com/ToolboxBodensee/toolbox-webseite.git toolbox-pull-request
 # In das Repo navigieren
@@ -109,5 +109,21 @@ Das vereinfacht die Verständlichkeit der einzelnen Design Elemente
 und ermöglicht auch das anpassen des Designs durch das simple verändern weniger variablen.
 Example use:
 ```bash
-sassc assets/sass/main.scss > assets/css/main.css
+make sass
+```
+
+Docker
+------------------------
+
+Hat man auf seiner Host kein python oder will man zusätzliche Software installieren, so steht ein Docker Image `toolboxbodensee/lektor:latest` zur Verfügung.
+
+Damit lässt sich das Projekt innerhalb eines *Containers* bauen und sogar den lektor server ausführen.
+
+Zur Einfachheit stehen mehrere *make* **docker-** Befehle zur Verfügung. Das Projektordner sowie die lektor cache `.cache/lektor` werden als Volume der Container angehängt.
+
+```bash
+make docker-pull # lädt die Lektor Docker Image vom Docker Hub herunter
+make docker-build # baut die Assets und die lektor cache (lektor build)
+make docker-server # führt den Lektor Server auf localhost:5000 aus
+make docker-shell # führt eine Shell aus innerhalb des Containers. Dies kann man zum Gebuggen genutzt werden.
 ```
