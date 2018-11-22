@@ -28,7 +28,7 @@
         }
     }
 
-    &:before {
+    &::before {
         content: '';
         display: block;
         height: 100%;

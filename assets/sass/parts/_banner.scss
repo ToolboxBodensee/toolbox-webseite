@@ -22,7 +22,7 @@
 		min-height: calc(100vh - 44px);
     }
 
-    &:before {
+    &::before {
         content: '';
         display: inline-block;
         height: 100vh;
@@ -33,7 +33,7 @@
         }
     }
 
-    &:after {
+    &::after {
         content: '';
         display: block;
         height: 100%;

@@ -55,7 +55,7 @@ header {
             margin: 0 0 _size(element-margin) 0;
         }
 
-        &:after {
+        &::after {
             background: _palette(accent1);
             content: '';
             display: inline-block;

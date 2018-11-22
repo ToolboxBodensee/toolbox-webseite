@@ -7,7 +7,7 @@
     position: relative;
     overflow: hidden;
 
-    &:before {
+    &::before {
         content: '';
         display: block;
         position: absolute;

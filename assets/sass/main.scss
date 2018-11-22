@@ -62,7 +62,7 @@
 		@include icon;
 		$size: 1px;
 
-		&:before {
+		&::before {
 			color: $bg !important;
 			text-shadow:	$size 0 0 $fg,
 							($size * -1) 0 0 $fg,

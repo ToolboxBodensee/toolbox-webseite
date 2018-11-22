@@ -43,7 +43,7 @@ textarea {
     display: block;
     position: relative;
 
-    &:before {
+    &::before {
         color: _palette(border);
         content: '\f078';
         display: block;
@@ -107,7 +107,7 @@ input[type="radio"], {
         padding-right: 0.75em;
         position: relative;
 
-        &:before {
+        &::before {
             border-radius: _size(border-radius);
             border: solid 1px _palette(border);
             content: '';
@@ -123,7 +123,7 @@ input[type="radio"], {
     }
 
     &:checked + label {
-        &:before {
+        &::before {
             background: _palette(border2-bg);
             color: _palette(fg-bold);
             content: '\f00c';
@@ -131,7 +131,7 @@ input[type="radio"], {
     }
 
     &:focus + label {
-        &:before {
+        &::before {
             border-color: _palette(accent1);
         }
     }
@@ -139,7 +139,7 @@ input[type="radio"], {
 
 input[type="checkbox"] {
     & + label {
-        &:before {
+        &::before {
             border-radius: _size(border-radius);
         }
     }
@@ -147,7 +147,7 @@ input[type="checkbox"] {
 
 input[type="radio"] {
     & + label {
-        &:before {
+        &::before {
             border-radius: 100%;
         }
     }

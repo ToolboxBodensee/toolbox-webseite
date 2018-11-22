@@ -34,7 +34,7 @@ input[type="button"],
 	}
 
 	&.icon {
-		&:before {
+		&::before {
 			margin-right: 0.5em;
 		}
 	}

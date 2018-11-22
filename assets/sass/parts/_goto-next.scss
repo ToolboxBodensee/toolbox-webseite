@@ -14,7 +14,7 @@
     width: 10em;
     z-index: 1;
 
-    &:before {
+    &::before {
         background-image: url('images/arrow.svg');
         background-position: center center;
         background-repeat: no-repeat;

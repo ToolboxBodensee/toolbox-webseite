@@ -12,7 +12,7 @@
 /* Loader */
 
 	body.landing {
-		&:before, &:after {
+		&::before, &::after {
 			display: none !important;
 		}
 	}
@@ -26,7 +26,7 @@
 
 		&.major {
 			&.alt {
-				&:before {
+				&::before {
 					color: _palette(fg-bold) !important;
 				}
 			}
@@ -36,7 +36,7 @@
 /* Banner */
 
 	#banner {
-		&:after {
+		&::after {
 			background-color: _palette(bg-transparent);
 		}
 	}
@@ -47,7 +47,7 @@
 		.icons {
 			.icon {
 				&.alt {
-					&:before {
+					&::before {
 						color: _palette(fg-bold) !important;
 					}
 				}
