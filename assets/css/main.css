@@ -14,11 +14,11 @@
   background-image: url(../images/home/abschnitt3.jpeg); }
 
 /*
-	Landed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-    Modified by Toolbox Bodensee e.V.
-	*/
+Landed by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Modified by Toolbox Bodensee e.V.
+*/
 /* Reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -62,89 +62,89 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
-.container.\31 25\25		{
+.container.\31 25\25  {
   width: 100%;
   max-width: 87.5em;
   min-width: 70em; }
 
-.container.\37 5\25			{
+.container.\37 5\25    {
   width: 52.5em; }
 
-.container.\35 0\25			{
+.container.\35 0\25    {
   width: 35em; }
 
-.container.\32 5\25			{
+.container.\32 5\25    {
   width: 17.5em; }
 
 .container {
   width: 70em; }
 
 @media screen and (max-width: 1680px) {
-  .container.\31 25\25		{
+  .container.\31 25\25  {
     width: 100%;
     max-width: 87.5em;
     min-width: 70em; }
-  .container.\37 5\25			{
+  .container.\37 5\25    {
     width: 52.5em; }
-  .container.\35 0\25			{
+  .container.\35 0\25    {
     width: 35em; }
-  .container.\32 5\25			{
+  .container.\32 5\25    {
     width: 17.5em; }
   .container {
     width: 70em; } }
 
 @media screen and (max-width: 1280px) {
-  .container.\31 25\25		{
+  .container.\31 25\25  {
     width: 100%;
     max-width: 112.5%;
     min-width: 90%; }
-  .container.\37 5\25			{
+  .container.\37 5\25    {
     width: 67.5%; }
-  .container.\35 0\25			{
+  .container.\35 0\25    {
     width: 45%; }
-  .container.\32 5\25			{
+  .container.\32 5\25    {
     width: 22.5%; }
   .container {
     width: 90%; } }
 
 @media screen and (max-width: 980px) {
-  .container.\31 25\25		{
+  .container.\31 25\25  {
     width: 100%;
     max-width: 125%;
     min-width: 100%; }
-  .container.\37 5\25			{
+  .container.\37 5\25    {
     width: 75%; }
-  .container.\35 0\25			{
+  .container.\35 0\25    {
     width: 50%; }
-  .container.\32 5\25			{
+  .container.\32 5\25    {
     width: 25%; }
   .container {
     width: 100% !important; } }
 
 @media screen and (max-width: 933px) {
-  .container.\31 25\25		{
+  .container.\31 25\25  {
     width: 100%;
     max-width: 125%;
     min-width: 100%; }
-  .container.\37 5\25			{
+  .container.\37 5\25    {
     width: 75%; }
-  .container.\35 0\25			{
+  .container.\35 0\25    {
     width: 50%; }
-  .container.\32 5\25			{
+  .container.\32 5\25    {
     width: 25%; }
   .container {
     width: 100% !important; } }
 
 @media screen and (max-width: 480px) {
-  .container.\31 25\25		{
+  .container.\31 25\25  {
     width: 100%;
     max-width: 125%;
     min-width: 100%; }
-  .container.\37 5\25			{
+  .container.\37 5\25    {
     width: 75%; }
-  .container.\35 0\25			{
+  .container.\35 0\25    {
     width: 50%; }
-  .container.\32 5\25			{
+  .container.\32 5\25    {
     width: 25%; }
   .container {
     width: 100% !important; } }
