@@ -11,6 +11,7 @@ header {
     color: _palette(fg-bold);
     position: relative;
     margin: 0 0 (_size(element-margin) * 0.75) 0;
+
     @include breakpoint(phablet) {
       br {
         display: none;
@@ -22,6 +23,7 @@ header {
     font-size: 1.25em;
     margin-top: (_size(element-margin) * -0.5);
     line-height: 1.75em;
+
     @include breakpoint(phablet) {
       font-size: 1em;
     }
@@ -31,6 +33,7 @@ header {
     font-size: 1.1em;
     margin-top: (_size(element-margin) * -0.4);
     line-height: 1.75em;
+
     @include breakpoint(phablet) {
       font-size: 1em;
     }
@@ -42,6 +45,7 @@ header {
     font-size: 0.9em;
     margin-top: (_size(element-margin) * -0.3);
     line-height: 1.5em;
+
     @include breakpoint(phablet) {
       font-size: 0.9em;
     }      
@@ -51,6 +55,7 @@ header {
     margin: 0 0 (_size(element-margin) * 2) 0;
     position: relative;
     text-align: center;
+
     @include breakpoint(phablet) {
       margin: 0 0 _size(element-margin) 0;
     }

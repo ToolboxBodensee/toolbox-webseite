@@ -19,6 +19,7 @@ input[type="button"],
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
+
   @include breakpoint(mobileonly) {
     padding: 0;
   }
@@ -76,14 +77,14 @@ input[type="button"],
     opacity: 0.25;
   }
 
-  &.tb-opened{
-    background-color: LimeGreen  !important;
-    &.navbar{
+  &.tb-opened {
+    background-color: LimeGreen !important;
+    &.navbar {
       margin-left: -15px;
     }
   }
 }
 
-.tb-closed{
+.tb-closed {
   color: #d23128ff;
 }

@@ -39,7 +39,7 @@ Modified by Toolbox Bodensee e.V.
     @media (max-width: 480px)  { @content ; }
   }
 }
-  
+
 @include skel-layout((
   reset: 'full',
   boxModel: 'border',
@@ -62,10 +62,11 @@ Modified by Toolbox Bodensee e.V.
 
   &::before {
     color: $bg !important;
-    text-shadow:  $size 0 0 $fg,
-    ($size * -1) 0 0 $fg,
-    0 $size 0 $fg,
-    0 ($size * -1) 0 $fg;
+    text-shadow:  
+      $size 0 0 $fg,
+      ($size * -1) 0 0 $fg,
+      0 $size 0 $fg,
+      0 ($size * -1) 0 $fg;
   }
 }
 
@@ -76,17 +77,17 @@ $size-wrapper-pad-lr: 3em;
   $size-wrapper-pad-tb: 4.5em;
   $size-wrapper-pad-lr: 2.5em;
 }
-  
+
 @include breakpoint(tablet) {
   $size-wrapper-pad-tb: 4.5em;
   $size-wrapper-pad-lr: 2.5em;
 }
-    
+  
 @include breakpoint(phablet) {
   $size-wrapper-pad-tb: 3.25em;
   $size-wrapper-pad-lr: 1.5em;
 }
-  
+
 @include breakpoint(mobileonly) {
   $size-wrapper-pad-tb: 3em;
   $size-wrapper-pad-lr: 1.25em;
@@ -97,12 +98,12 @@ $size-wrapper-pad-lr: 3em;
 @import 'parts/section-article';
 @import 'parts/form';
 @import 'parts/box';
-@import 'parts/icon';  
+@import 'parts/icon';
 @import 'parts/image';
 @import 'parts/list';
 @import 'parts/table';
 @import 'parts/button';
-@import 'parts/goto-next';  
+@import 'parts/goto-next';
 @import 'parts/spotlight';
 @import 'parts/wrapper';
 @import 'parts/dropotron';

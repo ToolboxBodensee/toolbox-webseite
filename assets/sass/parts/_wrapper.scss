@@ -1,15 +1,19 @@
 /* Wrapper */
 .wrapper {
   padding: $size-wrapper-pad-tb 0 ($size-wrapper-pad-tb - _size(element-margin)) 0;
+
   @include breakpoint(laptop) {
     padding: $size-wrapper-pad-tb 0 ($size-wrapper-pad-tb - _size(element-margin)) 0;
   }
+
   @include breakpoint(tablet) {
     padding: $size-wrapper-pad-tb $size-wrapper-pad-lr ($size-wrapper-pad-tb - _size(element-margin)) $size-wrapper-pad-lr;
   }
+
   @include breakpoint(phablet) {
     padding: $size-wrapper-pad-tb $size-wrapper-pad-lr ($size-wrapper-pad-tb - _size(element-margin)) $size-wrapper-pad-lr;
   }
+
   @include breakpoint(mobileonly) {
       padding: $size-wrapper-pad-tb $size-wrapper-pad-lr ($size-wrapper-pad-tb - _size(element-margin)) $size-wrapper-pad-lr;
   }
@@ -64,12 +68,14 @@
     > .container {
       @include vendor('transform', 'translate(0,0)');
       @include vendor('transition', 'transform 1s ease, opacity 1s ease');
+
       opacity: 1;
     }
 
     &.inactive {
       > .container {
         @include vendor('transform', 'translate(0,-1em)');
+
         opacity: 0;
       }
     }
@@ -79,12 +85,14 @@
     > .container {
       @include vendor('transform', 'translate(0,0)');
       @include vendor('transition', 'transform 1s ease, opacity 1s ease');
+
       opacity: 1;
     }
 
     &.inactive {
       > .container {
         @include vendor('transform', 'translate(0,1em)');
+
         opacity: 0;
       }
     }
@@ -93,11 +101,13 @@
   &.fade {
     > .container {
       @include vendor('transition', 'opacity 1s ease');
+
       opacity: 1;
     }
 
     &.inactive {
       > .container {
+  
         opacity: 0;
       }
     }

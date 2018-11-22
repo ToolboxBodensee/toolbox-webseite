@@ -58,6 +58,7 @@ ul {
     cursor: default;
     list-style: none;
     padding-left: 0;
+
     @include breakpoint(mobileonly) {
       margin: 0 0 _size(element-margin) 0;
     }
@@ -66,6 +67,7 @@ ul {
       display: inline-block;
       padding: 0 (_size(element-margin) * 0.5) 0 0;
       vertical-align: middle;
+
       @include breakpoint(mobileonly) {
         display: block;
         padding: (_size(element-margin) * 0.5) 0 0 0;
@@ -90,6 +92,7 @@ ul {
     &.small {
       li {
         padding: 0 (_size(element-margin) * 0.25) 0 0;
+
         @include breakpoint(mobileonly) {
           padding: (_size(element-margin) * 0.25) 0 0 0;
 

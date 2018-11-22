@@ -35,6 +35,7 @@
   &.level-0 {
     font-size: 0.8em;
     margin-top: 1em;
+
     @include breakpoint(laptop) {
       font-size: 1em;
     }

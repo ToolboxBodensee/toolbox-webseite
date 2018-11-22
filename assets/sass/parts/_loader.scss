@@ -53,9 +53,10 @@ body.landing {
     z-index: -1;
   }
 
-// Overlay (inactive)
+  // Overlay (inactive)
   &::after {
     @include vendor('animation', 'overlay-hide #{_duration(landing-fadein)} ease-in forwards !important');
+    
     background: _palette(bg);
     content: '';
     display: block;
@@ -72,12 +73,14 @@ body.landing {
     // Spinner (active)
     &::before {
       @include vendor('animation', ('spinner-show 1.5s 1 0.25s ease forwards', 'spinner-rotate 0.75s infinite linear !important'));
+      
       z-index: _misc(z-index-overlay) + 1;
     }
 
     // Overlay (active)
     &::after {
       @include vendor('animation', 'none !important');
+      
       opacity: 1;
       z-index: _misc(z-index-overlay);
     }

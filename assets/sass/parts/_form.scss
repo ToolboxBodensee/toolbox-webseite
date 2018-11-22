@@ -98,6 +98,7 @@ input[type="radio"], {
 
   & + label {
     @include icon;
+
     color: _palette(fg);
     cursor: pointer;
     display: inline-block;
@@ -155,25 +156,25 @@ input[type="radio"] {
 
 ::-webkit-input-placeholder {
   color: _palette(fg-light) !important;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 :-moz-placeholder {
   color: _palette(fg-light) !important;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 ::-moz-placeholder {
   color: _palette(fg-light) !important;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 :-ms-input-placeholder {
   color: _palette(fg-light) !important;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .formerize-placeholder {
   color: _palette(fg-light) !important;
-  opacity: 1.0;
+  opacity: 1;
 }
