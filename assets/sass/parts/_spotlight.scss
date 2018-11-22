@@ -94,7 +94,8 @@
     }
   }
 
-  &.top, &.bottom {
+  &.top,
+  &.bottom {
     .content {
       left: 0;
       padding: ($size-wrapper-pad-tb * 0.85) 0 (($size-wrapper-pad-tb * 0.85) - _size(element-margin)) 0;
@@ -124,7 +125,8 @@
     }
   }
 
-  &.left, &.right {
+  &.left,
+  &.right {
     .content {
       height: 101%;
       padding: $size-wrapper-pad-tb $size-wrapper-pad-lr;

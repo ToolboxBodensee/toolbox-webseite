@@ -157,7 +157,8 @@ $vendor-values: (
 
   $x: $model + '-box';
 
-  *, *::before, *::after {
+  *, *::before,
+  *::after {
     -moz-box-sizing: #{$x};
     -webkit-box-sizing: #{$x};
     box-sizing: #{$x};
@@ -437,7 +438,8 @@ $vendor-values: (
       box-sizing: border-box;
     }
 
-    .row::after, .row::before {
+    .row::after,
+    .row::before {
       content: '';
       display: block;
       clear: both;

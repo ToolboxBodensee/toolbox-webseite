@@ -370,7 +370,6 @@
 
     // Otherwise ...
     @else {
-
       // Resize gutters.
       @include flexgrid-gutters($columns, $gutters);
     }

@@ -1,5 +1,6 @@
 /* Basic */
-html, body {
+html,
+body {
   background: _palette(bg);
   @include breakpoint(phablet) {
     overflow-x: hidden;
@@ -11,7 +12,9 @@ html, body {
 
 body {
   &.is-loading {
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       @include vendor('animation', 'none !important');
       @include vendor('transition', 'none !important');
     }
@@ -33,7 +36,10 @@ body {
   }
 }
 
-body, input, select, textarea {
+body,
+input,
+select,
+textarea {
   color: _palette(fg);
   font-family: _font(family);
   font-size: 15pt;
@@ -68,12 +74,14 @@ a {
   }
 }
 
-strong, b {
+strong,
+b {
   color: _palette(fg-bold);
   font-weight: _font(weight-bold);
 }
 
-em, i {
+em,
+i {
   font-style: italic;
 }
 
@@ -81,7 +89,12 @@ p {
   margin: 0 0 _size(element-margin) 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: _palette(fg-bold);
   font-weight: _font(weight-bold);
   line-height: 1em;

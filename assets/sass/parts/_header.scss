@@ -1,5 +1,6 @@
 /* Header */
-#navPanel, #titleBar {
+#navPanel,
+#titleBar {
   display: none;
 }
 
@@ -156,7 +157,8 @@
         color: inherit;
         height: inherit;
         line-height: inherit;
-        a, span{
+        a,
+        span{
           display:block;
           color:inherit;
           text-decoration:none;
