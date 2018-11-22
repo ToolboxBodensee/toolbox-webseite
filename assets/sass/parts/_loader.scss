@@ -56,7 +56,7 @@ body.landing {
   // Overlay (inactive)
   &::after {
     @include vendor('animation', 'overlay-hide #{_duration(landing-fadein)} ease-in forwards !important');
-    
+
     background: _palette(bg);
     content: '';
     display: block;
