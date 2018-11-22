@@ -2,14 +2,14 @@
 .dropotron {
   background: _palette(accent2-transparent);
   border-radius: _size(border-radius);
-  box-shadow: 0 0.075em 0.35em 0 rgba(0,0,0,0.125);
+  box-shadow: 0 0.075em 0.35em 0 rgba(0, 0, 0, 0.125);
   list-style: none;
   margin-top: calc(-0.25em + 1px);
   min-width: 12em;
   padding: 0.25em 0;
 
   > li {
-    border-top: solid 1px rgba(255,255,255,0.035);
+    border-top: solid 1px rgba(255, 255, 255, 0.035);
     padding: 0;
 
     a, span {
