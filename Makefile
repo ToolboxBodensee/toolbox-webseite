@@ -2,7 +2,11 @@ LEKTOR_SERVER_FLAGS=-h 127.0.0.1
 
 all: build
 
-build:
+sass:
+	sassc ./assets/sass/main.scss ./assets/css/main.css
+	sassc ./assets/sass/ie9.scss ./assets/css/ie9.css
+
+build: sass
 	lektor build
 
 deploy:
@@ -12,7 +16,8 @@ server:
 	lektor server $(LEKTOR_SERVER_FLAGS)
 
 ## Docker stuff
-IMAGE:=toolboxbodensee/lektor:latest
+IMAGE_TAG:=v1.1.0
+IMAGE:=toolboxbodensee/lektor:$(IMAGE_TAG)
 
 CACHE:=$(HOME)/.cache
 CACHE_VOL:=-v $(CACHE)/lektor:/root/.cache/lektor
