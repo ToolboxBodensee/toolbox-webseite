@@ -1,11 +1,10 @@
 /* Columns */
-
 @for $i from 2 through 5{
-    .col-#{$i}{
-        column-count: $i;
-        column-gap: 1vw;
-        > .button{
-            padding:0;
-        }
+  .col-#{$i}{
+    column-count: $i;
+    column-gap: 1vw;
+    > .button{
+      padding:0;
     }
+  }
 }

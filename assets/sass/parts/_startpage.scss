@@ -1,8 +1,6 @@
 //startpage
-
-
 @each $scroll, $background in $picture-startpage{
-    ##{$scroll}{
-        background-image: $background
-    }
+  ##{$scroll}{
+    background-image: $background
+  }
 }
