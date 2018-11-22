@@ -4,10 +4,8 @@
     <meta charset="utf-8">
     <title>{% block title %}Startseite{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--[if lte IE 8]><script src="{{ '/js/ie/html5shiv.js'|url }}"></script><![endif]-->
     <link rel="stylesheet" href="{{ '/css/main.css'|url }}" />
     <!--[if lte IE 9]><link rel="stylesheet" href="{{ 'assets/css/ie9.css'|url }}" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="{{ 'assets/css/ie8.css'|url }}" /><![endif]-->
     <meta name="description" content="{% if bag('translate', this.alt, 'description') %}{{ bag('translate', this.alt, 'description') }}{% else %}Die Toolbox Bodensee e.V. ist ein gemeinnütziger Maker- und Hackspace in Markdorf am Bodensee!{% endif %}" />
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/icons/apple-touch-icon.png'|url }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/icons/favicon-32x32.png'|url }}">
@@ -126,7 +124,6 @@
     <script src="{{ '/js/jquery.scrollex.min.js'|url }}"></script>
     <script src="{{ '/js/skel.min.js'|url }}"></script>
     <script src="{{ '/js/util.js'|url }}"></script>
-    <!--[if lte IE 8]><script src="{{ '/js/ie/respond.min.js'|url }}"></script><![endif]-->
     <script src="{{ '/js/main.js'|url }}"></script>
   </body>
 </html>
