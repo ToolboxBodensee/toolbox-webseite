@@ -73,6 +73,7 @@ textarea {
 
 a {
   @include vendor('transition', ('border-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out'));
+
   color: _palette(link);
   text-decoration: none;
 
@@ -215,3 +216,4 @@ pre {
 .align-right {
   text-align: right;
 }
+

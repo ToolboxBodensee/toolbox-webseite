@@ -26,7 +26,8 @@
     }
 
     &.active {
-      > a, > span {
+      > a,
+      > span {
         color: _palette(accent1);
       }
     }
@@ -42,6 +43,7 @@
 
     &::before {
       @include vendor('transform', 'rotate(45deg)');
+
       background: _palette(accent2);
       content: '';
       display: block;
@@ -61,3 +63,4 @@ body.landing {
     }
   }
 }
+

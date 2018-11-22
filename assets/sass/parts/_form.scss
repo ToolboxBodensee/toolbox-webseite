@@ -19,6 +19,7 @@ select,
 textarea {
   @include vendor('appearance', 'none');
   @include vendor('transition', 'border-color #{_duration(transition)} ease-in-out');
+
   background: transparent;
   border-radius: _size(border-radius);
   border: solid 1px _palette(border);
@@ -178,3 +179,4 @@ input[type="radio"] {
   color: _palette(fg-light) !important;
   opacity: 1;
 }
+
