@@ -2,7 +2,7 @@
 .spotlight {
   background-attachment: fixed;
   background-position: center center;
-  background-size:cover;
+  background-size: cover;
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
   background-image: none;
   min-height: 42em;
@@ -54,6 +54,7 @@
     @include breakpoint(mobileonly) {
       max-height: 50vh;
     }
+
     img {
       position: relative;
     }
@@ -190,7 +191,7 @@
 
     .goto-next {
       @include vendor('transform', 'translate(0,1.5em)');
-      
+
       opacity: 0;
     }
 

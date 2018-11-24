@@ -1,6 +1,7 @@
 /* Icon */
 .icon {
   @include icon;
+
   border-bottom: none;
   position: relative;
 
@@ -34,13 +35,12 @@
 }
 
 .iconshiftdown {
-  line-height: 2
+  line-height: 2;
 }
 
-
-@for $i from 5 through 10{
+@for $i from 5 through 10 {
   .iconshift-right-#{$i} {
-    margin-left:$i * 1px;
+    margin-left: $i * 1px;
   }
 }
 

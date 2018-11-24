@@ -13,6 +13,7 @@
 
   @include breakpoint(tablet) {
     background-attachment: scroll;
+
     .goto-next {
       height: 7em;
     }
