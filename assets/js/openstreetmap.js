@@ -1,10 +1,10 @@
-var mymap = L.map('mapid').setView([47.7123, 9.3995], 19);
+var mymap = L.map("mapid").setView([47.7123, 9.3995], 19);
 
-L.tileLayer('https://tiles.ffbsee.de:9090/{z}/{x}/{y}.png', {
+L.tileLayer("https://tiles.ffbsee.de:9090/{z}/{x}/{y}.png", {
 	maxZoom: 19,
-	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-		'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ', 
-	id: 'mapbox.streets'
+	attribution: "Map data &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap</a> contributors, " +
+		"<a href='https://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a>, ", 
+	id: "mapbox.streets"
 }).addTo(mymap);
 
 L.marker([47.71240915, 9.3995668]).addTo(mymap)
@@ -16,8 +16,8 @@ L.polygon([
     [47.71229545, 9.39956009],
     [47.71223409, 9.39949036],
     [47.71227740, 9.39939916]], {
-    color: 'orange',
-	fillColor: 'orange',
+    color: "orange",
+	fillColor: "orange",
 	fillOpacity: 0.5
 }).addTo(mymap).bindPopup("Vereinsheim");
 
@@ -36,7 +36,7 @@ L.polygon([
 ]).addTo(mymap).bindPopup("Hier Parken");
 
 L.circle([47.71229545, 9.39956009], 2, {
-	color: 'red',
-	fillColor: 'red',
+	color: "red",
+	fillColor: "red",
 	fillOpacity: 0.5
 }).addTo(mymap).bindPopup("Eingang");

@@ -1,5 +1,6 @@
 /* Section/Article */
-section, article {
+section,
+article {
   &.special {
     text-align: center;
   }
@@ -47,7 +48,7 @@ header {
 
     @include breakpoint(phablet) {
       font-size: 0.9em;
-    }      
+    }
   }
 
   &.major {

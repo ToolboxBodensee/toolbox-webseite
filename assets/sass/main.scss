@@ -36,11 +36,11 @@ Modified by Toolbox Bodensee e.V.
   }
 
   @else if $point == phablet {
-    @media (max-width: 933px)  { @content ; }
+    @media (max-width: 933px) { @content ; }
   }
 
   @else if $point == mobileonly {
-    @media (max-width: 480px)  { @content ; }
+    @media (max-width: 480px) { @content ; }
   }
 }
 
@@ -86,7 +86,7 @@ $size-wrapper-pad-lr: 3em;
   $size-wrapper-pad-tb: 4.5em;
   $size-wrapper-pad-lr: 2.5em;
 }
-  
+
 @include breakpoint(phablet) {
   $size-wrapper-pad-tb: 3.25em;
   $size-wrapper-pad-lr: 1.5em;

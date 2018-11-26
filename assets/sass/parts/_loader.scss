@@ -6,22 +6,63 @@
 }
 
 @include keyframes('spinner-hide') {
-  0% { color: _palette(fg-lighter); z-index: _misc(z-index-overlay) + 1; @include vendor('transform', 'scale(1) rotate(0deg)'); }
-  99% { color: _palette(bg); z-index: _misc(z-index-overlay) + 1; @include vendor('transform', 'scale(0.5) rotate(360deg)'); }
-  100% { color: _palette(bg); z-index: -1; @include vendor('transform', 'scale(0.5) rotate(360deg)'); }
+
+  0% {
+    color: _palette(fg-lighter);
+    z-index: _misc(z-index-overlay) + 1;
+  
+    @include vendor('transform', 'scale(1) rotate(0deg)'); 
+  }
+
+  99% {
+    color: _palette(bg);
+    z-index: _misc(z-index-overlay) + 1;
+
+    @include vendor('transform', 'scale(0.5) rotate(360deg)');
+  }
+
+  100% {
+    color: _palette(bg); z-index: -1;
+
+    @include vendor('transform', 'scale(0.5) rotate(360deg)');
+  }
 }
 
 @include keyframes('spinner-rotate') {
-  0% { @include vendor('transform', 'scale(1) rotate(0deg)'); }
-  100% { @include vendor('transform', 'scale(1) rotate(360deg)'); }
+
+  0% {
+
+    @include vendor('transform', 'scale(1) rotate(0deg)');
+  }
+
+  100% {
+
+    @include vendor('transform', 'scale(1) rotate(360deg)');
+  }
 }
 
 // Overlay
 @include keyframes('overlay-hide') {
-  0% { opacity: 1; z-index: _misc(z-index-overlay); }
-  15% { opacity: 1; z-index: _misc(z-index-overlay); }
-  99% { opacity: 0; z-index: _misc(z-index-overlay); }
-  100% { opacity: 0; z-index: -1; }
+
+  0% {
+    opacity: 1;
+    z-index: _misc(z-index-overlay);
+  }
+
+  15% {
+    opacity: 1;
+    z-index: _misc(z-index-overlay);
+  }
+
+  99% {
+    opacity: 0;
+    z-index: _misc(z-index-overlay);
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
 }
 
 body.landing {
