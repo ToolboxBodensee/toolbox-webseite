@@ -127,3 +127,6 @@ make docker-build # baut die Assets und die lektor cache (lektor build)
 make docker-server # führt den Lektor Server auf localhost:5000 aus
 make docker-shell # führt eine Shell aus innerhalb des Containers. Dies kann man zum Gebuggen genutzt werden.
 ```
+
+**Tipp:** Zum Verwenden von docker muss ``docker`` installiert sein und als Service gestartet sein. Weitere Hinweise dazu u.a. auf [wiki.archlinux.org](https://wiki.archlinux.org/index.php/docker#Installation).
+
