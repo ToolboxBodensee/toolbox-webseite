@@ -31,12 +31,13 @@ We want to watch the movie "All Creatures Welcome" together.
  When:
 ------------
 ```
-November 4th, 2018 
-at 5:00 p.m.
+Dezember 13th, 2018 
+at 10:00 p.m.
 at the Toolbox Bodensee in Markdorf.
 ```
 
 Come over and let's have a great movie night! And bring some snacks and popcorn please!
+You can come early and chat with us. We will open our gate since 6 PM.
 ---
 project:
 
@@ -60,8 +61,10 @@ twitter_handle: L3D
 xml:
 
 We want to watch together the movie "All Creatures Welcome" together.
-On November 4th, 2018 at 5:00 p.m. at the Toolbox Bodensee in Markdorf.
+On November 13th, 2018 at 10:00 p.m. at the Toolbox Bodensee in Markdorf.
 
 Come over and let's have a great movie night! 
 ---
 xml_img: poster.jpg
+---
+_hidden: no
