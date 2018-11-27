@@ -5,7 +5,7 @@
   background-image: url(../images/home/abschnitt1.jpeg); }
 
 #scroll-2 {
-  background-image: url(../blog/tag-der-offenen-tuere-2018/tag_der_offenen_tuere_2017_7.JPG); }
+  background-image: url(../blog/all-creatures-welcome/aufnahme.jpg); }
 
 #scroll-3 {
   background-image: url(../images/home/abschnitt2.jpeg); }
@@ -1475,7 +1475,8 @@ body.landing {
     line-height: 2.025em; } }
 
 /* Section/Article */
-section.special, article.special {
+section.special,
+article.special {
   text-align: center; }
 
 header p {

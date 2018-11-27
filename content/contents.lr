@@ -95,20 +95,19 @@ sections:
 #### startpage_section ####
 type: right
 ----
-header: Tag der offenen Türe
+header: All Creatures Welcome
 ----
-text: Am 17. November 2018 lädt die Toolbox Bodensee zum 4. Tag der offenen Tür ein!
+text: Wir wollen gemeinsam den Film "All Creatures Welcome" in der Toolbox anschauen.
 ----
 text2:
 
-Der Tag der offenen Tür ist für alle Interessierten eine ideale Gelegenheit, sich die Toolbox einmal näher anzuschauen. Zwischen 11:00 Uhr und 19:00 Uhr heißen wir unsere Gäste herzlich willkommen!
-Es wird auch dieses Jahr wieder ein vielfältiges Programm mit vielen interessanten Vorträgen und Workshops zu verschiedenen Themen geben. 
+ Die Events des Chaos Computer Clubs, Europas größter Hackervereinigung, sind eine Art utopisches Spiegelbild des Internets in der realen Welt. Diese werden in dem Film All Creatures Welcome gezeigt.
 ----
-url_text: Tag der offenen Türe
+url_text: All Creatures Welcome
 ----
-url: /blog/tag-der-offenen-tuere-2018/
+url: /blog/all-creatures-welcome/
 ----
-background: /blog/tag-der-offenen-tuere-2018/tag_der_offenen_tuere_2017_7.JPG
+background: /blog/all-creatures-welcome/aufnahme.jpg
 #### startpage_section ####
 type: left
 ----
