@@ -6,6 +6,9 @@ sass:
 	sassc ./assets/sass/main.scss ./assets/css/main.css
 	sassc ./assets/sass/ie9.scss ./assets/css/ie9.css
 
+install:
+	pip install lektor
+
 build: sass
 	lektor build
 
