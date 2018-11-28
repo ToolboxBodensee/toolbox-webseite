@@ -19,11 +19,11 @@ server:
 	lektor server $(LEKTOR_SERVER_FLAGS)
 
 ## Docker stuff
-IMAGE_TAG:=v1.1.0
+IMAGE_TAG:=v1.2.0
 IMAGE:=toolboxbodensee/lektor:$(IMAGE_TAG)
 
 CACHE:=$(HOME)/.cache
-CACHE_VOL:=-v $(CACHE)/lektor:/root/.cache/lektor
+CACHE_VOL:=-v $(CACHE)/lektor:/home/lektor/.cache/lektor
 SOURCE_VOL:=-v $(PWD):/opt/lektor
 
 DOCKER_CACHE_DIR:=$(CACHE)/docker
