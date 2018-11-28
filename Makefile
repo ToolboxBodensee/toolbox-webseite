@@ -12,9 +12,6 @@ install:
 build: sass
 	lektor build
 
-deploy:
-	lektor deploy --key $(LEKTOR_DEPLOY_KEY) toolbox
-
 server:
 	lektor server $(LEKTOR_SERVER_FLAGS)
 
@@ -22,37 +19,45 @@ server:
 IMAGE_TAG:=v1.2.0
 IMAGE:=toolboxbodensee/lektor:$(IMAGE_TAG)
 
+PWD:=$(shell pwd)
+
 CACHE:=$(HOME)/.cache
+PWD:=$(shell pwd)
+
+LEKTOR_CACHE:=$(CACHE)/lektor
 CACHE_VOL:=-v $(CACHE)/lektor:/home/lektor/.cache/lektor
 SOURCE_VOL:=-v $(PWD):/opt/lektor
 
-# DOCKER_CACHE_DIR:=$(CACHE)/docker
-# DOCKER_CACHE:=$(DOCKER_CACHE_DIR)/lektor.tar.gz
-
-DOCKER_FLAGS:=--rm -it
-DEPLOY_FLAGS:=-e LEKTOR_DEPLOY_KEY -v $(HOME)/.ssh/known_hosts:/root/.ssl/known_hosts
-
 EXPORTED_PORTS=-p 5000:5000
 
-DOCKER_RUN:=docker run $(DOCKER_FLAGS) $(SOURCE_VOL) $(CACHE_VOL)
+DOCKER:=docker
 
-# "$(DOCKER_CACHE_DIR)":
-# 	mkdir -p "$(DOCKER_CACHE_DIR)"
+# On linux...
+ifeq ($(shell uname),Linux)
+	# When user is not in docker group
+	ifneq ($(findstring docker,$(shell groups)),docker)
+		# And the user is not root
+		ifneq ($(shell whoami),root)
+			# Run docker client inside docker group
+			DOCKER:=sudo -E -g docker docker
+		endif
+	endif
+endif
 
-# docker-pull: "$(DOCKER_CACHE_DIR)"
+RUN:=run --rm -it $(SOURCE_VOL) $(CACHE_VOL)
+
+$(LEKTOR_CACHE):
+	mkdir -p $(LEKTOR_CACHE)
+
 docker-pull:
-	# if [ -f "$(DOCKER_CACHE)" ]; then gzip -dc "$(DOCKER_CACHE)" | docker load; fi
-	# docker pull $(IMAGE) && docker save $(IMAGE) | gzip > "$(DOCKER_CACHE)"
-	docker pull $(IMAGE)
+	$(DOCKER) pull $(IMAGE)
 
-docker-build: docker-pull
-	$(DOCKER_RUN) $(IMAGE) make build
+docker-build: docker-pull $(LEKTOR_CACHE)
+	$(DOCKER) $(RUN) $(IMAGE) make build
 
-docker-deploy: docker-build
-	$(DOCKER_RUN) $(DEPLOY_FLAGS) $(IMAGE) make deploy
+docker-shell: $(LEKTOR_CACHE) docker-pull
+	$(DOCKER) $(RUN) $(EXPORTED_PORTS) $(IMAGE) /bin/sh
 
-docker-shell: docker-pull
-	$(DOCKER_RUN) $(EXPORTED_PORTS) $(IMAGE) /bin/sh
-
-docker-server: docker-pull
-	$(DOCKER_RUN) $(EXPORTED_PORTS) $(IMAGE) lektor server -h 0.0.0.0
+docker-server: $(LEKTOR_CACHE) docker-pull
+	$(DOCKER) $(RUN) $(EXPORTED_PORTS) $(IMAGE) make sass
+	$(DOCKER) $(RUN) $(EXPORTED_PORTS) $(IMAGE) lektor server -h 0.0.0.0
