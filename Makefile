@@ -52,5 +52,5 @@ docker-deploy: docker-build
 docker-shell: docker-pull
 	$(DOCKER_RUN) $(EXPORTED_PORTS) $(IMAGE) /bin/sh
 
-docker-server: docker-build
+docker-server: docker-pull
 	$(DOCKER_RUN) $(EXPORTED_PORTS) $(IMAGE) lektor server -h 0.0.0.0
