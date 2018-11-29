@@ -128,4 +128,6 @@ make docker-server # führt den Lektor Server auf localhost:5000 aus
 make docker-shell # führt eine Shell aus innerhalb des Containers. Diese kann man zum Debuggen nutzen.
 ```
 
-**Tipp:** Zum Verwenden von docker muss ``docker`` installiert sein und als Service gestartet sein. Weitere Hinweise dazu u.a. auf [wiki.archlinux.org](https://wiki.archlinux.org/index.php/docker#Installation).
+**Tipp:** Zum Verwenden von docker muss ``docker`` installiert sein und als Service gestartet sein.<br/>
+Außerdem muss dein User zur Gruppe docker gehören und sollte nicht als root ausgeführt werden!<br/>
+Weitere Hinweise dazu u.a. auf [wiki.archlinux.org](https://wiki.archlinux.org/index.php/docker#Installation).
