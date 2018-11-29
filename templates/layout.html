@@ -25,13 +25,16 @@
        <!-- Header -->
         <header id="header">
             <h1 id="logo">
-                <a id="tb-opened" class="button tb-opened navbar special" href="{% if bag('translate', this.alt, 'api_url') %}{{ bag('translate', this.alt, 'api_url') }}{% else %}/vereinsheim/{% endif %}">{% if bag('translate', this.alt, 'api_space') %}{{ bag('translate', this.alt, 'api_space') }}{% else %}Vereinsheim{% endif %} {% if bag('translate', this.alt, 'api_open') %}{{ bag('translate', this.alt, 'api_open') }}{% else %}offen{% endif %}</a>
-                <a id="tb-closed" class="tb-closed" href="{% if bag('translate', this.alt, 'api_url') %}{{ bag('translate', this.alt, 'api_url') }}{% else %}/vereinsheim/{% endif %}">{% if bag('translate', this.alt, 'api_space') %}{{ bag('translate', this.alt, 'api_space') }}{% else %}Vereinsheim{% endif %} {% if bag('translate', this.alt, 'api_closed') %}{{ bag('translate', this.alt, 'api_closed') }}{% else %}offen{% endif %}</a>
+                  <div class="tooltip">
+                    <a id="tb-opened" class="button tb-opened navbar special" href="{% if bag('translate', this.alt, 'api_url') %}{{ bag('translate', this.alt, 'api_url') }}{% else %}/vereinsheim/{% endif %}">{% if bag('translate', this.alt, 'api_space') %}{{ bag('translate', this.alt, 'api_space') }}{% else %}Vereinsheim{% endif %} {% if bag('translate', this.alt, 'api_open') %}{{ bag('translate', this.alt, 'api_open') }}{% else %}offen{% endif %}</a>
+                    <a id="tb-closed" class="tb-closed" href="{% if bag('translate', this.alt, 'api_url') %}{{ bag('translate', this.alt, 'api_url') }}{% else %}/vereinsheim/{% endif %}">{% if bag('translate', this.alt, 'api_space') %}{{ bag('translate', this.alt, 'api_space') }}{% else %}Vereinsheim{% endif %} {% if bag('translate', this.alt, 'api_closed') %}{{ bag('translate', this.alt, 'api_closed') }}{% else %}offen{% endif %}</a>
+                    <span class="tooltiptext">{% if bag('translate', this.alt, 'api_opening_time') %}{{ bag('translate', this.alt, 'api_opening_time') }}{% else %}Donnerstag 19:30-23:00 open{% endif %}</span>
+                  </div>
             </h1>
             <nav id="nav">
               <ul>
                 <li{% if this._path == '/' %} class="active"{% endif
-                  %}><a href="{{ '/'|url }}">{% 
+                  %}><a href="{{ '/'|url }}">{%
                   if bag('navigation', this.alt, 'home') %}{{ bag('navigation', this.alt, 'home') }}{%
                   else %}Home{% endif %}</a></li>{%
                 for href, title, print in [
@@ -41,11 +44,11 @@
                   ['/termine', 'Kalender', 1],
                   ['/kontakt', 'Kontakt', 1]
                 ] %}{% if print %}
-                  <li{% if this.is_child_of(href) %} class="active"{% endif 
+                  <li{% if this.is_child_of(href) %} class="active"{% endif
                   %}><a href="{{ href|url }}">{% if bag('navigation', this.alt, title) %}{{ bag('navigation', this.alt, title) }}{% else %}{{ title }}{% endif %}</a>{%
                   if title == 'Projekte' %}
                     <ul>{% set root = site.get('/projekte/', alt=this.alt) %}{%
-                  for child in root.children recursive %}{% if loop.index <= 7 %} 
+                  for child in root.children recursive %}{% if loop.index <= 7 %}
                     <li{%
                       if this._path == child._path %} class="active"{% endif
                       %}><a href="{% if this.alt == 'de' %}{% else %}/{{ this.alt }}/{{ this.alt }}/{% endif %}{{ child|url }}">{{ child.title }}</a></li>{%
@@ -65,7 +68,7 @@
                   elif title == 'Kontakt' %}
                     <ul><li><a href="{{ '/kontakt'|url }}">{% if bag('navigation', this.alt, 'Kontakt') %}{{ bag('navigation', this.alt, 'Kontakt') }}{% else %}Kontakt{% endif %}</a></li>
                       <li><a href="{{ '/impressum'|url }}">{% if bag('navigation', this.alt, 'Impressum') %}{{ bag('navigation', this.alt, 'Impressum') }}{% else %}Impressum{% endif %}</a></li>
-                      <li><a href="{{ '/datenschutz/'|url }}">{% if bag('navigation', this.alt, 'Datenschutz') %}{{ bag('navigation', this.alt, 'Datenschutz') }}{% else %}Datenschutz{% endif %}</a></li>  
+                      <li><a href="{{ '/datenschutz/'|url }}">{% if bag('navigation', this.alt, 'Datenschutz') %}{{ bag('navigation', this.alt, 'Datenschutz') }}{% else %}Datenschutz{% endif %}</a></li>
                   </ul>{%
                   elif title == 'Blog' %}
                     <ul>{% set root = site.get('/blog/', alt=this.alt) %}{%
