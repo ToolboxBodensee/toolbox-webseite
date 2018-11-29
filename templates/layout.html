@@ -25,9 +25,12 @@
        <!-- Header -->
         <header id="header">
             <h1 id="logo">
-                  <div class="tooltip">
+                <div class="tooltip">
                     <a id="tb-opened" class="button tb-opened navbar special" href="{% if bag('translate', this.alt, 'api_url') %}{{ bag('translate', this.alt, 'api_url') }}{% else %}/vereinsheim/{% endif %}">{% if bag('translate', this.alt, 'api_space') %}{{ bag('translate', this.alt, 'api_space') }}{% else %}Vereinsheim{% endif %} {% if bag('translate', this.alt, 'api_open') %}{{ bag('translate', this.alt, 'api_open') }}{% else %}offen{% endif %}</a>
-                    <a id="tb-closed" class="tb-closed" href="{% if bag('translate', this.alt, 'api_url') %}{{ bag('translate', this.alt, 'api_url') }}{% else %}/vereinsheim/{% endif %}">{% if bag('translate', this.alt, 'api_space') %}{{ bag('translate', this.alt, 'api_space') }}{% else %}Vereinsheim{% endif %} {% if bag('translate', this.alt, 'api_closed') %}{{ bag('translate', this.alt, 'api_closed') }}{% else %}offen{% endif %}</a>
+                    <span class="tooltiptext">{% if bag('translate', this.alt, 'api_open_text') %}{{ bag('translate', this.alt, 'api_open_text') }}{% else %}Vereinsheim ist gerade offen. Komm gerne vorbei solange wir da sind!{% endif %}</span>
+                </div>
+                <div class="tooltip">
+                    <a id="tb-closed" class="tb-closed" href="{% if bag('translate', this.alt, 'api_url') %}{{ bag('translate', this.alt, 'api_url') }}{% else %}/vereinsheim/{% endif %}">{% if bag('translate', this.alt, 'api_space') %}{{ bag('translate', this.alt, 'api_space') }}{% else %}Vereinsheim{% endif %} {% if bag('translate', this.alt, 'api_closed') %}{{ bag('translate', this.alt, 'api_closed') }}{% else %}geschlossen{% endif %}</a>
                     <span class="tooltiptext">{% if bag('translate', this.alt, 'api_opening_time') %}{{ bag('translate', this.alt, 'api_opening_time') }}{% else %}Vereinsheim ist typischerweise Donnerstags 19:30 offen{% endif %}</span>
                   </div>
             </h1>
