@@ -97,20 +97,17 @@ sections:
 #### startpage_section ####
 type: right
 ----
-header: Open Day
+header: All Creatures Welcome
 ----
-text: On November 17th, 2018 the Toolbox Bodensee invites you to the 4th Open Day!
+text: We want to watch the movie "All Creatures Welcome" together.
 ----
-text2:
-
-The open day is an ideal opportunity for all those interested to take a closer look at the Toolbox. Between 11:00 am and 7:00 pm we welcome our guests warmly!
-This year again there will be a varied program with many interesting lectures and workshops on different topics. 
+text2: A hacker spaceship stranded in our solar system many years ago. To make contact with different cultures and life forms they sent a little rocket to Earth. Magic spreads like fairy dust where ever it is. To promote knowledge and freedom of information, it travels to every gathering organized by Europe’s largest hacker association, the Chaos Computer Club.
 ----
-url_text: Open Day
+url_text: Movie Night
 ----
-url: /en/blog/tag-der-offenen-tuere-2018/
+url: /en/blog/all-creatures-welcome/
 ----
-background: /blog/tag-der-offenen-tuere-2018/tag_der_offenen_tuere_2017_7.JPG
+background: /blog/all-creatures-welcome/aufnahme.jpg
 #### startpage_section ####
 type: left
 ----
