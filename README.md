@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.org/ToolboxBodensee/toolbox-webseite.svg?branch=master)](https://travis-ci.org/ToolboxBodensee/toolbox-webseite)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1ef6a941f1974e8bb652e083d92251b9)](https://www.codacy.com/app/Toolbox_Website/toolbox-webseite?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ToolboxBodensee/toolbox-webseite&amp;utm_campaign=Badge_Grade)
 
 Webseite der Toolbox Bodensee e.V.
 ====================================
