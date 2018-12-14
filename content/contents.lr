@@ -13,7 +13,7 @@ about_text2:
 Auf über 420 m² können wir u.a. den Bereichen Elektrotechnik, Holz- und Metallwerkstatt, 3D-Druck, Amateurfunk, Siebdruck sowie einem Fotolabor einen eigenen Raum bieten.
 Als Mitglied kannst du unsere Räumlichkeiten und Gerätschaften so oft und lange benutzen, wie du möchtest, außerdem darfst du selbstverständlich bei Vorträgen zuhören oder selber welche halten.
 ---
-about_text3: Unser Vereinsheim ist außerdem ein Ort von Veranstaltungen anderer Organisation wie dem [Chaostreff Markdorf](https://bodensee.space/chaostreff-markdorf), den [Amateurfunkern Friedrichshafen](https://www.darc.de/der-club/distrikte/p/ortsverbaende/03/), [Freifunk Bodensee](https://freifunk-bodensee.net/), der [Spieleentwicklung Bodensee](http://www.spieleentwicklung-bodensee.de/) oder dem [IoT Meetup Bodensee](https://www.meetup.com/de-DE/IoTBodensee/?_cookie-check=8FCj7YDEE6xcpKYA).
+about_text3: Unser Vereinsheim ist außerdem ein Ort von Veranstaltungen anderer Organisation wie dem [Chaostreff Markdorf](https://bodensee.space/chaostreff-markdorf), den [Amateurfunkern Friedrichshafen](https://www.darc.de/der-club/distrikte/p/ortsverbaende/03/), [Freifunk Bodensee](https://freifunk-bodensee.net/), der [Spieleentwicklung Bodensee](http://www.spieleentwicklung-bodensee.de/) oder dem [IoT Meetup Bodensee](https://www.meetup.com/de-DE/IoTBodensee/).
 ---
 about_url: Vereinsheim
 ---
@@ -95,19 +95,23 @@ sections:
 #### startpage_section ####
 type: right
 ----
-header: All Creatures Welcome
+header: 35c3 - Refreshing Memories
 ----
-text: Wir wollen gemeinsam den Film "All Creatures Welcome" in der Toolbox anschauen.
+text:
+
+Menschen aus aller Welt veranstalten Events um den Congress näher nach Hause zu bringen – Congress Everywhere:
 ----
 text2:
 
- Die Events des Chaos Computer Clubs, Europas größter Hackervereinigung, sind eine Art utopisches Spiegelbild des Internets in der realen Welt. Diese werden in dem Film All Creatures Welcome gezeigt.
+Dies ermöglicht allen, die nicht am 35c3 in Leipzig teilnehmen können, trotzdem ihre eigenen Hackcenter Erfahrungen zu machen. Durch gemeinsames Schauen der Streams, der Teilnahme durch Twitter, Mastodon und/oder IRC und dem gemeinsamen Trinken einer Flora Power oder Club Mate.
+
+Schau doch mal bei uns vorbei!
 ----
-url_text: All Creatures Welcome
+url_text: 35c3 - Congress Everywhere
 ----
-url: /blog/all-creatures-welcome/
+url: /blog/35c3-refreshing-memories/
 ----
-background: /blog/all-creatures-welcome/aufnahme.jpg
+background: /blog/35c3-refreshing-memories/c3voc.jpg
 #### startpage_section ####
 type: left
 ----
