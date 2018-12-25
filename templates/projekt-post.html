@@ -2,9 +2,11 @@
 {% from "macros/projekt.html" import render_blog_post %}
 {% block expand_header %}
 <link href="{{ '/css/lightgallery.css'|url }}" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/css/dsgvo-video-embed.css'|url }}">
 {% endblock %}
 {% block title %}{{ this.title }}{% endblock %}
-{% block body %}          
+{% block body %}
+  <script src="{{ '/js/dsgvo-video-embed.js'|url }}" charset="utf-8"></script>
   {{ render_blog_post(this) }}
   <script type="text/javascript">
     $(document).ready(function(){
