@@ -2893,3 +2893,6 @@ body.is-touch #banner {
   column-gap: 1vw; }
   .col-5 > .button {
     padding: 0; }
+
+iframe {
+  overflow: hidden; }

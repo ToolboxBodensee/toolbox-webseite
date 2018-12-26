@@ -10,7 +10,7 @@ Am PC kann entweder ein MIDI file abgespielt oder ein MIDI Keyboard angeschlosse
 
 Die Floppys sind mit 3D-gedruckten [Halterungen](https://www.thingiverse.com/thing:799346) auf einem Holzbrett befestigt.
 
-<iframe  width="800" height="450" src="https://www.youtube-nocookie.com/embed/K46krINg8WA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br/>
+<iframe id='ivplayer' type='text/html' width='640' height='360' src='https://invidio.us/embed/K46krINg8WA?rel=0' frameborder='0' allow="autoplay; encrypted-media" allowfullscreen scrolling="no"></iframe>
 
 #### Erste Versuche und Software Tests
 ![](floppy1.webp)
