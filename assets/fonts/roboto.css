@@ -26,7 +26,7 @@
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 300;
-  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(/fonts/roboto-light_300.ttf) format('truetype');
+  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(/fonts/roboto-italic_300.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
