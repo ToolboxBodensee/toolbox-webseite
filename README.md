@@ -33,7 +33,7 @@ Zur neuen Webseite Beitragen
 ------------------------
 
 1.  Dieses Repository Forken oder einen neuen Branch machen (übers GitHub Interface)
-2.  Geforktes Repository Clonen (``git clone https://github.com/<Your_Name>/toolbox-webseite.git``)
+2.  Geforktes Repository Clonen (``git lfs clone https://github.com/<Your_Name>/toolbox-webseite.git``)
 3.  Öffne deine Komandozeile im geklonten Repository-Fork (``cd toolbox-webseite``)
 4.  Lektor starten (``python2 -m lektor server``)
 5.  Webseite updaten... (``http://localhost:5000/``)
@@ -42,6 +42,22 @@ Zur neuen Webseite Beitragen
 8.  Änderungen hochladen (``git push``)
 9.  Pull-Request Stellen (übers GitHub Interface)
 
+ Bilder und große Dateien
+---------------------------
+Für große Dateien haben wir angefangen auf [git-lfs](https://git-lfs.github.com/) zu setzen. Hierbei werden große Dateien nicht mehr ganz so schlimm in die History des git eingebaut.
+Das war mit mehreren MB großen Bildern schon schlimm, aber noch verkraftbar. Mit größeren Videos aber... Sollte man das halt echt nicht direkt ins git werden!
+
+Zur verwendung von git-lfs muss die git-lfs command line extention installiert sein!
+Die geschieht auf den gängigsten Platformen zB. mit:
+
+```bash
+sudo apt install git-lfs
+```
+oder
+```bash
+sudo pacman -S git-lfs
+```
+ 
 Webseite übersetzen
 ------------------------
 
