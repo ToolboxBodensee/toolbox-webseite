@@ -52,7 +52,7 @@
 {% endfor %}
 
 <!-- Four -->
-<section id="scroll-icons" class="wrapper style1 special fade-up">
+<section id="scroll-{{ this.sections.blocks|count + 2 }}" class="wrapper style1 special fade-up">
   <div class="container">
     <header class="major">
       <h2>{{ this.icons_header }}</h2>
@@ -113,7 +113,7 @@
 </section>
 
 <!-- Five -->
-<section id="scroll-5" class="wrapper style2 special fade">
+<section id="scroll-{{ this.sections.blocks|count + 3 }}" class="wrapper style2 special fade">
   <div class="container">
     <header>
       <h2>{{ this.red_1 }}</h2>
