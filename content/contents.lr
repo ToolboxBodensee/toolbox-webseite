@@ -93,26 +93,6 @@ hinweis_url: /kontakt/
 sections:
 
 #### startpage_section ####
-type: right
-----
-header: 35c3 - Refreshing Memories
-----
-text:
-
-Menschen aus aller Welt veranstalten Events um den Congress näher nach Hause zu bringen – Congress Everywhere:
-----
-text2:
-
-Dies ermöglicht allen, die nicht am 35c3 in Leipzig teilnehmen können, trotzdem ihre eigenen Hackcenter Erfahrungen zu machen. Durch gemeinsames Schauen der Streams, der Teilnahme durch Twitter, Mastodon und/oder IRC und dem gemeinsamen Trinken einer Flora Power oder Club Mate.
-
-Schau doch mal bei uns vorbei!
-----
-url_text: 35c3 - Congress Everywhere
-----
-url: /blog/35c3-refreshing-memories/
-----
-background: /blog/35c3-refreshing-memories/c3voc.jpg
-#### startpage_section ####
 type: left
 ----
 header: Elektrowerkstatt

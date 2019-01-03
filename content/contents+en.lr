@@ -95,20 +95,6 @@ hinweis_url: /en/kontakt/
 sections:
 
 #### startpage_section ####
-type: right
-----
-header: 35c3 - Refreshing Memories
-----
-text: Hackers all over the world are organizing events to bring the congress closer to home – Congress Everywhere:
-----
-text2: Allow those unable to attend the Congress in Leipzig to celebrate their own Hackcenter experience, watch the streams, participate via twitter or chats, drink Tschunk, cook and have a good time.
-----
-url_text: 35c3 - Congress Everywhere
-----
-url: /en/blog/35c3-refreshing-memories/c3voc.jpg
-----
-background: /blog/35c3-refreshing-memories/c3voc.jpg
-#### startpage_section ####
 type: left
 ----
 header: electrical workshop
