@@ -97,17 +97,17 @@ sections:
 #### startpage_section ####
 type: right
 ----
-header: All Creatures Welcome
+header: 35c3 - Refreshing Memories
 ----
-text: We want to watch the movie "All Creatures Welcome" together.
+text: Hackers all over the world are organizing events to bring the congress closer to home – Congress Everywhere:
 ----
-text2: A hacker spaceship stranded in our solar system many years ago. To make contact with different cultures and life forms they sent a little rocket to Earth. Magic spreads like fairy dust where ever it is. To promote knowledge and freedom of information, it travels to every gathering organized by Europe’s largest hacker association, the Chaos Computer Club.
+text2: Allow those unable to attend the Congress in Leipzig to celebrate their own Hackcenter experience, watch the streams, participate via twitter or chats, drink Tschunk, cook and have a good time.
 ----
-url_text: Movie Night
+url_text: 35c3 - Congress Everywhere
 ----
-url: /en/blog/all-creatures-welcome/
+url: /en/blog/35c3-refreshing-memories/c3voc.jpg
 ----
-background: /blog/all-creatures-welcome/aufnahme.jpg
+background: /blog/35c3-refreshing-memories/c3voc.jpg
 #### startpage_section ####
 type: left
 ----
