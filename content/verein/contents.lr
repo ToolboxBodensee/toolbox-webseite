@@ -21,8 +21,8 @@ content:
  Verein Toolbox Bodensee e.V.
 -------------------------------------------------------
 <div class="col-2"> 
-<a href="/verein/" class="button fit">Satzung & Ordnung</a> 
-<a href="/verein/presse/" class="button fit">Presse Informationen</a>
+<a href="/verein/dokumente" class="button fit">Satzung, Ordnung und Benutzerordnung</a> 
+<a href="/verein/presse/" class="button fit">Pressespiegel und Informationen</a>
 </div>
 <a href="/mitglied-werden/" class="button special fit">Mitglied werden</a>
 
