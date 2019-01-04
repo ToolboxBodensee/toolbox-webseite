@@ -41,6 +41,11 @@
                 {{ blk }}
               {% endfor %}</div>{%
             endif %}
+            {% if post.video_embeded %} 
+            {% for blk in post.video_embeded.blocks %}
+                {{ blk }}
+              {% endfor %}</div>{%
+            endif %}
           </section>
         </div>
       </div>

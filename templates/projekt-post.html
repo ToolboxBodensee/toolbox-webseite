@@ -2,6 +2,8 @@
 {% from "macros/projekt.html" import render_blog_post %}
 {% block expand_header %}
 <link href="{{ '/css/lightgallery.css'|url }}" rel="stylesheet">
+<script src="{{ '/js/webcomponents.min.js'|url }}"></script/>
+<link rel="import" href="{{ '/youtube-embed.html'|url }}">
 {% endblock %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}          
