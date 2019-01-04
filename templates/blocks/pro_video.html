@@ -1,0 +1,8 @@
+{% set img = record.attachments.images.get(this.image) %}
+<div class="wrapper">
+    <youtube-embed embed="AqcjdkPMPJA"></youtube-embed>
+</div>
+
+<a href="{{ img.path }}">
+      <img class="image" src="{{ img.thumbnail(720, 720)|url }}" />
+  </a>
