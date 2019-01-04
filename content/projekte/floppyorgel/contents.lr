@@ -52,3 +52,5 @@ project:
 image: floppyorgel.jpg
 #### pro_img ####
 image: floppy2.jpg
+---
+video_is_embeded: yes

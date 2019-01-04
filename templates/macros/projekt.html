@@ -35,10 +35,10 @@
             </header>
           <section id="content">
             {{ post.body }}
-            {% for blk in post.video_embeded.blocks %}
+            {% if post.video_is_embeded %}{% for blk in post.video_embeded.blocks %}
                 {{ blk }}
               {% endfor %}</div>{%
-            endif %}
+          endif %} {% endif %}
             {% if post.project %} 
             <div class="lightgallery" class="row alt">{%
               for blk in post.project.blocks %}
