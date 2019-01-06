@@ -34,13 +34,7 @@ Unsere international bekannte Floppyorgel kann nicht nur in unserem Vereinsheim 
 video_embeded:
 
 #### pro_video ####
-image: floppy2.jpg
-----
-video_480: 
-----
-video_720: 
-----
-video_1080: 
+video: floppyorgel.mp4
 ----
 video_url: K46krINg8WA
 ---
