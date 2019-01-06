@@ -36,8 +36,8 @@
           <section id="content">
             {{ post.body }}
             {% if post.video_is_embeded %}{% for blk in post.video_embeded.blocks %}
-                {{ blk }}
-              {% endfor %}</div>{%
+                {{ blk }} <br/>
+            {% endfor %}{%
           endif %} 
             {% if post.project %} 
             <div class="lightgallery" class="row alt">{%
