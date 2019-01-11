@@ -45,7 +45,7 @@
 
 {% for blk in this.sections.blocks %}
     <section id="scroll-{{ loop.index0 + 2 }}"
-             class="spotlight style2 {{ blk.type }}" style="background-image:url({{ blk.background }})">
+             class="spotlight style2 {{ blk.type }}">
     {{ blk }}
     <a href="#scroll-{{ loop.index0 + 3 }}" class="goto-next scrolly">Next</a>
     </section>

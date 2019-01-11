@@ -107,7 +107,7 @@ url_text: projects
 ----
 url: /en/projekte/
 ----
-background: /images/home/abschnitt2.jpeg
+background: abschnitt2.jpeg
 #### startpage_section ####
 type: right
 ----
@@ -121,4 +121,4 @@ url_text: Dates & Events
 ----
 url: /en/termine/
 ----
-background: /images/home/abschnitt3.jpeg
+background: abschnitt3.jpeg

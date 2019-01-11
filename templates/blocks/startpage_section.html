@@ -1,10 +1,21 @@
-<div class="content">
-    <header>
-        <h2>{{ this.header }}</h2>
-        {{ this.text }}
-    </header>
-    {{ this.text2 }}
-    <ul class="actions">
-        <li><a href="{{ this.url }}" class="button">{{ this.url_text }}</a></li>
-    </ul>
+{% set img = record.attachments.images.get(this.background) %}
+<div class="contentback">
+    <picture>
+        <source
+            sizes="100vw"
+            srcset="{{ img.thumbnail(2000)|url }}  2000w, {{ img.thumbnail(1600)|url }}  1600w,
+                {{ img.thumbnail(1200)|url }}  1200w, {{ img.thumbnail(800)|url }}  800w,
+                {{ img.thumbnail(400)|url }}  400w, {{ img.thumbnail(200)|url }}  200w">
+            <img src="{{ img }}"/>
+    </picture>
+    <div class="content">
+        <header>
+            <h2>{{ this.header }}</h2>
+            {{ this.text }}
+        </header>
+        {{ this.text2 }}
+        <ul class="actions">
+            <li><a href="{{ this.url }}" class="button">{{ this.url_text }}</a></li>
+        </ul>
+    </div>
 </div>
