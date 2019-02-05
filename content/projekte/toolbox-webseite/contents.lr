@@ -25,6 +25,10 @@ Da die Toolbox auch versucht ein internationales Publikum anzusprechen und nicht
 Auch gibt es seit der Übersetzung einige Menüelemente, die mehrsprachig vorhanden sein sollen. Dies wird über die [databags](https://github.com/ToolboxBodensee/toolbox-webseite/blob/master/databags/translate.ini) gelöst.
 
 Wen Lektor weiter interessiert, der sollte sich für noch mehr Tricks die [Dokumentation von Lektor](https://www.getlektor.com/docs/) anschauen, da dort einige nützliche Elemente zu finden sind.
+
+ Bilder im Git
+-------------------
+Für das Speichern von Binärblobs im git verwenden wir den Git - Large File Storage. Wer das noch nicht kennt und gerne auch größere Binärdateien ins git packen möchte, der sollte sich [git-lfs](https://git-lfs.github.com/) wirklich näher anschauen!
 ---
 icon: fab fa-firefox
 ---
