@@ -20,3 +20,17 @@ teaser: FPV Fliegen wird nochmal cooler, wenn man durch einen bunt blinkenden Pa
 pub_date: 2019-01-17
 ---
 xml_img: fpv_tunnel_2.jpg
+---
+body:
+
+In der Toolbox gibt es einige Menschen, die sich fürs FPV-Fliegen mit Dronen begeistern.
+
+Und um noch mehr Spaß am Fliegen zu haben, haben Menschen einen LED-Tunnel gebaut, der Teil eines kleinen Dronen Parkour geworden ist.
+Dieser hängt über der Treppe in das oberste Stockwerk,
+
+ Neopixel
+----------------
+Die LEDs sind 5 Meter Neopixel. Diese werden von einem Arduino gesteuert.
+Der dazugehörige Code findet sich natürlich auf GitHub: [github.com/ToolboxBodensee/led_tunnel](https://github.com/ToolboxBodensee/led_tunnel.git)
+
+Wir würden uns sehr darüber freuen, wenn du auch mal mit deiner Drone vorbei kommst und den Tunnel ausprobierst!
