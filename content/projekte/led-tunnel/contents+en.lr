@@ -9,10 +9,10 @@ It hangs above the stairs to the top floor,
 
  neopixels
 ----------------
-The LEDs are 5 meters neopixels. These are controlled by an Arduino.
+The LEDs are 5 meters neopixels. These are controlled by a  ESP2866. It is attached to the wlan with auto ota firmware update.
 The corresponding code can be found on GitHub: [github.com/ToolboxBodensee/led_tunnel](https://github.com/ToolboxBodensee/led_tunnel.git)
 
-We would be very happy if you come by with your drone and try out the tunnel!
+We would be very happy if you come by with your tiny class drone and try out the tunnel!
 ---
 icon: fab fa-uikit
 ---
