@@ -12,7 +12,7 @@ On the current toolbox website everypony can contribute relatively simply nearly
 
  Editor
 -------------
-Lektor is a static site generator that gives you many possibilities and is relatively easy to use even for inexperienced users. Very useful here is the ``lektor server`` command, which starts a local web server and not only displays the web page but can also change it via a web interface.
+Lektor is a static site generator that gives you many possibilities and is relatively easy to use even for inexperienced users. </br>Very useful here is the ``lektor server`` command, which starts a local web server and not only displays the web page but can also change it via a web interface.
 
 Meanwhile we have some gimmicks on the site that go beyond the basic features of Lektor.
 Lektor allows you to edit any page. The appearance of the pages is created by Jinja2 templates. Here you can define relatively extensive loops and conditions, which are then executed by lektor and rendered as a website.
