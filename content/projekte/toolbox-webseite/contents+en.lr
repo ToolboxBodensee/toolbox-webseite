@@ -1,0 +1,50 @@
+author: L3D
+---
+body:
+
+The Toolbox website is created with the Static Site Generator [Lektor](https://getlektor.com) and managed via [GitHub](https://github.com/ToolboxBodensee/toolbox-webseite/). This has replaced the previous Wordpress website, which was the flagship of the Internet and looked just as modern and well maintained as the semi-designed Wordpress installations, for which no one really felt responsible.
+
+
+ Contribute
+--------------------------
+On the current toolbox website everypony can contribute relatively simply nearly everything.  A relatively detailed step-by-step guide is written on [github.com/ToolboxBodensee/toolbox-webpage](https://github.com/ToolboxBodensee/toolbox-webseite/blob/master/README.md#zur-neuen-webseite-beitragen) in german. If you need support with Git or Lektor, it's best to get it in the Toolbox, about Thursdays after the weekly meeting and ask for support.
+
+
+ Editor
+-------------
+Lektor is a static site generator that gives you many possibilities and is relatively easy to use even for inexperienced users. <br/>Very useful here is the ``lektor server`` command, which starts a local web server and not only displays the web page but can also change it via a web interface.
+
+Meanwhile we have some gimmicks on the site that go beyond the basic features of Lektor.
+Lektor allows you to edit any page. The appearance of the pages is created by Jinja2 templates. Here you can define relatively extensive loops and conditions, which are then executed by lektor and rendered as a website.
+
+Since the Toolbox also tries to appeal to an international audience and not to deny access through a language barrier, there is also a translation of the page into English. At the beginning this caused some problems, e.g. the plugin responsible for the RSS feed could not render the page anymore. Fortunately, Lektor can create all kinds of files from templates and not just HTML pages. For example, the template for the blog's RSS feed looks like this: [templates/feed.xml](https://github.com/ToolboxBodensee/toolbox-webseite/blob/master/templates/feed.xml).
+
+Since the translation there are also some menu elements that should be available in several languages. This is solved via the [databags](https://github.com/ToolboxBodensee/toolbox-webseite/blob/master/databags/translate.ini).
+
+If you are interested in Lektor, you should have a look at the [documentation of Lektor](https://www.getlektor.com/docs/) for more tricks, because there are some useful elements there.
+
+ Pictures in Git
+-------------------
+For storing binary blobs in git we use Git - Large File Storage. If you don't know this yet and would like to pack larger binary files into the git, you should take a closer look at [git-lfs](https://git-lfs.github.com/)!
+
+Now, please enjouy our websiite.
+
+---
+icon: fab fa-firefox
+---
+project: 
+---
+pub_date: 2018-08-30
+---
+teaser: The Toolbox website is created with the Static Site Generator Lektor and managed via GitHub.
+---
+title: toolbox website
+---
+video_embeded:
+
+#### pro_video ####
+video: 
+----
+video_url: rGOXWIdSTWU
+---
+video_is_embeded: yes
