@@ -23,25 +23,25 @@ icons_header: Schau doch mal bei uns vorbei
 ---
 icons_text: Die Toolbox Bodensee e.V. ist ein gemeinnütziger Maker- und Hackspace in Markdorf am Bodensee, der versucht sowohl für Mitglieder als auch Gäste eine gemütliche Atmosphäre zu schaffen, in der sich Lebewesen mit ähnlichen Interessen treffen und austauschen können. Wir haben ein großes Vereinsheim, in dem jeder willkommen ist sich in der Lounge oder im Bällebad zu entspannen, an Vorträgen oder Workshops teilzunehmen, mit den Werkzeugen in der Werkstatt zu arbeiten oder sich mit den anderen Lebewesen hier auszutauschen.
 ---
-icons_1_1: fa-code
+icons_1_1: code
 ---
 icons_1_2: Programmieren
 ---
 icons_1_3: Wir entwickeln verschiedenste Software von der Fernsteuerung von Multicoptern über die Steuerung von blinkenden LED-Ketten bis hin zu Übungsprojekten und Internetdiensten.
 ---
-icons_2_1: fa-keyboard
+icons_2_1: keyboard
 ---
 icons_2_2: Hacken
 ---
 icons_2_3: Wir verstehen uns als Hacker nach den Prinzipien des Chaos Computer Clubs und handeln dem entsprechend nach der [Hackerethik](https://www.ccc.de/de/hackerethics).
 ---
-icons_3_1: fa-cogs
+icons_3_1: cogs
 ---
 icons_3_2: Basteln
 ---
 icons_3_3: Wir arbeiten an verschiedenen Hardwareprojekten, welche von mechanischen Spielereien, über selbst gelötete Elektronik, bis hin zu komplexeren Steuerungen gehen.
 ---
-icons_4_1: fa-puzzle-piece
+icons_4_1: puzzle-piece
 ---
 icons_4_2: Workshops
 ---
@@ -49,7 +49,7 @@ icons_4_3: Wir bieten Workshops und Vorträge an, um den Menschen ein Technikver
 ---
 icons_4_url: /termine/
 ---
-icons_5_1: fa-heart
+icons_5_1: heart
 ---
 icons_5_2: Waffeln
 ---
@@ -57,7 +57,7 @@ icons_5_3: Eine der strategischen Standorte des C3 Waffel Operation Center ist d
 ---
 icons_5_url: /projekte/c3woc/
 ---
-icons_6_1: fa-calendar-check
+icons_6_1: calendar-check
 ---
 icons_6_2: Veranstaltungen
 ---
