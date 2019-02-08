@@ -5,6 +5,10 @@
   border-bottom: none;
   position: relative;
 
+  svg {
+    fill: _palette(fg)
+  }
+
   > .label {
     display: none;
   }
@@ -30,6 +34,11 @@
 
     &.alt {
       @include line-icon(_palette(accent2));
+    }
+
+    svg {
+      height: 100%;
+      width: 62.5%;
     }
   }
 }

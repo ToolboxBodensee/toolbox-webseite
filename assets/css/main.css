@@ -1718,6 +1718,8 @@ input[type="radio"] + label::before {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     text-transform: none !important; }
+  .icon svg {
+    fill: rgba(255, 255, 255, 0.75); }
   .icon > .label {
     display: none; }
   .icon.alt {
@@ -1756,6 +1758,9 @@ input[type="radio"] + label::before {
       .icon.major.alt::before {
         color: #272833 !important;
         text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff; }
+    .icon.major svg {
+      height: 100%;
+      width: 62.5%; }
 
 .iconshiftdown {
   line-height: 2; }
