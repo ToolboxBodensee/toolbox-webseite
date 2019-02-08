@@ -5,8 +5,8 @@ set search = "blog" %}
     <title type="text">{%
         if bag('translate', this.alt, 'xmlfeed') %}{{ bag('translate', this.alt, 'xmlfeed') }}{%
         else %}Neues aus der Toolbox{% endif %}</title>
-  <id>42{{ none|datetimeformat('YYYYMMDDhhmmss') }}</id>
-  <updated>{{ none|datetimeformat('YYYY-MM-DDThh:mm:ss') }}Z</updated>
+  <id>{{ baseurl }}feed.xml</id>
+  <updated>{{ none|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</updated>
   <link href="{{ baseurl }}{{ search }}/" />
   <link href="{{ baseurl }}feed.xml" rel="self" />
   <author>
@@ -16,9 +16,9 @@ set search = "blog" %}
   for page in pages %}{% if not page._hidden %}
   <entry xml:base="{{ baseurl }}{{ search }}/{{ page._id }}/">
     <title type="text">{{ page.title }}</title>
-    <id>23{{ page.pub_date|datetimeformat('YYYYMMDDhhmmss') }}</id>
-    <updated>{{ page.pub_date|datetimeformat('YYYY-MM-DDThh:mm:ss') }}Z</updated>
-    <link href="{{ baseurl }}{{ search }}/{{ page._id }}/" />
+    <id>{{ baseurl }}{{ search }}/{{ page._id }}</id>
+    <updated>{{ page.pub_date|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</updated>
+    <link href="{{ search }}/{{ page._id }}/" xml:base="{{ baseurl }}" />
     <author>
       <name>{% if page.author %}{{ page.author }}{% else %}Toolbox{% endif %}</name>
     </author>
