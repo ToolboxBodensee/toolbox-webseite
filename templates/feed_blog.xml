@@ -5,10 +5,10 @@ set search = "blog" %}
     <title type="text">{%
         if bag('translate', this.alt, 'xmlfeed') %}{{ bag('translate', this.alt, 'xmlfeed') }}{%
         else %}Neues aus der Toolbox{% endif %}</title>
-  <id>{{ baseurl }}feed.xml</id>
+  <id>{{ baseurl }}feed_blog.xml</id>
   <updated>{{ none|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</updated>
   <link href="{{ baseurl }}{{ search }}/" />
-  <link href="{{ baseurl }}feed.xml" rel="self" />
+  <link href="{{ baseurl }}feed_blog.xml" rel="self" />
   <author>
     <name>{% if this.author %}{{ this.author }}{% else %}Toolbox{% endif %}</name>
   </author>{%

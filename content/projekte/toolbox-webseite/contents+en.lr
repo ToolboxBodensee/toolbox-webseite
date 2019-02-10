@@ -17,7 +17,7 @@ Lektor is a static site generator that gives you many possibilities and is relat
 Meanwhile we have some gimmicks on the site that go beyond the basic features of Lektor.
 Lektor allows you to edit any page. The appearance of the pages is created by Jinja2 templates. Here you can define relatively extensive loops and conditions, which are then executed by lektor and rendered as a website.
 
-Since the Toolbox also tries to appeal to an international audience and not to deny access through a language barrier, there is also a translation of the page into English. At the beginning this caused some problems, e.g. the plugin responsible for the RSS feed could not render the page anymore. Fortunately, Lektor can create all kinds of files from templates and not just HTML pages. For example, the template for the blog's RSS feed looks like this: [templates/feed.xml](https://github.com/ToolboxBodensee/toolbox-webseite/blob/master/templates/feed.xml).
+Since the Toolbox also tries to appeal to an international audience and not to deny access through a language barrier, there is also a translation of the page into English. At the beginning this caused some problems, e.g. the plugin responsible for the RSS feed could not render the page anymore. Fortunately, Lektor can create all kinds of files from templates and not just HTML pages. For example, the template for the blog's RSS feed looks like this: [templates/feed_blog.xml](https://github.com/ToolboxBodensee/toolbox-webseite/blob/master/templates/feed_blog.xml).
 
 Since the translation there are also some menu elements that should be available in several languages. This is solved via the [databags](https://github.com/ToolboxBodensee/toolbox-webseite/blob/master/databags/translate.ini).
 
