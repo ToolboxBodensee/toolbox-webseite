@@ -5,8 +5,10 @@ all: build
 sass:
 	sassc ./assets/sass/main.scss ./assets/css/main.css
 	sassc ./assets/sass/ie9.scss ./assets/css/ie9.css
-	python2 ./deployment/cssminify.py -o ./assets/css/main.min.css ./assets/css/main.css
-	python2 ./deployment/cssminify.py -o ./assets/css/ie9.min.css ./assets/css/ie9.css
+	rm ./assets/css/main.min.css
+	rm ./assets/css/ie9.min.css
+	python3 ./deployment/cssminify.py -o ./assets/css/main.min.css ./assets/css/main.css
+	python3 ./deployment/cssminify.py -o ./assets/css/ie9.min.css ./assets/css/ie9.css
 
 install:
 	pip install lektor

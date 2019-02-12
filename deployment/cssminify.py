@@ -58,14 +58,14 @@ for n, i in enumerate(sys.argv):
     if n == 0:
         pass
     elif i in ("-h", "--help"):
-        print "Add CSS files space separated to be combined and minified. \n \
+        print("Add CSS files space separated to be combined and minified. \n \
                     \t-h, --help \n \
                     \t\tDisplay this help message. \n \
                     \t-o, --output \n \
                     \t\tDeclare name of output CSS file. \n \
                     \t-s, --separate \n \
                     \t\tOutput each individual file as min. i.e.: \n \
-                    \t\tstyle.css will become style.min.css"
+                    \t\tstyle.css will become style.min.css")
         break
     elif i in ("-o", "--output"):
         flag = True
