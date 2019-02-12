@@ -1,4 +1,4 @@
-_template: feed.xml
+_template: feed_blog.xml
 ---
 _model: none
 _discoverable: no

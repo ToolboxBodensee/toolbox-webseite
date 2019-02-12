@@ -1,0 +1,36 @@
+author: the toolbox drone crew
+---
+body:
+
+In the Toolbox there are some people who are enthusiastic about FPV racing with drones.
+
+And to have even more fun flying, people have built an LED tunnel that has become part of a small drones parkour.
+It hangs above the stairs in the first floor.
+
+ neopixels
+----------------
+The LEDs are 5 meters neopixels. These are controlled by a  ESP2866. It is attached to the wlan with auto ota firmware update.
+The corresponding code can be found on GitHub: [github.com/ToolboxBodensee/led_tunnel](https://github.com/ToolboxBodensee/led_tunnel.git)
+
+We would be very happy if you come by with your tiny class drone and try out the tunnel!
+---
+icon: fab fa-uikit
+---
+project:
+
+#### pro_img ####
+image: fpv_tunnel_1.jpg
+#### pro_img ####
+image: fpv_tunnel_2.jpg
+#### pro_img ####
+image: fpv_tunnel_3.jpg
+#### pro_img ####
+image: fpv_tunnel_4.jpg
+---
+pub_date: 2019-01-17
+---
+teaser: FPV racing is even cooler when you can fly through a colorful flashing parkour.
+---
+title: led tunnel
+---
+xml_img: fpv_tunnel_2.jpg

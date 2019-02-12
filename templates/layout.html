@@ -57,7 +57,7 @@
                       %}><a href="{% if this.alt == 'de' %}{% else %}/{{ this.alt }}/{{ this.alt }}/{% endif %}{{ child|url }}">{{ child.title }}</a></li>{%
                   endif %}{% endfor %}
                       <li><a href="{{ '/projekte/'|url }}">{% if bag('navigation', this.alt, 'show_projekt') %}{{ bag('navigation', this.alt, 'show_projekt') }}{% else %}alle Projekte{% endif %}</a></li>
-                      <li><a href="{{ '/f33d.xml'|url }}">{% if bag('navigation', this.alt, title) %}{{ bag('navigation', this.alt, title) }}{% else %}{{ title }}{% endif %} {% if bag('navigation', this.alt, 'xml') %}{{ bag('navigation', this.alt, 'xml') }}{% else %}als XML Feed{% endif %}</a></li>
+                      <li><a href="{{ '/feed_projekte.xml'|url }}">{% if bag('navigation', this.alt, title) %}{{ bag('navigation', this.alt, title) }}{% else %}{{ title }}{% endif %} {% if bag('navigation', this.alt, 'xml') %}{{ bag('navigation', this.alt, 'xml') }}{% else %}als XML Feed{% endif %}</a></li>
                     </ul>{%
                   elif title == 'Verein' %}
                     <ul><li><a href="{{ '/vereinsheim'|url }}">{% if bag('navigation', this.alt, 'Vereinsheim') %}{{ bag('navigation', this.alt, 'Vereinsheim') }}{% else %}Vereinsheim{% endif %}</a></li>
@@ -82,7 +82,7 @@
                       if this._path == child._path %} class="active"{% endif
                         %}><a href="{{ child|url }}">{{ child.shorttitle }}</a></li>{%
                     endfor %}
-                    <li><a href="{{ '/feed.xml'|url }}">RSS Feed</a></li></ul>{%
+                    <li><a href="{{ '/feed_blog.xml'|url }}">RSS Feed</a></li></ul>{%
                   endif %}</li>{%
                  endif %}{%
                endfor %}
@@ -112,9 +112,9 @@
            ['YouTube', 'fab fa-youtube', "https://www.youtube.com/channel/UCoTB8frSN0OT2mZl2IXSsDA/videos"],
            ['Mail', 'fas fa-envelope', "mailto:kontakt@toolbox-bodensee.de"],
            ['Telefon', 'fas fa-phone', "tel:+4975449667222"],
-           ['News', 'fas fa-rss', "https://toolbox-bodensee.de/feed.xml"]
+           ['News', 'fas fa-rss', "https://toolbox-bodensee.de/feed_blog.xml"]
          ] %}
-           <li><a href="{{ href }}" title="{{ label }}" target="_blank" class="icon {{ icon }}"></a></li>
+           <li><a href="{{ href }}" title="{{ label }}" target="_blank" rel="noopener" class="icon {{ icon }}"></a></li>
          {% endfor %}
         </ul>
         <ul class="copyright">
