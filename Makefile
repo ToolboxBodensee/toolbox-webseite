@@ -3,8 +3,8 @@ LEKTOR_SERVER_FLAGS=-h 127.0.0.1
 all: build
 
 sass:
-	sassc ./assets/sass/main.scss ./assets/css/main.css
-	sassc ./assets/sass/ie9.scss ./assets/css/ie9.css
+	sass ./assets/sass/main.scss ./assets/css/main.css
+	sass ./assets/sass/ie9.scss ./assets/css/ie9.css
 	rm ./assets/css/main.min.css
 	rm ./assets/css/ie9.min.css
 	python3 ./deployment/cssminify.py -o ./assets/css/main.min.css ./assets/css/main.css
