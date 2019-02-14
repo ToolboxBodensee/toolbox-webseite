@@ -117,11 +117,14 @@ Bei der Farbwahl (z.B. Menüfarben) sollte das [Toolbox Presse-Kit](https://gith
 CSS
 ------------------------
 
-Das CSS-Design wird mit [sass](https://sass-lang.com/) generiert.
+Das CSS-Design wird mit [sass](https://github.com/sass/sassc-ruby/) generiert.
 Das vereinfacht die Verständlichkeit der einzelnen Designelemente
 und ermöglicht auch das Anpassen des Designs durch das simple Verändern weniger Variablen.
 Example use:
 ```bash
+# Install sass:
+gem install sass
+# generate css from sass
 make sass
 ```
 
