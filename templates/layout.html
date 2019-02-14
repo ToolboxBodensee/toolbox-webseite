@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>{% block title %}Startseite{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="{{ '/css/main.css'|asseturl }}" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="{{ 'assets/css/ie9.css'|asseturl }}" /><![endif]-->
+    <link rel="stylesheet" href="{{ '/css/main.min.css'|asseturl }}" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="{{ 'assets/css/ie9.min.css'|asseturl }}" /><![endif]-->
     {% block expand_description 
     %}<meta name="description" content="{% 
         if bag('translate', this.alt, 'description') %}{{ bag('translate', this.alt, 'description') }}{% 
