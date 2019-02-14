@@ -140,7 +140,7 @@
                endfor %}
                <li class="last"><a href="/{% if bag('navigation', this.alt, 'default_path') %}{{ bag('navigation', this.alt, 'default_path') }}{% else %}..{% endif %}{{ this._path }}">{% if bag('navigation', this.alt, 'sprache') %}{{ bag('navigation', this.alt, 'sprache') }}{% else %}Sprache{% endif %}</a>
                    <ul class="last">
-                     <li><a href="/..{{ this._path }}">{% 
+                     <li><a href="{{ this._path }}">{% 
                              if bag('navigation', this.alt, 'German') %}{{ bag('navigation', this.alt, 'German') }}{%
                              else %}{{ bag('navigation', 'de', 'German') }}{% endif %}</a></li>
                      <li><a href="/en{{ this._path }}">{% 
