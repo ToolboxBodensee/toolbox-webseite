@@ -37,3 +37,7 @@ $RECYCLE.BIN/
 **.DS_Store
 *.DS_Store
 
+# Toolbox Website files
+assets/css/main.css
+assets/css/ie9.css
+
