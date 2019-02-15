@@ -120,12 +120,29 @@ CSS
 Das CSS-Design wird mit [sass](https://github.com/sass/sassc-ruby/) generiert.
 Das vereinfacht die Verständlichkeit der einzelnen Designelemente
 und ermöglicht auch das Anpassen des Designs durch das simple Verändern weniger Variablen.
-Example use:
+Example use and installation:
 ```bash
 # Install sass:
 gem install sass
 # generate css from sass
 make sass
+```
+
+**Nützliche Tipps:**
+Nahezu aller Style der Webseite wird über die main.css datei geregelt. Diese befindet sich jedoch nicht mehr im git sondern muss lokal gebaut werden.
+Das Lektor Template prüft, ob die Datei ``assets/css/main.min.css`` oder ``assets/css/main.css`` vorhanden ist. 
+Sollte keine der genannten Dateien verfügbar sein, so wird diese von der offiziellen toolbox-bodensee.de Webseite eingebunden. Wenn sie lokal verfügbar ist, wird die lokale Datei eingebunden.
+Der lokale Lektor Server cached einige Dateien. So kann es sein, dass das nachträgliche hinzufügen der css Datei keine beachtung findet und nicht zum neu einbinden seitens lektor führt.
+Der lokale cache kann mit den folgenden Befehl geleert werden und anschließend der lokale Server wieder gestartet werden:
+```bash
+# generate non-minified css:
+make sass-uncompressed
+
+# clean lektor cache
+lektor clear
+
+# run lektor server
+lektor server
 ```
 
 Docker
