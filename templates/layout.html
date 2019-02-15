@@ -1,23 +1,25 @@
-{% set fqdn = "toolbox-bodensee.de" 
-%}{% set produktive = bag('deploy', 'live', 'productive')
+{% set fqdn = 'toolbox-bodensee.de'
 %}<!DOCTYPE html>
 <html{% if alt %} lang="{{ alt }}"{% endif %}>
   <head>
     <meta charset="utf-8">
     <title>{% block title %}Startseite{% endblock %}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" {{ bag('deploy', 'live', 'productive') }} href={%
-          if productive == false %}{% 
-              if '/css/main.min.css'|asseturl == empty %}"{{ '/css/main.min.css'|url }}"{%
-              else %}"{{ '/css/main.min.css'|asseturl }} X"{% endif %}{%
-          else %}"https://{{ fqdn }}/css/main.min.css"{%
-          endif %} />
-        <!--[if lte IE 9]><link rel="stylesheet" href={%
-        if productive == false %}{% 
-              if '/css/ie9.min.css'|asseturl == empty %}"{{ '/css/ie9.min.css'|url }}"{%
-              else %}"{{ '/css/ie9.min.css'|asseturl }} X"{% endif %}{%
-          else %}"https://{{ fqdn }}/css/main.min.css"{%
-          endif %}" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />{%
+    if '/css/main.min.css'|asseturl == empty and '/css/main.css'|asseturl == empty %}
+    <link rel="stylesheet" href="{{ '/css/font-awesome.min.css'|asseturl }}" />
+    <link rel="stylesheet" href="{{ '/fonts/roboto.css'|asseturl }}" />{%
+     endif %}
+    <link rel="stylesheet" href={%
+        if '/css/main.min.css'|asseturl == empty %}{%
+            if '/css/main.css'|asseturl == empty %}"https://{{ fqdn }}/css/main.min.css"{%
+            else %}"{{ '/css/main.css'|asseturl }}"{%
+            endif %}{%
+        else %}"{{ '/css/main.min.css'|asseturl }}"{%
+        endif %} /> 
+    <!--[if lte IE 9]><link rel="stylesheet" href={%
+        if '/css/ie9.min.css'|asseturl == empty %}"https://{{ fqdn }}/css/ie9.min.css"{%
+        else %}"{{ '/css/ie9.min.css'|asseturl }}"{%
+        endif %}" /><![endif]-->
     {% block expand_description 
     %}<meta name="description" content="{% 
         if bag('translate', this.alt, 'description') %}{{ bag('translate', this.alt, 'description') }}{% 

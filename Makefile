@@ -11,6 +11,8 @@ sass:
 sass-uncompressed:
 	sass ./assets/sass/main.scss ./assets/css/main.css
 	sass ./assets/sass/ie9.scss ./assets/css/ie9.css
+	rm ./assets/css/main.css.map
+	rm ./assets/css/ie9.css.map
 
 install:
 	pip install lektor
