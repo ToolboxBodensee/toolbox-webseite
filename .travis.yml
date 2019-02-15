@@ -8,7 +8,7 @@ cache:
     - $HOME/.cache/lektor/builds
 before_install:
   - git lfs pull
-  - gem install sass
+  - gem install sassc
   - make sass
 install: "pip install Lektor"
 script: "lektor build"
