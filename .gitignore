@@ -41,3 +41,6 @@ $RECYCLE.BIN/
 assets/css/main.css
 assets/css/ie9.css
 
+# python virtual enviroment
+venv/
+
