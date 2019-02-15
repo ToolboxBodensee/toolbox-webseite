@@ -48,3 +48,6 @@ assets/css/ie9.css.map
 assets/css/main.min.css.map
 assets/css/ie9.min.css.map
 
+# python virtual enviroment
+venv/
+
