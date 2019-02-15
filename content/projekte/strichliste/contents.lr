@@ -13,7 +13,7 @@ Die Strichliste heißt in der Toolbox **see-börse** uns ist unter [see-bör.se]
 https://xn--see-br-0xa.se/
 ```
 
-Es gibt ein Ansible-Playbook, mit dem der Server Teil der Strichliste (das backend) automatisiert installiert wird:
+Es gibt ein Ansible-Rolle, mit dem der Server Teil der Strichliste (das backend) automatisiert installiert wird:
 [gitea.see-base.de/toolbox/role-strichliste](https://gitea.see-base.de/toolbox/role-strichliste)
 
 Aktuell fehlt noch, auch das frontend automatisiert zu builden. Aktuell ist es leider etwas veraltet, findet sich aber dort:
