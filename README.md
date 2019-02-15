@@ -85,6 +85,7 @@ git fetch upstream
 
 # Deinen Fork lokal aktualisieren:
 git pull upstream master
+git reset --hard upstream/master
 ```
 
 Pull Request Reviewen
