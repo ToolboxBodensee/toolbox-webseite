@@ -165,6 +165,10 @@
 
 					on = function() {
 
+                    /*
+
+                    // don't use this part because of https://github.com/ToolboxBodensee/toolbox-webseite/issues/240
+
 						if (skel.canUse('transition')) {
 
 							$this.scrollex({
@@ -183,6 +187,8 @@
 						}
 
 					};
+
+                    */
 
 					off = function() {
 
