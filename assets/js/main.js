@@ -157,7 +157,8 @@
 		// Wrappers.
 			var $wrappers = $('.wrapper');
 
-			$wrappers
+            $(‘.wrapper:not(.ugly-bugfix)’)
+			// $wrappers
 				.each(function() {
 
 					var $this = $(this),
