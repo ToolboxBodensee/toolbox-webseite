@@ -148,7 +148,7 @@ Der lokale cache kann mit den folgenden Befehl geleert werden und anschließend 
 make sass-uncompressed
 
 # clean lektor cache
-lektor clear
+lektor clean
 
 # run lektor server
 lektor server
