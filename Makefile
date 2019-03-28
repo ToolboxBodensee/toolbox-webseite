@@ -14,6 +14,11 @@ sass-uncompressed:
 	lektor clean --yes
 	lektor build
 
+install-travis:
+	pip install lektor
+	if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagick -y; elif hash pacman 2>/dev/null; then sudo pacman -Sy imagemagick --noconfirm; elif hash dnf 2>/dev/null; then sudo dnf install -y ImageMagick; else echo -e "Please install Imagemagick"; fi
+	if hash apt 2>/dev/null; then sudo apt install sassc -y; elif hash pacman 2>/dev/null; then sudo pacman -Sy sassc --noconfirm; elif hash dnf 2>/dev/null; then sudo dnf install -y sassc; else echo -e "Please install sassc"; fi
+
 install:
 	pip install lektor --user
 	if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagick -y; elif hash pacman 2>/dev/null; then sudo pacman -Sy imagemagick --noconfirm; elif hash dnf 2>/dev/null; then sudo dnf install -y ImageMagick; else echo -e "Please install Imagemagick"; fi
