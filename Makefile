@@ -3,8 +3,8 @@ LEKTOR_SERVER_FLAGS=-h 127.0.0.1
 all: build
 
 sass:
-	sassc ./assets/sass/main.scss ./assets/css/main.min.css
-	sassc ./assets/sass/ie9.scss ./assets/css/ie9.min.css
+	scss ./assets/sass/main.scss ./assets/css/main.min.css
+	scss ./assets/sass/ie9.scss ./assets/css/ie9.min.css
 	lektor clean --yes
 	lektor build
 
