@@ -3,8 +3,8 @@ LEKTOR_SERVER_FLAGS=-h 127.0.0.1
 all: build
 
 sass:
-	scss -m ./assets/sass/main.scss ./assets/css/main.min.css
-	scss -m ./assets/sass/ie9.scss ./assets/css/ie9.min.css
+	sassc ./assets/sass/main.scss ./assets/css/main.min.css
+	sassc ./assets/sass/ie9.scss ./assets/css/ie9.min.css
 	lektor clean --yes
 	lektor build
 
@@ -16,12 +16,11 @@ sass-uncompressed:
 
 install-travis:
 	pip install lektor
-	pip install scss
+	if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagick -y; elif hash pacman 2>/dev/null; then sudo pacman -Sy imagemagick --noconfirm; elif hash dnf 2>/dev/null; then sudo dnf install -y ImageMagick; else echo -e "Please install Imagemagick"; fi
 
 install:
 	pip install lektor --user
 	if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagick -y; elif hash pacman 2>/dev/null; then sudo pacman -Sy imagemagick --noconfirm; elif hash dnf 2>/dev/null; then sudo dnf install -y ImageMagick; else echo -e "Please install Imagemagick"; fi
-	if hash apt 2>/dev/null; then sudo apt install sassc -y; elif hash pacman 2>/dev/null; then sudo pacman -Sy sassc --noconfirm; elif hash dnf 2>/dev/null; then sudo dnf install -y sassc; else echo -e "Please install sassc"; fi
 
 build: sass
 	lektor build
