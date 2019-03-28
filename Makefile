@@ -3,8 +3,8 @@ LEKTOR_SERVER_FLAGS=-h 127.0.0.1
 all: build
 
 sass:
-	sassc -t compressed ./assets/sass/main.scss ./assets/css/main.min.css
-	sassc -t compressed ./assets/sass/ie9.scss ./assets/css/ie9.min.css
+	scss -m ./assets/sass/main.scss ./assets/css/main.min.css
+	scss -m ./assets/sass/ie9.scss ./assets/css/ie9.min.css
 	lektor clean --yes
 	lektor build
 
@@ -16,10 +16,7 @@ sass-uncompressed:
 
 install-travis:
 	pip install lektor
-	sudo apt update
-	sudo apt install imagemagick -y
-	sudo apt install snapd -y
-	sudo snap install sassc
+	pip install scss
 
 install:
 	pip install lektor --user
