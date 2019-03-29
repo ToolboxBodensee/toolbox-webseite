@@ -8,11 +8,7 @@ cache:
 before_install:
   - git lfs pull
 install: 
-  - "pip install Lektor"
-  - git clone https://github.com/sass/sassc.git
-  - . sassc/script/bootstrap
-  - make -C sassc -j4
-  - make sass
+  - make travis
 script: "lektor build"
 before_deploy: "echo 'c3woc.de ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBC5NslYj+wtriBuKIxJfDRm9E2hnlstWR8durQ6pKvVvP7wjcoXIyAxe41GvJ9SoEhSjF7oVlzlw+zAkzl5WOZ4=' > ~/.ssh/known_hosts"
 deploy:

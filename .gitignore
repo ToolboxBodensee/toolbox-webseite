@@ -51,3 +51,5 @@ assets/css/ie9.min.css.map
 # python virtual enviroment
 venv/
 
+sassc/
+
