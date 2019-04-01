@@ -7,17 +7,10 @@ cache:
     - $HOME/.cache/pip
 before_install:
   - git lfs pull
-install: 
+install:
   - pip install lektor
-  - if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagick -y; elif hash pacman 2>/dev/null; then sudo pacman -Sy imagemagick --noconfirm; elif hash dnf 2>/dev/null; then sudo dnf install -y ImageMagick; else echo -e "Please install Imagemagick"; fi
-  - git clone https://github.com/sass/sassc.git
-  - . sassc/script/bootstrap
-  - make -C sassc -j4
-  - ./sassc/bin/sassc -t compressed ./assets/sass/main.scss ./assets/css/main.min.css
-  - ./sassc/bin/sassc -t compressed ./assets/sass/ie9.scss ./assets/css/ie9.min.css
-  - lektor clean --yes
-  - lektor build
-script: "lektor build"
+
+script: "lektor build -f webpack"
 before_deploy: "echo 'c3woc.de ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBC5NslYj+wtriBuKIxJfDRm9E2hnlstWR8durQ6pKvVvP7wjcoXIyAxe41GvJ9SoEhSjF7oVlzlw+zAkzl5WOZ4=' > ~/.ssh/known_hosts"
 deploy:
   provider: script
