@@ -6,15 +6,13 @@ set ausnahmezustand = False
     <meta charset="utf-8">
     <title>{% block title %}Startseite{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />{%
-    if '/css/main.min.css'|asseturl == empty and '/css/main.css'|asseturl == empty %}
+    if '/css/main.min.css'|asseturl == empty %}
     <link rel="stylesheet" href="{{ '/css/font-awesome.min.css'|asseturl }}" />
     <link rel="stylesheet" href="{{ '/fonts/roboto.css'|asseturl }}" />{%
      endif %}
     <link rel="stylesheet" href={%
-        if '/css/main.min.css'|asseturl == empty %}{%
-            if '/css/main.css'|asseturl == empty %}"https://{{ fqdn }}/css/main.min.css"{%
-            else %}"{{ '/css/main.css'|asseturl }}"{%
-            endif %}{%
+        if '/css/main.min.css'|asseturl == empty 
+        %}"https://{{ fqdn }}/css/main.min.css"{%
         else %}"{{ '/css/main.min.css'|asseturl }}"{%
         endif %} /> 
     <!--[if lte IE 9]><link rel="stylesheet" href={%
@@ -246,9 +244,9 @@ Wenn Sie unsere Kritik an der geplanten Urheberrechtsreform teilen, werden Sie a
     <script src="{{ '/js/jquery.scrolly.min.js'|asseturl }}"></script>
     <script src="{{ '/js/jquery.scrollex.min.js'|asseturl }}"></script>
     <script src="{{ '/js/skel.min.js'|asseturl }}"></script>
-    <script src="{{ '/js/util.js'|asseturl }}"></script>{%
+    <script src="{{ '/js/util.min.js'|asseturl }}"></script>{%
   block mainjs %}
-    <script src="{{ '/js/main.js'|asseturl }}"></script>{%
+    <script src="{{ '/js/main.min.js'|asseturl }}"></script>{%
   endblock %}
   </body>
 </html>

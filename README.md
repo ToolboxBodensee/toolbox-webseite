@@ -15,7 +15,7 @@ Lektor CMS
 
 Das CMS für diese Webseite ist [Lektor](https://www.getlektor.com/).<br/>
 Die Installationsanleitung gibt es [hier](https://www.getlektor.com/downloads/).<br/>
-Für Bilder im git verwenden wir [git-lfs](https://git-lfs.github.com/). Weitere Informationen dazu gibt es [weiter untern](https://github.com/toolboxbodensee/toolbox-webseite#bilder-und-gro%C3%9Fe-dateien).<br/>
+Für Bilder im git verwenden wir [git-lfs](https://git-lfs.github.com/). Weitere Informationen dazu gibt es [weiter unten](https://github.com/toolboxbodensee/toolbox-webseite#bilder-und-gro%C3%9Fe-dateien).<br/>
 Lektor ist auch als Python-Modul verfügbar und kann mit ``python2 -m lektor`` verwendet werden.
 Auch die Installation über pip *(in einem [virtuellen Enviroment](https://docs.python.org/3/tutorial/venv.html)* ist möglich:
 ```bash
@@ -95,7 +95,7 @@ Es gibt zwei Möglichkeiten Pull Requests zu reviewen:
 
 ### Änderungen lokal Downloaden und Bewerten
 
-1.  Die im Pull Request eingereihte Version clonen
+1.  Die im Pull Request eingereichte Version clonen
 
 ```bash
 # ID des Pull Request eintragen
@@ -109,26 +109,27 @@ git fetch origin +refs/pull/$PULLREQUEST/merge:
 git checkout -qf FETCH_HEAD
 ```
 
-2.  Den geklonten Pull Request anschauen ``lektor server``
+2.  Den geklonten Pull Request anschauen ``lektor server -f webpack``
 3.  Änderungen requesten oder Pull Request approven
 
 ### Änderungen online reviewen
 
-Die eingereichten Pull Requests werden automatisiert durch ein [Go-Skript](https://github.com/ottojo/pullRequestHost) und Travis auf ein Testsystem deployed. Nachdem die Travis-Checks durchgelaufen sind, kann man diesen Pull Request unter den von einem bot geposteten Link anschauen. Auf GitHub sieht man, welche Dateien hier betroffen sind. Auf dem Testsystem sieht man, wie das fertige Ergebnis aussieht.
+Die eingereichten Pull Requests werden automatisiert durch ein [Go-Skript](https://github.com/ottojo/pullRequestHost) und Travis auf ein Testsystem deployed. Nachdem die Travis-Checks durchgelaufen sind, kann man diesen Pull Request unter dem von einem bot geposteten Link anschauen. Auf GitHub sieht man, welche Dateien hier betroffen sind. Auf dem Testsystem sieht man, wie das fertige Ergebnis aussieht.
 
 Design
 ------------------------
 
-Das Websitelayout basiert auf [HTML5UP](https://html5up.net), genauer gesagt auf dem Design [Landed](https://html5up.net/landed). Und wurde natürlich für die Toolbox-Webseite angepasst!
+Das Webseiten-Layout basiert auf [HTML5UP](https://html5up.net), genauer gesagt auf dem Design [Landed](https://html5up.net/landed). Und wurde natürlich für die Toolbox-Webseite angepasst!
 
 Bei der Farbwahl (z.B. Menüfarben) sollte das [Toolbox Presse-Kit](https://github.com/ToolboxBodensee/presskit) berücksichtigt werden. ![#E64F2D](https://placehold.it/15/E64F2D/000000?text=+) `#E64F2D` Orange und ![#9B160F](https://placehold.it/15/9B160F/000000?text=+) `#9B160F` Rot sind hier die Primärfarben.
 
 CSS
 ------------------------
 
-Das CSS-Design wird mit [sass](https://github.com/sass/sassc-ruby/) generiert.
+Das CSS-Design wird mit [sass](https://github.com/sass/node-sass) generiert.
 Das vereinfacht die Verständlichkeit der einzelnen Designelemente
 und ermöglicht auch das Anpassen des Designs durch das simple Verändern weniger Variablen.
+Für die 
 Example use and installation:
 ```bash
 # Install sass:
@@ -138,20 +139,17 @@ make sass
 ```
 
 **Nützliche Tipps:**
-Nahezu aller Style der Webseite wird über die main.css datei geregelt. Diese befindet sich jedoch nicht mehr im git sondern muss lokal gebaut werden.
-Das Lektor Template prüft, ob die Datei ``assets/css/main.min.css`` oder ``assets/css/main.css`` vorhanden ist. 
+Nahezu das gesamte Design der Webseite wird über die main.min.css datei geregelt. Diese befindet sich jedoch nicht mehr im git sondern muss lokal gebaut werden.
+Das Lektor Template prüft, ob die Datei ``assets/css/main.min.css`` vorhanden ist. 
 Sollte keine der genannten Dateien verfügbar sein, so wird diese von der offiziellen toolbox-bodensee.de Webseite eingebunden. Wenn sie lokal verfügbar ist, wird die lokale Datei eingebunden.
-Der lokale Lektor Server cached einige Dateien. So kann es sein, dass das nachträgliche hinzufügen der css Datei keine beachtung findet und nicht zum neu einbinden seitens lektor führt.
-Der lokale cache kann mit den folgenden Befehl geleert werden und anschließend der lokale Server wieder gestartet werden:
+Der lokale Lektor Server cached einige Dateien. So kann es sein, dass das nachträgliche hinzufügen der css Datei keine Beachtung findet und nicht zum neu Einbinden seitens lektor führt.
+Der lokale cache kann mit den folgenden Befehl geleert werden und anschließend der lokale Server wieder gestartet werden. Hierbei werden assets wie css und js mithilfe von webpack neu compiliert und komprimiert:
 ```bash
-# generate non-minified css:
-make sass-uncompressed
-
 # clean lektor cache
 lektor clean
 
-# run lektor server
-lektor server
+# generate assets and run lektor server
+lektor server -f webpack
 ```
 
 Docker
