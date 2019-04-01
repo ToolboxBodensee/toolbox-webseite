@@ -2,43 +2,20 @@ LEKTOR_SERVER_FLAGS=-h 127.0.0.1
 
 all: build
 
-sass:
-	echo "generating compressed css with sassc\n"
-	sassc -t compressed ./assets/sass/main.scss ./assets/css/main.min.css
-	sassc -t compressed ./assets/sass/ie9.scss ./assets/css/ie9.min.css
-	lektor clean --yes
-	lektor build
-
-sass-uncompressed:
-	echo "generating uncompressed css with sassc\n"
-	sassc ./assets/sass/main.scss ./assets/css/main.css
-	sassc ./assets/sass/ie9.scss ./assets/css/ie9.css
-	lektor clean --yes
-	lektor build
-
-travis:
-	echo "generating website with travis\n"
-	pip install lektor
-	if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagick -y; elif hash pacman 2>/dev/null; then sudo pacman -Sy imagemagick --noconfirm; elif hash dnf 2>/dev/null; then sudo dnf install -y ImageMagick; else echo -e "Please install Imagemagick"; fi
-	git clone https://github.com/sass/sassc.git
-	. sassc/script/bootstrap
-	make -C sassc -j4
-	./sassc/bin/sassc -t compressed ./assets/sass/main.scss ./assets/css/main.min.css
-	./sassc/bin/sassc -t compressed ./assets/sass/ie9.scss ./assets/css/ie9.min.css
-	lektor clean --yes
-	lektor build
-
 install:
 	echo "installiere lektor und ein paar abhängigkeiten"
+	if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagick nodejs yarn python3-pip -y;\
+	elif hash pacman 2>/dev/null; then sudo pacman -Sy imagemagick nodejs yarn python-pip --noconfirm;\
+	elif hash dnf 2>/dev/null; then sudo dnf install -y ImageMagick nodejs yarn python3-pip;\
+	else echo -e "Please install Imagemagick, NodeJS, yarn and pip "; fi
 	pip install lektor --user
-	if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagick -y; elif hash pacman 2>/dev/null; then sudo pacman -Sy imagemagick --noconfirm; elif hash dnf 2>/dev/null; then sudo dnf install -y ImageMagick; else echo -e "Please install Imagemagick"; fi
-	if hash apt 2>/dev/null; then sudo apt update; sudo apt install sassc -y; elif hash pacman 2>/dev/null; then sudo pacman -Sy sassc --noconfirm; elif hash dnf 2>/dev/null; then sudo dnf install -y sassc; else echo -e "Please install sassc\nhttps://github.com/sass/sassc/blob/master/docs/building/unix-instructions.md"; fi
 
-build: sass
-	lektor build
+build:
+	lektor clean
+	lektor build -f webpack
 
 server:
-	lektor server $(LEKTOR_SERVER_FLAGS)
+	lektor server -f webpack $(LEKTOR_SERVER_FLAGS)
 
 ## Docker stuff
 IMAGE_TAG:=v1.2.0
@@ -78,11 +55,10 @@ docker-pull:
 	$(DOCKER) pull $(IMAGE)
 
 docker-build: docker-pull $(LEKTOR_CACHE)
-	$(DOCKER) $(RUN) $(IMAGE) make build
+	$(DOCKER) $(RUN) $(IMAGE) lektor build -f webpack
 
 docker-shell: $(LEKTOR_CACHE) docker-pull
 	$(DOCKER) $(RUN) $(EXPORTED_PORTS) $(IMAGE) /bin/sh
 
 docker-server: $(LEKTOR_CACHE) docker-pull
-	$(DOCKER) $(RUN) $(EXPORTED_PORTS) $(IMAGE) make sass
-	$(DOCKER) $(RUN) $(EXPORTED_PORTS) $(IMAGE) lektor server -h 0.0.0.0
+	$(DOCKER) $(RUN) $(EXPORTED_PORTS) $(IMAGE) lektor server -f webpack -h 0.0.0.0
