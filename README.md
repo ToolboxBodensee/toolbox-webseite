@@ -35,11 +35,8 @@ make server
 
 Nähere Information
 ---------------------------------
-| **[Technical Docs][techdocs]**     | **[Setup Guide][setup]**     | **[Roadmap][roadmap]**           | **[Contributing][contributing]**           |
-|-------------------------------------|-------------------------------|-----------------------------------|---------------------------------------------|
-| [![i1][techdocs-image]][techdocs] | [![i2][setup-image]][setup] | [![i3][roadmap-image]][roadmap] | [![i4][contributing-image]][contributing] |
 
-:fa-thumbs-up:
+:+1:
 
 Nähere Informationen zu Installation und Ausführung können im zugehörigen [Wiki](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Home) im Bereich [Installation](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Installation) nachgelesen werden
 
