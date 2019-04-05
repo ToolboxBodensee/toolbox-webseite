@@ -33,6 +33,10 @@ make install
 make server
 ```
 
+Nähere Information
+---------------------------------
+<i class="fas fa-info-circle"></i>
+
 Nähere Informationen zu Installation und Ausführung können im zugehörigen [Wiki](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Home) im Bereich [Installation](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Installation) nachgelesen werden
 
 
