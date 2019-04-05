@@ -11,7 +11,7 @@ Dies ist der Quellcode zur aktuellen Webseite des Maker- und Hackspace Toolbox B
 
 Anforderungen
 ---------------------------------
-Um das repository zu klonen müssen lediglich ``git`` sowie ``git-lfs`` installiert sein. Die Installation aller weiteren Abhängigkeiten ist mit ``make`` automatisiert.
+Um das repository zu clonen müssen lediglich ``git`` sowie ``git-lfs`` installiert sein. Die Installation aller weiteren Abhängigkeiten ist mit ``make`` automatisiert.
 
 Installation
 ---------------------------------
