@@ -37,8 +37,7 @@ Nähere Information
 ---------------------------------
 | **[Grundlagen](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Grundlagen)**     | **[Installation](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Installation)**     | **[Contributing](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Contributing)**           |
 |-------------------------------------|-------------------------------|-----------------------------------|
-|  |  | [![i1](https://github.com/ToolboxBodensee/toolbox-webseite-wiki/blob/master/images/edit.svg)](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Contribution) |
-
+| [![i1](https://github.com/ToolboxBodensee/toolbox-webseite-wiki/blob/master/images/tech-docs.svg)](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Grundlagen) | [![i2](https://raw.githubusercontent.com/ToolboxBodensee/toolbox-webseite-wiki/master/images/install.svg)](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Installation) | [![i3](https://github.com/ToolboxBodensee/toolbox-webseite-wiki/blob/master/images/edit.svg)](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Contribution) |
 
 Nähere Informationen zu Installation und Ausführung können im zugehörigen [Wiki](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Home) im Bereich [Installation](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Installation) nachgelesen werden
 
