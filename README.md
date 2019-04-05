@@ -5,6 +5,7 @@ Webseite der Toolbox Bodensee e.V.
 [![Build Status](https://travis-ci.org/ToolboxBodensee/toolbox-webseite.svg?branch=master)](https://travis-ci.org/ToolboxBodensee/toolbox-webseite)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
+====================================
 
 <a href="https://toolbox-bodensee.de"><img src="https://avatars0.githubusercontent.com/u/9744766?s=200&v=4" align="left" hspace="10" vspace="6"></a>
 
