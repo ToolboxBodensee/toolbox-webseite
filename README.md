@@ -9,10 +9,31 @@ Webseite der Toolbox Bodensee e.V.
 Dies ist der Quellcode zur aktuellen Webseite des Maker- und Hackspace Toolbox Bodensee e.V., die unter [toolbox-bodensee.de](https://toolbox-bodensee.de/) erreichbar ist.
 
 
+Anforderungen
+---------------------------------
+Um das repository zu klonen müssen lediglich ``git`` sowie ``git-lfs`` installiert sein. Die Installation aller weiteren Abhängigkeiten ist mit ``make`` automatisiert.
+
 Installation
 ---------------------------------
 
-Zur Erleichterung der Installation beinhaltet das Projekt eine makefile. Diese erlaubt es ``Abhängigkeiten zu installieren``(zB nodejs), sowie die Webseite mit einem ``Python Module`` oder in einem ``Docker Container`` zu bauen. Es müssen daher lediglich ``git`` sowie ``git-lfs`` installiert sein, da diese bereits benötigt werden um dieses repository zu clonen. Nähere Informationen zu Installation und Ausführung können im zugehörigen [Wiki](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Home) im Bereich [Installation](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Installation) nachgelesen werden
+Zur Erleichterung der Installation beinhaltet das Projekt eine makefile. Diese erlaubt es ``Abhängigkeiten zu installieren``(zB nodejs), sowie die Webseite mit einem ``Python Module`` oder in einem ``Docker Container`` zu bauen.
+
+Die Webseite kann beispielsweise folgendermaßen ausgeführt werden:
+```bash
+# source code lokal abspeichern
+git clone https://github.com/ToolboxBodensee/toolbox-webseite.git
+
+# Wechsel in den zugehörigen Ordner
+cd toolbox-webseite
+
+# Installation von Abhängigkeiten
+make install
+
+# Starten der Webseite (lässt sich unter 127.0.0.01:5000 aufrufen)
+make server
+```
+
+Nähere Informationen zu Installation und Ausführung können im zugehörigen [Wiki](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Home) im Bereich [Installation](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Installation) nachgelesen werden
 
 
 
