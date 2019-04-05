@@ -38,23 +38,3 @@ Nähere Information
 | **[Grundlagen](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Grundlagen)**     | **[Installation](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Installation)**     | **[Contributing](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Contributing)**           |
 |-------------------------------------|-------------------------------|-----------------------------------|
 | [![i1](https://github.com/ToolboxBodensee/toolbox-webseite-wiki/blob/master/images/tech-docs.svg)](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Grundlagen) | [![i2](https://github.com/ToolboxBodensee/toolbox-webseite-wiki/blob/master/images/install.svg)](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Installation) | [![i3](https://github.com/ToolboxBodensee/toolbox-webseite-wiki/blob/master/images/edit.svg)](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Contribution) |
-
-Nähere Informationen zu Installation und Ausführung können im zugehörigen [Wiki](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Home) im Bereich [Installation](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Installation) nachgelesen werden
-
-
-
-Inhaltsverzeichnis Dokumentation
----------------------------------
-
-* [Home](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Home)
-* [Installation](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Installation)
-  * [Python](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Installation%3A-Python)
-  * [Docker](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Installation%3A-Docker)
-* [Grundlagen](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Grundlagen)
-  * [Lektor CMS](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Grundlagen%3A-Lektor-CMS)
-  * [git LFS](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Grundlagen%3A-git-LFS)
-  * [Design](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Grundlagen%3A-Design)
-  * [CSS](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Grundlagen%3A-CSS)
-* [Contribution](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Contribution)
-  * [Pull Requests Reviewen](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Contribution%3A-Pull-Requests)
-  * [Zur Webseite beitragen](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Contribution%3A-Projekte)
