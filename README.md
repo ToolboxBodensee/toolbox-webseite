@@ -36,7 +36,7 @@ make server
 Nähere Information
 ---------------------------------
 | **[Grundlagen](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Grundlagen)**     | **[Installation](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Installation)**     | **[Contributing](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Contributing)**           |
-|-------------------------------------|-------------------------------|-----------------------------------|---------------------------------------------|
+|-------------------------------------|-------------------------------|-----------------------------------|
 |  |  | [![i1](https://github.com/ToolboxBodensee/toolbox-webseite-wiki/blob/master/images/edit.svg)](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Contribution) |
 
 
