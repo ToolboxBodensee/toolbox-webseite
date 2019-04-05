@@ -33,7 +33,7 @@ make install
 make server
 ```
 
-Nähere Information
+Nähere Informationen
 ---------------------------------
 | **[Grundlagen](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Grundlagen)**     | **[Installation](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Installation)**     | **[Contributing](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Contributing)**           |
 |-------------------------------------|-------------------------------|-----------------------------------|
