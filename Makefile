@@ -12,9 +12,9 @@ install: install-packages
 	pip install lektor --user
 
 install-virtual-env: install-packages
-	if hash apt 2>/dev/null; then sudo apt update; sudo apt install python-virtualenv -y;\
+	if hash apt 2>/dev/null; then sudo apt update; sudo apt install python3-virtualenv -y;\
 	elif hash pacman 2>/dev/null; then sudo pacman -Sy python-virtualenv --noconfirm;\
-	elif hash dnf 2>/dev/null; then sudo dnf install -y python-virtualenv;\
+	elif hash dnf 2>/dev/null; then sudo dnf install -y python3-virtualenv;\
 	else echo -e "Please install python-virtualenv "; fi
 	virtualenv venv
 	. venv/bin/activate
