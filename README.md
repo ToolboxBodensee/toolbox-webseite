@@ -14,15 +14,25 @@ Anforderungen
 Um an der Webseite beizutragen, musst du lediglich dieses Git Repoitory runterladen und Lektor installieren.<br/>
 Dies ist sowohl unter Linux, Windows und Apfel möglich.
 
-### Linux:
 Zum clonen des Git Repository sollte lediglich ``git-lfs`` installiert sein. Die Installation aller weiteren Abhängigkeiten ist mit ``make`` möglich. Alternativ gibt es auch einen Docker Container der alles erforderliche mitbringt.
 
+### Linux:
 Dein Packetmanager *(zum Beispiel ``apt``)* sollte das Packet git-lfs anbieten. Beispiel:
 ```bash
 sudo apt install git-lfs
 ```
 
+### Mac OSX
+```bash
+brew install git-lfs
+```
+
+### Windows
+Lade den Downloader von [hier](https://github.com/git-lfs/git-lfs/releases) und führe ihn aus.
+
+### Weitere Informationen
 Weitere Informationen zur Installation von git-lfs gibt es auch hier: [git-lfs.github.com](https://git-lfs.github.com/)
+
 
 Installation
 ---------------------------------
