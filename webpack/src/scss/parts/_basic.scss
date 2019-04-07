@@ -80,6 +80,16 @@ a {
     color: _palette(accent1) !important;
     border-bottom-color: transparent;
   }
+  &:not([href*='./']){
+    &:not([href*='toolbox-bodensee.de']){
+      &:not([href^='#']) {
+        &:not([href^='/']):after {
+          font-family: 'FontAwesome';
+          content: " \f08e";
+        }
+      }
+    }
+  }
 }
 
 strong,
@@ -215,4 +225,3 @@ pre {
 .align-right {
   text-align: right;
 }
-

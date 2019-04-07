@@ -5,6 +5,16 @@
   border-bottom: none;
   position: relative;
 
+  &:not([href*='./']){
+    &:not([href*='toolbox-bodensee.de']){
+      &:not([href^='#']) {
+        &:not([href^='/']):after {
+          content: "";
+        }
+      }
+    }
+  }
+
   > .label {
     display: none;
   }
@@ -43,4 +53,3 @@
     margin-left: $i * 1px;
   }
 }
-
