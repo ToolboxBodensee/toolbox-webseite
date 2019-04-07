@@ -1,9 +1,9 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block expand_header %}
-  <link rel="stylesheet" href="{{ '/css/leaflet.css'|url }}" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
-  <script src="{{ '/js/leaflet.js'|url }}" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
-  <link href="{{ '/css/lightgallery.css'|url }}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/css/leaflet.css'|asseturl }}" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+  <script src="{{ '/js/leaflet.js'|asseturl }}" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+  <link href="{{ '/css/lightgallery.css'|asseturl }}" rel="stylesheet">
 {% endblock %}
 {% block expand_description %}
     <meta name="description" content="{% 
@@ -42,8 +42,8 @@
       $('.lightgallery').lightGallery();
     });
   </script>
-  <script src="{{ '/js/openstreetmap.js'|url }}"></script>
-  <script src="{{ '/js/picturefill.min.js'|url }}"></script>
-  <script src="{{ '/js/lightgallery-all.min.js'|url }}"></script>
-  <script src="{{ '/js/jquery.mousewheel.min.js'|url }}"></script>
+  <script src="{{ '/js/openstreetmap.min.js'|asseturl }}"></script>
+  <script src="{{ '/js/picturefill.min.js'|asseturl }}"></script>
+  <script src="{{ '/js/lightgallery-all.min.js'|asseturl }}"></script>
+  <script src="{{ '/js/jquery.mousewheel.min.js'|asseturl }}"></script>
 {% endblock %}

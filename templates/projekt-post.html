@@ -1,10 +1,10 @@
 {% extends "layout.html" %}
 {% from "macros/projekt.html" import render_blog_post %}
 {% block expand_header %}
-<link href="{{ '/css/lightgallery.css'|url }}" rel="stylesheet">
+<link href="{{ '/css/lightgallery.css'|asseturl }}" rel="stylesheet">
 {% if this.video_is_embeded %} <!-- Embed Video -->
-<script src="{{ '/js/webcomponents.min.js'|url }}"></script/>
-<link rel="import" href="{{ '/youtube-embed.html'|url }}"> {% endif %}
+<script src="{{ '/js/webcomponents.min.js'|asseturl }}"></script/>
+<link rel="import" href="{{ '/youtube-embed.html'|asseturl }}"> {% endif %}
 {% endblock %}
 {% block expand_description %}
     <meta name="description" content="{% 
@@ -22,7 +22,7 @@
       $('.lightgallery').lightGallery();
     });
   </script>
-  <script src="{{ '/js/picturefill.min.js'|url }}"></script>
-  <script src="{{ '/js/lightgallery-all.min.js'|url }}"></script>
-  <script src="{{ '/js/jquery.mousewheel.min.js'|url }}"></script>
+  <script src="{{ '/js/picturefill.min.js'|asseturl }}"></script>
+  <script src="{{ '/js/lightgallery-all.min.js'|asseturl }}"></script>
+  <script src="{{ '/js/jquery.mousewheel.min.js'|asseturl }}"></script>
 {% endblock %}
