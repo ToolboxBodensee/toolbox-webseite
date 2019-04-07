@@ -4,7 +4,7 @@ all: build
 
 install-packages:
 	if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagick nodejs yarn python3-pip -y;\
-	elif hash pacman 2>/dev/null; then sudo pacman -Sy imagemagick nodejs yarn python-pip --noconfirm;\
+	elif hash pacman 2>/dev/null; then sudo pacman -Sy imagemagick nodejs yarn python-pip lib32-icu --noconfirm;\
 	elif hash dnf 2>/dev/null; then sudo dnf install -y ImageMagick nodejs yarn python3-pip;\
 	else echo -e "Please install Imagemagick, NodeJS, yarn and pip "; fi
 
