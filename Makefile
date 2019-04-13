@@ -9,18 +9,18 @@ install-packages:
 	else echo -e "Please install Imagemagick, NodeJS, yarn and pip "; fi
 
 install: install-packages
-	pip install lektor --user
+	pip3 install lektor --user
 	
-install-all-packages:
-	if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagick nodejs yarn python3-pip -y;\
-	elif hash pacman 2>/dev/null; then sudo pacman -Sy imagemagick nodejs yarn python-pip lib32-icu --noconfirm;\
-	elif hash dnf 2>/dev/null; then sudo dnf install -y ImageMagick nodejs yarn python3-pip;\
+install-nodejs:
+	if hash apt 2>/dev/null; then sudo apt update; sudo apt install nodejs yarn -y;\
+	elif hash pacman 2>/dev/null; then sudo pacman -Sy nodejs yarn lib32-icu --noconfirm;\
+	elif hash dnf 2>/dev/null; then sudo dnf install -y nodejs yarn;\
 	else echo -e "Please install Imagemagick, NodeJS, yarn and pip "; fi
 
 full-install: install-all-packages
-	pip install lektor --user
+	pip3 install lektor --user
 
-install-virtual-env: install-packages
+install-virtual-env:
 	if hash apt 2>/dev/null; then sudo apt update; sudo apt install python3-virtualenv -y;\
 	elif hash pacman 2>/dev/null; then sudo pacman -Sy python-virtualenv --noconfirm;\
 	elif hash dnf 2>/dev/null; then sudo dnf install -y python3-virtualenv;\
