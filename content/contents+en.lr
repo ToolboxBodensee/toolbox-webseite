@@ -4,16 +4,16 @@ title: Toolbox Bodensee e.V.
 ---
 slogan: Non-profit hackspace at Lake Constance.
 ---
-about_header: clubhouse
+about_header: Club house
 ---
-about_text: Our clubhouse is located at Bergheimer Straße 6 in Markdorf at Lake Constance on the ground of intimus International GmbH.
+about_text: Our club house is located at Bergheimer Straße 6 in Markdorf at Lake Constance on the ground of intimus International GmbH.
 ---
 about_text2:
 
 On more than 420 m² we are able to offer you an own room for electrical engineering, wood and metal workshops, 3D printing, ham radio, screen printing as well as a photo laboratory.
 As a member, you can use our premises and equipment as often and as long as you like, and of course you can listen to lectures or share your knowledge.
 ---
-about_text3: Our clubhouse is also a venue for events of other organisations such as the [Chaostreff Markdorf](https://bodensee.space/chaostreff-markdorf), the [Ham radio station Friedrichshafen](https://www.darc.de/der-club/distrikte/p/ortsverbaende/03/), [Freifunk Bodensee](https://freifunk-bodensee.net/), the [game development lake constance](http://www.spieleentwicklung-bodensee.de/) or the [IoT Meetup Bodensee](https://www.meetup.com/de-DE/IoTBodensee/?_cookie-check=8FCj7YDEE6xcpKYA).
+about_text3: Our club house is also a venue for events of other organizations such as the [Chaostreff Markdorf](https://bodensee.space/chaostreff-markdorf), the [Ham radio station Friedrichshafen](https://www.darc.de/der-club/distrikte/p/ortsverbaende/03/), [Freifunk Bodensee](https://freifunk-bodensee.net/), the [Game Development Lake Constance](http://www.spieleentwicklung-bodensee.de/) or the [IoT Meetup Bodensee](https://www.meetup.com/de-DE/IoTBodensee/?_cookie-check=8FCj7YDEE6xcpKYA).
 ---
 about_url: clubhouse
 ---
@@ -21,7 +21,7 @@ about_url2: /en/vereinsheim/
 ---
 icons_header: Just stop by and participate.
 ---
-icons_text: The Toolbox Bodensee e.V. is a non-profit maker and hacker space in Markdorf on Lake Constance, which tries to create a cosy atmosphere for members as well as guests in which creatures with similar interests can meet and exchange information. We have a large clubhouse where everyone is welcome to relax in the lounge or in the ball pool, to participate in lectures or workshops, to work with the tools in the workshop or to exchange ideas with the other creatures here.
+icons_text: The Toolbox Bodensee e.V. is a non-profit maker and hack space in Markdorf on Lake Constance, which tries to create a cozy atmosphere for members as well as guests in which people with similar interests can meet and exchange information. We have a large club house where everyone is welcome to relax in the lounge or in the ball pool, to participate in lectures or workshops, to work with the tools in the workshop or to exchange ideas with the other people here.
 ---
 icons_1_1: fa-code
 ---
@@ -39,13 +39,13 @@ icons_3_1: fa-cogs
 ---
 icons_3_2: Handicrafts
 ---
-icons_3_3: We are working on various hardware projects, ranging from mechanical gadgets to self soldered electronics to more complex control systems.
+icons_3_3: We are working on various hardware projects, ranging from mechanical gadgets to self-soldered electronics to more complex control systems.
 ---
 icons_4_1: fa-puzzle-piece
 ---
 icons_4_2: Workshops
 ---
-icons_4_3: We offer workshops and lectures to give people an understanding of technology, so that people control technology and not the other way around.
+icons_4_3: We offer workshops and lectures to give people an understanding of technology, so that people control technology and not the other way round.
 ---
 icons_4_url: /en/termine/
 ---
@@ -61,7 +61,7 @@ icons_6_1: fa-calendar-check
 ---
 icons_6_2: Events
 ---
-icons_6_3: We love to organize events and  take part in some other to improve network with other awesome living beings.
+icons_6_3: We love to organize events and take part in some other to improve the network with other awesome living beings.
 ---
 icons_6_url: /en/blog/
 ---
@@ -73,12 +73,12 @@ red_1: We are happy to see new faces.
 ---
 red_2:
 
-Every Thursday evening the door is open and everyone is welcome to come over and visit the Toolbox Bodensee e.V..<br/>
-At 19:00 the "weekly meeting" takes place. Here we all meet for mostly 20 minutes in the large meeting room and current topics, projects and questions are addressed. In addition, new faces and guests have the opportunity to introduce themselves or ask questions to the large group of people. E.g if they need help with a specific problem and do not know exactly who to turn to.
+Every Thursday evening, the door is open and everyone is welcome to come over and visit the Toolbox Bodensee e.V..<br/>
+At 7 p.m. the "weekly meeting" takes place. Here we all meet for approximately 20 minutes in the large meeting room to ddress current topics, projects and questions. In addition, new faces and guests have the opportunity to introduce themselves or ask questions to the large group of people. E.g if they need help with a specific problem and do not know exactly who to turn to.
 ---
-red_3: After the weekly meeting, there is often a small lecture where you are welcome to listen and thus broaden your knowledge horizon. For the rest of the evening, the living creatures are spread over all rooms of the Toolbox Bodensee e.V.. Some people continue to tinker with their projects, others have retreated into the lounge or the ball pit and talk, others are barbecuing in front of the toolbox or flying with the drone through the toolbox. Some of you may also have found the library and are immersed in its reading. And others sit at their computers and program diligently.
+red_3: After the weekly meeting, often there is a small lecture where you are welcome to listen and thus broaden your knowledge horizon. For the rest of the evening, the living creatures are spread over all rooms of the Toolbox Bodensee e.V.. Some people continue to tinker with their projects, others have retreated into the lounge or the ball pit and talk, others are barbecuing in front of the Toolbox or flying with the drone through the Toolbox. Some of you may also have found the library and are immersed into reading. And others sit at their computers and program diligently.
 ---
-red_4: We would be happy if you come around!
+red_4: We would be happy if you came around!
 ---
 icons_1_url: /en/projekte/
 ---
@@ -101,7 +101,7 @@ header: electrical workshop
 ----
 text: Here you will find oscilloscopes, soldering irons, power supplies, measuring instruments, various components and 3D printers. In our large electrical workshop even electrical engineers get jealous.
 ----
-text2: In the Toolbox there are some members who are well versed in 3D printing and electronics. We try to share our knowledge with other members and guests and support each other in our projects.
+text2: There are some members in the Toolbox who are well experienced in 3D printing and electronics. We try to share our knowledge with other members and guests and support each other in our projects.
 ----
 url_text: projects
 ----
