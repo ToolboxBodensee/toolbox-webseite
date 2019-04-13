@@ -1,106 +1,217 @@
-<!DOCTYPE html>
+{% set fqdn = 'toolbox-bodensee.de'  %}{% 
+set ausnahmezustand = False 
+%}<!DOCTYPE html>
 <html{% if alt %} lang="{{ alt }}"{% endif %}>
   <head>
     <meta charset="utf-8">
     <title>{% block title %}Startseite{% endblock %}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--[if lte IE 8]><script src="{{ '/js/ie/html5shiv.js'|url }}"></script><![endif]-->
-    <link rel="stylesheet" href="{{ '/css/main.css'|url }}" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="{{ 'assets/css/ie9.css'|url }}" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="{{ 'assets/css/ie8.css'|url }}" /><![endif]-->
-    <meta name="description" content="{% if bag('translate', this.alt, 'description') %}{{ bag('translate', this.alt, 'description') }}{% else %}Die Toolbox Bodensee e.V. ist ein gemeinnütziger Maker- und Hackspace in Markdorf am Bodensee!{% endif %}" />
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/icons/apple-touch-icon.png'|url }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/icons/favicon-32x32.png'|url }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/icons/favicon-16x16.png'|url }}">
-    <link rel="manifest" href="{{ '/images/icons/site.webmanifest'|url }}">
-    <link rel="mask-icon" href="{{ '/images/icons/safari-pinned-tab.svg'|url }}" color="#e64f2d">
-    <link rel="shortcut icon" href="{{ '/images/icons/favicon.ico'|url }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />{%
+    if '/css/main.min.css'|asseturl == empty %}
+    <link rel="stylesheet" href="{{ '/css/font-awesome.min.css'|asseturl }}" />
+    <link rel="stylesheet" href="{{ '/fonts/roboto.css'|asseturl }}" />{%
+     endif %}
+    <link rel="stylesheet" href={%
+        if '/css/main.min.css'|asseturl == empty 
+        %}"https://{{ fqdn }}/css/main.min.css"{%
+        else %}"{{ '/css/main.min.css'|asseturl }}"{%
+        endif %} /> 
+    <!--[if lte IE 9]><link rel="stylesheet" href={%
+        if '/css/ie9.min.css'|asseturl == empty %}"https://{{ fqdn }}/css/ie9.min.css"{%
+        else %}"{{ '/css/ie9.min.css'|asseturl }}"{%
+        endif %}" /><![endif]-->
+    {% block expand_description 
+    %}<meta name="description" content="{% 
+        if bag('translate', this.alt, 'description') %}{{ bag('translate', this.alt, 'description') }}{% 
+        else %}{{ bag('translate', 'de', 'description') }}{% endif %}" />{%
+     endblock %}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/icons/apple-touch-icon.png'|asseturl }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/icons/favicon-32x32.png'|asseturl }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/icons/favicon-16x16.png'|asseturl }}">
+    <link rel="manifest" href="{{ '/images/icons/site.webmanifest'|asseturl }}">
+    <link rel="mask-icon" href="{{ '/images/icons/safari-pinned-tab.svg'|asseturl }}" color="#e64f2d">
+    <link rel="shortcut icon" href="{{ '/images/icons/favicon.ico'|asseturl }}">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="{{ '/images/icons/browserconfig.xml'|url }}">
-    <meta name="theme-color" content="#e64f2d">
-    {% block expand_header %}{% endblock %}
-    <script src="{{ '/js/jquery.min.js'|url }}"></script>
+    <meta name="msapplication-config" content="{{ '/images/icons/browserconfig.xml'|asseturl }}">
+    <meta name="theme-color" content="#e64f2d">{%
+    block expand_header %}{% endblock %}
+    <script src="{{ '/js/jquery.min.js'|asseturl }}"></script>
   </head>
   <body class="{% if this._path == '/' %}landing {% endif %} is-preload">
     <div id="page-wrapper">
-
        <!-- Header -->
         <header id="header">
             <h1 id="logo">
-                <a id="tb-opened" class="button special" style="margin-left: -15px; background-color: LimeGreen  !important;" href="{% if bag('translate', this.alt, 'api_url') %}{{ bag('translate', this.alt, 'api_url') }}{% else %}/vereinsheim/{% endif %}">{% if bag('translate', this.alt, 'api_space') %}{{ bag('translate', this.alt, 'api_space') }}{% else %}Vereinsheim{% endif %} {% if bag('translate', this.alt, 'api_open') %}{{ bag('translate', this.alt, 'api_open') }}{% else %}offen{% endif %}</a>
-                <a id="tb-closed" style="color: #d23128ff;" href="{% if bag('translate', this.alt, 'api_url') %}{{ bag('translate', this.alt, 'api_url') }}{% else %}/vereinsheim/{% endif %}">{% if bag('translate', this.alt, 'api_space') %}{{ bag('translate', this.alt, 'api_space') }}{% else %}Vereinsheim{% endif %} {% if bag('translate', this.alt, 'api_closed') %}{{ bag('translate', this.alt, 'api_closed') }}{% else %}offen{% endif %}</a>
+                <div class="tooltip">
+                    <a id="tb-opened" class="button tb-opened navbar special" href="{%
+                        if bag('translate', this.alt, 'api_url') %}{{ bag('translate', this.alt, 'api_url') }}{%
+                        else %}{{ bag('translate', 'de', 'api_url') }}{% endif 
+                    %}">{%
+                        if bag('translate', this.alt, 'api_space') %}{{ bag('translate', this.alt, 'api_space') }}{%
+                        else %}{{ bag('translate', 'de', 'api_space') }}{% endif %} {%
+                        if bag('translate', this.alt, 'api_open') %}{{ bag('translate', this.alt, 'api_open') }}{%
+                        else %}{{ bag('translate', 'de', 'api_open') }}{% endif %}</a>
+                    <span class="tooltiptext">{% if bag('translate', this.alt, 'api_open_text') 
+                        %}{{ bag('translate', this.alt, 'api_open_text') }}{%
+                        else %}{{ bag('translate', 'de', 'api_open_text') }}{% endif %}</span>
+                </div>
+                <div class="tooltip">
+                    <a id="tb-closed" class="tb-closed" href="{% if bag('translate', this.alt, 'api_url') %}{{ bag('translate', this.alt, 'api_url') }}{%
+                        else %}{{ bag('translate', 'de', 'api_url') }}{% endif 
+                    %}">{% 
+                        if bag('translate', this.alt, 'api_space') %}{{ bag('translate', this.alt, 'api_space') }}{%
+                        else %}{{ bag('translate', 'de', 'api_space') }}{% 
+                        endif %} {% if bag('translate', this.alt, 'api_closed') %}{{ bag('translate', this.alt, 'api_closed') }}{% 
+                        else %}{{ bag('translate', 'de', 'api_closed') }}{% endif %}</a>
+                    <span class="tooltiptext">{% if bag('translate', this.alt, 'api_opening_time') 
+                        %}{{ bag('translate', this.alt, 'api_opening_time') }}{% 
+                        else %}{{ bag('translate', 'de', 'api_opening_time') }}{% endif %}</span>
+                  </div>
             </h1>
             <nav id="nav">
               <ul>
                 <li{% if this._path == '/' %} class="active"{% endif
-                  %}><a href="{{ '/'|url }}">{% 
+                  %}><a href="{{ '/'|url }}">{%
                   if bag('navigation', this.alt, 'home') %}{{ bag('navigation', this.alt, 'home') }}{%
-                  else %}Home{% endif %}</a></li>{%
+                  else %}{{ bag('navigation', 'de', 'home') }}{% endif %}</a></li>{%
                 for href, title, print in [
                   ['/blog', 'Blog', 1],
                   ['/projekte', 'Projekte', 1],
-                  ['/vereinsheim', 'Verein', 1],
+                  ['/verein', 'Verein', 1],
                   ['/termine', 'Kalender', 1],
-                  ['/kontakt', 'Kontakt', 1],
-                  ['/impressum', 'Impressum', 1]
+                  ['/kontakt', 'Kontakt', 1]
                 ] %}{% if print %}
                   <li{% if this.is_child_of(href) %} class="active"{% endif
-                %}{% if title == 'Kontakt' %} class="button special" {% endif 
                   %}><a href="{{ href|url }}">{% if bag('navigation', this.alt, title) %}{{ bag('navigation', this.alt, title) }}{% else %}{{ title }}{% endif %}</a>{%
-                  if title == 'Impressum' %}
-                  <ul><li><a href="{{ '/impressum'|url }}">{% if bag('navigation', this.alt, 'Impressum') %}{{ bag('navigation', this.alt, 'Impressum') }}{% else %}Impressum{% endif %}</a></li>
-                    <li><a href="{{ '/datenschutz/'|url }}">{% if bag('navigation', this.alt, 'Datenschutz') %}{{ bag('navigation', this.alt, 'Datenschutz') }}{% else %}Datenschutz{% endif %}</a></li>
-                  </ul>{%
-                  elif title == 'Projekte' %}
+                  if title == 'Projekte' %}
                     <ul>{% set root = site.get('/projekte/', alt=this.alt) %}{%
-                  for child in root.children recursive %}{% if loop.index <= 7 %} 
+                  for child in root.children recursive %}{% if loop.index <= 7 %}
                     <li{%
                       if this._path == child._path %} class="active"{% endif
-                      %}><a href="{% if this.alt == 'de' %}{% else %}/{{ this.alt }}/{{ this.alt }}/{% endif %}{{ child|url }}">{{ child.title }}</a></li>{%
+                      %}><a href="{% if this.alt == 'de' %}{% else %}/{{ this.alt }}/{% endif %}{{ child|url }}">{{ child.title }}</a></li>{%
                   endif %}{% endfor %}
-                      <li><a href="{{ '/projekte/'|url }}">{% if bag('navigation', this.alt, 'show_projekt') %}{{ bag('navigation', this.alt, 'show_projekt') }}{% else %}alle Projekte{% endif %}</a></li>
-                      <li><a href="{{ '/projekte.xml'|url }}">{% if bag('navigation', this.alt, title) %}{{ bag('navigation', this.alt, title) }}{% else %}{{ title }}{% endif %} {% if bag('navigation', this.alt, 'xml') %}{{ bag('navigation', this.alt, 'xml') }}{% else %}als XML Feed{% endif %}</a></li>
+                      <li><a href="{{ '/projekte/'|url }}">{% 
+                              if bag('navigation', this.alt, 'show_projekt') %}{{ bag('navigation', this.alt, 'show_projekt') }}{% 
+                              else %}{{ bag('navigation', 'de', 'show_projekt') }}{% endif %}</a></li>
+                      <li><a href="{{ '/feed_projekte.xml'|url }}">{% 
+                              if bag('navigation', this.alt, title) %}{{ bag('navigation', this.alt, title) }}{% 
+                              else %}{{ title }}{% endif %} {% 
+                              if bag('navigation', this.alt, 'xml') %}{{ bag('navigation', this.alt, 'xml') }}{% 
+                              else %}{{ bag('navigation', 'de', 'xml') }}{% endif %}</a></li>
                     </ul>{%
                   elif title == 'Verein' %}
-                    <ul><li><a href="{{ '/vereinsheim'|url }}">{% if bag('navigation', this.alt, 'Vereinsheim') %}{{ bag('navigation', this.alt, 'Vereinsheim') }}{% else %}Vereinsheim{% endif %}</a></li>
-                    <li><a href="{{ '/vereinsheim/elektrowerkstatt'|url }}">{% if bag('navigation', this.alt, 'Elektrowerkstatt') %}{{ bag('navigation', this.alt, 'Elektrowerkstatt') }}{% else %}Elektrowerkstatt{% endif %}</a></li>
-                    <li><a href="{{ '/vereinsheim/grobwerkstatt'|url }}">{% if bag('navigation', this.alt, 'Grobwerkstatt') %}{{ bag('navigation', this.alt, 'Grobwerkstatt') }}{% else %}Grobwerkstatt{% endif %}</a></li>
-                    <li><a href="{{ '/vereinsheim/lounge'|url }}">{% if bag('navigation', this.alt, 'Lounge') %}{{ bag('navigation', this.alt, 'Lounge') }}{% else %}Lounge{% endif %}</a></li>
-                    <li><a href="{{ '/verein/presse'|url }}">{% if bag('navigation', this.alt, 'Presse') %}{{ bag('navigation', this.alt, 'Presse') }}{% else %}Presse{% endif %}</a></li>
-                    <li><a href="https://tbbs.me">{% if bag('navigation', this.alt, 'Wiki') %}{{ bag('navigation', this.alt, 'Wiki') }}{% else %}Wiki{% endif %}</a></li>
-                    <li><a href="{{ '/mitglied-werden'|url }}" class="button special">{% if bag('navigation', this.alt, 'mitglied') %}{{ bag('navigation', this.alt, 'mitglied') }}{% else %}Mitglied werden{% endif %}</a></li>
-                    <li><a href="{{ '/verein'|url }}">{% if bag('navigation', this.alt, 'Mitgliedschaft') %}{{ bag('navigation', this.alt, 'Mitgliedschaft') }}{% else %}Mitgliedschaft{% endif %}</a></li></ul>{%
+                    <ul><li><a href="{{ '/vereinsheim'|url }}">{% 
+                                if bag('navigation', this.alt, 'Vereinsheim') %}{{ bag('navigation', this.alt, 'Vereinsheim') }}{% 
+                                else %}{{ bag('navigation', 'de', 'Vereinsheim') }}{% endif %}</a></li>
+                    <li><a href="{{ '/vereinsheim/elektrowerkstatt'|url }}">{% 
+                            if bag('navigation', this.alt, 'Elektrowerkstatt') %}{{ bag('navigation', this.alt, 'Elektrowerkstatt') }}{% 
+                            else %}{{ bag('navigation', 'de', 'Elektrowerkstatt') }}{% endif %}</a></li>
+                    <li><a href="{{ '/vereinsheim/grobwerkstatt'|url }}">{% 
+                            if bag('navigation', this.alt, 'Grobwerkstatt') %}{{ bag('navigation', this.alt, 'Grobwerkstatt') }}
+                            {% else %}{{ bag('navigation', 'de', 'Grobwerkstatt') }}{% endif %}</a></li>
+                    <li><a href="{{ '/vereinsheim/lounge'|url }}">{% 
+                            if bag('navigation', this.alt, 'Lounge') %}{{ bag('navigation', this.alt, 'Lounge') }}{%
+                            else %}{{ bag('navigation', 'de', 'Lounge') }}{% endif %}</a></li>
+                    <li><a href="{{ '/verein/presse'|url }}">{% 
+                            if bag('navigation', this.alt, 'Presse') %}{{ bag('navigation', this.alt, 'Presse') }}{% 
+                            else %}{{ bag('navigation', 'de', 'Presse') }}{% endif %}</a></li>
+                    <li><a href="https://tbbs.me">{% 
+                            if bag('navigation', this.alt, 'Wiki') %}{{ bag('navigation', this.alt, 'Wiki') }}{%
+                            else %}{{ bag('navigation', 'de', 'Wiki') }}{% endif %}</a></li>
+                    <li><a href="{{ '/verein/dokumente'|url }}">{% 
+                            if bag('navigation', this.alt, 'satzung') %}{{ bag('navigation', this.alt, 'satzung') }}{% 
+                            else %}{{ bag('navigation', 'de', 'satzung') }}{% endif %}</a></li>
+                    <li><a href="{{ '/mitglied-werden'|url }}" class="button special">{%
+                            if bag('navigation', this.alt, 'mitglied') %}{{ bag('navigation', this.alt, 'mitglied') }}{%
+                            else %}{{ bag('navigation', 'de', 'mitglied') }}{% endif %}</a></li>
+                    <li><a href="{{ '/verein/spenden'|url }}">{% 
+                            if bag('navigation', this.alt, 'spenden') %}{{ bag('navigation', this.alt, 'spenden') }}{%
+                            else %}{{ bag('navigation', 'de', 'spenden') }}{% endif %}</a></li>
+                    <li><a href="{{ '/antworten'|url }}">{% 
+                            if bag('navigation', this.alt, 'fragen') %}{{ bag('navigation', this.alt, 'fragen') }}{%
+                            else %}{{ bag('navigation', 'de', 'fragen') }}{% endif %}</a></li></ul>{%
                   elif title == 'Kontakt' %}
-                    <ul><li><a href="{{ '/kontakt'|url }}">{% if bag('navigation', this.alt, 'Anfahrt') %}{{ bag('navigation', this.alt, 'Anfahrt') }}{% else %}Anfahrt{% endif %}</a></li>
-                    <li><a href="{{ '/antworten'|url }}">{% if bag('navigation', this.alt, 'fragen') %}{{ bag('navigation', this.alt, 'fragen') }}{% else %}Häufige Fragen{% endif %}</a></li></ul>{%
-                   elif title == 'Blog' %}
+                    <ul><li><a href="{{ '/kontakt'|url }}">{% 
+                              if bag('navigation', this.alt, 'Kontakt') %}{{ bag('navigation', this.alt, 'Kontakt') }}{% 
+                              else %}{{ bag('navigation', 'de', 'Kontakt') }}{% endif %}</a></li>
+                      <li><a href="{{ '/impressum'|url }}">{% 
+                              if bag('navigation', this.alt, 'Impressum') %}{{ bag('navigation', this.alt, 'Impressum') }}{% 
+                              else %}Impressum{% endif %}</a></li>
+                      <li><a href="{{ '/datenschutz/'|url }}">{% 
+                              if bag('navigation', this.alt, 'Datenschutz') %}{{ bag('navigation', this.alt, 'Datenschutz') }}{% 
+                              else %}Datenschutz{% endif %}</a></li>
+                  </ul>{%
+                  elif title == 'Blog' %}
                     <ul>{% set root = site.get('/blog/', alt=this.alt) %}{%
                       for child in root.children recursive %}
                       <li{%
                       if this._path == child._path %} class="active"{% endif
                         %}><a href="{{ child|url }}">{{ child.shorttitle }}</a></li>{%
                     endfor %}
-                    <li><a href="{{ '/feed.xml'|url }}">RSS Feed</a></li></ul>{%
+                    <li><a href="{{ '/feed_blog.xml'|url }}">RSS Feed</a></li></ul>{%
                   endif %}</li>{%
                  endif %}{%
                endfor %}
-                 <li><a href="/en{{ this._path }}">{% if bag('navigation', this.alt, 'sprache') %}{{ bag('navigation', this.alt, 'sprache') }}{% else %}Sprache{% endif %}</a>
-                   <ul>
-                     <li><a href="/..{{ this._path }}">{% if bag('navigation', this.alt, 'German') %}{{ bag('navigation', this.alt, 'German') }}{% else %}German{% endif %}</a></li>
-                     <li><a href="/en{{ this._path }}">{% if bag('navigation', this.alt, 'Englisch') %}{{ bag('navigation', this.alt, 'Englisch') }}{% else %}english{% endif %} <i>({% if bag('navigation', this.alt, 'falls') %}{{ bag('navigation', this.alt, 'falls') }}{% else %}if available{% endif %})</i></a><li>
+               <li class="last"><a href="/{% if bag('navigation', this.alt, 'default_path') %}{{ bag('navigation', this.alt, 'default_path') }}{% else %}..{% endif %}{{ this._path }}">{% if bag('navigation', this.alt, 'sprache') %}{{ bag('navigation', this.alt, 'sprache') }}{% else %}Sprache{% endif %}</a>
+                   <ul class="last">
+                     <li><a href="{{ this._path }}">{% 
+                             if bag('navigation', this.alt, 'German') %}{{ bag('navigation', this.alt, 'German') }}{%
+                             else %}{{ bag('navigation', 'de', 'German') }}{% endif %}</a></li>
+                     <li><a href="/en{{ this._path }}">{% 
+                             if bag('navigation', this.alt, 'Englisch') %}{{ bag('navigation', this.alt, 'Englisch') }}{% 
+                             else %}{{ bag('navigation', 'de', 'Englisch') }}{% 
+                         endif %} <i>({%
+                             if bag('navigation', this.alt, 'falls') %}{{ bag('navigation', this.alt, 'falls') }}{%
+                             else %}{{ bag('navigation', 'de', 'falls') }}{% 
+                        endif %})</i></a><li>
                    </ul>
                  </li>
               </ul>
             </nav>
           </header>
+{% if ausnahmezustand %}
+<!-- Extrem -->
+    <div id="overwrite" style="display: none; z-index: 1 !important; position: fixed !important;   top: 10%;  left: 15%; width: 70%; text-align: center; background: white; color: black; padding:30px;font-size: 9pt; text-decoration: none">
+<style type="text/css">
+    a:link{color:#300;}
+    a:visited{color:#511;}
+    a:hover{color:#f00;}
+    a:active{color:#f00;}
+</style>
+    <h2 style="color:red">#SaveYourInternet</h2>
+    <p>Liebe Besucherin, lieber Besucher,
+
+vielen Dank für Ihr Interesse. Leider steht unser Service heute nicht zur Verfügung. Wir protestieren gemeinsam mit der Autorenschaft der Wikipedia gegen Teile der geplanten EU-Urheberrechtsreform, die im Parlament der Europäischen Union Ende März verabschiedet werden soll, und schalten unsere Seite für 24 Stunden ab.
+<br/>
+<br/>
+Ausgetragen wird dieser Konflikt auf den Rücken der Internetnutzer und Kreativen. Diese müssen nach dem aktuellen Entwurf mit erheblichen Einschränkungen rechnen. Das freie Internet, wie wir es kennen, könnte zu einem „Filternet“ verkommen, in dem Plattformbetreiber darüber entscheiden müssen, was wir schreiben, hochladen und sehen dürfen. Denn das geplante Gesetz schreibt Internetseiten und Apps vor, dass sie hochgeladene Inhalte präventiv auf Urheberrechtsverletzungen prüfen müssen. Selbst kleinere Unternehmen müssten demnach fehleranfällige, teure und technisch unausgereifte Uploadfilter einsetzen (Artikel 13) und für minimale Textausschnitte aus Presseerzeugnissen Lizenzen erwerben, um das sogenannte Leistungsschutzrecht einzuhalten (Artikel 11).
+
+Wenn Sie unsere Kritik an der geplanten Urheberrechtsreform teilen, werden Sie aktiv:
+    </p>
+
+    <ul style="text-align: left"><li>unterzeichnen Sie die Petition <a href="https://www.change.org/p/stoppt-die-zensurmaschine-rettet-das-internet-uploadfilter-artikel13-saveyourinternet">"Stoppt die Zensurmaschine – Rettet das Internet!"</a>,</li>
+        <li><a href="https://pledge2019.eu/de">kontaktieren Sie die Abgeordneten des Europäischen Parlaments</a>,</li><br/> 
+        <li><a href="https://savetheinternet.info/demos">gehen Sie am 23. März auf die Straße</a>,</li> <br/>
+        <li>nehmen Sie Ihr demokratisches Recht wahr und gehen Sie am 26. Mai zur Wahl.</li></ul><br/>
+</div>
 
 <!-- Main -->
+<div id="block_me">
+{% else %}
+<!-- Main -->
+{% endif %}
 {% block body %}{% endblock %}
+{% if ausnahmezustand %}</div>
+
+    <script>
+        document.getElementById("block_me").style.opacity = "0.023";
+        document.getElementById("overwrite").style.display = "block";
+    </script>
+{% endif %}
 
        <!-- Footer -->
        <footer id="footer">
-         <ul class="icons">
-           {% for label, icon, href in [
+         <ul class="icons">{%
+         for label, icon, href in [
            ['Twitter', 'fab fa-twitter', "https://twitter.com/toolboxbodensee"],
            ['Mastodon', 'fab fa-mastodon', "https://chaos.social/@toolbox"],
            ['Facebook', 'fab fa-facebook', "https://www.facebook.com/toolboxbodensee/"],
@@ -109,15 +220,19 @@
            ['YouTube', 'fab fa-youtube', "https://www.youtube.com/channel/UCoTB8frSN0OT2mZl2IXSsDA/videos"],
            ['Mail', 'fas fa-envelope', "mailto:kontakt@toolbox-bodensee.de"],
            ['Telefon', 'fas fa-phone', "tel:+4975449667222"],
-           ['News', 'fas fa-rss', "https://toolbox-bodensee.de/feed.xml"]
+           ['News', 'fas fa-rss', "https://toolbox-bodensee.de/feed_blog.xml"]
          ] %}
-           <li><a href="{{ href }}" title="{{ label }}" target="_blank" class="icon {{ icon }}"></a></li>
-         {% endfor %}
+           <li><a href="{{ href }}" title="{{ label }}" target="_blank" rel="noopener" class="icon {{ icon }}"></a></li>{%
+         endfor %}
         </ul>
         <ul class="copyright">
           <li>&copy;Copyright by Toolbox Bodensee e.V.</li>
-          <li><a href="{{ '/impressum/'|url }}">{% if bag('navigation', this.alt, 'Impressum') %}{{ bag('navigation', this.alt, 'Impressum') }}{% else %}Impressum{% endif %}</a></li>
-          <li><a href="{{ '/datenschutz/'|url }}">{% if bag('navigation', this.alt, 'Datenschutz') %}{{ bag('navigation', this.alt, 'Datenschutz') }}{% else %}Datenschutzerklärung{% endif %}</a></li>
+          <li><a href="{{ '/impressum/'|url }}">{% 
+                  if bag('navigation', this.alt, 'Impressum') %}{{ bag('navigation', this.alt, 'Impressum') }}{%
+                  else %}Impressum{% endif %}</a></li>
+          <li><a href="{{ '/datenschutz/'|url }}">{% 
+                  if bag('navigation', this.alt, 'Datenschutz') %}{{ bag('navigation', this.alt, 'Datenschutz') }}{% 
+                  else %}Datenschutzerklärung{% endif %}</a></li>
           <li>Design inspired by <a href="http://html5up.net">HTML5 UP</a> </li>
           <!-- CMS: Lektor | Angepasst durch L3D -->
           <!-- advertising: Grab your waffle from C3WOC! C3WOC ->Great waffles for everypony. https://c3woc.de/ -->
@@ -126,12 +241,10 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ '/js/jquery.scrolly.min.js'|url }}"></script>
-    <script src="{{ '/js/jquery.dropotron.min.js'|url }}"></script>
-    <script src="{{ '/js/jquery.scrollex.min.js'|url }}"></script>
-    <script src="{{ '/js/skel.min.js'|url }}"></script>
-    <script src="{{ '/js/util.js'|url }}"></script>
-    <!--[if lte IE 8]><script src="{{ '/js/ie/respond.min.js'|url }}"></script><![endif]-->
-    <script src="{{ '/js/main.js'|url }}"></script>
+    <script src="{{ '/js/jquery.scrolly.min.js'|asseturl }}"></script>
+    <script src="{{ '/js/jquery.scrollex.min.js'|asseturl }}"></script>
+    <script src="{{ '/js/skel.min.js'|asseturl }}"></script>
+    <script src="{{ '/js/util.min.js'|asseturl }}"></script>
+    <script src="{{ '/js/main.min.js'|asseturl }}"></script>
   </body>
 </html>

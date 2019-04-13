@@ -27,16 +27,24 @@ precontent:
 
  Einige Bereiche der Toolbox
 ---------------------------------------
-<a href="/vereinsheim/elektrowerkstatt/" class="button">Elektrowerkstatt</a>
-<a href="/vereinsheim/grobwerkstatt/" class="button">Grobwerkstatt</a>
-<a href="/vereinsheim/lounge/" class="button">Lounge</a>
-<a href="https://tbbs.me/" class="button">Wiki</a>
+
+<div class="col-4"> 
+<a href="/vereinsheim/elektrowerkstatt/" class="button fit">Elektrowerkstatt</a> 
+<a href="/vereinsheim/grobwerkstatt/" class="button fit">Grobwerkstatt</a>
+<a href="/vereinsheim/lounge/" class="button fit">Lounge</a>
+<a href="https://tbbs.me/" class="button fit">Wiki</a>
+</div>
+
 
  Verein Toolbox Bodensee e.V.
 -------------------------------------------------------
-<a href="/verein/" class="button">Satzung & Ordnung</a>
-<a href="/verein/presse/" class="button">Presse Informationen</a>
-<a href="/mitglied-werden/" class="button special">Mitglied werden</a>
+<div class="col-3"> 
+<a href="/verein/" class="button fit">Satzung & Ordnung</a> 
+<a href="/verein/presse/" class="button fit">Presse Informationen</a>
+<a href="/mitglied-werden/" class="button special fit">Mitglied werden</a>
+</div>
+
+
 
 ---
 project:

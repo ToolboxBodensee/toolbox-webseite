@@ -1,0 +1,29 @@
+title: Dichtungen Gießen
+---
+pub_date: 2018-06-21
+---
+author: haekelhexe
+---
+body:
+
+Seid ihr noch ganz dicht – Wie 3D-Druck die Teestunde rettet
+
+
+Ich habe mir vor einiger Zeit einen Teamaker gekauft, der in seiner Funktionsweise schon eher speziell ist. Man brüht den Tee (vorzugsweise lose) im Behälter auf, stellt den Behälter auf eine Tasse wodurch die Verbindung zwischen 2 Dichtungen aufgehoben wird und der Tee läuft in die Tasse. So weit so gut. Dank meiner Schusseligkeit war aber relativ schnell eine Dichtung verschwunden und der Teamaker nicht mehr verwendbar. Da der Hersteller auch keine Ersatzteile anbietet, war guter Rat teuer. Hier kam nun die Toolbox und die 3D-Drucker ins Spiel. Initiale Idee war es, die Dichtung nachzudrucken. Ich hatte mir zwischenzeitlich einen neuen Teamaker gekauft und somit eine Vorlage für die Dichtung. Müsste man nur noch ein Modell von konstruieren und drucken. Gut gedacht – Umsetzung schlecht, denn: Filament ist nicht flexibel genug für eine Dichtung. Die Diskussion hatte einige kreative Köpfe angelockt und so kamen wir auf die Idee eine Gussform zu drucken und diese dann mit Silikon auszugießen. Wichtig: lebensmittelechtes Silikon verwenden, das auch das heiße Wasser aushält. Während ich also auf die Internetrecherche gegangen bin, haben die Experten die Gussform konstruiert. In der folgenden Woche waren verschiedene Gussformen in unterschiedlicher Ausführung (Filament, Expansionsgrad etc.) fertig und es ging ans Ausgießen. Mit Hilfe von Spritze und der entsprechenden Nadel ging das auch eine halbe Stunde lang gut, danach wurde das Silikon so zäh, dass man es nicht mehr richtig reinspitzen konnte. Entsprechend gut war das Ergebnis der letzten Dichtungen. Nach einer weiteren Woche konnte ich die Silikonteile aus den Formen schälen – das haben sie mehr oder weniger gut überlebt und letztlich kamen da auch 3 funktionierende Dichtungen bei raus und ich kann wieder Tee genießen :)
+---
+icon: fas fa-syringe
+---
+project:
+
+#### pro_img ####
+image: spritze.jpg
+#### pro_img ####
+image: dichtungen.jpg
+#### pro_img ####
+image: liquid.jpg
+#### pro_img ####
+image: bowl.jpg
+---
+teaser: Seid ihr noch ganz dicht – Wie 3D-Druck die Teestunde rettet
+---
+xml_img: dichtungen.jpg

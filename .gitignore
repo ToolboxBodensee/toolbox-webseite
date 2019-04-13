@@ -37,3 +37,27 @@ $RECYCLE.BIN/
 **.DS_Store
 *.DS_Store
 
+# Toolbox Website files
+assets/css/main.css
+assets/css/main.min.css
+assets/css/ie9.css
+assets/css/ie9.min.css
+.sass-cache/
+assets/css/main.css.map
+assets/css/ie9.css.map
+assets/css/main.min.css.map
+assets/css/ie9.min.css.map
+
+# python virtual enviroment
+venv/
+
+sassc/
+
+# Webpack Files
+webpack/dist
+webpack/node_modules
+assets/js/util.min.js
+assets/js/webcomponents.min.js
+assets/js/openstreetmap.min.js
+assets/js/main.min.js
+

@@ -1,0 +1,62 @@
+author: zeha
+---
+body:
+
+Seit Mitte 2018 finden in der Toolbox die Spieleentwickler-Treffen von [Spieleentwicklung Bodensee](http://www.spieleentwicklung-bodensee.de) statt. Hierbei gibt es Gelegenheit zum Austausch von Wissen, Neuigkeiten und Ideen, auch wird von den Teilnehmern i.d.R. an eigenen Projekten gearbeitet sowie diese vorgestellt. Hin und wieder finden Vorträge zu verschiedenen Themen statt, wie z.B. Einführungen in Entwicklungstools oder die Vorstellung interessanter Konzepte und Vorgehensweisen.
+
+Im folgenden ein kurzer Rückblick über die vergangenen Treffen.
+---
+pub_date: 2019-02-06
+---
+shorttitle: Spieleentwickler-Treffs
+---
+title: Rückblick Spieleentwickler-Treffs
+---
+xml: Seit Mitte 2018 finden in der Toolbox die Spieleentwickler-Treffen von Spieleentwicklung Bodensee statt. Im folgenden ein kurzer Rückblick über die vergangenen Treffen.
+---
+project:
+
+#### pro_img ####
+image: gamejam1.jpg
+#### pro_img ####
+image: gamejam2.jpg
+#### pro_img ####
+image: gamejam3.jpg
+#### pro_img ####
+image: c64-assembler.png
+#### pro_img ####
+image: autofahrt-pico8.png
+#### pro_img ####
+image: zombieattacke-pico8.png
+#### pro_img ####
+image: inselspiel.png
+#### pro_img ####
+image: pico8.png
+---
+xml_img: sbo.png
+---
+beitrag:
+
+#### 09.06.2018 - Kennenlerntreffen
+Dieses Treffen bot den 15 Teilnehmern die Möglichkeit, sich einander vorzustellen und dabei eigene Projekte zu präsentieren. Im Anschluß wurde über technische Themen diskutiert, die Entwicklungsumgebung **PICO-8** vorgestellt sowie ein C64-Projekt in Assembler begonnen.
+
+#### 28.07.2018 - Game Jam
+Ziel dieses Treffens war es, im Rahmen eines einzigen Tages von Grund auf ein neues Spiel zu beginnen und möglichst fertigzustellen, wahlweise im Alleingang oder im Team. Am Abend wurden alle Projekte vorgestellt; zwei Spiele wurden tatsächlich fertig, die anderen vier blieben zwar unvollendet, führten jedoch bei den jeweiligen Entwicklern ebenfalls zu spannenden neuen Erkenntnissen.
+
+#### 01.09.2018 - offenes Treffen
+Neben allgemeinem Entwickeln an eigenen Projekten berichtete ZeHa über seine Erfahrungen mit seinem Stand in der Retro-Area auf der **Gamescom**.
+
+#### 27.10.2018 - Vorträge und Coding  
+Michael hielt einen Vortrag zum Thema **Reverse Engineering**, bei dem es darum ging, ein älteres Spiel mithilfe von Disassembly-Tools usw. zu modifizieren.
+Thomas berichtete in einem Vortrag darüber, wie er eine **Pseudo-3D-Rennstrecke** auf dem Atari ST unter Verwendung von GFA Basic realisierte. Zudem gab es einen kleinen Bericht über die Grundfunktionen von **Blender**.
+
+#### 24.11.2018 - offenes Treffen
+Diesmal wurden interessante Gespräche über "Idle Games" geführt bzw. einigen Teilnehmern dieser Begriff überhaupt erklärt, zudem wurde gemeinsam ein [Video-Vortrag](https://www.youtube.com/watch?v=Fy0aCDmgnxg) angesehen, in welchem eindrucksvoll erklärt wird, wie man "den Juice" ins Spiel bekommt. Dies sorgte ebenfalls für angeregte Diskussionen.
+
+#### 29.12.2018 - offenes Treffen
+Bei diesem Treffen "zwischen den Jahren" fanden bis 3 Uhr nachts interessante Gespräche zu Themen wie u.a. **VR** statt, zudem wurde u.a. ein Spiel eines Teilnehmers angezockt, auch wurden auf der Leinwand einige Blender-Tricks gezeigt.
+
+#### 26.01.2019 - Vorträge und Coding
+Alex stellte in einem Vortrag die Grundfunktionen der Entwicklungsumgebung **Unity** vor, später wurde ein von ihm während des Studiums mit Unity erstelltes Spiel namens "Paradise Island" auf der Leinwand gezeigt und einige der verwendeten Techniken besprochen.  
+Dass Spieleentwicklung auch ein Thema für jüngere Entwickler sein kann, zeigte der 11jährige Thilo, indem er seine in **PICO-8** programmierten Spiele "Autofahrt" und "Zombie-Attacke" vorstellte. 
+

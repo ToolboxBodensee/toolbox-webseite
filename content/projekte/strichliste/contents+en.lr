@@ -1,0 +1,34 @@
+author: L3D
+---
+body:
+
+We have a digital tally sheet to simplify the payment of drinks and food in the toolbox. This is based on [strichliste.org](https://www.strichliste.org/) and is only available in the WLAN of the Toolbox.
+
+The dashboard looks something like this: [Demo](https://demo.strichliste.org/)
+
+The tally sheet in the toolbox is called **see-börse** and can be reached at [see-bör.se](https://xn-see-br-0xa.se).
+```
+https://xn--see-br-0xa.se/
+```
+
+There is an Ansible Role that automatically installs the server part of the tally list (the backend):
+[gitea.see-base.de/toolbox/role-strichliste](https://gitea.see-base.de/toolbox/role-strichliste)
+
+At the moment we still need to build the frontend automatically. Currently it is a bit outdated, but can be found there:
+[github.com/ToolboxBodensee/xn--see-br-0xa.se](https://github.com/ToolboxBodensee/xn--see-br-0xa.se)
+
+---
+icon: fas fa-clipboard-list
+---
+project:
+
+#### pro_img ####
+image: see-boerse.png
+---
+pub_date: 2018-08-20
+---
+teaser: Digital tally sheet to simplify the payment of drinks and food in the toolbox
+---
+title: tally list
+---
+xml_img: see-boerse.png

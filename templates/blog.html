@@ -8,11 +8,13 @@
   <div class="container">
     <header class="major">
       <h2>{{ this.title }}</h2>
-      {{ this.description }}
+      <p>{{ this.description }}</p>
     </header>
    <center>  
-       <a href="{{ this.link|url }}" style="font-size: 15pt; text-decoration: none;">{{ this.spruch }}</a>
-     <a href="{{ this.link|url }}" class="fas fa-rss"></a>
+      <a href="{{ this.link|url }}" class="button primary fit" >{{ this.spruch }}
+          <i class="fas fa-rss iconshift-right-8" ></i>
+      </a>
+      
     </center>
     <section id="content">     
   {% for child in this.pagination.items %}
@@ -25,3 +27,11 @@
   </div>
 </div>
 {% endblock %}
+{% block expand_description %}
+    <meta name="description" content="{% 
+        if this.description %}{{ this.description }}{% else %}{%
+            if bag('translate', this.alt, 'description') %}{{ bag('translate', this.alt, 'description') }}{% 
+            else %}{{ bag('translate', 'de', 'description') }}{% endif %}
+        {% endif %}" />
+{% endblock %}
+

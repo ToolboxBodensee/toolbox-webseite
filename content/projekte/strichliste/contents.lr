@@ -1,0 +1,34 @@
+title: Strichliste
+---
+author: L3D
+---
+body:
+
+Wir haben eine digitale Strichliste zur Vereinfachung der Bezahlung der Getränke und des Essens in der Toolbox. Diese basiert auf [strichliste.org](https://www.strichliste.org/) und ist nur im WLAN der Toolbox erreichbar.
+
+Die Strichliste sieht in etwa so aus: [Demo](https://demo.strichliste.org/)
+
+Die Strichliste heißt in der Toolbox **see-börse** uns ist unter [see-bör.se](https://xn-see-br-0xa.se) erreichbar.
+```
+https://xn--see-br-0xa.se/
+```
+
+Es gibt ein Ansible-Rolle, mit dem der Server Teil der Strichliste (das backend) automatisiert installiert wird:
+[gitea.see-base.de/toolbox/role-strichliste](https://gitea.see-base.de/toolbox/role-strichliste)
+
+Aktuell fehlt noch, auch das frontend automatisiert zu builden. Aktuell ist es leider etwas veraltet, findet sich aber dort:
+[github.com/ToolboxBodensee/xn--see-br-0xa.se](https://github.com/ToolboxBodensee/xn--see-br-0xa.se)
+
+---
+icon: fas fa-clipboard-list
+---
+pub_date: 2018-08-20
+---
+teaser: Digitale Strichliste zur Vereinfachung der Bezahlung der Getränke und des Essens in der Toolbox
+---
+project:
+
+#### pro_img ####
+image: see-boerse.png
+---
+xml_img: see-boerse.png

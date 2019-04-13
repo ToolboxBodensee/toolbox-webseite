@@ -36,7 +36,11 @@
         %}{{ bag('translate', post.alt, 'blog_weiter') }}{% else        
         %}weiterlesen{% endif %}</a>
     <br/>
-    {% else %}{% if post.project %}
+    {% else %}
+    {% if post.video_is_embeded %}{% for blk in post.video_embeded.blocks %}
+       {{ blk }} <br/>
+    {% endfor %}{%
+    endif %} {% if post.project %}
       <div class="lightgallery" class="row alt">{%
         for blk in post.project.blocks %}
       {{ blk }}

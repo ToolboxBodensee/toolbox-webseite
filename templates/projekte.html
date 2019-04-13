@@ -6,7 +6,7 @@
   <div class="container">
     <header class="major">
         <h2>{{ this.title }}</h2>
-        {{ this.description }}
+        <p>{{ this.description }}</p>
     </header>
     <div class="box alt">
       <div class="row uniform">
@@ -18,10 +18,18 @@
       </div>
       <footer class="major">
 	    <ul class="actions special">
-            <li><a href="{{ '/projekte.xml'|url }}" class="button">{{ this.abo }}</a></li>
+            <li><a href="{{ '/feed_projekte.xml'|url }}" class="button">{{ this.abo }}</a></li>
         </ul>
       </footer>
    </div>
  </div>
 </section>
 {% endblock %}
+{% block expand_description %}
+    <meta name="description" content="{% 
+        if this.description %}{{ this.description }}{% else %}{%
+            if bag('translate', this.alt, 'description') %}{{ bag('translate', this.alt, 'description') }}{% 
+            else %}{{ bag('translate', 'de', 'description') }}{% endif %}
+        {% endif %}" />
+{% endblock %}
+

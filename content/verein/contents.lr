@@ -2,38 +2,28 @@ _model: page
 ---
 title: Verein
 ---
+slogan: auf über 420 m² basteln, coden, hacken und löten
+---
 content:
 
-Als Mitglied kannst du unsere Räumlichkeiten und Gerätschaften während der Öffnungszeiten so oft und lange benutzen, wie du möchtest. Außerdem darfst du kostenlos an Vorträgen teilnehmen. Ausgefüllte Anträge kannst du uns gerne per E-Mail oder Post zukommen lassen. Unsere Adressdaten findest du im Bereich [Kontakt](/kontakt) oder natürlich im [Impressum](/impressum). Weitere Dokumente findest du auch am Ende dieser Seite.
+ Einige Bereiche der Toolbox
+---------------------------------------
 
-<h2>Satzung & Ordnungen</h2>
-
-[Satzung](/verein/satzung.pdf)
-
-[Beitragsordnung](/verein/beitragsordnung.pdf)
-
-[Geschäftsordnung](/verein/geschaeftsordnung.pdf)
-
-[Kostenordnung](/verein/kostenordnung.pdf)
-
-[Datenschutzerklärung](/verein/datenschutzerklaerung/)
-
-<h2>Mitgliedsanträge</h2>
-
-[Mitgliedsantrag für Privatpersonen](/verein/mitgliedsantrag_web_privat.pdf)
-
-[Mitgliedsantrag für Unternehmen](/verein/mitgliedsantrag_web_unternehmen.pdf)
-
-[Mitgliedsantrag für Fördermitglieder / Sponsoren](/verein/mitgliedsantrag_web_foerdermitglied.pdf)
-
-[Mitgliedsantrag für private Fördermitglieder / passive Mitglieder](/verein/mitgliedsantrag_foerdermitglied_privat.pdf)
 
 <h2>Logo</h2>
 Im folgenden Abschnitt stellen wir die Logo-Datei der Toolbox Bodensee e.V. als Download zur Verfügung. Beim Herunterladen der Datei stimmst du den nachfolgenden rechtlichen Hinweisen zu.
 
 
-<h3>Rechtliche Hinweise</h3>
+<br/><br/>
 
+ Verein Toolbox Bodensee e.V.
+-------------------------------------------------------
+<div class="col-2"> 
+<a href="/verein/dokumente" class="button fit">Satzung, Ordnung und Benutzungsordnung</a> 
+<a href="/verein/presse/" class="button fit">Pressespiegel und Informationen</a>
+</div>
+<a href="/mitglied-werden/" class="button special fit">Mitglied werden</a>
+<a href="/verein/spenden/" class="button fit">Spenden</a>
 
 Das Herunterladen, Abspeichern, jegliche Verwendung und Nutzung sowie das Veröffentlichen der nachstehenden Logos und Namen ist nur unter Beachtung der folgenden Maßgaben zulässig:
 
@@ -73,3 +63,4 @@ Solltest du die Datei als EPS-, Vektor- oder Photoshopdatei benötigen, schau do
 Dort findest du in dem Repository [presskit](https://github.com/ToolboxBodensee/presskit) zusätzliche Informationen und weitere Dateiformate unseres Logos.
 ---
 slogan: Wir freuen uns, dass du dich für die Toolbox interessierst
+

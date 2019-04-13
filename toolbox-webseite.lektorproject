@@ -21,3 +21,6 @@ name = Englisch
 locale = en_US
 url_prefix = /en/
 
+
+[packages]
+lektor-webpack-support = 0.5

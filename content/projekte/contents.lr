@@ -2,12 +2,8 @@ _model: projekte
 ---
 title: Projekte
 ---
-content: YAY, CONTENT
----
-slogan: Was in der Toolbox alles gebastelt wird...
----
-description: An was wird in der Toolbox gerade gebastelt...
----
-link: /projekte.xml
+link: /feed_projekte.xml
 ---
 abo: Abonniere alle Projekte als XML Feed
+---
+description: Hier erfährst du, mit was sich die Menschen in der Toolbox alles beschäftigen. Was haben sie tolles gebaut oder an was wird gerade gelötet und geschraubt. Wenn du Lust hast mitzumachen, komm einfach vorbei!
