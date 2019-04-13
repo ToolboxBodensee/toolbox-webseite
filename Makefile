@@ -3,12 +3,21 @@ LEKTOR_SERVER_FLAGS=-h 127.0.0.1
 all: build
 
 install-packages:
+	if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagic python3-pip -y;\
+	elif hash pacman 2>/dev/null; then sudo pacman -Sy imagemagick python-pip --noconfirm;\
+	elif hash dnf 2>/dev/null; then sudo dnf install -y ImageMagick python3-pip;\
+	else echo -e "Please install Imagemagick, NodeJS, yarn and pip "; fi
+
+install: install-packages
+	pip install lektor --user
+	
+install-all-packages:
 	if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagick nodejs yarn python3-pip -y;\
 	elif hash pacman 2>/dev/null; then sudo pacman -Sy imagemagick nodejs yarn python-pip lib32-icu --noconfirm;\
 	elif hash dnf 2>/dev/null; then sudo dnf install -y ImageMagick nodejs yarn python3-pip;\
 	else echo -e "Please install Imagemagick, NodeJS, yarn and pip "; fi
 
-install: install-packages
+full-install: install-all-packages
 	pip install lektor --user
 
 install-virtual-env: install-packages
@@ -24,6 +33,9 @@ build:
 	lektor clean --yes
 	lektor build -f webpack
 
+server:
+	lektor server $(LEKTOR_SERVER_FLAGS)
+	
 server:
 	lektor server -f webpack $(LEKTOR_SERVER_FLAGS)
 
