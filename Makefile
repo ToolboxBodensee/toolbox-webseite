@@ -10,6 +10,7 @@ install-packages:
 
 install: install-packages
 	pip3 install lektor --user
+	echo "\nFor a complete install with all requirements leke nodejs, please make:\nmake full-install\n\n"
 	
 install-nodejs:
 	if hash apt 2>/dev/null; then sudo apt update; sudo apt install nodejs yarn -y;\
@@ -17,8 +18,9 @@ install-nodejs:
 	elif hash dnf 2>/dev/null; then sudo dnf install -y nodejs yarn;\
 	else echo -e "Please install Imagemagick, NodeJS, yarn and pip "; fi
 
-full-install: install-all-packages
+full-install: install-packages install-nodejs
 	pip3 install lektor --user
+	lektor clean --yes
 
 install-virtual-env:
 	if hash apt 2>/dev/null; then sudo apt update; sudo apt install python3-virtualenv -y;\
