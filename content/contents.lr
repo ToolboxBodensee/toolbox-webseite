@@ -21,7 +21,7 @@ about_url2: /vereinsheim/
 ---
 icons_header: Schau doch mal bei uns vorbei
 ---
-icons_text: Die Toolbox Bodensee e.V. ist ein gemeinnütziger Maker- und Hackspace in Markdorf am Bodensee, der versucht sowohl für Mitglieder als auch Gäste eine gemütliche Atmosphäre zu schaffen, in der sich Lebewesen mit ähnlichen Interessen treffen und austauschen können. Wir haben ein großes Vereinsheim in dem jeder willkommen ist sich in der Lounge oder im Bällebad zu entspannen, an Vorträgen oder Workshops teilzunehmen, mit den Werkzeugen in der Werkstatt zu arbeiten oder sich mit den anderen Lebewesen hier auszutauschen.
+icons_text: Die Toolbox Bodensee e.V. ist ein gemeinnütziger Maker- und Hackspace in Markdorf am Bodensee, der versucht sowohl für Mitglieder als auch Gäste eine gemütliche Atmosphäre zu schaffen, in der sich Menschen mit ähnlichen Interessen treffen und austauschen können. Wir haben ein großes Vereinsheim, in dem jeder willkommen ist, sich in der Lounge oder im Bällebad zu entspannen, an Vorträgen oder Workshops teilzunehmen, mit den Werkzeugen in der Werkstatt zu arbeiten oder sich mit den anderen Menschen auszutauschen.
 ---
 icons_1_1: fa-code
 ---
@@ -39,7 +39,7 @@ icons_3_1: fa-cogs
 ---
 icons_3_2: Basteln
 ---
-icons_3_3: Wir arbeiten an verschiedenen Hardwareprojekten, welche von mechanischen Spielereien, über selbstgelötete Elektronik, bis hin zu komplexeren Steuerungen gehen.
+icons_3_3: Wir arbeiten an verschiedenen Hardwareprojekten, welche von mechanischen Spielereien über selbstgelötete Elektronik bis hin zu komplexeren Steuerungen gehen.
 ---
 icons_4_1: fa-puzzle-piece
 ---
@@ -61,7 +61,7 @@ icons_6_1: fa-calendar-check
 ---
 icons_6_2: Veranstaltungen
 ---
-icons_6_3: Wir veranstalten immer wieder Veranstaltungen oder nehmen an diesen Teil, um uns besser mit Lebewesen anderer Regionen zu vernetzen.
+icons_6_3: Wir veranstalten immer wieder Veranstaltungen oder nehmen an diesen teil, um uns besser mit Personen anderer Regionen zu vernetzen.
 ---
 icons_6_url: /blog/
 ---
@@ -73,10 +73,10 @@ red_1: Wir freuen uns über neue Gesichter.
 ---
 red_2:
 
-Jeden Donnerstag Abend ist bei uns die Türe geöffnet und jeder ist willkommen, bei der Toolbox Bodensee e.V. vorbei zu kommen.<br/>
-Um 19:00 Uhr findet das "Wochenmeeting" statt. Hier treffen wir uns alle für meistens 15 Minuten im großen Besprechungsraum und es werden aktuelle Themen, Projekte und Fragen angesprochen. Außerdem haben neue Gesichter und Gäste die Möglichkeit sich vorzustellen oder Fragen in die große Runde zu stellen, wenn sie zum Beispiel Hilfe bei einem konkreten Problem benötigen und nicht wissen, an wen genau sie sich wenden müssen.
+Jeden Donnerstag Abend ist bei uns die Tür geöffnet und jeder ist willkommen, bei der Toolbox Bodensee e.V. vorbei zu kommen.<br/>
+Um 19:00 Uhr findet das "Wochenmeeting" statt. Hier treffen wir uns alle für etwa 20 Minuten im großen Besprechungsraum und es werden aktuelle Themen, Projekte und Fragen angesprochen. Außerdem haben neue Gesichter und Gäste die Möglichkeit sich vorzustellen oder Fragen in die große Runde zu stellen, wenn sie zum Beispiel Hilfe bei einem konkreten Problem benötigen und nicht wissen, an wen genau sie sich wenden müssen.
 ---
-red_3: Öfters findet anschließend an das Wochenmeeting auch ein kleiner Vortrag statt, bei dem man gerne zuhören darf und so seinen Wissenshorizont erweitern kann. Den restlichen Abend verteilen sich die Lebewesen über alle Räume der Toolbox Bodensee e.V.. Einige Leute basteln weiter an ihren Projekten, andere haben sich in der Lounge oder im Bällebad zurück gezogen und unterhalten sich, wieder andere sind vor der Toolbox am Grillen oder fliegen mit der Drohne durch die Toolbox. Der ein oder andere hat vielleicht auch die Bibliothek gefunden und ist dort in seine Lektüre vertieft. Und andere sitzen an ihren Computern und programmieren fleißig.
+red_3: Öfters findet anschließend noch ein kleiner Vortrag statt, bei dem man gerne zuhören darf und so seinen Wissenshorizont erweitern kann. Den restlichen Abend verteilen sich die Mitglieder und Gäste über alle Räume der Toolbox Bodensee e.V.. Einige Leute basteln weiter an ihren Projekten, andere haben sich in die Lounge oder ins Bällebad zurückgezogen und unterhalten sich, wieder andere sind vor der Toolbox am Grillen oder fliegen mit der Drohne durch die Toolbox. Der ein oder andere hat vielleicht auch die Bibliothek gefunden und ist dort in seine Lektüre vertieft. Und wieder andere sitzen an ihren Computern und programmieren fleißig.
 ---
 red_4: Wir würden uns freuen, wenn Du auch mal vorbei schaust!
 ---
@@ -92,23 +92,6 @@ hinweis_url: /kontakt/
 ---
 sections:
 
-#### startpage_section ####
-type: right
-----
-header: Tag der offenen Türe
-----
-text: Am 17. November 2018 lädt die Toolbox Bodensee zum 4. Tag der offenen Tür ein!
-----
-text2:
-
-Der Tag der offenen Tür ist für alle Interessierten eine ideale Gelegenheit, sich die Toolbox einmal näher anzuschauen. Zwischen 11:00 Uhr und 19:00 Uhr heißen wir unsere Gäste herzlich willkommen!
-Es wird auch dieses Jahr wieder ein vielfältiges Programm mit vielen interessanten Vorträgen und Workshops zu verschiedenen Themen geben. 
-----
-url_text: Tag der offenen Türe
-----
-url: /blog/tag-der-offenen-tuere-2018/
-----
-background: /blog/tag-der-offenen-tuere-2018/tag_der_offenen_tuere_2017_7.JPG
 #### startpage_section ####
 type: left
 ----
@@ -130,7 +113,7 @@ header: Workshops & Vorträge
 ----
 text: In der Toolbox finden regelmäßig Workshops und Vorträge zu vielen interessanten Themen statt.
 ----
-text2: Wir würden uns auch sehr freuen, wenn du etwas an ein interessiertes Publikum beitragen möchtest oder dein Wissen und deine Erfahrungen mit uns teilen möchtest. Die Teilnahme an den Vorträgen und Workshops ist sowohl für Mitglieder als auch Gäste natürlich kostenfrei.
+text2: Wir würden uns auch sehr freuen, wenn du etwas für ein interessiertes Publikum vortragen oder dein Wissen und deine Erfahrungen mit uns teilen möchtest. Die Teilnahme an den Vorträgen und Workshops ist sowohl für Mitglieder als auch Gäste natürlich kostenfrei.
 ----
 url_text: Termine
 ----
