@@ -36,7 +36,7 @@ build:
 server:
 	lektor server $(LEKTOR_SERVER_FLAGS)
 	
-server:
+server-all:
 	lektor server -f webpack $(LEKTOR_SERVER_FLAGS)
 
 ## Docker stuff
