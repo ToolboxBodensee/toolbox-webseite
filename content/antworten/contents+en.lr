@@ -1,6 +1,6 @@
 content:
 
-<b>Here are some of the most frequently asked questions that reach us regularly, with their answers:</b>
+<b>Here are some of the most frequently asked questions that reach us regularly and their answers:</b>
 
 <span class="image left"><img src="/antworten/42.svg" alt="42"></span>
 
@@ -26,14 +26,14 @@ Quelle: [Martinultima & Habitator terrae - Wikimedia Commons](https://commons.wi
 		<td>May I use your tools for my project?</td>
 	</tr>
 	<tr>
-		<td>Of course, you are welcome to use our tools. You only have to bring your own consumables, we'll provide the tools! Just come by on one of our open Thursdays and get your own picture.</td>
+		<td>Of course, you are welcome to use our tools. You only have to bring your own consumables, we'll provide the tools! Just come by on one of our open Thursdays and get an idea of what is possible.</td>
 	</tr>
 
 	<tr>
-		<td>Can you print me something with your 3D printer?</td>
+		<td>Can you print me something with your 3D printers?</td>
 	</tr>
 	<tr>
-		<td>We will be happy to help you understand how 3D printers work and how you can create the appropriate programs for creating templates and print files. Unfortunately, we don't see ourselves as a 3D printing service provider, so we can't or don't want to make things for you.</td>
+		<td>We will be happy to help you to understand how 3D printers work and how you can create the appropriate programs for creating templates and print files. Unfortunately, we don't see ourselves as a 3D printing service provider, so we can't or don't want to make things for you.</td>
 	</tr>
 
 	<tr>
@@ -47,14 +47,14 @@ Quelle: [Martinultima & Habitator terrae - Wikimedia Commons](https://commons.wi
 		<td>I am not a member. May I still come by?</td>
 	</tr>
 	<tr>
-		<td>Yes, of course. This is exactly what the open Thursdays are for. On Thursday there will certainly be someone who can explain to you how the toolbox works and can certainly give you a "tour" through the building. Just talk to us!</td>
+		<td>Yes, of course. This is exactly what the open Thursdays are for. On Thursdays there will certainly be someone who can explain to you how the Toolbox works and can give you a "tour" through the building. Just talk to us!</td>
 	</tr>
 
 	<tr>
-		<td>I don't like anything on this website. Can I change that?</td>
+		<td>There is something I don't like about this website. Can I change that?</td>
 	</tr>
 	<tr>
-		<td>Very much! The source code of this website is publicly available on <a href="https://github.com/ToolboxBodensee/toolbox-webseite">GitHub</a>. You'll also find a german guide describing what to do to make changes to the site.</td>
+		<td>You're very welcome to do so! The source code of this website is publicly available on <a href="https://github.com/ToolboxBodensee/toolbox-webseite">GitHub</a>. You'll also find a German guide describing what to do to make changes to the site.</td>
 	</tr>
 </table>
 </div>
