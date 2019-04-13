@@ -9,12 +9,10 @@ content:
  Einige Bereiche der Toolbox
 ---------------------------------------
 
-<div class="col-2"> 
-<a href="/vereinsheim/elektrowerkstatt/" class="button fit">Elektrowerkstatt</a> 
-<a href="/vereinsheim/grobwerkstatt/" class="button fit">Grobwerkstatt</a>
-<a href="/vereinsheim/lounge/" class="button fit">Lounge</a>
-<a href="https://tbbs.me/" class="button fit">Wiki</a>
-</div>
+
+<h2>Logo</h2>
+Im folgenden Abschnitt stellen wir die Logo-Datei der Toolbox Bodensee e.V. als Download zur Verfügung. Beim Herunterladen der Datei stimmst du den nachfolgenden rechtlichen Hinweisen zu.
+
 
 <br/><br/>
 
@@ -26,4 +24,43 @@ content:
 </div>
 <a href="/mitglied-werden/" class="button special fit">Mitglied werden</a>
 <a href="/verein/spenden/" class="button fit">Spenden</a>
+
+Das Herunterladen, Abspeichern, jegliche Verwendung und Nutzung sowie das Veröffentlichen der nachstehenden Logos und Namen ist nur unter Beachtung der folgenden Maßgaben zulässig:
+
+```
+Der Verwender nutzt das Logo/den Namen originalgetreu und ohne es 
+zu verfremden.
+
+
+Die Nutzung des Logos/Namens für eigene, nicht mit der Toolbox Bodensee e.V. 
+in Zusammenhang stehenden Zwecke – insbesondere
+zur Kennzeichnung von Waren und Dienstleistungen Dritter – ist untersagt.
+
+
+Die Nichtbeachtung vorstehender Maßgaben kann zivilrechtlich
+und – im Fall der Verletzung von Urheberrechten – auch
+strafrechtlich verfolgt werden.
+
+Wer diese Logos verwendet, hat mit seinen Mitmenschen
+einen freundlichen und respektvollen Umgang zu pflegen
+und sollte wüste Beschimpfungen und das Verbreiten von Hass
+stets unterlassen.
+```
+
+<h3>PNG - 300dpi</h3>
+<span class="image fit" style="background: white;"><img src="/verein/toolbox_300dpi.png" style="margin: 5%; width: 90%;"></span>
+<a href="/verein/toolbox_300dpi.png" download>PNG Speichern</a>
+
+<h3>JPG - 300dpi</h3>
+<span class="image fit" style="background: white;"><img src="/verein/toolbox_300dpi.jpg" style="margin: 5%; width: 90%;"></span>
+<a href="/verein/toolbox_300dpi.jpg" download>JPG Speichern</a>
+
+<h3>SVG - Vektorgrafik</h3>
+<span class="image fit" style="background: white;"><img src="/verein/toolbox.svg"></span>
+<a href="/verein/toolbox.svg" download>SVG Speichern</a>
+
+Solltest du die Datei als EPS-, Vektor- oder Photoshopdatei benötigen, schau doch mal auf unserer [GitHub](https://github.com/toolboxbodensee)-Seite vorbei.
+Dort findest du in dem Repository [presskit](https://github.com/ToolboxBodensee/presskit) zusätzliche Informationen und weitere Dateiformate unseres Logos.
+---
+slogan: Wir freuen uns, dass du dich für die Toolbox interessierst
 
