@@ -6,7 +6,7 @@ install-packages:
 	if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagic python3-pip -y;\
 	elif hash pacman 2>/dev/null; then sudo pacman -Sy imagemagick python-pip --noconfirm;\
 	elif hash dnf 2>/dev/null; then sudo dnf install -y ImageMagick python3-pip;\
-	else echo -e "Please install Imagemagick, NodeJS, yarn and python3-pip "; fi
+	else echo -e "Please install Imagemagick and python3-pip "; fi
 
 install: install-packages
 	pip3 install lektor --user
@@ -16,7 +16,7 @@ install-nodejs:
 	if hash apt 2>/dev/null; then sudo apt update; sudo apt install nodejs yarn -y;\
 	elif hash pacman 2>/dev/null; then sudo pacman -Sy nodejs yarn lib32-icu --noconfirm;\
 	elif hash dnf 2>/dev/null; then sudo dnf install -y nodejs yarn;\
-	else echo -e "Please install Imagemagick, NodeJS, yarn and python3-pip "; fi
+	else echo -e "Please install NodeJS, yarn and maybe lib32-icu"; fi
 
 full-install: install-packages install-nodejs
 	pip3 install lektor --user
