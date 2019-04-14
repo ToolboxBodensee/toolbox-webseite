@@ -10,7 +10,7 @@ install-packages:
 
 install: install-packages
 	pip3 install lektor --user
-	echo "\nFor a complete install with all requirements leke nodejs, please make:\nmake full-install\n\n"
+	echo "\nFor a complete install with all requirements like nodejs, please make:\nmake full-install\n\n"
 	
 install-nodejs:
 	if hash apt 2>/dev/null; then sudo apt update; sudo apt install nodejs yarn -y;\
