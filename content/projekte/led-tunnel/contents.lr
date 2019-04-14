@@ -25,7 +25,7 @@ body:
 
 In der Toolbox gibt es einige Menschen, die sich fürs FPV-Fliegen mit Drohnen begeistern.
 
-Und um noch mehr Spaß am Fliegen zu haben, haben Menschen einen LED-Tunnel gebaut, der Teil eines kleinen Dronen Parkour geworden ist.
+Und um noch mehr Spaß am Fliegen zu haben, haben Menschen einen LED-Tunnel gebaut, der Teil eines kleinen Drohnen-Parkour geworden ist.
 Dieser hängt über der Treppe im ersten Stockwerk.
 
  Neopixel
@@ -33,4 +33,4 @@ Dieser hängt über der Treppe im ersten Stockwerk.
 Die LEDs sind 5 Meter Neopixel. Diese werden von einem ESP2866 gesteuert. Der ESP hängt am WLAN mit auto ota firmware update.
 Der dazugehörige Code findet sich natürlich auf GitHub: [github.com/ToolboxBodensee/led_tunnel](https://github.com/ToolboxBodensee/led_tunnel.git)
 
-Wir würden uns sehr darüber freuen, wenn du auch mal mit deiner tiny class drohne vorbei kommst und den Tunnel ausprobierst!
+Wir würden uns sehr darüber freuen, wenn du auch mal mit deiner tiny class-Drohne vorbei kommst und den Tunnel ausprobierst!

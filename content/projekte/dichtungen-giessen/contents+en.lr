@@ -1,0 +1,28 @@
+author: haekelhexe
+---
+body:
+
+Perfectly sealed ‑ How 3D Printing Rescued Tea Time
+
+A little while ago, I bought a tea maker which has a very special way of functioning. You will brew the tea (preferably loose) in the tea maker body and place it on the tea cup. That way the 2 gaskets are taken apart and the tea runs into the cup. So far - so good. But thanks to my clumsiness I lost one of the gaskets in no time and so the tea maker was not usable anymore. As the manufacturer does not offer spare parts, it was hard to know what to do. Here, the Toolbox and its 3D printers come into action. My initial idea was to simply print the gasket. In the meantime, I bought a new tea maker and so I had a template for the gasket. So, the only thing to do would be design a model and print. Well thought ‑ badly implemented: Filament is not flexible enough to build a gasket. The discussion allured several smart brains and so we came to the idea to create a mold and cast it with silicone. Attention: only use food-safe silicone that also survives the hot water. So, while I went on the internet to research the silicone, the experts designed the casting mold. Several molds in different versions (filament, expansion rate) were printed a week later and were ready for casting. I used a medical syringe and a respective needle to fill the silicone into the mold which worked for approximately 30 minutes. It then turned out that the silicone becomes so viscous that it was nearly impossible to fill the molds. The result of the last gasket therefore was extremely bad. Another week later, I could take the silicone out of the molds ‑ which they survived intact. In the end, I had 3 working gaskets and now can brew tea again. :)
+---
+icon: fas fa-syringe
+---
+project:
+
+#### pro_img ####
+image: spritze.jpg
+#### pro_img ####
+image: dichtungen.jpg
+#### pro_img ####
+image: liquid.jpg
+#### pro_img ####
+image: bowl.jpg
+---
+pub_date: 2018-06-21
+---
+teaser: Perfectly Sealed ‑ How 3D Printing Rescued Tea Time
+---
+title: Casting Gaskets
+---
+xml_img: dichtungen.jpg

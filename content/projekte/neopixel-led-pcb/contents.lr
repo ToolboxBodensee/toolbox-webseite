@@ -1,4 +1,4 @@
-title: LED Steuerung
+title: LED-Steuerung
 ---
 icon: fas fa-lightbulb
 ---
@@ -26,16 +26,16 @@ teaser: ESP8266 Shield um 12V-LED-Streifen anzusteuern
 body:
 
 ## Hardware
-Da vermeintlich einfache Aufgaben, wie das Ansteuern eines WS2811 ("Neopixel") LED Streifens oft in Kabelchaos ausarten, habe ich eine Platine in form eines Shields für den [Wemos D1 mini](https://wiki.wemos.cc/products:d1:d1_mini) entwickelt, die das Problem lösen soll.
-Der D1 mini ist ein Breakout-Board für den ESP8266 ([website](https://www.espressif.com/en/products/hardware/esp8266ex/overview), [wiki](https://en.wikipedia.org/wiki/ESP8266)) Microcontroller, der WiFi mitbringt und für ~2€ aus China erhältlich ist.
-Leider arbeitet der ESP8266 mit einem Logiclevel von ```3.3V```, die üblichen LED Streifen erwarten aber ein ```5V``` Eingangssignal.
-Das wurde mit einem Levelshifter (inspiriert durch [diesen](https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide#board-overview) Artikel von Sparkfun) gelöst, der das ```3.3V``` Signal in ein ```5V``` Signal umwandelt.
-Da die meisten günstigen LED Streifen mit ```12V``` versorgt werden müssen, wurde dem Board ein Buck-Regulator spendiert, der den D1 mini mit ```5V``` versorgt, selbst bei einer Eingangsspannung von bis zu ```17V```. Das verhindert, dass man 2 Netzteile, 2 Steckdosen, und zusätzliches Kabelchaos benötigt.
+Da vermeintlich einfache Aufgaben, wie das Ansteuern eines WS2811 ("Neopixel") LED-Streifens oft in Kabelchaos ausarten, habe ich eine Platine in Form eines Shields für den [Wemos D1 mini](https://wiki.wemos.cc/products:d1:d1_mini) entwickelt, die das Problem lösen soll.
+Der D1 mini ist ein Breakout-Board für den ESP8266-([website](https://www.espressif.com/en/products/hardware/esp8266ex/overview), [wiki](https://en.wikipedia.org/wiki/ESP8266)) Microcontroller, der WiFi mitbringt und für ~2€ aus China erhältlich ist.
+Leider arbeitet der ESP8266 mit einem Logiclevel von ```3.3V```, die üblichen LED-Streifen erwarten aber ein ```5V```-Eingangssignal.
+Das wurde mit einem Levelshifter (inspiriert durch [diesen](https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide#board-overview) Artikel von Sparkfun) gelöst, der das ```3.3V```-Signal in ein ```5V```-Signal umwandelt.
+Da die meisten günstigen LED Streifen mit ```12V``` versorgt werden müssen, wurde dem Board ein Buck-Regulator spendiert, der den D1 mini mit ```5V``` versorgt, selbst bei einer Eingangsspannung von bis zu ```17V```. Das verhindert, dass man 2 Netzteile, 2 Steckdosen und zusätzliches Kabelchaos benötigt.
 Als Spannungsregler verwende ich den [LMZ21700](http://www.ti.com/product/LMZ21700) von TI. Der ist zwar ziemlich klein und aufgrund des "µSIP" Package nicht mit dem Lötkolben lötbar, aber das war dann die perfekte Gelegenheit den Pizzaofen mit [Reflow Controller](https://de.beta-layout.com/elektronik-shop/order_product_details.html?p=242) (Version 1, findet man auf der Homepage aber nicht mehr) mal sinnvoll zu benutzen.
 
 Für die Anschlüsse (LEDs, Power) habe ich Schraubterminals verwendet, denn den passenden Stecker hat man sowieso nie zur Hand.
 
-Da noch Platz auf dem Board war, und das sinnvoll wirkte, habe ich noch einen Taster und 2 LEDs hinzugefügt.
+Da noch Platz auf dem Board war und das sinnvoll wirkte, habe ich noch einen Taster und 2 LEDs hinzugefügt.
 
 ## Software
 In meiner Anwendung werden die LEDs alle über das Netzwerk angesteuert, der ESP8266 ist dabei nur "dummer client", der über TCP Daten empfängt, auf welche Farben die LEDs eingestellt werden sollen.

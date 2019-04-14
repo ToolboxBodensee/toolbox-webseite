@@ -1,25 +1,24 @@
-title: Toolbox Webseite
+title: Toolbox-Webseite
 ---
 author: L3D
 ---
 body:
 
-Die Toolbox Webseite wird mit dem Static Site Generator [Lektor](https://getlektor.com) erstellt und über [GitHub](https://github.com/ToolboxBodensee/toolbox-webseite/) verwaltet. Das hat die vorherige Wordpress-Webseite abgelöst, die zuvor das Aushängeschild ins Internet war und eben so modern und gut gepflelegt aussah, wie das halb-fertig designte Wordpress Installationen, für die sich keiner richtig verantwortlich gefühlt hat, eben so sind.
+Die Toolbox-Webseite wird mit dem Static Site Generator [Lektor](https://getlektor.com) erstellt und über [GitHub](https://github.com/ToolboxBodensee/toolbox-webseite/) verwaltet. Damit wurde die vorherige Wordpress-Webseite abgelöst, die zuvor das Aushängeschild ins Internet war und ebenso modern und gut gepflegt aussah, wie es halbfertig designte Wordpress-Installationen, für die sich keiner richtig verantwortlich gefühlt hat, eben so sind.
 
 
- Etwas Beitragen
+ Etwas beitragen
 --------------------------
-Auf die jetzige Seite der Toolbox kann jeder relativ einfach etwas beitragen.  Eine relativ detailierte Schritt-für-Schritt Anleitung ist dafür auf [github.com/ToolboxBodensee/toolbox-webseite](https://github.com/ToolboxBodensee/toolbox-webseite/blob/master/README.md#zur-neuen-webseite-beitragen) aufgeschrieben. Wer bei Git oder Lektor Unterstützung braucht, bekommt das am Besten in der Toolbox, etwa Donnerstags nach dem Wochenmeeting.
+Zur jetzigen Seite der Toolbox kann jeder relativ einfach etwas beitragen.  Eine relativ detaillierte Schritt-für-Schritt Anleitung dafür ist  auf [github.com/ToolboxBodensee/toolbox-webseite](https://github.com/ToolboxBodensee/toolbox-webseite/blob/master/README.md#zur-neuen-webseite-beitragen) verfügbar. Wer bei Git oder Lektor Unterstützung braucht, bekommt das am besten in der Toolbox, etwa Donnerstags nach dem Wochenmeeting.
 
 
  Lektor
 -------------
-Lektor ist ein Static Site Generator, der einem viele Möglichkeiten gibt und auch für unerfahrene Anwender relativ einfach zu bedienen ist. Sehr nützlich ist hier der Befehl ``lektor server``, der einen lokalen Webserver startet und die Webseite nicht nur anzeigt sondern auch über ein Webinterface ändern kann.
+Lektor ist ein Static Site Generator, der einem viele Möglichkeiten gibt und auch für unerfahrene Anwender relativ einfach zu bedienen ist. Sehr nützlich ist hier der Befehl ``lektor server``, der einen lokalen Webserver startet und die Webseite nicht nur anzeigt sondern es auch ermöglicht, sie über ein Webinterface zu ändern.
+Mittlerweile haben wir einige Spielereien auf der Seite, die über die Basisfunktionen von Lektor hinaus gehen.
+Lektor ermöglicht es, jede Seite zu bearbeiten. Das Aussehen der Seiten entsteht durch Jinja2-Templates. Hier kann man relativ umfangreiche Schleifen und Bedingungen definieren, die dann von Lektor ausgeführt werden und als Webseite gerendert werden.
 
-Mittlerweile haben wir einige Spielereien auf der Seite, die über die Basis-Funktionen von Lektor hinaus gehen.
-Lektor ermöglicht es, jede Seite zu bearbeiten. Das Aussehen der Seiten entsteht durch Jinja2-Templates. Hier kann man relativ umfangreiche Schleifen und Bedingungen definieren, die dann von lektor ausgeführt werden und als Webseite gerendert werden.
-
-Da die Toolbox auch versucht, ein internationales Publikum anzusprechen und nicht durch eine Sprachbarriere den Zugang zu verweigern, gibt es auch eine Übersetzung der Seite ins Englische. Das hat anfangs kleine Probleme mitgebracht, so konnte zum Beispiel das Plugin, das für den RSS Feed zuständig war, die Seite nicht mehr rendern. Zum Glück kann Lektor alle möglichen Dateien aus Templates erstellen und nicht nur HTML Seiten. Das Template für den RSS Feed des Blog sieht zum Beispiel so aus: [templates/feed_blog.xml](https://github.com/ToolboxBodensee/toolbox-webseite/blob/master/templates/feed_blog.xml).
+Da die Toolbox auch versucht, ein internationales Publikum anzusprechen und nicht durch eine Sprachbarriere den Zugang zu verweigern, gibt es auch eine Übersetzung der Seite ins Englische. Das hat anfangs kleine Probleme mitgebracht. So konnte zum Beispiel das Plug-in, das für den RSS-Feed zuständig war, die Seite nicht mehr rendern. Zum Glück kann Lektor alle möglichen Dateien aus Templates erstellen und nicht nur HTML-Seiten. Das Template für den RSS-Feed des Blogs sieht zum Beispiel so aus: [templates/feed_blog.xml](https://github.com/ToolboxBodensee/toolbox-webseite/blob/master/templates/feed_blog.xml).
 
 Auch gibt es seit der Übersetzung einige Menüelemente, die mehrsprachig vorhanden sein sollen. Dies wird über die [databags](https://github.com/ToolboxBodensee/toolbox-webseite/blob/master/databags/translate.ini) gelöst.
 
@@ -35,7 +34,7 @@ project:
 ---
 pub_date: 2018-08-30
 ---
-teaser: Die Toolbox Webseite wird mit dem Static Site Generator Lektor erstellt und über GitHub verwaltet
+teaser: Die Toolbox-Webseite wird mit dem Static Site Generator Lektor erstellt und über GitHub verwaltet
 ---
 video_embeded:
 
