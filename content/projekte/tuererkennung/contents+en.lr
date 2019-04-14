@@ -1,0 +1,38 @@
+author: L3D and Jonas
+---
+body:
+
+For a better connection of our entrance door into the [Space-API](/projects/spaceapi/) Jonas and L3D have installed a door switch and an ESP in the entrance door.
+
+This should detect if the toolbox door is unlocked or locked.
+And whenever it detects a change, it passes it on to the SpaceAPI.
+
+The appropriate code for the door is of course available on Github:
+
+<a href="https://github.com/ToolboxBodensee/DoorSwitch.git" class="button special primary">Door Switch Code</a>
+
+That's what it looks like. From the creation to the finished prototype.
+
+---
+icon: fas fa-dungeon
+---
+project:
+
+#### pro_img ####
+image: raw_door.jpg
+#### pro_img ####
+image: werkzeug.jpg
+#### pro_img ####
+image: inspection.jpg
+#### pro_img ####
+image: ergebnis.jpg
+#### pro_img ####
+image: ergebnis.jpeg
+---
+pub_date: 2019-04-13
+---
+teaser: For a better connection of our entrance door into the Space-API we installed a door switch.
+---
+title: Door Switch
+---
+xml_img: ergebnis.jpg
