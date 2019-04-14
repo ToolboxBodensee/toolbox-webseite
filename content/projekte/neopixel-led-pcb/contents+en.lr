@@ -1,0 +1,52 @@
+author: Jonas Otto
+---
+body:
+
+## Hardware
+As seemingly simple tasks such as the control of a WS2811 ("Neopixel") LED stripe often end in chaotic cables, I develeoped a Shield circuit board for the [Wemos D1 mini](https://wiki.wemos.cc/products:d1:d1_mini) in order to solve that problem.
+The D1 mini is a Breakout Board for the ESP8266 ([website](https://www.espressif.com/en/products/hardware/esp8266ex/overview), [wiki](https://en.wikipedia.org/wiki/ESP8266)) microcontroller that inlcudes Wi-Fi and can be bought from China for ~2€.
+Unfortunately, the ESP8266 works with a ```3.3V``` logic level, however, the usual LED stripes require a ```5V``` input signal.
+It was solved by a level shifter (inspired by [this](https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide#board-overview) article by Sparkfun) that converts the ```3.3V``` signal into a  ```5V``` signal.
+As most cheap LED striped require a ```12V``` supply, the board was given a Buck regulator that supplies ```5V``` to the D1 mini, even at an input voltage of up to  ```17V```. This makes using 2 power supplies, 2 power sockets and additional cable chaos obsolete. 
+I used the [LMZ21700](http://www.ti.com/product/LMZ21700) by  TI as voltage regulator. It might be very small and can't be solded with the soldering iron due to its  "µSIP" package but that gave me the perfect opprtunity to use the pizza oven with [Reflow Controller](https://de.beta-layout.com/elektronik-shop/order_product_details.html?p=242) (version 1, however, this can't be found on the website anymore) in a practical way.
+
+I used screw terminals for the connections (LEDs, power), as the suitable plug is certainly never available. 
+
+As there was still space left on the board and as I regarded it as useful, I also added a push-button and 2 LEDs. 
+
+## Software
+In my application, the LEDs are controlled via the network; the ESP8266 does only function as "dummer client" that receives data via TCP  which directly set the colors of the LEDs.
+
+## Repos/Code/Design
+
+[Circuit plan, layout](https://github.com/ottojo/wifiblink)
+
+[Blnk library](https://github.com/ottojo/blnk)
+
+[Blnk Ccient (ESP8266 Software)](https://github.com/ottojo/blnkClient)
+
+[Rainbow demo](https://github.com/ottojo/blnkRainbow)
+
+---
+icon: fas fa-lightbulb
+---
+project:
+
+#### pro_img ####
+image: IMG_20181013_174354.jpg
+#### pro_img ####
+image: IMG_20181013_174430.jpg
+#### pro_img ####
+image: IMG_20181013_174434.jpg
+#### pro_img ####
+image: IMG_20181020_152404.jpg
+#### pro_img ####
+image: IMG_20181020_152501.jpg
+#### pro_img ####
+image: IMG_20181020_152529.jpg
+---
+pub_date: 2018-09-29
+---
+teaser: ESP8266 Shield to control 12V LED stripes
+---
+title: LED Control

@@ -4,12 +4,12 @@ author: L3D und Jonas
 ---
 body:
 
-Für eine bessere Anbindung unserer Eingangstüre in die [Space-API](/projekte/spaceapi/) haben Jonas und L3D einen Türswitch und einen ESP in die Eingangstüre eingebaut.
+Für eine bessere Anbindung unserer Eingangstür in die [Space-API](/projekte/spaceapi/) haben Jonas und L3D einen Türswitch und einen ESP in die Eingangstür eingebaut.
 
-Dieser sollte erkennen ob die Toolbox-Türe aufgeschlossen oder abgeschlossen ist.
-Und immer wenn er eine Änderung feststellt, dann gibt er das an die SpaceAPI weier.
+Dieser sollte erkennen, ob die Toolbox-Tür aufgeschlossen oder abgeschlossen ist.
+Und immer wenn er eine Änderung feststellt, dann gibt er das an die Space-API weier.
 
-Den passenden Code zur Türe gibt es natürlich auf Github:
+Den passenden Code zur Tür gibt es natürlich auf Github:
 
 <a href="https://github.com/ToolboxBodensee/DoorSwitch.git" class="button special primary">Door Switch Code</a>
 
@@ -19,7 +19,7 @@ icon: fas fa-dungeon
 ---
 pub_date: 2019-04-13
 ---
-teaser: Für eine bessere Anbindung unserer Eingangstüre in die Space-API haben wir dort einen Türswitch eingebaut.
+teaser: Für eine bessere Anbindung unserer Eingangstür in die Space-API haben wir dort einen Türswitch eingebaut.
 ---
 project:
 

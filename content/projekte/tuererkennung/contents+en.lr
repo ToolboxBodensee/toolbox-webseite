@@ -2,10 +2,10 @@ author: L3D and Jonas
 ---
 body:
 
-For a better connection of our entrance door into the [Space-API](/projects/spaceapi/) Jonas and L3D have installed a door switch and an ESP in the entrance door.
+For a better connection of our entrance door to the [Space-API](/projects/spaceapi/), Jonas and L3D have installed a door switch and an ESP at the entrance door.
 
-This should detect if the toolbox door is unlocked or locked.
-And whenever it detects a change, it passes it on to the SpaceAPI.
+This should detect if the Toolbox door is unlocked or locked.
+And whenever it detects a change, it passes it on to the Space-API.
 
 The appropriate code for the door is of course available on Github:
 
@@ -31,7 +31,7 @@ image: ergebnis.jpeg
 ---
 pub_date: 2019-04-13
 ---
-teaser: For a better connection of our entrance door into the Space-API we installed a door switch.
+teaser: For a better connection of our entrance door to the Space-API, we installed a door switch.
 ---
 title: Door Switch
 ---
