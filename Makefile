@@ -3,28 +3,32 @@ LEKTOR_SERVER_FLAGS=-h 127.0.0.1
 all: build
 
 install-packages:
-	if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagick nodejs yarn python3-pip -y;\
-	elif hash pacman 2>/dev/null; then sudo pacman -Sy imagemagick nodejs yarn python-pip lib32-icu --noconfirm;\
-	elif hash dnf 2>/dev/null; then sudo dnf install -y ImageMagick nodejs yarn python3-pip;\
-	else echo -e "Please install Imagemagick, NodeJS, yarn and pip "; fi
+	if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagic python3-pip -y;\
+	elif hash pacman 2>/dev/null; then sudo pacman -Sy imagemagick python-pip --noconfirm;\
+	elif hash dnf 2>/dev/null; then sudo dnf install -y ImageMagick python3-pip;\
+	else echo -e "Please install Imagemagick and python3-pip "; fi
 
 install: install-packages
-	pip install lektor --user
+	pip3 install lektor --user
+	echo "\nFor a complete install with all requirements like nodejs, please make:\nmake full-install\n\n"
+	
+install-nodejs:
+	if hash apt 2>/dev/null; then sudo apt update; sudo apt install nodejs yarn -y;\
+	elif hash pacman 2>/dev/null; then sudo pacman -Sy nodejs yarn lib32-icu --noconfirm;\
+	elif hash dnf 2>/dev/null; then sudo dnf install -y nodejs yarn;\
+	else echo -e "Please install NodeJS, yarn and maybe lib32-icu"; fi
 
-install-virtual-env: install-packages
-	if hash apt 2>/dev/null; then sudo apt update; sudo apt install python3-virtualenv -y;\
-	elif hash pacman 2>/dev/null; then sudo pacman -Sy python-virtualenv --noconfirm;\
-	elif hash dnf 2>/dev/null; then sudo dnf install -y python3-virtualenv;\
-	else echo -e "Please install python-virtualenv "; fi
-	virtualenv venv
-	. venv/bin/activate
-	pip install lektor
+full-install: install-packages install-nodejs
+	pip3 install lektor --user
 
 build:
 	lektor clean --yes
 	lektor build -f webpack
 
 server:
+	lektor server $(LEKTOR_SERVER_FLAGS)
+	
+server-all:
 	lektor server -f webpack $(LEKTOR_SERVER_FLAGS)
 
 ## Docker stuff
