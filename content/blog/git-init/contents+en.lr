@@ -1,0 +1,32 @@
+author: L3D
+---
+beitrag:
+
+This lecture is aimed at all people who want to get to know git or find it interesting to expand their horizons.
+
+The primary goal is to teach the basics of git and to clone the git repository of the Toolbox website, so you can download it and understand what you are doing.
+
+We will speak about commands like ``git clone``, ``git commit`` and ``git push``. But we will also explain what a fork is and how you can contribute on other git projects with a pull request.
+
+This lecture will be live streamed to [twitch](https://twitch.tv/toolboxlive) and a few days later the recording will be available.
+
+*(Image: Jason Long - http://git-scm.com/downloads/logos)*
+---
+body: Jonas and L3D will give an introduction to git next Thursday (2019-04-19).
+---
+project:
+
+#### pro_img ####
+image: git-logo.svg
+---
+pub_date: 2019-04-14
+---
+shorttitle: How 2 git
+---
+title: Introduction to git
+---
+twitter_handle: L3D
+---
+xml: Jonas and L3D will give an introduction to git next Thursday (2019-04-19).
+---
+xml_img: git-logo.svg
