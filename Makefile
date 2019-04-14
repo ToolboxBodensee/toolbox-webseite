@@ -36,10 +36,10 @@ build:
 	lektor build -f webpack
 
 server:
-	. venv/bin/activate
 	lektor server $(LEKTOR_SERVER_FLAGS)
 
 server-in-virtueller-umgebung:
+	. venv/bin/activate
 	lektor server $(LEKTOR_SERVER_FLAGS)
 	
 server-all:
