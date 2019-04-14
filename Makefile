@@ -21,24 +21,11 @@ install-nodejs:
 full-install: install-packages install-nodejs
 	pip3 install lektor --user
 
-virtual-env-install: install-packages
-	if hash apt 2>/dev/null; then sudo apt update; sudo apt install python3-virtualenv -y;\
-	elif hash pacman 2>/dev/null; then sudo pacman -Sy python-virtualenv --noconfirm;\
-	elif hash dnf 2>/dev/null; then sudo dnf install -y python3-virtualenv;\
-	else echo -e "Please install python-virtualenv "; fi
-	virtualenv venv
-	. venv/bin/activate
-	pip3 install lektor
-
 build:
 	lektor clean --yes
 	lektor build -f webpack
 
 server:
-	lektor server $(LEKTOR_SERVER_FLAGS)
-
-virtual-env-server:
-	. venv/bin/activate
 	lektor server $(LEKTOR_SERVER_FLAGS)
 	
 server-all:
