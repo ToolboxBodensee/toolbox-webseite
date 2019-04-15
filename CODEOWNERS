@@ -1,2 +1,9 @@
 # Code Owners of Toolbox Website
-* @DO1JLR @maxbachmann @ottojo @205er @bodensee @DEvil0000 @fbsb @oldwired @phschoen @blaues0cke @rtt-mmk @tschanne @drwuro
+# Interested in all parts of the Toolbox website:
+* @DO1JLR @maxbachmann @ottojo @DEvil0000 @fbsb @blaues0cke @rtt-mmk 
+# interested in the content of the website
+/content/ @haekelhexe @tschanne @drwuro @205er @bodensee @oldwired @phschoen
+# interested in game developement content
+/content/projekte/spieleentwicklung/ @maluramichael
+# Need to contribute some website content bevor becoming a CODEOWNER
+# @davidblumer
