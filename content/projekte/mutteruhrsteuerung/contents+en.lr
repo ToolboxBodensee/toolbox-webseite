@@ -1,0 +1,45 @@
+author: Björn
+---
+body:
+
+A slave clock is a clock that cannot run on its own but is controlled by a so-called [master clock](https://en.wikipedia.org/wiki/Master_clock). These clocks were formerly installed in public buildings, schools or at train stations and can still be found there nowadays. They are of extremely simple setup, only contain one coil and very simple mechanics and they all run synchronously thanks to the centralized control.
+
+Nevertheless, they still need a master clock. Each minute (or in other defined intervals), it generates a signal so that all connected clocks are switched. In many cases, the existing wiring is outdated and as soon as one clock misses one signal or gets stuck, it has to be set back to the correct time manually. A feedback channel that indicates which clock shows which time does not exist.
+
+This is the reason why a lot of the old clocks were replaced by modern radio-controlled clocks that require little maintenance effort.
+The clock of this project is from the Kressbronn indoor swimming pool, however, there is no functioning master clock available for the control operation. It has a timeless, simple design (but no second hand) and is big enough to make it possible to read the time even from the distance. The only thing possible is to set it one minute forward. In order to do so, the polarity of the existing supply voltage (12V, 24V or 48V DC respectively) is revered.
+
+The control created consists of an Arduino Nano, a display, a [DCF77](https://en.wikipedia.org/wiki/DCF77) module for receiving the time signal from Mainflingen, an H-bridge for reversing the polarity of the supply voltage, two switches and a pushbutton. All these components were put into a self-printed housing.
+If the Arduino received the correct time signal, it is shown on the display and the internal clock of the microcontroller is be newly set. This creates the time signal every minute.
+
+The time shown by the hands can be set via both two-pole switches (+/- one minute/hour respectively). If the time set does not comply with the current system time, the minute signal is not created anymore. Only when the clocks shows the correct time again, it starts running again. However, if you press and hold the button, the clock is set forward to the current time. This happens by sending a signal to the clock every second whereby the clock is set one minute forward. This can also be stopped again by pressing and holding the button again.
+
+If a correct time signal was received and the clock shows the current time, the background lighting of the display is switched off. If the button is pressed shortly, the time is set via the button or if no time signal was received for more than 10 minutes, the background lighting turns on again.
+The frequency of the DCF77 signal is shown by the soldered-on LED of the Arduino. The signal changes its frequency either after 100/900ms or after 200/800ms whereby one bit of information is transferred. Therefore, 60 bits of information per minute are available which encode the current time, date and other information.
+
+That way, you can easily see with the naked eye if the signal was received correctly: Although the LED is not directly visible, you can see it through the slightly transparent housing in the darkness. If you concentrate enough, it is also possible to distinguish between the 100ms/200ms cycles. However, there are interferences when getting closer to other of electrical devices; the LED then shows an irregular flickering and the microcontroller cannot decode the time signal properly anymore. This still doesn't affect the clock as it runs on with the minute intervals of the micrcontroller's internal clock.
+
+The control was handed over to the lifeguard of the [Kressbronn indoor swimming pool](https://www.kressbronn.de/de/en/leisure-time-and-culture/baths.html) on September 28, 2018.
+
+Contact: mutteruhr at paranda punkt de
+---
+icon: fas fa-clock
+---
+project:
+
+#### pro_img ####
+image: dsc02706.jpg
+#### pro_img ####
+image: dsc02707.jpg
+#### pro_img ####
+image: dsc02714.jpg
+#### pro_img ####
+image: dsc02721.jpg
+#### pro_img ####
+image: dsc02756.jpg
+---
+pub_date: 2018-07-01
+---
+teaser: In order to upgrade an existing slave clock of the Kressbronn indoor swimming pool to a radio-controlled clock, a small control unit had to be created...
+---
+title: Master Clock Control
