@@ -2,7 +2,7 @@ title: Einführung in Git
 ---
 author: L3D
 ---
-body: Jonas und L3D geben am kommenden Donnerstag (18.4.19) eine einführung in git.
+body: Jonas und L3D geben am kommenden Donnerstag (18.4.19) eine Einführung in git.
 ---
 pub_date: 2019-04-14
 ---
@@ -21,12 +21,12 @@ xml_img: git-logo.svg
 ---
 beitrag:
 
-Dieser Vortrag richtet sich an alle Menschen, die git kennen lernen wollen oder es interessant finden, ihren Horrizont zu erweitern.
+Dieser Vortrag richtet sich an alle Menschen, die git kennenlernen wollen oder es interessant finden, ihren Horizont zu erweitern.
 
-Ziel ist es primär, die Grundlagen von Git zu vermitteln und so zum Beispiel das git Repository der Toolbox Webseite clonen, also runterladen zu können und dabei zu verstehen, was man macht.
+Ziel ist es primär, die Grundlagen von Git zu vermitteln und so zum Beispiel das git-Repository der Toolbox-Webseite clonen, also runterladen zu können und dabei zu verstehen, was man macht.
 
-Wir werden die gängigsten Befehle wie ``git clone``, ``git commit`` und ``git push`` ansprechen. Außerdem werden wir erklären wie man einen Fork oder einen Pull Request erstellen kann und wofür das gut sein soll.
+Wir werden die gängigsten Befehle wie ``git clone``, ``git commit`` und ``git push`` ansprechen und erklären, wie man einen Fork oder einen Pull Request erstellen kann und wofür das gut sein soll.
 
-Der Vortrag wird Live auf [twitch](https://twitch.tv/toolboxlive) gestreamt. Und wir planen auch die Aufzeichnung ein paar Tage später zu veröffentlichen!
+Der Vortrag wird live auf [twitch](https://twitch.tv/toolboxlive) gestreamt. Wie planen auch die Aufzeichnung ein paar Tage später zu veröffentlichen!
 
 *(Bild: Jason Long - http://git-scm.com/downloads/logos)*
