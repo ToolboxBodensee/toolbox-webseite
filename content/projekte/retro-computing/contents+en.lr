@@ -1,0 +1,40 @@
+author: Byt3, ZeHa
+---
+body:
+
+## Retrocomputing - why is it needed?
+Who doesn't know the feeling of looking at old gaming consoles or home computer classics and walking down memory lane - thinking of your first own computer. 
+In the Toolbox Bodensee, we would like to give interested people the chance to not only experience the charme of the old home computers from the 80s and 90s but also to have a closer look on them. For this reason, we collect old hardware and software and work (very intensely) on the different systems and their functionality. There are many members who conduct rebuilds or repairs of hardware so that computers, that are partly more than 30 years old, can  still be kept in a working condition. Within the scope of the "Spieleentwicklung Bodensee" project (game development Bodensee) we also create new software for the old systems (e.g. [drwuro.com](http://www.drwuro.com/)).
+
+## Our hardware
+### Home computers
+At the moment, we own a Commodore C64 as well as a Commodore Amiga 2000 in our club house - which are both fully functioning. There is also an extensive software collection available for both home computers. We also have different memory drives (floppy disk, datasette, SD card) which are very useful for data backups on modern memory devices. Furthermore, an Amiga 500 is currently being setup.
+
+### Gaming consoles
+Especially consoles from the 90s and 2000s can be found and tried out in the Toolbox. We do also have a Raspberry Pi with [Recalbox](https://www.recalbox.com/), the multi-emulation platform, that enables you to play with almost all consoles and arcade systems.
+
+### Other hardware
+Besides computers and gaming console, we also have a small collection of (partly very) old mobile phones.
+
+## Donations!?
+We are always looking for old computer systems that are still missing in our collection. So, if you have a home computer and/or accessories in your storage and do not use them anymore, feel free to "donate" them - we are looking forward to that. Also software - preferably on old memory drives - or original manuals and literature are always welcome. 
+
+---
+icon: fas fa-keyboard
+---
+project:
+
+#### pro_img ####
+image: amiga2000.jpg
+#### pro_img ####
+image: joystick.jpg
+#### pro_img ####
+image: c64.jpg
+#### pro_img ####
+image: C64_at_night.jpg
+---
+pub_date: 2018-01-01
+---
+teaser: We collect old hardware (and software) and try to make them work again in order to make them available to people who are interested in Retro Computing.
+---
+title: Retro Computing
