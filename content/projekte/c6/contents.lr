@@ -4,7 +4,7 @@ icon: fas fa-server
 ---
 pub_date: 2017-10-20
 ---
-teaser: Das C3 Cluster Computing Council ist eine Gruppe von Cluster und High Performance Computing Interessierten. Wir möchten ungenutzte Rechenleistung für jedes interessierte Lebewesen so einfach wie möglich zur Verfügung stellen.
+teaser: Das C3 Cluster Computing Council ist eine Gruppe von Cluster und High Performance Computing-Interessierten. Wir möchten ungenutzte Rechenleistung für jedes interessierte Lebewesen so einfach wie möglich zur Verfügung stellen.
 ---
 title: C6
 ---
@@ -13,10 +13,10 @@ body:
 Mit viel Rechenpower in einem Cluster coole Projekte realisieren zu können, findet jeder Nerd toll. Doch meistens gibt es in dem einen Teil der Hackspaces viel ungenutzte Rechenleistung, während woanders Chaoten tolle Idee haben, aber nur einen Backofen mit der Rechenleistung eines Raspberry Pi, der nicht genügend Leistung hat.
 Deswegen gibt es das C6. Das C6 möchte diese Rechenleistung für jedes interessierte Lebewesen so einfach wie möglich zur Verfügung stellen.
 
-Reicht es für einen oder zwei interessierte Menschen, einfach bei einem Space nachzufragen, ob man "mal" einen SSH-Zugang auf einer tollen Kiste bekommt, wird es spätestens nach dem Zehnten für die Besitzer der Kiste aufwendig. Braucht der interessierte Mensch jedoch mehr als eine Kiste, muss er sich mit der Verteilung und Verwaltung beschäftigen. Wir möchten dies vereinfachen und ein Framework / eine Infrastruktur zur Verfügung stellen, die für Rechenleistungsanbietende Spaces so einfach und sicher zu operieren ist und auf die für rechenleistungsbedürftige Nerds so einfach zugreifbar ist, wie möglich.
+Reicht es für einen oder zwei interessierte Menschen, einfach bei einem Space nachzufragen, ob man "mal" einen SSH-Zugang auf einer tollen Kiste bekommt, wird es spätestens nach dem Zehnten für die Besitzer der Kiste aufwendig. Braucht der interessierte Mensch jedoch mehr als eine Kiste, muss er sich mit der Verteilung und Verwaltung beschäftigen. Wir möchten dies vereinfachen und ein Framework / eine Infrastruktur zur Verfügung stellen, die für rechenleistungsanbietende Spaces so einfach und sicher zu betreiben und die für rechenleistungsbedürftige Nerds so einfach zugreifbar ist, wie möglich.
 
-Das C3 Cluster Computing Council ist eine Gruppe von Cluster und High Performance Computing Interessierten.
-Auch in der Toolbox gibt es leistungsstarke Hardware, die nur darauf wartet endlich sinnvoll genutzt zu werden. 
+Das C3 Cluster Computing Council ist eine Gruppe von Cluster und High Performance Computing-Interessierten.
+Auch in der Toolbox gibt es leistungsstarke Hardware, die nur darauf wartet, endlich sinnvoll genutzt zu werden. 
 
 Weitere Informationen zum C6 und zum Mitmachen gibt es auf der Webseite [c3c3.de](https://c3c3.de/) oder im dazu passenden [Wiki des C6](https://git.platinengarten.de/goto/C6/wikis/home).
 ---
