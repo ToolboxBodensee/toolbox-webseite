@@ -2,22 +2,24 @@ author: see-base
 ---
 body:
 
-There are some hackspaces in this world. The SpaceAPI was developed to exchange some information about hackspaces in a standardized way. This API contains some data about the hackspace, such as whether the door is currently open for visitors and guests or not.
+There are some hackspaces in this world. The Space API was developed to exchange information about hackspaces in a standardized way. This API contains data about the hackspace such as whether the door is currently open for visitors and guests or not.
 
-As a modern maker and hackspace the toolbox is of course included and shows not only on the website if the hackspace is open, but also via SpaceAPI.
+As a modern maker and hackspace the Toolbox is of course included and shows not only on the website if the hackspace is open, but also via Space API.
 
 <a href="https://spaceapi.ccc.de" class="button">SpaceAPI</a>
 
 On [GitHub](https://github.com/fixme-lausanne/OpenSpaceDirectory/blob/master/directory.json) you can find a list of JSON files provided by the hackspaces.
-Information about the toolbox can be found [here](https://bodensee.space/spaceapi/toolboxbodenseeev.json):
+Information about the Toolbox can be found [here](https://bodensee.space/spaceapi/toolboxbodenseeev.json):
 ```
 https://bodensee.space/spaceapi/toolboxbodenseeev.json
 ```
 
-In the toolbox itself there is a switch to change the status of the hackspace to ``open`` and ``closed``. The git to the self-made server backend can be found on [github.com/see-base/spaceapi-server](https://github.com/see-base/spaceapi-server).
+In the Toolbox itself there is a switch to change the status of the hackspace to ``open`` and ``closed``. The git to the self-made server backend can be found on [github.com/see-base/spaceapi-server](https://github.com/see-base/spaceapi-server).
 The source code of the switch itself is on [github.com/ToolboxBodensee/spacebutton](https://github.com/ToolboxBodensee/spacebutton).
 
-And of course there is an IRC bot to retrieve or change the space status. This can be found in the channel [#see-base](https://webirc.hackint.org/#irc://irc.hackint.org/#see-base) on Hackint and as source code in the [git](https://github.com/see-base/spaceapi-bot) of course!
+And of course there is an IRC bot to retrieve or change the space status. This can be found in the channel [#see-base](https://webirc.hackint.org/#irc://irc.hackint.org/#see-base) on Hackint and as source code in the [git](https://github.com/see-base/spaceapi-bot).
+
+The Space API is also triggered by a newly installed door control and the status can be retreived via the internal Slack channel.
 
 ---
 icon: fas fa-search-location
@@ -26,7 +28,7 @@ pub_date: 2017-05-06
 ---
 teaser:
 
-The SpaceAPI tries to collect exciting information about various Hackspaces, so that you can retrieve them via an API.
+The Space API tries to collect exciting information about various Hackspaces, so that you can retrieve them via an API.
 One of these information is whether the space is open or closed.
 ---
 title: Space API

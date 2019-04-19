@@ -1,0 +1,43 @@
+author: Paul Nykiel and Jonas Otto
+---
+body:
+
+Our goal is to alter a model plane to make it fly autonomously. 
+In order to do so, we develop an own flight controller, software and hardware so that the plane can take off, land and head to specific route points.
+Furthermore, we develop an own remote control to control the plane via LoRa.
+
+Components:
+Flight controller: Own Breakout Board for the “Nucleo L432KC” microcontroller board with BNO055 position sensor and barometric altimeter. It regulates and contols the servo. 
+Raspberry Pi: Is responsible for the communication with the base station via LoRa, route planning / GPS via Dragino LoRa/GPS Hat.
+Plane: Model “Mini Talon”
+PowerDeliveryBoard: Currently in development, shall provide power supply data to the flight controller. 
+
+More information, source code and PCB layouts are available here: [github.com/ToolboxPlane](https://github.com/ToolboxPlane)
+
+---
+icon: fas fa-fighter-jet
+---
+project:
+
+#### pro_img ####
+image: plane_night.jpg
+#### pro_img ####
+image: plane_wing.jpg
+#### pro_img ####
+image: fc_debugging.jpg
+#### pro_img ####
+image: remote.jpg
+#### pro_img ####
+image: fc3.jpg
+#### pro_img ####
+image: pdb.jpg
+---
+pub_date: 2017-03-17
+---
+teaser:
+
+Our goal is to alter a model plane to make it fly autonomously. 
+In order to do so, we develop an own flight controller, software and hardware so that the plane can take off, land and head to specific route points. 
+
+---
+title: ToolboxPlane

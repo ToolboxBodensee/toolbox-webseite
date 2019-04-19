@@ -2,17 +2,17 @@ author: Freifunk Bodensee
 ---
 body:
 
-[Freifunk](https://freifunk-bodensee.net/) is a decentralised, independent citizens' network with access to the Internet. Free radio means open, unrestricted and free digital communication. Anyone can connect free of charge via WLAN, without a password or registration. Everyone may use, participate in and expand free radio. Freifunk is a non-commercial initiative for free radio networks. 
+[Freifunk](https://freifunk-bodensee.net/) is a decentralized, independent citizens' network with access to the Internet. Freifunk means open, unrestricted and free digital communication. Anyone can connect free of charge via wi-fi, without a password or registration. Everyone may use, participate in and expand Freifunk. Freifunk is a non-commercial initiative for free radio networks. 
 
 <span class="image fit" style="background: white;"><img src="/projekte/freifunk/ffbsee.svg"></span><br/>
 
 The "Freifunk Bodensee" initiative was launched at the beginning of 2016. The aim of this initiative is to enable everyone to have open and free access to the Freifunk network and thus to the Internet. The aim is to make participation in the network as easy as possible and without legal uncertainty.
 
-The free radio community Freifunk Bodensee meets regularly in the rooms of the Toolbox Bodensee to hold their free radio meetings and to explain free radio to interested people and to help set up the access points.
+The Freifunk Bodensee community meets regularly in the rooms of the Toolbox Bodensee to hold their Freifunk meetings and to explain Freifunk to interested people and to help set up the access points.
 
-Of course there is also a proper free WLAN in the toolbox. Here an Offloader - a Siemens Futro - establishes a fastd-VPN connection to one of the free radio gateways. The free radio network is distributed over several Ubiquiti WLAN access points in the toolbox.
+Of course there is also a proper free wi-fi in the toolbox. Here an Offloader - a Siemens Futro - establishes a fastd-VPN connection to one of the Freifunk gateways. The Freifunk network is distributed over several Ubiquiti wi-fi access points in the toolbox.
 
-Sourcecode is available on GitHub in the project [ffbsee](https://github.com/ffbsee).
+The source code is available on GitHub in the [ffbsee](https://github.com/ffbsee) project.
 
 <iframe src="https://player.vimeo.com/video/64814620" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 
@@ -23,7 +23,7 @@ pub_date: 2016-01-28
 ---
 teaser:
 
-Free radio is a decentralised, independent citizens' network with access to the Internet. Free radio means open, unrestricted and free digital communication. Anyone can connect free of charge via WLAN, without a password or registration. Everyone can use, participate in and expand free radio. 
+Freefunk is a decentralized, independent citizens' network with access to the Internet. Freefunk means open, unrestricted and free digital communication. Anyone can connect free of charge via wi-fi, without a password or registration. Everyone can use, participate in and expand Freifunk. 
 ---
 title: Freifunk
 ---

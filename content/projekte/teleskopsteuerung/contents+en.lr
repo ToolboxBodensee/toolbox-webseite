@@ -1,0 +1,60 @@
+author: Mathias/Martin/Björn/Alex
+---
+body:
+
+In order to watch/photograph a star with a high magification over a longer time, an autotracking is necessary. Otherwise, the object under observation moves out of sight due to the rotation of the earth. 
+
+The goal of the project was the development of a new control unit for the autotracking function of the Josef Mosbach refractor of the Sternwarte Überlingen (observatory). There is still an historic, fully mechanic clockwork for this mount which is not in use anymore. However, after extensive restoration, the drive can still be visited. Already in 2014, a µ-controller-based drive with a stepper motor was retrofitted for the autotracking of the hour axis. However, it could not fulfill all requirements so that the idea for further developments came up. The autotracking, for example, had to be turned off every time before the position could be adjusted with the help of the motor.
+
+The following requirements could be fully implemented in the course of the new design:
+
+- The new control unit could operate the equatorial mount with precise speed for star, sun and moon observation – just as before. This was realized with a new stepper motor that drives the axis via the existing transmission. In addition, an electric drive for the declination axis was implemented. That way, both axes can be controlled independently and corrections are possible every time – even if autotracking is active – with a regulated speed.
+
+- The existing, partly defective dial light was replaced. The new one is now dimmable and is automatically turned off after the time specified in the program.
+
+- To prevent the telescope from running against the mount, a safety shutdown after 3 hours was implemented. 
+
+- The new manual control is eqipped with dimmable LEDs so that it is easy to find in the dark without blinding anyone. 
+
+- Alternatively, the control unit can be operated with a 12V lead acid battery in case of emergency.
+
+- There are 3 power sockets available at the housing for supplying power to small-scale consumers (camers, ocular heating). 
+
+- The existing mount was presumably contructed at the beginning of the last century. The new control should not interfere with the historic overall impression. That's why all retrofits had to be designed as unobtrusively as possible and comply with the design of the existing components - just as if they had been there right from the beginning. We therefore decided to design a housing with rounded edges which was then painted in matte black as well. 
+
+We started working with simple stepper motor drivers, however they made the motors far too loud. Even the creation of half-steps via the self-scripted code could not improve the situation signifcantly. Only the changeover to further-developed components with an interpolation of 256 intermediate steps improved the noise level enormously. 
+
+All elelctric components required for the light and motor control are placed in one housing. We developed and cut small PCBs such as for the manual control, the supply and control of the stepper motor and LED drivers, the display and voltage converters. All components are safely installed on the mounting plate that was specifically designed for this project. In order to improve the clear arrangement of the whole design, all cables are routed in cable ducts. 
+
+The control unit was installed on August 18, 2018 and then went into test operation. The members of the Überlingen observatory were very enthusiastic about the reliability and precision of the autotracking as well as its easy handling. 
+
+The last point to be done was the design and installation of the declination axis drive. 
+
+The following components were installed: 
+- Arduino MEGA 2560
+- 16x2 LCD display with red filter
+- TMC2208 stepper motor driver
+- 11HS20-PG100 stepper motor for declination and right ascension axis
+- DC/DC converter for the different operating voltages: 5/6/9V
+
+
+
+---
+icon: fas fa-moon
+---
+project:
+
+#### pro_img ####
+image: dsc02645.jpg
+#### pro_img ####
+image: dsc02641.jpg
+#### pro_img ####
+image: dsc02636.jpg
+---
+pub_date: 2016-01-01
+---
+teaser:
+
+We developed a arduino-based telescope autotracking with many additional functions for the Überlingen oberservatory. 
+---
+title: Telescope Control

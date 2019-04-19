@@ -6,39 +6,37 @@ icon: fas fa-moon
 ---
 pub_date: 2016-01-01
 ---
-teaser: Wir entwickeln eine arduinobasierte Teleskopnachführung mit vielen Zusatzfunktionen für die Sternwarte Überlingen
+teaser: Wir haben eine arduinobasierte Teleskopnachführung mit vielen Zusatzfunktionen für die Sternwarte Überlingen entwickelt
 ---
 body:
 
-Um mit einem Teleskop einen Stern mit einer höheren Vergrößerung über längere Zeit beobachten/fotografieren  zu können, benötigt man eine Nachführung. Ansonsten läuft das zu beobachtende Objekte durch die Erdrotation einfach aus dem Sichtfeld.
+Um mit einem Teleskop einen Stern mit einer höheren Vergrößerung über längere Zeit beobachten/fotografieren  zu können, benötigt man eine Nachführung. Ansonsten läuft das zu beobachtende Objekt durch die Erdrotation einfach aus dem Sichtfeld.
 
-Zur Zeit arbeiten wir an einer neuen Steuerung für die Nachführung für den Josef-Mosbach-Refraktor der [Sternwarte Überlingen](http://sternwarte-ueberlingen.de). Es existiert noch ein historisches vollmechanisches Uhrwerk für diese Montierung, welches aber nicht mehr im Einsatz ist. Nach einer aufwendigen Restauration ist der Antrieb aber vor Ort noch zu besichtigen. Bereits 2014 wurde ein µ-Controller-basierter Antrieb mit einem Schrittmotor für die Nachführung der Stundenachse nachgerüstet. Allerdings konnte diese nicht alle Wünsche erfüllen, so dass die Idee einer Weiterentwicklung aufkam. Z.B. musste die Nachführung jedes Mal ausgeschaltet werden, bevor man mit dem Motor die Position korrigieren konnte. 
+Ziel das Projekts war die Entwicklung einer neuen Steuerung für die Nachführung für den Josef-Mosbach-Refraktor der [Sternwarte Überlingen](http://sternwarte-ueberlingen.de). Es existierte hier noch ein historisches vollmechanisches Uhrwerk für diese Montierung, welches aber nicht mehr im Einsatz ist. Nach einer aufwendigen Restauration ist der Antrieb aber vor Ort noch zu besichtigen. Bereits 2014 wurde ein µ-Controller-basierter Antrieb mit einem Schrittmotor für die Nachführung der Stundenachse nachgerüstet. Allerdings konnte diese nicht alle Wünsche erfüllen, so dass die Idee einer Weiterentwicklung aufkam. Z. B. musste die Nachführung jedes Mal ausgeschaltet werden, bevor man mit dem Motor die Position korrigieren konnte. 
 
 Die folgenden Anforderungen konnten wir bei der Neukonstruktion vollständig umsetzen:
 
-- Die neue Steuerung kann wie bisher die parallaktische Montierung mit präziser Geschwindigkeit für Stern-, Sonnen- und Mondbetrachtung betreiben. Hierfür kommt ein neuer Schrittmotor zum Einsatz, der über die vorhandene Übersetzung die Achse antreibt. Zusätzlich wurde ein elektrischer Antrieb für die Deklinations-Achse vorgesehen. Dabei können die beiden Achsen unabhängig voneinander gesteuert werden und es sind jederzeit - auch bei aktivierter Nachführung - Korrekturen an beiden Achsen mit einer regelbaren Geschwindigkeit möglich.
+- Die neue Steuerung konnte wie bisher die parallaktische Montierung mit präziser Geschwindigkeit für Stern-, Sonnen- und Mondbetrachtung betreiben. Hierfür kam ein neuer Schrittmotor zum Einsatz, der über die vorhandene Übersetzung die Achse antreibt. Zusätzlich wurde ein elektrischer Antrieb für die Deklinations-Achse vorgesehen. Dabei können die beiden Achsen unabhängig voneinander gesteuert werden und es sind jederzeit - auch bei aktivierter Nachführung - Korrekturen an beiden Achsen mit einer regelbaren Geschwindigkeit möglich.
 
-- Die vorhandene, teilweise defekte  Skalenbeleuchtung wurde ersetzt. Die neue ist jetzt auch dimmbar und schaltet nach einer im Programm hinterlegten Zeit automatisch ab.
+- Die vorhandene, teilweise defekte Skalenbeleuchtung wurde ersetzt. Die neue ist jetzt auch dimmbar und schaltet nach einer im Programm hinterlegten Zeit automatisch ab.
 
 - Damit das Teleskop nicht gegen die Montierung fährt, wurde eine Sicherheitsabschaltung der Nachführung nach 3 Stunden implementiert.
 
-- Die neue Handbedienung ist mit einer dimmbaren LEDs ausgerüstet, damit sie im dunkeln schnell zu finden ist ohne zu blenden.
+- Die neue Handbedienung ist mit dimmbaren LEDs ausgerüstet, damit sie im Dunkeln schnell zu finden ist ohne zu blenden.
 
 - Alternativ kann die Steuerung in Notfällen über einen 12V-Bleiakku betrieben werden.
 
 - Für den Anschluss von anderweitigen Kleinverbrauchern (Kamera, Okularheizung) sind nun 3 Steckdosen am Gehäuse vorhanden.
 
-- Die vorhandene Montierung wurde vermutlich Anfang des letzten Jahrhunderts gebaut. Die neue Steuerung darf den historische Gesamteindruck nicht verfremden. Also müssen alle Nachrüstungen möglichst unauffällig gestaltet sein und sich vom Design an den vorhandenen Komponenten orientieren, als seinen sie schon immer da gewesen. Daher haben wir uns für ein Gehäuse mit abgerundeten Ecken entschieden, welches auch noch matt schwarz lackiert werden wird. 
+- Die vorhandene Montierung wurde vermutlich Anfang des letzten Jahrhunderts gebaut. Die neue Steuerung durfte den historischen Gesamteindruck nicht verfremden. Also mussten alle Nachrüstungen möglichst unauffällig gestaltet sein und sich vom Design an den vorhandenen Komponenten orientieren, als seien sie schon immer da gewesen. Daher haben wir uns für ein Gehäuse mit abgerundeten Ecken entschieden, welches auch noch matt schwarz lackiert wurde. 
 
-Zunächst haben wir mit einfachen Schrittmotortreibern gearbeitet, die Motoren waren damit aber deutlich zu laut. Auch die Erzeugung von Halbschritten durch selbstgeschriebenen Code konnte die Situation nicht wesentlich verbessern. Der Umstieg auf noch weiterentwickelte Bausteine mit Interpolation von 256 Zwischenschritten hat den Geräuschpegel dann aber deutlich verbessert.
+Zunächst haben wir mit einfachen Schrittmotortreibern gearbeitet, die Motoren waren damit aber deutlich zu laut. Auch die Erzeugung von Halbschritten durch selbst geschriebenen Code konnte die Situation nicht wesentlich verbessern. Der Umstieg auf noch weiterentwickelte Bausteine mit Interpolation von 256 Zwischenschritten hat den Geräuschpegel dann aber deutlich verbessert.
 
-Alle für die Ansteuerung der Beleuchtung und der Motoren notwendigen Elektronikkomponenten sind in einem Gehäuse untergebracht. Für viele der Komponenten wurden kleine Platinen entwickelt und gefräst. Z.B. für die Handsteuerung, die Versorgung und Ansteuerung der Schrittmotor- und LED-Treiber, des Displays und der Spannungswandler. Alle Bauteile sind auf einer eigens dafür angefertigten Montageplatte sicher befestigt. Um die Übersichtlichkeit der ganzen Konstruktion zu erhöhen sind alle Kabel ordentlich in Kabelkanälen verlegt.
+Alle für die Ansteuerung der Beleuchtung und der Motoren notwendigen Elektronikkomponenten sind in einem Gehäuse untergebracht. Für viele der Komponenten wurden kleine Platinen entwickelt und gefräst. Z. B. für die Handsteuerung, die Versorgung und Ansteuerung der Schrittmotor- und LED-Treiber, des Displays und der Spannungswandler. Alle Bauteile sind auf einer eigens dafür angefertigten Montageplatte sicher befestigt. Um die Übersichtlichkeit der ganzen Konstruktion zu erhöhen, sind alle Kabel ordentlich in Kabelkanälen verlegt.
 
 Die Steuerung wurde provisorisch am 18.8.2018 vor Ort installiert und befindet sich seit dem im Probebetrieb. Die Mitglieder der Sternwarte Überlingen e.V. sind begeistert von der Zuverlässigkeit und Präzision der Nachführung sowie von deren einfacher Bedienung.
 
-Als letzter offener Punkt vor Fertigstellung des Projektes bleibt der Antrieb der Deklinationsachse, der noch konstruiert und installiert werden muss. 
-
-Durch die hohen gesteckten Ziele sind in das Projekt schon mehr als zweieinhalb Jahre geflossen, wir erwarten aber Ende 2018  die offizielle Einweihung / Übergabe.
+Als letzter offener Punkt vor Fertigstellung des Projektes wurde noch der Antrieb der Deklinationsachse konstruiert und installiert. 
 
 Unter anderem wurden folgende Komponenten verbaut:
 - Arduino MEGA 2560

@@ -1,0 +1,11 @@
+author: Matt
+---
+body: ESA, NASA and the NOAA satellites form the US send their data to earth via their satellite connection - freely available to everyone. That way, the organizations make numerous data available to everyone publicly. The suitable hard- and software makes it possible to receicve and save 10-Mbit streams via a SAT device and a server backend in the cellar of the Toolbox. There we can store as much data as the memories offer in order to give us an own impression of the current climate data. Working on the project enables us to learn the save and technically detailed handling of secure storing and continuous evaluation of data streams.
+---
+icon: fas fa-user-astronaut
+---
+pub_date: 2017-07-01
+---
+teaser: We receive and save climate and earth observation data from space - directly in the Toolbox.
+---
+title: Free Weather and Climate Data

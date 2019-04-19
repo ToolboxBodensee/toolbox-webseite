@@ -1,20 +1,12 @@
-title: 3D-Druck
----
-author: 3D-Druck-Team Toolbox
----
-icon: fas fa-print
----
-pub_date: 2017-01-01
----
-teaser: In der Toolbox stehen die verschiedensten 3D-Drucker zur freien Verwendung zur Verfügung und werden regelmäßig von einem kompetenten Team aus Fachleuten gewartet und verbessert.
+author: 3D Printing Team Toolbox
 ---
 body:
 
-Die aktuellsten Fortschritte unserer 3D-Druck-Arbeiten finden sich in unserem [3D Printing GitHub Repository](https://github.com/ToolboxBodensee/3d_printing). Die vorkonfigurierten Marlin-Firmwares für die entsprechenden Drucker stehen in unserem [Marlin Fork](https://github.com/ToolboxBodensee/Marlin) zur Verfügung.
+The latest developents of our 3D printing work can be found in our [3D Printing GitHub Repository](https://github.com/ToolboxBodensee/3d_printing). The pre-configured Marlin firmwares for the respective printers are available in our [Marlin fork](https://github.com/ToolboxBodensee/Marlin).
 
-Selbstverständlich laufen alle unsere 3D-Drucker mit angeschlossenem [OctoPrint](https://octoprint.org) auf je einem Raspberry Pi. Mit dem [OctoPrint Slicer Plugin](https://plugins.octoprint.org/plugins/slicer/) können unsere User so drucken ohne eigene Slicer-Software oder Konfigurationsdateien auf ihren PC übertragen zu müssen.
+Naturally, all 3D printers run with connected [OctoPrint](https://octoprint.org) on one Raspberrry Pi each. With the help of the [OctoPrint Slicer Plugin](https://plugins.octoprint.org/plugins/slicer/), our users can print without having to transfer their own slicer software or config files to their computers.
 
-In der Toolbox entstandene Designs sind auf unserem [Thingiverse Account](https://www.thingiverse.com/ToolboxBodensee/about) verfügbar.
+Designs that were created in the Toolbox are available in our [Thingiverse Account](https://www.thingiverse.com/ToolboxBodensee/about).
 
 ## Replicator 2
 
@@ -47,9 +39,19 @@ Work in progress...
 
 ## Galerie
 ---
+icon: fas fa-print
+---
 project:
 
 #### pro_img ####
 image: replicator_hot_1.jpg
 #### pro_img ####
 image: replicator_hot_2.jpg
+---
+pub_date: 2017-01-01
+---
+teaser:
+
+In the Toolbox, various 3D printers are available free to use and are regularly maintained and optimzed by a compentent team of experts. 
+---
+title: 3D Printing
