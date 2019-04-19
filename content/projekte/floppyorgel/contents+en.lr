@@ -1,0 +1,48 @@
+body:
+
+Our floppy organ can not only be looked at and tried out in our club house but we also regularly take it to faires and other exhibitions. The Toolbox floppy organ was also internationally noticed recently.
+
+The floppies are controlled via the[Moppy](https://github.com/SammyIAm/MoppyClassic) open-source software.
+An Arduino Mega receives three control signals from a desktop application and that way controls multiple floppy drives per MIDI channel in parallel. 
+On the computer, you can either play a MIDI file or plug in a MIDI keyboard.
+
+The floppies are mounted to a wooden board with 3D-printed [fixtures](https://www.thingiverse.com/thing:799346).
+
+
+#### First trials and software tests
+![](floppy1.webp)
+
+#### Assembly
+<span class="image fit"><img src="floppy2.jpg"></span><br/>
+
+#### Debugging
+<video autoplay="true" muted="true" loop="true" controls="true"><source src="floppy3.webm" type="video/webm">Your browser does not support the video tag.</video>
+
+
+<span class="image fit"><img src="/vereinsheim/switch.jpg"></span><br/>
+---
+icon: fas fa-save
+---
+project:
+
+#### pro_img ####
+image: floppyorgel.jpg
+#### pro_img ####
+image: floppy2.jpg
+---
+pub_date: 2015-03-06
+---
+teaser: Our internationally known floppy organ can not only be looked at and tried out in our club house but we also regularly take it to faires and other exhibitions such as the Maker Faire Bodensee in Friedrichshafen.
+---
+title: Floppy Organ
+---
+video_embeded:
+
+#### pro_video ####
+video: floppyorgel.mp4
+----
+video_url: K46krINg8WA
+---
+video_is_embeded: yes
+---
+xml_img: floppyorgel.jpg
