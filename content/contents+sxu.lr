@@ -1,0 +1,120 @@
+about_header: Voreensheem
+---
+about_text: Unser Voreensheem kannste in dor Bergheemer Schdraße in Margdorf 6 am Bodnsee in eem von den Jebäuden von indimus  Indornaschnäl Ge-em-be-Ha findn.
+---
+about_text2:
+
+Off übber 420 m² kömmer zum Beischbiel  den Bereischen  Eleggdroteschnig, Holz- und Medallwergschdadd, 3D-Drugg, Amadörfunk, Siebdrugg un ooch nem Fodolabbor nen eischenen Room biehdn.
+Als Midgliehd  kannste unser Räume  und Jerähde  so ofte un  so lange  nhem, wie de willst, un  nadürlisch kannste ooch an Fordrägen teilnehm und ooch selber welsche haltn.
+---
+about_text3: Unser Voreensheem is ooch n Ort für Voranschdaldungen wie dem [Chaostreff Markdorf](https://bodensee.space/chaostreff-markdorf), den [Amateurfunkern Friedrichshafen](https://www.darc.de/der-club/distrikte/p/ortsverbaende/03/), [Freifunk Bodensee](https://freifunk-bodensee.net/), der [Spieleentwicklung Bodensee](http://www.spieleentwicklung-bodensee.de/) oder dem [IoT Meetup Bodensee](https://www.meetup.com/de-DE/IoTBodensee/).
+---
+about_url: Vereinsheim
+---
+about_url2: /vereinsheim/
+---
+hinweis: Wir dreffn uns jedn Donnerschdaach ahmd. gomm doch ma
+---
+hinweis_txt: rum!
+---
+hinweis_url: /kontakt/
+---
+icons_1_1: fa-code
+---
+icons_1_2: Programmieren
+---
+icons_1_3: Wir entwickeln verschiedenste Software von der Fernsteuerung von Multicoptern über die Steuerung von blinkenden LED-Ketten bis hin zu Übungsprojekten und Internetdiensten.
+---
+icons_1_url: /projekte/
+---
+icons_2_1: fa-keyboard
+---
+icons_2_2: Hacken
+---
+icons_2_3: Wir verstehen uns als Hacker nach den Prinzipien des Chaos Computer Clubs und handeln dem entsprechend nach der [Hackerethik](https://www.ccc.de/de/hackerethics).
+---
+icons_3_1: fa-cogs
+---
+icons_3_2: Basteln
+---
+icons_3_3: Wir arbeiten an verschiedenen Hardwareprojekten, welche von mechanischen Spielereien über selbstgelötete Elektronik bis hin zu komplexeren Steuerungen gehen.
+---
+icons_3_url: /vereinsheim/elektrowerkstatt/
+---
+icons_4_1: fa-puzzle-piece
+---
+icons_4_2: Workshops
+---
+icons_4_3: Wir bieten Workshops und Vorträge an, um den Menschen ein Technikverständnis zu vermitteln, damit Menschen die Technik kontrollieren und nicht anders herum.
+---
+icons_4_url: /termine/
+---
+icons_5_1: fa-heart
+---
+icons_5_2: Waffeln
+---
+icons_5_3: Eine der strategischen Standorte des C3 Waffel Operation Center ist der Bodensee. So geben wir Unterstützung bei der Waffelproduktion und helfen bei taktischen Waffeleinsätzen aus.
+---
+icons_5_url: /projekte/c3woc/
+---
+icons_6_1: fa-calendar-check
+---
+icons_6_2: Veranstaltungen
+---
+icons_6_3: Wir veranstalten immer wieder Veranstaltungen oder nehmen an diesen teil, um uns besser mit Personen anderer Regionen zu vernetzen.
+---
+icons_6_url: /blog/
+---
+icons_header: Schau doch mal bei uns vorbei
+---
+icons_text: Die Toolbox Bodensee e.V. ist ein gemeinnütziger Maker- und Hackspace in Markdorf am Bodensee, der versucht sowohl für Mitglieder als auch Gäste eine gemütliche Atmosphäre zu schaffen, in der sich Menschen mit ähnlichen Interessen treffen und austauschen können. Wir haben ein großes Vereinsheim, in dem jeder willkommen ist, sich in der Lounge oder im Bällebad zu entspannen, an Vorträgen oder Workshops teilzunehmen, mit den Werkzeugen in der Werkstatt zu arbeiten oder sich mit den anderen Menschen auszutauschen.
+---
+icons_txt: Mitglied werden
+---
+icons_url: https://toolbox-bodensee.de/mitglied-werden/
+---
+red_1: Wir freuen uns über neue Gesichter.
+---
+red_2:
+
+Jeden Donnerstag Abend ist bei uns die Tür geöffnet und jeder ist willkommen, bei der Toolbox Bodensee e.V. vorbei zu kommen.<br/>
+Um 19:00 Uhr findet das "Wochenmeeting" statt. Hier treffen wir uns alle für etwa 20 Minuten im großen Besprechungsraum und es werden aktuelle Themen, Projekte und Fragen angesprochen. Außerdem haben neue Gesichter und Gäste die Möglichkeit sich vorzustellen oder Fragen in die große Runde zu stellen, wenn sie zum Beispiel Hilfe bei einem konkreten Problem benötigen und nicht wissen, an wen genau sie sich wenden müssen.
+---
+red_3: Öfters findet anschließend noch ein kleiner Vortrag statt, bei dem man gerne zuhören darf und so seinen Wissenshorizont erweitern kann. Den restlichen Abend verteilen sich die Mitglieder und Gäste über alle Räume der Toolbox Bodensee e.V.. Einige Leute basteln weiter an ihren Projekten, andere haben sich in die Lounge oder ins Bällebad zurückgezogen und unterhalten sich, wieder andere sind vor der Toolbox am Grillen oder fliegen mit der Drohne durch die Toolbox. Der ein oder andere hat vielleicht auch die Bibliothek gefunden und ist dort in seine Lektüre vertieft. Und wieder andere sitzen an ihren Computern und programmieren fleißig.
+---
+red_4: Wir würden uns freuen, wenn Du auch mal vorbei schaust!
+---
+sections:
+
+#### startpage_section ####
+type: left
+----
+header: Elektrowerkstatt
+----
+text: Hier stehen dir Oszilloskope, Lötkolben, Netzgeräte, Messgeräte, verschiedene Bauteile und 3D-Drucker zur Verfügung. In unserer großen Elektrowerkstatt werden selbst Elektrotechniker neidisch.
+----
+text2: In der Toolbox gibt es einige Mitglieder, die sich in den Bereichen 3D-Druck und Elektronik bestens auskennen. Wir versuchen, unser Wissen mit anderen Mitgliedern und zu Teilen und uns gegenseitig bei unseren Projekten zu unterstützen.
+----
+url_text: Projekte
+----
+url: /projekte/
+----
+background: /images/home/abschnitt2.jpeg
+#### startpage_section ####
+type: right
+----
+header: Workshops & Vorträge
+----
+text: In der Toolbox finden regelmäßig Workshops und Vorträge zu vielen interessanten Themen statt.
+----
+text2: Wir würden uns auch sehr freuen, wenn du etwas für ein interessiertes Publikum vortragen oder dein Wissen und deine Erfahrungen mit uns teilen möchtest. Die Teilnahme an den Vorträgen und Workshops ist sowohl für Mitglieder als auch Gäste natürlich kostenfrei.
+----
+url_text: Termine
+----
+url: /termine/
+----
+background: /images/home/abschnitt3.jpeg
+---
+slogan: Jemeennützscher Mäker- un Häggspäis am Bodnsee
+---
+title: Toolbox Bodensee e.V.
