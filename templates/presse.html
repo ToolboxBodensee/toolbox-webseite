@@ -20,7 +20,7 @@
       if this.press_1 %}
       <div class="table-wrapper">
         <table><tbody>
-        {% for blk in this.press_1.blocks %}
+        {% for blk in this.press_1.blocks|sort(attribute='pub_date', reverse = True) %}
           {{ blk }}
         {% endfor %}
         </tfoot>
@@ -31,7 +31,7 @@
       if this.press_2 %}
       <div class="table-wrapper">
         <table><tbody>
-        {% for blk in this.press_2.blocks %}
+        {% for blk in this.press_2.blocks|sort(attribute='pub_date', reverse = True) %}
           {{ blk }}
         {% endfor %}
         </tfoot>
@@ -42,7 +42,7 @@
       if this.press_3 %}
       <div class="table-wrapper">
         <table><tbody>
-        {% for blk in this.press_3.blocks %}
+        {% for blk in this.press_3.blocks|sort(attribute='pub_date', reverse = True) %}
           {{ blk }}
         {% endfor %}
         </tfoot>
