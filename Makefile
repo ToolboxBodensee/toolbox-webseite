@@ -4,7 +4,7 @@ all: build
 
 install-packages:
 	if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagic python3-pip -y;\
-	elif hash pacman 2>/dev/null; then sudo pacman -Sy imagemagick python-pip --noconfirm;\
+	elif hash pacman 2>/dev/null; then sudo pacman -Sy graphicsmagick python-pip glibc lib32-glibc --noconfirm;\
 	elif hash dnf 2>/dev/null; then sudo dnf install -y ImageMagick python3-pip;\
 	else echo -e "Please install Imagemagick and python3-pip "; fi
 
