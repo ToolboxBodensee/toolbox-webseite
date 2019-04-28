@@ -54,8 +54,9 @@ Yes, you can call us:
 </table>
 </div>
 
- In the cyberspace:
------------------------
+
+
+<h2 id="internet">In the cyberspace</h2>
 Of course you can also find us on different pages on the internet. For example here:
 
 <div class="table-wrapper">
@@ -76,8 +77,14 @@ Of course you can also find us on different pages on the internet. For example h
 <td>GitHub</td>
 <td><a href="https://github.com/ToolboxBodensee" target="_blank" rel="noopener">ToolboxBodensee</a></td>
 </tr><tr>
+<td>Gitea</td>
+<td><a href="https://gitea.see-base.de/toolbox" target="_blank" rel="noopener">@toolbox</a></td>
+</tr><tr>
 <td>YouTube</td>
 <td><a href="https://www.youtube.com/channel/UCoTB8frSN0OT2mZl2IXSsDA/videos" target="_blank" rel="noopener">Toolbox Bodensee e.V.</a></td>
+</tr><tr>
+<td>Twitch</td>
+<td><a href="https://twitch.tv/toolboxlive/" target="_blank" rel="noopener">@toolboxlive</a></td>
 </tr><tr>
 <td>Hackerspaces.org</td>
 <td><a href="https://wiki.hackerspaces.org/Toolbox_Bodensee_e.V." target="_blank" rel="noopener">Toolbox_Bodensee_e.V.</a></td>
@@ -92,3 +99,8 @@ Of course you can also find us on different pages on the internet. For example h
 slogan: Toolbox. Where are they located?
 ---
 title: Contact
+---
+teaser:
+
+Die Toolbox ist ein Hack- und Makerspace in Markdorf am Bodensee.
+Wie genau du dort hinkommst, das erfährst du hier auf dieser Unterseite!

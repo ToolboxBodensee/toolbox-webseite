@@ -59,8 +59,7 @@ Wir haben auch eine Telefonnummer:
 </table>
 </div>
 
- Im Internet
------------------------
+<h2 id="internet">Internet</h2>
 Du findest uns natürlich auch auf verschiedenen Seiten im Internet. Zum Beispiel hier:
 
 <div class="table-wrapper">
@@ -81,8 +80,14 @@ Du findest uns natürlich auch auf verschiedenen Seiten im Internet. Zum Beispie
 <td>GitHub</td>
 <td><a href="https://github.com/ToolboxBodensee" target="_blank" rel="noopener">ToolboxBodensee</a></td>
 </tr><tr>
+<td>Gitea</td>
+<td><a href="https://gitea.see-base.de/toolbox" target="_blank" rel="noopener">@toolbox</a></td>
+</tr><tr>
 <td>YouTube</td>
 <td><a href="https://www.youtube.com/channel/UCoTB8frSN0OT2mZl2IXSsDA/videos" target="_blank" rel="noopener">Toolbox Bodensee e.V.</a></td>
+</tr><tr>
+<td>Twitch</td>
+<td><a href="https://twitch.tv/toolboxlive/" target="_blank" rel="noopener">@toolboxlive</a></td>
 </tr><tr>
 <td>Hackerspaces.org</td>
 <td><a href="https://wiki.hackerspaces.org/Toolbox_Bodensee_e.V." target="_blank" rel="noopener">Toolbox_Bodensee_e.V.</a></td>
