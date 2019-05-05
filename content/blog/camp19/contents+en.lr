@@ -2,12 +2,23 @@ author: L3D
 ---
 beitrag:
 
-```
-Event: Technology Camp
-Date: August 1-4, 2019
-Location: Campus of the Waldorf School Überlingen
-Address: Rengoldshauser Str. 20, 88662 Überlingen, Germany
-```
+<div class="table-wrapper">
+<table><tbody>
+<tr>
+<td>Event:</td>
+<td>Technology Camp</td>
+</tr><tr>
+<td>Date:</td>
+<td>August 1-4, 2019</td>
+</tr><tr>
+<td>Location:</td>
+<td>Campus of the Waldorf School Überlingen</td>
+</tr><tr>
+<td>Adress:</td>
+<td>Rengoldshauser Str. 20, 88662 Überlingen, Germany</td>
+</tr>
+</table>
+</div>
 
 Together with the Förderverein Freie Netze Bodensee e.V., Freifunk Bodesee and the hackspace see-base, the Toolbox Bodensee e.V. is organizing the Technology Camp in the Lake Constance region.
 

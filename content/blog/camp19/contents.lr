@@ -26,12 +26,24 @@ Dort erwarten dich neben Vorträgen und Workshops nette Leute, etwas Grillen, sp
 ---
 beitrag:
 
-```
-Event: Technik Camp
-Datum: 1.-4. August 2019
-Ort: Campus der Waldorfschule Überlingen
-Adresse: Rengoldshauser Str. 20, 88662 Überlingen
-```
+<div class="table-wrapper">
+<table><tbody>
+<tr>
+<td>Event:</td>
+<td>Technik Camp</td>
+</tr><tr>
+<td>Datum:</td>
+<td>1.-4. August 2019</td>
+</tr><tr>
+<td>Ort:</td>
+<td>Campus der Waldorfschule Überlingen</td>
+</tr><tr>
+<td>Adresse:</td>
+<td>Rengoldshauser Str. 20, 88662 Überlingen</td>
+</tr>
+</table>
+</div>
+
 
 Die Toolbox Bodensee e.V. veranstaltet zusammen mit dem Förderverein Freie Netze Bodensee e.V. und Freifunk Bodesee sowie mit dem Hackspace see-base das Technik Camp in der Bodenseeregion.
 

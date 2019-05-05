@@ -1,9 +1,4 @@
 /* Table */
-.table-wrapper {
-  -webkit-overflow-scrolling: touch;
-  overflow-x: auto;
-}
-
 table {
   margin: 0 0 _size(element-margin) 0;
   width: 100%;
@@ -80,6 +75,22 @@ table {
       display: block;
       margin:10px 0px;
       text-align: center;
+    }
+  }
+}
+
+.table-wrapper {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  &.code {
+    border-radius: 5px;
+    table {
+      margin: 0 0 0 0;
+      tbody {
+        tr {
+          border: 0;
+        }
+      }
     }
   }
 }
