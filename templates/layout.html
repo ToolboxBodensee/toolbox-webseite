@@ -156,17 +156,22 @@ set ausnahmezustand = False
                endfor %}
                <li class="last"><a href="/{% if bag('navigation', this.alt, 'default_path') %}{{ bag('navigation', this.alt, 'default_path') }}{% else %}..{% endif %}{{ this._path }}">{% if bag('navigation', this.alt, 'sprache') %}{{ bag('navigation', this.alt, 'sprache') }}{% else %}Sprache{% endif %}</a>
                    <ul class="last">
-                     <li><a href="{{ this._path }}/">{% 
+                    {% if this._path != "/"%}
+                      {% set newPath = this._path + "/"  %}
+                    {% else %}
+                      {% set newPath = this._path  %}
+                    {% endif %}
+                     <li><a href="{{ newPath }}">{% 
                              if bag('navigation', this.alt, 'German') %}{{ bag('navigation', this.alt, 'German') }}{%
                              else %}{{ bag('navigation', 'de', 'German') }}{% endif %}</a></li>
-                     <li><a href="/sxu{{ this._path }}/">{% 
+                     <li><a href="/sxu{{ newPath }}">{% 
                              if bag('navigation', this.alt, 'Saechsisch') %}{{ bag('navigation', this.alt, 'Saechsisch') }}{% 
                              else %}{{ bag('navigation', 'de', 'Saechsisch') }}{% 
                          endif %} <i>({%
                              if bag('navigation', this.alt, 'falls') %}{{ bag('navigation', this.alt, 'falls') }}{%
                              else %}{{ bag('navigation', 'de', 'falls') }}{% 
                         endif %})</i></a><li>
-                     <li><a href="/en{{ this._path }}/">{% 
+                     <li><a href="/en{{ newPath}}">{% 
                              if bag('navigation', this.alt, 'Englisch') %}{{ bag('navigation', this.alt, 'Englisch') }}{% 
                              else %}{{ bag('navigation', 'de', 'Englisch') }}{% 
                          endif %} <i>({%
