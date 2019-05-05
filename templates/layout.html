@@ -6,8 +6,8 @@ set ausnahmezustand = False
     <meta charset="utf-8">
     <title>{% block title %}Startseite{% endblock %}</title>
     <meta property="og:title" content="{{ this.title }}"/>
-    <meta property="og:type" content="{{ this._path }}"/>
-    <meta property="og:image" content="{{ '/images/og-image.png'|asseturl }}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://toolbox-bodensee.de/images/og-image.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />{%
     if '/css/main.min.css'|asseturl == empty %}
     <link rel="stylesheet" href="{{ '/css/font-awesome.min.css'|asseturl }}" />
