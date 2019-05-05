@@ -77,7 +77,7 @@
     YoutubeProto.createdCallback = function() {
 
         // Creates the shadow root.
-        var shadowRoot = this.createShadowRoot();
+        var shadowRoot = this.attachShadow({mode: 'open'});
 
         // Adds a template clone into shadow root.
         var clone = thatDoc.importNode( template, true );
@@ -91,9 +91,8 @@
 
     YoutubeProto.doTheThing = function( embedID, videoElem ) {
 
-		var source = "https://img.youtube.com/vi/"+ embedID +"/sddefault.jpg";
+		var source = "https://img.youtube.com/vi/"+ embedID +"/default.jpg";
 		var image  = new Image();
-
         image.src = source;
 
         image.addEventListener( "load", function() {
