@@ -8,20 +8,45 @@ Ein Arduino ist ein kleines Computerboard mit dem man spannende Dinge machen kan
 
 Veranstaltungstermine sind immer in den Sommerferien. Wer Interesse hat oder mit einer Gruppe einen eigenen Termin machen möchte, kann sich gerne bei uns melden.
 
-```
-Termin August/September 2019 - siehe auch Ferienkalender Markdorf
-Wer: Mädels und Jungs
-Alter: ab 10 Jahre
-Treffpunkt: Toolbox Vereinsheim, Bergheimer Straße 6
-Veranstaltungsort: Toolbox Vereinsheim, Bergheimer Straße 6
-Uhrzeit: 14:00 – 17:00 Uhr
-Kosten: 5 Euro
-Mitbringen: Laptop, wenn möglich
-Veranstalter: Toolbox Bodensee e. V.
-Leitung: Daniel Hirscher
-```
+<div class="table-wrapper">
+<table><tbody>
+<tr>
+<td>Termin:</td>
+<td>August/September 2019 - siehe auch Ferienkalender Markdorf</td>
+</tr><tr>
+<td>Wer:</td>
+<td>Mädels und Jungs</td>
+</tr><tr>
+<td>Alter:</td>
+<td>ab 10 Jahre</td>
+</tr><tr>
+<td>Treffpunkt:</td>
+<td>Toolbox Vereinsheim, Bergheimer Straße 6</td>
+</tr><tr>
+<td>Veranstaltungsort:</td>
+<td>Toolbox Vereinsheim, Bergheimer Straße 6</td>
+</tr><tr>
+<td>Uhrzeit:</td>
+<td>14:00 – 17:00 Uhr</td>
+</tr><tr>
+<td>Kosten:</td>
+<td>5 Euro</td>
+</tr><tr>
+<td>Mitbringen:</td>
+<td>Laptop, wenn möglich</td>
+</tr><tr>
+<td>Veranstalter:</td>
+<td>Toolbox Bodensee e. V.</td>
+</tr><tr>
+<td>Leitung:</td>
+<td>Daniel Hirscher</td>
+</tr><tr>
+</td>
+</tr>
+</table>
+</div>
 
-<span class="image fit"><img src="/projekte/experimente-mit-arduino/experimentieren-mit-arduino.jpg"></span><br/>
+<br/><span class="image fit"><img src="/projekte/experimente-mit-arduino/experimentieren-mit-arduino.jpg"></span><br/>
 ---
 icon: fas fa-robot
 ---

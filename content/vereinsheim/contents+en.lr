@@ -20,16 +20,20 @@ precontent:
 
  Some areas of the Toolbox
 ---------------------------------------
-<a href="/en/vereinsheim/elektrowerkstatt/" class="button">electrical workshop</a>
-<a href="/en/vereinsheim/grobwerkstatt/" class="button">rough workshop</a>
-<a href="/en/vereinsheim/lounge/" class="button">Lounge</a>
-<a href="https://tbbs.me/" class="button">Wiki</a>
+<div class="col-4"> 
+<a href="/en/vereinsheim/elektrowerkstatt/" class="button fit">electrical workshop</a> 
+<a href="/en/vereinsheim/grobwerkstatt/" class="button fit">rough workshop</a>
+<a href="/en/vereinsheim/lounge/" class="button fit">Lounge</a>
+<a href="https://tbbs.me/" class="button fit">Wiki</a>
+</div>
 
  Association Toolbox Bodensee e.V.
 -------------------------------------------------------
-<a href="/en/verein/" class="button">Statutes & Order</a>
-<a href="/en/verein/presse/" class="button">Press Information</a>
-<a href="/en/mitglied-werden/" class="button special">Become a member</a>
+<div class="col-3 long"> 
+<a href="/en/verein/" class="button fit">Statutes & Order</a> 
+<a href="/en/verein/presse/" class="button fit">Press Information</a>
+<a href="/en/mitglied-werden/" class="button special fit">Become a member</a>
+</div>
 
 ---
 project:

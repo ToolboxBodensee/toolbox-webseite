@@ -16,11 +16,18 @@ Als moderner Maker- und Hackspace ist die Toolbox natürlich dabei und zeigt nic
 
 Auf [GitHub](https://github.com/fixme-lausanne/OpenSpaceDirectory/blob/master/directory.json) findet man eine Liste mit JSON-Dateien, die die Hackspaces bereitstellen.
 Die Informationen zur Toolbox sind [hier](https://bodensee.space/spaceapi/toolboxbodenseeev.json) zu finden:
-```
-https://bodensee.space/spaceapi/toolboxbodenseeev.json
-```
 
-In der Toolbox selber gibt es einen Schalter, mit dem sich der Status des Hackspace auf ``open`` oder ``closed`` ändern lässt. Das Git zum selbstgebauten Server-Backend gibt es hier: [github.com/see-base/spaceapi-server](https://github.com/see-base/spaceapi-server).
+<div class="table-wrapper code">
+<table><tbody>
+<tr>
+<td>
+<a href="https://bodensee.space/spaceapi/toolboxbodenseeev.json">https://bodensee.space/spaceapi/toolboxbodenseeev.json</a>
+</td>
+</tr>
+</table>
+</div>
+
+<br/>In der Toolbox selber gibt es einen Schalter, mit dem sich der Status des Hackspace auf ``open`` oder ``closed`` ändern lässt. Das Git zum selbstgebauten Server-Backend gibt es hier: [github.com/see-base/spaceapi-server](https://github.com/see-base/spaceapi-server).
 Den Quellcode zum Schalter selbst findet man auf [github.com/ToolboxBodensee/spacebutton](https://github.com/ToolboxBodensee/spacebutton).
 
 Und natürlich konnten wir es nicht lassen, dazu auch einen IRC Bot zu schreiben, mit dem sich der Space-Status abrufen oder ändern lässt. Diesen gibt es im Channel [#see-base](https://webirc.hackint.org/#irc://irc.hackint.org/#see-base) auf Hackint und als Quellcode natürlich ebenfalls im [git](https://github.com/see-base/spaceapi-bot).
