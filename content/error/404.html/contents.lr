@@ -1,0 +1,16 @@
+_model: page
+---
+title: 404
+---
+slogan: Seite nicht gefunden
+---
+_discoverable: yes
+---
+_hidden: no
+---
+teaser: 404 - Seite nicht gefunden. Sorry :-/
+---
+content:
+
+Die Seite die du suchst, gibt es leider noch nicht.
+
