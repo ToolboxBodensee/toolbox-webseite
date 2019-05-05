@@ -30,13 +30,20 @@ body:
 We want to watch the movie "All Creatures Welcome" together.
  When:
 ------------
-```
-Dezember 13th, 2018 
-at 10:00 p.m.
-at the Toolbox Bodensee in Markdorf.
-```
 
-Come over and let's have a great movie night! And bring some snacks and popcorn please!
+<div class="table-wrapper code">
+<table><tbody>
+<tr>
+<td>
+Dezember 13th, 2018<br/>
+at 10:00 p.m.<br/>
+at the Toolbox Bodensee in Markdorf.<br/>
+</td>
+</tr>
+</table>
+</div>
+
+<br/>Come over and let's have a great movie night! And bring some snacks and popcorn please!
 You can come early and chat with us. We will open our gate at latest at 6 p.m.
 ---
 project:
