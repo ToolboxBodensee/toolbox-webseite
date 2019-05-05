@@ -23,14 +23,15 @@ teaser: Für eine bessere Anbindung unserer Eingangstür in die Space-API haben 
 ---
 project:
 
-#### pro_img ####
-image: raw_door.jpg
+
 #### pro_img ####
 image: werkzeug.jpg
 #### pro_img ####
 image: inspection.jpg
 #### pro_img ####
 image: ergebnis.jpg
+#### pro_img ####
+image: raw_door.jpg
 #### pro_img ####
 image: ergebnis.jpeg
 ---
