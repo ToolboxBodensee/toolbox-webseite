@@ -69,6 +69,10 @@ table {
     }
   }
 
+  ul {
+    margin: 0 0 0 0;
+  }
+
   @include breakpoint(mobileonly) {
     td {
       width:100%;
