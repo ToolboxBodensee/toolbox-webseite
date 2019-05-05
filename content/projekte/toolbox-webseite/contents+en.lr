@@ -40,11 +40,11 @@ teaser: The Toolbox website is created with the Lektor Static Site Generator and
 ---
 title: Toolbox Website
 ---
-video_embeded:
+video_embedded:
 
 #### pro_video ####
 video: 
 ----
 video_url: rGOXWIdSTWU
 ---
-video_is_embeded: yes
+video_is_embedded: yes

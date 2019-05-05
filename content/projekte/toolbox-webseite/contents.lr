@@ -36,11 +36,11 @@ pub_date: 2018-08-30
 ---
 teaser: Die Toolbox-Webseite wird mit dem Static Site Generator Lektor erstellt und über GitHub verwaltet
 ---
-video_embeded:
+video_embedded:
 
 #### pro_video ####
 video: 
 ----
 video_url: rGOXWIdSTWU
 ---
-video_is_embeded: yes
+video_is_embedded: yes

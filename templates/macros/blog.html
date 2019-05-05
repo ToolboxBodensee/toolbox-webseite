@@ -37,7 +37,7 @@
         %}weiterlesen{% endif %}</a>
     <br/>
     {% else %}
-    {% if post.video_is_embeded %}{% for blk in post.video_embeded.blocks %}
+    {% if post.video_is_embedded %}{% for blk in post.video_embedded.blocks %}
        {{ blk }} <br/>
     {% endfor %}{%
     endif %} {% if post.project %}

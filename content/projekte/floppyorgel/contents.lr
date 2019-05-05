@@ -31,7 +31,7 @@ teaser:
 
 Unsere international bekannte Floppyorgel kann nicht nur in unserem Vereinsheim bestaunt und ausprobiert werden, wir nehmen sie auch regelmäßig zu Messen oder anderen Ausstellungen, wie zum Beispiel der Makerfaire Bodensee in Friedrichshafen, mit. 
 ---
-video_embeded:
+video_embedded:
 
 #### pro_video ####
 video: floppyorgel.mp4
@@ -47,4 +47,4 @@ image: floppyorgel.jpg
 #### pro_img ####
 image: floppy2.jpg
 ---
-video_is_embeded: yes
+video_is_embedded: yes
