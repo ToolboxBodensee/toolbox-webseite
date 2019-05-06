@@ -8,6 +8,13 @@ set ausnahmezustand = False
     <meta property="og:title" content="{{ this.title }}"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="https://toolbox-bodensee.de/images/og-image.png"/>
+    <link href="https://{{ fqdn }}/feed_blog.xml" rel="alternate" title="Neues aus der Toolbox" type="application/rss+xml">
+    <link href="https://{{ fqdn }}/en/feed_blog.xml" rel="alternate" title="News from Toolbox [EN]" type="application/rss+xml">
+    <link href="https://{{ fqdn }}/sxu/feed_blog.xml" rel="alternate" title="Neujes ous da Toolbox [Säggsch]" type="application/rss+xml">
+    <link href="https://{{ fqdn }}/feed_projekte.xml" rel="alternate" title="Projekte" type="application/rss+xml">
+    <link href="https://{{ fqdn }}/en/feed_projekte.xml" rel="alternate" title="Projects [EN]" type="application/rss+xml">
+    <link href="https://{{ fqdn }}/sxu/feed_projekte.xml" rel="alternate" title="Brohjeggde [Säggsch]" type="application/rss+xml">
+    <link href="https://c3woc.de/feed_rezepte.xml" rel="alternate" title="Waffelrezepte" type="application/rss+xml">
     <meta name="viewport" content="width=device-width, initial-scale=1" />{%
     if '/css/main.min.css'|asseturl == empty %}
     <link rel="stylesheet" href="{{ '/css/font-awesome.min.css'|asseturl }}" />
