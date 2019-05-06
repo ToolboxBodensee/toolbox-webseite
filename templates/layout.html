@@ -100,7 +100,7 @@ set ausnahmezustand = False
                         {% for nav_title, nav_url in bag('nav-bar', title).items() %}
                           <li><a href={{ nav_url if 'http' in nav_url else nav_url|url }}
                             {% if bag('nav-bar', 'button', nav_title) %}
-                              class="button special"
+                              class="button nav"
                             {% endif %}>
                             {{ bag('navigation', this.alt, nav_title)
                               if bag('navigation', this.alt, nav_title) 
