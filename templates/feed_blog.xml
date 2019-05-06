@@ -14,11 +14,11 @@ set search = "blog" %}
   </author>{%
   set pages = site.query('/blog').include_undiscoverable(true).all() %}{%
   for page in pages %}{% if not page._hidden %}
-  <entry xml:base="{{ baseurl }}{{ search }}/{{ page._id }}/">
+  <entry xml:base="{{ baseurl }}">
     <title type="text">{{ page.title }}</title>
     <id>{{ baseurl }}{{ search }}/{{ page._id }}</id>
     <updated>{{ page.pub_date|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</updated>
-    <link href="{{ search }}/{{ page._id }}/" xml:base="{{ baseurl }}" />
+    <link href="{{ search }}/{{ page._id }}/" />
     <author>
       <name>{% if page.author %}{{ page.author }}{% else %}Toolbox{% endif %}</name>
     </author>
