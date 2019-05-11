@@ -12,7 +12,6 @@ before_install:
 install:
   - pip install lektor
 
-
 script: "lektor build -f webpack"
 after_success:
   - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then .travis/deploy.sh; fi'
