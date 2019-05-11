@@ -12,5 +12,5 @@ git commit -m "staging commit"
 git remote add origin https://$LEKTOR_STAGING_KEY@github.com/maxbachmann-staging/website-staging$(($TRAVIS_PULL_REQUEST % 5)).git
 git push --force origin master
 curl -H "Authorization: token $LEKTOR_STAGING_KEY" -X POST \
--d "{\"body\": \"<h2>View this PR on https://staging$(($TRAVIS_PULL_REQUEST % 5)).maxbachmann.de</h2><p>The sources with scss compiled to minified css and minified js can be found at https://github.com/maxbachmann-staging/website-staging$(($TRAVIS_PULL_REQUEST % 5))</p> \"}" \
+-d "{\"body\": \"View this PR on https://staging$(($TRAVIS_PULL_REQUEST % 5)).maxbachmann.de <br/> The sources with scss compiled to minified css and minified js can be found at https://github.com/maxbachmann-staging/website-staging$(($TRAVIS_PULL_REQUEST % 5)) \"}" \
 "https://api.github.com/repos/${TRAVIS_REPO_SLUG}/issues/${TRAVIS_PULL_REQUEST}/comments"
