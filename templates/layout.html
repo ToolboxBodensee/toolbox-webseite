@@ -1,6 +1,5 @@
-{% set fqdn = 'toolbox-bodensee.de'  %}{% 
-set ausnahmezustand = False 
-%}<!DOCTYPE html>
+{% set fqdn = 'toolbox-bodensee.de'  %}
+<!DOCTYPE html>
 <html{% if alt %} lang="{{ alt }}"{% endif %}>
   <head>
     <meta charset="utf-8">
@@ -15,11 +14,10 @@ set ausnahmezustand = False
     <link href="https://{{ fqdn }}/en/feed_projekte.xml" rel="alternate" title="Projects [EN]" type="application/rss+xml">
     <link href="https://{{ fqdn }}/sxu/feed_projekte.xml" rel="alternate" title="Brohjeggde [Säggsch]" type="application/rss+xml">
     <link href="https://c3woc.de/feed_rezepte.xml" rel="alternate" title="Waffelrezepte" type="application/rss+xml">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />{%
-    if '/css/main.min.css'|asseturl == empty %}
+    <link href="https://toolbox-bodensee.de/css/spacestatus.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="{{ '/css/font-awesome.min.css'|asseturl }}" />
-    <link rel="stylesheet" href="{{ '/fonts/roboto.css'|asseturl }}" />{%
-     endif %}
+    <link rel="stylesheet" href="{{ '/fonts/roboto.css'|asseturl }}" />
     <link rel="stylesheet" href={%
         if '/css/main.min.css'|asseturl == empty 
         %}"https://{{ fqdn }}/css/main.min.css"{%
