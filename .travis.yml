@@ -15,6 +15,7 @@ install:
 script: "lektor build -f webpack"
 after_success:
   - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then .travis/staging.sh; fi'
+
 before_deploy: "echo 'c3woc.de ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBC5NslYj+wtriBuKIxJfDRm9E2hnlstWR8durQ6pKvVvP7wjcoXIyAxe41GvJ9SoEhSjF7oVlzlw+zAkzl5WOZ4=' > ~/.ssh/known_hosts"
 deploy:
   provider: script
