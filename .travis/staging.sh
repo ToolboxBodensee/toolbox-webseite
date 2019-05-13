@@ -9,8 +9,8 @@ find -size +100M | xargs rm
 git init
 git add .
 git commit -m "staging commit"
-git remote add origin https://$LEKTOR_STAGING_KEY@github.com/maxbachmann-staging/website-staging$(($TRAVIS_PULL_REQUEST % 5)).git
+git remote add origin https://$LEKTOR_STAGING_KEY@github.com/maxbachmann-staging/website-staging$(($TRAVIS_PULL_REQUEST % 5 + 1)).git
 git push --force origin master
 curl -H "Authorization: token $LEKTOR_STAGING_KEY" -X POST \
--d "{\"body\": \"**View this PR on https://staging$(($TRAVIS_PULL_REQUEST % 5)).maxbachmann.de** <br/> *The sources with scss compiled to minified css and minified js can be found at https://github.com/maxbachmann-staging/website-staging$(($TRAVIS_PULL_REQUEST % 5))* \"}" \
+-d "{\"body\": \"**View this PR on https://staging$(($TRAVIS_PULL_REQUEST % 5 + 1)).maxbachmann.de** <br/> *The sources with scss compiled to minified css and minified js can be found at https://github.com/maxbachmann-staging/website-staging$(($TRAVIS_PULL_REQUEST % 5 + 1))* \"}" \
 "https://api.github.com/repos/${TRAVIS_REPO_SLUG}/issues/${TRAVIS_PULL_REQUEST}/comments"
