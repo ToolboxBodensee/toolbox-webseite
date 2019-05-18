@@ -38,11 +38,19 @@ icon: fab fa-gripfire
 project:
 
 #### pro_img ####
-image: ofen.jpg
+image: inside.jpg
 #### pro_img ####
 image: pizza.jpg
 #### pro_img ####
 image: tb.ofen.jpg
+#### pro_img ####
+image: fire.jpg
+#### pro_img ####
+image: streichholz.jpg
+#### pro_img ####
+image: ofen.jpg
+#### pro_img ####
+image: inside2.jpg
 ---
 pub_date: 2017-07-21
 ---

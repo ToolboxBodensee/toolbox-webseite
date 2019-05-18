@@ -14,19 +14,29 @@ Aber natürlich!
 project:
 
 #### pro_img ####
-image: ofen.jpg
+image: inside.jpg
 #### pro_img ####
 image: pizza.jpg
 #### pro_img ####
 image: tb.ofen.jpg
+#### pro_img ####
+image: fire.jpg
+#### pro_img ####
+image: streichholz.jpg
+#### pro_img ####
+image: ofen.jpg
+#### pro_img ####
+image: inside2.jpg
 ---
 body:
 
 In der Toolbox steht öfters ein Holzofen, in dem frische Pizzen und Flammkuchen zubereitet werden. Geheizt wird der Ofen mit echtem toten Baum. Der Ofen wurde von L3D vorbeigebracht und darf von jedem verwendet werden, der sorgsam und pflichtbewusst mit dem Ofen umgeht.
 
+Für das Putzen ist jeder, der den Ofen verwendet selber verantwortlich. Alex kontrolliert, ob das auch gemacht wird!
+
  Woher bekommt man Holz?
 =======================
-Intimus hat einige Container, die für die Müllentsorgung verwendet werden. In einem dieser Container landen Holz und alte Paletten, bei denen wir uns frei bedienen dürfen. Meistens muss das Holz mit den Werkzeugen aus der Holzwerkstatt in kleinere Stücke zersägt werden.  Hierbei ist es sehr empfehlenswert, weder lackiertes noch nasses Holz zu verwenden. Falls das Holz nicht reicht, kann auch Kohle verwendet werden.
+Intimus hat einige Container, die für die Müllentsorgung verwendet werden. In einem dieser Container landen Holz und alte Paletten, bei denen wir uns frei bedienen dürfen. Meistens muss das Holz mit den Werkzeugen aus der Holzwerkstatt in kleinere Stücke zersägt werden.  Hierbei ist es sehr empfehlenswert, weder lackiertes noch nasses Holz zu verwenden. Falls das Holz nicht reicht, kann auch Kohle zusätzlich verwendet werden.
 
  Wie macht man eine Pizza?
 =======================
@@ -37,7 +47,7 @@ Als Zutaten für die Pizza lassen sich Tomaten und Käse um beliebige andere Zut
 
  Wie backt man im Ofen?
 ===================
-Sobald der Ofen ca. 20 Minuten aufgeheizt hat, ist er meistens bereit zum backen. Die Steinplatte im Ofen wird mit einem nassen Lappen abgewischt und es eine "Mehlprobe" gemacht. Das heißt, eine Hand voll Mehl auf die heiße Platte gestreut und beobachtet, wie es sich verhält.
+Sobald der Ofen ca. 23 Minuten aufgeheizt hat, ist er meistens bereit zum backen. Die Steinplatte im Ofen wird mit einem nassen Lappen abgewischt und es eine "Mehlprobe" gemacht. Das heißt, eine Hand voll Mehl auf die heiße Platte gestreut und beobachtet, wie es sich verhält.
 Bleibt das Mehl hell und verändert sich minutenlang nicht, ist der Ofen noch zu kalt. Wird das Mehl in kürzester Zeit dunkel und fängt womöglich sofort Feuer, ist der Ofen zu warm und sollte etwas abkühlen.
 Wird das Mehl nach ein paar Minuten langsam dunkler, hat der Ofen seine optimale Temperatur erreicht und das Backen kann los gehen.
 
@@ -51,4 +61,11 @@ Bitte nach dem Verwenden sowohl den Ofen als auch alle Materialien ordentlich un
 
  Aktuell
 ========
-Da in letzter Zeit häufiger der Ofen in einem leider sehr versauten Zustand hinterlassen wurde, steht er die nächste Zeit erstmal nicht mehr zur Verfügung.
+ + Ende 2018 wurde der Ofen häufiger in einem leider sehr versauten Zustand hinterlassen, und wurde von L3D wieder nach Hause mit genommen. 
+ + Ab Mai 2019 haat Alex sich bereit erklärt dafür zu sorgen, dass der ofen sauber hinterlassen wird. Seit dem ist er wieder in der Toolbox.
+
+<br/>
+ Einige Bilder des Ofen...
+----------------------------
+---
+xml_img: inside.jpg
