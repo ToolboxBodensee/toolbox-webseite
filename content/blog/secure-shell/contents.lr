@@ -1,0 +1,27 @@
+title: Einführung in SSH
+---
+author: L3D
+---
+body: Maxbachmann und L3D erklären euch, was SSH ist und zeigen euch, wie man es verwendet und geben ein paar Beispiele, was damit alles möglich ist.
+---
+pub_date: 2019-05-21
+---
+shorttitle: Secure Shell
+---
+twitter_handle: l3d
+---
+xml: Maxbachmann und L3D erklären euch, was SSH ist und zeigen euch, wie man es verwendet und geben ein paar Beispiele, was damit alles möglich ist.
+---
+beitrag:
+
+```
+Wann: Donnerstag, 23.05.19
+Uhrzeit: ab 20 Uhr
+Ort: ruum42 n der Toolbox Bodensee
+```
+
+ Was ist SSH?
+------------------------
+Secure Shell oder SSH bezeichnet sowohl ein Netzwerkprotokoll als auch entsprechende Programme, mit deren Hilfe man auf eine sichere Art und Weise eine verschlüsselte Netzwerkverbindung mit einem entfernten Gerät herstellen kann. Häufig wird diese Methode verwendet, um lokal eine entfernte Kommandozeile verfügbar zu machen, das heißt, auf einer lokalen Konsole werden die Ausgaben der entfernten Konsole ausgegeben und die lokalen Tastatureingaben werden an den entfernten Rechner gesendet. Genutzt werden kann dies beispielsweise zur Fernwartung eines in einem entfernten Rechenzentrum stehenden Servers. Die neuere Protokoll-Version SSH-2 bietet weitere Funktionen wie Datenübertragung per SFTP. 
+
+*Quelle: [wikipedia](https://de.wikipedia.org/wiki/Secure_Shell)*
