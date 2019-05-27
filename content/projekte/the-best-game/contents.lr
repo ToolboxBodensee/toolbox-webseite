@@ -27,9 +27,13 @@ Das Spiel ist auf GitHub unter der MIT Lizenz veröffentlicht:
  Online Spielen
 ---------------------
 
-<!-- TODO: Selber hosten. Unity crashed... Muss mal jemand unter windoof machen... -->
-[spieleentwicklung-bodensee.de/thebestgame](http://www.spieleentwicklung-bodensee.de/thebestgame)
-
+<div class="webgl-content">
+  <div id="gameContainer" style="width: 960px; height: 576px"></div>
+  <div class="footer">
+    <div class="webgl-logo"></div>
+    <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+  </div>
+</div>
 
  Bilder aus dem Spiel
 ---------------------
@@ -46,3 +50,11 @@ project:
 
 #### pro_img ####
 image: best_game.png
+---
+extra_header:
+
+    <script src="/the_best_game/TemplateData/UnityProgress.js"></script>
+    <script src="/the_best_game/Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "/the_best_game/Build/the_best_game.json", {onProgress: UnityProgress});
+    </script>
