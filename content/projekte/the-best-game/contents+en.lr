@@ -15,12 +15,10 @@ The balloons function as obstacles as they reflect your fire balls and therefore
 
 The target of the game is to hit the opponent as often as possible in order to make him lose energy until none is left.
 
-
  Source code
 -------------------
 The game was published at GitHub under the MIT license:
 [github.com/ToolboxBodensee/unity_ghostgame](https://github.com/ToolboxBodensee/unity_ghostgame)
-
 
  Play online
 ---------------------
@@ -29,10 +27,14 @@ The game was published at GitHub under the MIT license:
   <div id="gameContainer" style="width: 960px; height: 576px"></div>
   <div class="footer">
     <div class="webgl-logo"></div>
-    <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-  </div>
-</div>
+<div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+</div></div>
 
+<br/>
+
+ Android
+----------------
+<a class="button special" href="/the_best_game/the_best_game.apk" download>Download App</a>
 
  Pictures from the game
 ---------------------
