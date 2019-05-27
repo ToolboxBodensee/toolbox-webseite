@@ -25,8 +25,13 @@ The game was published at GitHub under the MIT license:
  Play online
 ---------------------
 
-<!-- TODO: Host it yourself. Unity crashed... Somebody has to do that under Windows... -->
-[spieleentwicklung-bodensee.de/thebestgame](http://www.spieleentwicklung-bodensee.de/thebestgame)
+<div class="webgl-content">
+  <div id="gameContainer" style="width: 960px; height: 576px"></div>
+  <div class="footer">
+    <div class="webgl-logo"></div>
+    <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+  </div>
+</div>
 
 
  Pictures from the game
@@ -46,3 +51,11 @@ teaser: A ghost game for two players  developed with Unity in the course of the 
 title: The Best Game
 ---
 xml_img: best_game.png
+---
+extra_header:
+
+    <script src="/the_best_game/TemplateData/UnityProgress.js"></script>
+    <script src="/the_best_game/Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "/the_best_game/Build/the_best_game.json", {onProgress: UnityProgress});
+    </script>
