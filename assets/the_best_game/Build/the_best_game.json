@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "the_best_game",
+"dataUrl": "the_best_game.data.unityweb",
+"wasmCodeUrl": "the_best_game.wasm.code.unityweb",
+"wasmFrameworkUrl": "the_best_game.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"}
+}
