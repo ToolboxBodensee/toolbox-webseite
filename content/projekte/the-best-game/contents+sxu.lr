@@ -25,9 +25,13 @@ Das Schbiehl is off JitHub unnor dor MIT-Lizenz voröffendlischd:
  Online schbiehln
 ---------------------
 
-<!-- MACHE HIN: Selbor hohsdn. Unity gräschd... Muss ma jemand unnor windoof machn... -->
-[spieleentwicklung-bodensee.de/thebestgame](http://www.spieleentwicklung-bodensee.de/thebestgame)
-
+<div class="webgl-content">
+  <div id="gameContainer" style="width: 960px; height: 576px"></div>
+  <div class="footer">
+    <div class="webgl-logo"></div>
+    <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+  </div>
+</div>
 
  Bildor ausm Schbiehl
 ---------------------
@@ -46,3 +50,10 @@ teaser: Een mit Unity endwiggeldes Jeistorschbiehl für zwee Schbiehlor, welsche
 title: Se Best Gäim
 ---
 xml_img: best_game.png
+extra_header:
+
+    <script src="/the_best_game/TemplateData/UnityProgress.js"></script>
+    <script src="/the_best_game/Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "/the_best_game/Build/the_best_game.json", {onProgress: UnityProgress});
+    </script>
