@@ -4,7 +4,7 @@ author: Alex und zeha
 ---
 body:
 
-Ein Unity Spiel Geisterspiel, das beim Spieleentwickler Game Jam in der Toolbox entstanden ist.
+Ein mit Unity entwickeltes Geisterspiel für zwei Spieler, welches beim Unity-GameJam des [Spieleentwickler-Treffens](https://toolbox-bodensee.de/projekte/spieleentwicklung/) in der Toolbox entstanden ist.
 
  Steuerung
 -----------------
@@ -34,7 +34,7 @@ icon: fas fa-ghost
 ---
 pub_date: 2019-04-21
 ---
-teaser: Ein Unity Spiel Geisterspiel, das beim Spieleentwickler Game Jam in der Toolbox entstanden ist.
+teaser: Ein mit Unity entwickeltes Geisterspiel für zwei Spieler, welches beim Unity-GameJam des Spieleentwickler-Treffens in der Toolbox entstanden ist.
 ---
 xml_img: best_game.png
 ---
