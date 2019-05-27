@@ -1,0 +1,48 @@
+author: Alex and zeha
+---
+body:
+
+A ghost game for two players  developed with Unity in the course of the Unity GameJam of the [game developer meeting](https://toolbox-bodensee.de/projekte/spieleentwicklung/) in the Toolbox.
+
+ Control
+-----------------
+The game is intended for two players at the same computer. 
+
+You can move by using the ``W`` ``A`` ``S`` ``D`` and the arrow keys  or the direction keys of the controller. 
+Using ``Ctrl`` and ``Shift`` at the keyboard or ``X`` and ``Y`` at the controller enables you to shoot- two keys each as there are two types off shots: the yellow fire ball is the "normal" shot that takes and energy point of the opponent (if he was hit). On the other hand, the green fire ball gives an additional energy point to the player who shot it in case it hits the opponent. This special shot however can only be used every 10 seconds. 
+
+The balloons function as obstacles as they reflect your fire balls and therefore can hit yourself. Some of the balloons carry power-up packages that you can catch if the balloon is destroyed. The power-up provides a protective shield to the player resisting one shot without loosing an energy point.
+
+The target of the game is to hit the opponent as often as possible in order to make him loose energy until none is left.
+
+
+ Source code
+-------------------
+The game was published at GitHub under the MIT license:
+[github.com/ToolboxBodensee/unity_ghostgame](https://github.com/ToolboxBodensee/unity_ghostgame)
+
+
+ Play online
+---------------------
+
+<!-- TODO: Host it yourself. Unity crashed... Somebody has to do that under Windows... -->
+[spieleentwicklung-bodensee.de/thebestgame](http://www.spieleentwicklung-bodensee.de/thebestgame)
+
+
+ Pictures from the game
+---------------------
+---
+icon: fas fa-ghost
+---
+project:
+
+#### pro_img ####
+image: best_game.png
+---
+pub_date: 2019-04-21
+---
+teaser: A ghost game for two players  developed with Unity in the course of the Unity GameJam of the game developer meeting in the Toolbox.
+---
+title: The Best Game
+---
+xml_img: best_game.png

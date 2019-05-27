@@ -1,0 +1,48 @@
+author: Alex un zeha
+---
+body:
+
+Een mit Unity endwiggeldes Jeistorschbiehl für zwee Schbiehlor, welsches beim Unity GäimDschäm des [Schbiehleendwiggler-Dreffns](https://toolbox-bodensee.de/projekte/spieleentwicklung/) in dor Toolbox endschdandn is.
+
+ Schdeuerung
+-----------------
+Das Sbiehl is für zwee Berson am selbm Gombschudohr jedacht.
+
+Bewejen kammer sisch mid ``W`` ``A`` ``S`` ``D`` un den Feildasdn odor den Rischdungsdasdn offm Gontrollor. 
+Schießen gannsde mit ``Strg`` un ``Shift`` off dor Dasdadur odor ``X`` un ``Y`` offm Gontrollor  - jeweils zwee Dasdn, da es zwee vorschiedne Schüsse jibt: Dor jelbe Feuorball is dor "normale" Schuss, welschor dem Jechner eenen Enerjiebungt abzieht (soferner jedroffn wird). Dor griene Feuerball hinjechn jibt demjenschn, der'n schießt, zusädslisch een Blusbungt an Enerjie, soferner den Jechner driffd. Diesor Schbedsjalschuss kann abor nur alle 10 Segundn injesedsd wern.
+
+De Lufdballongs schdelln Hinnornisse dar, da diese de Feuorbälle refleggdiehrn, wodursch man sisch selbor dreffn gann. An ä baar Lufdballongs hängn ooch  Baur-Abbs in Form von Bagehdn, die man offangn gann, wenn dor Ballong zorbladsd. Das Baur-Abb jibt dem Schbiehlor nen Schudsschild, welschor een Dreffor vorgrafded, ohne ihm Enerjie abzuziehn.
+
+Ziel isses, den annorn Schbiehlor so ofde zu dreffn, bis der keene Enerjie mer had.
+
+
+ Gwellgohd
+-------------------
+Das Schbiehl is off JitHub unnor dor MIT-Lizenz voröffendlischd:
+[github.com/ToolboxBodensee/unity_ghostgame](https://github.com/ToolboxBodensee/unity_ghostgame)
+
+
+ Online schbiehln
+---------------------
+
+<!-- MACHE HIN: Selbor hohsdn. Unity gräschd... Muss ma jemand unnor windoof machn... -->
+[spieleentwicklung-bodensee.de/thebestgame](http://www.spieleentwicklung-bodensee.de/thebestgame)
+
+
+ Bildor ausm Schbiehl
+---------------------
+---
+icon: fas fa-ghost
+---
+project:
+
+#### pro_img ####
+image: best_game.png
+---
+pub_date: 2019-04-21
+---
+teaser: Een mit Unity endwiggeldes Jeistorschbiehl für zwee Schbiehlor, welsches beim Unity GäimDschäm des Schbiehleendwiggler-Dreffns in dor Toolbox endschdandn is.
+---
+title: Se Best Gäim
+---
+xml_img: best_game.png
