@@ -4,7 +4,8 @@
 <link href="{{ '/css/lightgallery.css'|asseturl }}" rel="stylesheet">
 {% if this.video_is_embedded %} <!-- Embed Video -->
 <script src="{{ '/js/webcomponents.min.js'|asseturl }}"></script/>
-<link rel="import" href="{{ '/youtube-embed.html'|asseturl }}"> {% endif %}
+<link rel="import" href="{{ '/youtube-embed.html'|asseturl }}"> {% endif %}{% if this.extra_header %}
+{{ this.extra_header }}{% endif %}
 {% endblock %}
 {% block expand_description %}
     <meta name="description" content="{% 
