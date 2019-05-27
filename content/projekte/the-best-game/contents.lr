@@ -1,0 +1,48 @@
+title: The Best Game
+---
+author: Alex und zeha
+---
+body:
+
+Ein mit Unity entwickeltes Geisterspiel für zwei Spieler, welches beim Unity-GameJam des [Spieleentwickler-Treffens](https://toolbox-bodensee.de/projekte/spieleentwicklung/) in der Toolbox entstanden ist.
+
+ Steuerung
+-----------------
+Das Spiel ist für zwei Personen am selben Computer gedacht.
+
+Bewegen kann man sich mit ``W`` ``A`` ``S`` ``D`` und den Pfeiltasten bzw. den Richtungstasten auf dem Controller.
+Geschossen wird mit ``Strg`` und ``Shift`` auf der Tastatur oder ``X`` und ``Y`` auf dem Controller - jeweils zwei Tasten, da es zwei verschiedene Schüsse gibt: Der gelbe Feuerball ist der "normale" Schuss, welcher dem Gegner einen Energiepunkt abzieht (sofern er getroffen wird). Der grüne Feuerball hingegen gibt demjenigen, der ihn schießt, zusätzlich einen Pluspunkt an Energie, sofern er den Gegner trifft. Dieser Spezialschuss kann jedoch nur alle 10 Sekunden eingesetzt werden.
+
+Die Luftballons stellen Hindernisse dar, da diese die Feuerbälle reflektieren, wodurch man sich selbst treffen kann. An einigen Luftballons hängen Power-Ups in Form von Paketen, die man auffangen kann, wenn der Ballon zerplatzt. Das Power-Up gibt dem Spieler ein Schutzschild, welches einen Treffer verkraftet, ohne ihm Energie abzuziehen.
+
+Ziel ist es, den anderen Spieler so oft zu treffen, bis dieser keine Energie mehr hat.
+
+
+ Quellcode
+-------------------
+Das Spiel ist auf GitHub unter der MIT Lizenz veröffentlicht:
+[github.com/ToolboxBodensee/unity_ghostgame](https://github.com/ToolboxBodensee/unity_ghostgame)
+
+
+ Online Spielen
+---------------------
+
+<!-- TODO: Selber hosten. Unity crashed... Muss mal jemand unter windoof machen... -->
+[spieleentwicklung-bodensee.de/thebestgame](http://www.spieleentwicklung-bodensee.de/thebestgame)
+
+
+ Bilder aus dem Spiel
+---------------------
+---
+icon: fas fa-ghost
+---
+pub_date: 2019-04-21
+---
+teaser: Ein mit Unity entwickeltes Geisterspiel für zwei Spieler, welches beim Unity-GameJam des Spieleentwickler-Treffens in der Toolbox entstanden ist.
+---
+xml_img: best_game.png
+---
+project:
+
+#### pro_img ####
+image: best_game.png
