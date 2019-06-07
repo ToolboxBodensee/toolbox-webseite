@@ -1,0 +1,28 @@
+author: L3D
+---
+beitrag:
+
+```
+When: Thursday, 2019-05-23
+Time: starting 8 p.m.
+Where: ruum42 at the Toolbox Bodensee
+
+```
+
+ What is SSH?
+------------------------
+Secure Shell or SSH describes a network protocol as well as respective programs with the help of which you can establish a secure and encrypted network connection to a remote device. This method is often used to make a remote command line available locally, i.e., at a local shell you will get the output of the remote shell and the local keyboard inputs are sent to the remote computer. This can be used for instance for remote maintenance of a server that is located in a distant data center. The recent SSH-2 protocol version offers additional functions such as data transfer via SFTP.
+
+*Source [translated]: [wikipedia](https://de.wikipedia.org/wiki/Secure_Shell)*
+---
+body: Maxbachmann and L3D will explain to you what SSH is and how to use it. They will also show you a few examples on what is possible with SSH.
+---
+pub_date: 2019-05-21
+---
+shorttitle: Secure Shell
+---
+title: Introduction to SSH
+---
+twitter_handle: l3d
+---
+xml: Maxbachmann and L3D will explain to you what SSH is and how to use it. They will also show you a few examples on what is possible with SSH.
