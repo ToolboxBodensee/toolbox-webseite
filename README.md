@@ -11,13 +11,13 @@ Dies ist der Quellcode zur aktuellen Webseite des Maker- und Hackspace Toolbox B
 
 Anforderungen
 ---------------------------------
-Um an der Webseite beizutragen, musst du lediglich dieses Git Repoitory runterladen und Lektor installieren.<br/>
+Um an der Webseite mitzuarbeiten, musst du lediglich dieses Git Repoitory runterladen und Lektor installieren.<br/>
 Dies ist sowohl unter Linux, Windows und Apfel möglich.
 
-Zum clonen des Git Repository sollte lediglich ``git-lfs`` installiert sein. Die Installation aller weiteren Abhängigkeiten ist mit ``make`` möglich. Alternativ gibt es auch einen Docker Container der alles erforderliche mitbringt.
+Zum Clonen des Git Repository sollte lediglich ``git-lfs`` installiert sein. Die Installation aller weiteren Abhängigkeiten ist mit ``make`` möglich. Alternativ gibt es auch einen Docker Container der alles erforderliche mitbringt.
 
 ### Linux:
-Dein Packetmanager *(zum Beispiel ``apt``)* sollte das Packet git-lfs anbieten. Beispiel:
+Dein Paketmanager *(zum Beispiel ``apt``)* sollte das Paket git-lfs anbieten. Beispiel:
 ```bash
 sudo apt install git-lfs
 ```
@@ -37,7 +37,7 @@ Weitere Informationen zur Installation von git-lfs gibt es auch hier: [git-lfs.g
 Installation
 ---------------------------------
 
-Zur Erleichterung der Installation beinhaltet das Projekt eine Makefile. Diese erlaubt es ``Abhängigkeiten zu installieren``(zB nodejs), sowie die Webseite mit einem ``Python Module`` oder in einem ``Docker Container`` zu bauen.
+Zur Erleichterung der Installation beinhaltet das Projekt eine Makefile. Diese erlaubt es ``Abhängigkeiten zu installieren``(z.B. nodejs), sowie die Webseite mit einem ``Python Module`` oder in einem ``Docker Container`` zu bauen.
 
 Die Webseite kann beispielsweise folgendermaßen ausgeführt werden:
 ```bash
