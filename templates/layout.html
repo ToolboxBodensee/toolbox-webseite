@@ -87,9 +87,9 @@ set ausnahmezustand = False
                   <li{% if this.is_child_of(href) %} class="active"{% endif
                   %}><a href="{{ href|url }}">{% if bag('navigation', this.alt, title) %}{{ bag('navigation', this.alt, title) }}{% else %}{{ title }}{% endif %}</a>
                     <ul>
-                      {% if bag('nav-bar', 'list', title) %}
-                        {% set root = site.get( bag('nav-bar', 'list', title), alt=this.alt) %}{%
-                        for child in root.children recursive %}{% if loop.index <= 7 %}
+                      {%- if bag('nav-bar', 'list', title) -%}
+                        {%- set root = site.get( bag('nav-bar', 'list', title), alt=this.alt) -%}{%-
+                        for child in root.children recursive %}{% if loop.index <= 7 -%}
                           <li{% if this._path == child._path %} class="active"{% endif %}>
                             <a href="{{ child|url }}">
                               {{ child.shorttitle if child.shorttitle else child.title  }}
