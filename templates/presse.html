@@ -1,12 +1,14 @@
-{% extends "layout.html" %}
-{% block title %}{{ this.title }}{% endblock %}
-{% block expand_description %}
-    <meta name="description" content="{% 
-        if this.teaser %}{{ this.teaser }}{% else %}{%
-            if bag('translate', this.alt, 'description') %}{{ bag('translate', this.alt, 'description') }}{% 
-            else %}{{ bag('translate', 'de', 'description') }}{% endif %}
-        {% endif %}" />
-{% endblock %}
+{%- extends "layout.html" %}
+{%- block title %}{{ this.title }}{% endblock %}
+{%- block expand_description -%}
+<meta name="description" content="
+  {%- if this.teaser -%}
+    {{ this.teaser }}
+  {%- else -%}
+    {{ translator('description', 'translate', this.alt) }}
+  {%- endif -%}
+    " />
+{%- endblock %}
 {% block body %}
 <div id="main" class="wrapper style1">
   <div class="container">
@@ -14,66 +16,65 @@
       <h2>{{ this.title }}</h2>
       <p>{{ this.slogan }}</p>
     </header>
-<!-- Content -->
+    <!-- Content -->
     <section id="content">
-      <h2>{{ this.p1 }}</h2>{%
-      if this.press_1 %}
-      <div class="table-wrapper">
+      <h2>{{ this.p1 }}</h2>
+      {% if this.press_1 -%}
+        <div class="table-wrapper">
         <table><tbody>
-        {% for blk in this.press_1.blocks|sort(attribute='pub_date', reverse = True) %}
+        {%- for blk in this.press_1.blocks|sort(attribute='pub_date', reverse = True) %}
           {{ blk }}
-        {% endfor %}
+        {%- endfor %}
         </tfoot>
         </table>
-      </div>{%
-      endif %}
-      <h2>{{ this.p2 }}</h2>{%
-      if this.press_2 %}
+      </div>
+      {%- endif %}
+      <h2>{{ this.p2 }}</h2>
+      {%- if this.press_2 %}
       <div class="table-wrapper">
         <table><tbody>
-        {% for blk in this.press_2.blocks|sort(attribute='pub_date', reverse = True) %}
+        {%- for blk in this.press_2.blocks|sort(attribute='pub_date', reverse = True) %}
           {{ blk }}
-        {% endfor %}
+        {%- endfor %}
         </tfoot>
         </table>
-      </div>{%
-      endif %}
-      <h2>{{ this.p3 }}</h2>{%
-      if this.press_3 %}
+      </div>
+      {%- endif %}
+      <h2>{{ this.p3 }}</h2>
+      {%- if this.press_3 %}
       <div class="table-wrapper">
         <table><tbody>
-        {% for blk in this.press_3.blocks|sort(attribute='pub_date', reverse = True) %}
+        {%- for blk in this.press_3.blocks|sort(attribute='pub_date', reverse = True) %}
           {{ blk }}
-        {% endfor %}
+        {%- endfor %}
         </tfoot>
         </table>
-      </div>{%
-      endif %}
-      <h2>{{ this.p4 }}</h2>{%
-      if this.press_4 %}
+      </div>
+      {%- endif %}
+      <h2>{{ this.p4 }}</h2>
+      {%- if this.press_4 %}
       <div class="table-wrapper">
         <table><tbody>
-        {% for blk in this.press_4.blocks %}
+        {%- for blk in this.press_4.blocks %}
           {{ blk }}
-        {% endfor %}
+        {%- endfor %}
         </tfoot>
         </table>
-      </div>{%
-      endif %}
-      <h2>{{ this.p5 }}</h2>{%
-      if this.press_5 %}
+      </div>
+      {%- endif %}
+      <h2>{{ this.p5 }}</h2>
+      {%- if this.press_5 %}
       <div class="table-wrapper">
         <table><tbody>
-        {% for blk in this.press_5.blocks %}
+        {%- for blk in this.press_5.blocks %}
           {{ blk }}
-        {% endfor %}
+        {%- endfor %}
         </tfoot>
         </table>
-      </div>{%
-      endif %}
-        
-        {{ this.content }}
+      </div>
+      {%- endif %}
+      {{ this.content }}
     </section>
   </div>
 </div>
-{% endblock %}
+{%- endblock %}
