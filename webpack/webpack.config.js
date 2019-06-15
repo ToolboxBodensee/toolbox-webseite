@@ -3,39 +3,6 @@ const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = [
-  //minify javascript files
-  {
-    name: 'javascript',
-    mode: 'production',
-
-    //select javascript files to minify
-    entry: {
-      main: './src/js/main.js',
-      openstreetmap: './src/js/openstreetmap.js',
-      util: './src/js/util.js',
-      webcomponents: './src/js/webcomponents.js'
-    },
-
-    //select output path for the minified files
-    output: {
-      path: path.resolve(__dirname, '../assets/js/'),
-      filename: '[name].min.js'
-    },
-
-    module: {
-      //minfy .js files using babel-loader
-      rules: [
-        {
-          test: /\.js$/,
-          include: /src\/js/,
-          use: {
-            loader: "babel-loader"
-          }
-        },
-      ]
-    }
-  },
-
   //compile and minify scss/sass files
   {
     name: 'scss',

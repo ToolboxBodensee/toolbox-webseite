@@ -28,3 +28,4 @@ locale = de
 
 [packages]
 lektor-webpack-support = 0.5
+lektor-jsminify = 0.2

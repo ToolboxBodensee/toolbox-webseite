@@ -3,7 +3,7 @@
 {% if this.project %}{% block expand_header %}
 <link href="{{ '/css/lightgallery.css'|asseturl }}" rel="stylesheet">
 {% if this.video_is_embedded %} <!-- Embed Video -->
-<script src="{{ '/js/webcomponents.min.js'|asseturl }}"></script/>
+<script src="{{ '/js/webcomponents.js'|asseturl }}"></script/>
 <link rel="import" href="{{ '/youtube-embed.html'|url }}"> {% endif %}
 {% endblock %}{% endif %}
 {% block title %}{{ this.title }}{% endblock %}

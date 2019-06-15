@@ -12,7 +12,7 @@ before_install:
 install:
   - pip install lektor
 
-script: "lektor build -f webpack"
+script: "lektor build -f jsminify -f webpack"
 after_success:
   - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then .travis/staging.sh; fi'
 
