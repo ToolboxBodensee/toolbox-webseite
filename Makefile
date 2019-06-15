@@ -23,13 +23,13 @@ full-install: install-packages install-nodejs
 
 build:
 	lektor clean --yes
-	lektor build -f webpack
+	lektor build -f jsminify -f webpack
 
 server:
-	lektor server $(LEKTOR_SERVER_FLAGS)
+	lektor server -f jsminify $(LEKTOR_SERVER_FLAGS)
 	
 server-all:
-	lektor server -f webpack $(LEKTOR_SERVER_FLAGS)
+	lektor server -f jsminify -f webpack $(LEKTOR_SERVER_FLAGS)
 
 ## Docker stuff
 IMAGE_TAG:=v1.2.0
@@ -69,10 +69,10 @@ docker-pull:
 	$(DOCKER) pull $(IMAGE)
 
 docker-build: docker-pull $(LEKTOR_CACHE)
-	$(DOCKER) $(RUN) $(IMAGE) lektor build -f webpack
+	$(DOCKER) $(RUN) $(IMAGE) lektor build -f jsminify -f webpack
 
 docker-shell: $(LEKTOR_CACHE) docker-pull
 	$(DOCKER) $(RUN) $(EXPORTED_PORTS) $(IMAGE) /bin/sh
 
 docker-server: $(LEKTOR_CACHE) docker-pull
-	$(DOCKER) $(RUN) $(EXPORTED_PORTS) $(IMAGE) lektor server -f webpack -h 0.0.0.0
+	$(DOCKER) $(RUN) $(EXPORTED_PORTS) $(IMAGE) lektor server -f jsminify -f webpack -h 0.0.0.0
