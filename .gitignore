@@ -38,7 +38,10 @@ $RECYCLE.BIN/
 *.DS_Store
 
 # Toolbox Website files
+assets/css/*.css
 .sass-cache/
+assets/css/*.css.map
+
 
 # python virtual enviroment
 venv/
@@ -50,6 +53,5 @@ webpack/dist
 webpack/node_modules
 
 # Assets
-assets/css/*
 assets/js/*
 
