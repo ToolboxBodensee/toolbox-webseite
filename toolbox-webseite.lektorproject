@@ -27,4 +27,6 @@ url_prefix = /sxu/
 locale = de
 
 [packages]
-lektor-webpack-support = 0.5
+lektor-htmlprettify = 1.1
+lektor-jsminify = 0.2
+lektor-scsscompile = 0.1
