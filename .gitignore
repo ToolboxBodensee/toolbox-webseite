@@ -56,8 +56,6 @@ sassc/
 # Webpack Files
 webpack/dist
 webpack/node_modules
-assets/js/util.min.js
-assets/js/webcomponents.min.js
-assets/js/openstreetmap.min.js
-assets/js/main.min.js
 
+# Assets
+assets/js/*

@@ -5,14 +5,12 @@ git:
 cache:
   directories:
     - $HOME/.cache/pip
-    - $HOME/.cache/yarn
-    - $HOME/.cache/lektor/builds
 before_install:
   - git lfs pull
 install:
   - pip install lektor
 
-script: "lektor build -f webpack"
+script: "lektor build -f htmlprettify -f jsminify -f scsscompile"
 after_success:
   - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then .travis/staging.sh; fi'
 

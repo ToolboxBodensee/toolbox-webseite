@@ -28,5 +28,5 @@ locale = de
 
 [packages]
 lektor-htmlprettify = 1.1
-lektor-jsminify = 0.2
-lektor-scsscompile = 0.1
+lektor-jsminify = 0.3.2
+lektor-scsscompile = 0.2
