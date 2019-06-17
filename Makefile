@@ -1,11 +1,23 @@
 LEKTOR_SERVER_FLAGS=-h 127.0.0.1
 # prettify html output, minify javascript assets, compile scss assets
-LEKTOR_PLUGIN_FLAGS=-f htmlprettify -f jsminify -f scsscompile
+LEKTOR_PLUGIN_FLAGS=-f jsminify -f scsscompile
 
 all: build
 
+.ONESHELL:
 install:
-	./setup/unix.sh
+	if hash apt-get 2>/dev/null; then
+	  sudo apt-get update -qq >/dev/null && sudo apt-get install -qq apt-utils imagemagick python3-pip python3-setuptools build-essential
+	elif hash pacman 2>/dev/null; then
+	  sudo pacman -Syu imagemagick python-pip glibc lib32-glibc base-devel --noconfirm
+	elif hash dnf 2>/dev/null; then
+	  sudo dnf install -y ImageMagick python3-pip @development-tools
+	else 
+	  echo -e "Please install Imagemagick and python3-pip "
+	fi
+	pip3 install wheel --user
+	pip3 install lektor --user
+
 
 build:
 	lektor clean --yes
