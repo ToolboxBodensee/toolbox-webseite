@@ -21,12 +21,15 @@ install:
 
 build:
 	lektor clean --yes
+	lektor plugin flush-cache 
 	lektor build $(LEKTOR_PLUGIN_FLAGS)
 
 server:
 	lektor server $(LEKTOR_SERVER_FLAGS)
 	
 server-all:
+	lektor clean --yes
+	lektor plugin flush-cache
 	lektor server $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_SERVER_FLAGS)
 
 ## Docker stuff
@@ -74,4 +77,3 @@ docker-shell: $(LEKTOR_CACHE) docker-pull
 
 docker-server: $(LEKTOR_CACHE) docker-pull
 	$(DOCKER) $(RUN) $(EXPORTED_PORTS) $(IMAGE) lektor server $(LEKTOR_PLUGIN_FLAGS) -h 0.0.0.0
-
