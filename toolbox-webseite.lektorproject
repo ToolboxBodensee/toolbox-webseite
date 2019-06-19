@@ -28,4 +28,4 @@ locale = de
 
 [packages]
 lektor-jsminify = 1.0
-lektor-scsscompile = 1.0
+lektor-scsscompile = 1.0.1
