@@ -37,16 +37,19 @@ $RECYCLE.BIN/
 **.DS_Store
 *.DS_Store
 
-# Toolbox Website files
+# temporary Toolbox Website stylesheet files
+assets/css/main.min.css
 assets/css/main.css
+assets/css/ie9.min.css
 assets/css/ie9.css
 .sass-cache/
+assets/css/main.min.css.map
 assets/css/main.css.map
+assets/css/ie9.min.css.map
 assets/css/ie9.css.map
 
 # python virtual enviroment
 venv/
-
 sassc/
 
 # Webpack Files
@@ -55,3 +58,10 @@ webpack/node_modules
 
 # Assets
 assets/js/
+
+# random packages (indentfix)
+packages/*/dist
+packages/*/build
+packages/*/*.pyc
+packages/*/*.pyo
+packages/*/*.egg-info
