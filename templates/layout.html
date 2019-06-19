@@ -1,4 +1,4 @@
-{%- from "macros/translator.html" import translator %}
+{%- from "macros/translator.j2" import translator %}
 {%- set fqdn = 'toolbox-bodensee.de'  -%}
 <!DOCTYPE html>
 <html{% if alt %} lang="{{ alt }}"{% endif %}>
@@ -164,8 +164,10 @@
         </nav>
       </header>
       <!-- Main -->
+      {%- filter indentfix(6) %}
       {%- block body %}
       {%- endblock %}
+      {%- endfilter %}
       <!-- Footer -->
       <footer id="footer">
         <ul class="icons">

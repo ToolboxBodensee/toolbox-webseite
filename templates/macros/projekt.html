@@ -1,4 +1,4 @@
-{%- from "macros/translator.html" import translator %}
+{%- from "macros/translator.j2" import translator %}
 {%- macro render_blog_post(post, from_index=false) %}
   {%- if from_index %}
 <section class="4u 6u(medium) 12u(xsmall) project">
