@@ -1,4 +1,4 @@
-{% from "macros/translator.html" import translator -%}
+{% from "macros/translator.j2" import translator -%}
 <?xml version="1.0" encoding="utf-8"?>
 {%- set baseurl = "https://toolbox-bodensee.de/" %}
 {%- set search = "projekte" %}
