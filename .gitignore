@@ -57,7 +57,7 @@ webpack/dist
 webpack/node_modules
 
 # Assets
-assets/js/
+assets/js/*.min.js
 
 # random packages (indentfix)
 packages/*/dist
