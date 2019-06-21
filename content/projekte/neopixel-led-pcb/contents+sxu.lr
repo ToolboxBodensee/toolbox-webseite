@@ -1,0 +1,52 @@
+author: Jonas Otto
+---
+body:
+
+## Hardwär
+Da vermeindlisch einfache Offjaben, wie's Anschdeuern von nem WS2811 ("Neopixel") LED-Schdreifens ofd in Gabelgaos ausarten, habsch ne ne Bladine in Form von nem Schield fürden [Wemos D1 mini](https://wiki.wemos.cc/products:d1:d1_mini) endwiggeld, die das Brohblehm lösn soll.
+Dor D1 mini is n Bräigaud-Bord fürdn ESP8266-([website](https://www.espressif.com/en/products/hardware/esp8266ex/overview), [wiki](https://en.wikipedia.org/wiki/ESP8266)) Miggrogondroller, der WiFi midbringd un für ~2€ aus Schina erhäldlisch is.
+Leider orbeided dor ESP8266 mid nem Logiglevel von ```3.3V```, de üblischen LED-Schdreifen erwardn abor n ```5V```-Einjangssignal.
+Das wurde mit nem Levelschifter (insbirierd dursch [diesn](https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide#board-overview) Artikel von Sparkfun) jelösd, der das ```3.3V```-Signal in een ```5V```-Signal umwandld.
+Da de meesten jünsdschen LED-Schdreifen mid ```12V``` versorcht werdn müssn, wurde dem Bord ein Bagg-Regulädor schbendiehrd, der dn D1 mini mid ```5V``` versorchd, selbsd bei ner Einjangsschbannung von bis zu ```17V```. Das verhinderd, dass man zwee Nedsdeile, zwee Schdeckdosn un n zusätzlichsches Gabelgaos benöticht.
+Als Schbannungsregler verwende isch den [LMZ21700](http://www.ti.com/product/LMZ21700) von TI. Der is zwar ziemlisch kleen un offgrund des "µSIP" Bäggadsch nich mid dem Lödgolbm lödbar, abor das war dann die berfeggde Jelechnheid, n Bizzaofn mid [Reflow-Gondroller](https://de.beta-layout.com/elektronik-shop/order_product_details.html?p=242) (Version 1, finded man off dor Hohmpäidsch abor nisch) ma sinnvoll zu benudsen.
+
+Für de Anschlüsse (LEDs, Power) habsch Schraubderminals vorwended, denn den bassndn Schdegger had man sowieso nie zur Hand.
+
+Weil mer noch Blads offm Bord haddn un das sinnvoll schien, habsch noch n Dasder un zwee LEDs dazujegladschd.
+
+## Sofdwär
+In meinor Anwendung wern de LEDs alle übbers Nedswerch anjeschdeuerd, der ESP8266 is dabei nurn "dummer client", der übbr TCP-Dadn emfängd, off welsche Farbm de LEDs einjeschdelld wern solln.
+
+## Repos/Code/Design
+
+[Schaldblahn, Läiaud](https://github.com/ottojo/wifiblink)
+
+[Blnk-Library](https://github.com/ottojo/blnk)
+
+[Blnk-Client (ESP8266 Software)](https://github.com/ottojo/blnkClient)
+
+[Rechnbochn-Demo](https://github.com/ottojo/blnkRainbow)
+
+---
+icon: fas fa-lightbulb
+---
+project:
+
+#### pro_img ####
+image: IMG_20181013_174354.jpg
+#### pro_img ####
+image: IMG_20181013_174430.jpg
+#### pro_img ####
+image: IMG_20181013_174434.jpg
+#### pro_img ####
+image: IMG_20181020_152404.jpg
+#### pro_img ####
+image: IMG_20181020_152501.jpg
+#### pro_img ####
+image: IMG_20181020_152529.jpg
+---
+pub_date: 2018-09-29
+---
+teaser: ESP8266-Shield um 12V-LED-Schdreifen anzuschdeuern
+---
+title: LED-Schdeuerung

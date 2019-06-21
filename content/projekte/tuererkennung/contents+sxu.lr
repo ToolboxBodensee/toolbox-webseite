@@ -1,0 +1,37 @@
+author: L3D un Jonas
+---
+body:
+
+Für ne bessre Anbindung unsrer Einjangsdür in de [Sbäis-ABI](/projekte/spaceapi/) ham Jonas un L3D nen Dürswitsch un nen ESP in de Einjangsdür injebaud.
+
+Der sollde ergenn, ob de Toolbox-Dür offjeschlossn odor abjeschlossn is. 
+Un immor, wenner ne Änderung festschdelld, jibter das an de Sbäis-ABI weidor.
+Den passenden Code zur Tür gibt es natürlich auf Github:
+
+<a href="https://github.com/ToolboxBodensee/DoorSwitch.git" class="button special primary">Dür-Switsch-Kod</a>
+
+So sieht das Janze aus. Von dor Endschdehung bis zum fertschn Brododybm.
+---
+icon: fas fa-dungeon
+---
+project:
+
+
+#### pro_img ####
+image: werkzeug.jpg
+#### pro_img ####
+image: inspection.jpg
+#### pro_img ####
+image: ergebnis.jpg
+#### pro_img ####
+image: raw_door.jpg
+#### pro_img ####
+image: ergebnis.jpeg
+---
+pub_date: 2019-04-13
+---
+teaser: Für ne bessre Anbindung unsrer Einjangsdür in de Sbäis-ABI hammor da nen Dürswitsch injebaud.
+---
+title: Dürergennung
+---
+xml_img: ergebnis.jpg

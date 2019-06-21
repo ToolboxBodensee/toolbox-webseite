@@ -1,0 +1,36 @@
+author: dor Toolbox-Drohnen-Cru
+---
+body:
+
+In dor Toolbox jibt es einische Menschn, die sisch fürs FPV-Fliechn mid Drohn bejeisdorn.
+
+Un um noch mehr Schbaß am Fliechn zu ham, ham Menschn nen LED-Dunnl jebaud, dor Deil von nem kleenen Drohnen-Barguhr jewordn is.
+Diesor hängd übber dor Drebbe im erstn Schdoggwerg.
+
+ Neopixel
+----------------
+De LEDs sin 5 Medor Neopixl. Diese werdn von nem ESP2866 jeschdeuerd. Dor ESP hängd am WLAN mid auto ota firmware update.
+Dor dazujehörsche Kod is nadürlisch ooch in GitHub zu findn: [github.com/ToolboxBodensee/led_tunnel](https://github.com/ToolboxBodensee/led_tunnel.git)
+
+Mor würdn uns sehr drübber freun, wenn de ooch mal mid deiner tiny class-Drohne vorbeigommst un den Dunnel ausbrohbiersd!
+---
+icon: fab fa-uikit
+---
+project:
+
+#### pro_img ####
+image: fpv_tunnel_1.jpg
+#### pro_img ####
+image: fpv_tunnel_2.jpg
+#### pro_img ####
+image: fpv_tunnel_3.jpg
+#### pro_img ####
+image: fpv_tunnel_4.jpg
+---
+pub_date: 2019-01-17
+---
+teaser: FPV-Fliechn wird nochemal gooler, wenn man dursch nen bund blingndn Barguhr fliechn gann.
+---
+title: LED-Dunnl
+---
+xml_img: fpv_tunnel_2.jpg
