@@ -1,60 +1,65 @@
-{% macro render_blog_post(post, from_index=false) %}
-  {% if from_index %}
-        <section class="4u 6u(medium) 12u(xsmall) project">
-                <span class="icon alt major">
-                    <a href="{{ post|url }}" class="project-creator" title="{%
-                    if bag('translate', post.alt, 'projekt_von')
-          %}{{ bag('translate', post.alt, 'projekt_von') }}{% else
-          %}Von{% endif 
-          %} {{ post.author }} {% if post.pub_date %} {%
-          if bag('translate', post.alt, 'projekt_am')
-          %}{{ bag('translate', post.alt, 'projekt_am') }}{% else
-          %}am{% endif %} {{ post.pub_date.strftime('%d.%m.%Y') }} {%
-          endif %} {% if bag('translate', post.alt, 'projekt_start')
-          %}{{ bag('translate', post.alt, 'projekt_start') }}{% else
-          %}gestarted{% endif %}"><i class="{{ post.icon }} fa-3x iconshiftdown"></i></a>
-          </span>
-          <a href="{{ post|url }}"><h3>{{ post.title }}</h3></a>
-          <article class="teaser">
-              {{ post.teaser }}
-            </article>
-        </section>
-  {% else %}
-        <div id="main" class="wrapper style1">
-          <div class="container">
-            <header class="major">
-                <h2>{{ post.title }}</h2><p>{% if bag('translate', post.alt, 'projekt_launch')
-          %}{{ bag('translate', post.alt, 'projekt_launch') }}{% else
-          %}Das Projekt wurde vom{% endif %} {{ post.author }} {% if post.pub_date %}{%
-          if bag('translate', post.alt, 'projekt_am')
-          %}{{ bag('translate', post.alt, 'projekt_am') }}{% else
-          %}am{% endif %} {{ post.pub_date.strftime('%d.%m.%Y') }} {% endif %}{%
-          if bag('translate', post.alt, 'projekt_start')
-          %}{{ bag('translate', post.alt, 'projekt_start') }}{% else
-          %}gestarted{% endif %}</p>
-            </header>
-          <section id="content">
-            {{ post.body }}
-            {% if post.video_is_embedded %}{% for blk in post.video_embedded.blocks %}
-            {% if blk.video_url %}
-                {{ blk }} <br/>
-              <a class="button" href="https://www.youtube.com/watch?v={{ blk.video_url }}{% if post.alt %}&gl={{ post.alt }}&hl={{ post.alt }}{% endif %}" target="_blank" rel="noopener">{%
-                if bag('translate', post.alt, 'directytlink') %}{{ bag('translate', post.alt, 'directytlink') }}{%
-                else %}Direkt zum YouTube-Video{% endif %}</a>{% endif %}{% if blk.video
-                %} <a class="button" href="{{ blk.video|url }}" download>{%
-                if bag('translate', post.alt, 'directlink') %}{{ bag('translate', post.alt, 'directlink') }}{%
-                else %}Download Video{% endif %}</a>{% endif %}
-                <br/><br/>
-            {% endfor %}{%
-          endif %} 
-            {% if post.project %} 
-            <div class="lightgallery" class="row alt">{%
-              for blk in post.project.blocks %}
-                {{ blk }}
-              {% endfor %}</div>{%
-          endif %}
-            </section>
-        </div>
+{%- from "macros/translator.j2" import translator %}
+{%- macro render_blog_post(post, from_index=false) %}
+  {%- if from_index %}
+<section class="4u 6u(medium) 12u(xsmall) project">
+  <span class="icon alt major">
+    <a href="{{ post|url }}" class="project-creator" title="
+    {{- translator('projekt_von', 'translate', post.alt) }} {{ post.author }}
+    {%- if post.pub_date %} {{
+      translator('projekt_am', 'translate', post.alt) }} {{
+      post.pub_date.strftime('%d.%m.%Y') }}
+    {%- endif %} {{
+      translator('projekt_start', 'translate', post.alt) -}}
+      ">
+      <i class="{{ post.icon }} fa-3x iconshiftdown"></i>
+    </a>
+  </span>
+  <a href="{{ post|url }}"><h3>{{ post.title }}</h3></a>
+  <article class="teaser">
+    {{ post.teaser }}
+  </article>
+</section>
+  {%- else %}
+<div id="main" class="wrapper style1">
+  <div class="container">
+    <header class="major">
+      <h2>{{ post.title }}</h2>
+      <p>
+        {{- translator('projekt_launch', 'translate', post.alt) }} {{ post.author }}
+    {%- if post.pub_date %} {{
+      translator('projekt_am', 'translate', post.alt) }} {{
+      post.pub_date.strftime('%d.%m.%Y') }}
+    {%- endif %} {{
+      translator('projekt_start', 'translate', post.alt) -}}
+      </p>
+    </header>
+    <section id="content">
+      {{ post.body -}}
+    {%- if post.video_is_embedded %}
+      {%- for blk in post.video_embedded.blocks %}
+        {%- if blk.video_url %}
+      {{ blk }} <br/>
+      <a class="button" href="https://www.youtube.com/watch?v={{ blk.video_url }}{% if post.alt %}&gl={{ post.alt }}&hl={{ post.alt }}{% endif %}" target="_blank" rel="noopener">
+          {{- translator('directytlink', 'translate', post.alt) -}}
+      </a>
+        {%- endif %}
+        {%- if blk.video %}
+      <a class="button" href="{{ blk.video|url }}" download>
+          {{- translator('directlink', 'translate', post.alt) -}}
+      </a>
+        {%- endif %}
+      <br/><br/>
+      {%- endfor %}
+    {%- endif %} 
+    {%- if post.project %} 
+      <div class="lightgallery" class="row alt">
+      {%- for blk in post.project.blocks %}
+        {{ blk }}
+      {%- endfor %}
       </div>
-  {% endif %}
-{% endmacro %}
+    {%- endif %}
+    </section>
+  </div>
+</div>
+  {%- endif %}
+{%- endmacro %}
