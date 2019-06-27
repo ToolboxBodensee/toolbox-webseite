@@ -1,6 +1,6 @@
-{% set fqdn = 'toolbox-bodensee.de'  %}{% 
-set ausnahmezustand = False 
-%}<!DOCTYPE html>
+{%- from "macros/translator.j2" import translator %}
+{%- set fqdn = 'toolbox-bodensee.de'  -%}
+<!DOCTYPE html>
 <html{% if alt %} lang="{{ alt }}"{% endif %}>
   <head>
     <meta charset="utf-8">
@@ -15,25 +15,25 @@ set ausnahmezustand = False
     <link href="https://{{ fqdn }}/en/feed_projekte.xml" rel="alternate" title="Projects [EN]" type="application/rss+xml">
     <link href="https://{{ fqdn }}/sxu/feed_projekte.xml" rel="alternate" title="Brohjeggde [Säggsch]" type="application/rss+xml">
     <link href="https://c3woc.de/feed_rezepte.xml" rel="alternate" title="Waffelrezepte" type="application/rss+xml">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />{%
-    if '/css/main.min.css'|asseturl == empty %}
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+{%- if '/css/main.min.css'|asseturl == empty %}
     <link rel="stylesheet" href="{{ '/css/font-awesome.min.css'|asseturl }}" />
-    <link rel="stylesheet" href="{{ '/fonts/roboto.css'|asseturl }}" />{%
-     endif %}
-    <link rel="stylesheet" href={%
-        if '/css/main.min.css'|asseturl == empty 
-        %}"https://{{ fqdn }}/css/main.min.css"{%
-        else %}"{{ '/css/main.min.css'|asseturl }}"{%
-        endif %} /> 
-    <!--[if lte IE 9]><link rel="stylesheet" href={%
-        if '/css/ie9.min.css'|asseturl == empty %}"https://{{ fqdn }}/css/ie9.min.css"{%
-        else %}"{{ '/css/ie9.min.css'|asseturl }}"{%
-        endif %}" /><![endif]-->
-    {% block expand_description 
-    %}<meta name="description" content="{% 
-        if bag('translate', this.alt, 'description') %}{{ bag('translate', this.alt, 'description') }}{% 
-        else %}{{ bag('translate', 'de', 'description') }}{% endif %}" />{%
-     endblock %}
+    <link rel="stylesheet" href="{{ '/fonts/roboto.css'|asseturl }}" />
+{%- endif %}
+    <link rel="stylesheet" href=
+{%- if '/css/main.min.css'|asseturl == empty -%}
+    "https://{{ fqdn }}/css/main.min.css"
+{%- else -%}
+    "{{ '/css/main.min.css'|asseturl }}"
+{%- endif %} />
+    <!--[if lte IE 9]><link rel="stylesheet" href=
+      {%- if '/css/ie9.min.css'|asseturl == empty %}"https://{{ fqdn }}/css/ie9.min.css"
+      {%- else %}"{{ '/css/ie9.min.css'|asseturl }}"
+      {%- endif %} /><![endif]-->
+{%- block expand_description %}
+    <meta name="description" content=
+  {{- translator('description', 'translate', this.alt) }} />
+{%- endblock %}
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/icons/apple-touch-icon.png'|asseturl }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/icons/favicon-32x32.png'|asseturl }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/icons/favicon-16x16.png'|asseturl }}">
@@ -42,139 +42,164 @@ set ausnahmezustand = False
     <link rel="shortcut icon" href="{{ '/images/icons/favicon.ico'|asseturl }}">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="{{ '/images/icons/browserconfig.xml'|asseturl }}">
-    <meta name="theme-color" content="#e64f2d">{%
-    block expand_header %}{% endblock %}
+    <meta name="theme-color" content="#e64f2d">
+{%- block expand_header %}
+{%- endblock %}
     <script src="{{ '/js/jquery.min.js'|asseturl }}"></script>
   </head>
   <body class="{% if this._path == '/' %}landing {% endif %} is-preload">
     <div id="page-wrapper">
-       <!-- Header -->
-        <header id="header">
-            <h1 id="logo">
-                <div class="tooltip">
-                    <a id="tb-opened" class="button tb-opened navbar special" href="{%
-                        if bag('translate', this.alt, 'api_url') %}{{ bag('translate', this.alt, 'api_url') }}{%
-                        else %}{{ bag('translate', 'de', 'api_url') }}{% endif 
-                    %}">{%
-                        if bag('translate', this.alt, 'api_space') %}{{ bag('translate', this.alt, 'api_space') }}{%
-                        else %}{{ bag('translate', 'de', 'api_space') }}{% endif %} {%
-                        if bag('translate', this.alt, 'api_open') %}{{ bag('translate', this.alt, 'api_open') }}{%
-                        else %}{{ bag('translate', 'de', 'api_open') }}{% endif %}</a>
-                    <span class="tooltiptext">{% if bag('translate', this.alt, 'api_open_text') 
-                        %}{{ bag('translate', this.alt, 'api_open_text') }}{%
-                        else %}{{ bag('translate', 'de', 'api_open_text') }}{% endif %}</span>
-                </div>
-                <div class="tooltip">
-                    <a id="tb-closed" class="tb-closed" href="{% if bag('translate', this.alt, 'api_url') %}{{ bag('translate', this.alt, 'api_url') }}{%
-                        else %}{{ bag('translate', 'de', 'api_url') }}{% endif 
-                    %}">{% 
-                        if bag('translate', this.alt, 'api_space') %}{{ bag('translate', this.alt, 'api_space') }}{%
-                        else %}{{ bag('translate', 'de', 'api_space') }}{% 
-                        endif %} {% if bag('translate', this.alt, 'api_closed') %}{{ bag('translate', this.alt, 'api_closed') }}{% 
-                        else %}{{ bag('translate', 'de', 'api_closed') }}{% endif %}</a>
-                    <span class="tooltiptext">{% if bag('translate', this.alt, 'api_opening_time') 
-                        %}{{ bag('translate', this.alt, 'api_opening_time') }}{% 
-                        else %}{{ bag('translate', 'de', 'api_opening_time') }}{% endif %}</span>
-                  </div>
-            </h1>
-            <nav id="nav">
+      <!-- Header -->
+      <header id="header">
+        <h1 id="logo">
+
+{#-
+ # door state of the club house opened/closed with translations in the corresponding languages
+ #}
+          <div class="tooltip">
+            <a id="tb-opened" class="button tb-opened navbar special" href="
+            {{- translator('api_url', 'translate', this.alt) -}}
+            ">
+              {{- translator('api_space', 'translate', this.alt) }} {{
+                  translator('api_open', 'translate', this.alt)  -}}
+            </a>
+            <span class="tooltiptext">
+              {{- translator('api_open_text', 'translate', this.alt) -}}
+            </span>
+          </div>
+          <div class="tooltip">
+            <a id="tb-closed" class="tb-closed" href="
+            {{- translator('api_url', 'translate', this.alt) -}}
+            ">
+              {{- translator('api_space', 'translate', this.alt) }} {{
+                  translator('api_closed', 'translate', this.alt) -}}
+            </a>
+            <span class="tooltiptext">
+              {{- translator('api_opening_time', 'translate', this.alt) -}}
+            </span>
+          </div>
+        </h1>
+
+{#-
+ # Navigation Bar
+ #}
+        <nav id="nav">
+          <ul>
+            <li{% if this._path == '/' %} class="active"{% endif %}>
+              <a href="{{ '/'|url }}">
+                {{- translator('home', 'navigation', this.alt) -}}
+              </a>
+            </li>
+{%- for title, href in bag('nav-bar', "NavBar").items() %}
+            <li{% if this.is_child_of(href) %} class="active"{% endif %}>
+              <a href="{{ href|url }}">
+                {{- translator(title, 'navigation', this.alt) -}}
+              </a>
               <ul>
-                <li{% if this._path == '/' %} class="active"{% endif
-                  %}><a href="{{ '/'|url }}">{%
-                  if bag('navigation', this.alt, 'home') %}{{ bag('navigation', this.alt, 'home') }}{%
-                  else %}{{ bag('navigation', 'de', 'home') }}{% endif %}</a></li>{%
-                for title, href in bag('nav-bar', "NavBar").items() %}
-                  <li{% if this.is_child_of(href) %} class="active"{% endif
-                  %}><a href="{{ href|url }}">{% if bag('navigation', this.alt, title) %}{{ bag('navigation', this.alt, title) }}{% else %}{{ title }}{% endif %}</a>
-                    <ul>
-                      {% if bag('nav-bar', 'list', title) %}
-                        {% set root = site.get( bag('nav-bar', 'list', title), alt=this.alt) %}{%
-                        for child in root.children recursive %}{% if loop.index <= 7 %}
-                          <li{% if this._path == child._path %} class="active"{% endif %}>
-                            <a href="{{ child|url }}">
-                              {{ child.shorttitle if child.shorttitle else child.title  }}
-                            </a></li>
-                        {% endif %}{% endfor %}
-                      {% endif %}
-                      {% if  bag('nav-bar', title) %}
-                        {% for nav_title, nav_url in bag('nav-bar', title).items() %}
-                          <li><a href={{ nav_url if 'http' in nav_url else nav_url|url }}
-                            {% if bag('nav-bar', 'button', nav_title) %}
-                              class="button nav"
-                            {% endif %}>
-                            {{ bag('navigation', this.alt, nav_title)
-                              if bag('navigation', this.alt, nav_title) 
-                              else bag('navigation', 'de', nav_title) }}
-                          </a></li>
-                        {% endfor %}
-                      {% endif %}
-                    </ul>
-                  </li>
-                {% endfor %}
-               <li class="last"><a href="/{% if bag('navigation', this.alt, 'default_path') %}{{ bag('navigation', this.alt, 'default_path') }}{% else %}..{% endif %}{{ this._path }}">{% if bag('navigation', this.alt, 'sprache') %}{{ bag('navigation', this.alt, 'sprache') }}{% else %}Sprache{% endif %}</a>
-                   <ul class="last">
-
-                    {% set newPath = this._path %}
-                    {% if this._path != '/' %}
-                    {% set newPath = newPath + '/' %}
-
-                    {% endif %}
-                     <li><a href="{{ newPath }}">{% 
-                             if bag('navigation', this.alt, 'German') %}{{ bag('navigation', this.alt, 'German') }}{%
-                             else %}{{ bag('navigation', 'de', 'German') }}{% endif %}</a></li>
-                     <li><a href="/sxu{{ newPath }}">{% 
-                             if bag('navigation', this.alt, 'Saechsisch') %}{{ bag('navigation', this.alt, 'Saechsisch') }}{% 
-                             else %}{{ bag('navigation', 'de', 'Saechsisch') }}{% 
-                         endif %} <i>({%
-                             if bag('navigation', this.alt, 'falls') %}{{ bag('navigation', this.alt, 'falls') }}{%
-                             else %}{{ bag('navigation', 'de', 'falls') }}{% 
-                        endif %})</i></a><li>
-                     <li><a href="/en{{ newPath}}">{% 
-                             if bag('navigation', this.alt, 'Englisch') %}{{ bag('navigation', this.alt, 'Englisch') }}{% 
-                             else %}{{ bag('navigation', 'de', 'Englisch') }}{% 
-                         endif %} <i>({%
-                             if bag('navigation', this.alt, 'falls') %}{{ bag('navigation', this.alt, 'falls') }}{%
-                             else %}{{ bag('navigation', 'de', 'falls') }}{% 
-                        endif %})</i></a><li>
-                   </ul>
-                 </li>
+  {%- if bag('nav-bar', 'list', title) %}
+    {%- set root = site.get( bag('nav-bar', 'list', title), alt=this.alt) %}
+    {%- for child in root.children recursive %}
+      {%- if loop.index <= 7 %}
+                <li{% if this._path == child._path %} class="active"{% endif %}>
+                  <a href="{{ child|url }}">{{ child.shorttitle if child.shorttitle else child.title  }}</a>
+                </li>
+      {%- endif %}
+    {%- endfor %}
+  {%- endif %}
+  {%- if  bag('nav-bar', title) %}
+    {%- for nav_title, nav_url in bag('nav-bar', title).items() %}
+                <li>
+                  <a href={{ nav_url if 'http' in nav_url else nav_url|url }}
+      {%- if bag('nav-bar', 'button', nav_title) %} class="button nav"
+      {%- endif -%}
+                  >
+                    {{- translator(nav_title, 'navigation', this.alt) -}}
+                  </a>
+                </li>
+    {%- endfor %}
+  {%- endif %}
               </ul>
-            </nav>
-          </header>
-<!-- Main -->
-{% block body %}{% endblock %}
-       <!-- Footer -->
-       <footer id="footer">
-         <ul class="icons">{%
-         for label, icon, href in [
-           ['Twitter', 'fab fa-twitter', "https://twitter.com/toolboxbodensee"],
-           ['Mastodon', 'fab fa-mastodon', "https://chaos.social/@toolbox"],
-           ['Facebook', 'fab fa-facebook', "https://www.facebook.com/toolboxbodensee/"],
-           ['Instagram', 'fab fa-instagram', "https://www.instagram.com/toolbox_bodensee/"],
-           ['GitHub', 'fab fa-github', "https://github.com/ToolboxBodensee"],
-           ['YouTube', 'fab fa-youtube', "https://www.youtube.com/channel/UCoTB8frSN0OT2mZl2IXSsDA/videos"],
-           ['Mail', 'fas fa-envelope', "mailto:kontakt@toolbox-bodensee.de"],
-           ['Telefon', 'fas fa-phone', "tel:+4975449667222"],
-           ['News', 'fas fa-rss', "https://toolbox-bodensee.de/feed_blog.xml"]
-         ] %}
-           <li><a href="{{ href }}" title="{{ label }}" target="_blank" rel="noopener" class="icon {{ icon }}"></a></li>{%
-         endfor %}
+            </li>
+{%- endfor %}
+
+{#-
+ # the language selection is currently not included into the template above, because we did not find a proper solution to integrate them yet
+ #}
+ {%- set newPath = this._path %}
+ {#- append a / wenn needed so there is no http redirect involved when visiting subpages #}
+ {%- if not newPath.endswith('/') %}
+   {%- set newPath = newPath + '/' %}
+ {%- endif %}
+            <li class="last">
+              <a href="/
+              {{- translator('default_path', 'navigation', this.alt, 'en') -}}
+              {{ newPath }}">
+              {{- translator('sprache', 'navigation', this.alt) -}}
+              </a>
+              <ul class="last">
+                <li>
+                  <a href="{{ newPath }}">
+                    {{- translator('German', 'navigation', this.alt) -}}
+                  </a>
+                </li>
+                <li>
+                  <a href="/sxu{{ newPath }}">
+                    {{- translator('Saechsisch', 'navigation', this.alt) }}
+                    <i>(
+                      {{- translator('falls', 'navigation', this.alt) -}}
+                    )</i>
+                  </a>
+                </li>
+                <li>
+                  <a href="/en{{ newPath}}">
+                    {{- translator('Englisch', 'navigation', this.alt) }}
+                    <i>(
+                      {{- translator('falls', 'navigation', this.alt) -}}
+                    )</i>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Main -->
+      {%- block body %}
+      {%- endblock %}
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+{%- for label, icon, href in [
+  ['Twitter', 'fab fa-twitter', "https://twitter.com/toolboxbodensee"],
+  ['Mastodon', 'fab fa-mastodon', "https://chaos.social/@toolbox"],
+  ['Facebook', 'fab fa-facebook', "https://www.facebook.com/toolboxbodensee/"],
+  ['Instagram', 'fab fa-instagram', "https://www.instagram.com/toolbox_bodensee/"],
+  ['GitHub', 'fab fa-github', "https://github.com/ToolboxBodensee"],
+  ['YouTube', 'fab fa-youtube', "https://www.youtube.com/channel/UCoTB8frSN0OT2mZl2IXSsDA/videos"],
+  ['Mail', 'fas fa-envelope', "mailto:kontakt@toolbox-bodensee.de"],
+  ['Telefon', 'fas fa-phone', "tel:+4975449667222"],
+  ['News', 'fas fa-rss', "https://toolbox-bodensee.de/feed_blog.xml"]
+] %}
+          <li><a href="{{ href }}" title="{{ label }}" target="_blank" rel="noopener" class="icon {{ icon }}"></a></li>
+{%- endfor %}
         </ul>
         <ul class="copyright">
           <li>&copy;Copyright by Toolbox Bodensee e.V.</li>
-          <li><a href="{{ '/impressum/'|url }}">{% 
-                  if bag('navigation', this.alt, 'Impressum') %}{{ bag('navigation', this.alt, 'Impressum') }}{%
-                  else %}Impressum{% endif %}</a></li>
-          <li><a href="{{ '/datenschutz/'|url }}">{% 
-                  if bag('navigation', this.alt, 'Datenschutz') %}{{ bag('navigation', this.alt, 'Datenschutz') }}{% 
-                  else %}Datenschutzerklärung{% endif %}</a></li>
+          <li>
+            <a href="{{ '/impressum/'|url }}">
+              {{- translator('Impressum', 'navigation', this.alt) -}}
+            </a>
+          </li>
+          <li>
+            <a href="{{ '/datenschutz/'|url }}">
+              {{- translator('Datenschutz', 'navigation', this.alt) -}}
+            </a>
+          </li>
           <li>Design inspired by <a href="http://html5up.net">HTML5 UP</a> </li>
-          <!-- CMS: Lektor | Angepasst durch L3D -->
-          <!-- advertising: Grab your waffle from C3WOC! C3WOC ->Great waffles for everypony. https://c3woc.de/ -->
+          <!-- CMS: Lektor | Angepasst durch maxbachmann und L3D -->
         </ul>
       </footer>
     </div>
-
     <!-- Scripts -->
     <script src="{{ '/js/jquery.scrolly.min.js'|asseturl }}"></script>
     <script src="{{ '/js/jquery.scrollex.min.js'|asseturl }}"></script>

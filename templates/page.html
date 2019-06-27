@@ -1,12 +1,14 @@
-{% extends "layout.html" %}
-{% block title %}{{ this.title }}{% endblock %}
-{% block expand_description %}
-    <meta name="description" content="{% 
-        if this.teaser %}{{ this.teaser }}{% else %}{%
-            if bag('translate', this.alt, 'description') %}{{ bag('translate', this.alt, 'description') }}{% 
-            else %}{{ bag('translate', 'de', 'description') }}{% endif %}
-        {% endif %}" />
-{% endblock %}
+{%- extends "layout.html" %}
+{%- block title %}{{ this.title }}{% endblock %}
+{%- block expand_description %}
+    <meta name="description" content="
+  {%- if this.teaser -%}
+    {{ this.teaser }}
+  {%- else -%}
+    {{ translator('description', 'translate', this.alt) }}
+  {%- endif -%}
+    " />
+{%- endblock %}
 {% block body %}
 <div id="main" class="wrapper style1">
   <div class="container">
@@ -14,10 +16,11 @@
       <h2>{{ this.title }}</h2>
       <p>{{ this.slogan }}</p>
     </header>
-<!-- Content -->
+
+    <!-- Content -->
     <section id="content">
       {{ this.content }}
     </section>
   </div>
 </div>
-{% endblock %}
+{%- endblock %}

@@ -1,34 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?>{%
-set baseurl = "https://toolbox-bodensee.de/" %}{%
-set search = "projekte" %}
+{% from "macros/translator.j2" import translator -%}
+<?xml version="1.0" encoding="utf-8"?>
+{%- set baseurl = "https://toolbox-bodensee.de/" %}
+{%- set search = "projekte" %}
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title type="text">{%
-        if bag('translate', this.alt, 'projectfeed') %}{{ bag('translate', this.alt, 'projectfeed') }}{%
-        else %}Projekte in der Toolbox{% endif %}</title>
+  <title type="text">
+    {{- translator('projectfeed', 'translate', this.alt) -}}
+  </title>
   <id>{{ baseurl }}feed_projekte.xml</id>
   <updated>{{ none|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</updated>
   <link href="{{ baseurl }}{{ search }}/" />
   <link href="{{ baseurl }}feed_projekte.xml" rel="self" />
   <author>
-    <name>{% if this.author %}{{ this.author }}{% else %}Toolbox{% endif %}</name>
-  </author>{%
-  set pages = site.query('/projekte').include_undiscoverable(true).all() %}{%
-  for page in pages %}{% if not page._hidden %}
+    <name>
+{%- if this.author -%}
+  {{ this.author }}
+{%- else -%}
+  Toolbox
+{%- endif -%}
+    </name>
+  </author>
+{%- set pages = site.query('/projekte').include_undiscoverable(true).all() %}
+{%- for page in pages %}
+  {%- if not page._hidden %}
   <entry xml:base="{{ baseurl }}{{ search }}/{{ page._id }}/">
     <title type="text">{{ page.title }}</title>
     <id>{{ baseurl }}{{ search }}/{{ page._id }}</id>
     <updated>{{ page.pub_date|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</updated>
     <link href="{{ search }}/{{ page._id }}/" xml:base="{{ baseurl }}" />
     <author>
-      <name>{% if page.author %}{{ page.author }}{% else %}Toolbox{% endif %}</name>
+      <name>
+    {%- if page.author -%}
+      {{ page.author }}
+    {%- else -%}
+      Toolbox
+    {%- endif -%}
+      </name>
     </author>
-    <content type="{% if page.xml_img %}html{% else %}text{% endif %}">
-        {% if page.teaser %}{{ page.teaser }}{% endif %}
-      {% if page.xml_img 
-      %}&lt;br/&gt;
-      &lt;img width=&quot;23%&quot; src=&quot;{{ page.xml_img }}&quot; /&gt;
-      {% endif %}
+    <content type="
+  {%- if page.xml_img -%}
+    html
+  {%- else -%}
+    text
+  {%- endif -%}
+    ">
+    {%- if page.teaser %}
+      {{ page.teaser }}
+    {%- endif %}
+    {%- if page.xml_img %}
+      {{ "<br/>" | escape }}
+      {{ ['<img width="23%" src="', page.xml_img, '" />'] | join | escape }}
+    {%- endif %}
     </content>
-</entry>{% endif %}{%
-endfor %}
+  </entry>
+  {%- endif %}
+{%- endfor %}
 </feed>
