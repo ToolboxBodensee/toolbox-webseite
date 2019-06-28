@@ -33,9 +33,11 @@
   {%- endif %}
   </section>
   {%- if from_index %}
-  <a class="button fit" href="{{ post|url }}">
+  <center>
+    <a class="button" href="{{ post|url }}">
     {{- translator('blog_weiter', 'translate', post.alt) -}}
-  </a>
+    </a>
+  </center>
   <br/>
   {%- elif post.video_is_embedded %}
     {%- for blk in post.video_embedded.blocks %}
