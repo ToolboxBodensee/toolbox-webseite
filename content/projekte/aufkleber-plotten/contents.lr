@@ -1,0 +1,32 @@
+title: Aufkleber plotten
+---
+icon: fas fa-splotch
+---
+author: zeha
+---
+project:
+
+#### pro_img ####
+image: 20190607_195037_resized.jpg
+#### pro_img ####
+image: 20190629_194702_resized.jpg
+#### pro_img ####
+image: 20190610_033957_resized.jpg
+---
+pub_date: 2019-06-07
+---
+body:
+
+Wenn es uns in der Toolbox an einem nicht mangelt, dann sind das mit Sicherheit Aufkleber. Dennoch gibt es immer wieder Bedarf an weiteren, neuen Kreationen. Mit dem Schneideplotter im Siebdruckraum und ein paar Klebefolien lassen sich in sehr kurzer Zeit neue klebrige Ideen umsetzen.
+
+Der Schneideplotter sieht ähnlich aus wie ein Drucker und ist mit diesem auch verwandt - so lassen sich, wenn eine Stift-Cartridge eingesetzt ist, durchaus auch Zeichnungen damit anfertigen. Ist jedoch stattdessen ein Messer eingesetzt, kann der Plotter Materialien wie Papier, Pappe, oder eben auch (Klebe-)Folie zuschneiden. Alles, was der Plotter dazu benötigt, ist eine Vektorgrafik, die das gewünschte Motiv in Form von Konturen abbildet. Eine Vektorgrafik unterscheidet sich zur vermutlich bekannteren Pixelgrafik dadurch, dass das Motiv nicht in Form von einzelnen Raster-Bildpunkten (Pixeln) gespeichert wird, sondern in Form von Kurven, Linien, Pfaden usw. Dadurch lässt sich solch eine Grafik beliebig in der Größe ändern, ohne dabei an Qualität zu verlieren oder pixelig zu werden.
+
+Bei der Vorbereitung einer solchen Grafik muss man sich ein wenig Gedanken darum machen, wie das fertige Motiv am Ende wirken soll. In den meisten Fällen wird man das Motiv nur einfarbig anfertigen (mehrfarbig ist zwar möglich, aber deutlich aufwendiger, da man den fertigen Aufkleber aus mehreren einzeln zugeschnittenen Teilen zusammensetzen muss). Einige Motive wirken z.B. nur in bestimmten Farbenkombinationen gut, z.B. in heller Farbe auf dunklem Hintergrund, usw. Es lohnt sich auch, sich einmal umzusehen, was an Folien so angeboten wird, beispielsweise gibt es auch Neon-Klebefolien, Hologrammfolien, oder nachts leuchtende ("glow in the dark") Folien.
+
+Hat man die zu schneidenden Grafiken erstellt, lassen sich diese per USB-Stick vom Schneideplotter lesen und auf dem Display des Geräts anordnen, skalieren, spiegeln usw. Nun bringt man die Klebefolie auf der zum Plotter gehörenden Schneidematte an, lässt diese in das Gerät einziehen, und startet den Schneidevorgang. Zuvor sollte man jedoch die Schneidetiefe an der Messer-Cartridge auf das verwendete Material angepasst haben, damit auch wirklich nur die Folie geschnitten wird und nicht das Trägerpapier.
+
+Nachdem der Schneidevorgang beendet ist, gilt es, die ausgeschnittenen Aufkleber vom umliegenden Restmaterial zu befreien. Dies kann bei filigraneren Motiven etwas mühselig sein, aber gelingt am Ende meist dennoch problemlos. Um den Aufkleber jetzt noch ordentlich irgendwo anbringen zu können (speziell bei solchen Motiven, die aus mehreren losen Teilen bestehen, z.B. Buchstaben die ein Wort ergeben usw.), klebt man zu guter Letzt eine sogenannte Übertragungsfolie auf die Oberseite des Aufklebers, mit der sich das Motiv vom Trägermaterial abziehen und in einem Stück auf der zu beklebenden Stelle anbringen lässt (wie man dies z.B. von Aufklebern für die Heckscheibe kennt).
+
+Eine detaillierte Anleitung sowie eine Liste von erprobten Materialien findet sich im Toolbox-Wiki unter https://tbbs.me/doku.php?id=werkzeuge_maschinen:schneideplotter
+---
+teaser: Mit dem Schneideplotter im Siebdruckraum und ein paar Klebefolien lassen sich in kurzer Zeit neue klebrige Ideen umsetzen.
