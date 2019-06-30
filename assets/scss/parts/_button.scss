@@ -46,7 +46,6 @@ input[type="button"],
   }
   
   &.smallfit {
-    display: block;
     margin: 0 0 (_size(element-margin) * 0.5) 0;
     max-width: 100%;
     height: auto;
