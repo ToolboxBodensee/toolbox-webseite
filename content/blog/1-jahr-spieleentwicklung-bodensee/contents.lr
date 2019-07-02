@@ -1,0 +1,45 @@
+title: 1 Jahr Spieleentwicklung Bodensee
+---
+author: zeha
+---
+beitrag:
+
+Die Idee, ein **Treffen für Spieleentwickler im Bodensee-Raum** zu veranstalten, ist tatsächlich schon etwas älter. Im Jahre 2013 wurde in einem Gespräch dreier Arbeitskollegen, die sich alle in ihrer Freizeit gerne mit der Entwicklung von Computerspielen beschäftigen, der Wunsch geäußert, mehr Kontakte zu anderen Spieleentwicklern in der Region aufzubauen und sich zu einer kleinen Vortrags-, Präsentations- und Gesprächsrunde zusammenzufinden. Schließlich ist es immer interessant, sich mit anderen über ein gemeinsames Interessensgebiet auszutauschen, neue Ideen aufkommen zu lassen oder gar neue Mitstreiter für ein Projekt zu finden, jedoch ist es auch gar nicht so einfach, auf Anhieb die entsprechenden Leute zu finden - einen Fußball- oder Musikverein gibt es nahezu überall, wohingegen eine Spieleentwickler-Community eher selten zu finden ist.
+
+Also galt es, diese Community selbst aufzubauen, was einige Jahre später erneut ins Rollen zu bringen versucht wurde, nachdem es anfänglich nicht gelang, einen passenden Raum und genügend Leute für das initiale Treffen zu finden und die Idee erstmal in den Hinterköpfen verschwand. Ende 2016 wurde die Website [www.spieleentwicklung-bodensee.de](https://www.spieleentwicklung-bodensee.de) aufgesetzt, um dort das Vorhaben und die Vision hinter der geplanten Community zu erklären und einen Link parat zu haben, den man an potentielle Interessenten weitergeben konnte. Somit kamen auch nach und nach ein paar Kontakte zustande, wodurch ein mögliches erstes Treffen schon greifbarer wurde.
+
+Schließlich wurde Anfang 2018 das **Vereinsheim** der Toolbox als geeigneter Veranstaltungsort gefunden, welcher zudem auch den weiteren Vorteil mitbrachte, dass sich hier generell schon eine große Zahl an technikbegeisterten Menschen tummelt, wovon ebenfalls einige daran interessiert waren, den Spieleentwickler-Treffen beizuwohnen. Umgekehrt bringen natürlich auch die Spieleentwickler-Treffen neuen Leuten die Toolbox näher, ein netter Synergieeffekt.
+
+Endlich fand **das erste Treffen** am 9. Juni 2018 statt, kurz nach der Maker Faire in Friedrichshafen, wo es ebenfalls nochmals Gelegenheit gab, für die Community zu werben. In einer klassischen Vorstellungsrunde präsentierten einige Teilnehmer ihre aktuellen sowie bisherigen Projekte. Zudem gab es regen Austausch über interessante Techniken, Spiele-Ideen, Programmiersprachen, Engines und sonstige Fachsimpelei. Auch wurde den Teilnehmern die Frage gestellt, was sie sich von weiteren Treffen versprechen und in welchem Rhythmus diese stattfinden sollten. Hierbei wurde sich auf ein monatliches Samstags-Treffen geeinigt, was auch ziemlich reibungslos durchgehalten wurde, sodass im nun vollendeten ersten Jahr (wie anfangs erwähnt) zwölf Treffen stattfanden.
+
+Dreimal wurde dabei ein sogenannter **GameJam** durchgeführt, bei dem es darum geht, in der begrenzten Zeit ein kleines Spiel von null an zu entwerfen und zu entwickeln, wobei es hier weniger um eine anschließende Bewertung oder einen Vergleich ging, sondern mehr um die Herausforderung als solche sowie die Findung und Umsetzung frischer Ideen. An den übrigen Treffen wurden teilweise Vorträge über eigene Projekte oder Entwickler-Tools gehalten oder freie Gespräche und Diskussionen geführt sowie interessante Spiele von anderen Entwicklern begutachtet. Auch gab es hin und wieder Gelegenheit, eigene Projekte von anderen Teilnehmern probespielen zu lassen, um Fehler zu finden oder das Gameplay besser ausbalancieren zu können.
+
+Bei den Treffen sind meist zwischen 8 und 10 Teilnehmer anwesend, insgesamt haben bereits ca. 25 verschiedene Gesichter vorbeigeschaut - rund um den Bodensee herkommend, also auch aus den Nachbarländern Österreich und Schweiz.  Einige davon natürlich wiederkehrend, andere sporadisch oder nur um sich das ganze einmal anzusehen. Es ist prinzipiell jeder willkommen, der sich für das Thema interessiert, unabhängig von vorhandenem oder nicht vorhandenem Vorwissen. Dass auch das Alter keine Rolle spielt, wurde ebenfalls mehrfach bestätigt, so gab es immer wieder auch sehr junge Teilnehmer.
+
+Wer nun ebenfalls Lust bekommt, bei den monatlichen Spieleentwickler-Treffen mitzumachen, der sei herzlich dazu eingeladen, vorbeizukommen.
+
+Weiterführende Links:
+- Alle Infos zur Community sowie den aktuellen Terminplan gibt es auf der [offiziellen Website von Spieleentwicklung Bodensee](https://www.spieleentwicklung-bodensee.de) zu lesen.
+- Ein Spiel, welches im Rahmen eines Unity-GameJams entstanden ist, kann [hier auf der Toolbox-Website](/projekte/the-best-game) gespielt werden.
+- Einen etwas detaillierteren Rückblick darüber, was an unseren Treffen so geschieht, gibt es in [diesem Blog-Artikel](/blog/rueckblick-spieleentwickler-treffs) zu lesen, der die ersten 7 Treffen beleuchtet.
+---
+body: Vor einem Jahr fand in der Toolbox Bodensee das erste Spieleentwickler-Treffen statt. Nach insgesamt zwölf monatlichen Treffen ist es Zeit für einen kleinen Rückblick.
+---
+project:
+
+#### pro_img ####
+image: sbo-fullhd-twoline.png
+#### pro_img ####
+image: 20180601_154111_resized.jpg
+#### pro_img ####
+image: 20180728_164307_resized.jpg
+#### pro_img ####
+image: tomatenspiel_von_zeha.png
+#### pro_img ####
+image: 20190530_202101_resized.jpg
+#### pro_img ####
+image: screenshot_2019-07-02-18-03-18.png
+---
+pub_date: 2019-07-02
+---
+shorttitle: Spieleentwicklertreffen

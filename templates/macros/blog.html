@@ -17,7 +17,7 @@
         {{- post.author or post.twitter_handle -}}
       </a>
   {%- else -%}
-        {{ post.author }}
+        {{ ' ' }}{{ post.author }}
   {%- endif %}
   {%- if post.pub_date %} {{
       translator('blog_am', 'translate', post.alt) }} {{
