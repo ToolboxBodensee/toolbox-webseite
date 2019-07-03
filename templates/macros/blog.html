@@ -5,7 +5,7 @@
   {%- endif %}
 <div class="blog-post">
   <header class="major">
-  {%- if from_index %}
+  {%- if from_index -%}
     <h2><a href="{{ post|url }}">{{ post.title }}</a></h2>
   {%- else %}
     <h2>{{ post.title }}</h2>
@@ -25,6 +25,13 @@
   {%- endif %}
     </p>
 	</header>
+  {#-
+
+  ## Ab hier wird der eigentliche
+  ## HTML CONTENT in dem Blogartickel
+  ## bzw der Preview gebaut
+
+  -#}
   <!-- Content -->
   <section id="content">
     {{ post.body }}
@@ -37,21 +44,40 @@
     {{- translator('blog_weiter', 'translate', post.alt) -}}
   </a>
   <br/>
-  {%- elif post.video_is_embedded %}
-    {%- for blk in post.video_embedded.blocks %}
-      {%- if blk.video_url %}
+  {%- else %}
+  {#-
+
+  ## Binde Youtube Video ein,
+  ## falls die boolean Option
+  ##  post.video_is_embedded
+  ## auf true gesetzt wurde 
+  ## (manuell mit dem Hacken bei 
+  ## 'Is a Video embedded?')
+
+  -#}
+    {%- if post.video_is_embedded %}
+      {%- for blk in post.video_embedded.blocks %}
+        {%- if blk.video_url %}
     {{ blk }} <br/>
   <a class="button" href="https://www.youtube.com/watch?v={{ blk.video_url }}{% if post.alt %}&gl={{ post.alt }}&hl={{ post.alt }}{% endif %}" target="_blank" rel="noopener">
     {{- translator('directytlink', 'translate', post.alt) }}
   </a>
-      {%- endif %}
-      {%- if blk.video %}
+        {%- endif %}
+        {%- if blk.video %}
   <a class="button" href="{{ blk.video|url }}" download>
     {{- translator('directlink', 'translate', post.alt) -}}
   </a>
-      {%- endif %}
+        {%- endif %}
   <br/><br/>
-    {%- endfor %}
+      {%- endfor %}
+    {%- endif %}
+    {#- 
+
+    ## Binde Bilder ein,
+    ## die in der Galerie kommen
+    ## das macro dafür heißt immer noch 'projekt'!
+ 
+    -#}
     {%- if post.project %}
   <div class="lightgallery" class="row alt">
       {%- for blk in post.project.blocks %}
