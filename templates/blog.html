@@ -15,7 +15,7 @@
       <p>{{ this.description }}</p>
     </header>
     <center>  
-      <a href="{{ this.link|url }}" class="button primary fit" >{{ this.spruch }}
+      <a href="{{ this.link|url }}" class="button smallfit" >{{ this.spruch }}
         <i class="fas fa-rss iconshift-right-8" ></i>
       </a>
     </center>
@@ -25,7 +25,7 @@
   {%- endfor %}
       <center>
         {{ render_pagination(this.pagination) }}
-      <center>
+      </center>
     </section>
   </div>
 </div>
