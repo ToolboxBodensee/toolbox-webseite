@@ -6,13 +6,13 @@ icon: fab fa-houzz
 ---
 pub_date: 2019-07-04
 ---
-teaser: In der Toolbox gibt es viele verschiedene Geräte und Werkzeuge, mit denen man kreative Dinge bauen kann. So gibt es auch die ein oder andere CNC Fräse.
+teaser: In der Toolbox gibt es viele verschiedene Geräte und Werkzeuge, mit denen man kreative Dinge bauen kann. So gibt es auch die eine oder andere CNC Fräse.
 ---
 body:
 
-In der Toolbox gibt es viele verschiedene Geräte und Werkzeuge, mit denen man kreative Dinge bauen kann. So gibt es auch die ein oder andere CNC Fräse.
+In der Toolbox gibt es viele verschiedene Geräte und Werkzeuge, mit denen man kreative Dinge bauen kann. So gibt es auch die eine oder andere CNC Fräse.
 
-**Die Nutzung einer dieser Maschinen erfordert immer zwingend eine Einweisung, befor diese verwendet wird!**
+**Die Nutzung einer dieser Maschinen erfordert immer zwingend eine Einweisung, bevor diese verwendet wird!**
 ```
 In der Einweisung wird dir die Sicherheit und die ganz grobe Bedienung erklärt.
 Damit ist man in der Lage, ohne größere Schäden sich das Wissen über die 
@@ -21,7 +21,7 @@ Fräserei anzueignen.
 Sollte irgendetwas nicht so sein, wie erwartet oder etwas kaputt sein, dann
 informiere unverzüglich die Verantwortlichen für die jeweilige Fräse. Wenn
 Fräser kaputt oder abgenutzt sind, dann besorge Ersatz. Kleinere Fräser (die
-häufig mal kaputt gehen) kriegst Du bei den Verantwortlichen. Die Kosten 
+häufig mal kaputtgehen) bekommst Du bei den Verantwortlichen. Die Kosten 
 für neues Fräswerkzeug trägt im Normalfall die Toolbox, darum kümmern 
 musst Du Dich aber selbst. 
 ```
@@ -29,11 +29,11 @@ musst Du Dich aber selbst.
  Software
 ---------
 
-Software zum erstellen der Designs gibt es recht viele. Hier drei in der Toolbox gerne genommene Alternativen.
+Software zum Erstellen der Designs gibt es recht viele. Hier drei in der Toolbox gerne genutzte Alternativen.
 
 ### Easel
 
-[Easel](https://easel.inventables.com) ist ein Online-Tool von Inventables. Es ermöglicht sehr einfach Vektorgraphik (z.B. erstellt über Inkscape) in g-code zu verwandeln. Das funktioniert natürlich nur für Flächen (was allerdings das häufigste ist, was man so tut). Als Maschine lässt sich die Shapeoko2 auswählen und dann ein g-code generieren. Theoretisch lässt sich die Maschine gleich aus dem Tool bedienen, was noch niemand in der Toolbox gemacht hat. Easel ist kostenlos, man brauch bei Inventables eine Registrierung.
+[Easel](https://easel.inventables.com) ist ein Online-Tool von Inventables. Es ermöglicht sehr einfach Vektorgraphik (z.B. erstellt über Inkscape) in g-code zu verwandeln. Das funktioniert natürlich nur für Flächen, wobei dies der wohl häufigste Anwendungsfall ist. Als Maschine lässt sich die Shapeoko2 auswählen und dann ein g-code generieren. Theoretisch lässt sich die Maschine gleich aus dem Tool bedienen, wobei das noch niemand in der Toolbox gemacht hat. Easel ist kostenlos, es ist allerdings eine Registrierung bei Inventables nötig.
 
 ### Fusion 360
 
@@ -41,7 +41,7 @@ Der deutlich professionellere Weg ist [Fusion 360](https://www.autodesk.com/camp
 
 ### FlatCAM
 
-[FlatCAM](http://flatcam.org) ist dafür geeignet, aus Gerber-Dateien durch Isolation-Routing-Platinen herzustellen. Mehr Informationen dazu bei der Shapeoko (die die einzige Fräse ist, mit der sich das derzeit machen lässt). FlatCAM ist open source.
+[FlatCAM](http://flatcam.org) ist dafür geeignet, aus Gerber-Dateien durch Isolation-Routing Platinen herzustellen. Die Shapeoko ist die einzige Fräse mit der dies aktuell möglich ist. Mehr Informationen dazu finden sich bei der Shapeoko im Abschnitt Geräte. FlatCAM ist open source.
 
  Bedienung
 -----------
@@ -52,11 +52,11 @@ Geräte
 -------
 <h3>Shapeoko 2</h3>
 
-Die Shapeoko 2 wurde gebaut von Thomas Schanne und ist nach wie vor sein Eigentum. Sie steht als Dauerleihgabe in der Toolbox und kann wie Toolbox-eigene Maschinen genutzt werden.
+Die Shapeoko 2 wurde von Thomas Schanne gebaut und ist nach wie vor sein Eigentum. Sie steht als Dauerleihgabe in der Toolbox und kann wie Toolbox-eigene Maschinen genutzt werden.
 
-Die Shapeoko 2 wird wie ein 3D-Drucker über Zahnriemen bewegt, damit ist sie schnell, aber nicht sehr kräftig. Sie hat einen 160-Watt-China-Dremel mit einem bemerkenswerten Rundlauf. Die Spindel wird nicht vom Controller gesteuert. Die Fräse ist sehr gut geeignet für jede Art von Holz, Kunststoffe und PCBs.
+Die Shapeoko 2 wird wie ein 3D-Drucker über Zahnriemen bewegt, wodurch sie zwar schnell aber nicht besonders kräftig ist. Sie verfügt über einen 160-Watt-China-Dremel mit einem bemerkenswerten Rundlauf. Die Spindel wird nicht vom Controller gesteuert. Die Fräse ist sehr gut geeignet für jede Art von Holz, Kunststoffe und PCBs.
 
-Als Controller dient ein Arduino mit GRBL-Shield, angeschlossen an einen Raspberry mit Touch und Tastatur. Sie kann stand-alone betrieben werden oder über Ethernet.
+Als Controller dient ein Arduino mit GRBL-Shield, welcher an einen Raspberry mit Touch und Tastatur angeschlossen ist. Sie kann stand-alone betrieben werden oder über Ethernet.
 
 Die Fräse hat einen Anschluss für eine Touch-Plate und ist damit fürs Platinenfräsen geeignet.
 <div class="lightgallery">
@@ -86,7 +86,7 @@ Nur Für eingewiesene Nutzer!
   * Die Touch-Plate gehört in den obersten Rundsteckereingang.
   * Nur der oberste USB auf der Frontseite ist belegt.
   * Entweder über den PC fernsteuern oder stand-alone. Beides gleichzeitig geht schlecht.
-  * Achtung: wenn seht kurze Fräser genommen werden, kann z nicht bis ganz unten gefahren werden, weil sonst der Schlitten unten nicht mehr gehalten wird.
+  * Achtung: wenn sehr kurze Fräser genommen werden, darf die Z-Achse nicht bis ganz unten gefahren werden, da sonst der Schlitten unten nicht mehr gehalten wird.
 
 #### Hinweise
 **Platinenfräsen**
