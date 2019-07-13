@@ -17,6 +17,7 @@ install:
 	fi
 	pip3 install wheel --user
 	pip3 install lektor --user
+	./setup/install-pre-commit.sh
 
 
 build:
