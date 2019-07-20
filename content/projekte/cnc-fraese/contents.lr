@@ -6,11 +6,11 @@ icon: fab fa-houzz
 ---
 pub_date: 2019-07-04
 ---
-teaser: In der Toolbox gibt es viele verschiedene Geräte und Werkzeuge, mit denen man kreative Dinge bauen kann. So gibt es auch die eine oder andere CNC Fräse.
+teaser: In der Toolbox gibt es viele verschiedene Geräte und Werkzeuge, mit denen man kreative Dinge bauen kann. So gibt es auch die eine oder andere CNC-Fräse.
 ---
 body:
 
-In der Toolbox gibt es viele verschiedene Geräte und Werkzeuge, mit denen man kreative Dinge bauen kann. So gibt es auch die eine oder andere CNC Fräse.
+In der Toolbox gibt es viele verschiedene Geräte und Werkzeuge, mit denen man kreative Dinge bauen kann. So gibt es auch die eine oder andere CNC-Fräse.
 
 **Die Nutzung einer dieser Maschinen erfordert immer zwingend eine Einweisung, bevor diese verwendet wird!**
 ```
@@ -33,7 +33,7 @@ Software zum Erstellen der Designs gibt es recht viele. Hier drei in der Toolbox
 
 ### Easel
 
-[Easel](https://easel.inventables.com) ist ein Online-Tool von Inventables. Es ermöglicht sehr einfach Vektorgraphik (z.B. erstellt über Inkscape) in g-code zu verwandeln. Das funktioniert natürlich nur für Flächen, wobei dies der wohl häufigste Anwendungsfall ist. Als Maschine lässt sich die Shapeoko2 auswählen und dann ein g-code generieren. Theoretisch lässt sich die Maschine gleich aus dem Tool bedienen, wobei das noch niemand in der Toolbox gemacht hat. Easel ist kostenlos, es ist allerdings eine Registrierung bei Inventables nötig.
+[Easel](https://easel.inventables.com) ist ein Online-Tool von Inventables. Es ermöglicht sehr einfach Vektorgraphik (z.B. erstellt über Inkscape) in G-Code zu verwandeln. Das funktioniert natürlich nur für Flächen, wobei dies der wohl häufigste Anwendungsfall ist. Als Maschine lässt sich die Shapeoko2 auswählen und dann ein G-Code generieren. Theoretisch lässt sich die Maschine gleich aus dem Tool bedienen, wobei das noch niemand in der Toolbox gemacht hat. Easel ist kostenlos, es ist allerdings eine Registrierung bei Inventables nötig.
 
 ### Fusion 360
 
@@ -45,7 +45,7 @@ Der deutlich professionellere Weg ist [Fusion 360](https://www.autodesk.com/camp
 
  Bedienung
 -----------
-Ist der G-Code hergestellt, dann muss er noch an den Controler gesendet werden. Dafür wird entweder [bCNC](https://github.com/vlachoudis/bCNC/wiki) genutzt oder der [Universal G-Code Sender](https://winder.github.io/ugs_website/).
+Ist der G-Code hergestellt, dann muss er noch an den Controller gesendet werden. Dafür wird entweder [bCNC](https://github.com/vlachoudis/bCNC/wiki) genutzt oder der [Universal G-Code Sender](https://winder.github.io/ugs_website/).
 
 
 Geräte
@@ -93,8 +93,8 @@ Nur Für eingewiesene Nutzer!
   * Platinenfräsen mit [KiCAD](http://kicad-pcb.org/) und [FlatCAM](http://flatcam.org/) und einem kleinen Stichel. Vorschub nicht schneller als 300 mm/s sonst bricht der Stichel ab. Spindel auf höchster Stufe.
   * Autolevel für Platinen unbedingt nötig - [Anleitung](https://github.com/vlachoudis/bCNC/wiki/AutoLevel).
   * Fixieren der Platine am besten mit doppelseitigem Klebeband.
-  * Einstellungen für KiCAD Leiterbahnen: Abstandsmaß: 0,4mm; Leiterbahnbreite 1mm; Durchkontaktierung (mit Niete) 2mm/1,1mm; Micro via: 0,8mm/0,5mm; 
-  * Einstellungen für FlatCAM: Tool dia: 0,2mm; 1 pass; Cut Z: -0,1mm; Feed Rate: 300mm/m; Z Feed Rate (holes): 100mm/m; Tool change Z: 30 mm
+  * Einstellungen für KiCAD Leiterbahnen: Abstandsmaß: 0,4 mm; Leiterbahnbreite 1 mm; Durchkontaktierung (mit Niete) 2 mm/1,1 mm; Micro via: 0,8 mm/0,5 mm; 
+  * Einstellungen für FlatCAM: Tool dia: 0,2 mm; 1 pass; Cut Z: -0,1 mm; Feed Rate: 300 mm/m; Z Feed Rate (holes): 100 mm/m; Tool change Z: 30 mm
 
 **Konfiguration:**
 
@@ -115,7 +115,7 @@ Die Colinbus wurde der Toolbox geschenkt, allerdings ohne Spindel und Controller
 
 Die Colinbus wird über Spindeln bewegt und hat damit relativ viel Kraft. Sie ist mit ihrem Stahlrahmen auch ziemlich verwindungssteif und damit auch zum Fräsen von NE Metallen gut geeignet. Die Colinbus hat eine 400-Watt-Spindel, welche über den Controller angesteuert wird.
 
-Die Fräse ist sehr gut geeignet für jede Art von Holz, Kunststoffen und NE-Mettalen.
+Die Fräse ist sehr gut geeignet für jede Art von Holz, Kunststoffen und NE-Metallen.
 
 Als Controller dient ebenfalls ein Arduino mit GRBL-Shield, der direkt mit dem PC verbunden wird.
 
