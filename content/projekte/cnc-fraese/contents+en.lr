@@ -1,0 +1,163 @@
+author: Thomas
+---
+body:
+
+In the Toolbox, there are various devices and tools to build creative things with. Among others, there are also some CNC mills.
+
+**Using one of these machines explicitly requires an introduction prior to using it!**
+```
+In the introduction, you will get to know the safety requirements as well as the general use. 
+That way you will be able to gather knowledge about mill cutting without causing any further damage. 
+
+If anything does not work as expected or in case of damage or failure, you need to inform the person 
+responsible for the mill cutter. If the mill cutter is worn out, please make sure to buy replacement parts. 
+For smaller mill cutters (that are more often prone to defects), ask the person responsible. 
+The costs for a new mill cutting tool are usually funded by the Toolbox, however, you will have to purchase 
+them yourself. 
+```
+
+ Software
+---------
+
+There is a wide range of software for creating designs. These are three alternatives used in the Toolbox:
+
+### Easel
+
+[Easel](https://easel.inventables.com) is an online tool by Inventables. It makes it possible to very easily convert vector graphics (created with e.g. Inkscape) into G-code. This however only works for planes, which is the most common use case. The Shapeoko 2 can be selected as machine and then, the G-code can be generated. In theory, the machine could also be controlled directly from the tool but there isn't anyone in the Toolbox who did that before. Easel is free of charge, however a registration at Inventables is required.
+
+### Fusion 360
+
+The significantly more professional solution is [Fusion 360](https://www.autodesk.com/campaigns/fusion-360-for-hobbyists). It is a very mighty tool but also very complex; here you can easily design all parts (even "real" 3D). For the CAM process, a configuration suitable for the mill cutter is required which can be found in the section of the respective mill cutter. Fusion 360 is free of charge for makers. 
+
+### FlatCAM
+
+[FlatCAM](http://flatcam.org) is suitable for creating PCBs from Gerber files via isolation routing. The Shapeoko is currently the only mill cutter that is suitable for that. For more information go to the Shapeoko section under "devices". FlatCAM is open source software.
+
+ Control
+-----------
+As soon as the G-code was created, it has to be sent to the controller. You can either use [bCNC](https://github.com/vlachoudis/bCNC/wiki) or the [Universal G-Code Sender](https://winder.github.io/ugs_website/).
+
+
+Devices
+-------
+<h3>Shapeoko 2</h3>
+
+The Shapeoko 2 was built by Thomas Schanne and is still in his ownership. It is available for the Toolbox as permanent loan and can be used like Toolbox-owned machines. 
+
+The Shapeoko 2 is moved via a drive belt such as a 3D printer which makes it fast on the one hand, on the other hand it is not very powerful. It has a 160 Watt 
+Dremel from China with a remarkable radial run-out. The spindle is not operated via the controller. This mill cutter is suitable for each type of wood, plastic and PCBs.
+
+As controller, an Arduino with GRBL shield is used which is connected to a Raspberry with touch and keyboard. It can be operated as stand-alone or via Ethernet. 
+
+The mill cutter has a connection for a touch plate and is therefore suitable for mill cutting of PCBs. 
+<div class="lightgallery">
+<a href="/projekte/cnc-fraese/shapeoko2.jpg">
+  <img class="image lightgallery" src="../../projekte/cnc-fraese/shapeoko2@360x360.jpg">
+</a>
+</div><br/><br/>
+
+**Quick Start Guide**
+
+```
+For instructed users only!
+```
+
+ + Turn on (multi socket)
+ + Alternative control: Connect bCNC on own laptop with ``socket://shapeoko.tbbs.me:3333``
+ + Alternative direct control: Start and operate bCNC on Raspberry via touchscreen
+ + Operate bCNC (e.g. as described in the [wiki of bCNC](https://github.com/vlachoudis/bCNC/wiki))
+
+**After operation:**
+ + First, shut down the Raspberry (via the touch),
+ + Then turn off the power supply (via multi socket).
+
+
+**Special Features**
+  * The spindle can only be equipped with 3 mm mill cutting tools.
+  * The touch plate has to be plugged into the upper round plug socket.
+  * Only the upmost USB at the front is allocated.
+  * Either remote control via the PC or operate as stand-alone. Both at the same time is hardly working.
+  * Caution: if very short mill cutters are used, the Z-axis must not be moved right to the bottom as otherwise the carriage cannot be held anymore. 
+
+#### Notes
+**PCB mill cutting**
+  * PCB mill cutting with [KiCAD](http://kicad-pcb.org/) and [FlatCAM](http://flatcam.org/) and a small graver. Feed not faster than 300 mm/s as otherwise the graver breaks apart. Spindle at highest level.
+  * Auto level for PCB absolutely essential [Instructions](https://github.com/vlachoudis/bCNC/wiki/AutoLevel).
+  * Fixate the PCB with double-sided tape.
+  * Settings for KiCAD conducting paths: Distance dimension: 0.4 mm; conducting path width: 1 mm; interlayer connection (with rivet) 2 mm/1.1 mm; micro via: 0.8 mm/0.5 mm; 
+  * Settings for FlatCAM: Tool dia: 0.2 mm; 1 pass; Cut Z: -0.1 mm; Feed Rate: 300 mm/m; Z Feed Rate (holes): 100 mm/m; Tool change Z: 30 mm
+
+**Configuration:**
+
+The configuration is also available on [github.com/toolboxbodensee/cnc](https://github.com/ToolboxBodensee/cnc.git).
+
+
+
+
+
+
+
+
+
+<br/>Mill Cutters
+
+<h3>Colinbus</h3>
+The Colinbus was given to the Toolbox but without spindle and controller. It was brought to the current state by Maximilian Klug.
+
+The Colinbus is moved via spindles and is therefore very powerful. It is also very torsion-resistant in its steel frame and therefore very suitable for mill cutting of non-ferrous metal. The Colinbus has a 400 Watt spindle that is operated via the controller. 
+The mill cutter is very suitable for all kinds of wood, plastic and non-ferrous metal.
+
+The Controller is also an Arduino with GRBL shield that is directly connected to the PC.
+
+<div class="lightgallery">
+<a href="/projekte/cnc-fraese/colinbus.jpg">
+  <img class="image lightgallery" src="../../projekte/cnc-fraese/colinbus@360x360.jpg">
+</a>
+</div><br/><br/>
+
+**Quick Start Guide:**
+```
+For instructed users only!
+```
+ - Turn on, connect to your laptop via USB.
+ - Start and connect bCNC on own laptop
+ - Operate bCNC (e.g. as described on [[https://github.com/vlachoudis/bCNC/wiki|wiki of bCNC]])
+
+**Special features**
+  * There are various collet chucks for 3 mm and 6 mm shaft diameters.
+
+**Notes**
+  * The emergency shutdown switch turn of the complete power supply. It also serves as on/off switch.
+  * The digital display shows the spindle speed. It matches the value set by the controller fairly well. 
+
+
+ Our CNC mills:
+------------------
+---
+icon: fab fa-houzz
+---
+project:
+
+#### pro_img ####
+image: pr0f1.jpg
+#### pro_img ####
+image: shapeoko2.jpg
+#### pro_img ####
+image: colinbus.jpg
+---
+pub_date: 2019-07-04
+---
+teaser: In the Toolbox, there are various devices and tools to build creative things with. Among others, there are also some CNC mills.
+---
+title: CNC Mill
+---
+video_embedded:
+
+#### pro_video ####
+video: 
+----
+video_url: _dc_O7bqhh8
+---
+video_is_embedded: yes
+---
+xml_img: shapeoko2.jpg
