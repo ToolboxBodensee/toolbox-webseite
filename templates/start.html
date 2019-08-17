@@ -1,7 +1,6 @@
-{% extends "layout.html" %}
-{% block title %}{{ this.title }}{% endblock %}
-{% block body %}
-
+{%- extends "layout.html" %}
+{%- block title %}{{ this.title }}{% endblock %}
+{%- block body %}
 <!-- Banner -->
 <section id="banner">
   <div class="content">
@@ -29,10 +28,10 @@
           </header>
         </div>
         <div class="4u 12u$(medium)">
-            {{ this.about_text2 }}
+          {{ this.about_text2 }}
         </div>
         <div class="4u$ 12u$(medium)">
-            {{ this.about_text3 }}
+          {{ this.about_text3 }}
           <ul class="actions">
             <li><a href="{{ this.about_url2 }}" class="button">{{ this.about_url }}</a></li>
           </ul>
@@ -43,13 +42,12 @@
   <a href="#scroll-2" class="goto-next scrolly">Next</a>
 </section>
 
-{% for blk in this.sections.blocks %}
-    <section id="scroll-{{ loop.index0 + 2 }}"
-             class="spotlight style2 {{ blk.type }}" style="background-image:url({{ blk.background }})">
+{%- for blk in this.sections.blocks %}
+<section id="scroll-{{ loop.index0 + 2 }}" class="spotlight style2 {{ blk.type }}" style="background-image:url({{ blk.background|asseturl }})">
     {{ blk }}
-    <a href="#scroll-{{ loop.index0 + 3 }}" class="goto-next scrolly">Next</a>
-    </section>
-{% endfor %}
+  <a href="#scroll-{{ loop.index0 + 3 }}" class="goto-next scrolly">Next</a>
+</section>
+{%- endfor %}
 
 <!-- Four -->
 <section id="scroll-{{ this.sections.blocks|count + 2 }}" class="wrapper style1 special fade-up">
@@ -61,7 +59,7 @@
     <div class="box alt">
       <div class="row uniform">
         <section class="4u 6u(medium) 12u$(xsmall)">
-           <span class="icon alt major">
+          <span class="icon alt major">
             <i class="fas {{ this.icons_1_1 }} fa-3x iconshiftdown"></i>
           </span>
           <a href="{{ this.icons_1_url }}"><h3>{{ this.icons_1_2 }}</h3></a>
@@ -75,21 +73,21 @@
           {{ this.icons_2_3 }}
         </section>
         <section class="4u$ 6u(medium) 12u$(xsmall)">
-           <span class="icon alt major">
+          <span class="icon alt major">
             <i class="fas {{ this.icons_3_1 }} fa-3x iconshiftdown"></i>
           </span>
           <a href="{{ this.icons_3_url }}"><h3>{{ this.icons_3_2 }}</h3></a>
-         {{ this.icons_3_3 }}
+          {{ this.icons_3_3 }}
         </section>
         <section class="4u 6u$(medium) 12u$(xsmall)">
-           <span href="{{ this.icons_4_url }}" class="icon alt major">
+          <span href="{{ this.icons_4_url }}" class="icon alt major">
             <i class="fas {{ this.icons_4_1 }} fa-3x iconshiftdown"></i>
           </span>
           <a href="{{ this.icons_4_url }}"><h3>{{ this.icons_4_2 }}</h3></a>
           {{ this.icons_4_3 }}
         </section>
         <section class="4u 6u(medium) 12u$(xsmall)">
-           <span class="icon alt major">
+          <span class="icon alt major">
             <i class="fas {{ this.icons_5_1 }} fa-3x iconshiftdown"></i>
           </span>
           <a href="{{ this.icons_5_url }}#"><h3>{{ this.icons_5_2 }}</h3></a>
@@ -124,5 +122,4 @@
   </div>
 </section>
 
-
-{% endblock %}
+{%- endblock %}

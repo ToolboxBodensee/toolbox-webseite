@@ -1,0 +1,165 @@
+title: CNC Fräse
+---
+author: Thomas
+---
+icon: fab fa-houzz
+---
+pub_date: 2019-07-04
+---
+teaser: In der Toolbox gibt es viele verschiedene Geräte und Werkzeuge, mit denen man kreative Dinge bauen kann. So gibt es auch die eine oder andere CNC-Fräse.
+---
+body:
+
+In der Toolbox gibt es viele verschiedene Geräte und Werkzeuge, mit denen man kreative Dinge bauen kann. So gibt es auch die eine oder andere CNC-Fräse.
+
+**Die Nutzung einer dieser Maschinen erfordert immer zwingend eine Einweisung, bevor diese verwendet wird!**
+```
+In der Einweisung wird dir die Sicherheit und die ganz grobe Bedienung erklärt.
+Damit ist man in der Lage, ohne größere Schäden sich das Wissen über die 
+Fräserei anzueignen.
+
+Sollte irgendetwas nicht so sein, wie erwartet oder etwas kaputt sein, dann
+informiere unverzüglich die Verantwortlichen für die jeweilige Fräse. Wenn
+Fräser kaputt oder abgenutzt sind, dann besorge Ersatz. Kleinere Fräser (die
+häufig mal kaputtgehen) bekommst Du bei den Verantwortlichen. Die Kosten 
+für neues Fräswerkzeug trägt im Normalfall die Toolbox, darum kümmern 
+musst Du Dich aber selbst. 
+```
+
+ Software
+---------
+
+Software zum Erstellen der Designs gibt es recht viele. Hier drei in der Toolbox gerne genutzte Alternativen.
+
+### Easel
+
+[Easel](https://easel.inventables.com) ist ein Online-Tool von Inventables. Es ermöglicht sehr einfach Vektorgraphik (z.B. erstellt über Inkscape) in G-Code zu verwandeln. Das funktioniert natürlich nur für Flächen, wobei dies der wohl häufigste Anwendungsfall ist. Als Maschine lässt sich die Shapeoko2 auswählen und dann ein G-Code generieren. Theoretisch lässt sich die Maschine gleich aus dem Tool bedienen, wobei das noch niemand in der Toolbox gemacht hat. Easel ist kostenlos, es ist allerdings eine Registrierung bei Inventables nötig.
+
+### Fusion 360
+
+Der deutlich professionellere Weg ist [Fusion 360](https://www.autodesk.com/campaigns/fusion-360-for-hobbyists). Das Tool ist sehr mächtig aber natürlich auch komplex, hier lassen sich alle Teile (auch „echtes“ 3D) hervorragend modellieren. Für den CAM-Prozess braucht es eine auf die Fräse passende Konfiguration, die findest Du im Abschnitt der jeweiligen Fräse. Fusion 360 ist für Maker kostenlos.
+
+### FlatCAM
+
+[FlatCAM](http://flatcam.org) ist dafür geeignet, aus Gerber-Dateien durch Isolation-Routing Platinen herzustellen. Die Shapeoko ist die einzige Fräse mit der dies aktuell möglich ist. Mehr Informationen dazu finden sich bei der Shapeoko im Abschnitt Geräte. FlatCAM ist open source.
+
+ Bedienung
+-----------
+Ist der G-Code hergestellt, dann muss er noch an den Controller gesendet werden. Dafür wird entweder [bCNC](https://github.com/vlachoudis/bCNC/wiki) genutzt oder der [Universal G-Code Sender](https://winder.github.io/ugs_website/).
+
+
+Geräte
+-------
+<h3>Shapeoko 2</h3>
+
+Die Shapeoko 2 wurde von Thomas Schanne gebaut und ist nach wie vor sein Eigentum. Sie steht als Dauerleihgabe in der Toolbox und kann wie Toolbox-eigene Maschinen genutzt werden.
+
+Die Shapeoko 2 wird wie ein 3D-Drucker über Zahnriemen bewegt, wodurch sie zwar schnell aber nicht besonders kräftig ist. Sie verfügt über einen 160-Watt-China-Dremel mit einem bemerkenswerten Rundlauf. Die Spindel wird nicht vom Controller gesteuert. Die Fräse ist sehr gut geeignet für jede Art von Holz, Kunststoffe und PCBs.
+
+Als Controller dient ein Arduino mit GRBL-Shield, welcher an einen Raspberry mit Touch und Tastatur angeschlossen ist. Sie kann stand-alone betrieben werden oder über Ethernet.
+
+Die Fräse hat einen Anschluss für eine Touch-Plate und ist damit fürs Platinenfräsen geeignet.
+<div class="lightgallery">
+<a href="/projekte/cnc-fraese/shapeoko2.jpg">
+  <img class="image lightgallery" src="../../projekte/cnc-fraese/shapeoko2@360x360.jpg">
+</a>
+</div><br/><br/>
+
+**Quick Start Guide**
+
+```
+Nur Für eingewiesene Nutzer!
+```
+
+ + Anschalten (Mehrfachstecker)
+ + Alternative Fernbedienung: Auf eigenem Laptop bCNC mit ``socket://shapeoko.tbbs.me:3333`` verbinden
+ + Alternative Direktbedienung: bCNC auf Raspberry über Touchscreen starten und bedienen
+ + bCNC bedienen (z.B. wie im [wiki von bCNC](https://github.com/vlachoudis/bCNC/wiki) beschrieben)
+
+**Nach der Bedienung:**
+ + erst den Raspberry runterfahren (über den Touch),
+ + dann den Strom wegnehmen (über Mehrfachstecker).
+
+
+**Besonderheiten**
+  * Die Spindel nimmt nur 3 mm Fräswerkzeuge auf.
+  * Die Touch-Plate gehört in den obersten Rundsteckereingang.
+  * Nur der oberste USB auf der Frontseite ist belegt.
+  * Entweder über den PC fernsteuern oder stand-alone. Beides gleichzeitig geht schlecht.
+  * Achtung: wenn sehr kurze Fräser genommen werden, darf die Z-Achse nicht bis ganz unten gefahren werden, da sonst der Schlitten unten nicht mehr gehalten wird.
+
+#### Hinweise
+**Platinenfräsen**
+  * Platinenfräsen mit [KiCAD](http://kicad-pcb.org/) und [FlatCAM](http://flatcam.org/) und einem kleinen Stichel. Vorschub nicht schneller als 300 mm/s sonst bricht der Stichel ab. Spindel auf höchster Stufe.
+  * Autolevel für Platinen unbedingt nötig - [Anleitung](https://github.com/vlachoudis/bCNC/wiki/AutoLevel).
+  * Fixieren der Platine am besten mit doppelseitigem Klebeband.
+  * Einstellungen für KiCAD Leiterbahnen: Abstandsmaß: 0,4 mm; Leiterbahnbreite 1 mm; Durchkontaktierung (mit Niete) 2 mm/1,1 mm; Micro via: 0,8 mm/0,5 mm; 
+  * Einstellungen für FlatCAM: Tool dia: 0,2 mm; 1 pass; Cut Z: -0,1 mm; Feed Rate: 300 mm/m; Z Feed Rate (holes): 100 mm/m; Tool change Z: 30 mm
+
+**Konfiguration:**
+
+Die Konfiguration findet sich natürlich auf [github.com/toolboxbodensee/cnc](https://github.com/ToolboxBodensee/cnc.git).
+
+
+
+
+
+
+
+
+
+<br/>
+
+<h3>Colinbus</h3>
+Die Colinbus wurde der Toolbox geschenkt, allerdings ohne Spindel und Controller. Sie wurde von Maximilian Klug auf den derzeitigen Stand gebracht.
+
+Die Colinbus wird über Spindeln bewegt und hat damit relativ viel Kraft. Sie ist mit ihrem Stahlrahmen auch ziemlich verwindungssteif und damit auch zum Fräsen von NE Metallen gut geeignet. Die Colinbus hat eine 400-Watt-Spindel, welche über den Controller angesteuert wird.
+
+Die Fräse ist sehr gut geeignet für jede Art von Holz, Kunststoffen und NE-Metallen.
+
+Als Controller dient ebenfalls ein Arduino mit GRBL-Shield, der direkt mit dem PC verbunden wird.
+
+<div class="lightgallery">
+<a href="/projekte/cnc-fraese/colinbus.jpg">
+  <img class="image lightgallery" src="../../projekte/cnc-fraese/colinbus@360x360.jpg">
+</a>
+</div><br/><br/>
+
+**Quick Start Guide:**
+```
+Für eingewiesene Nutzer!
+```
+ - Anschalten, über USB mit eigenem Laptop verbinden.
+ - Auf eigenem Laptop bCNC starten und verbinden
+ - bCNC bedienen (z.B. wie im [[https://github.com/vlachoudis/bCNC/wiki|wiki von bCNC]] beschrieben)
+
+**Besonderheiten**
+  * Es gibt verschiedene Spannzangen für 3 mm und 6 mm Schaftdurchmesser.
+
+**Hinweise**
+  * Der Not-Aus-Schalter schaltet den ganzen Strom aus. Er dient derzeit gleichzeitig als An-/Ausschalter.
+  * Die Digitalanzeige zeigt die Spindelgeschwindigkeit an. Sie passt ganz gut zum eingestellten Wert aus dem Controller.
+
+
+ Unsere CNC Fräsen:
+------------------
+---
+project:
+
+#### pro_img ####
+image: pr0f1.jpg
+#### pro_img ####
+image: shapeoko2.jpg
+#### pro_img ####
+image: colinbus.jpg
+---
+xml_img: shapeoko2.jpg
+---
+video_embedded:
+
+#### pro_video ####
+video: 
+----
+video_url: _dc_O7bqhh8
+---
+video_is_embedded: yes

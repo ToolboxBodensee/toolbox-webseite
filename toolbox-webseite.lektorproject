@@ -2,6 +2,8 @@
 name = Toolbox Bodensee e.V.
 url = https://toolbox-bodensee.de/
 locale = de_DE
+excluded_assets = *.scss, *.js
+included_assets = *.min.js
 
 [servers.toolbox]
 name = toolbox
@@ -27,4 +29,5 @@ url_prefix = /sxu/
 locale = de
 
 [packages]
-lektor-webpack-support = 0.5
+lektor-jsminify = 1.4
+lektor-scsscompile = 1.2.3
