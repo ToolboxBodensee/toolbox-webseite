@@ -29,5 +29,5 @@ url_prefix = /sxu/
 locale = de
 
 [packages]
-lektor-jsminify = 1.4		
-lektor-scsscompile = 1.2.3
+lektor-jsminify = 1.4.1
+lektor-scsscompile = 1.2.4
