@@ -15,7 +15,11 @@ script: "lektor build -f jsminify -f scsscompile"
 after_success:
   - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then .travis/staging.sh; fi'
 
-before_deploy: "echo 'c3woc.de ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBC5NslYj+wtriBuKIxJfDRm9E2hnlstWR8durQ6pKvVvP7wjcoXIyAxe41GvJ9SoEhSjF7oVlzlw+zAkzl5WOZ4=' > ~/.ssh/known_hosts"
+before_deploy:
+  - "echo 'toolbox-bodensee.de ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBC5NslYj+wtriBuKIxJfDRm9E2hnlstWR8durQ6pKvVvP7wjcoXIyAxe41GvJ9SoEhSjF7oVlzlw+zAkzl5WOZ4=' > ~/.ssh/known_hosts"
+  - "echo 'toolbox-bodensee.de ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICPjpWvNTpw08/uTX0vTAZVDUDSxFOexeqqkWxqDBSM3' >> ~/.ssh/known_hosts"
+  - "echo 'toolbox-bodensee.de ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIq9jSnxybmYM0Qhhf6Q/L3vRSdVOL4Yk2KPHU9dTahCK9UMTVHa+klUKwhk8ObYV27Q40HaREJypMSejIocMUp1WQVBPzL/krLgKGnBjy+zo3GVR9oculcc5XfzyMG6fY2YoEfJB2Mgd5pXUD9J9sIWj7x5oXcLT0koehaUnDyVYfX3YMT9tfutUI1juzI/VMwyC4nhGsdyjYNe5CEYi7Xfr39Gb7m/lk38zRH1HdWq3vyd8VzVo6PFUZZTC58GIWgvGX7PVGMHU2tmtVixoDynXyMPik0P+QfignSqQqL+sbEyG0dynZBOFkhy6bt8Z58jjaLZI/C+kgd+YIuEMX' >> ~/.ssh/known_hosts" 
+
 deploy:
   provider: script
   script: "lektor deploy --key $LEKTOR_DEPLOY_KEY toolbox"

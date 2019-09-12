@@ -11,7 +11,7 @@ url = https://toolbox-bodensee.de/
 url_style = absolute
 enabled = yes
 default = yes
-target = rsync://web16@c3woc.de:/var/www/clients/client15/web16/web
+target = rsync://web16@toolbox-bodensee.de:/var/www/clients/client15/web16/web
 
 [alternatives.de]
 name = Deutsch
