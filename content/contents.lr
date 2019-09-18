@@ -95,6 +95,22 @@ sections:
 #### startpage_section ####
 type: left
 ----
+header: Tag der offenen Türe
+----
+text:
+
+Der Tag der offenen Toolbox Tür findet am 12. Oktober 2019 statt.
+----
+text2: Komm vorbei, lerne uns kennen und hab Spaß am Gerät!
+----
+url_text: Kalender
+----
+url: /termine/
+----
+background: /images/tdot18.jpg
+#### startpage_section ####
+type: right
+----
 header: Elektrowerkstatt
 ----
 text: Hier stehen dir Oszilloskope, Lötkolben, Netzgeräte, Messgeräte, verschiedene Bauteile und 3D-Drucker zur Verfügung. In unserer großen Elektrowerkstatt werden selbst Elektrotechniker neidisch.
@@ -107,7 +123,7 @@ url: /projekte/
 ----
 background: /images/home/abschnitt2.jpeg
 #### startpage_section ####
-type: right
+type: left
 ----
 header: Workshops & Vorträge
 ----

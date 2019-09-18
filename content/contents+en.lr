@@ -97,6 +97,23 @@ sections:
 #### startpage_section ####
 type: left
 ----
+header: open day 2019
+----
+text:
+
+The open day of the Toolbox door will take place on 12 October 2019.
+----
+text2: Come by and have fun with the device.
+----
+url_text: Calendar
+----
+url: /en/termine/
+----
+background: /images/tdot18.jpg
+
+#### startpage_section ####
+type: left
+----
 header: Electrical Workshop
 ----
 text: Here you will find oscilloscopes, soldering irons, power supplies, measuring instruments, various components and 3D printers. In our large electrical workshop even electrical engineers get jealous.
