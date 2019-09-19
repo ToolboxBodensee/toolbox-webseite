@@ -54,6 +54,10 @@ make install
 make server
 ```
 
+ LFS
+----
+https://gitea.see-base.de/toolbox/toolbox-webseite.git 
+
 Nähere Informationen
 ---------------------------------
 | **[Grundlagen](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Grundlagen)**     | **[Installation](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Installation)**     | **[Beitragen](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Contributing)**           |
