@@ -1,0 +1,25 @@
+title: MGH-Projekt
+---
+author: Philipp und Alex
+---
+body:
+
+Für dieses Projekt, das in Kooperation mit dem Mehrgenerationenhaus Markdorf (MGH) ins Leben gerufen wurde, fanden sich in den Räumen der Toolbox regelmäßig fünf Mädchen im Alter zwischen 10 und 16 Jahren ein, um über einen Zeitraum von einem halben Jahr einen Quadrocopter, also eine Drohne mit 4 Propellern zu bauen. 
+Hierfür wurden sowohl Drohnenkörper als auch Gehäuse der Fernbedienung mit dem 3D-Drucker erstellt und die Elektronik von den Mädchen mit Hilfe von Philipp und Alex, die das Projekt als Mentoren begleiteten, zusammengebaut. 
+
+Ein weiterer Bestandteil der Arbeit war auch der Umgang mit dem Lötkolben. Um das Löten richtig zu erlernen, wurde vom Team fleißig geübt und zu Weihnachten sogar ein kleiner LED-Weihnachtsbaum gefertigt.
+
+Ziel war es, den Mädchen Technik näher zu bringen um in den MINT-Berufen künftig den Frauenanteil zu erhöhen und Mädchen Mut zu machen, dass auch sie die Ingenieursberufe beherrschen können. 
+
+Das Projekt wurde durch Mittel der Stiftung Kinderland von der Baden-Württemberg-Stiftung finanziert, indem Anschaffungskosten für Platinen, Mikrocontroller, Sender und Kabel übernommen wurden.
+
+Quelle Bild: Schwäbische Zeitung.
+---
+teaser: Dieses Projekt fand in Kooperation mit dem Mehrgenerationenhaus Markdorf (MGH) statt und gab fünf Mädchen die Gelegenheit, über einen Zeitraum von einem halben Jahr einen Quadrocopter zu bauen.
+---
+project:
+
+#### pro_img ####
+image: mgh-projekt_schwbische.jpg
+---
+pub_date: 2018-11-01
