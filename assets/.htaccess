@@ -43,3 +43,5 @@
     ExpiresByType image/x-icon "access plus 1 month"
     ExpiresByType application/x-font-woff "access plus 1 month"
 </IfModule>
+
+Header set Access-Control-Allow-Origin 'https://bodensee.space'
