@@ -138,14 +138,10 @@ window.setInterval(function () {
         $("link[href='/css/spacestatus.css']").remove();
         if (data.state.open == true) {
             $('#tb-closed').hide();
-            $('#tb-closed').css("display", "none !important");
-            $('#tb-opened').show();
-            $('#tb-opened').css("display", "block !important");
+            $('#tb-opened').css("display", "block");
         } else {
             $('#tb-opened').hide();
-            $('#tb-opened').css("display", "none !important");
             $('#tb-closed').show();
-            $('#tb-closed').css("display", "block !important");
         }
     });
 }, 5000);
