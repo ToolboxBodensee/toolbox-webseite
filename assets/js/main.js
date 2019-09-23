@@ -134,7 +134,7 @@
 })(jQuery);
 
 window.setInterval(function () {
-    $.getJSON("https://bodensee.space/spaceapi/toolboxbodenseeev.json", function (data) {
+    $.getJSON("/toolboxbodenseeev.json", function (data) {
         $("link[href='/css/spacestatus.css']").remove();
         if (data.state.open == true) {
             $('#tb-closed').hide();
