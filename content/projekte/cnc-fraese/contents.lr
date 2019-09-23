@@ -18,12 +18,12 @@ In der Einweisung wird dir die Sicherheit und die ganz grobe Bedienung erklärt.
 Damit ist man in der Lage, ohne größere Schäden sich das Wissen über die 
 Fräserei anzueignen.
 
-Sollte irgendetwas nicht so sein, wie erwartet oder etwas kaputt sein, dann
+Sollte irgendetwas nicht so wie erwartet oder kaputt sein, dann
 informiere unverzüglich die Verantwortlichen für die jeweilige Fräse. Wenn
 Fräser kaputt oder abgenutzt sind, dann besorge Ersatz. Kleinere Fräser (die
-häufig mal kaputtgehen) bekommst Du bei den Verantwortlichen. Die Kosten 
-für neues Fräswerkzeug trägt im Normalfall die Toolbox, darum kümmern 
-musst Du Dich aber selbst. 
+häufig mal kaputtgehen) bekommst du bei den Verantwortlichen. Die Kosten
+für neues Fräswerkzeug trägt im Normalfall die Toolbox, darum kümmern
+musst du dich aber selbst.
 ```
 
  Software
@@ -33,7 +33,7 @@ Software zum Erstellen der Designs gibt es recht viele. Hier drei in der Toolbox
 
 ### Easel
 
-[Easel](https://easel.inventables.com) ist ein Online-Tool von Inventables. Es ermöglicht sehr einfach Vektorgraphik (z.B. erstellt über Inkscape) in G-Code zu verwandeln. Das funktioniert natürlich nur für Flächen, wobei dies der wohl häufigste Anwendungsfall ist. Als Maschine lässt sich die Shapeoko2 auswählen und dann ein G-Code generieren. Theoretisch lässt sich die Maschine gleich aus dem Tool bedienen, wobei das noch niemand in der Toolbox gemacht hat. Easel ist kostenlos, es ist allerdings eine Registrierung bei Inventables nötig.
+[Easel](https://easel.inventables.com) ist ein Online-Tool von Inventables. Es ermöglicht sehr einfach Vektorgrafik (z.B. erstellt über Inkscape) in G-Code zu verwandeln. Das funktioniert natürlich nur für Flächen, wobei dies der wohl häufigste Anwendungsfall ist. Als Maschine lässt sich die Shapeoko2 auswählen und dann ein G-Code generieren. Theoretisch lässt sich die Maschine gleich aus dem Tool bedienen, wobei das noch niemand in der Toolbox gemacht hat. Easel ist kostenlos, es ist allerdings eine Registrierung bei Inventables nötig.
 
 ### Fusion 360
 
@@ -68,7 +68,7 @@ Die Fräse hat einen Anschluss für eine Touch-Plate und ist damit fürs Platine
 **Quick Start Guide**
 
 ```
-Nur Für eingewiesene Nutzer!
+Nur für eingewiesene Nutzer!
 ```
 
  + Anschalten (Mehrfachstecker)

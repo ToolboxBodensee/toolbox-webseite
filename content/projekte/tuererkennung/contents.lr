@@ -7,7 +7,7 @@ body:
 Für eine bessere Anbindung unserer Eingangstür in die [Space-API](/projekte/spaceapi/) haben Jonas und L3D einen Türswitch und einen ESP in die Eingangstür eingebaut.
 
 Dieser sollte erkennen, ob die Toolbox-Tür aufgeschlossen oder abgeschlossen ist.
-Und immer wenn er eine Änderung feststellt, dann gibt er das an die Space-API weier.
+Und immer wenn er eine Änderung feststellt, dann gibt er das an die Space-API weiter.
 
 Den passenden Code zur Tür gibt es natürlich auf Github:
 
