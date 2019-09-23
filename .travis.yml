@@ -11,7 +11,9 @@ before_install:
 install:
   - pip install lektor
 
-script: "lektor build -f jsminify -f scsscompile"
+script:
+  - make build
+
 after_success:
   - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then .travis/staging.sh; fi'
 
