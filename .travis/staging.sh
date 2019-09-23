@@ -1,3 +1,4 @@
+#!/bin/bash
 output=$(lektor project-info --output-path)
 cp -r $output staging
 cd staging
@@ -7,8 +8,8 @@ find -size +100M | xargs rm
 
 # push to staging repository
 git init
-git add .
-git commit -m "staging commit"
+git add --all
+git commit -m "staging commit \#$TRAVIS_PULL_REQUEST"
 git remote add origin https://$LEKTOR_STAGING_KEY@github.com/maxbachmann-staging/website-staging$(($TRAVIS_PULL_REQUEST % 5 + 1)).git
 git push --force origin master
 curl -H "Authorization: token $LEKTOR_STAGING_KEY" -X POST \
