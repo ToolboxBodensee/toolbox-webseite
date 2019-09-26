@@ -29,3 +29,6 @@ name = Sächsisch
 url_prefix = /sxu/
 locale = de
 
+
+[packages]
+lektor-scss = 1.3.3
