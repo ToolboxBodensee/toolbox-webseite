@@ -42,7 +42,7 @@ Zur Erleichterung der Installation beinhaltet das Projekt eine Makefile. Diese e
 Die Webseite kann beispielsweise folgendermaßen ausgeführt werden:
 ```bash
 # source code lokal abspeichern
-git clone https://github.com/ToolboxBodensee/toolbox-webseite.git toolbox-webseite
+git clone --recursive https://github.com/ToolboxBodensee/toolbox-webseite.git toolbox-webseite
 
 # Wechsel in den zugehörigen Ordner
 cd toolbox-webseite

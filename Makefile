@@ -1,11 +1,12 @@
 LEKTOR_SERVER_FLAGS=-h 127.0.0.1
 # prettify html output, minify javascript assets, compile scss assets
-LEKTOR_PLUGIN_FLAGS=-f jsminify -f scss
+LEKTOR_PLUGIN_FLAGS=-f scss
 
 all: build
 
 .ONESHELL:
 install:
+	git submodule update --init --recursive
 	if hash apt-get 2>/dev/null; then
 	  sudo apt-get update -qq >/dev/null && sudo apt-get install -qq apt-utils imagemagick python3-pip python3-setuptools gcc
 	elif hash pacman 2>/dev/null; then
@@ -18,6 +19,7 @@ install:
 	pip3 install wheel --user
 	pip3 install lektor --user
 	./setup/install-pre-commit.sh
+	git submodule foreach "(git checkout master; git pull)&"
 
 
 build:
