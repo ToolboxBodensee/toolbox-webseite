@@ -4,9 +4,9 @@ body:
 
 Unsere Floppyorgel kann nicht nur in unserem Vereinsheim bestaunt und ausprobiert werden, wir nehmen Sie auch regelmäßig zu Messen oder anderen Ausstellungen mit. Die Toolbox-Floppyorgel hat mittlerweile auch international Schlagzeilen gemacht.
 
-Die Ansteuerung der Floppys funktioniert mit der Open Source Software [Moppy](https://github.com/SammyIAm/MoppyClassic).
+Die Ansteuerung der Floppys funktioniert mit der Open-Source-Software [Moppy2](https://github.com/SammyIAm/Moppy2). Damit 13 Kanäle angesteuert werden können, wurde die Software erweitert.
 Ein Arduino Mega empfängt dabei Steuersignale von einem Desktop-Programm und steuert mehrere Floppy-Laufwerke parallel je MIDI-Kanal an.
-Am PC kann entweder ein MIDI file abgespielt oder ein MIDI Keyboard angeschlossen werden.
+Am PC kann entweder eine MIDI-Datei abgespielt oder ein MIDI-Keyboard angeschlossen werden.
 
 Die Floppys sind mit 3D-gedruckten [Halterungen](https://www.thingiverse.com/thing:799346) auf einem Holzbrett befestigt.
 
@@ -48,3 +48,5 @@ image: floppyorgel.jpg
 image: floppy2.jpg
 ---
 video_is_embedded: yes
+---
+author: vielen
