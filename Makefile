@@ -19,7 +19,7 @@ install:
 	pip3 install wheel --user
 	pip3 install lektor --user
 	./setup/install-pre-commit.sh
-	git submodule foreach "(git checkout master; git pull)&"
+	git submodule foreach "(git checkout master; git pull)"
 
 
 build:
