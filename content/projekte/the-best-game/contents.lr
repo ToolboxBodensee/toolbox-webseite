@@ -11,7 +11,7 @@ Ein mit Unity entwickeltes Geisterspiel für zwei Spieler, welches beim Unity-Ga
 Das Spiel ist für zwei Personen am selben Computer gedacht.
 
 Bewegen kann man sich mit ``W`` ``A`` ``S`` ``D`` und den Pfeiltasten bzw. den Richtungstasten auf dem Controller.
-Geschossen wird mit ``Strg`` und ``Shift`` auf der Tastatur oder ``X`` und ``Y`` auf dem Controller - jeweils zwei Tasten, da es zwei verschiedene Schüsse gibt: Der gelbe Feuerball ist der "normale" Schuss, welcher dem Gegner einen Energiepunkt abzieht (sofern er getroffen wird). Der grüne Feuerball hingegen gibt demjenigen, der ihn schießt, zusätzlich einen Pluspunkt an Energie, sofern er den Gegner trifft. Dieser Spezialschuss kann jedoch nur alle 10 Sekunden eingesetzt werden.
+Geschossen wird mit ``Strg`` und ``Shift`` auf der Tastatur oder ``X`` und ``Y`` auf dem Controller - jeweils zwei Tasten, da es zwei verschiedene Schüsse gibt: Der gelbe Feuerball ist der „normale“ Schuss, welcher dem Gegner einen Energiepunkt abzieht (sofern er getroffen wird). Der grüne Feuerball hingegen gibt demjenigen, der ihn schießt, zusätzlich einen Pluspunkt an Energie, sofern er den Gegner trifft. Dieser Spezialschuss kann jedoch nur alle 10 Sekunden eingesetzt werden.
 
 Die Luftballons stellen Hindernisse dar, da diese die Feuerbälle reflektieren, wodurch man sich selbst treffen kann. An einigen Luftballons hängen Power-Ups in Form von Paketen, die man auffangen kann, wenn der Ballon zerplatzt. Das Power-Up gibt dem Spieler einen Schutzschild, welcher einen Treffer verkraftet, ohne ihm Energie abzuziehen.
 
