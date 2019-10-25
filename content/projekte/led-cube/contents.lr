@@ -1,0 +1,29 @@
+title: LED-Cube
+---
+author: Jonas Otto
+---
+body:
+
+Nachdem wir auf Aliexpress eine Variante der allseits beliebten "Neopixel" oder "WS2812" oder "SK6812" einzeln adressierbaren LED Modulen gefunden haben, die mit 1.5x1.5mm kleiner als alle bisherigen Varienten ist, kam die Idee auf, daraus einen Miniatur-LED-Würfel zu bauen:
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Tiny LED cubes!<br><br>Designed with <a href="https://twitter.com/kicad_pcb?ref_src=twsrc%5Etfw">@kicad_pcb</a> : <a href="https://t.co/iPutROsE9V">https://t.co/iPutROsE9V</a><br>PCBs by <a href="https://twitter.com/AislerHQ?ref_src=twsrc%5Etfw">@AislerHQ</a> <a href="https://t.co/kaEmYie3ak">pic.twitter.com/kaEmYie3ak</a></p>&mdash; Jonas Otto (@ottojo0802) <a href="https://twitter.com/ottojo0802/status/1185906242172129281?ref_src=twsrc%5Etfw">October 20, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Da für einen größeren Würfel nicht genügend LEDs bestellt waren, fiel die Entscheidung auf 4x4 LEDs pro Seite. Eine der Seiten bleibt offen, da der Würfel von innen verlötet wird. Die eher unübliche 45°-Drehung der LEDs auf den einzelnen Seiten vereinfacht das PCB Design.
+Die Platine wurde mit [KiCad](kicad-pcb.org) designed, das Layout ist Open Source Hardware und auf [GitHub](https://github.com/ottojo/ledcube) verfügbar. Bestellt wurden die Platinen bei [Aisler](https://aisler.net), zusammen mit einem Stencil fürs [Reflow löten](https://en.wikipedia.org/wiki/Reflow_soldering).
+Gelötet wurden die Platinen im umgebauten Pizzaofen mit Temperatursteuerung in der Toolbox, was ohne Probleme funktioniert hat.
+Das Zusammenlöten der einzelnen Platinen zum Würfel war deutlich aufwändiger, und es musste eine kleine Halterung 3D-gedruckt werden, die den Würfel während dem Löten zusammenhält.
+---
+pub_date: 2020-10-01
+---
+video_is_embedded: no
+---
+project:
+
+#### pro_img ####
+image: led-cube-1.jpg
+#### pro_img ####
+image: led-cube-2.jpg
+---
+icon: fas fa-dice-d6
+---
+teaser: Mini LED-Cube mit 80 RGB LEDs
