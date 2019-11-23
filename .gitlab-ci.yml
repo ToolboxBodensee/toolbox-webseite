@@ -1,0 +1,52 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+image: python:latest
+
+
+before_script:
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+  - eval $(ssh-agent -s)
+  - echo "$GIT_SSH_PRIV_KEY" | tr -d '\r' | ssh-add - > /dev/null
+  - mkdir -p ~/.ssh
+  - chmod 700 ~/.ssh
+  - ssh-keyscan gitlab.com >> ~/.ssh/known_hosts
+  - chmod 644 ~/.ssh/known_hosts
+  - git config --global user.email "staging@bot.de"
+  - git config --global user.name "Staging-Bot"
+
+deploy-to-stage:
+  stage: deploy
+  script:
+  - pip install lektor
+  - git clone git@gitlab.com:ToolboxBodensee/webseite/staging-webseite.git
+  - rm -rf "staging-webseite/staging-$CI_COMMIT_REF_NAME/"
+  - lektor build -f jsminify -f scss --output-path "staging-webseite/staging-$CI_COMMIT_REF_NAME/"
+  - cd staging-webseite
+  - git add --all
+  - git commit -m "add some more staging"
+  - git push origin master
+  environment:
+    name: review/$CI_COMMIT_REF_NAME
+    url: https://release.maxbachmann.de/staging-$CI_COMMIT_REF_NAME
+  except:
+  - master
+
+
+deploy-to-prod:
+  stage: deploy
+  script:
+  - pip install lektor
+  - git clone git@gitlab.com:ToolboxBodensee/webseite/staging-webseite.git
+  - mv staging-webseite staging
+  - mkdir staging-webseite
+  - lektor build -f jsminify -f scss --output-path "staging-webseite/"
+  - mv -t staging-webseite/ staging/.git/ staging/staging-*/
+  - cd staging-webseite
+  - git add --all
+  - git commit -m "add some more staging"
+  - git push origin master
+  only:
+  - master
+
+

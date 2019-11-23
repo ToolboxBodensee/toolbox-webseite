@@ -51,8 +51,8 @@ As controller, an Arduino with GRBL shield is used which is connected to a Raspb
 
 The mill cutter has a connection for a touch plate and is therefore suitable for mill cutting of PCBs. 
 <div class="lightgallery">
-<a href="/projekte/cnc-fraese/shapeoko2.jpg">
-  <img class="image lightgallery" src="../../projekte/cnc-fraese/shapeoko2@360x360.jpg">
+<a href="./shapeoko2.jpg">
+  <img class="image lightgallery" src="./shapeoko2@360x360.jpg">
 </a>
 </div><br/><br/>
 
@@ -110,8 +110,8 @@ The mill cutter is very suitable for all kinds of wood, plastic and non-ferrous 
 The Controller is also an Arduino with GRBL shield that is directly connected to the PC.
 
 <div class="lightgallery">
-<a href="/projekte/cnc-fraese/colinbus.jpg">
-  <img class="image lightgallery" src="../../projekte/cnc-fraese/colinbus@360x360.jpg">
+<a href="./colinbus.jpg">
+  <img class="image lightgallery" src="./colinbus@360x360.jpg">
 </a>
 </div><br/><br/>
 

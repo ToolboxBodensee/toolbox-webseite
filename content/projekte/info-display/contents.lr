@@ -11,7 +11,7 @@ Am Display hängt ein Raspberry Pi, der mit der Software [info-beamer](https://i
 
 Direkt unter dem Display findet man außerdem unseren Space-API-Schalter, mit dem man den Status der Toolbox (bzw. des Vereinsheims) ändern kann. Durch Betätigen wird die Information, ob das Vereinsheim derzeit geöffnet oder geschlossen ist, direkt auf unserer Webseite (oben links) aktualisiert.
 
-<a href="/projekte/spaceapi" class="button">Projekt SpaceAPI</a>
+<a href="../spaceapi" class="button">Projekt SpaceAPI</a>
 
 ...und so sieht das Ganze aus:
 

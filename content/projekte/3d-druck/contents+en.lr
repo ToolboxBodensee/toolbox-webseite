@@ -17,10 +17,10 @@ Als erste Modifikation wurde die quelloffene Sailfish-Firmware geflasht. Außerd
 Trotzdem hatten wir nach einiger Zeit viele Probleme mit dem Hotend und dem Extruder. Deshalb wurde kurzerhand ein E3Dv6-Hotend mit einem günstigen Bowdenextruder angebaut.
 
 <div class="lightgallery">
-  <a href="replicator_hot_1.jpg">
+  <a href="./replicator_hot_1.jpg">
     <img src="replicator_hot_1@360x360.jpg">
   </a>
-  <a href="replicator_hot_2.jpg">
+  <a href="./replicator_hot_2.jpg">
     <img src="replicator_hot_2@360x360.jpg">
   </a>
 </div>

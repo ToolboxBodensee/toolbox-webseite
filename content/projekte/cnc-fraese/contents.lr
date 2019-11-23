@@ -60,8 +60,8 @@ Als Controller dient ein Arduino mit GRBL-Shield, welcher an einen Raspberry mit
 
 Die Fräse hat einen Anschluss für eine Touch-Plate und ist damit fürs Platinenfräsen geeignet.
 <div class="lightgallery">
-<a href="/projekte/cnc-fraese/shapeoko2.jpg">
-  <img class="image lightgallery" src="../../projekte/cnc-fraese/shapeoko2@360x360.jpg">
+<a href="./shapeoko2.jpg">
+  <img class="image lightgallery" src="./shapeoko2@360x360.jpg">
 </a>
 </div><br/><br/>
 
@@ -120,8 +120,8 @@ Die Fräse ist sehr gut geeignet für jede Art von Holz, Kunststoffen und NE-Met
 Als Controller dient ebenfalls ein Arduino mit GRBL-Shield, der direkt mit dem PC verbunden wird.
 
 <div class="lightgallery">
-<a href="/projekte/cnc-fraese/colinbus.jpg">
-  <img class="image lightgallery" src="../../projekte/cnc-fraese/colinbus@360x360.jpg">
+<a href="./colinbus.jpg">
+  <img class="image lightgallery" src="./colinbus@360x360.jpg">
 </a>
 </div><br/><br/>
 

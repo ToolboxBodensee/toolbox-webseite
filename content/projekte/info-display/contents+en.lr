@@ -9,7 +9,7 @@ A Raspberry Pi is connected to this display and is equipped with the software [i
 
 Directly below the display you will also find our Space API switch with which you can change the status of the toolbox (or the club house). By pressing the button, the information whether the club house is currently open or closed will be updated directly on our website (top left).
 
-<a href="/projects/spaceapi" class="button">Project SpaceAPI</a>
+<a href="../spaceapi" class="button">Project SpaceAPI</a>
 
 ...and here's the thing:
 ---
