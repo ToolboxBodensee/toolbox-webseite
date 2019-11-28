@@ -8,6 +8,8 @@ Webseite der Toolbox Bodensee e.V.
 
 Dies ist der Quellcode zur aktuellen Webseite des Maker- und Hackspace Toolbox Bodensee e.V., die unter [toolbox-bodensee.de](https://toolbox-bodensee.de/) erreichbar ist.
 
+**Entwicklung nur auf [GitLab](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite). Auf GitHub befindet sich lediglich ein Mirror**
+
 
 Anforderungen
 ---------------------------------
