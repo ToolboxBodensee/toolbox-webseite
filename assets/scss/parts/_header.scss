@@ -152,15 +152,7 @@
   z-index: 5000;
 
   @include breakpoint(phablet) {
-    background: none;
-    box-shadow: none;
-    height: auto;
-    left: unset;
-    top: 0;
-    width: 50%;
-    z-index: 20000;
-    right: 0;
-    line-height: 42px
+    display: none;
   }
 
   h1 {
@@ -170,17 +162,9 @@
     margin: 0;
     position: absolute;
     top: 0;
-    @include breakpoint(phablet) {
-      left: unset;
-      top: 2px;
-      right: 5px;
-    }
   }
 
   nav {
-        @include breakpoint(phablet) {
-          display: none;
-        }
     ul {
       list-style: none;
       position: relative;
