@@ -1,0 +1,90 @@
+{%- from "macros/translator.j2" import translator %}
+{%- macro render_blog_post(post, from_index=false) %}
+  {%- if from_index %}
+<br/><hr/><br/>
+  {%- endif %}
+<div class="blog-post">
+  <header class="major">
+  {%- if from_index -%}
+    <h2><a href="{{ post|url }}">{{ post.title }}</a></h2>
+  {%- else %}
+    <h2>{{ post.title }}</h2>
+  {%- endif %}
+    <p class="meta">
+      {{- translator('blog_von', 'translate', post.alt) }}
+  {%- if post.twitter_handle %}
+      <a href="https://chaos.social/@{{ post.twitter_handle}}">
+        {{- post.author or post.twitter_handle -}}
+      </a>
+  {%- else -%}
+        {{ ' ' }}{{ post.author }}
+  {%- endif %}
+  {%- if post.pub_date %} {{
+      translator('blog_am', 'translate', post.alt) }} {{
+      post.pub_date.strftime('%d.%m.%Y') }}
+  {%- endif %}
+    </p>
+	</header>
+  {#-
+
+  ## Ab hier wird der eigentliche
+  ## HTML CONTENT in dem Blogartickel
+  ## bzw der Preview gebaut
+
+  -#}
+  <!-- Content -->
+  <section id="content">
+    {{ post.body }}
+  {%- if not from_index %}
+    {{ post.beitrag }}
+  {%- endif %}
+  </section>
+  {%- if from_index %}
+    <a class="button smallfit" href="{{ post|url }}">
+    {{- translator('blog_weiter', 'translate', post.alt) -}}
+    </a>
+  <br/>
+  {%- else %}
+  {#-
+
+  ## Binde Youtube Video ein,
+  ## falls die boolean Option
+  ##  post.video_is_embedded
+  ## auf true gesetzt wurde 
+  ## (manuell mit dem Hacken bei 
+  ## 'Is a Video embedded?')
+
+  -#}
+    {%- if post.video_is_embedded %}
+      {%- for blk in post.video_embedded.blocks %}
+        {%- if blk.video_url %}
+    {{ blk }} <br/>
+  <a class="button" href="https://www.youtube.com/watch?v={{ blk.video_url }}{% if post.alt %}&gl={{ post.alt }}&hl={{ post.alt }}{% endif %}" target="_blank" rel="noopener">
+    {{- translator('directytlink', 'translate', post.alt) }}
+  </a>
+        {%- endif %}
+        {%- if blk.video %}
+  <a class="button" href="{{ blk.video|url }}" download>
+    {{- translator('directlink', 'translate', post.alt) -}}
+  </a>
+        {%- endif %}
+  <br/><br/>
+      {%- endfor %}
+    {%- endif %}
+    {#- 
+
+    ## Binde Bilder ein,
+    ## die in der Galerie kommen
+    ## das macro dafür heißt immer noch 'projekt'!
+ 
+    -#}
+    {%- if post.project %}
+  <div class="lightgallery" class="row alt">
+      {%- for blk in post.project.blocks %}
+    {{ blk }}
+      {%- endfor %}
+  </div>
+    {%- endif %}
+  {%- endif %}
+</div>
+{%- endmacro %}

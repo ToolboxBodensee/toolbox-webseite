@@ -2,7 +2,6 @@
 name = Toolbox Bodensee e.V.
 url = https://toolbox-bodensee.de/
 locale = de_DE
-themes = lektor-theme-landed
 excluded_assets = *.scss, *.js
 included_assets = *.min.js
 
