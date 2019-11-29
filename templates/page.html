@@ -1,0 +1,26 @@
+{%- extends "layout.html" %}
+{%- block title %}{{ this.title }}{% endblock %}
+{%- block expand_description %}
+    <meta name="description" content="
+  {%- if this.teaser -%}
+    {{ this.teaser }}
+  {%- else -%}
+    {{ translator('description', 'translate', this.alt) }}
+  {%- endif -%}
+    " />
+{%- endblock %}
+{% block body %}
+<div id="main" class="wrapper style1">
+  <div class="container">
+    <header class="major">
+      <h2>{{ this.title }}</h2>
+      <p>{{ this.slogan }}</p>
+    </header>
+
+    <!-- Content -->
+    <section id="content">
+      {{ this.content }}
+    </section>
+  </div>
+</div>
+{%- endblock %}
