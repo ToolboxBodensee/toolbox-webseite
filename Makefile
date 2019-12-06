@@ -26,7 +26,7 @@ build:
 	lektor build $(LEKTOR_PLUGIN_FLAGS)
 
 server:
-	lektor server $(LEKTOR_SERVER_FLAGS)
+	lektor server $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_SERVER_FLAGS)
 	
 server-all:
 	lektor clean --yes
