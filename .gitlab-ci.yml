@@ -3,34 +3,47 @@ variables:
 
 image: python:latest
 
+lektor:build:
+  stage: build
+  script:
+  - pip install lektor
+  - lektor build -f jsminify -f scss --output-path build
+  artifacts:
+    paths:
+      - build
 
-before_script:
-  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
-  - eval $(ssh-agent -s)
-  - ssh-add <(echo "$SERVER_SSH_PRIV_KEY")
 
 deploy-to-stage:
   stage: deploy
+  variables:
+    GIT_STRATEGY: none
+  before_script:
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+  - eval $(ssh-agent -s)
+  - ssh-add <(echo "$SERVER_SSH_PRIV_KEY")
   script:
-  - pip install lektor
-  - lektor build -f jsminify -f scss --output-path staging-webseite
-  - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp staging-webseite "$USERNAME@$DOMAIN:$DOMAIN/staging-$CI_COMMIT_REF_NAME"
+  - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp build "$USERNAME@$DOMAIN:$DOMAIN/staging-$CI_COMMIT_REF_NAME"
   environment:
     name: review/$CI_COMMIT_REF_NAME
     url: https://release.maxbachmann.de/staging-$CI_COMMIT_REF_NAME
+  dependencies:
+  - lektor:build
   except:
   - master
 
 
 deploy-to-prod:
   stage: deploy
+  variables:
+    GIT_STRATEGY: none
+  before_script:
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+  - eval $(ssh-agent -s)
+  - ssh-add <(echo "$SERVER_SSH_PRIV_KEY")
   script:
-  - pip install lektor
-  - lektor build -f jsminify -f scss --output-path staging-webseite
-  - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp staging-webseite "$USERNAME@$DOMAIN:$DOMAIN"
-  environment:
-    name: review/$CI_COMMIT_REF_NAME
-    url: https://release.maxbachmann.de/staging-$CI_COMMIT_REF_NAME
+  - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp build "$USERNAME@$DOMAIN:$DOMAIN"
+  dependencies:
+  - lektor:build
   only:
   - master
 
