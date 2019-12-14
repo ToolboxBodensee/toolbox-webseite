@@ -1,0 +1,64 @@
+content:
+
+ Some areas of the Toolbox
+---------------------------------------
+
+
+<h2>Logo</h2>
+The following sections makes the Logo file of the Toolbox Bodensee e.V. available as download. When downloading that file, you agree on the following legal notes.
+
+<br/><br/>
+
+ Toolbox Bodensee e.V. Association
+-------------------------------------------------------
+<div class="col-2 long"> 
+<a href="./dokumente" class="button fit">Constitution and Usage Regulation</a> 
+<a href="./presse/" class="button fit">Press Review and Information</a>
+</div>
+<a href="../mitglied-werden/" class="button special fit">Become a Member</a>
+<a href="./spenden/" class="button fit">Donations</a>
+
+Downloading, saving, any use as well as publishing of the following logo and name is only allowed under the following conditions:
+<br/><br/>
+
+<div class="table-wrapper code">
+<table><tbody>
+<tr>
+<td>The user uses the logo/name faithfully and without altering it.<br/><br/>
+
+The use of the logo/name for own purposes not related to 
+Toolbox Bodensee e.V. - in particular for labelling goods and 
+services of third parties - is prohibited.<br/><br/>
+
+The non-observance of the above provisions may be prosecuted 
+under civil law and - in the case of an infringement of copyright - 
+also under criminal law.<br/><br/>
+
+Whoever uses these logos has to cultivate a friendly and respectful 
+contact with his fellow human beings and should always refrain 
+from harsh insults and the spreading of hatred.
+</td>
+</tr>
+</table>
+</div>
+
+
+<h3>PNG - 300dpi</h3>
+<span class="image fit" style="background: white;"><img src="./toolbox_300dpi.png" style="margin: 5%; width: 90%;"></span>
+<a href="./toolbox_300dpi.png" download>Save PNG</a>
+
+<h3>JPG - 300dpi</h3>
+<span class="image fit" style="background: white;"><img src="./toolbox_300dpi.jpg" style="margin: 5%; width: 90%;"></span>
+<a href="./toolbox_300dpi.jpg" download>Save JPG</a>
+
+<h3>SVG - Vector graphic</h3>
+<span class="image fit" style="background: white;"><img src="./toolbox.svg"></span>
+<a href="./toolbox.svg" download>Save SVG</a>
+
+If you need the file as EPS, vector or Photoshop file, feel free to visit our [GitLab](https://gitlab.com/ToolboxBodensee) page.
+There you can find additional information and further file formats of our logo in the [presskit](https://gitlab.com/ToolboxBodensee/webseite/toolbox-presskit) repository.
+
+---
+slogan: handicraft, code, hack and solder on over 420 m²
+---
+title: Club
