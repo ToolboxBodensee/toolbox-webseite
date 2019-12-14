@@ -22,7 +22,7 @@ deploy-to-stage:
   - eval $(ssh-agent -s)
   - ssh-add <(echo "$SERVER_SSH_PRIV_KEY")
   script:
-  - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp build "$USERNAME@$DOMAIN:$DOMAIN/staging-$CI_COMMIT_REF_NAME"
+  - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp build/* "$USERNAME@$DOMAIN:$DOMAIN/staging-$CI_COMMIT_REF_NAME"
   environment:
     name: review/$CI_COMMIT_REF_NAME
     url: https://release.maxbachmann.de/staging-$CI_COMMIT_REF_NAME
@@ -41,7 +41,7 @@ deploy-to-prod:
   - eval $(ssh-agent -s)
   - ssh-add <(echo "$SERVER_SSH_PRIV_KEY")
   script:
-  - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp build "$USERNAME@$DOMAIN:$DOMAIN"
+  - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp build/* "$USERNAME@$DOMAIN:$DOMAIN"
   dependencies:
   - lektor:build
   only:

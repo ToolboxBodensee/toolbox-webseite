@@ -1,15 +1,15 @@
 # Code Owners of Toolbox Website
 # Interested in all parts of the Toolbox website:
-* @DO1JLR @maxbachmann @DEvil0000 @fbsb @blaues0cke @rtt-mmk @drwuro @haekelhexe @re4jh
+* @DO1JLR @maxbachmann @DEvil0000 @fbsb @blaues0cke @rtt-mmk @drwuro @haekelhexe @wolf128058
 # interested in the content of the website
-/content/ @haekelhexe @tschanne @drwuro @205er @bodensee @oldwired @phschoen @DO1JLR @maxbachmann @DEvil0000 @fbsb @blaues0cke @rtt-mmk @re4jh
+/content/ @haekelhexe @tschanne @drwuro @205er @bodensee @oldwired @phschoen @DO1JLR @maxbachmann @DEvil0000 @fbsb @blaues0cke @rtt-mmk @wolf128058
 # interested in game developement content
-/content/projekte/spieleentwicklung/ @maluramichael @haekelhexe @tschanne @drwuro @205er @bodensee @oldwired @phschoen @DO1JLR @maxbachmann @DEvil0000 @fbsb @blaues0cke @rtt-mmk @re4jh
+/content/projekte/spieleentwicklung/ @maluramichael @haekelhexe @tschanne @drwuro @205er @bodensee @oldwired @phschoen @DO1JLR @maxbachmann @DEvil0000 @fbsb @blaues0cke @rtt-mmk @wolf128058
 # Need to contribute some website content bevor becoming a CODEOWNER
 # @davidblumer
 
 # All persons Responsible for project "LED-Steuerung"
-/content/projekte/neopixel-led-pcb/ @ottojo
+/content/projekte/neopixel-led-pcb/ @ottojo @DO1JLR @maxbachmann @DEvil0000 @fbsb @blaues0cke @rtt-mmk @drwuro @haekelhexe @wolf128058
 
 # All persons Responsible for project "Toolboxplane"
-/content/projekte/toolboxplane/ @ottojo
+/content/projekte/toolboxplane/ @ottojo @DO1JLR @maxbachmann @DEvil0000 @fbsb @blaues0cke @rtt-mmk @drwuro @haekelhexe @wolf128058
