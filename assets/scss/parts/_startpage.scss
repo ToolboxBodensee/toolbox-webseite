@@ -5,3 +5,17 @@
   }
 }
 
+.ae_taennschen_please {
+  margin-bottom: 2em;
+  text-align: center;
+
+  &::after {
+    background: #e64f2d;
+    content: "";
+    display: block;
+    height: 0.2em;
+    max-width: 20em;
+    width: 75%;
+    margin: 0 auto;
+  }
+}

@@ -9,7 +9,7 @@
       <p>{{ this.slogan }}</p>
       <p>{{ this.hinweis }} {% if this.hinweis_txt %}<a href="{% if this.hinweis_url %}{{this.hinweis_url }}{% else %}#four{% endif %}">{{ this.hinweis_txt }}</a>{% endif %}</p>
     </header>
-    <span class="image"> 
+    <span class="image">
       <img src="{{ '/images/logo.svg'|asseturl }}" alt="" />
     </span>
   </div>
@@ -21,10 +21,12 @@
   <div class="content">
     <div class="container">
       <div class="row">
-          <header>
-            <h2>{{ this.pre_about_header }}</h2>
-            <p>{{ this.pre_about_text }}</p>
-          </header>
+        <div class="ae_taennschen_please">
+            <header>
+                <h2>{{ this.pre_about_header }}</h2>
+                {{ this.pre_about_text }}
+              </header>
+          </div>
       </div>
       <div class="row">
         <div class="4u 12u$(medium)">
