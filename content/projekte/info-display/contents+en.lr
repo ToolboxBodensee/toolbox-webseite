@@ -5,7 +5,7 @@ body:
 There is a large display in the Toolbox hallway in front of ruum42 which is used to display useful and amusing information. In addition to the current time, nerdy [Memes](https://de.wikipedia.org/wiki/Internetph%C3%A4nomen) and videos, we also display the departure times for public transport.
 A Raspberry Pi is connected to this display and is equipped with the software [info-beamer](https://info-beamer.com/product/info-beamer-pi). Info-beamer - as a very powerful "digital signage" solution - is also used at the [Chaos Communication Congress](https://info-beamer.com/blog/running-the-33c3-info-screens) of the CCC, for example, to display information on talks and lectures.
 
-<a href="https://github.com/ToolboxBodensee/info-display-ruum-42" class="button">Sourcecode info-beamer (at the entrance of ruum42)</a>
+<a href="https://gitlab.com/ToolboxBodensee/info-display-ruum-42" class="button">Sourcecode info-beamer (at the entrance of ruum42)</a>
 
 Directly below the display you will also find our Space API switch with which you can change the status of the toolbox (or the club house). By pressing the button, the information whether the club house is currently open or closed will be updated directly on our website (top left).
 

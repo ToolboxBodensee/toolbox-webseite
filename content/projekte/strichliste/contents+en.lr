@@ -15,7 +15,7 @@ There is an Ansible Role that automatically installs the server part of the tall
 [gitea.see-base.de/toolbox/role-strichliste](https://gitea.see-base.de/toolbox/role-strichliste)
 
 At the moment, we are still working on the frontend to be built automatically. Currently, it is a bit outdated, but can be found there:
-[github.com/ToolboxBodensee/xn--see-br-0xa.se](https://github.com/ToolboxBodensee/xn--see-br-0xa.se)
+[gitlab.com/ToolboxBodensee/kueche/xn--see-br-0xa-se](https://gitlab.com/ToolboxBodensee/kueche/xn--see-br-0xa-se)
 
 ---
 icon: fas fa-clipboard-list

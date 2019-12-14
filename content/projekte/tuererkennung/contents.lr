@@ -9,9 +9,9 @@ Für eine bessere Anbindung unserer Eingangstür in die [Space-API](/projekte/sp
 Dieser sollte erkennen, ob die Toolbox-Tür aufgeschlossen oder abgeschlossen ist.
 Und immer wenn er eine Änderung feststellt, dann gibt er das an die Space-API weiter.
 
-Den passenden Code zur Tür gibt es natürlich auf Github:
+Den passenden Code zur Tür gibt es natürlich auf GitLab:
 
-<a href="https://github.com/ToolboxBodensee/DoorSwitch.git" class="button special primary">Door Switch Code</a>
+<a href="https://gitlab.com/ToolboxBodensee/microcontroller/DoorSwitch" class="button special primary">Door Switch Code</a>
 
 So sieht das Ganze aus. Von der Entstehung bis zum fertigen Prototypen.
 ---

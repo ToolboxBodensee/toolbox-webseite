@@ -16,7 +16,7 @@ beitrag:
 
 So steht nach einem halben Jahr an einigen Stellen und besonders bei den Projekten noch kein oder nur unfertiger Text, für den sich niemand verantwortlich fühlt.
 
-Jetzt probieren wir einen neuen Ansatz aus. Die neue Webseite der Toolbox ist fertig gerendertes HTML und CSS, das keine PHP Sicherheitslücken haben kann, da es kein PHP ist. Die Versionskontrolle und Transparenz der Webseite ist nun auch gegeben, da die Webseite über [Git](https://github.com/ToolboxBodensee/toolbox-webseite) versioniert wird.
+Jetzt probieren wir einen neuen Ansatz aus. Die neue Webseite der Toolbox ist fertig gerendertes HTML und CSS, das keine PHP Sicherheitslücken haben kann, da es kein PHP ist. Die Versionskontrolle und Transparenz der Webseite ist nun auch gegeben, da die Webseite über [Git](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite) versioniert wird.
 
 Als Content Management System kommt hier [Lektor](https://getlektor.com) zum Einsatz. Bei Lektor handelt es sich um ein in Python geschriebenes CMS, das ähnlich wie Hugo aus Dateien mit Markdown Syntax statisches HTML generiert und dieses auch bei Bedarf auf den Webserver hochladen kann.
 
@@ -28,7 +28,7 @@ xml:
 
 Die Toolbox Webseite ist nun kein ungeliebtes Wordpress mehr sondern eine moderneWebseite. Sie wird nun auf einem ordentlichen Server (mit IPv6 und HTTPS) gehostet.
 
-Der Inhalt der Webseite wird über GitHub verwaltet und darf dort gerne verändert werden:
-https://github.com/ToolboxBodensee/toolbox-webseite
+Der Inhalt der Webseite wird über GitLab verwaltet und darf dort gerne verändert werden:
+https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite
 ---
 shorttitle: Neue Webseite

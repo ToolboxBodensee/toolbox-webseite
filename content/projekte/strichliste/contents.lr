@@ -17,7 +17,7 @@ Es gibt ein Ansible-Rolle, mit dem der Server Teil der Strichliste (das Backend)
 [gitea.see-base.de/toolbox/role-strichliste](https://gitea.see-base.de/toolbox/role-strichliste)
 
 Aktuell fehlt noch, auch das Frontend automatisiert zu builden. Aktuell ist es leider etwas veraltet, findet sich aber dort:
-[github.com/ToolboxBodensee/xn--see-br-0xa.se](https://github.com/ToolboxBodensee/xn--see-br-0xa.se)
+[gitlab.com/ToolboxBodensee/kueche/xn--see-br-0xa-se](https://gitlab.com/ToolboxBodensee/kueche/xn--see-br-0xa-se)
 
 ---
 icon: fas fa-clipboard-list

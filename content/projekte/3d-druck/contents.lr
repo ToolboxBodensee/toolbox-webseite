@@ -10,9 +10,11 @@ teaser: In der Toolbox stehen die verschiedensten 3D-Drucker zur freien Verwendu
 ---
 body:
 
-Die aktuellsten Fortschritte unserer 3D-Druck-Arbeiten finden sich in unserem [3D Printing GitHub Repository](https://github.com/ToolboxBodensee/3d_printing). Die vorkonfigurierten Marlin-Firmwares für die entsprechenden Drucker stehen in unserem [Marlin Fork](https://github.com/ToolboxBodensee/Marlin) zur Verfügung.
+Die aktuellsten Fortschritte unserer 3D-Druck-Arbeiten finden sich in unserem [3D Printing GitLab Repository](https://gitlab.com/ToolboxBodensee/3d-druck/3d_printing).
+Die vorkonfigurierten Marlin-Firmwares für die entsprechenden Drucker stehen in unserem [Marlin Fork](https://gitlab.com/ToolboxBodensee/3d-druck/Marlin) zur Verfügung.
 
-Selbstverständlich laufen alle unsere 3D-Drucker mit angeschlossenem [OctoPrint](https://octoprint.org) auf je einem Raspberry Pi. Mit dem [OctoPrint Slicer Plugin](https://plugins.octoprint.org/plugins/slicer/) können unsere User so drucken ohne eigene Slicer-Software oder Konfigurationsdateien auf ihren PC übertragen zu müssen.
+Selbstverständlich laufen alle unsere 3D-Drucker mit angeschlossenem [OctoPrint](https://octoprint.org) auf je einem Raspberry Pi.
+Mit dem [OctoPrint Slicer Plugin](https://plugins.octoprint.org/plugins/slicer/) können unsere User so drucken ohne eigene Slicer-Software oder Konfigurationsdateien auf ihren PC übertragen zu müssen.
 
 In der Toolbox entstandene Designs sind auf unserem [Thingiverse Account](https://www.thingiverse.com/ToolboxBodensee/about) verfügbar.
 

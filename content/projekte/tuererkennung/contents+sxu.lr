@@ -6,9 +6,9 @@ Für ne bessre Anbindung unsrer Einjangsdür in de [Sbäis-ABI](/projekte/spacea
 
 Der sollde ergenn, ob de Toolbox-Dür offjeschlossn odor abjeschlossn is. 
 Un immor, wenner ne Änderung festschdelld, jibter das an de Sbäis-ABI weidor.
-Den passenden Code zur Tür gibt es natürlich auf Github:
+Den passenden Code zur Tür gibt es natürlich auf GitLab:
 
-<a href="https://github.com/ToolboxBodensee/DoorSwitch.git" class="button special primary">Dür-Switsch-Kod</a>
+<a href="https://gitlab.com/ToolboxBodensee/microcontroller/DoorSwitch" class="button special primary">Dür-Switsch-Kod</a>
 
 So sieht das Janze aus. Von dor Endschdehung bis zum fertschn Brododybm.
 ---

@@ -7,9 +7,9 @@ For a better connection of our entrance door to the [Space-API](/projects/spacea
 This should detect if the Toolbox door is unlocked or locked.
 And whenever it detects a change, it passes it on to the Space-API.
 
-The appropriate code for the door is of course available on Github:
+The appropriate code for the door is of course available on GitLab:
 
-<a href="https://github.com/ToolboxBodensee/DoorSwitch.git" class="button special primary">Door Switch Code</a>
+<a href="https://gitlab.com/ToolboxBodensee/microcontroller/DoorSwitch" class="button special primary">Door Switch Code</a>
 
 That's what it looks like. From the creation to the finished prototype.
 

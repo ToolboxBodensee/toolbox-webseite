@@ -31,6 +31,6 @@ Dieser hängt über der Treppe im ersten Stockwerk.
  Neopixel
 ----------------
 Die LEDs sind 5 Meter Neopixel. Diese werden von einem ESP2866 gesteuert. Der ESP hängt am WLAN mit auto ota firmware update.
-Der dazugehörige Code findet sich natürlich auf GitHub: [github.com/ToolboxBodensee/led_tunnel](https://github.com/ToolboxBodensee/led_tunnel.git)
+Der dazugehörige Code findet sich natürlich auf GitLab: [gitlab.com/ToolboxBodensee/die-erleuchteten/led_tunnel](https://gitlab.com/ToolboxBodensee/die-erleuchteten/led_tunnel)
 
 Wir würden uns sehr darüber freuen, wenn du auch mal mit deiner tiny class-Drohne vorbeikommst und den Tunnel ausprobierst!

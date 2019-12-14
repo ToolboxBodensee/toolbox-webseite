@@ -2,7 +2,8 @@ author: 3D Printing Team Toolbox
 ---
 body:
 
-The latest developents of our 3D printing work can be found in our [3D Printing GitHub Repository](https://github.com/ToolboxBodensee/3d_printing). The pre-configured Marlin firmwares for the respective printers are available in our [Marlin fork](https://github.com/ToolboxBodensee/Marlin).
+The latest developents of our 3D printing work can be found in our [3D Printing GitLab Repository](https://gitlab.com/ToolboxBodensee/3d-druck/3d_printing).
+The pre-configured Marlin firmwares for the respective printers are available in our [Marlin fork](https://gitlab.com/ToolboxBodensee/3d-druck/Marlin).
 
 Naturally, all 3D printers run with connected [OctoPrint](https://octoprint.org) on one Raspberrry Pi each. With the help of the [OctoPrint Slicer Plugin](https://plugins.octoprint.org/plugins/slicer/), our users can print without having to transfer their own slicer software or config files to their computers.
 

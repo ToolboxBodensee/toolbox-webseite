@@ -2,12 +2,14 @@ author: L3D
 ---
 body:
 
-De Toolbox-Webseide wird midm Static Site Generator [Lektor](https://getlektor.com) erschdelld un übbor [GitHub](https://github.com/ToolboxBodensee/toolbox-webseite/) vorwalded. Damid wurde de vorhersche Wordpress-Webseide abjelösd, die zuvor es Aushängeschild ins Indorned war un ebenso modern un jud jepflegd aussah, wie es halbferdsch diehseinde Wordpress-Inschdalladsjonen, für die sisch keener rischdsch vorandwordlisch jefühld had, eben so sin.
+De Toolbox-Webseide wird midm Static Site Generator [Lektor](https://getlektor.com) erschdelld un übbor
+[GitLab](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite) vorwalded. Damid wurde de vorhersche Wordpress-Webseide abjelösd, die zuvor es Aushängeschild ins Indorned war un ebenso modern un jud jepflegd aussah, wie es halbferdsch diehseinde Wordpress-Inschdalladsjonen, für die sisch keener rischdsch vorandwordlisch jefühld had, eben so sin.
 
 
  Edwas beidrahchn 
 --------------------------
-Zur jedschen Seide dor Toolbox gann jedor relladiv eenfach was beidrahchn. Ne relladiv dedajierde Schridd-für-Schridd-anleidung dafür is off [github.com/ToolboxBodensee/toolbox-webseite](https://github.com/ToolboxBodensee/toolbox-webseite/blob/master/README.md#zur-neuen-webseite-beitragen) vorfüchbar. Wer bei Git odor Lektor Undorschdüdsung brauch, begommds am besdn in dor Toolbox, etwa donnerschdahchs.nachm Wochnmiehding.
+Zur jedschen Seide dor Toolbox gann jedor relladiv eenfach was beidrahchn.
+Ne relladiv dedajierde Schridd-für-Schridd-anleidung dafür is off [gitlab.com/ToolboxBodensee/webseite/toolbox-webseite](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/blob/master/README.md#zur-neuen-webseite-beitragen) vorfüchbar. Wer bei Git odor Lektor Undorschdüdsung brauch, begommds am besdn in dor Toolbox, etwa donnerschdahchs.nachm Wochnmiehding.
 
 
  Lektor
@@ -16,9 +18,11 @@ Lektor isn Static Site Generator, der dir ville Möchlichgeidn jibt un ooch für
 Middlorweile hammor einische Sbiehlorein off dor Seide, di eübbr de Basisfungdsionen von Lektor hiaus jehn. 
 Lektor ermöchlichd es, jede Seide zu beorbeidn. Es Aussehn dor Seidn endschdehd dursch Jinja2-Tembläids. Hier gann man relladiv umfangreische Schleifn un Bedingungen definiern, die dann von Lektor ausjeführd werd un als Webseide jerenderd wern.
 
-Da de Toolbox ooch vorsuchd, n indornadsjonales Bubligum anzuschbrechn un nich dursch ne Schbrachbarrjiere den Zujang zu vorweischorn, jibt es ooch ne Übborsedsung ins Englische un Säggsche. Das had anfeangs kleene Brohbleme mit sisch jebrachd. So gonnde zum Beischbiehl das Blagg-in, das für den RSS-Feed zuschdändsch war, de Seide nisch mehr zu rendorn. Zum Glügg gann Lektor alle möchlischn Dadein aus Dembläids erschdelln und nich nur HTMl-Seidn. Es Dembläid fürdn RSS-Feed des Blogs siehd zum Beischbiehl so aus: [templates/feed_blog.xml](https://github.com/ToolboxBodensee/toolbox-webseite/blob/master/templates/feed_blog.xml).
+Da de Toolbox ooch vorsuchd, n indornadsjonales Bubligum anzuschbrechn un nich dursch ne Schbrachbarrjiere den Zujang zu vorweischorn, jibt es ooch ne Übborsedsung ins Englische un Säggsche. Das had anfeangs kleene Brohbleme mit sisch jebrachd. So gonnde zum Beischbiehl das Blagg-in, das für den RSS-Feed zuschdändsch war, de Seide nisch mehr zu rendorn. Zum Glügg gann Lektor alle möchlischn Dadein aus Dembläids erschdelln und nich nur HTMl-Seidn.
+Es Dembläid fürdn RSS-Feed des Blogs siehd zum Beischbiehl so aus: [templates/feed_blog.xml](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/blob/master/templates/feed_blog.xml).
 
-Es jibt ooch ne Übborsedsung dor Menüelemende, die mehrschbrachich vorhandn sein solln. Das wird übbor de [Dadabäggs](https://github.com/ToolboxBodensee/toolbox-webseite/blob/master/databags/translate.ini) jelösd.
+Es jibt ooch ne Übborsedsung dor Menüelemende, die mehrschbrachich vorhandn sein solln.
+Das wird übbor de [Dadabäggs](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/blob/master/databags/translate.ini) jelösd.
 
 Wen Lektor Weidor indressierd, der sollde sisch für noch mehr Driggs de [Dogumendadsjon von Lektor](https://www.getlektor.com/docs/) anschaun, da dord einische nüdslische Elemende zu findn sin.
 
@@ -32,7 +36,7 @@ project:
 ---
 pub_date: 2018-08-30
 ---
-teaser: De Toolbox-Webseide wird midm Static Site Generator Lektor erschdelld un übbor GitHub vorwalded
+teaser: De Toolbox-Webseide wird midm Static Site Generator Lektor erschdelld un übbor GitLab vorwalded
 ---
 title: Toolbox-Webseide
 ---

@@ -2,12 +2,14 @@ author: L3D
 ---
 body:
 
-The Toolbox website is created with the [Lektor](https://getlektor.com) Static Site Generator and managed via [GitHub](https://github.com/ToolboxBodensee/toolbox-webseite/). This replaced the previous Wordpress website, which was the flagship of the Internet and looked just as modern and well maintained as the semi-designed Wordpress installations for which no one really felt responsible.
+The Toolbox website is created with the [Lektor](https://getlektor.com) Static Site Generator and
+managed via [GitLab](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite). This replaced the previous Wordpress website, which was the flagship of the Internet and looked just as modern and well maintained as the semi-designed Wordpress installations for which no one really felt responsible.
 
 
  Contribute
 --------------------------
-At the current toolbox website everyone can contribute relatively easily and change nearly everything.  A detailed step-by-step guide can be found on [github.com/ToolboxBodensee/toolbox-webpage](https://github.com/ToolboxBodensee/toolbox-webseite/blob/master/README.md#zur-neuen-webseite-beitragen) in German. If you need support with Git or Lektor, it's best to come to the Toolbox (most likely on Thursdays after the weekly meeting) and ask for support.
+At the current toolbox website everyone can contribute relatively easily and change nearly everything.
+A detailed step-by-step guide can be found on [gitlab.com/ToolboxBodensee/webseite/toolbox-webseite](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/blob/master/README.md#zur-neuen-webseite-beitragen) in German. If you need support with Git or Lektor, it's best to come to the Toolbox (most likely on Thursdays after the weekly meeting) and ask for support.
 
 
  Editor
@@ -17,9 +19,11 @@ Lektor is a static site generator that gives you many possibilities and is relat
 Meanwhile, we have some gimmicks on the site that go beyond the basic features of Lektor.
 Lektor allows you to edit any page. The appearance of the pages is created by Jinja2 templates. Here you can define extensive loops and conditions, which are then executed by Lektor and rendered as a website.
 
-Since the Toolbox also tries to appeal to an international audience and not to deny access through a language barrier, there is also a translation of the page into English. At the beginning this caused some problems, e.g. the plugin responsible for the RSS feed could not render the page anymore. Fortunately, Lektor can create all kinds of files from templates and not just HTML pages. For example, the template for the blog's RSS feed looks like this: [templates/feed_blog.xml](https://github.com/ToolboxBodensee/toolbox-webseite/blob/master/templates/feed_blog.xml).
+Since the Toolbox also tries to appeal to an international audience and not to deny access through a language barrier, there is also a translation of the page into English. At the beginning this caused some problems, e.g. the plugin responsible for the RSS feed could not render the page anymore. Fortunately, Lektor can create all kinds of files from templates and not just HTML pages.
+For example, the template for the blog's RSS feed looks like this: [templates/feed_blog.xml](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/blob/master/templates/feed_blog.xml).
 
-Since the translation is available, there are also some menu elements that should be available in several languages. This is solved via the [databags](https://github.com/ToolboxBodensee/toolbox-webseite/blob/master/databags/translate.ini).
+Since the translation is available, there are also some menu elements that should be available in several languages.
+This is solved via the [databags](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/blob/master/databags/translate.ini).
 
 If you are interested in Lektor, you should have a look at the [documentation of Lektor](https://www.getlektor.com/docs/) for more tricks, because there are some useful elements there.
 
@@ -36,7 +40,7 @@ project:
 ---
 pub_date: 2018-08-30
 ---
-teaser: The Toolbox website is created with the Lektor Static Site Generator and managed via GitHub.
+teaser: The Toolbox website is created with the Lektor Static Site Generator and managed via GitLab.
 ---
 title: Toolbox Website
 ---

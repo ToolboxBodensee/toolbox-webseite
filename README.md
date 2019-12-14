@@ -1,12 +1,12 @@
-<a href="https://toolbox-bodensee.de"><img src="https://avatars0.githubusercontent.com/u/9744766?s=200&v=4" align="right" hspace="10" vspace="6"></a>
+<a href="https://toolbox-bodensee.de"><img src="https://assets.gitlab-static.net/uploads/-/system/group/avatar/6246985/9744766.png" align="right" hspace="10" vspace="6"></a>
 
 Webseite der Toolbox Bodensee e.V.
 ====================================
 
-[![Build Status](https://travis-ci.org/ToolboxBodensee/toolbox-webseite.svg?branch=master)](https://travis-ci.org/ToolboxBodensee/toolbox-webseite)
+[![Build Status](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/badges/master/pipeline.svg)](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/pipelines)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-**Entwicklung nur auf [GitLab](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite). Auf GitHub befindet sich lediglich ein Mirror**
+**Entwicklung nur auf [GitLab](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite). Auf GitLab befindet sich lediglich ein Mirror**
 
 Dies ist der Quellcode zur aktuellen Webseite des Maker- und Hackspace Toolbox Bodensee e.V., die unter [toolbox-bodensee.de](https://toolbox-bodensee.de/) erreichbar ist.
 
@@ -16,7 +16,7 @@ Anforderungen
 Um an der Webseite mitzuarbeiten, musst du lediglich dieses Git Repoitory runterladen und Lektor installieren.<br/>
 Dies ist sowohl unter Linux, Windows und Apfel möglich.
 
-Zum Clonen des Git Repository sollte lediglich ``git-lfs`` installiert sein. Die Installation aller weiteren Abhängigkeiten ist mit ``make`` möglich. Alternativ gibt es auch einen Docker Container der alles erforderliche mitbringt.
+Zum Clonen des Git Repository sollte lediglich ``git-lfs`` installiert sein. Die Installation aller weiteren Abhängigkeiten ist mit ``make`` möglich. Alternativ gibt es auch einen Docker Container der alles Erforderliche mitbringt.
 
 ### Linux:
 Dein Paketmanager *(zum Beispiel ``apt``)* sollte das Paket git-lfs anbieten. Beispiel:
@@ -44,7 +44,7 @@ Zur Erleichterung der Installation beinhaltet das Projekt eine Makefile. Diese e
 Die Webseite kann beispielsweise folgendermaßen ausgeführt werden:
 ```bash
 # source code lokal abspeichern
-git clone --recursive https://github.com/ToolboxBodensee/toolbox-webseite.git toolbox-webseite
+git clone https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite.git toolbox-webseite
 
 # Wechsel in den zugehörigen Ordner
 cd toolbox-webseite
@@ -56,12 +56,9 @@ make install
 make server
 ```
 
- LFS
-----
-https://gitea.see-base.de/toolbox/toolbox-webseite.git 
 
 Nähere Informationen
 ---------------------------------
-| **[Grundlagen](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Grundlagen)**     | **[Installation](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Installation)**     | **[Beitragen](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Contributing)**           |
+| **[Grundlagen](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/-/wikis/Grundlagen)**     | **[Installation](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/-/wikis/Installation)**     | **[Beitragen](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/-/wikis/Contribution)**           |
 |-------------------------------------|-------------------------------|-----------------------------------|
-| [![i1](https://github.com/ToolboxBodensee/toolbox-webseite-wiki/blob/master/images/tech-docs.svg)](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Grundlagen) | [![i2](https://github.com/ToolboxBodensee/toolbox-webseite-wiki/blob/master/images/install.svg)](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Installation) | [![i3](https://github.com/ToolboxBodensee/toolbox-webseite-wiki/blob/master/images/edit.svg)](https://github.com/ToolboxBodensee/toolbox-webseite/wiki/Contribution) |
+| [![i1](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite-wiki/blob/master/images/tech-docs.svg)](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/-/wikis/Grundlagen) | [![i2](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite-wiki/blob/master/images/install.svg)](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/-/wikis/Installation) | [![i3](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite-wiki/blob/master/images/edit.svg)](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/-/wikis/Contribution) |

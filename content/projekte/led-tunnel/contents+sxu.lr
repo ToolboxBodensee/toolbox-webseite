@@ -10,7 +10,7 @@ Diesor hängd übber dor Drebbe im erstn Schdoggwerg.
  Neopixel
 ----------------
 De LEDs sin 5 Medor Neopixl. Diese werdn von nem ESP2866 jeschdeuerd. Dor ESP hängd am WLAN mid auto ota firmware update.
-Dor dazujehörsche Kod is nadürlisch ooch in GitHub zu findn: [github.com/ToolboxBodensee/led_tunnel](https://github.com/ToolboxBodensee/led_tunnel.git)
+Dor dazujehörsche Kod is nadürlisch ooch in GitLab zu findn: [gitlab.com/ToolboxBodensee/die-erleuchteten/led_tunnel](https://gitlab.com/ToolboxBodensee/die-erleuchteten/led_tunnel)
 
 Mor würdn uns sehr drübber freun, wenn de ooch mal mid deiner tiny class-Drohne vorbeigommst un den Dunnel ausbrohbiersd!
 ---
