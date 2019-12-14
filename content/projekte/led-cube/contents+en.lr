@@ -1,0 +1,29 @@
+author: Jonas Otto
+---
+body:
+
+After finding a variant of the commonly liked "Neopixel" or "WS2812" or "SK6812" individually addressable LED modules on Aliexpress that - with 1.5x1.5mm - are smaller than all previous variants, we came up with the idea to create a miniature LED cube.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Tiny LED cubes!<br><br>Designed with <a href="https://twitter.com/kicad_pcb?ref_src=twsrc%5Etfw">@kicad_pcb</a> : <a href="https://t.co/iPutROsE9V">https://t.co/iPutROsE9V</a><br>PCBs by <a href="https://twitter.com/AislerHQ?ref_src=twsrc%5Etfw">@AislerHQ</a> <a href="https://t.co/kaEmYie3ak">pic.twitter.com/kaEmYie3ak</a></p>&mdash; Jonas Otto (@ottojo0802) <a href="https://twitter.com/ottojo0802/status/1185906242172129281?ref_src=twsrc%5Etfw">October 20, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+As we didn't order enough LEDs for a bigger cube, we decided to use 4x4 LEDs per side. One of the sides has to stay open as the cube is to be soldered from the inside. The rather unusual 45° rotation of the LEDs on each side makes the PCB design easier.
+The PCB was designed with [KiCad](kicad-pcb.org), the layout is open source hardware and available on [GitHub](https://github.com/ottojo/ledcube). We ordered the PCBs at [Aisler](https://aisler.net), together with a stencil for [reflow soldering](https://en.wikipedia.org/wiki/Reflow_soldering).
+The PCBs were soldered in the converted pizza oven with temperature control in the Toolbox which worked without any problems.
+Soldering the individual PCBs together to form a cube took more effort and we had to 3D-print a little holder that kept the cube together during the soldering process.
+---
+icon: fas fa-dice-d6
+---
+project:
+
+#### pro_img ####
+image: led-cube-1.jpg
+#### pro_img ####
+image: led-cube-2.jpg
+---
+pub_date: 2020-10-01
+---
+teaser: Mini LED cube with 80 RGB LEDs
+---
+title: LED Cube
+---
+video_is_embedded: no
