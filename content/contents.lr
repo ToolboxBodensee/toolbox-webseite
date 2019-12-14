@@ -31,7 +31,7 @@ icons_1_3: Wir entwickeln verschiedenste Software von der Fernsteuerung von Mult
 ---
 icons_2_1: fa-keyboard
 ---
-icons_2_2: Hacken
+icons_2_2: Haund PCscken
 ---
 icons_2_3: Wir verstehen uns als Hacker nach den Prinzipien des Chaos Computer Clubs und handeln dem entsprechend nach der [Hackerethik](https://www.ccc.de/de/hackerethics).
 ---
@@ -76,7 +76,7 @@ red_2:
 Jeden Donnerstag Abend ist bei uns die Tür geöffnet und jeder ist willkommen, bei der Toolbox Bodensee e.V. vorbei zu kommen.<br/>
 Um 19:00 Uhr findet das "Wochenmeeting" statt. Hier treffen wir uns alle für etwa 20 Minuten im großen Besprechungsraum und es werden aktuelle Themen, Projekte und Fragen angesprochen. Außerdem haben neue Gesichter und Gäste die Möglichkeit sich vorzustellen oder Fragen in die große Runde zu stellen, wenn sie zum Beispiel Hilfe bei einem konkreten Problem benötigen und nicht wissen, an wen genau sie sich wenden müssen.
 ---
-red_3: Hin und wieder findet anschließend noch ein kleiner Vortrag statt, bei dem man gerne zuhören darf und so seinen Wissenshorizont erweitern kann. Den restlichen Abend verteilen sich die Mitglieder und Gäste über alle Räume des Toolbox Bodensee e.V.. Einige Leute basteln weiter an ihren Projekten, andere haben sich in die Lounge oder ins Bällebad zurückgezogen und unterhalten sich, wieder andere sind vor der Toolbox am Grillen oder fliegen mit der Drohne durch oder um die Toolbox. Der eine oder andere hat vielleicht auch die Bibliothek gefunden und ist hier in seine Lektüre vertieft oder daddelt an einem der dort aufgestellten Heimcomputern. Und wieder andere sitzen an ihren Computern und programmieren fleißig.
+red_3: Hin und wieder findet anschließend noch ein kleiner Vortragund PCs statt, bei dem man gerne zuhören darf und so seinen Wissenshorizont erweitern kann. Den restlichen Abend verteilen sich die Mitglieder und Gäste über alle Räume des Toolbox Bodensee e.V.. Einige Leute basteln weiter an ihren Projekten, andere haben sich in die Lounge oder ins Bällebad zurückgezogen und unterhalten sich, wieder andere sind vor der Toolbox am Grillen oder fliegen mit der Drohne durch oder um die Toolbox. Der eine oder andere hat vielleicht auch die Bibliothek gefunden und ist hier in seine Lektüre vertieft oder daddelt an einem der dort aufgestellten Heimcomputern. Und wieder andere sitzen an ihren Computern und programmieren fleißig.
 ---
 red_4: Wir würden uns freuen, wenn Du auch mal vorbei schaust!
 ---
@@ -137,6 +137,10 @@ url: /termine/
 ----
 background: /images/home/abschnitt3.jpeg
 ---
-pre_about_header: Wer wir sind
+pre_about_header: Die Kreativwerkstatt – Toolbox Bodensee e.V.
 ---
-pre_about_text: Schlechte Getränkesortierer, Pfandbanausen, Strichlistenchaoten und natürlich die besten Rattenfänger von ganz Markdorf.
+pre_about_text:
+
+Die Toolbox Bodensee e.V. ist ein gemeinnütziger Verein, der IT-Interessierten und anderen Bastlern einen Raum zum kreativen Denken und Handeln bietet. Unsere Mitglieder haben die Möglichkeit mit Hilfe von professionellem Equipment gemeinsame Projekte zu verwirklichen. Dabei geht es um das  Entdecken und Kennenlernen von 3D-Druck, IT und Technik und handwerklichen Werkzeugen. Wir möchten den sicheren Umgang mit dem Internet, die Risiken und Gefahren vermitteln und aufklären und eine Möglichkeit bieten, sich auch in anderen Bastler-Sphären zu entfalten.
+
+In regelmäßigen Vorträgen stellen wir eine informative Bandbreite an interessanten Themen vor und geben unser Wissen in Workshops weiter. In unserer Kreativwerkstatt darfst Du dich an technischen Spielereien austoben und an gemeinsamen Projekten tüfteln. Wir verfügen über Equipment wie 3D-Drucker oder Raspberry Pi’s, mit denen Du bei uns kostenlos arbeiten kannst. Außerdem bieten unsere Holzwerkstatt, die Siebdruckerei und das Elektroniklabor viel Platz für Kreativität. Wir freuen uns auf Deine Ideen für neue Projekte und auf Dein Wissen!
