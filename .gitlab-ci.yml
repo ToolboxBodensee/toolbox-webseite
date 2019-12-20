@@ -22,11 +22,11 @@ deploy-to-stage:
   - eval $(ssh-agent -s)
   - ssh-add <(echo "$SERVER_SSH_PRIV_KEY")
   script:
-  - ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $USERNAME@$DOMAIN "mkdir -p $DOMAIN/staging-$CI_COMMIT_REF_NAME"
-  - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp build/* "$USERNAME@$DOMAIN:$DOMAIN/staging-$CI_COMMIT_REF_NAME"
+  - ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $USERNAME@$DOMAIN "mkdir -p webseite/staging-$CI_COMMIT_REF_NAME"
+  - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp build/* "$USERNAME@$DOMAIN:webseite/staging-$CI_COMMIT_REF_NAME"
   environment:
     name: review/$CI_COMMIT_REF_NAME
-    url: https://release.maxbachmann.de/staging-$CI_COMMIT_REF_NAME
+    url: https://toolbox-bodensee.de/staging-$CI_COMMIT_REF_NAME
   dependencies:
   - lektor:build
   except:
@@ -42,7 +42,7 @@ deploy-to-prod:
   - eval $(ssh-agent -s)
   - ssh-add <(echo "$SERVER_SSH_PRIV_KEY")
   script:
-  - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp build/* "$USERNAME@$DOMAIN:$DOMAIN"
+  - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp build/* "$USERNAME@$DOMAIN:webseite"
   dependencies:
   - lektor:build
   only:
