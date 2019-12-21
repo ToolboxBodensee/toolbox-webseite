@@ -3,7 +3,7 @@ name = Toolbox Bodensee e.V.
 url = https://toolbox-bodensee.de/
 locale = de_DE
 excluded_assets = *.scss, *.js
-included_assets = *.min.js
+included_assets = .htaccess, *.min.js
 
 [servers.toolbox]
 name = toolbox
