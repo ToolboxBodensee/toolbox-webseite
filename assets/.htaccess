@@ -1,9 +1,10 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    RewriteRule ^projekte.xml https://toolbox-bodensee.de/feed_projekte.xml
-    RewriteRule ^f33d.xml https://toolbox-bodensee.de/feed_projekte.xml
-    RewriteRule ^feed.xml https://toolbox-bodensee.de/feed_blog.xml
+    RewriteRule projekte.xml$ feed_projekte.xml
+    RewriteRule f33d.xml$ feed_projekte.xml
+    RewriteRule feed.xml$ feed_blog.xml
+	RewriteRule toolboxbodenseeev.json$ https://bodensee.space/spaceapi/toolboxbodenseeev.json
 
     ### Redirect certain domains to ffbsee.net
     RewriteCond %{HTTP_HOST} ^toolbox\.cyber\.yt [NC,OR]
