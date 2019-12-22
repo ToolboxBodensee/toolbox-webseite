@@ -24,6 +24,7 @@ deploy-to-stage:
   script:
   - ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $USERNAME@$DOMAIN "mkdir -p webseite/staging-$CI_COMMIT_REF_NAME"
   - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp build/* "$USERNAME@$DOMAIN:webseite/staging-$CI_COMMIT_REF_NAME"
+  - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp build/.htaccess "$USERNAME@$DOMAIN:webseite/staging-$CI_COMMIT_REF_NAME"
   environment:
     name: review/$CI_COMMIT_REF_NAME
     url: https://toolbox-bodensee.de/staging-$CI_COMMIT_REF_NAME
@@ -43,6 +44,7 @@ deploy-to-prod:
   - ssh-add <(echo "$SERVER_SSH_PRIV_KEY")
   script:
   - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp build/* "$USERNAME@$DOMAIN:webseite"
+  - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp build/.htaccess "$USERNAME@$DOMAIN:webseite"
   dependencies:
   - lektor:build
   only:
