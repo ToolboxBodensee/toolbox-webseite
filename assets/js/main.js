@@ -9,7 +9,7 @@
 */
 
 function loadSpaceStatus() {
-  $.getJSON("/toolboxbodenseeev.json", function(data) {
+  $.getJSON("/toolboxbodensee.json", function(data) {
     $("link[href='/css/spacestatus.css']").remove();
     if (data.state.open == true) {
       $('#space-closed').hide();
