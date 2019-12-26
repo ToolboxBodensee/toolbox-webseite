@@ -4,7 +4,6 @@
     RewriteRule projekte.xml$ feed_projekte.xml
     RewriteRule f33d.xml$ feed_projekte.xml
     RewriteRule feed.xml$ feed_blog.xml
-	RewriteRule toolboxbodensee.json$ https://bodensee.space/spaceapi/toolboxbodensee.json
 
     ### Redirect certain domains to ffbsee.net
     RewriteCond %{HTTP_HOST} ^toolbox\.cyber\.yt [NC,OR]
