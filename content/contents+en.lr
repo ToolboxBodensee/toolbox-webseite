@@ -97,11 +97,9 @@ sections:
 #### startpage_section ####
 type: left
 ----
-header: open day 2019
+header: Open Day 2019
 ----
-text:
-
-The open day of the Toolbox door will take place on 12 October 2019.
+text: The open day of the Toolbox door will take place on October 12, 2019.
 ----
 text2: Come by and have fun with the device.
 ----
@@ -110,7 +108,6 @@ url_text: Calendar
 url: /en/termine/
 ----
 background: /images/tdot18.jpg
-
 #### startpage_section ####
 type: left
 ----
