@@ -17,9 +17,7 @@ People then spend the rest of the evening exchanging ideas, tinkering with their
 ---
 ics: ICS Calendar
 ---
-ics_url: https://bodensee.space/calendarfeeds/toolboxpublic.ics
----
-kalender_id: https://toolbox-bodensee.de/termine.ics
+ics_url: https://toolbox-bodensee.de/termine.ics
 ---
 slogan: The calendar contains all current dates and events.
 ---

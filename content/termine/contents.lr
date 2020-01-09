@@ -12,13 +12,11 @@ tmp3: f
 ---
 ics: ICS Kalender
 ---
-ics_url: https://bodensee.space/calendarfeeds/toolboxpublic.ics
+ics_url: https://toolbox-bodensee.de/termine.ics
 ---
 web: Kalender in der Cloud
 ---
 web_url: https://wirtschaftseingang.de/index.php/apps/calendar/embed/1QH1331IBAKMGS4Q
----
-kalender_id: https://toolbox-bodensee.de/termine.ics
 ---
 content:
 
