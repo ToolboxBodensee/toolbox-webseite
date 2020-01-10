@@ -5,22 +5,24 @@
         or closed space.
         Is triggered via JavaScript XHR Scripts and  simple CSS Magic
 #}
-<div class="tooltip">
-  <a id="space-opened" class="button space-opened navbar special" href="
-    {{- translator('api_url', 'translate', this.alt) }}">
-    {{- translator('api_space', 'translate', this.alt) }} {{
-    translator('api_open', 'translate', this.alt)  -}}
-  </a>
-  <a id="space-closed" class="button space-closed navbar special" href="
-    {{- translator('api_url', 'translate', this.alt) -}}">
-    {{- translator('api_space', 'translate', this.alt) }} {{
-    translator('api_closed', 'translate', this.alt) -}}
-  </a>
-  <a id="space-unknown" class="button space-unknown navbar special" href="
-    {{- translator('api_url', 'translate', this.alt) -}}">
-    {{- translator('api_unknown', 'translate', this.alt) -}}
-  </a>
-  <span class="tooltiptext">
-    {{- translator('api_opening_time', 'translate', this.alt) -}}
-  </span>
-</div>
+<h1 id="logo">
+  <div class="tooltip">
+    <a id="space-opened" class="button space-opened navbar special" href="
+      {{- translator('api_url', this.alt) }}">
+      {{- translator('api_space', this.alt) }} {{
+      translator('api_open', this.alt)  -}}
+    </a>
+    <a id="space-closed" class="button space-closed navbar special" href="
+      {{- translator('api_url', this.alt) -}}">
+      {{- translator('api_space', this.alt) }} {{
+      translator('api_closed', this.alt) -}}
+    </a>
+    <a id="space-unknown" class="button space-unknown navbar special" href="
+      {{- translator('api_url', this.alt) -}}">
+      {{- translator('api_unknown', this.alt) -}}
+    </a>
+    <span class="tooltiptext">
+      {{- translator('api_opening_time', this.alt) -}}
+    </span>
+  </div>
+</h1>

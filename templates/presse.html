@@ -5,7 +5,7 @@
   {%- if this.teaser -%}
     {{ this.teaser }}
   {%- else -%}
-    {{ translator('description', 'translate', this.alt) }}
+    {{ translator('description', this.alt) }}
   {%- endif -%}
     " />
 {%- endblock %}

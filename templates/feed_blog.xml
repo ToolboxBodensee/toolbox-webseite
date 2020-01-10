@@ -4,7 +4,7 @@
 {%- set search = "blog" %}
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">
-    {{- translator('xmlfeed', 'translate', this.alt) -}}
+    {{- translator('xmlfeed', this.alt) -}}
   </title>
   <id>{{ baseurl }}feed_blog.xml</id>
   <updated>{{ none|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</updated>

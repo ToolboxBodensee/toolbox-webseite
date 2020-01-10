@@ -1,0 +1,50 @@
+{
+  "home": {
+    "href": "/",
+    "items": {}
+  },
+  "blog": {
+    "href": "/blog",
+    "list_childs": true,
+    "items": {
+      "show_blog": "/blog/",
+      "rss_feed": "/feed_blog.xml"
+    }
+  },
+  "projekte": {
+    "href": "/projekte",
+    "list_childs": true,
+    "items": {
+      "show_projekt": "/projekte/",
+      "xml": "/feed_projekte.xml"
+    }
+  },
+  "verein": {
+    "href": "/verein",
+    "buttons": ["mitglied"],
+    "items": {
+      "vereinsheim": "/vereinsheim",
+      "elektrowerkstatt": "/vereinsheim/elektrowerkstatt",
+      "grobwerkstatt": "/vereinsheim/grobwerkstatt",
+      "lounge": "/vereinsheim/lounge",
+      "presse": "/verein/presse",
+      "wiki": "https://wiki.toolbox-bodensee.de",
+      "satzung": "/verein/dokumente",
+      "mitglied": "/mitglied-werden",
+      "spenden": "/verein/spenden",
+      "fragen": "/antworten"
+    }
+  },
+  "kalender": {
+    "href": "/termine",
+    "items": {}
+  },
+  "kontakt": {
+    "href": "/kontakt",
+    "items": {
+      "kontakt": "/kontakt",
+      "impressum": "/impressum",
+      "datenschutz": "/datenschutz"
+    }
+  }
+}
