@@ -9,15 +9,16 @@
 */
 
 function loadSpaceStatus() {
+  $('.space-closed').hide();
+  $('.space-opened').hide();
+  $('.space-unknown').hide();
   $.getJSON("/toolboxbodensee.json", function(data) {
     if (data.state.open === true) {
-      $('.space-closed').hide();
       $('.space-opened').css("display", "block");
-      $('.space-unknown').hide();
     } else if (data.state.open === false) {
-      $('.space-opened').hide();
       $('.space-closed').css("display", "block");
-      $('.space-unknown').hide();
+    } else {
+      $('.space-unknown').css("display", "block");
     }
   });
 }
