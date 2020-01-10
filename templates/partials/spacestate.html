@@ -11,16 +11,14 @@
     {{- translator('api_space', 'translate', this.alt) }} {{
     translator('api_open', 'translate', this.alt)  -}}
   </a>
-  <span class="tooltiptext">
-    {{- translator('api_open_text', 'translate', this.alt) -}}
-  </span>
-</div>
-
-<div class="tooltip">
-  <a id="space-closed" class="space-closed" href="
+  <a id="space-closed" class="button space-closed navbar special" href="
     {{- translator('api_url', 'translate', this.alt) -}}">
     {{- translator('api_space', 'translate', this.alt) }} {{
     translator('api_closed', 'translate', this.alt) -}}
+  </a>
+  <a id="space-unknown" class="button space-unknown navbar special" href="
+    {{- translator('api_url', 'translate', this.alt) -}}">
+    {{- translator('api_unknown', 'translate', this.alt) -}}
   </a>
   <span class="tooltiptext">
     {{- translator('api_opening_time', 'translate', this.alt) -}}

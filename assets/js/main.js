@@ -10,13 +10,14 @@
 
 function loadSpaceStatus() {
   $.getJSON("/toolboxbodensee.json", function(data) {
-    $("link[href='/css/spacestatus.css']").remove();
-    if (data.state.open == true) {
-      $('#space-closed').hide();
-      $('#space-opened').css("display", "block");
-    } else {
-      $('#space-opened').hide();
-      $('#space-closed').show();
+    if (data.state.open === true) {
+      $('.space-closed').hide();
+      $('.space-opened').css("display", "block");
+      $('.space-unknown').hide();
+    } else if (data.state.open === false) {
+      $('.space-opened').hide();
+      $('.space-closed').css("display", "block");
+      $('.space-unknown').hide();
     }
   });
 }

@@ -100,15 +100,30 @@ input[type="button"],
 
   &.space-opened {
     background-color: LimeGreen !important;
+    display: none;
 
     &.navbar {
       margin-left: -15px;
     }
   }
-}
 
-.space-closed {
-  color: #d23128ff;
+  &.space-closed {
+    background-color: #d23128ff !important;
+    display: none;
+
+    &.navbar {
+      margin-left: -15px;
+    }
+  }
+
+  &.space-unknown {
+    background-color: gray !important;
+    display: block;
+
+    &.navbar {
+      margin-left: -15px;
+    }
+  }
 }
 
 .tooltip {
