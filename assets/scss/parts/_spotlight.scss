@@ -116,6 +116,10 @@
       @include breakpoint(laptop) {
         padding: ($size-wrapper-pad-tb * 0.85) 0 (($size-wrapper-pad-tb * 1.1) - _size(element-margin)) 0;
       }
+
+      @include breakpoint(dwarfheight) {
+        padding: ($size-wrapper-pad-tb / 6) 0 1em 0;
+      }
     }
   }
 
