@@ -39,6 +39,10 @@ Modified by Toolbox Bodensee e.V.
   @else if $point == mobileonly {
     @media (max-width: 480px) { @content ; }
   }
+
+  @else if $point == dwarfheight {
+    @media (max-height: 750px) { @content ; }
+  }
 }
 
 @include skel-layout((
