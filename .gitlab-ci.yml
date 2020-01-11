@@ -1,20 +1,20 @@
-variables:
-  GIT_SUBMODULE_STRATEGY: recursive
-
-image: python:latest
-
 lektor:build:
   stage: build
+  image: python:latest
   script:
   - pip install lektor
   - lektor build -f jsminify -f scsscompile --output-path build
+  - cd build
+  - tar -czvf build.tar.gz ./*
+  - mv build.tar.gz ../build.tar.gz
   artifacts:
     paths:
-      - build
+      - build.tar.gz
 
 
 deploy-to-stage:
   stage: deploy
+  image: debian:stable
   variables:
     GIT_STRATEGY: none
   before_script:
@@ -22,9 +22,8 @@ deploy-to-stage:
   - eval $(ssh-agent -s)
   - ssh-add <(echo "$SERVER_SSH_PRIV_KEY")
   script:
-  - ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $USERNAME@$DOMAIN "mkdir -p webseite/staging-$CI_COMMIT_REF_NAME"
-  - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp build/* "$USERNAME@$DOMAIN:webseite/staging-$CI_COMMIT_REF_NAME"
-  - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp build/.htaccess "$USERNAME@$DOMAIN:webseite/staging-$CI_COMMIT_REF_NAME"
+  - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p build.tar.gz "$USERNAME@$DOMAIN:tmp"
+  - ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $USERNAME@$DOMAIN "mkdir -p webseite/staging-$CI_COMMIT_REF_NAME && tar -xzvf /tmp/build.tar.gz -C webseite/staging-$CI_COMMIT_REF_NAME"
   environment:
     name: review/$CI_COMMIT_REF_NAME
     url: https://toolbox-bodensee.de/staging-$CI_COMMIT_REF_NAME
@@ -36,6 +35,7 @@ deploy-to-stage:
 
 deploy-to-prod:
   stage: deploy
+  image: debian:stable
   variables:
     GIT_STRATEGY: none
   before_script:
@@ -43,8 +43,8 @@ deploy-to-prod:
   - eval $(ssh-agent -s)
   - ssh-add <(echo "$SERVER_SSH_PRIV_KEY")
   script:
-  - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp build/* "$USERNAME@$DOMAIN:webseite"
-  - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp build/.htaccess "$USERNAME@$DOMAIN:webseite"
+  - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p build.tar.gz "$USERNAME@$DOMAIN:tmp"
+  - ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $USERNAME@$DOMAIN "tar -xzvf /tmp/build.tar.gz -C webseite"
   dependencies:
   - lektor:build
   only:
