@@ -105,12 +105,12 @@
     }
   }
 
-  &.top {
+  &.topborder {
     .content {
       left: 0;
       padding: ($size-wrapper-pad-tb * 0.85) 0 (($size-wrapper-pad-tb * 0.85) - _size(element-margin)) 0;
       width: 100%;
-      border-bottom-width: 0.35em;
+      border-top-width: 0.35em;
       top: 0;
 
       @include breakpoint(laptop) {
@@ -168,4 +168,3 @@ body.is-touch {
     background-attachment: scroll;
   }
 }
-
