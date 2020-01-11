@@ -3,23 +3,35 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
-    "Cleaned" - aka destroyed and rewritten by L3D.
-    <WARNING> L3D does not know how JavaScript works and just deleted some random lines.
-
 */
 
 function loadSpaceStatus() {
-  $.getJSON("/toolboxbodensee.json", function(data) {
-    if (data.state.open === true) {
-      $('.space-closed').hide();
-      $('.space-opened').css("display", "block");
-      $('.space-unknown').hide();
-    } else if (data.state.open === false) {
+  $.getJSON("/toolboxbodensee.json")
+    .done(function(data) {
+      if (data.state.open === true) {
+        $('.space-opened').css("display", "block");
+        $('.space-closed').hide();
+        $('.space-unknown').hide();
+      } else if (data.state.open === false) {
+        $('.space-opened').hide();
+        $('.space-closed').css("display", "block");
+        $('.space-unknown').hide();
+      } else {
+        $('.space-opened').hide();
+        $('.space-closed').hide();
+        $('.space-unknown').css("display", "block");
+      }
+    })
+    .fail(function(xhr, status, error) {
       $('.space-opened').hide();
-      $('.space-closed').css("display", "block");
-      $('.space-unknown').hide();
-    }
-  });
+      $('.space-closed').hide();
+      $('.space-unknown').css("display", "block");
+    });
+}
+
+function initSpaceStatus() {
+  $('.space-unknown').hide();
+  loadSpaceStatus();
 }
 
 (function($) {
@@ -144,7 +156,7 @@ function loadSpaceStatus() {
   $banner
     ._parallax();
 
-  loadSpaceStatus();
+  initSpaceStatus();
 
 })(jQuery);
 

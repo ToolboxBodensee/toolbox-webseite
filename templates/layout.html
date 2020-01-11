@@ -1,8 +1,6 @@
 {%- from "macros/translator.j2" import translator -%}
 <!DOCTYPE html>
-<html
-  {%- if alt %} lang="{{ alt }}"
-  {%- endif %}>
+<html {% if alt %}lang="{{ alt }}"{%- endif %}>
   <head>
     <title>
       {%- block title -%}
@@ -11,135 +9,26 @@
     </title>
     {% include "partials/head.html" -%}
     {%- block expand_description %}
-      <meta name="description" content="{{- translator('description', 'translate', this.alt) }}" />
+      <meta name="description" content="{{ translator('description', this.alt) }}" />
     {%- endblock %}
     {%- block expand_header %}
     {%- endblock %}
     <script src="{{ '/js/jquery.min.js'|asseturl }}"></script>
   </head>
 
-  <body class="
-    {%- if this._path == '/' -%}
-      landing 
-    {%- endif %} is-preload">
+  <body class="{% if this._path == '/' %}landing{% endif %} is-preload">
     <div id="page-wrapper">
       <!-- Header -->
       <header id="header">
-        <h1 id="logo">
-{% include "partials/spacestate.html" -%}
-        </h1>
-
-{#-
- # Navigation Bar
- #}
-        <nav id="nav">
-          <ul>
-            <li{% if this._path == '/' %} class="active"{% endif %}>
-              <a href="{{ '/'|url }}">
-                {{- translator('home', 'navigation', this.alt) -}}
-              </a>
-            </li>
-{%- for title, href in bag('nav-bar', "NavBar").items() %}
-            <li{% if this.is_child_of(href) %} class="active"{% endif %}>
-              <a href="{{ href|url }}">
-                {{- translator(title, 'navigation', this.alt) -}}
-              </a>
-              <ul>
-  {%- if bag('nav-bar', 'list', title) %}
-    {%- set root = site.get( bag('nav-bar', 'list', title), alt=this.alt) %}
-    {%- for child in root.children recursive %}
-      {%- if loop.index <= 7 %}
-                <li{% if this._path == child._path %} class="active"{% endif %}>
-                  <a href="{{ child|url }}">{{ child.shorttitle if child.shorttitle else child.title  }}</a>
-                </li>
-      {%- endif %}
-    {%- endfor %}
-  {%- endif %}
-  {%- if  bag('nav-bar', title) %}
-    {%- for nav_title, nav_url in bag('nav-bar', title).items() %}
-                <li>
-                  <a href={{ nav_url if 'http' in nav_url else nav_url|url }}
-      {%- if bag('nav-bar', 'button', nav_title) %} class="button nav"
-      {%- endif -%}
-                  >
-                    {{- translator(nav_title, 'navigation', this.alt) -}}
-                  </a>
-                </li>
-    {%- endfor %}
-  {%- endif %}
-              </ul>
-            </li>
-{%- endfor %}
-
-{#-
-  # the language selection is currently not included into the template above, because we did not find a proper solution to integrate them yet
-  #}
-             <li class="last">
-               <a href="{{ '.'|url(alt=translator('default_path', 'navigation', this.alt, 'en')) }}">
-               {{- translator('sprache', 'navigation', this.alt) -}}
-               </a>
-               <ul class="last">
-                 <li>
-                   <a href="{{ '.'|url(alt='') }}">
-                     {{- translator('German', 'navigation', this.alt) -}}
-                   </a>
-                 </li>
-                 <li>
-                   <a href="{{ '.'|url(alt='sxu') }}">
-                     {{- translator('Saechsisch', 'navigation', this.alt) }}
-                     <i>(
-                       {{- translator('falls', 'navigation', this.alt) -}}
-                     )</i>
-                   </a>
-                 </li>
-                 <li>
-                   <a href="{{ '.'|url(alt='en') }}">
-                     {{- translator('Englisch', 'navigation', this.alt) }}
-                     <i>(
-                       {{- translator('falls', 'navigation', this.alt) -}}
-                     )</i>
-                   </a>
-                 </li>
-               </ul>
-             </li>
-           </ul>
-         </nav>
+        {% include "partials/spacestate.html" -%}
+        {% include "partials/nav_bar.html" -%}
        </header>
       <!-- Main -->
       {%- block body %}
       {%- endblock %}
       <!-- Footer -->
       <footer id="footer">
-        <ul class="icons">
-{%- for label, icon, href in [
-  ['Twitter', 'fab fa-twitter', "https://twitter.com/toolboxbodensee"],
-  ['Mastodon', 'fab fa-mastodon', "https://chaos.social/@toolbox"],
-  ['Facebook', 'fab fa-facebook', "https://www.facebook.com/toolboxbodensee/"],
-  ['Instagram', 'fab fa-instagram', "https://www.instagram.com/toolbox_bodensee/"],
-  ['GitLab', 'fab fa-gitlab', "https://gitlab.com/ToolboxBodensee/"],
-  ['YouTube', 'fab fa-youtube', "https://www.youtube.com/channel/UCoTB8frSN0OT2mZl2IXSsDA/videos"],
-  ['Mail', 'fas fa-envelope', "mailto:kontakt@toolbox-bodensee.de"],
-  ['Telefon', 'fas fa-phone', "tel:+4975449667222"],
-  ['News', 'fas fa-rss', "https://toolbox-bodensee.de/feed_blog.xml"]
-] %}
-          <li><a href="{{ href }}" title="{{ label }}" target="_blank" rel="noopener" class="icon {{ icon }}"></a></li>
-{%- endfor %}
-        </ul>
-        <ul class="copyright">
-          <li>&copy;Copyright by Toolbox Bodensee e.V.</li>
-          <li>
-            <a href="{{ '/impressum/'|url }}">
-              {{- translator('Impressum', 'navigation', this.alt) -}}
-            </a>
-          </li>
-          <li>
-            <a href="{{ '/datenschutz/'|url }}">
-              {{- translator('Datenschutz', 'navigation', this.alt) -}}
-            </a>
-          </li>
-          <li>Design inspired by <a href="http://html5up.net">HTML5 UP</a> </li>
-          <!-- CMS: Lektor | Angepasst durch maxbachmann und L3D -->
-        </ul>
+        {% include "partials/footer.html" -%}
       </footer>
     </div>
     <!-- Scripts -->

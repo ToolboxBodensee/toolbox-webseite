@@ -18,17 +18,13 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-config" content="{{ '/images/icons/browserconfig.xml'|asseturl }}">
 <meta name="theme-color" content="#e64f2d">
-
-{%- if '/css/main.min.css'|asseturl == empty %}
-  <link rel="stylesheet" href="{{ '/css/font-awesome.min.css'|asseturl }}" />
-  <link rel="stylesheet" href="{{ '/fonts/roboto.css'|asseturl }}" />
-{%- endif %}
-  <link rel="stylesheet" href=
-{%- if '/css/main.min.css'|asseturl == empty -%}
-  "https://{{ bag('settings', 'generic', 'fqdn') }}/css/main.min.css"
-{%- else -%}
-  "{{ '/css/main.min.css'|asseturl }}"
-{%- endif %} />
+<link rel="stylesheet" href="{{ '/css/font-awesome.min.css'|asseturl }}" />
+<link rel="stylesheet" href="{{ '/fonts/roboto.css'|asseturl }}" />
+<link rel="stylesheet" href=
+  {%- if '/css/main.min.css'|asseturl == empty %} "https://{{ bag('settings', 'generic', 'fqdn') }}/css/main.min.css"
+  {%- else %} "{{ '/css/main.min.css'|asseturl }}"
+  {%- endif -%}
+/>
 <!--[if lte IE 9]><link rel="stylesheet" href=
   {%- if '/css/ie9.min.css'|asseturl == empty %}"https://{{ bag('settings', 'generic', 'fqdn') }}/css/ie9.min.css"
   {%- else %}"{{ '/css/ie9.min.css'|asseturl }}"

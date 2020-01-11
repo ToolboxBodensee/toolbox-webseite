@@ -1,0 +1,19 @@
+<ul class="icons">
+{%- for label, mapping in bag('social-media').items() %}
+  <li><a href="{{ mapping['href'] }}" title="{{ label }}" target="_blank" rel="noopener" class="icon {{ mapping['icon'] }}"></a></li>
+{%- endfor %}
+</ul>
+<ul class="copyright">
+  <li>&copy;Copyright by Toolbox Bodensee e.V.</li>
+  <li>
+    <a href="{{ '/impressum/'|url }}">
+      {{- translator('Impressum', this.alt) -}}
+    </a>
+  </li>
+  <li>
+    <a href="{{ '/datenschutz/'|url }}">
+      {{- translator('Datenschutz', this.alt) -}}
+    </a>
+  </li>
+  <li>Design inspired by <a href="http://html5up.net">HTML5 UP</a> </li>
+</ul>

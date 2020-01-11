@@ -11,7 +11,7 @@
     <h2>{{ post.title }}</h2>
   {%- endif %}
     <p class="meta">
-      {{- translator('blog_von', 'translate', post.alt) }}
+      {{- translator('blog_von', post.alt) }}
   {%- if post.twitter_handle %}
       <a href="https://chaos.social/@{{ post.twitter_handle}}">
         {{- post.author or post.twitter_handle -}}
@@ -20,7 +20,7 @@
         {{ ' ' }}{{ post.author }}
   {%- endif %}
   {%- if post.pub_date %} {{
-      translator('blog_am', 'translate', post.alt) }} {{
+      translator('blog_am', post.alt) }} {{
       post.pub_date.strftime('%d.%m.%Y') }}
   {%- endif %}
     </p>
@@ -41,7 +41,7 @@
   </section>
   {%- if from_index %}
     <a class="button smallfit" href="{{ post|url }}">
-    {{- translator('blog_weiter', 'translate', post.alt) -}}
+    {{- translator('blog_weiter', post.alt) -}}
     </a>
   <br/>
   {%- else %}
@@ -60,12 +60,12 @@
         {%- if blk.video_url %}
     {{ blk }} <br/>
   <a class="button" href="https://www.youtube.com/watch?v={{ blk.video_url }}{% if post.alt %}&gl={{ post.alt }}&hl={{ post.alt }}{% endif %}" target="_blank" rel="noopener">
-    {{- translator('directytlink', 'translate', post.alt) }}
+    {{- translator('directytlink', post.alt) }}
   </a>
         {%- endif %}
         {%- if blk.video %}
   <a class="button" href="{{ blk.video|url }}" download>
-    {{- translator('directlink', 'translate', post.alt) -}}
+    {{- translator('directlink', post.alt) -}}
   </a>
         {%- endif %}
   <br/><br/>

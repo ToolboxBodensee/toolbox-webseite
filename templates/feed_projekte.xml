@@ -4,7 +4,7 @@
 {%- set search = "projekte" %}
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">
-    {{- translator('projectfeed', 'translate', this.alt) -}}
+    {{- translator('projectfeed', this.alt) -}}
   </title>
   <id>{{ baseurl }}feed_projekte.xml</id>
   <updated>{{ none|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</updated>

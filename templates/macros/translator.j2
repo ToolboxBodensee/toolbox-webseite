@@ -3,11 +3,11 @@
    language -> language to translate to,
    fallback -> fallback language when translation is not available
 #}
-{%- macro translator(text, bag_name, language, fallback='de') %}
-  {%- if bag(bag_name, language, text) -%}
-    {{ bag(bag_name, language, text) }}
-  {%- elif bag(bag_name, fallback, text) -%}
-    {{ bag(bag_name, fallback, text) }}
+{%- macro translator(text, language, fallback='de') %}
+  {%- if bag('translate', language, text) -%}
+    {{ bag('translate', language, text) }}
+  {%- elif bag('translate', fallback, text) -%}
+    {{ bag('translate', fallback, text) }}
   {%- else -%}
     {{ text }}
   {%- endif %}

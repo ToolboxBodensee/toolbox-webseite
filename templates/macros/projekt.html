@@ -4,12 +4,12 @@
 <section class="4u 6u(medium) 12u(xsmall) project">
   <span class="icon alt major">
     <a href="{{ post|url }}" class="project-creator" title="
-    {{- translator('projekt_von', 'translate', post.alt) }} {{ post.author }}
+    {{- translator('projekt_von', post.alt) }} {{ post.author }}
     {%- if post.pub_date %} {{
-      translator('projekt_am', 'translate', post.alt) }} {{
+      translator('projekt_am', post.alt) }} {{
       post.pub_date.strftime('%d.%m.%Y') }}
     {%- endif %} {{
-      translator('projekt_start', 'translate', post.alt) -}}
+      translator('projekt_start', post.alt) -}}
       ">
       <i class="{{ post.icon }} fa-3x iconshiftdown"></i>
     </a>
@@ -25,12 +25,12 @@
     <header class="major">
       <h2>{{ post.title }}</h2>
       <p>
-        {{- translator('projekt_launch', 'translate', post.alt) }} {{ post.author }}
+        {{- translator('projekt_launch', post.alt) }} {{ post.author }}
     {%- if post.pub_date %} {{
-      translator('projekt_am', 'translate', post.alt) }} {{
+      translator('projekt_am', post.alt) }} {{
       post.pub_date.strftime('%d.%m.%Y') }}
     {%- endif %} {{
-      translator('projekt_start', 'translate', post.alt) -}}
+      translator('projekt_start', post.alt) -}}
       </p>
     </header>
     <section id="content">
@@ -40,12 +40,12 @@
         {%- if blk.video_url %}
       {{ blk }} <br/>
       <a class="button" href="https://www.youtube.com/watch?v={{ blk.video_url }}{% if post.alt %}&gl={{ post.alt }}&hl={{ post.alt }}{% endif %}" target="_blank" rel="noopener">
-          {{- translator('directytlink', 'translate', post.alt) -}}
+          {{- translator('directytlink', post.alt) -}}
       </a>
         {%- endif %}
         {%- if blk.video %}
       <a class="button" href="{{ blk.video|url }}" download>
-          {{- translator('directlink', 'translate', post.alt) -}}
+          {{- translator('directlink', post.alt) -}}
       </a>
         {%- endif %}
       <br/><br/>

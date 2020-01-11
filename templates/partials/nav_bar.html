@@ -1,0 +1,68 @@
+{%- from "macros/translator.j2" import translator -%}
+
+{#
+      Navigation Bar
+#}
+<nav id="nav">
+  <ul>
+{%- for title, mapping in bag('nav-bar').items() %}
+    <li {% if
+          this._path == mapping['href'] or
+          mapping['href'] != '/' and this.is_child_of(mapping['href'])
+        %}class="active"{% endif %}>
+      <a href="{{ mapping['href']|url }}">
+    {{- translator(title, this.alt) -}}
+      </a>
+      <ul>
+  {%- if mapping.get('list_childs') %}
+    {%- set root = site.get( mapping['href'], alt=this.alt) %}
+    {%- for child in root.children recursive %}
+      {%- if loop.index <= 7 %}
+        <li {% if this._path == child._path %}class="active"{% endif %}>
+          <a href="{{ child|url }}">{{ child.shorttitle if child.shorttitle else child.title  }}</a>
+        </li>
+      {%- endif %}
+    {%- endfor %}
+  {%- endif %}
+  {%- for nav_title, nav_url in mapping['items'].items() %}
+        <li>
+          <a href={{ nav_url if 'http' in nav_url else nav_url|url }}
+        {%- if nav_title in mapping.get('buttons', []) %} class="button nav"{% endif %}>
+            {{- translator(nav_title, this.alt) -}}
+          </a>
+        </li>
+  {%- endfor %}
+      </ul>
+    </li>
+{%- endfor %}
+   
+{#-
+ # the language selection is currently not included into the template above, because it behaves a bit different compared
+ # to the other drop downs
+ #}
+    <li class="last">
+      <a href="{{ '.'|url(alt=translator('default_path', this.alt, 'en')) }}">
+        {{- translator('sprache', this.alt) -}}
+      </a>
+      <ul class="last">
+        <li>
+          <a href="{{ '.'|url(alt='') }}">
+          {{- translator('german', this.alt) -}}
+          </a>
+      </li>
+      <li>
+        <a href="{{ '.'|url(alt='sxu') }}">
+          {{- translator('saechsisch', this.alt) }}
+        <i>({{- translator('falls', this.alt) -}})</i>
+        </a>
+      </li>
+      <li>
+        <a href="{{ '.'|url(alt='en') }}">
+          {{- translator('englisch', this.alt) }}
+          <i>({{- translator('falls', this.alt) -}})</i>
+        </a>
+      </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
