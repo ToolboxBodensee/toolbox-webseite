@@ -7,7 +7,7 @@ lektor:build:
   stage: build
   script:
   - pip install lektor
-  - lektor build -f jsminify -f scss --output-path build
+  - lektor build -f jsminify -f scsscompile --output-path build
   artifacts:
     paths:
       - build

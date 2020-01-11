@@ -2,16 +2,8 @@
 name = Toolbox Bodensee e.V.
 url = https://toolbox-bodensee.de/
 locale = de_DE
-excluded_assets = *.scss, *.js
-included_assets = .htaccess, *.min.js
-
-[servers.toolbox]
-name = toolbox
-url = https://toolbox-bodensee.de/
-url_style = absolute
-enabled = yes
-default = yes
-target = rsync://web16@toolbox-bodensee.de:/var/www/clients/client15/web16/web
+excluded_assets = *.js
+included_assets = .htaccess, *.min.js, _*.scss
 
 [alternatives.de]
 name = Deutsch
@@ -29,5 +21,5 @@ url_prefix = /sxu/
 locale = de
 
 [packages]
-lektor-scss = 1.3.5
+lektor-scsscompile = 1.3.0
 lektor-jsminify = 1.4.1
