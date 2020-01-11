@@ -11,9 +11,9 @@
     {%- block expand_description %}
       <meta name="description" content="{{ translator('description', this.alt) }}" />
     {%- endblock %}
+    <script src="{{ '/js/jquery.min.js'|asseturl }}"></script>
     {%- block expand_header %}
     {%- endblock %}
-    <script src="{{ '/js/jquery.min.js'|asseturl }}"></script>
   </head>
 
   <body class="{% if this._path == '/' %}landing{% endif %} is-preload">

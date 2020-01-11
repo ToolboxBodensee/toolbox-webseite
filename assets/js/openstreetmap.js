@@ -8,7 +8,7 @@ L.tileLayer("https://tiles.ffbsee.de:9090/{z}/{x}/{y}.png", {
 }).addTo(mymap);
 
 L.marker([47.71240915, 9.3995668]).addTo(mymap)
-    .bindPopup("<aside>Toolbox Bodensee e.V.<br /><a id='space-closed' class='special button'>Vereinsheim geschlossen!</a><a id='space-opened' class='special button space-opened'>Vereinsheim offen!</a></aside>").openPopup();
+    .bindPopup("<aside>Toolbox Bodensee e.V.<br /><a id='space-closed' class='special button space-closed'>Vereinsheim geschlossen!</a><a id='space-opened' class='special button space-opened'>Vereinsheim offen!</a></aside>").openPopup();
 L.polygon([
     [47.71242900, 9.39956546],
     [47.71231350, 9.39980686],

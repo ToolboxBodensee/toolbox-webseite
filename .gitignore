@@ -43,10 +43,9 @@ assets/css/main.css
 assets/css/ie9.min.css
 assets/css/ie9.css
 .sass-cache/
-assets/css/main.min.css.map
-assets/css/main.css.map
-assets/css/ie9.min.css.map
-assets/css/ie9.css.map
+assets/css/main.map
+assets/css/ie9.map
+assets/toolboxbodensee.json
 
 # python virtual enviroment
 venv/

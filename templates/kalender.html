@@ -1,25 +1,16 @@
 {%- extends "layout.html" %}
 {%- block title %}{{ this.title }}{% endblock %}
-{%- block body %}
+{% block expand_header %}
 <link rel="stylesheet" href="{{ '/css/fullcalendar.css'|asseturl }}">
 <script src="{{ '/js/moment.min.js'|asseturl }}"></script>
 <script src="{{ '/js/fullcalendar.min.js'|asseturl }}"></script>
 <script src="{{ '/js/ical.min.js'|asseturl }}"></script>
 <script src="{{ '/js/calendarview.min.js'|asseturl }}"></script>
 <script src="{{ '/js/de.min.js'|asseturl }}"></script>
-<script>
-$(document).ready(function() {
-  $('#calendar').fullCalendar({
-    height: 1000,
-    defaultView: 'month',
-    timezone: 'local',
-    weekends: true
-  });
-  $('#calendar').fullCalendar('addEventSource', ical_event_source('{{ this.ics_url }}', 'green', ''));
-  setInterval(() => $('#calendar').fullCalendar('refetchEvents'), 5 * 60 * 1000);
-  setInterval(() => $('#calendar').fullCalendar('gotoDate', moment()), 30 * 60 * 1000);
-});
-</script>
+<script src="{{ '/js/toolboxcalendar.min.js'|asseturl }}"></script>
+{%- endblock %}
+
+{%- block body %}
 <div id="main" class="wrapper style1">
   <div class="container">
     <header class="major">
