@@ -1,7 +1,7 @@
 {%- extends "layout.html" %}
 {%- from "macros/blog.html" import render_blog_post %}
 {%- if this.project %}
-{% block expand_header %}
+  {% block expand_header %}
 <link href="{{ '/css/lightgallery.css'|asseturl }}" rel="stylesheet">
     {%- if this.video_is_embedded %}
 <!-- Embed Video -->

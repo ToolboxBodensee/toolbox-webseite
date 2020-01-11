@@ -5,7 +5,7 @@ lektor:build:
   - pip install lektor
   - lektor build -f jsminify -f scsscompile --output-path build
   - cd build
-  - tar -czvf build.tar.gz ./*
+  - tar -cJvf build.tar.gz ./*
   - mv build.tar.gz ../build.tar.gz
   artifacts:
     paths:
@@ -23,7 +23,7 @@ deploy-to-stage:
   - ssh-add <(echo "$SERVER_SSH_PRIV_KEY")
   script:
   - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p build.tar.gz "$USERNAME@$DOMAIN:tmp"
-  - ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $USERNAME@$DOMAIN "mkdir -p webseite/staging-$CI_COMMIT_REF_NAME && tar -xzvf /tmp/build.tar.gz -C webseite/staging-$CI_COMMIT_REF_NAME"
+  - ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $USERNAME@$DOMAIN "mkdir -p webseite/staging-$CI_COMMIT_REF_NAME && tar -xJvf /tmp/build.tar.gz -C webseite/staging-$CI_COMMIT_REF_NAME"
   environment:
     name: review/$CI_COMMIT_REF_NAME
     url: https://toolbox-bodensee.de/staging-$CI_COMMIT_REF_NAME
@@ -44,7 +44,7 @@ deploy-to-prod:
   - ssh-add <(echo "$SERVER_SSH_PRIV_KEY")
   script:
   - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p build.tar.gz "$USERNAME@$DOMAIN:tmp"
-  - ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $USERNAME@$DOMAIN "tar -xzvf /tmp/build.tar.gz -C webseite"
+  - ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $USERNAME@$DOMAIN "tar -xJvf /tmp/build.tar.gz -C webseite"
   dependencies:
   - lektor:build
   only:
