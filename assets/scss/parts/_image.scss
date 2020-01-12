@@ -45,7 +45,7 @@
 
   &.fit {
     display: block;
-    margin: 0 0 _size(element-margin) 0;
+    margin: 0 0 _size(element-margin);
     width: 100%;
 
     img {
@@ -56,11 +56,17 @@
   &.mapid {
     height: 70vh;
   }
+
   &.lightgallery {
-    width: 33%;
+    width: auto;
     height: 200pt;
-    object-fit: cover;
-    
+    object-fit: contain;
+  }
+}
+
+.lightgallery {
+  a {
+    width: 33%;
     @include breakpoint(tablet) {
       width: 49%;
     }
