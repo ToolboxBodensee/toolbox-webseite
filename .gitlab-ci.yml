@@ -1,3 +1,13 @@
+stages:
+  - build
+  - deploy
+  - performance
+
+
+include:
+  template: Verify/Browser-Performance.gitlab-ci.yml
+
+
 lektor:build:
   stage: build
   image: python:latest
@@ -29,6 +39,8 @@ deploy-to-stage:
     url: https://toolbox-bodensee.de/staging-$CI_COMMIT_REF_NAME
   dependencies:
   - lektor:build
+  only:
+  - branches
   except:
   - master
 
@@ -51,3 +63,8 @@ deploy-to-prod:
   - master
 
 
+performance:
+  dependencies:
+    - deploy-to-stage
+  before_script:
+    - export URL=https://toolbox-bodensee.de/staging-$CI_COMMIT_REF_NAME
