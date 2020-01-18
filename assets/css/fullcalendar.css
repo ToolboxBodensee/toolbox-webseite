@@ -1172,3 +1172,43 @@ a.fc-more:hover {
 .fc-unthemed .fc-list-empty {
 	background-color: #eee
 }
+
+/* additional responsive stuff*/
+@media screen and (max-width: 480px) {
+	#calendar {
+		margin-bottom: 2em;
+	}
+
+	.fc-unthemed .fc-list-heading td {
+		background: unset;
+	}
+
+	.fc-list-table td {
+		border: none;
+		padding: unset;
+	}
+
+	.fc-event-dot {
+		display: none;
+	}
+
+	.fc-list-heading-main {
+		margin-left: 0.5em;
+	}
+
+	.fc-list-heading-alt {
+		margin-right: 0.5em;
+	}
+
+	.fc-list-item-time.fc-widget-content {
+		padding-left: 0.5em;
+	}
+
+	.fc-widget-header {
+		margin: unset;
+	}
+
+	.fc-unthemed .fc-list-item:hover td {
+		background-color: unset;
+	}
+}
