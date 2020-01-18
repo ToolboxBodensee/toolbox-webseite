@@ -13,7 +13,7 @@ Die Platine wurde mit [KiCad](kicad-pcb.org) designed, das Layout ist Open Sourc
 Gelötet wurden die Platinen im umgebauten Pizzaofen mit Temperatursteuerung in der Toolbox, was ohne Probleme funktioniert hat.
 Das Zusammenlöten der einzelnen Platinen zum Würfel war deutlich aufwändiger, und es musste eine kleine Halterung 3D-gedruckt werden, die den Würfel während dem Löten zusammenhält.
 ---
-pub_date: 2020-10-01
+pub_date: 2019-10-01
 ---
 video_is_embedded: no
 ---
