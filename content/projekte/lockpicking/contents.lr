@@ -1,0 +1,27 @@
+title: Lockpicking
+---
+author: haekelhexe
+---
+body:
+
+Angefixt auf der CPU 2019 und weiter getriggert auf dem 36c3 haben einige Mitglieder beschlossen, sich dem Lockpicking zu widmen. Schnell wurden entsprechende Übungssets mit Hooks, Tension Bars und Übungsschlössern  besorgt uns schon geht das fröhliche Setzen von Pins los. 
+
+Aber wie funktioniert das jetzt eigentlich genau? 
+Mit Hilfe speziell geformter Werkzeuge (Picks) dringt man in den Schlüsselkanal des Schlosskerns ein und drückt die darin enthaltenen Stifte (Pins) hinunter, wofür im Normalfall die Vertiefungen auf der gezackten Seite eines Schlüssels sorgen. Um den Kern des Schließzylinders zu drehen und damit die Verriegelungsmechanik des Türschlosses zu bewegen, also das Schloss zu öffnen, benutzt man beim Lockpicking einen sogenannten Spanner (Tension Bar). Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Lockpicking)
+
+Kaum hatte einer angefangen, schon waren andere interessiert und schon saßen im E-Lab Leute, starren in die Luft und versuchen, mit viel Fingerspitzengefühl die einzelnen Pins blind zu setzen. Zwar bieten die Übungsschlösser die Möglichkeit, auf die Pins zu schauen - entweder durch Aussparungen an der Seite oder durch Durchsichtigkeit des Schlosses an sich - aber eigentlich ist der Trick, das ganze blind zu schaffen. Denn in der Realität sind die Pins für den Lockpicker auch nicht sichtbar. Realativ gut geht das ganze noch mit normalen Pins, spannender wird das ganze mit Hantel- oder Kerbstiften, die in Sicherheitsschlössern verbaut sind und dem Lockpicker das Leben schwer machen wollen. Aber auch diese sind überwindbar - wenn auch mit etwas mehr Geduld.
+
+Eine weitere Möglichkeit ist das Raken: hierbei wird das Pickwerkzeug von vorn nach hinten und von hinten nach vorn über die Pinreihe geschoben bzw. gezogen um so die Pins in die gewünschte Position zu bringen. Durch das Raken wird eine Vibration, aber auch ein multiples Setzen erzeugt, durch die der Zylinder öffnet.
+---
+icon: fas fa-user-lock
+---
+pub_date: 2020-01-18
+---
+teaser:
+
+Dem Lockpickinglawyer auf der Spur - in der Toolbox wird jetzt auch probiert, diverse Schlösser mit Hilfe von Pick, Rake und Tension Bar aufzubekommen. Mit mehr oder weniger Erfolg. 
+---
+project:
+
+#### pro_img ####
+image: lockpicking_small.jpg
