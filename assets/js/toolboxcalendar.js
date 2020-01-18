@@ -1,10 +1,12 @@
 $(document).ready(function() {
   var currentView = 'month';
+  var calHeight = 1000;
   if ($(window).width() <= 480) {
     currentView = 'listWeek';
+    calHeight = 'auto';
   }
   $('#calendar').fullCalendar({
-    height: 1000,
+    height: calHeight,
     defaultView: currentView,
     timezone: 'local',
     weekends: true
