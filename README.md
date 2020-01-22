@@ -6,7 +6,7 @@ Webseite der Toolbox Bodensee e.V.
 [![Build Status](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/badges/master/pipeline.svg)](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/pipelines)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-**Entwicklung nur auf [GitLab](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite). Auf GitLab befindet sich lediglich ein Mirror**
+**Entwicklung nur auf [GitLab](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite). Auf GitHub befindet sich lediglich ein Mirror**
 
 Dies ist der Quellcode zur aktuellen Webseite des Maker- und Hackspace Toolbox Bodensee e.V., die unter [toolbox-bodensee.de](https://toolbox-bodensee.de/) erreichbar ist.
 
