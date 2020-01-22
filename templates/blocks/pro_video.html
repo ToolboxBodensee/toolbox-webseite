@@ -1,8 +1,21 @@
-<div class="fit">
-  <youtube-embed embed="{{ this.video_url }}"></youtube-embed>
-  <noscript>
-    <div class="youtube">
-      <iframe src='https://invidio.us/embed/{{ this.video_url }}?rel=0&quality=dash' frameborder='0' allow="autoplay; encrypted-media" allowfullscreen scrolling="no"></iframe>
-    </div>
-  </noscript>
+<div class="iframe-container">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/{{ this.video_url }}?rel=0&showinfo=0&autoplay=1&mute=1"
+    srcdoc="
+      <style>
+        *{padding:0;margin:0;overflow:hidden}
+        html,body{height:100%}
+        img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+        span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}
+      </style>
+      <a href=https://www.youtube-nocookie.com/embed/{{ this.video_url }}?autoplay=1>
+        <img src=https://i.ytimg.com/vi/{{ this.video_url }}/hqdefault.jpg alt='' aria-hidden='true'>
+        <span>▶</span>
+      </a>"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+    title=""
+    aria-hidden="true"
+  ></iframe>
 </div>
