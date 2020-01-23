@@ -2,10 +2,6 @@
 {%- from "macros/projekt.html" import render_blog_post %}
 {%- block expand_header %}
 <link href="{{ '/css/lightgallery.css'|asseturl }}" rel="stylesheet">
-  {%- if this.video_is_embedded %}
-<!-- Embed Video -->
-<link rel="import" href="{{ '/youtube-embed.html'|asseturl }}">
-  {%- endif %}
   {% if this.extra_header -%}
     {{ this.extra_header }}
   {%- endif %}
