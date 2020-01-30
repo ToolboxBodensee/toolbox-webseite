@@ -1,6 +1,7 @@
 LEKTOR_SERVER_FLAGS=-h 127.0.0.1
 # prettify html output, minify javascript assets, compile scss assets
 LEKTOR_PLUGIN_FLAGS=-f jsminify -f scsscompile
+PYTHON=python3
 
 all: build
 
@@ -21,17 +22,17 @@ install:
 
 
 build:
-	lektor clean --yes
-	lektor plugin flush-cache 
-	lektor build $(LEKTOR_PLUGIN_FLAGS)
+	PYTHON -m lektor clean --yes
+	PYTHON -m lektor plugin flush-cache 
+	PYTHON -m lektor build $(LEKTOR_PLUGIN_FLAGS)
 
 server:
-	lektor server $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_SERVER_FLAGS)
+	PYTHON -m lektor server $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_SERVER_FLAGS)
 	
 server-all:
-	lektor clean --yes
-	lektor plugin flush-cache
-	lektor server $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_SERVER_FLAGS)
+	PYTHON -m lektor clean --yes
+	PYTHON -m lektor plugin flush-cache
+	PYTHON -m lektor server $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_SERVER_FLAGS)
 
 ## Docker stuff
 IMAGE_TAG:=v1.2.0
