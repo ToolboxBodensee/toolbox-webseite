@@ -8,7 +8,7 @@ def convertToJson():
     for contentFile in contentPath.glob('**/*'):
         if contentFile.suffix != '.lr':
             continue
-        with open(contentFile, 'r') as content_file:
+        with open(contentFile, 'r', encoding="utf-8") as content_file:
             contents = content_file.read().split('\n---\n')
 
         results = {}
@@ -16,7 +16,7 @@ def convertToJson():
             contentTyp, text = content.split(':', maxsplit=1)
             results[contentTyp.strip()] = text
 
-        with open(contentFile.with_suffix('.json'), 'w') as tr_file:
+        with open(contentFile.with_suffix('.json'), 'w', encoding="utf-8") as tr_file:
             json.dump(results, tr_file, indent=2, ensure_ascii=False)
 
 def convertToLr():
@@ -26,7 +26,7 @@ def convertToLr():
         if contentFile.suffix != '.json':
             continue
 
-        with open(contentFile, 'r') as tr_file:
+        with open(contentFile, 'r', encoding="utf-8") as tr_file:
             translations = json.load(tr_file)
 
         translationList = []
@@ -35,7 +35,7 @@ def convertToLr():
 
         contents = '\n---\n'.join(translationList).rstrip() + '\n'
 
-        with open(contentFile.with_suffix('.lr'), 'w') as content_file:
+        with open(contentFile.with_suffix('.lr'), 'w', encoding="utf-8") as content_file:
             content_file.write(contents)
 
 

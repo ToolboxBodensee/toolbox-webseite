@@ -36,8 +36,7 @@ Lade den Downloader von [hier](https://github.com/git-lfs/git-lfs/releases) und 
 Weitere Informationen zur Installation von git-lfs gibt es auch hier: [git-lfs.github.com](https://git-lfs.github.com/)
 
 
-Installation
----------------------------------
+## Installation
 
 Zur Erleichterung der Installation beinhaltet das Projekt eine Makefile. Diese erlaubt es ``Abhängigkeiten zu installieren``(z.B. nodejs), sowie die Webseite mit einem ``Python Module`` oder in einem ``Docker Container`` zu bauen.
 
@@ -56,9 +55,22 @@ make install
 make server
 ```
 
+## Nutzung mit Translation Memory Systemen (TMS)
+Da TMS Systeme Lektor Content Dateien nicht unterstützen müssen diese in ein json Format konvertiert und nach der Übersetzung wieder zurück konvertiert werden. Diese Konvertierung wird durch das Skript `translation.py` vorgenommen und kann folgendermaßen genutzt werden:
+```bash
+# Wechsel in den zugehörigen Ordner
+cd toolbox-webseite
 
-Nähere Informationen
----------------------------------
+# Konvertieren in Json Format
+python translation.py --json
+
+# Übersetzen der Dateien in TMS (übersetzte Dateien müssen dem Schema conents+<language_code>.json folgen)
+
+# Rückkonvertierung zu Lektor Content Dateien
+python translation.py --lr
+```
+
+## Nähere Informationen
 | **[Grundlagen](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/-/wikis/Grundlagen)**     | **[Installation](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/-/wikis/Installation)**     | **[Beitragen](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/-/wikis/Contribution)**           |
 |-------------------------------------|-------------------------------|-----------------------------------|
 | [![Grundlagen](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/-/wikis/images/tech-docs.png)](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/-/wikis/Grundlagen) | [![Install](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/-/wikis/images/install.png)](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/-/wikis/Installation) | [![Beitragen](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/-/wikis/images/edit.png)](https://gitlab.com/ToolboxBodensee/webseite/toolbox-webseite/-/wikis/Beitragen) |
