@@ -60,3 +60,6 @@ packages/*/build
 packages/*/*.pyc
 packages/*/*.pyo
 packages/*/*.egg-info
+
+# ignore translation files
+content/**/*.json
