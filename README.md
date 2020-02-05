@@ -64,7 +64,7 @@ cd toolbox-webseite
 # Konvertieren in Json Format
 python translation.py --json
 
-# Übersetzen der Dateien in TMS (übersetzte Dateien müssen dem Schema conents+<language_code>.json folgen)
+# Übersetzen der Dateien in TMS (übersetzte Dateien müssen dem Schema contents+<language_code>.json folgen)
 
 # Rückkonvertierung zu Lektor Content Dateien
 python translation.py --lr
