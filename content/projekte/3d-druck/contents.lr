@@ -35,6 +35,19 @@ Trotzdem hatten wir nach einiger Zeit viele Probleme mit dem Hotend und dem Extr
   </a>
 </div>
 
+## Prusa i3
+
+Dank finanzieller Unterstützung diverser Sponsoren, worunter auch Prusa selbst zählt, ist die Toolbox in den Besitz eines Pusa i3 gekommen. Dank einer Vielzahl verschiedener Sensoren und einem magnetischen MK52 Heizbett mit austauschbarem PEI-Federstahldruckblech war 3D Druck noch nie so einfach! Durch den mitgelieferten Prusa-Slicer mit voreingestellten Werten können auch Anfänger in den Genuss 3D gedruckter Objekte kommen und mit diversen Filamentarten ihrer Kreativität freien Lauf lassen.
+
+Darüber hinaus ist der 3D-Drucker auf den Einsatz zum Multicolor-Druck gerüstet, indem er für den optional erhältlichen Multicolor-Druckaufsatz vorbereitet wurde, den die Toolbox demnächst erwerben möchte. 
+
+<div class="lightgallery">
+  <a href="./Prusa_Bild.jpg">
+    <img src="Prusa_Bild@360x360.jpg">
+  </a>
+</div>
+
+
 ## 2PrintBeta Prusa i2
 
 Work in progress...
@@ -55,3 +68,5 @@ project:
 image: replicator_hot_1.jpg
 #### pro_img ####
 image: replicator_hot_2.jpg
+#### pro_img ####
+image: Prusa_Bild.jpg
