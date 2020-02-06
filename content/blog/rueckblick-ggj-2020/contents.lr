@@ -18,7 +18,7 @@ Einige Game Jams geben ein Motto vor, welches eine Art Aufhänger darstellt, um 
 Der Global Game Jam in der Toolbox
 -----------------------------------------------------------
 
-Es gibt viele verschiedene Game Jams, manche finden sogar nur online statt, manche nur an einem bestimmten lokalen Ort, manche nur für bestimmte Themen oder Technologien (z.B. bestimmte Programmiersprachen) oder sonstige Konzepte. Der Global Game Jam findet, wie der Name schon sagt, weltweit statt, und erfordert zur Teilnahme sog. "Jam Sites", also Austragungsstätten, in welchen sich die Teilnehmer aus der Umgebung zusammenfinden. Dies sind in einigen Fällen Hochschulen, Firmen oder sonstige Institutionen, die sich mit der Thematik identifizieren können. Die Toolbox war dieses Jahr auch eine dieser Jam Sites, und so fanden sich **22 Teilnehmer** ein, um gemeinsam Spiele zu entwickeln, darunter neben Toolbox- oder [Spieleentwicklung Bodensee](https://www.spieleentwicklung-bodensee.de)-Mitgliedern auch einige neue Gesichter.
+Es gibt viele verschiedene Game Jams, manche finden sogar nur online statt, manche nur an einem bestimmten lokalen Ort, manche nur für bestimmte Themen oder Technologien (z.B. bestimmte Programmiersprachen) oder sonstige Konzepte. Der Global Game Jam findet, wie der Name schon sagt, weltweit statt, und erfordert zur Teilnahme sog. "Jam Sites", also Austragungsstätten, in welchen sich die Teilnehmer aus der Umgebung zusammenfinden. Dies sind in einigen Fällen Hochschulen, Firmen oder sonstige Institutionen, die sich mit der Thematik identifizieren können. Die Toolbox war dieses Jahr auch eine dieser Jam Sites, und so fanden sich **22 Teilnehmer** ein (von weltweit 48.700 [[Quelle]](https://globalgamejam.org/news/tools-down-ggj2020-roundup)), um gemeinsam Spiele zu entwickeln, darunter neben Toolbox- oder [Spieleentwicklung Bodensee](https://www.spieleentwicklung-bodensee.de)-Mitgliedern auch einige neue Gesichter.
 
 Zu Beginn des Jams (17 Uhr) wurde die [offizielle Keynote](https://www.youtube.com/watch?v=8sdcq7CbPsc) gezeigt, welche nach einigen einführenden Worten endlich das diesjährige Motto "Repair" offenbarte und somit die **Ideenfindungs- und Teambildungs-Phase** einleitete. Hierbei gab es natürlich unterschiedliche Ansätze, ein Teilnehmer entschied sich dazu, eine Liste von allen möglichen Begriffen, die man "reparieren" kann, auf dem Beamer für alle einzublenden und auf Zuruf zu ergänzen. Manche Teilnehmer zogen sich auch in andere Räumlichkeiten der Toolbox zurück (z.B. Lounge, Tonstudio, Küche oder auch draussen vor der Tür), um ihren Gedanken freien Lauf zu lassen. Nach etwas mehr als einer Stunde standen dann die Ideen und Teams soweit fest, und die Arbeit an den Spielen konnte beginnen.
 
@@ -38,6 +38,8 @@ Alle Spiele, die beim Global Game Jam entstehen, sind auf der offiziellen Websit
 
 Die Projekte der Toolbox-Teilnehmer sind unter dem folgenden Link zu finden:
 https://globalgamejam.org/2020/jam-sites/toolbox-bodensee
+
+Eines der Teams, bestehend aus 2 Personen, nutzte die Veranstaltung als Gelegenheit, die Grundlagen der Spieleprogrammierung in Form eines kleinen Tutoriums zu erlernen - auch hierfür eignet sich ein Game Jam. Das hierbei entstandene Projekt ist auf GitHub zu finden: https://github.com/SpieleentwicklungBodensee/dude
 
 ---
 body: Vom 31. Januar bis 2. Februar fand der Global Game Jam 2020 statt. Die Toolbox stand zum ersten Mal als "Jam Site" zur Verfügung und bot rund 20 Teilnehmern die Gelegenheit, mitzumachen.
