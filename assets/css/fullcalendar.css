@@ -1018,6 +1018,10 @@ a.fc-more:hover {
 	padding: 0
 }
 
+.fc-title {
+	white-space: normal;
+}
+
 .fc-time-grid-event.fc-allow-mouse-resize .fc-resizer {
 	left: 0;
 	right: 0;
