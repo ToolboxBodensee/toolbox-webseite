@@ -12,9 +12,9 @@
   {%- endif %}
     <p class="meta">
       {{- translator('blog_von', post.alt) }}
-  {%- if post.twitter_handle %}
-      <a href="https://chaos.social/@{{ post.twitter_handle}}">
-        {{- post.author or post.twitter_handle -}}
+  {%- if post.author_url %}
+      <a href="{{ post.author_url}}">
+        {{- post.author or post.author_url -}}
       </a>
   {%- else -%}
         {{ ' ' }}{{ post.author }}
