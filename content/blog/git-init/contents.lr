@@ -8,7 +8,7 @@ pub_date: 2019-04-14
 ---
 shorttitle: How 2 git
 ---
-twitter_handle: L3D
+author_url: https://chaos.social/@L3D
 ---
 xml: Jonas und L3D geben am kommenden Donnerstag (18.4.19) eine einführung in git.
 ---
@@ -37,7 +37,7 @@ Die Aufzeichnung des Vortrages findet ihr auf [YouTube](https://www.youtube.com/
 video_embedded:
 
 #### pro_video ####
-video: 
+video:
 ----
 video_url: LKrX4pXWt4I
 ---

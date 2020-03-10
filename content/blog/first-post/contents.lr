@@ -6,11 +6,11 @@ author: L3D
 ---
 body:
 
-Die alte Webseite der Toolbox Bodensee e.V. war ein Wordpress, das leider aus großen Teilen des Internets (überall, wo IPv6 gesprochen wird) nicht erreichbar ist.  
+Die alte Webseite der Toolbox Bodensee e.V. war ein Wordpress, das leider aus großen Teilen des Internets (überall, wo IPv6 gesprochen wird) nicht erreichbar ist.
 Leider hat sich in der Toolbox niemand gefunden, der bereit ist Wordpress zu betreuen und die Webseite nicht nur auf den aktuellsten Stand der Sicherheitspatches für Wordpress zu halten, sondern auch unstimmigkeiten am Design der Webseite zu beheben, Fehler zu debuggen und Menschen zu motivieren, neue Inhalte zu verfassen.
 
 ---
-twitter_handle: L3D
+author_url: https://chaos.social/@L3D
 ---
 beitrag:
 
