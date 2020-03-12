@@ -7,8 +7,17 @@ L.tileLayer("https://tiles.ffbsee.de:9090/{z}/{x}/{y}.png", {
     id: "mapbox.streets"
 }).addTo(mymap);
 
+var clubHousePopupHtml = $("<aside>Toolbox Bodensee e.V.<br /></aside>");
+$('h1#logo div.tooltip a').each(function () {
+    let button = $(this).clone().removeClass('navbar').removeAttr('id');
+    clubHousePopupHtml.append(button);
+});
+
 L.marker([47.71240915, 9.3995668]).addTo(mymap)
-    .bindPopup("<aside>Toolbox Bodensee e.V.<br /><a id='space-closed' class='special button space-closed'>Vereinsheim geschlossen!</a><a id='space-opened' class='special button space-opened'>Vereinsheim offen!</a></aside>").openPopup();
+    .bindPopup(clubHousePopupHtml.html()).openPopup().on('popupopen', function () {
+    loadSpaceStatus();
+});
+
 L.polygon([
     [47.71242900, 9.39956546],
     [47.71231350, 9.39980686],
