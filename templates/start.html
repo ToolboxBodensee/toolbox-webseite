@@ -2,12 +2,19 @@
 {%- block title %}{{ this.title }}{% endblock %}
 {%- block body %}
 <!-- Banner -->
+<section id="warning">
+  <i class="fas fa-exclamation-triangle fa-2x iconshiftdown"></i>
+  <p>
+    {{ this.warning }}
+  </p>
+</section>
+
+
 <section id="banner">
   <div class="content">
     <header>
       <h2>{{ this.title }}</h2>
       <p>{{ this.slogan }}</p>
-      <p>{{ this.hinweis }} {% if this.hinweis_txt %}<a href="{% if this.hinweis_url %}{{this.hinweis_url }}{% else %}#four{% endif %}">{{ this.hinweis_txt }}</a>{% endif %}</p>
     </header>
     <span class="image">
       <img src="{{ '/images/logo.svg'|asseturl }}" alt="" />

@@ -19,3 +19,38 @@
     margin: 0 auto;
   }
 }
+
+#warning {
+  margin-top: 70px;
+  display: flex;
+  padding: 0.5em 1em;
+  background-color: #E64F2D;
+  justify-content: center;
+  align-items: center;
+  
+  i {
+    margin-right: 0.5em;
+    color: #fff;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+
+    strong {
+      font-weight: 500;
+    }
+    
+    a {
+      color: #fff;
+      font-weight: 400;
+      
+      &:hover {
+        cursor: pointer;
+        color: #fff !important;
+        text-decoration: underline;
+      }
+    }
+  }
+}
