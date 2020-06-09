@@ -1,0 +1,82 @@
+title: Solawi-Schilder
+---
+author: Daniel Hirscher
+---
+body:
+
+Auf dem Gemüseacker der [Solawi-Bodensee](https://solawi-bodensee.de) gibt es&nbsp;&ndash; neben dem Gemüse&nbsp;&ndash; beispielsweise Gewächshäuser, Insektenweiden, Hügel-, Schlüsselloch- und Indianerbeete, Unterschlupf für verschiedene Tiere, Regenwasserzisternen, Jauchen, einen großen Kräutergarten und vieles mehr. Um diese Dinge zu erklären, wurden Holzschilder angefertigt.
+
+Es wurden 16 große und 17 kleine Schilder mit unserer Colinbus-Fräse gefräst. Der Text ist eine Linienschrift, die mit der Dicke eines 1/8" Fräsers 2&nbsp;mm tief relativ schnell gefräst werden kann.
+
+Die vorbereiteten Texte wurden in jeweils eine Textdatei pro Schild aufgeteilt. Dabei ist die erste Zeile die Überschrift, gefolgt von bis zu 7 Zeilen Erklärungstext. Danach wurden mit [Inkscape](https://inkscape.org) und dem Plug-In [Hershey Text](https://www.evilmadscientist.com/2019/hershey-text-v30/) per Bash-Skript SVG-Dateien erzeugt. Diese wurden mit [Easel](https://www.inventables.com/technologies/easel) geladen und in NC-Dateien (G-Code) umgewandelt, welche mit [bCNC](https://github.com/vlachoudis/bCNC) gefräst wurden.
+
+#### Herausforderungen
+- Dateinamen dürfen weder Umlaute, noch Leerzeichen enthalten
+- Easel kann keine SVGs laden, die Gruppierungen enthalten
+- Holz ist nicht perfekt eben
+
+####  Beispiel für Textdatei
+```
+Permakultur
+Eine Landwirtschaft, die
+natürliche Ökosysteme
+nachempfindet. Durch
+verschiedene Strukturen
+werden hier für jede Pflanze
+möglichst ideale Bedingungen
+zum Wachsen geschaffen.
+```
+
+####  Generierungsskript
+Das Skript benötigt eine SVG-Datei als Template, in dem die X-Positionen der Texte definiert sind und der Text für die Überschrift die ID `textHeading`hat. Zusätzlich wird noch ein Vorschaubild erzeugt.
+Das Skript und die SVG-Templates befinden sich auf GitLab unter [solawi-schilder](https://gitlab.com/hackerdan/solawi-schilder).
+
+####  Einstellungen in Easel
+- Arbeitsfläche: Birch Plywood (passt trotzdem für das verwendete Holz), 135x380x12,7&nbsp;mm
+- Werkzeug: End Mills > Straight cut > 1/2 in Double Flute Straight End Mill
+- Cut settings: Depth per pass: 1&nbsp;mm, den Rest so lassen, wie vorgeschlagen
+
+####  G-Code erstellen in Easel
+1. SVG-Importieren
+2. Auf 2&nbsp;mm Tiefe setzen
+3. Machine > Advanced Settings
+4. Generate g-code
+5. Export g-code
+6. Datei im Dateisystem umbenennen
+
+####  Ablauf in bCNC
+`python -m bCNC`
+
+##### Datei
+1. Serielle Schnittstelle > Öffnen
+1. Datei > Öffnen
+
+##### Steuerung
+1. Referenzfahrt
+1. X und Y jeweils 1 Schritt vom Home wegfahren (rechts und oben), die Endschalter aktivieren sich sonst manchmal
+1. Holz einspannen
+1. etwa 5&nbsp;mm Rand von links und vorne einhalten, denn der G-Code ist ohne Rand generiert um die gesamte Fläche nutzen zu können
+1. Y runterfahren bis zum Holz und mit einem Blatt Papier prüfen, wann der Fräser direkt über dem Holz ist
+1. Nullstellen: XYZ=0
+1. ein paar Millimeter hoch fahren
+1. Spindel auf 7500 (in bCNC auf 5000) Umdrehungen einstellen
+1. Staubsauger anschließen und einschalten
+1. Spindel einschalten
+1. Run > Start
+---
+icon: fas fa-sign
+---
+pub_date: 2019-12-01
+---
+teaser: Holzschilder zur Beschriftung des Gemüseackers der Solawi-Bodensee.
+---
+project:
+
+#### pro_img ####
+image: Fraese1.jpg
+#### pro_img ####
+image: Fraese2.jpg
+#### pro_img ####
+image: Acker1.jpg
+#### pro_img ####
+image: Acker2.jpg
