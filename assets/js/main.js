@@ -6,31 +6,27 @@
 */
 
 function loadSpaceStatus() {
-  $('.space-opened').hide();
-  $('.space-closed').css("display", "block");
-  $('.space-unknown').hide();
-
-  // $.getJSON("/toolboxbodensee.json")
-  //  .done(function(data) {
-  //   if (data.state.open === true) {
-  //      $('.space-opened').css("display", "block");
-  //      $('.space-closed').hide();
-  //      $('.space-unknown').hide();
-  //    } else if (data.state.open === false) {
-  //      $('.space-opened').hide();
-  //      $('.space-closed').css("display", "block");
-  //      $('.space-unknown').hide();
-  //    } else {
-  //      $('.space-opened').hide();
-  //      $('.space-closed').hide();
-  //      $('.space-unknown').css("display", "block");
-  //    }
-  //  })
-  //  .fail(function(xhr, status, error) {
-  //    $('.space-opened').hide();
-  //    $('.space-closed').hide();
-  //    $('.space-unknown').css("display", "block");
-  //  });
+  $.getJSON("/toolboxbodensee.json")
+   .done(function(data) {
+    if (data.state.open === true) {
+       $('.space-opened').css("display", "block");
+       $('.space-closed').hide();
+       $('.space-unknown').hide();
+     } else if (data.state.open === false) {
+       $('.space-opened').hide();
+       $('.space-closed').css("display", "block");
+       $('.space-unknown').hide();
+     } else {
+       $('.space-opened').hide();
+       $('.space-closed').hide();
+       $('.space-unknown').css("display", "block");
+     }
+   })
+   .fail(function(xhr, status, error) {
+     $('.space-opened').hide();
+     $('.space-closed').hide();
+     $('.space-unknown').css("display", "block");
+   });
 }
 
 function initSpaceStatus() {
