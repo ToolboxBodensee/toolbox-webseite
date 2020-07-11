@@ -2,64 +2,64 @@ author: Daniel Hirscher
 ---
 body:
 
-On the vegetable fields of [Solawi-Bodensee](https://solawi-bodensee.de) there are &nbsp;&ndash; vergetables&nbsp;&ndash; also  greenhouses, insect willows, Hügelkulturs,  key and Indian beds, shelter for different animals,  für verschiedene Tiere, rain water cisterns, manures, a huge herb garden and much more. In order to explain all of these things, we created wooden signs. 
+On the vegetable fields of [Solawi-Bodensee](https://solawi-bodensee.de) there are &nbsp;&ndash; besides vegetables&nbsp;&ndash; also  greenhouses, insect willows, Hügelkulturs,  key and Indian beds, shelter for different animals, rain water cisterns, manures, a huge herb garden and much more. In order to explain all of these things, we created wooden signs. 
 
-Es wurden 16 große und 17 kleine Schilder mit unserer Colinbus-Fräse gefräst. Der Text ist eine Linienschrift, die mit der Dicke eines 1/8" Fräsers 2&nbsp;mm tief relativ schnell gefräst werden kann.
+16 large and 17 small signs were milled with our Colinbus milling machine. The text is a line printing that can be milled with a 1/8" milling cutter and a depth of 2 mm in a relatively short time.
 
-Die vorbereiteten Texte wurden in jeweils eine Textdatei pro Schild aufgeteilt. Dabei ist die erste Zeile die Überschrift, gefolgt von bis zu 7 Zeilen Erklärungstext. Danach wurden mit [Inkscape](https://inkscape.org) und dem Plug-In [Hershey Text](https://www.evilmadscientist.com/2019/hershey-text-v30/) per Bash-Skript SVG-Dateien erzeugt. Diese wurden mit [Easel](https://www.inventables.com/technologies/easel) geladen und in NC-Dateien (G-Code) umgewandelt, welche mit [bCNC](https://github.com/vlachoudis/bCNC) gefräst wurden.
+The prepared texts were separated into individual text files per sign where the first line is a header followed by 7 lines of explanatory text. Afterwards, we created SVG files with [Inkscape](https://inkscape.org) and the [Hershey Text](https://www.evilmadscientist.com/2019/hershey-text-v30/) plug-in via bash script. These were loaded with [Easel](https://www.inventables.com/technologies/easel) and converted into NC files (g-code) which were then milled with [bCNC](https://github.com/vlachoudis/bCNC).
 
-#### Herausforderungen
-- Dateinamen dürfen weder Umlaute, noch Leerzeichen enthalten
-- Easel kann keine SVGs laden, die Gruppierungen enthalten
-- Holz ist nicht perfekt eben
+#### Challenges
+- File names must not contain umlauts or spaces
+- Easel cannot load SVG files that contain groups
+- Wood is not perfectly even
 
-####  Beispiel für Textdatei
+####  Example for a text file
 ```
-Permakultur
-Eine Landwirtschaft, die
-natürliche Ökosysteme
-nachempfindet. Durch
-verschiedene Strukturen
-werden hier für jede Pflanze
-möglichst ideale Bedingungen
-zum Wachsen geschaffen.
+Permaculture
+An economy that
+recreates natural ecosystems.
+By using different
+structures, we try to make
+the conditions as ideal as
+possible for their growth 
+and development.
 ```
 
-####  Generierungsskript
-Das Skript benötigt eine SVG-Datei als Template, in dem die X-Positionen der Texte definiert sind und der Text für die Überschrift die ID `textHeading`hat. Zusätzlich wird noch ein Vorschaubild erzeugt.
-Das Skript und die SVG-Templates befinden sich auf GitLab unter [solawi-schilder](https://gitlab.com/hackerdan/solawi-schilder).
+####  Generating script
+The script needs an SVG file as template in which the x-positions of the texts are defined and the header text has the ID `textHeading`. In addition, a thumbnail is created.
+The script and the SVG templates can be found in Gitlab under [Solawi Signs - German](https://gitlab.com/hackerdan/solawi-schilder).
 
-####  Einstellungen in Easel
-- Arbeitsfläche: Birch Plywood (passt trotzdem für das verwendete Holz), 135x380x12,7&nbsp;mm
-- Werkzeug: End Mills > Straight cut > 1/2 in Double Flute Straight End Mill
-- Cut settings: Depth per pass: 1&nbsp;mm, den Rest so lassen, wie vorgeschlagen
+####  Settings in Easel
+- Work surface: Birch Plywood (still works for the wood used), 135x380x12,7&nbsp;mm
+- Tool: End Mills > Straight cut > 1/2 in Double Flute Straight End Mill
+- Cut settings: Depth per pass: 1&nbsp;mm, keep the other setting as recommended
 
-####  G-Code erstellen in Easel
-1. SVG-Importieren
-2. Auf 2&nbsp;mm Tiefe setzen
+####  Create g-code in Easel
+1. Import SVG
+2. Set to 2&nbsp;mm depth
 3. Machine > Advanced Settings
 4. Generate g-code
 5. Export g-code
-6. Datei im Dateisystem umbenennen
+6. Rename file in file system
 
-####  Ablauf in bCNC
+####  Process in bCNC
 `python -m bCNC`
 
-##### Datei
-1. Serielle Schnittstelle > Öffnen
-1. Datei > Öffnen
+##### File
+1. Serial interface > Open
+1. File > Open
 
-##### Steuerung
-1. Referenzfahrt
-1. X und Y jeweils 1 Schritt vom Home wegfahren (rechts und oben), die Endschalter aktivieren sich sonst manchmal
-1. Holz einspannen
-1. etwa 5&nbsp;mm Rand von links und vorne einhalten, denn der G-Code ist ohne Rand generiert um die gesamte Fläche nutzen zu können
-1. Y runterfahren bis zum Holz und mit einem Blatt Papier prüfen, wann der Fräser direkt über dem Holz ist
-1. Nullstellen: XYZ=0
-1. ein paar Millimeter hoch fahren
-1. Spindel auf 7500 (in bCNC auf 5000) Umdrehungen einstellen
-1. Staubsauger anschließen und einschalten
-1. Spindel einschalten
+##### Control
+1. Reference run
+1. Move both X and Y 1 step away from home position (right and top), otherwise the limit switches will be activated again
+1. Clamp in wood
+1. Keep 5&nbsp;mm distance from left and front edge as the g-code is generated without margin in order to use the whole area 
+1. Move Y down to the wood and check with a piece of paper when the milling cutter is positioned directly above the wood
+1. Root: XYZ=0
+1. Move a few millimeters upwards
+1. Sept spindle to 7500 (in bCNC to 5000) rotations
+1. Connect vacuum cleaner and turn it on
+1. Turn on spindle
 1. Run > Start
 ---
 icon: fas fa-sign
