@@ -1,0 +1,74 @@
+author: zeha
+---
+beitrag:
+
+What is that Game Jam thingy?
+-----------------------------------------------------------
+
+Some of you might know the "Jam Session"  where musicians come together to spontaneously make music and improvise (such as during our [Synthesizer-Meetups](/en/blog/rueckblick-synth-meetup-4)). A Game Jam is very similar to that with the only difference that is is not about music but game development. It takes place within a limited time frame; in the case of the Global Game Jam that meant **48 hours**.
+
+Now, some of you might wonder how you can create a whole game within such a limited time. Well, the trick is to concentrate on the essentials, leave unnecessary stuff out, choose the shortest way and - just as in a music Jam Session - to improvise. Therefore, the Game Jam is an excellent opportunity to **try out new ideas, create prototypes, test game mechanics** but also to dive deep into a topic that you are not familiar with yet or for which you didn't have time in the past.
+
+The demand of creating a completely finished game was therefore not as mandatory, however it is absolutely possible to finish a project that you started during the Game Jam at a later point in time or to use it as the basis for another project.
+
+Some Game Jams provide a motto which forms a kind of starter to find a suitable idea. The **motto** of the 2020 Global Game Jams was **"Repair"**.
+
+The Global Game Jam at the Toolbox
+-----------------------------------------------------------
+
+There are different Game Jams, some only take place online, some only at a specific location, some only for certain topics of technologies (e.g. specific programming languages) or other concepts. The Global Game Jam, as the name already announces, is a global event and therefore requires so-called  "Jam Sites", i.e. locations where participants from one region can come together. These might be universities , companies or other institutions that can identify with the topic. This year, the Toolbox also was one of those Jam Sites and so  **22 participants** (of 48 700 participants globally [[Source]](https://globalgamejam.org/news/tools-down-ggj2020-roundup)) came here to develop games together - including members of Toolbox or [Spieleentwicklung Bodensee](https://www.spieleentwicklung-bodensee.de) but also some new people.
+
+At the beginning of the jams (5.00 p.m.) the [official key note](https://www.youtube.com/watch?v=8sdcq7CbPsc) was shown that gave a short introductions as well as this year's motto "Repair", thus starting the **Phase of finding an idea and building teams**. This lead to different approaches: One participant decided to display a list of different objects that can be "repaired" at the projector, offering the others the opportunity to supplement the list. Some participants went to other Toolbox rooms (such as the lounge, music studio, kitchen or even went outdoors) in order to give their thoughts room for creativity. After a little more than an hour the ideas and teams were basically set and the started working on their games.
+
+Even if you would normally first think of digital games, i.e. computer and video games, some Game Jams also "allow for" or even request **Board or Card Games**. This was also the case for the Global Game Jam and in the end there were two of those "analog" or even "offline" games created in the Toolbox.
+
+Creativity and Teamwork
+-----------------------------------------------------------
+
+No matter if digital or analog, there as one thing equal for all games: The fun of creative team work was clearly present. It was a pleasant working atmosphere ans a lot of motivation to drive the projects. Here and there, the work was paused to find something to eat at a local fast food restaurant or to go grocery shopping.
+
+An essential advantage of the participation in a Game Jam is that **different talents** come together. You easily might see such an event as "programmer meeting", however there are also graphic designers and musicians etc. amongst the participants. Sometimes the teams support each other if help is needed somewhere else. As the Global Game Jam is not a competition, there is no competitiveness but mutual support.
+
+The Results
+-----------------------------------------------------------
+
+All games that were created during Global Game Jam are available on the official  Global Game Jam Website and can be downloaded with the source code (consider the enclosed license).
+
+The projects of the Toolbox participants can be found here:
+https://globalgamejam.org/2020/jam-sites/toolbox-bodensee
+
+One of the teams, consisting of 2 people, used the event to learn the basics of game programming with a short tutorial - this is also possible during a Game Jam. The project created can be found on GitHub: https://github.com/SpieleentwicklungBodensee/dude
+
+---
+body: From January 31st to February 2nd, the Global Game Jam 2020 took place. For the first time, the Toolbox was available as "Jam Site" offering about 20 participants a location.
+---
+project:
+
+#### pro_img ####
+image: projects.jpg
+#### pro_img ####
+image: bananen.jpg
+#### pro_img ####
+image: gegessene-bananen.jpg
+#### pro_img ####
+image: hhh-team.jpg
+#### pro_img ####
+image: brueckenbauer.jpg
+#### pro_img ####
+image: dragon.png
+#### pro_img ####
+image: castle_repair.png
+#### pro_img ####
+image: hhh-screenshot2.png
+#### pro_img ####
+image: kartenspiel.png
+#### pro_img ####
+image: defythekraken.png
+#### pro_img ####
+image: randombrokendevices.png
+---
+pub_date: 2020-02-04
+---
+shorttitle: GGJ 2020 Review
+---
+title: Global Game Jam 2020 Review
