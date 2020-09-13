@@ -1,0 +1,25 @@
+author: haekelhexe
+---
+body:
+
+Hooked on at the 2019 CPU and further triggered at the 36c3 Congress, some members decided to dedicate themselves to lock picking. We quickly ordered the suitable exercising sets with hooks, tension wrench and training locks and so the happy pin-setting could start.
+
+But how exactly does this work?
+Using specially shaped tools (picks), you enter the the key way of the lock core and push the pins inside it downwards which is usually done by the indentations on the serrated side of the key. In order to rotate the core of the lock cylinder and that way to move the locking mechanism of the door lock (i.e. to open the lock), you have to use the  so-called tension bar. Source: [Wikipedia (DE)](https://de.wikipedia.org/wiki/Lockpicking)
+
+Only shortly after one person started, others became interested as well and within minutes, people sat in the E-Lab, starring into the air, trying to set the individual pins blindly with the help of fine feeling. The training locks do offer the opportunity to look at the pins - either with the help of sight windows at the side of the lock or through transparent locks - however, the trick is to open it blindly as in reality, lock pickers cannot see the pins at all. This is relatively easy with normal pins, it gets more difficult by using spool or notched pins that are usually used in security locks and make life hard for the lock picker. But these are also manageable - even if you need to be a little more patient.
+
+Another option is raking: Here, the pick tool (the so-called rake pick) is pushed back and forth over the pin row which is supposed to bring the pins into the correct position. The raking process causes a vibration and a multiple setting of the pins which leads to opening the cylinder.
+---
+icon: fas fa-user-lock
+---
+project:
+
+#### pro_img ####
+image: lockpicking_small.jpg
+---
+pub_date: 2020-01-18
+---
+teaser: Tracing the LockPickingLawyer - people in the Toolbox now also try to open various locks with the help of pick, rakes and tension wrenches. More or less successful.
+---
+title: Lockpicking

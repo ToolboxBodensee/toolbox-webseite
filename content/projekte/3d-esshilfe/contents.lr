@@ -1,0 +1,24 @@
+title: 3D-Esshilfe
+---
+author: haekelhexe und phschoen
+---
+body:
+
+Während eines Familienbesuchs kam das Gespräch auf so genannte Esshilfen - kleine Alltagshelfer die z. B. Rollstuhlfahrern mit Querschnittlähmung unterstützen sollen. Es gibt diese in verschiedenen Ausführungen, in unserem konkreten Fall ging es um diese Kunststoffapparatur, in die eine Gabel oder ein Löffel eingespannt werden, damit der Rollstuhlfahrer damit essen kann.
+
+Die vorhandene Esshilfe wurde noch zu DDR-Zeiten auch in Eigenregie hergestellt und mittlerweile das letzte verbliebene Objekt. Da die Neubeschaffung über ein Sanitätshaus sehr teuer ist und trotzdem dann noch für die spezifischen Bedürfnisse angepasst werden müsste, kamen wir auf die Idee, die Esshilfe mit 3D-Druck nachzudrucken.
+
+Die Esshilfe besteht eigentlich aus 2 Teilen - dem Hauptkörper und der Spannplatte, die im Original durch eine Verschraubung mit Flügelmutter zusammengehalten wurden. Nachdem wir keine geeigneten Schrauben und Flügelmuttern gefunden haben, haben wir die Flügelmutter durch ein 3D-Druckteil ersetzt und statt einer Außensechskantschraube eine Senkkopfschraube (DIN7991, M3x12) verwendet.
+
+Die Einzelteile wurden von phschoen in FreeCAD konstruiert und anschließend mit mit grauem PLA (1,75mm) gedruckt. Die Senkkopfschraube wurde in den Hauptkörper eingeschmolzen, damit sie sich beim Befestigen nicht mitdreht. Die Sechskantmutter wurde in den Halter eingepresst.
+Beim zusammenbauen mussten wir allerdings feststellen, dass die Schraube durch das Einspannen zu lang war und die Mutter dadurch wieder aus dem Halter rausgedrückt wurde. Also wurde eine optmierte, also höhere Version des Mutterhalters gedruckt.
+
+Und fertig ist eine Esshilfe, die bei Bedarf schnell nachproduziert werden kann.
+
+Das Modell kann man in [GitLab](https://gitlab.com/ToolboxBodensee/3d-druck/3d_printing/-/tree/master/esshilfe) finden.
+---
+icon: fas fa-hand-holding-heart
+---
+pub_date: 2020-08-20
+---
+teaser: 3D-Druck-Objekte zur Unterstützung von Menschen mit Bewegungseinschränkung

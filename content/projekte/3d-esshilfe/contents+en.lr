@@ -1,0 +1,24 @@
+author: haekelhexe and phschoen
+---
+body:
+
+During a family visit, we talked about so-called eating aids - little everyday aids for people such as wheelchair users with paraplegia. There are various versions, our specific case, however, was a plastic apparatus in which a fork or spoon can be clamped in so that the user can eat with them.
+
+The existing eating aid was hand-made in the GDR and is now the only object left. Nowadays it can only be purchased via medial stores which is extremely expensive and still has to be adapted for the specific needs, so we came up with the idea to 3D print the eating aid.
+
+The eating aid itself comprises of two parts - the main body and the clamping plate that were kept together by a wing nut in the original model. As we didn't find any suitable bolt and wing nuts, we replaced the wingnut with a 3D printed holder for a hexagon nut and instead of a hexagon bolt we used a countersunk bolt (DIN7991, M3x12).
+
+phschoen designed the individual parts in FreeCAD and then printed with grey PLA (1.75 mm). The countersunk bolt was melted into the main body so that it doesn't rotate while tightening it.
+During assembly, however, we found out that the bolt was too long for clamping the fork and the hexagon nut was pressed out of the printed holder. So we created an optimized, higher version of the nut holder.
+
+And so here is the finished eating aid that can now easily and quickly be reproduced if needed.
+
+The model as available at [GitLab](https://gitlab.com/ToolboxBodensee/3d-druck/3d_printing/-/tree/master/esshilfe).
+---
+icon: fas fa-hand-holding-heart
+---
+pub_date: 2020-08-20
+---
+teaser: 3D printing objects for supporting people with motion disabilities
+---
+title: 3D Eating Aid
