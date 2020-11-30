@@ -1,12 +1,10 @@
 # Code Owners of Toolbox Website
 # Interested in all parts of the Toolbox website:
-* @DO1JLR @maxbachmann @DEvil0000 @fbsb @blaues0cke @rtt-mmk @drwuro @haekelhexe @wolf128058
+* @DO1JLR @maxbachmann @DEvil0000 @fbsb @blaues0cke @rtt-mmk @drwuro @haekelhexe @wolf128058 @davidblumer
 # interested in the content of the website
-/content/ @haekelhexe @tschanne @drwuro @205er @bodensee @oldwired @phschoen @DO1JLR @maxbachmann @DEvil0000 @fbsb @blaues0cke @rtt-mmk @wolf128058
+/content/ @haekelhexe @tschanne @drwuro @205er @bodensee @oldwired @phschoen @DO1JLR @maxbachmann @DEvil0000 @fbsb @blaues0cke @rtt-mmk @wolf128058 @davidblumer
 # interested in game developement content
-/content/projekte/spieleentwicklung/ @maluramichael @haekelhexe @tschanne @drwuro @205er @bodensee @oldwired @phschoen @DO1JLR @maxbachmann @DEvil0000 @fbsb @blaues0cke @rtt-mmk @wolf128058
-# Need to contribute some website content bevor becoming a CODEOWNER
-# @davidblumer
+/content/projekte/spieleentwicklung/ @maluramichael @haekelhexe @tschanne @drwuro @205er @bodensee @oldwired @phschoen @DO1JLR @maxbachmann @DEvil0000 @fbsb @blaues0cke @rtt-mmk @wolf128058 @davidblumer
 
 # All persons Responsible for project "LED-Steuerung"
 /content/projekte/neopixel-led-pcb/ @ottojo @DO1JLR @maxbachmann @DEvil0000 @fbsb @blaues0cke @rtt-mmk @drwuro @haekelhexe @wolf128058
